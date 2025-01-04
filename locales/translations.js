@@ -1,6 +1,6 @@
 const translations = {
   ko: {
-    title: "Purpleship - 새로운 발견",
+    title: "Purpleship",
     description: {
       line1: "우리는 세상에 존재하지 않는 앱을 발견해서 개발하는 단체입니다.",
       line2: "우주의 무궁무진한 아이디어를 찾아내어,",
@@ -26,7 +26,7 @@ const translations = {
     }
   },
   en: {
-    title: "Purpleship - New Discovery",
+    title: "Purpleship",
     description: {
       line1: "We are an organization that discovers and develops apps that don't exist in the world.",
       line2: "Finding infinite ideas from the universe,",
@@ -52,7 +52,7 @@ const translations = {
     }
   },
   zh: {
-    title: "Purpleship - 新发现",
+    title: "Purpleship",
     description: {
       line1: "我们是一个发现并开发世界上不存在的应用程序的组织。",
       line2: "从宇宙中寻找无限的创意，",
@@ -78,7 +78,7 @@ const translations = {
     }
   },
   ja: {
-    title: "Purpleship - 新しい発見",
+    title: "Purpleship",
     description: {
       line1: "私たちは、世界に存在しないアプリを発見し開発する団体です。",
       line2: "宇宙の無限のアイデアを見つけ出し、",
@@ -104,7 +104,7 @@ const translations = {
     }
   },
   es: {
-    title: "Purpleship - Nuevo Descubrimiento",
+    title: "Purpleship",
     description: {
       line1: "Somos una organización que descubre y desarrolla aplicaciones que no existen en el mundo.",
       line2: "Encontrando ideas infinitas del universo,",
@@ -130,7 +130,7 @@ const translations = {
     }
   },
   fr: {
-    title: "Purpleship - Nouvelle Découverte",
+    title: "Purpleship",
     description: {
       line1: "Nous sommes une organisation qui découvre et développe des applications qui n'existent pas dans le monde.",
       line2: "En trouvant des idées infinies de l'univers,",
@@ -156,7 +156,7 @@ const translations = {
     }
   },
   de: {
-    title: "Purpleship - Neue Entdeckung",
+    title: "Purpleship",
     description: {
       line1: "Wir sind eine Organisation, die nicht existierende Apps entdeckt und entwickelt.",
       line2: "Durch das Finden unendlicher Ideen aus dem Universum,",
@@ -182,7 +182,7 @@ const translations = {
     }
   },
   ru: {
-    title: "Purpleship - Новое Открытие",
+    title: "Purpleship",
     description: {
       line1: "Мы организация, которая открывает и разрабатывает приложения, которых нет в мире.",
       line2: "Находя бесконечные идеи из вселенной,",
@@ -208,7 +208,7 @@ const translations = {
     }
   },
   ar: {
-    title: "Purpleship - اكتشاف جديد",
+    title: "Purpleship",
     description: {
       line1: "نحن منظمة تكتشف وتطور تطبيقات غير موجودة في العالم.",
       line2: "من خلال إيجاد أفكار لا نهائية من الكون،",
@@ -234,7 +234,7 @@ const translations = {
     }
   },
   hi: {
-    title: "Purpleship - नई खोज",
+    title: "Purpleship",
     description: {
       line1: "हम एक संगठन हैं जो दुनिया में मौजूद नहीं होने वाले ऐप्स को खोजता और विकसित करता है।",
       line2: "ब्रह्मांड से अनंत विचारों को खोजते हुए,",
