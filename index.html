@@ -130,33 +130,6 @@
         color: #f0f0f0;
       }
 
-      /* 우주선 */
-      .spaceship {
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
-        width: 280px;
-        opacity: 0;
-        transform: translateX(100px);
-        transition: all 1.5s ease;
-        z-index: 10;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      .spaceship.show {
-        opacity: 1;
-        transform: translateX(0);
-      }
-      
-      .spaceship:hover {
-        transform: translateY(-5px) scale(1.1);
-        filter: drop-shadow(0 0 20px rgba(156, 136, 255, 0.6));
-      }
-      
-      .spaceship:active {
-        transform: translateY(0) scale(0.95);
-      }
-
       /* 도네이션 버튼 */
       .donation-btn {
         display: inline-block;
@@ -392,46 +365,6 @@
 
     <!-- 별똥별 레이어 -->
     <div class="star-container"></div>
-
-    <!-- 우주선 -->
-    <div class="spaceship" id="spaceship">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <!-- 그라데이션 정의 -->
-        <defs>
-          <linearGradient id="shipBody" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#9c88ff"/>
-            <stop offset="100%" style="stop-color:#8c7ae6"/>
-          </linearGradient>
-          <linearGradient id="shipWindow" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#f5f6fa"/>
-            <stop offset="100%" style="stop-color:#dcdde1"/>
-          </linearGradient>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-            <feMerge>
-              <feMergeNode in="coloredBlur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
-        </defs>
-        
-        <!-- 우주선 본체 -->
-        <ellipse cx="100" cy="120" rx="80" ry="40" fill="url(#shipBody)" filter="url(#glow)"/>
-        <circle cx="100" cy="75" r="35" fill="#8E44AD" filter="url(#glow)"/>
-        
-        <!-- 창문 -->
-        <ellipse cx="90" cy="65" rx="15" ry="10" fill="url(#shipWindow)" opacity="0.9"/>
-        
-        <!-- 엔진 -->
-        <rect x="85" y="140" width="30" height="20" fill="#3C2C70" filter="url(#glow)"/>
-        
-        <!-- 엔진 불꽃 효과 -->
-        <circle cx="100" cy="165" r="8" fill="#f8a5c2">
-          <animate attributeName="r" values="8;12;8" dur="1s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
 
     <!-- 첫 번째 섹션 -->
     <div class="section" id="sec1">
@@ -679,16 +612,9 @@
     </script>
 
     <script>
-      // 모든 초기화 함수를 하나의 DOMContentLoaded 이벤트에서 처리
       document.addEventListener('DOMContentLoaded', () => {
         // 초기 언어 설정
         changeLanguage(detectLanguage());
-
-        // 우주선 등장
-        const ship = document.getElementById('spaceship');
-        setTimeout(() => {
-          ship.classList.add('show');
-        }, 500);
 
         // 별똥별 생성
         const starContainer = document.querySelector('.star-container');
@@ -742,14 +668,6 @@
 
       document.querySelectorAll('.section').forEach(section => {
         observer.observe(section);
-      });
-
-      // 우주선 클릭 이벤트
-      document.getElementById('spaceship').addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
       });
 
       function detectLanguage() {
