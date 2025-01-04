@@ -338,7 +338,13 @@
       <option value="ko">한국어</option>
       <option value="en">English</option>
       <option value="zh">中文</option>
-      <!-- 다른 언어 옵션들 -->
+      <option value="ja">日本語</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="ru">Русский</option>
+      <option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option>
     </select>
   </div>
 
@@ -602,7 +608,11 @@
       
       // 2. 브라우저 언어 확인
       const browserLang = navigator.language.split('-')[0];
-      if (translations[browserLang]) return browserLang;
+      if (translations[browserLang]) {
+        return browserLang;
+      } else {
+        return 'en';  // 지원되지 않는 브라우저 언어는 영어로
+      }
       
       // 3. IP 기반 국가 감지 (옵션)
       fetch('https://ip-api.com/json/')
@@ -611,14 +621,16 @@
           const countryLang = {
             'KR': 'ko',
             'US': 'en',
+            'GB': 'en',
             'CN': 'zh',
-            // ... 다른 국가 매핑
-          }[data.countryCode];
-          if (countryLang && translations[countryLang]) {
-            changeLanguage(countryLang);
-          }
+            'TW': 'zh',
+            'HK': 'zh',
+            'JP': 'ja',
+            // 지원되는 국가만 매핑, 나머지는 영어로
+          }[data.countryCode] || 'en';  // 매핑되지 않은 국가는 영어로
+          changeLanguage(countryLang);
         })
-        .catch(() => changeLanguage('en')); // 기본값
+        .catch(() => changeLanguage('en')); // 오류 시 영어로
       
       return 'en'; // 기본값
     }
@@ -626,6 +638,11 @@
     function changeLanguage(lang) {
       if (lang === 'auto') {
         lang = detectLanguage();
+      }
+      
+      // 지원되지 않는 언어는 영어로 설정
+      if (!translations[lang]) {
+        lang = 'en';
       }
       
       localStorage.setItem('preferred-language', lang);
