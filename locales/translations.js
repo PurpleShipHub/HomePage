@@ -258,5 +258,31 @@ const translations = {
       copyright: "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
       contact: "संपर्क: captain@purpleship.io"
     }
+  },
+  vi: {
+    title: "Purpleship",
+    description: {
+      line1: "Chúng tôi là tổ chức khám phá và phát triển các ứng dụng chưa từng tồn tại trên thế giới.",
+      line2: "Tìm kiếm những ý tưởng vô hạn từ vũ trụ,",
+      line3: "Chúng tôi hướng đến việc tạo ra điều chưa từng tồn tại."
+    },
+    vision: {
+      title: "Tầm Nhìn",
+      line1: "Thông qua các ý tưởng và công nghệ đổi mới,",
+      line2: "Purpleship hướng đến việc tạo ra các dịch vụ phá vỡ khuôn khổ hiện tại.",
+      line3: "Bằng cách hiện thực hóa các ứng dụng chỉ tồn tại trong trí tưởng tượng,",
+      line4: "Mục tiêu của chúng tôi là mang đến những trải nghiệm mới."
+    },
+    join: {
+      title: "Tham Gia Cùng Chúng Tôi",
+      line1: "Cuộc khám phá của chúng tôi mới chỉ bắt đầu.",
+      line2: "Hãy liên hệ với chúng tôi nếu bạn muốn cùng khám phá vũ trụ chưa biết.",
+      line3: "Chúng tôi chào đón những người đam mê khám phá thế giới mới."
+    },
+    donation: "Ủng Hộ",
+    footer: {
+      copyright: "© 2025 Purpleship. Đã đăng ký bản quyền.",
+      contact: "Liên hệ: captain@purpleship.io"
+    }
   }
 }; 
