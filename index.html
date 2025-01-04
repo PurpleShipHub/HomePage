@@ -97,47 +97,6 @@
         z-index: 0;  /* 배경은 가장 아래 */
       }
 
-      /* 우주선과 별똥별 레이어 */
-      .star-container {
-        position: fixed;
-        top: 0; 
-        left: 0;
-        width: 100vw; 
-        height: 100vh;
-        pointer-events: none;
-        z-index: 3;  /* 가장 위에 표시 */
-      }
-
-      /*
-        별똥별 모양:
-        - 세로 방향 그라디언트를 적용하고
-        - rotate(45deg)로 별을 "↘" 대각선으로 회전
-        - 이동도 (0,0)→(큰폭,큰폭)로 주어 좌상단에서 우하단으로 이동
-        - 머리가 아래쪽(실제 이동 방향), 꼬리가 위쪽
-      */
-      .star {
-        position: absolute;
-        width: 2px;
-        height: 80px;
-        background: linear-gradient(to top, rgba(255,255,255,0.8), transparent);
-        opacity: 0;
-        transform-origin: top center;
-        transform: rotate(35deg);  /* 방향 전환 */
-        animation: shooting 3s ease-out infinite;
-        pointer-events: none;
-      }
-
-      @keyframes shooting {
-        0% {
-          opacity: 1;
-          transform: translate(120vw, -20vh) rotate(35deg);  /* 시작 위치 수정 */
-        }
-        100% {
-          opacity: 0;
-          transform: translate(-20vw, 120vh) rotate(35deg);  /* 도착 위치 수정 */
-        }
-      }
-
       /* 각 섹션: 스크롤 스냅 정렬 */
       .section {
         scroll-snap-align: start;
@@ -170,10 +129,12 @@
       h1 {
         font-size: 3rem;
         margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
       h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
       p {
         font-size: 1.2rem;
@@ -181,6 +142,7 @@
         line-height: 1.4;
         margin-bottom: 2rem;
         color: #f0f0f0;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       }
 
       /* 도네이션 버튼 */
@@ -193,9 +155,11 @@
         text-decoration: none;
         font-weight: bold;
         border-radius: 4px;
-        box-shadow: 0 4px 10px rgba(156, 136, 255, 0.4);
+        box-shadow: 0 4px 10px rgba(156, 136, 255, 0.4),
+                    0 2px 4px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s, background 0.3s;
         font-size: 1rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       }
       .donation-btn:hover {
         background: #8e6fe8;
@@ -416,8 +380,68 @@
       </select>
     </div>
 
-    <!-- 별똥별 레이어 -->
-    <div class="star-container"></div>
+    <script>
+      function detectLanguage() {
+        console.log('Browser language:', navigator.language);
+        const savedLang = localStorage.getItem('preferred-language');
+        console.log('Saved language:', savedLang);
+        
+        if (savedLang && translations[savedLang]) {
+          console.log('Using saved language:', savedLang);
+          return savedLang;
+        }
+        
+        const browserLang = navigator.language.split('-')[0];
+        console.log('Detected browser language:', browserLang);
+        console.log('Available translations:', Object.keys(translations));
+        
+        if (translations[browserLang]) {
+          console.log('Using browser language:', browserLang);
+          return browserLang;
+        }
+        
+        console.log('Falling back to English');
+        return 'en';
+      }
+
+      function changeLanguage(lang) {
+        console.log('Changing language to:', lang);
+        if (lang === 'auto') {
+          lang = detectLanguage();
+        }
+        
+        if (!translations[lang]) {
+          console.log('Language not supported:', lang, 'falling back to English');
+          lang = 'en';
+        }
+        
+        localStorage.setItem('preferred-language', lang);
+        document.documentElement.lang = lang;
+        
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          const keys = key.split('.');
+          let value = translations[lang];
+          console.log('Processing element:', element, 'with key:', key);
+          
+          try {
+            keys.forEach(k => {
+              value = value[k];
+            });
+            if (value) {
+              element.textContent = value;
+            }
+          } catch (error) {
+            console.error('Error setting text for key:', key, error);
+          }
+        });
+
+        // 언어 변경 이벤트 추적
+        gtag('event', 'language_change', {
+          'language': lang
+        });
+      }
+    </script>
 
     <!-- 첫 번째 섹션 -->
     <div class="section" id="sec1">
@@ -606,205 +630,102 @@
     </script>
 
     <script>
-      // WebGL 초기화 및 애니메이션
-      const canvas = document.getElementById('bgCanvas');
-      const gl = canvas.getContext('webgl');
-      
-      // 캔버스 크기 설정
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        gl.viewport(0, 0, canvas.width, canvas.height);
-      }
-      
-      window.addEventListener('resize', resizeCanvas);
-      resizeCanvas();
-      
-      // 셰이더 프로그램 생성
-      function createShader(type, source) {
-        const shader = gl.createShader(type);
-        gl.shaderSource(shader, source);
-        gl.compileShader(shader);
-        return shader;
-      }
-      
-      const vertexShader = createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
-      const fragmentShader = createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
-      
-      const program = gl.createProgram();
-      gl.attachShader(program, vertexShader);
-      gl.attachShader(program, fragmentShader);
-      gl.linkProgram(program);
-      gl.useProgram(program);
-      
-      // 버퍼 설정
-      const buffer = gl.createBuffer();
-      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
-      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
-      
-      const position = gl.getAttribLocation(program, 'position');
-      gl.enableVertexAttribArray(position);
-      gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
-      
-      // 유니폼 위치 가져오기
-      const timeLocation = gl.getUniformLocation(program, 'time');
-      const resolutionLocation = gl.getUniformLocation(program, 'resolution');
-      
-      // 애니메이션 루프
-      function animate(time) {
-        time *= 0.001; // 밀리초를 초로 변환
-        
-        gl.uniform1f(timeLocation, time);
-        gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
-        
-        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-        requestAnimationFrame(animate);
-      }
-      
-      requestAnimationFrame(animate);
-    </script>
-
-    <script>
       document.addEventListener('DOMContentLoaded', () => {
         // 초기 언어 설정
         changeLanguage(detectLanguage());
 
-        // 별똥별 생성
-        const starContainer = document.querySelector('.star-container');
-        const starCount = 30;
-        
-        function createStar() {
-          const star = document.createElement('div');
-          star.classList.add('star');
-
-          // 시작 위치를 화면 전체로 확장
-          const topPos = -10 + Math.random() * -10;    // -20~-10vh (화면 위)
-          const leftPos = Math.random() * 100;   // 0~100vw (화면 전체)
-          star.style.top = topPos + 'vh';
-          star.style.left = leftPos + 'vw';
-
-          // 크기와 속도 조정
-          const size = 1.5 + Math.random() * 1;    // 1.5~2.5px
-          star.style.width = size + 'px';
-          
-          const duration = 1 + Math.random() * 1;    // 1~2초
-          star.style.animationDuration = duration + 's';
-          star.style.animationDelay = (Math.random() * 2) + 's';
-
-          starContainer.appendChild(star);
-
-          setTimeout(() => {
-            star.remove();
-            createStar();
-          }, duration * 1000);
-        }
-
-        // 별똥별 초기 생성
-        for (let i = 0; i < starCount; i++) {
-          setTimeout(() => {
-            createStar();
-          }, i * 100);
-        }
-      });
-
-      // Intersection Observer 설정
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-          // else 부분 제거 - 한번 활성화되면 유지
-        });
-      }, {
-        threshold: 0.3  // 임계값 낮춤
-      });
-
-      document.querySelectorAll('.section').forEach(section => {
-        observer.observe(section);
-      });
-
-      function detectLanguage() {
-        console.log('Browser language:', navigator.language);
-        const savedLang = localStorage.getItem('preferred-language');
-        console.log('Saved language:', savedLang);
-        
-        if (savedLang && translations[savedLang]) {
-          console.log('Using saved language:', savedLang);
-          return savedLang;
-        }
-        
-        const browserLang = navigator.language.split('-')[0];
-        console.log('Detected browser language:', browserLang);
-        console.log('Available translations:', Object.keys(translations));
-        
-        if (translations[browserLang]) {
-          console.log('Using browser language:', browserLang);
-          return browserLang;
-        }
-        
-        console.log('Falling back to English');
-        return 'en';
-      }
-
-      function changeLanguage(lang) {
-        console.log('Changing language to:', lang);
-        if (lang === 'auto') {
-          lang = detectLanguage();
-        }
-        
-        if (!translations[lang]) {
-          console.log('Language not supported:', lang, 'falling back to English');
-          lang = 'en';
-        }
-        
-        localStorage.setItem('preferred-language', lang);
-        document.documentElement.lang = lang;
-        
-        // 콘솔에 디버그 정보 출력
-        console.log('Changing language to:', lang);
-        
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-          const key = element.getAttribute('data-i18n');
-          const keys = key.split('.');
-          let value = translations[lang];
-          console.log('Processing element:', element, 'with key:', key);
-          
-          try {
-            keys.forEach(k => {
-              value = value[k];
-            });
-            if (value) {
-              element.textContent = value;
+        // Intersection Observer 설정
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
             }
-          } catch (error) {
-            console.error('Error setting text for key:', key, error);
+            // else 부분 제거 - 한번 활성화되면 유지
+          });
+        }, {
+          threshold: 0.3  // 임계값 낮춤
+        });
+
+        document.querySelectorAll('.section').forEach(section => {
+          observer.observe(section);
+        });
+
+        // 도네이션 버튼 클릭 추적
+        document.querySelector('.donation-btn').addEventListener('click', () => {
+          gtag('event', 'donation_click', {
+            'event_category': 'engagement',
+            'event_label': 'donation_button'
+          });
+        });
+        
+        // 스크롤 깊이 추적
+        let maxScroll = 0;
+        window.addEventListener('scroll', () => {
+          const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+          if (scrollPercent > maxScroll) {
+            maxScroll = scrollPercent;
+            gtag('event', 'scroll_depth', {
+              'percent': Math.round(maxScroll)
+            });
           }
         });
 
-        // 언어 변경 이벤트 추적
-        gtag('event', 'language_change', {
-          'language': lang
-        });
-      }
-
-      // 도네이션 버튼 클릭 추적
-      document.querySelector('.donation-btn').addEventListener('click', () => {
-        gtag('event', 'donation_click', {
-          'event_category': 'engagement',
-          'event_label': 'donation_button'
-        });
-      });
-      
-      // 스크롤 깊이 추적
-      let maxScroll = 0;
-      window.addEventListener('scroll', () => {
-        const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
-        if (scrollPercent > maxScroll) {
-          maxScroll = scrollPercent;
-          gtag('event', 'scroll_depth', {
-            'percent': Math.round(maxScroll)
-          });
+        // WebGL 초기화 및 애니메이션
+        const canvas = document.getElementById('bgCanvas');
+        const gl = canvas.getContext('webgl');
+        
+        // 캔버스 크기 설정
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          gl.viewport(0, 0, canvas.width, canvas.height);
         }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        // 셰이더 프로그램 생성
+        function createShader(type, source) {
+          const shader = gl.createShader(type);
+          gl.shaderSource(shader, source);
+          gl.compileShader(shader);
+          return shader;
+        }
+        
+        const vertexShader = createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
+        const fragmentShader = createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
+        
+        const program = gl.createProgram();
+        gl.attachShader(program, vertexShader);
+        gl.attachShader(program, fragmentShader);
+        gl.linkProgram(program);
+        gl.useProgram(program);
+        
+        // 버퍼 설정
+        const buffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+        
+        const position = gl.getAttribLocation(program, 'position');
+        gl.enableVertexAttribArray(position);
+        gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
+        
+        // 유니폼 위치 가져오기
+        const timeLocation = gl.getUniformLocation(program, 'time');
+        const resolutionLocation = gl.getUniformLocation(program, 'resolution');
+        
+        // 애니메이션 루프
+        function animate(time) {
+          time *= 0.001; // 밀리초를 초로 변환
+          
+          gl.uniform1f(timeLocation, time);
+          gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+          
+          gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+          requestAnimationFrame(animate);
+        }
+        
+        requestAnimationFrame(animate);
       });
     </script>
   </body>
