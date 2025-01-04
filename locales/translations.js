@@ -285,4 +285,6 @@ const translations = {
       contact: "Liên hệ: captain@purpleship.io"
     }
   }
-}; 
+};
+
+console.log('Supported languages:', Object.keys(translations)); 

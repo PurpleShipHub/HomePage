@@ -631,19 +631,36 @@
       });
 
       function detectLanguage() {
+        console.log('Browser language:', navigator.language);
         const savedLang = localStorage.getItem('preferred-language');
-        if (savedLang && translations[savedLang]) return savedLang;
+        console.log('Saved language:', savedLang);
+        
+        if (savedLang && translations[savedLang]) {
+          console.log('Using saved language:', savedLang);
+          return savedLang;
+        }
         
         const browserLang = navigator.language.split('-')[0];
-        return translations[browserLang] ? browserLang : 'en';
+        console.log('Detected browser language:', browserLang);
+        console.log('Available translations:', Object.keys(translations));
+        
+        if (translations[browserLang]) {
+          console.log('Using browser language:', browserLang);
+          return browserLang;
+        }
+        
+        console.log('Falling back to English');
+        return 'en';
       }
 
       function changeLanguage(lang) {
+        console.log('Changing language to:', lang);
         if (lang === 'auto') {
           lang = detectLanguage();
         }
         
         if (!translations[lang]) {
+          console.log('Language not supported:', lang, 'falling back to English');
           lang = 'en';
         }
         
