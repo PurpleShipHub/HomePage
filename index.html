@@ -556,8 +556,12 @@
     </div>
 
     <script>
-      // 우주선 등장
-      window.addEventListener('DOMContentLoaded', () => {
+      // 모든 초기화 함수를 하나의 DOMContentLoaded 이벤트에서 처리
+      document.addEventListener('DOMContentLoaded', () => {
+        // 초기 언어 설정
+        changeLanguage(detectLanguage());
+
+        // 우주선 등장
         const ship = document.getElementById('spaceship');
         setTimeout(() => {
           ship.classList.add('show');
@@ -593,15 +597,15 @@
           }, duration * 1000);
         }
 
-        // 별똥별 초기 생성 개수 증가
+        // 별똥별 초기 생성
         for (let i = 0; i < starCount; i++) {
           setTimeout(() => {
             createStar();
-          }, i * 100);  // 순차적으로 생성
+          }, i * 100);
         }
       });
 
-      // Intersection Observer로 섹션 활성화 시 글자 확대
+      // Intersection Observer 설정
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -625,39 +629,12 @@
         });
       });
 
-      // 언어 감지 및 설정
       function detectLanguage() {
-        // 1. 저장된 언어 설정 확인
         const savedLang = localStorage.getItem('preferred-language');
-        if (savedLang) return savedLang;
+        if (savedLang && translations[savedLang]) return savedLang;
         
-        // 2. 브라우저 언어 확인
         const browserLang = navigator.language.split('-')[0];
-        if (translations[browserLang]) {
-          return browserLang;
-        } else {
-          return 'en';  // 지원되지 않는 브라우저 언어는 영어로
-        }
-        
-        // 3. IP 기반 국가 감지 (옵션)
-        fetch('https://ip-api.com/json/')
-          .then(res => res.json())
-          .then(data => {
-            const countryLang = {
-              'KR': 'ko',
-              'US': 'en',
-              'GB': 'en',
-              'CN': 'zh',
-              'TW': 'zh',
-              'HK': 'zh',
-              'JP': 'ja',
-              // 지원되는 국가만 매핑, 나머지는 영어로
-            }[data.countryCode] || 'en';  // 매핑되지 않은 국가는 영어로
-            changeLanguage(countryLang);
-          })
-          .catch(() => changeLanguage('en')); // 오류 시 영어로
-        
-        return 'en'; // 기본값
+        return translations[browserLang] ? browserLang : 'en';
       }
 
       function changeLanguage(lang) {
@@ -665,7 +642,6 @@
           lang = detectLanguage();
         }
         
-        // 지원되지 않는 언어는 영어로 설정
         if (!translations[lang]) {
           lang = 'en';
         }
@@ -673,22 +649,27 @@
         localStorage.setItem('preferred-language', lang);
         document.documentElement.lang = lang;
         
-        // 모든 i18n 요소 업데이트
+        // 콘솔에 디버그 정보 출력
+        console.log('Changing language to:', lang);
+        
         document.querySelectorAll('[data-i18n]').forEach(element => {
           const key = element.getAttribute('data-i18n');
           const keys = key.split('.');
           let value = translations[lang];
-          keys.forEach(k => {
-            value = value[k];
-          });
-          element.textContent = value;
+          console.log('Processing element:', element, 'with key:', key);
+          
+          try {
+            keys.forEach(k => {
+              value = value[k];
+            });
+            if (value) {
+              element.textContent = value;
+            }
+          } catch (error) {
+            console.error('Error setting text for key:', key, error);
+          }
         });
       }
-
-      // 초기 언어 설정
-      document.addEventListener('DOMContentLoaded', () => {
-        changeLanguage(detectLanguage());
-      });
     </script>
   </body>
   </html>
