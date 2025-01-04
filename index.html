@@ -2,11 +2,12 @@
   <html lang="ko">
   <head>
     <meta charset="UTF-8"/>
+    <base href="https://purpleshiphub.github.io/HomePage/">
     <title>Purpleship - Scroll Snap</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="/locales/translations.js"></script>
+    <script src="https://purpleshiphub.github.io/HomePage/locales/translations.js"></script>
     <style>
       /* 기본 리셋 */
       * {
@@ -328,6 +329,27 @@
       h1.main-title {
         font-size: 12rem;
         letter-spacing: 6px;  /* 자간도 조정 */
+      }
+
+      /* 언어 선택기 스타일 */
+      .language-selector {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1000;
+      }
+
+      .language-selector select {
+        padding: 0.5rem;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+      }
+
+      .language-selector select:hover {
+        background: rgba(255, 255, 255, 0.2);
       }
     </style>
   </head>
