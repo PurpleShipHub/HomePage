@@ -192,7 +192,7 @@
       /* 타이틀 스타일 개선 */
       h1.main-title {
         font-family: 'Black Han Sans', sans-serif;
-        font-size: 6rem;
+        font-size: min(6rem, 15vw);
         background: linear-gradient(
           45deg,
           #ffd700 0%,    /* 골드 */
@@ -326,8 +326,8 @@
 
       /* 메인 타이틀 크기 조정 */
       h1.main-title {
-        font-size: 6rem;
-        letter-spacing: 3px;  /* 자간도 조정 */
+        font-size: min(6rem, 15vw);
+        letter-spacing: 3px;
       }
 
       /* 언어 선택기 스타일 */
@@ -359,6 +359,38 @@
         background: white;
         color: black;
         padding: 0.5rem;
+      }
+
+      /* 모바일 화면에서의 추가 조정 */
+      @media (max-height: 800px) {
+        h1.main-title {
+          font-size: min(4rem, 12vw);
+          margin-bottom: 2rem;
+        }
+        
+        .logo-container {
+          width: 180px;
+          height: 180px;
+          margin-bottom: 1.5rem;
+        }
+        
+        p {
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      @media (max-height: 600px) {
+        h1.main-title {
+          font-size: min(3rem, 10vw);
+          margin-bottom: 1.5rem;
+        }
+        
+        .logo-container {
+          width: 140px;
+          height: 140px;
+          margin-bottom: 1rem;
+        }
       }
     </style>
   </head>
