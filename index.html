@@ -2,13 +2,64 @@
   <html lang="ko">
   <head>
     <meta charset="UTF-8"/>
-    <base href="https://purpleshiphub.github.io/HomePage/">
+    <!-- SEO 메타 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Purpleship은 혁신적인 아이디어로 세상에 존재하지 않는 앱을 발견하고 개발하는 단체입니다.">
+    <meta name="keywords" content="Purpleship, 앱 개발, 혁신, 스타트업, 기술 혁신, 미래 기술, 창의적 개발">
+    <meta name="author" content="Purpleship">
+    
+    <!-- Open Graph 태그 (소셜 미디어 공유용) -->
+    <meta property="og:title" content="Purpleship - 새로운 발견">
+    <meta property="og:description" content="세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체">
+    <meta property="og:image" content="https://purpleship.io/images/og-image.png">
+    <meta property="og:url" content="https://purpleship.io/">
+    
+    <!-- Twitter 카드 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Purpleship">
+    <meta name="twitter:description" content="세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체">
+    <meta name="twitter:image" content="https://purpleship.io/images/twitter-card.png">
+    
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- 구조화된 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Purpleship",
+      "description": "세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체",
+      "url": "https://purpleship.io/",
+      "logo": "https://purpleship.io/images/logo.png",
+      "sameAs": [
+        "https://twitter.com/purpleship",
+        "https://github.com/purpleshiphub"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "captain@purpleship.io",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGB9Q3SNE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PQGB9Q3SNE');
+    </script>
+    <base href="https://purpleship.io/">
     <title>Purpleship - Scroll Snap</title>
     <canvas id="bgCanvas"></canvas>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="https://purpleshiphub.github.io/HomePage/locales/translations.js"></script>
+    <script src="https://purpleship.io/locales/translations.js"></script>
     <style>
       #bgCanvas {
         position: fixed;
@@ -727,7 +778,32 @@
             console.error('Error setting text for key:', key, error);
           }
         });
+
+        // 언어 변경 이벤트 추적
+        gtag('event', 'language_change', {
+          'language': lang
+        });
       }
+
+      // 도네이션 버튼 클릭 추적
+      document.querySelector('.donation-btn').addEventListener('click', () => {
+        gtag('event', 'donation_click', {
+          'event_category': 'engagement',
+          'event_label': 'donation_button'
+        });
+      });
+      
+      // 스크롤 깊이 추적
+      let maxScroll = 0;
+      window.addEventListener('scroll', () => {
+        const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+        if (scrollPercent > maxScroll) {
+          maxScroll = scrollPercent;
+          gtag('event', 'scroll_depth', {
+            'percent': Math.round(maxScroll)
+          });
+        }
+      });
     </script>
   </body>
   </html>
