@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Purpleship - Scroll Snap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* 기본 리셋 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    /* 세로 스크롤 스냅 적용 & 실제 스크롤 가능하게 설정 */
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      scroll-snap-type: none;
+      overflow-y: auto;
+      background: linear-gradient(
+        180deg, 
+        #2c165a 0%,   /* 진한 보라 상단 */
+        #45246c 50%, 
+        #5e3080 100%  /* 아래쪽으로 갈수록 밝아지는 느낌 */
+      );
+      position: relative;
+      z-index: 0;  /* 배경은 가장 아래 */
+    }
+
+    /* 우주선과 별똥별 레이어 */
+    .star-container {
+      position: fixed;
+      top: 0; 
+      left: 0;
+      width: 100vw; 
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;  /* 배경과 컨텐츠 사이 */
+    }
+
+    /*
+      별똥별 모양:
+      - 세로 방향 그라디언트를 적용하고
+      - rotate(45deg)로 별을 "↘" 대각선으로 회전
+      - 이동도 (0,0)→(큰폭,큰폭)로 주어 좌상단에서 우하단으로 이동
+      - 머리가 아래쪽(실제 이동 방향), 꼬리가 위쪽
+    */
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.8), transparent);
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotate(65deg);
+      animation: shooting 3s ease-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes shooting {
+      0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(65deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(200vw, 200vh) rotate(65deg);
+      }
+    }
+
+    /* 각 섹션: 스크롤 스냅 정렬 */
+    .section {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;  /* 가장 위에 */
+      padding: 4rem 2rem;
+      backdrop-filter: blur(5px);
+    }
+
+    /*
+      섹션 활성화 시(Intersection Observer로) 텍스트 살짝 확대
+      - threshold를 통해 섹션이 화면에 충분히 들어왔을 때 active 부여
+    */
+    .section.active h1,
+    .section.active h2,
+    .section.active p {
+      transform: scale(1.1);
+    }
+    .section h1, .section h2, .section p {
+      transition: transform 0.8s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #f0f0f0;
+    }
+
+    /* 우주선 */
+    .spaceship {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      width: 140px;
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 1.5s ease;
+      z-index: 10;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .spaceship.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    .spaceship:hover {
+      transform: translateY(-5px) scale(1.1);
+      filter: drop-shadow(0 0 20px rgba(156, 136, 255, 0.6));
+    }
+    
+    .spaceship:active {
+      transform: translateY(0) scale(0.95);
+    }
+
+    /* 도네이션 버튼 */
+    .donation-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: #9c88ff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(156, 136, 255, 0.4);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .donation-btn:hover {
+      background: #8e6fe8;
+      transform: translateY(-3px);
+    }
+
+    /* 푸터도 하나의 스냅 섹션 */
+    footer {
+      width: 100%;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(44, 22, 90, 0.6);
+      backdrop-filter: blur(5px);
+      color: rgba(255, 255, 255, 0.8);
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+    footer p strong {
+      color: #fff;
+    }
+
+    /* 타이틀 스타일 개선 */
+    h1.main-title {
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 8rem;
+      background: linear-gradient(
+        45deg,
+        #ffd700 0%,    /* 골드 */
+        #ff7f50 25%,   /* 산호색 */
+        #da70d6 50%,   /* 오키드 */
+        #9370db 75%,   /* 보라 */
+        #8a2be2 100%   /* 진한 보라 */
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+      font-weight: 900;
+      letter-spacing: 6px;
+      margin-bottom: 3rem;
+      animation: titleGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes titleGlow {
+      from {
+        filter: drop-shadow(0 0 5px rgba(249, 217, 118, 0.2));
+      }
+      to {
+        filter: drop-shadow(0 0 15px rgba(249, 217, 118, 0.4));
+      }
+    }
+
+    /* 섹션별 아이콘 컨테이너 */
+    .section-icon {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 2rem;
+    }
+
+    /* 섹션별 배경 그라데이션 */
+    #sec1 { background: linear-gradient(180deg, rgba(44, 22, 90, 0.4), rgba(69, 36, 108, 0.2)); }
+    #sec2 { background: linear-gradient(180deg, rgba(69, 36, 108, 0.2), rgba(94, 48, 128, 0.2)); }
+    #sec3 { 
+      background: linear-gradient(180deg, rgba(94, 48, 128, 0.2), rgba(119, 60, 148, 0.2));
+      justify-content: space-between;
+      padding-bottom: 0;
+    }
+
+    /* 섹션 내부 컨텐츠를 감싸는 컨테이너 추가 */
+    .section-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 섹션 타이틀도 그라데이션 적용 */
+    h2 {
+      font-size: 3.5rem;
+      background: linear-gradient(
+        45deg,
+        rgba(255, 215, 0, 0.9) 0%,
+        rgba(147, 112, 219, 0.9) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      margin-bottom: 2rem;
+    }
+
+    /* 스크롤 스냅 개선 */
+    html {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;  /* 부드러운 스크롤 효과 */
+    }
+
+    body {
+      scroll-snap-type: none;  /* body의 스냅은 제거 */
+      overflow-y: auto;
+    }
+
+    /* 텍스트 애니메이션 */
+    .text-line {
+      display: block;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+
+    .section.active .text-line {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 각 라인별 딜레이 */
+    .section.active .text-line:nth-child(1) { transition-delay: 0.3s; }
+    .section.active .text-line:nth-child(2) { transition-delay: 0.6s; }
+    .section.active .text-line:nth-child(3) { transition-delay: 0.9s; }
+    .section.active .text-line:nth-child(4) { transition-delay: 1.2s; }
+
+    /* 섹션 아이콘 개선 */
+    .section-icon svg {
+      filter: drop-shadow(0 0 15px rgba(249, 217, 118, 0.3));
+      transition: all 0.5s ease;
+    }
+
+    .section:hover .section-icon svg {
+      filter: drop-shadow(0 0 25px rgba(249, 217, 118, 0.5));
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 별똥별 레이어 -->
+  <div class="star-container"></div>
+
+  <!-- 우주선 -->
+  <div class="spaceship" id="spaceship">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- 그라데이션 정의 -->
+      <defs>
+        <linearGradient id="shipBody" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#9c88ff"/>
+          <stop offset="100%" style="stop-color:#8c7ae6"/>
+        </linearGradient>
+        <linearGradient id="shipWindow" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#f5f6fa"/>
+          <stop offset="100%" style="stop-color:#dcdde1"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+          <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      
+      <!-- 우주선 본체 -->
+      <ellipse cx="100" cy="120" rx="80" ry="40" fill="url(#shipBody)" filter="url(#glow)"/>
+      <circle cx="100" cy="75" r="35" fill="#8E44AD" filter="url(#glow)"/>
+      
+      <!-- 창문 -->
+      <ellipse cx="90" cy="65" rx="15" ry="10" fill="url(#shipWindow)" opacity="0.9"/>
+      
+      <!-- 엔진 -->
+      <rect x="85" y="140" width="30" height="20" fill="#3C2C70" filter="url(#glow)"/>
+      
+      <!-- 엔진 불꽃 효과 -->
+      <circle cx="100" cy="165" r="8" fill="#f8a5c2">
+        <animate attributeName="r" values="8;12;8" dur="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+  </div>
+
+  <!-- 첫 번째 섹션 -->
+  <div class="section" id="sec1">
+    <div class="section-icon">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="shipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffd32a"/>
+            <stop offset="100%" style="stop-color:#ff7979"/>
+          </linearGradient>
+          <filter id="iconGlow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- 우주선 아이콘 개선된 디자인 -->
+        <path d="M100,20 C120,40 140,160 100,180 C60,160 80,40 100,20" 
+              fill="url(#shipGrad)" 
+              filter="url(#iconGlow)"/>
+        <circle cx="100" cy="80" r="25" fill="#594F9F" filter="url(#iconGlow)"/>
+        <ellipse cx="100" cy="140" rx="35" ry="15" fill="#3C2C70" filter="url(#iconGlow)"/>
+        <!-- 빛나는 효과 -->
+        <circle cx="90" cy="70" r="5" fill="#fff" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+    <h1 class="main-title">Purpleship</h1>
+    <p>
+      <span class="text-line">우리는 세상에 존재하지 않는 앱을 발견해서 개발하는 단체입니다.</span><br/>
+      <span class="text-line">우주의 무궁무진한 아이디어를 찾아내어,</span><br/>
+      <span class="text-line">아직 세상에 없는 무언가를 함께 만들고자 합니다.</span>
+    </p>
+  </div>
+
+  <!-- 두 번째 섹션 -->
+  <div class="section" id="sec2">
+    <div class="section-icon">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- 비전/망원경 아이콘 -->
+        <defs>
+          <linearGradient id="visionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#b990ff"/>
+            <stop offset="100%" style="stop-color:#f39f86"/>
+          </linearGradient>
+        </defs>
+        <path d="M60,100 L140,100 L160,80 L180,80 L180,120 L160,120 L140,100" fill="url(#visionGrad)"/>
+        <circle cx="80" cy="100" r="40" fill="#594F9F"/>
+        <circle cx="80" cy="100" r="30" fill="#3C2C70"/>
+      </svg>
+    </div>
+    <h2>Our Vision</h2>
+    <p>
+      <span class="text-line">Purpleship은 혁신적인 아이디어와 기술을 통해,</span><br/>
+      <span class="text-line">기존의 틀을 깨는 서비스를 만들고자 합니다.</span><br/>
+      <span class="text-line">상상 속에만 존재하던 앱을 현실로 구현하여,</span><br/>
+      <span class="text-line">새로운 경험을 제공하는 것이 우리의 목표입니다.</span>
+    </p>
+  </div>
+
+  <!-- 세 번째 섹션 -->
+  <div class="section" id="sec3">
+    <div class="section-content">
+      <div class="section-icon">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- 팀/참여 아이콘 -->
+          <defs>
+            <linearGradient id="teamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#f39f86"/>
+              <stop offset="100%" style="stop-color:#f9d976"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="70" r="30" fill="url(#teamGrad)"/>
+          <circle cx="60" cy="120" r="25" fill="#594F9F"/>
+          <circle cx="140" cy="120" r="25" fill="#3C2C70"/>
+        </svg>
+      </div>
+      <h2>Join Us</h2>
+      <p>
+        우리의 탐험은 이제 시작 단계입니다.<br/>
+        미지의 우주를 함께 탐험하고 싶은 분들은 언제든 문의해주세요.<br/>
+        새로운 세계를 발견하는 일에 열정이 넘치는 분들을 기다립니다.
+      </p>
+      <a class="donation-btn"
+         href="https://www.paypal.com/donate?business=donation@purpleship.io"
+         target="_blank">
+        도네이션하기
+      </a>
+    </div>
+    
+    <footer>
+      <p>
+        Copyright <strong>© 2025 Purpleship</strong>. All rights reserved.
+      </p>
+      <p>Contact: <strong>captain@purpleship.io</strong></p>
+    </footer>
+  </div>
+
+  <script>
+    // 우주선 등장
+    window.addEventListener('DOMContentLoaded', () => {
+      const ship = document.getElementById('spaceship');
+      setTimeout(() => {
+        ship.classList.add('show');
+      }, 500);
+
+      // 별똥별 생성
+      const starContainer = document.querySelector('.star-container');
+      const starCount = 20;
+      
+      function createStar() {
+        const star = document.createElement('div');
+        star.classList.add('star');
+
+        // 시작 위치를 상단으로 제한
+        const topPos = Math.random() * 50;    // 0~50vh
+        const leftPos = Math.random() * 30;   // 0~30vw
+        star.style.top = topPos + 'vh';
+        star.style.left = leftPos + 'vw';
+
+        // 무 미세한 크기 조정
+        const size = 1 + Math.random() * 1.5;  // 1~2.5px
+        star.style.width = size + 'px';
+        
+        // 속도 다양화
+        const duration = 1.5 + Math.random() * 1;  // 1.5~2.5초
+        star.style.animationDuration = duration + 's';
+        star.style.animationDelay = (Math.random() * 2) + 's';
+
+        starContainer.appendChild(star);
+
+        // 별똥별 제거 및 새로 생성
+        setTimeout(() => {
+          star.remove();
+          createStar();
+        }, duration * 1000);
+      }
+
+      // 초기 별똥별 생성
+      for (let i = 0; i < starCount; i++) {
+        setTimeout(() => {
+          createStar();
+        }, i * 100);  // 순차적으로 생성
+      }
+    });
+
+    // Intersection Observer로 섹션 활성화 시 글자 확대
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+        // else 부분 제거 - 한번 활성화되면 유지
+      });
+    }, {
+      threshold: 0.3  // 임계값 낮춤
+    });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // 우주선 클릭 이벤트
+    document.getElementById('spaceship').addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
