@@ -145,27 +145,6 @@
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       }
 
-      /* 도네이션 버튼 */
-      .donation-btn {
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 1rem 2rem;
-        background: #9c88ff;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 4px;
-        box-shadow: 0 4px 10px rgba(156, 136, 255, 0.4),
-                    0 2px 4px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s, background 0.3s;
-        font-size: 1rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-      }
-      .donation-btn:hover {
-        background: #8e6fe8;
-        transform: translateY(-3px);
-      }
-
       /* 푸터도 하나의 스냅 섹션 */
       footer {
         width: 100%;
@@ -392,6 +371,43 @@
           margin-bottom: 1rem;
         }
       }
+
+      .pp-PN2WRW4NEXA2L {
+        text-align: center;
+        border: none;
+        border-radius: 0.25rem;
+        min-width: 11.625rem;
+        padding: 0 2rem;
+        height: 2.625rem;
+        font-weight: bold;
+        background-color: #FFD140;
+        color: #000000;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+      .pp-PN2WRW4NEXA2L:hover {
+        background-color: #FFDA65;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .pp-container {
+        display: inline-grid;
+        justify-items: center;
+        align-content: start;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+      }
+      .pp-container section {
+        font-size: 0.75rem;
+        color: #f0f0f0;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+      .pp-container img {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+      }
     </style>
   </head>
   <body>
@@ -461,7 +477,11 @@
               value = value[k];
             });
             if (value) {
-              element.textContent = value;
+              if (element.tagName === 'INPUT' && element.type === 'submit') {
+                element.value = value;
+              } else {
+                element.textContent = value;
+              }
             }
           } catch (error) {
             console.error('Error setting text for key:', key, error);
@@ -599,12 +619,11 @@
           <span class="text-line" data-i18n="join.line2"></span><br/>
           <span class="text-line" data-i18n="join.line3"></span>
         </p>
-        <a class="donation-btn"
-          href="https://paypal.me/purpleship"
-          target="_blank"
-          data-i18n="donation">
-          도네이션하기
-        </a>
+        <form action="https://www.paypal.com/ncp/payment/PN2WRW4NEXA2L" method="post" target="_blank" class="pp-container">
+          <input class="pp-PN2WRW4NEXA2L" type="submit" value="" data-i18n="donation" />
+          <img src="https://www.paypalobjects.com/images/Debit_Credit.svg" alt="카드 결제 가능" />
+          <section>Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+        </form>
       </div>
       
       <footer>
@@ -683,7 +702,7 @@
         });
 
         // 도네이션 버튼 클릭 추적
-        document.querySelector('.donation-btn').addEventListener('click', () => {
+        document.querySelector('.pp-PN2WRW4NEXA2L').addEventListener('click', () => {
           gtag('event', 'donation_click', {
             'event_category': 'engagement',
             'event_label': 'donation_button'
