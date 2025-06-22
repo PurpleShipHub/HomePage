@@ -22,7 +22,8 @@ const translations = {
     donation: "도네이션하기",
     footer: {
       copyright: "© 2025 Purpleship. All rights reserved.",
-      contact: "Contact: captain@purpleship.io"
+      contact: "Contact: captain@purpleship.io",
+      privacy: "개인정보처리방침"
     },
     privacy: {
       title: "개인정보처리방침",
@@ -136,7 +137,8 @@ const translations = {
     donation: "Make a Donation",
     footer: {
       copyright: "© 2025 Purpleship. All rights reserved.",
-      contact: "Contact: captain@purpleship.io"
+      contact: "Contact: captain@purpleship.io",
+      privacy: "Privacy Policy"
     },
     privacy: {
       title: "Privacy Policy",
@@ -250,7 +252,8 @@ const translations = {
     donation: "捐赠支持",
     footer: {
       copyright: "© 2025 Purpleship. 版权所有。",
-      contact: "联系方式：captain@purpleship.io"
+      contact: "联系方式：captain@purpleship.io",
+      privacy: "隐私政策"
     },
     privacy: {
       title: "隐私政策",
@@ -364,7 +367,8 @@ const translations = {
     donation: "寄付する",
     footer: {
       copyright: "© 2025 Purpleship. 全著作権所有。",
-      contact: "連絡先：captain@purpleship.io"
+      contact: "連絡先：captain@purpleship.io",
+      privacy: "プライバシーポリシー"
     },
     privacy: {
       title: "プライバシーポリシー",
@@ -478,7 +482,8 @@ const translations = {
     donation: "Hacer una Donación",
     footer: {
       copyright: "© 2025 Purpleship. Todos los derechos reservados.",
-      contact: "Contacto: captain@purpleship.io"
+      contact: "Contacto: captain@purpleship.io",
+      privacy: "Política de Privacidad"
     },
     privacy: {
       title: "Política de Privacidad",
@@ -592,7 +597,8 @@ const translations = {
     donation: "Faire un Don",
     footer: {
       copyright: "© 2025 Purpleship. Tous droits réservés.",
-      contact: "Contact : captain@purpleship.io"
+      contact: "Contact : captain@purpleship.io",
+      privacy: "Politique de Confidentialité"
     },
     privacy: {
       title: "Politique de Confidentialité",
@@ -625,7 +631,8 @@ const translations = {
     donation: "Spenden",
     footer: {
       copyright: "© 2025 Purpleship. Alle Rechte vorbehalten.",
-      contact: "Kontakt: captain@purpleship.io"
+      contact: "Kontakt: captain@purpleship.io",
+      privacy: "Datenschutzrichtlinie"
     },
     privacy: {
       title: "Datenschutzrichtlinie",
@@ -658,7 +665,8 @@ const translations = {
     donation: "Сделать Пожертвование",
     footer: {
       copyright: "© 2025 Purpleship. Все права защищены.",
-      contact: "Контакт: captain@purpleship.io"
+      contact: "Контакт: captain@purpleship.io",
+      privacy: "Политика Конфиденциальности"
     },
     privacy: {
       title: "Политика Конфиденциальности",
