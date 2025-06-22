@@ -443,6 +443,10 @@
     
     // 번역 함수
     function getTranslation(key) {
+      if (!translations || !translations[currentLanguage]) {
+        return key;
+      }
+      
       const keys = key.split('.');
       let translation = translations[currentLanguage];
       
@@ -450,6 +454,18 @@
         if (translation && translation[k]) {
           translation = translation[k];
         } else {
+          // 현재 언어에 번역이 없으면 한국어로 폴백
+          if (currentLanguage !== 'ko' && translations.ko) {
+            translation = translations.ko;
+            for (const fallbackKey of keys) {
+              if (translation && translation[fallbackKey]) {
+                translation = translation[fallbackKey];
+              } else {
+                return key;
+              }
+            }
+            return translation;
+          }
           return key; // 키를 찾을 수 없으면 원본 키 반환
         }
       }

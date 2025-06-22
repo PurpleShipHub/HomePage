@@ -258,7 +258,7 @@ const translations = {
       backToHome: "← 返回首页",
       section1: {
         title: "1. 个人信息收集和使用目的",
-        content: "Purpleship（以下简称"公司"）为以下目的处理个人信息：",
+        content: "Purpleship（以下简称\"公司\"）为以下目的处理个人信息：",
         items: [
           "服务提供和运营",
           "与用户沟通和客户服务",
@@ -479,6 +479,94 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. Todos los derechos reservados.",
       contact: "Contacto: captain@purpleship.io"
+    },
+    privacy: {
+      title: "Política de Privacidad",
+      subtitle: "Política de Privacidad de Purpleship",
+      backToHome: "← Volver al Inicio",
+      section1: {
+        title: "1. Propósito de Recolección y Uso de Información Personal",
+        content: "Purpleship (en adelante \"Compañía\") procesa información personal para los siguientes propósitos:",
+        items: [
+          "Provisión y operación de servicios",
+          "Comunicación con usuarios y servicio al cliente",
+          "Mejora de servicios y desarrollo de nuevos servicios",
+          "Cumplimiento de obligaciones legales y resolución de disputas"
+        ]
+      },
+      section2: {
+        title: "2. Elementos de Recolección de Información Personal",
+        required: {
+          title: "2.1 Elementos de Recolección Obligatoria",
+          items: [
+            "Dirección de correo electrónico",
+            "Registros de uso del servicio",
+            "Registros de acceso, cookies, información de IP de acceso"
+          ]
+        },
+        optional: {
+          title: "2.2 Elementos de Recolección Opcional",
+          items: [
+            "Nombre o apodo",
+            "Información de perfil",
+            "Otra información generada durante el uso del servicio"
+          ]
+        }
+      },
+      section3: {
+        title: "3. Período de Retención y Uso de Información Personal",
+        content: "La Compañía destruye la información sin demora después de lograr el propósito de recolección y uso de información personal.",
+        items: [
+          "Información de miembros: Hasta la cancelación de membresía",
+          "Registros de uso del servicio: 1 año",
+          "Registros de acceso: 3 meses",
+          "Registros de consultas de clientes: 3 años"
+        ]
+      },
+      section4: {
+        title: "4. Provisión de Información Personal a Terceros",
+        content: "La Compañía no proporciona información personal de usuarios a terceros en principio. Sin embargo, se hacen excepciones en los siguientes casos:",
+        items: [
+          "Cuando el usuario ha dado consentimiento previo",
+          "Cuando hay solicitudes de agencias de investigación según procedimientos y métodos legales para propósitos de investigación"
+        ]
+      },
+      section5: {
+        title: "5. Subcontratación del Procesamiento de Información Personal",
+        content: "La Compañía puede subcontratar tareas de procesamiento de información personal a empresas externas especializadas para mejorar los servicios. Al subcontratar, se firman contratos según las leyes relevantes y se estipulan asuntos necesarios para la protección de información personal."
+      },
+      section6: {
+        title: "6. Derechos de los Usuarios",
+        content: "Los usuarios pueden ejercer los siguientes derechos en cualquier momento:",
+        items: [
+          "Solicitar notificación del estado de procesamiento de información personal",
+          "Solicitar acceso a información personal",
+          "Solicitar corrección y eliminación de información personal",
+          "Solicitar suspensión del procesamiento de información personal"
+        ]
+      },
+      section7: {
+        title: "7. Medidas Técnicas y Administrativas para la Protección de Información Personal",
+        content: "La Compañía implementa las siguientes medidas técnicas y administrativas para la protección de información personal:",
+        items: [
+          "Encriptación de información personal",
+          "Construcción de sistemas de seguridad contra hackeo",
+          "Minimización y capacitación del personal de procesamiento de información personal",
+          "Designación de oficial de protección de información personal"
+        ]
+      },
+      section8: {
+        title: "8. Oficial de Protección de Información Personal",
+        officer: "Oficial de Protección de Información Personal: Equipo de Operaciones de Purpleship",
+        contact: "Contacto: captain@purpleship.io",
+        report: "Reporte de Estado de Procesamiento: Comisión de Protección de Información Personal (privacy.go.kr)"
+      },
+      section9: {
+        title: "9. Cambios en la Política de Privacidad",
+        content: "Esta política de privacidad se aplica desde la fecha de vigencia, y cuando haya adiciones, eliminaciones y correcciones de cambios según leyes y políticas, se notificarán a través de avisos desde 7 días antes de la implementación de los cambios."
+      },
+      effectiveDate: "Fecha de Vigencia: 1 de enero de 2024",
+      lastModified: "Última Modificación: 26 de diciembre de 2024"
     }
   },
   fr: {
@@ -505,6 +593,13 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. Tous droits réservés.",
       contact: "Contact : captain@purpleship.io"
+    },
+    privacy: {
+      title: "Politique de Confidentialité",
+      subtitle: "Politique de Confidentialité Purpleship",
+      backToHome: "← Retour à l'Accueil",
+      effectiveDate: "Date d'entrée en vigueur : 1er janvier 2024",
+      lastModified: "Dernière modification : 26 décembre 2024"
     }
   },
   de: {
@@ -531,6 +626,13 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. Alle Rechte vorbehalten.",
       contact: "Kontakt: captain@purpleship.io"
+    },
+    privacy: {
+      title: "Datenschutzrichtlinie",
+      subtitle: "Purpleship Datenschutzrichtlinie",
+      backToHome: "← Zurück zur Startseite",
+      effectiveDate: "Inkrafttreten: 1. Januar 2024",
+      lastModified: "Zuletzt geändert: 26. Dezember 2024"
     }
   },
   ru: {
@@ -557,6 +659,13 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. Все права защищены.",
       contact: "Контакт: captain@purpleship.io"
+    },
+    privacy: {
+      title: "Политика Конфиденциальности",
+      subtitle: "Политика Конфиденциальности Purpleship",
+      backToHome: "← Вернуться на Главную",
+      effectiveDate: "Дата вступления в силу: 1 января 2024",
+      lastModified: "Последнее изменение: 26 декабря 2024"
     }
   },
   ar: {
