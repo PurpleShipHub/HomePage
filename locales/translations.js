@@ -41,6 +41,16 @@ const translations = {
         analytics: {
           title: "2.1 웹 분석 도구",
           content: "웹사이트 이용 통계를 위해 Google Analytics를 사용하며, 이는 익명화된 방문 데이터만을 수집합니다. 개인을 식별할 수 있는 정보는 수집되지 않습니다."
+        },
+        location: {
+          title: "2.2 위치 정보",
+          content: "앱 서비스 제공을 위해 백그라운드에서 위치 정보를 요청할 수 있습니다. 수집된 위치 정보는 다음과 같이 처리됩니다:",
+          items: [
+            "위치 정보는 오직 사용자의 기기(앱) 내에만 저장됩니다",
+            "당사 서버로 위치 데이터를 전송하거나 수집하지 않습니다",
+            "사용자가 직접 요청하는 경우에만 사용자의 Google Drive에 백업할 수 있습니다",
+            "사용자는 언제든지 위치 정보 사용을 중단하거나 삭제할 수 있습니다"
+          ]
         }
       },
       section3: {
@@ -136,6 +146,16 @@ const translations = {
         analytics: {
           title: "2.1 Web Analytics Tools",
           content: "We use Google Analytics for website usage statistics, which only collects anonymized visitor data. No personally identifiable information is collected."
+        },
+        location: {
+          title: "2.2 Location Information",
+          content: "We may request location information in the background to provide app services. Collected location information is processed as follows:",
+          items: [
+            "Location information is stored only within the user's device (app)",
+            "We do not transmit or collect location data to our servers",
+            "Backup to the user's Google Drive is only possible upon direct user request",
+            "Users can stop using or delete location information at any time"
+          ]
         }
       },
       section3: {
@@ -231,6 +251,16 @@ const translations = {
         analytics: {
           title: "2.1 网站分析工具",
           content: "我们使用Google Analytics进行网站使用统计，只收集匿名化的访问数据。不收集任何可识别个人身份的信息。"
+        },
+        location: {
+          title: "2.2 位置信息",
+          content: "为提供应用服务，我们可能在后台请求位置信息。收集的位置信息按以下方式处理：",
+          items: [
+            "位置信息仅存储在用户的设备（应用）内",
+            "我们不向服务器传输或收集位置数据",
+            "仅在用户直接请求时才能备份到用户的Google Drive",
+            "用户可随时停止位置信息使用或删除相关信息"
+          ]
         }
       },
       section3: {
@@ -326,6 +356,16 @@ const translations = {
         analytics: {
           title: "2.1 ウェブ分析ツール",
           content: "ウェブサイトの利用統計のためにGoogle Analyticsを使用しており、これは匿名化された訪問データのみを収集します。個人を特定できる情報は収集されません。"
+        },
+        location: {
+          title: "2.2 位置情報",
+          content: "アプリサービスの提供のため、バックグラウンドで位置情報を要求する場合があります。収集された位置情報は以下のように処理されます：",
+          items: [
+            "位置情報はユーザーの機器（アプリ）内にのみ保存されます",
+            "当社サーバーに位置データを送信したり収集したりしません",
+            "ユーザーが直接要求した場合のみ、ユーザーのGoogle Driveにバックアップできます",
+            "ユーザーはいつでも位置情報の使用を停止したり削除したりできます"
+          ]
         }
       },
       section3: {
