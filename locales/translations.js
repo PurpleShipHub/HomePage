@@ -23,6 +23,94 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. All rights reserved.",
       contact: "Contact: captain@purpleship.io"
+    },
+    privacy: {
+      title: "개인정보처리방침",
+      subtitle: "Purpleship Privacy Policy",
+      backToHome: "← 홈으로 돌아가기",
+      section1: {
+        title: "1. 개인정보 수집 및 이용 목적",
+        content: "Purpleship(이하 \"회사\"라 함)은 다음의 목적을 위하여 개인정보를 처리합니다.",
+        items: [
+          "서비스 제공 및 운영",
+          "이용자와의 의사소통 및 고객 서비스",
+          "서비스 개선 및 새로운 서비스 개발",
+          "법정 의무 이행 및 분쟁 해결"
+        ]
+      },
+      section2: {
+        title: "2. 개인정보 수집 항목",
+        required: {
+          title: "2.1 필수 수집 항목",
+          items: [
+            "이메일 주소",
+            "서비스 이용 기록",
+            "접속 로그, 쿠키, 접속 IP 정보"
+          ]
+        },
+        optional: {
+          title: "2.2 선택 수집 항목",
+          items: [
+            "이름 또는 닉네임",
+            "프로필 정보",
+            "기타 서비스 이용 과정에서 생성되는 정보"
+          ]
+        }
+      },
+      section3: {
+        title: "3. 개인정보 보유 및 이용 기간",
+        content: "회사는 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.",
+        items: [
+          "회원 정보: 회원 탈퇴 시까지",
+          "서비스 이용 기록: 1년",
+          "접속 로그 기록: 3개월",
+          "고객 문의 기록: 3년"
+        ]
+      },
+      section4: {
+        title: "4. 개인정보 제3자 제공",
+        content: "회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다:",
+        items: [
+          "이용자가 사전에 동의한 경우",
+          "법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우"
+        ]
+      },
+      section5: {
+        title: "5. 개인정보 처리 위탁",
+        content: "회사는 서비스 향상을 위해 개인정보 처리업무를 외부 전문업체에 위탁할 수 있습니다. 위탁 시에는 관련 법령에 따라 위탁계약을 체결하고 개인정보 보호를 위해 필요한 사항을 규정합니다."
+      },
+      section6: {
+        title: "6. 이용자의 권리",
+        content: "이용자는 언제든지 다음의 권리를 행사할 수 있습니다:",
+        items: [
+          "개인정보 처리 현황 통지 요구",
+          "개인정보 열람 요구",
+          "개인정보 정정·삭제 요구",
+          "개인정보 처리 정지 요구"
+        ]
+      },
+      section7: {
+        title: "7. 개인정보 보호를 위한 기술적·관리적 대책",
+        content: "회사는 개인정보 보호를 위해 다음의 기술적·관리적 대책을 시행하고 있습니다:",
+        items: [
+          "개인정보 암호화",
+          "해킹 등에 대비한 보안시스템 구축",
+          "개인정보 처리 직원의 최소화 및 교육",
+          "개인정보 보호책임자 지정"
+        ]
+      },
+      section8: {
+        title: "8. 개인정보 보호책임자",
+        officer: "개인정보 보호책임자: Purpleship 운영팀",
+        contact: "연락처: captain@purpleship.io",
+        report: "처리 현황 신고: 개인정보보호위원회 (privacy.go.kr)"
+      },
+      section9: {
+        title: "9. 개인정보처리방침 변경",
+        content: "이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다."
+      },
+      effectiveDate: "시행일: 2024년 1월 1일",
+      lastModified: "최종 수정일: 2024년 12월 26일"
     }
   },
   en: {
@@ -49,6 +137,94 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. All rights reserved.",
       contact: "Contact: captain@purpleship.io"
+    },
+    privacy: {
+      title: "Privacy Policy",
+      subtitle: "Purpleship Privacy Policy",
+      backToHome: "← Back to Home",
+      section1: {
+        title: "1. Purpose of Personal Information Collection and Use",
+        content: "Purpleship (hereinafter referred to as \"Company\") processes personal information for the following purposes:",
+        items: [
+          "Service provision and operation",
+          "Communication with users and customer service",
+          "Service improvement and new service development",
+          "Legal obligation fulfillment and dispute resolution"
+        ]
+      },
+      section2: {
+        title: "2. Personal Information Collection Items",
+        required: {
+          title: "2.1 Required Collection Items",
+          items: [
+            "Email address",
+            "Service usage records",
+            "Access logs, cookies, access IP information"
+          ]
+        },
+        optional: {
+          title: "2.2 Optional Collection Items",
+          items: [
+            "Name or nickname",
+            "Profile information",
+            "Other information generated during service use"
+          ]
+        }
+      },
+      section3: {
+        title: "3. Personal Information Retention and Use Period",
+        content: "The Company destroys personal information without delay after the purpose of collection and use is achieved.",
+        items: [
+          "Member information: Until membership withdrawal",
+          "Service usage records: 1 year",
+          "Access log records: 3 months",
+          "Customer inquiry records: 3 years"
+        ]
+      },
+      section4: {
+        title: "4. Provision of Personal Information to Third Parties",
+        content: "The Company does not provide users' personal information to external parties in principle. However, exceptions are made in the following cases:",
+        items: [
+          "When users have given prior consent",
+          "When requested by investigative agencies according to legal procedures and methods for investigation purposes"
+        ]
+      },
+      section5: {
+        title: "5. Personal Information Processing Outsourcing",
+        content: "The Company may outsource personal information processing tasks to external specialized companies to improve services. When outsourcing, contracts are concluded according to relevant laws and necessary matters for personal information protection are stipulated."
+      },
+      section6: {
+        title: "6. Users' Rights",
+        content: "Users can exercise the following rights at any time:",
+        items: [
+          "Request notification of personal information processing status",
+          "Request access to personal information",
+          "Request correction and deletion of personal information",
+          "Request suspension of personal information processing"
+        ]
+      },
+      section7: {
+        title: "7. Technical and Administrative Measures for Personal Information Protection",
+        content: "The Company implements the following technical and administrative measures for personal information protection:",
+        items: [
+          "Personal information encryption",
+          "Security system construction against hacking",
+          "Minimization and training of personal information processing staff",
+          "Designation of personal information protection officer"
+        ]
+      },
+      section8: {
+        title: "8. Personal Information Protection Officer",
+        officer: "Personal Information Protection Officer: Purpleship Operations Team",
+        contact: "Contact: captain@purpleship.io",
+        report: "Processing Status Report: Personal Information Protection Commission (privacy.go.kr)"
+      },
+      section9: {
+        title: "9. Changes to Privacy Policy",
+        content: "This privacy policy is applied from the effective date, and when there are additions, deletions, and corrections of changes according to laws and policies, they will be announced through notices from 7 days before the implementation of changes."
+      },
+      effectiveDate: "Effective Date: January 1, 2024",
+      lastModified: "Last Modified: December 26, 2024"
     }
   },
   zh: {
@@ -75,6 +251,94 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. 版权所有。",
       contact: "联系方式：captain@purpleship.io"
+    },
+    privacy: {
+      title: "隐私政策",
+      subtitle: "Purpleship隐私政策",
+      backToHome: "← 返回首页",
+      section1: {
+        title: "1. 个人信息收集和使用目的",
+        content: "Purpleship（以下简称"公司"）为以下目的处理个人信息：",
+        items: [
+          "服务提供和运营",
+          "与用户沟通和客户服务",
+          "服务改进和新服务开发",
+          "法定义务履行和争议解决"
+        ]
+      },
+      section2: {
+        title: "2. 个人信息收集项目",
+        required: {
+          title: "2.1 必需收集项目",
+          items: [
+            "电子邮件地址",
+            "服务使用记录",
+            "访问日志、cookies、访问IP信息"
+          ]
+        },
+        optional: {
+          title: "2.2 可选收集项目",
+          items: [
+            "姓名或昵称",
+            "个人资料信息",
+            "服务使用过程中生成的其他信息"
+          ]
+        }
+      },
+      section3: {
+        title: "3. 个人信息保留和使用期限",
+        content: "公司在个人信息收集和使用目的达成后，将立即销毁相关信息。",
+        items: [
+          "会员信息：直到会员退出",
+          "服务使用记录：1年",
+          "访问日志记录：3个月",
+          "客户咨询记录：3年"
+        ]
+      },
+      section4: {
+        title: "4. 向第三方提供个人信息",
+        content: "公司原则上不向外部提供用户的个人信息。但是，以下情况除外：",
+        items: [
+          "用户事先同意的情况",
+          "根据法律规定或为调查目的，按照法律规定的程序和方法，调查机关要求的情况"
+        ]
+      },
+      section5: {
+        title: "5. 个人信息处理委托",
+        content: "公司为提高服务质量，可能将个人信息处理业务委托给外部专业公司。委托时，根据相关法律签署委托合同，并规定个人信息保护的必要事项。"
+      },
+      section6: {
+        title: "6. 用户权利",
+        content: "用户随时可以行使以下权利：",
+        items: [
+          "要求通知个人信息处理现状",
+          "要求查看个人信息",
+          "要求更正和删除个人信息",
+          "要求停止个人信息处理"
+        ]
+      },
+      section7: {
+        title: "7. 个人信息保护的技术和管理措施",
+        content: "公司为保护个人信息，实施以下技术和管理措施：",
+        items: [
+          "个人信息加密",
+          "构建防范黑客攻击的安全系统",
+          "最小化个人信息处理人员并进行培训",
+          "指定个人信息保护负责人"
+        ]
+      },
+      section8: {
+        title: "8. 个人信息保护负责人",
+        officer: "个人信息保护负责人：Purpleship运营团队",
+        contact: "联系方式：captain@purpleship.io",
+        report: "处理现状举报：个人信息保护委员会 (privacy.go.kr)"
+      },
+      section9: {
+        title: "9. 隐私政策变更",
+        content: "本隐私政策自生效日起适用，当根据法律和政策有变更内容的添加、删除和修正时，将在变更实施前7天通过公告进行告知。"
+      },
+      effectiveDate: "生效日期：2024年1月1日",
+      lastModified: "最后修改日期：2024年12月26日"
     }
   },
   ja: {
@@ -101,6 +365,94 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. 全著作権所有。",
       contact: "連絡先：captain@purpleship.io"
+    },
+    privacy: {
+      title: "プライバシーポリシー",
+      subtitle: "Purpleshipプライバシーポリシー",
+      backToHome: "← ホームに戻る",
+      section1: {
+        title: "1. 個人情報の収集および利用目的",
+        content: "Purpleship（以下「当社」）は、以下の目的のために個人情報を処理します。",
+        items: [
+          "サービスの提供および運営",
+          "利用者とのコミュニケーションおよびカスタマーサービス",
+          "サービスの改善および新サービスの開発",
+          "法的義務の履行および紛争解決"
+        ]
+      },
+      section2: {
+        title: "2. 個人情報の収集項目",
+        required: {
+          title: "2.1 必須収集項目",
+          items: [
+            "メールアドレス",
+            "サービス利用記録",
+            "アクセスログ、クッキー、アクセスIP情報"
+          ]
+        },
+        optional: {
+          title: "2.2 選択収集項目",
+          items: [
+            "氏名またはニックネーム",
+            "プロフィール情報",
+            "その他サービス利用過程で生成される情報"
+          ]
+        }
+      },
+      section3: {
+        title: "3. 個人情報の保有および利用期間",
+        content: "当社は個人情報の収集および利用目的が達成された後、該当情報を遅滞なく破棄します。",
+        items: [
+          "会員情報：退会まで",
+          "サービス利用記録：1年",
+          "アクセスログ記録：3ヶ月",
+          "お客様お問い合わせ記録：3年"
+        ]
+      },
+      section4: {
+        title: "4. 個人情報の第三者提供",
+        content: "当社は原則として利用者の個人情報を外部に提供しません。ただし、以下の場合は例外とします：",
+        items: [
+          "利用者が事前に同意した場合",
+          "法令の規定により、または捜査目的で法令に定められた手続きと方法により捜査機関の要求がある場合"
+        ]
+      },
+      section5: {
+        title: "5. 個人情報処理の委託",
+        content: "当社はサービス向上のため、個人情報処理業務を外部専門業者に委託することがあります。委託時には関連法令に従って委託契約を締結し、個人情報保護のために必要な事項を規定します。"
+      },
+      section6: {
+        title: "6. 利用者の権利",
+        content: "利用者はいつでも以下の権利を行使することができます：",
+        items: [
+          "個人情報処理現況の通知要求",
+          "個人情報の閲覧要求",
+          "個人情報の訂正・削除要求",
+          "個人情報処理の停止要求"
+        ]
+      },
+      section7: {
+        title: "7. 個人情報保護のための技術的・管理的対策",
+        content: "当社は個人情報保護のため、以下の技術的・管理的対策を実施しています：",
+        items: [
+          "個人情報の暗号化",
+          "ハッキング等に備えたセキュリティシステムの構築",
+          "個人情報処理スタッフの最小化および教育",
+          "個人情報保護責任者の指定"
+        ]
+      },
+      section8: {
+        title: "8. 個人情報保護責任者",
+        officer: "個人情報保護責任者：Purpleship運営チーム",
+        contact: "連絡先：captain@purpleship.io",
+        report: "処理現況申告：個人情報保護委員会 (privacy.go.kr)"
+      },
+      section9: {
+        title: "9. プライバシーポリシーの変更",
+        content: "このプライバシーポリシーは施行日から適用され、法令および方針による変更内容の追加、削除および訂正がある場合には、変更事項の施行7日前から公知事項を通じて告知いたします。"
+      },
+      effectiveDate: "施行日：2024年1月1日",
+      lastModified: "最終修正日：2024年12月26日"
     }
   },
   es: {
