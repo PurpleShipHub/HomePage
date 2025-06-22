@@ -31,42 +31,22 @@ const translations = {
       backToHome: "← 홈으로 돌아가기",
       section1: {
         title: "1. 개인정보 수집 및 이용 목적",
-        content: "Purpleship(이하 \"회사\"라 함)은 다음의 목적을 위하여 개인정보를 처리합니다.",
-        items: [
-          "서비스 제공 및 운영",
-          "이용자와의 의사소통 및 고객 서비스",
-          "서비스 개선 및 새로운 서비스 개발",
-          "법정 의무 이행 및 분쟁 해결"
-        ]
+        content: "Purpleship(이하 \"회사\"라 함)은 현재 개인정보를 수집하지 않습니다.",
+        purpose: "본 웹사이트는 단순히 회사 소개 및 정보 제공을 목적으로 하는 정적 웹사이트로, 사용자의 개인정보 수집이나 처리가 필요하지 않습니다."
       },
       section2: {
         title: "2. 개인정보 수집 항목",
-        required: {
-          title: "2.1 필수 수집 항목",
-          items: [
-            "이메일 주소",
-            "서비스 이용 기록",
-            "접속 로그, 쿠키, 접속 IP 정보"
-          ]
-        },
-        optional: {
-          title: "2.2 선택 수집 항목",
-          items: [
-            "이름 또는 닉네임",
-            "프로필 정보",
-            "기타 서비스 이용 과정에서 생성되는 정보"
-          ]
+        no_collection: "Purpleship은 현재 어떠한 개인정보도 수집하지 않습니다.",
+        static_content: "본 웹사이트는 정적 콘텐츠만을 제공하며, 사용자의 개인정보를 요구하거나 저장하지 않습니다. 회원가입, 로그인, 또는 개인정보 입력 기능이 없으며, 사용자가 제공하는 정보를 수집하지 않습니다.",
+        analytics: {
+          title: "2.1 웹 분석 도구",
+          content: "웹사이트 이용 통계를 위해 Google Analytics를 사용하며, 이는 익명화된 방문 데이터만을 수집합니다. 개인을 식별할 수 있는 정보는 수집되지 않습니다."
         }
       },
       section3: {
         title: "3. 개인정보 보유 및 이용 기간",
-        content: "회사는 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.",
-        items: [
-          "회원 정보: 회원 탈퇴 시까지",
-          "서비스 이용 기록: 1년",
-          "접속 로그 기록: 3개월",
-          "고객 문의 기록: 3년"
-        ]
+        content: "Purpleship은 개인정보를 수집하지 않으므로 별도의 보유 및 이용 기간이 없습니다.",
+        analytics: "Google Analytics에서 수집되는 익명화된 데이터는 Google의 개인정보처리방침에 따라 관리됩니다."
       },
       section4: {
         title: "4. 개인정보 제3자 제공",
@@ -111,7 +91,7 @@ const translations = {
         content: "이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다."
       },
       effectiveDate: "시행일: 2024년 1월 1일",
-      lastModified: "최종 수정일: 2024년 12월 26일"
+      lastModified: "최종 수정일: 2025년 1월 8일"
     }
   },
   en: {
@@ -146,42 +126,22 @@ const translations = {
       backToHome: "← Back to Home",
       section1: {
         title: "1. Purpose of Personal Information Collection and Use",
-        content: "Purpleship (hereinafter referred to as \"Company\") processes personal information for the following purposes:",
-        items: [
-          "Service provision and operation",
-          "Communication with users and customer service",
-          "Service improvement and new service development",
-          "Legal obligation fulfillment and dispute resolution"
-        ]
+        content: "Purpleship (hereinafter referred to as \"Company\") does not currently collect any personal information.",
+        purpose: "This website is a static website that simply provides company introduction and information, and does not require the collection or processing of users' personal information."
       },
       section2: {
         title: "2. Personal Information Collection Items",
-        required: {
-          title: "2.1 Required Collection Items",
-          items: [
-            "Email address",
-            "Service usage records",
-            "Access logs, cookies, access IP information"
-          ]
-        },
-        optional: {
-          title: "2.2 Optional Collection Items",
-          items: [
-            "Name or nickname",
-            "Profile information",
-            "Other information generated during service use"
-          ]
+        no_collection: "Purpleship does not currently collect any personal information.",
+        static_content: "This website only provides static content and does not request or store users' personal information. There are no membership registration, login, or personal information input functions, and we do not collect information provided by users.",
+        analytics: {
+          title: "2.1 Web Analytics Tools",
+          content: "We use Google Analytics for website usage statistics, which only collects anonymized visitor data. No personally identifiable information is collected."
         }
       },
       section3: {
         title: "3. Personal Information Retention and Use Period",
-        content: "The Company destroys personal information without delay after the purpose of collection and use is achieved.",
-        items: [
-          "Member information: Until membership withdrawal",
-          "Service usage records: 1 year",
-          "Access log records: 3 months",
-          "Customer inquiry records: 3 years"
-        ]
+        content: "Purpleship does not collect personal information, so there is no separate retention and use period.",
+        analytics: "Anonymized data collected by Google Analytics is managed according to Google's privacy policy."
       },
       section4: {
         title: "4. Provision of Personal Information to Third Parties",
@@ -226,7 +186,7 @@ const translations = {
         content: "This privacy policy is applied from the effective date, and when there are additions, deletions, and corrections of changes according to laws and policies, they will be announced through notices from 7 days before the implementation of changes."
       },
       effectiveDate: "Effective Date: January 1, 2024",
-      lastModified: "Last Modified: December 26, 2024"
+      lastModified: "Last Modified: January 8, 2025"
     }
   },
   zh: {
@@ -261,42 +221,22 @@ const translations = {
       backToHome: "← 返回首页",
       section1: {
         title: "1. 个人信息收集和使用目的",
-        content: "Purpleship（以下简称\"公司\"）为以下目的处理个人信息：",
-        items: [
-          "服务提供和运营",
-          "与用户沟通和客户服务",
-          "服务改进和新服务开发",
-          "法定义务履行和争议解决"
-        ]
+        content: "Purpleship（以下简称\"公司\"）目前不收集任何个人信息。",
+        purpose: "本网站是一个简单提供公司介绍和信息的静态网站，不需要收集或处理用户的个人信息。"
       },
       section2: {
         title: "2. 个人信息收集项目",
-        required: {
-          title: "2.1 必需收集项目",
-          items: [
-            "电子邮件地址",
-            "服务使用记录",
-            "访问日志、cookies、访问IP信息"
-          ]
-        },
-        optional: {
-          title: "2.2 可选收集项目",
-          items: [
-            "姓名或昵称",
-            "个人资料信息",
-            "服务使用过程中生成的其他信息"
-          ]
+        no_collection: "Purpleship目前不收集任何个人信息。",
+        static_content: "本网站仅提供静态内容，不要求或存储用户的个人信息。没有会员注册、登录或个人信息输入功能，我们不收集用户提供的信息。",
+        analytics: {
+          title: "2.1 网站分析工具",
+          content: "我们使用Google Analytics进行网站使用统计，只收集匿名化的访问数据。不收集任何可识别个人身份的信息。"
         }
       },
       section3: {
         title: "3. 个人信息保留和使用期限",
-        content: "公司在个人信息收集和使用目的达成后，将立即销毁相关信息。",
-        items: [
-          "会员信息：直到会员退出",
-          "服务使用记录：1年",
-          "访问日志记录：3个月",
-          "客户咨询记录：3年"
-        ]
+        content: "Purpleship不收集个人信息，因此没有单独的保留和使用期限。",
+        analytics: "Google Analytics收集的匿名化数据按照Google的隐私政策进行管理。"
       },
       section4: {
         title: "4. 向第三方提供个人信息",
@@ -341,7 +281,7 @@ const translations = {
         content: "本隐私政策自生效日起适用，当根据法律和政策有变更内容的添加、删除和修正时，将在变更实施前7天通过公告进行告知。"
       },
       effectiveDate: "生效日期：2024年1月1日",
-      lastModified: "最后修改日期：2024年12月26日"
+      lastModified: "最后修改日期：2025年1月8日"
     }
   },
   ja: {
@@ -376,42 +316,22 @@ const translations = {
       backToHome: "← ホームに戻る",
       section1: {
         title: "1. 個人情報の収集および利用目的",
-        content: "Purpleship（以下「当社」）は、以下の目的のために個人情報を処理します。",
-        items: [
-          "サービスの提供および運営",
-          "利用者とのコミュニケーションおよびカスタマーサービス",
-          "サービスの改善および新サービスの開発",
-          "法的義務の履行および紛争解決"
-        ]
+        content: "Purpleship（以下「当社」）は現在、個人情報を一切収集しておりません。",
+        purpose: "本ウェブサイトは単純に会社紹介および情報提供を目的とする静的ウェブサイトであり、利用者の個人情報の収集や処理は必要ありません。"
       },
       section2: {
         title: "2. 個人情報の収集項目",
-        required: {
-          title: "2.1 必須収集項目",
-          items: [
-            "メールアドレス",
-            "サービス利用記録",
-            "アクセスログ、クッキー、アクセスIP情報"
-          ]
-        },
-        optional: {
-          title: "2.2 選択収集項目",
-          items: [
-            "氏名またはニックネーム",
-            "プロフィール情報",
-            "その他サービス利用過程で生成される情報"
-          ]
+        no_collection: "Purpleshipは現在、いかなる個人情報も収集しておりません。",
+        static_content: "本ウェブサイトは静的コンテンツのみを提供し、利用者の個人情報を要求したり保存したりしません。会員登録、ログイン、または個人情報入力機能はなく、利用者が提供する情報を収集いたしません。",
+        analytics: {
+          title: "2.1 ウェブ分析ツール",
+          content: "ウェブサイトの利用統計のためにGoogle Analyticsを使用しており、これは匿名化された訪問データのみを収集します。個人を特定できる情報は収集されません。"
         }
       },
       section3: {
         title: "3. 個人情報の保有および利用期間",
-        content: "当社は個人情報の収集および利用目的が達成された後、該当情報を遅滞なく破棄します。",
-        items: [
-          "会員情報：退会まで",
-          "サービス利用記録：1年",
-          "アクセスログ記録：3ヶ月",
-          "お客様お問い合わせ記録：3年"
-        ]
+        content: "Purpleshipは個人情報を収集しないため、別途の保有および利用期間はありません。",
+        analytics: "Google Analyticsで収集される匿名化されたデータは、Googleのプライバシーポリシーに従って管理されます。"
       },
       section4: {
         title: "4. 個人情報の第三者提供",
@@ -456,7 +376,7 @@ const translations = {
         content: "このプライバシーポリシーは施行日から適用され、法令および方針による変更内容の追加、削除および訂正がある場合には、変更事項の施行7日前から公知事項を通じて告知いたします。"
       },
       effectiveDate: "施行日：2024年1月1日",
-      lastModified: "最終修正日：2024年12月26日"
+      lastModified: "最終修正日：2025年1月8日"
     }
   },
   es: {
@@ -491,13 +411,8 @@ const translations = {
       backToHome: "← Volver al Inicio",
       section1: {
         title: "1. Propósito de Recolección y Uso de Información Personal",
-        content: "Purpleship (en adelante \"Compañía\") procesa información personal para los siguientes propósitos:",
-        items: [
-          "Provisión y operación de servicios",
-          "Comunicación con usuarios y servicio al cliente",
-          "Mejora de servicios y desarrollo de nuevos servicios",
-          "Cumplimiento de obligaciones legales y resolución de disputas"
-        ]
+        content: "Purpleship no recopila actualmente ninguna información personal.",
+        purpose: "Este sitio web es un sitio web estático que simplemente proporciona introducción e información de la empresa, y no requiere la recopilación o procesamiento de información personal de los usuarios."
       },
       section2: {
         title: "2. Elementos de Recolección de Información Personal",
@@ -571,7 +486,7 @@ const translations = {
         content: "Esta política de privacidad se aplica desde la fecha de vigencia, y cuando haya adiciones, eliminaciones y correcciones de cambios según leyes y políticas, se notificarán a través de avisos desde 7 días antes de la implementación de los cambios."
       },
       effectiveDate: "Fecha de Vigencia: 1 de enero de 2024",
-      lastModified: "Última Modificación: 26 de diciembre de 2024"
+      lastModified: "Última Modificación: 8 de enero de 2025"
     }
   },
   fr: {
@@ -605,7 +520,7 @@ const translations = {
       subtitle: "Politique de Confidentialité Purpleship",
       backToHome: "← Retour à l'Accueil",
       effectiveDate: "Date d'entrée en vigueur : 1er janvier 2024",
-      lastModified: "Dernière modification : 26 décembre 2024"
+      lastModified: "Dernière modification : 8 janvier 2025"
     }
   },
   de: {
@@ -639,7 +554,7 @@ const translations = {
       subtitle: "Purpleship Datenschutzrichtlinie",
       backToHome: "← Zurück zur Startseite",
       effectiveDate: "Inkrafttreten: 1. Januar 2024",
-      lastModified: "Zuletzt geändert: 26. Dezember 2024"
+      lastModified: "Zuletzt geändert: 8. Januar 2025"
     }
   },
   ru: {
