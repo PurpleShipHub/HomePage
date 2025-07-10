@@ -1,0 +1,236 @@
+# Purpleship 홈페이지 프로젝트 MDC (Model-Driven Code) 가이드라인
+
+## 🚀 프로젝트 개요
+
+### 목적
+- **Purpleship**: 세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체
+- **주요 제품**: Movit (탐험 기반 지도 앱)
+- **홈페이지 역할**: 회사 소개 및 앱 홍보, 구글 클라우드 인증 지원
+
+### 프로젝트 구조
+```
+HomePage/
+├── index.html              # 메인 홈페이지
+├── images/                 # 이미지 리소스
+│   ├── ic_movit_512_alpha.png
+│   └── ic_movit.png
+├── privacy/                # 개인정보처리방침
+├── locales/                # 다국어 지원
+├── .cursor/rules/          # 프로젝트 가이드라인
+└── 기타 SEO 파일들 (robots.txt, sitemap.xml)
+```
+
+## 🌐 다국어 지원 시스템
+
+### 필수 요구사항
+- **모든 콘텐츠는 다국어 대응이 필수**
+- 기본 언어: 한국어 (ko), 영어 (en)
+- 확장 언어: 중국어, 일본어, 스페인어, 프랑스어, 독일어, 러시아어, 아랍어, 힌디어, 베트남어
+
+### 구현 방식
+```javascript
+// 다국어 데이터 구조 예시
+const translations = {
+  ko: {
+    title: "Purpleship",
+    nav: { apps: "우리의 앱" },
+    description: { line1: "...", line2: "...", line3: "..." },
+    // ...
+  },
+  en: {
+    title: "Purpleship", 
+    nav: { apps: "Our Apps" },
+    description: { line1: "...", line2: "...", line3: "..." },
+    // ...
+  }
+};
+
+// 다국어 적용 방법
+<element data-i18n="key.subkey">기본 텍스트</element>
+```
+
+### 언어 감지 및 변경
+- 브라우저 언어 자동 감지
+- localStorage에 사용자 선택 언어 저장
+- 네비게이션 언어 선택기로 수동 변경 가능
+
+## 🎨 디자인 시스템
+
+### Apple 스타일 컴팩트 디자인
+- **컬러 팔레트**:
+  - Primary: `#1d1d1f` (다크 그레이)
+  - Secondary: `#2d2d30` (미디움 그레이)
+  - Accent Blue: `#007aff` (iOS 블루)
+  - Accent Gold: `#ff9500` (오렌지 골드)
+  - Text Primary: `#f5f5f7` (라이트 그레이)
+
+### 타이포그래피
+- **시스템 폰트**: `-apple-system, BlinkMacSystemFont, 'SF Pro Display'`
+- **한국어 폰트**: `'Noto Sans KR'`
+- **폰트 크기**: `clamp()` 함수로 반응형 크기 조정
+
+### 레이아웃
+- **섹션 기반 구조**: 전체 화면 높이(100vh) 섹션들
+- **스크롤 스냅**: 부드러운 섹션 간 이동
+- **Backdrop Filter**: 블러 효과와 반투명 배경
+
+## 🔧 기술 스택
+
+### 프론트엔드
+- **순수 HTML/CSS/JavaScript**: 외부 프레임워크 없이 경량화
+- **WebGL**: 배경 애니메이션 (vertex/fragment shader)
+- **Intersection Observer**: 섹션 활성화 감지
+- **CSS Custom Properties**: 디자인 시스템 토큰
+
+### 성능 최적화
+- **이미지 최적화**: PNG 형식, 적절한 크기
+- **CSS 최적화**: 변수 사용, 중복 제거
+- **JavaScript 최적화**: 바닐라 JS, 최소한의 DOM 조작
+
+## 📱 반응형 디자인
+
+### 브레이크포인트
+- **모바일**: `max-width: 480px`
+- **태블릿**: `max-width: 768px`
+- **데스크톱**: `1200px` 이상
+
+### 모바일 최적화
+- 네비게이션 메뉴 모바일에서 숨김
+- 이미지 크기 조정
+- 터치 친화적인 버튼 크기
+- 세로 방향 레이아웃
+
+## 🔍 SEO 최적화
+
+### 메타 태그
+- `description`: 회사 및 앱 소개 포함
+- `keywords`: 관련 키워드 포함
+- `og:*`: 소셜 미디어 공유 최적화
+- `twitter:*`: 트위터 카드 지원
+
+### 구조화된 데이터 (JSON-LD)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Movit - Smart Location-Based Task Management App"
+  }
+}
+```
+
+## 📊 애널리틱스
+
+### Google Analytics
+- 이벤트 추적: 언어 변경, 도네이션 클릭
+- 스크롤 깊이 추적
+- 사용자 행동 분석
+
+## 💰 도네이션 시스템
+
+### PayPal 통합
+- 네비게이션 도네이션 버튼
+- 다국어 지원 버튼 텍스트
+- 호버 효과 및 애니메이션
+
+## 🏗️ 컴포넌트 구조
+
+### 네비게이션
+```html
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-brand">...</div>
+    <nav class="nav-menu">...</nav>
+    <div class="nav-actions">...</div>
+  </div>
+</nav>
+```
+
+### 섹션 구조
+```html
+<div class="section" id="sec1">
+  <div class="section-content">
+    <!-- 섹션 콘텐츠 -->
+  </div>
+</div>
+```
+
+### Movit 앱 소개 섹션
+```html
+<div class="movit-container">
+  <div class="movit-icon">
+    <img src="images/ic_movit_512_alpha.png" alt="Movit App Icon" />
+  </div>
+  <div class="movit-info">
+    <!-- 앱 정보 -->
+  </div>
+</div>
+```
+
+## 🔄 개발 워크플로우
+
+### 다국어 콘텐츠 추가 시
+1. `translations` 객체에 새로운 키 추가
+2. 모든 언어에 대해 번역 추가
+3. HTML에 `data-i18n` 속성 추가
+4. 기본 텍스트는 한국어로 설정
+
+### 새로운 섹션 추가 시
+1. 섹션 HTML 구조 생성
+2. CSS 스타일 정의
+3. 다국어 텍스트 추가
+4. 애니메이션 효과 적용
+
+### 스타일 수정 시
+1. CSS 변수 우선 사용
+2. 반응형 디자인 고려
+3. 브라우저 호환성 확인
+4. 성능 영향 최소화
+
+## 🚨 주의사항
+
+### 보안
+- 외부 스크립트 최소화
+- CSP 헤더 고려
+- 사용자 입력 검증
+
+### 접근성
+- 키보드 네비게이션 지원
+- 스크린 리더 호환성
+- 색상 대비 비율 준수
+
+### 성능
+- 이미지 최적화 필수
+- CSS/JS 최소화
+- 로딩 시간 최적화
+
+## 📝 업데이트 가이드라인
+
+### 콘텐츠 업데이트
+- 새로운 앱 출시 시 앱 소개 섹션 추가
+- 회사 정보 변경 시 메타 태그 업데이트
+- 다국어 번역은 반드시 모든 언어에 적용
+
+### 기술 업데이트
+- 브라우저 호환성 정기 확인
+- 성능 모니터링 및 최적화
+- SEO 스코어 정기 점검
+
+## 🔮 미래 계획
+
+### 확장 가능성
+- 추가 앱 소개 섹션
+- 블로그 기능 추가
+- 사용자 피드백 시스템
+- 멀티미디어 콘텐츠 지원
+
+### 기술 발전
+- PWA 지원 고려
+- 다크 모드 지원
+- 더 많은 언어 지원
+- AI 기반 자동 번역
+
+---
+
+**⚠️ 중요: 모든 수정사항은 이 MDC 가이드라인을 준수해야 하며, 특히 다국어 지원은 절대 빠뜨리지 않아야 합니다.**

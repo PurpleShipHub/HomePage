@@ -6,20 +6,20 @@
     <meta name="google-site-verification" content="1eG1L01j77M2NxyvMBdswaAxv22ujS5eBKwEgviGg40" />
     <!-- SEO 메타 태그 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Purpleship은 혁신적인 아이디어로 세상에 존재하지 않는 앱을 발견하고 개발하는 단체입니다.">
-    <meta name="keywords" content="Purpleship, 앱 개발, 혁신, 스타트업, 기술 혁신, 미래 기술, 창의적 개발">
+    <meta name="description" content="Purpleship은 혁신적인 아이디어로 세상에 존재하지 않는 앱을 발견하고 개발하는 단체입니다. 탐험 기반 지도 앱 Movit을 개발하고 있습니다.">
+    <meta name="keywords" content="Purpleship, 앱 개발, 혁신, 스타트업, 기술 혁신, 미래 기술, 창의적 개발, Movit, 탐험 앱, 지도 앱, GPS 추적, 개인정보 보호">
     <meta name="author" content="Purpleship">
     
     <!-- Open Graph 태그 (소셜 미디어 공유용) -->
     <meta property="og:title" content="Purpleship - 새로운 발견">
-    <meta property="og:description" content="세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체">
+    <meta property="og:description" content="세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체. 탐험 기반 지도 앱 Movit을 개발하고 있습니다.">
     <meta property="og:image" content="https://purpleship.io/images/og-image.png">
     <meta property="og:url" content="https://purpleship.io/">
     
     <!-- Twitter 카드 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Purpleship">
-    <meta name="twitter:description" content="세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체">
+    <meta name="twitter:description" content="세상에 존재하지 않는 앱을 발견하고 개발하는 혁신적인 단체. 탐험 기반 지도 앱 Movit을 개발하고 있습니다.">
     <meta name="twitter:image" content="https://purpleship.io/images/twitter-card.png">
     
     <!-- 파비콘 -->
@@ -42,6 +42,16 @@
         "@type": "ContactPoint",
         "email": "captain@purpleship.io",
         "contactType": "customer service"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Movit - Exploration-Based Map App",
+        "description": "탐험 기반 지도 생성 모바일 애플리케이션",
+        "category": "Mobile Application",
+        "availableAtOrFrom": {
+          "@type": "Place",
+          "name": "Google Play Store, Apple App Store"
+        }
       }
     }
     </script>
@@ -65,6 +75,9 @@
       const translations = {
         ko: {
           title: "Purpleship",
+          nav: {
+            apps: "우리의 앱"
+          },
           description: {
             line1: "세상에 존재하지 않는 앱을 발견해서 개발하는 단체",
             line2: "무궁무진한 아이디어",
@@ -77,11 +90,26 @@
             line3: "상상을 현실로",
             line4: "새로운 경험을 제공하는 것이 우리의 목표입니다"
           },
+          movit: {
+            title: "우리의 제품: Movit",
+            subtitle: "탐험 기반 지도 앱",
+            description: "Movit은 실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다.",
+            features: {
+              title: "주요 기능",
+              location: "🗺️ 탐험 기반 지도 생성",
+              smart: "📍 GPS 위치 추적과 영역 해제",
+              sync: "🌟 개인 탐험 기록 저장",
+              privacy: "🔒 완전한 개인정보 보호 (서버 저장 없음)"
+            },
+            availability: "Android 및 iOS 플랫폼에서 이용 가능",
+            contact: "자세한 정보: captain@purpleship.io"
+          },
           join: {
             title: "함께하기",
             line1: "탐험의 시작",
             line2: "미지의 우주를 함께",
-            line3: "새로운 세계 발견"
+            line3: "새로운 세계 발견",
+            passionate: "열정이 넘치는 분들을 기다립니다"
           },
           donation: "도네이션하기",
           footer: {
@@ -92,6 +120,9 @@
         },
         en: {
           title: "Purpleship",
+          nav: {
+            apps: "Product"
+          },
           description: {
             line1: "We are an organization that discovers and develops apps that don't exist in the world.",
             line2: "Finding infinite ideas from the universe,",
@@ -104,17 +135,416 @@
             line3: "By implementing apps that only existed in imagination,",
             line4: "Our goal is to provide new experiences."
           },
+          movit: {
+            title: "Our Product: Movit",
+            subtitle: "Exploration-Based Map App",
+            description: "Movit is an innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures.",
+            features: {
+              title: "Key Features",
+              location: "🗺️ Exploration-based map creation",
+              smart: "📍 GPS location tracking and area unlocking",
+              sync: "🌟 Personal exploration record storage",
+              privacy: "🔒 Complete privacy protection (no server storage)"
+            },
+            availability: "Available on Android and iOS platforms",
+            contact: "For more information: captain@purpleship.io"
+          },
           join: {
             title: "Join Us",
             line1: "Our exploration is just beginning.",
             line2: "Contact us if you want to explore the unknown universe together.",
-            line3: "We welcome those who are passionate about discovering new worlds."
+            line3: "We welcome those who are passionate about discovering new worlds.",
+            passionate: "We're waiting for passionate people"
           },
           donation: "Make a Donation",
           footer: {
             copyright: "© 2025 Purpleship. All rights reserved.",
             contact: "Contact: captain@purpleship.io",
             privacy: "Privacy Policy"
+          }
+        },
+        zh: {
+          title: "Purpleship",
+          nav: { apps: "产品" },
+          description: {
+            line1: "我们是一个发现和开发世界上不存在的应用程序的组织。",
+            line2: "从宇宙中寻找无限的想法，",
+            line3: "我们的目标是创造尚不存在的东西。"
+          },
+          vision: {
+            title: "我们的愿景",
+            line1: "通过创新的想法和技术，",
+            line2: "Purpleship旨在创造打破现有框架的服务。",
+            line3: "通过实现只存在于想象中的应用程序，",
+            line4: "我们的目标是提供新体验。"
+          },
+          movit: {
+            title: "我们的产品：Movit",
+            subtitle: "探索式地图应用",
+            description: "Movit是一款创新的移动应用程序，让您探索真实世界并创建个人地图。通过GPS，您可以照亮地图上的黑暗区域，记录您的冒险足迹。",
+            features: {
+              title: "主要功能",
+              location: "🗺️ 探索式地图创建",
+              smart: "📍 GPS位置跟踪和区域解锁",
+              sync: "🌟 个人探索记录存储",
+              privacy: "🔒 完全隐私保护（无服务器存储）"
+            },
+            availability: "适用于Android和iOS平台",
+            contact: "更多信息：captain@purpleship.io"
+          },
+          join: {
+            title: "加入我们",
+            line1: "我们的探索才刚刚开始。",
+            line2: "如果您想一起探索未知宇宙，请联系我们。",
+            line3: "我们欢迎那些热衷于发现新世界的人。",
+            passionate: "我们正在等待充满热情的人们"
+          },
+          donation: "捐赠",
+          footer: {
+            copyright: "© 2025 Purpleship. 版权所有。",
+            contact: "联系方式：captain@purpleship.io",
+            privacy: "隐私政策"
+          }
+        },
+        ja: {
+          title: "Purpleship",
+          nav: { apps: "プロダクト" },
+          description: {
+            line1: "私たちは世界に存在しないアプリを発見し、開発する組織です。",
+            line2: "宇宙から無限のアイデアを見つけ、",
+            line3: "まだ存在しないものを創造することを目指しています。"
+          },
+          vision: {
+            title: "私たちのビジョン",
+            line1: "革新的なアイデアと技術を通じて、",
+            line2: "Purpleshipは既存の枠組みを破るサービスを創造することを目指しています。",
+            line3: "想像の中にしか存在しなかったアプリを実装することで、",
+            line4: "新しい体験を提供することが私たちの目標です。"
+          },
+          movit: {
+            title: "私たちの製品：Movit",
+            subtitle: "探索ベースマップアプリ",
+            description: "Movitは、現実世界を探索して個人的な地図を作成できる革新的なモバイルアプリケーションです。GPSを使用して、地図上の暗い領域を照らし、冒険の記録を残します。",
+            features: {
+              title: "主な機能",
+              location: "🗺️ 探索ベースマップ作成",
+              smart: "📍 GPS位置追跡とエリア解除",
+              sync: "🌟 個人探索記録保存",
+              privacy: "🔒 完全なプライバシー保護（サーバー保存なし）"
+            },
+            availability: "AndroidおよびiOSプラットフォームで利用可能",
+            contact: "詳細情報：captain@purpleship.io"
+          },
+          join: {
+            title: "参加する",
+            line1: "私たちの探索はまだ始まったばかりです。",
+            line2: "未知の宇宙を一緒に探索したい方は、お気軽にお問い合わせください。",
+            line3: "新しい世界の発見に情熱を持つ方を歓迎します。",
+            passionate: "情熱あふれる方々をお待ちしています"
+          },
+          donation: "寄付",
+          footer: {
+            copyright: "© 2025 Purpleship. 全著作権所有。",
+            contact: "連絡先：captain@purpleship.io",
+            privacy: "プライバシーポリシー"
+          }
+        },
+        es: {
+          title: "Purpleship",
+          nav: { apps: "Producto" },
+          description: {
+            line1: "Somos una organización que descubre y desarrolla aplicaciones que no existen en el mundo.",
+            line2: "Encontrando ideas infinitas del universo,",
+            line3: "Nuestro objetivo es crear algo que aún no existe."
+          },
+          vision: {
+            title: "Nuestra Visión",
+            line1: "A través de ideas innovadoras y tecnología,",
+            line2: "Purpleship tiene como objetivo crear servicios que rompan los marcos existentes.",
+            line3: "Al implementar aplicaciones que solo existían en la imaginación,",
+            line4: "Nuestro objetivo es brindar nuevas experiencias."
+          },
+          movit: {
+            title: "Nuestro Producto: Movit",
+            subtitle: "Aplicación de Mapa Basada en Exploración",
+            description: "Movit es una aplicación móvil innovadora que te permite explorar el mundo real y crear tu mapa personal. Usando GPS, iluminas áreas oscuras en el mapa y registras dónde has estado en tus aventuras.",
+            features: {
+              title: "Características Principales",
+              location: "🗺️ Creación de mapas basada en exploración",
+              smart: "📍 Seguimiento GPS y desbloqueo de áreas",
+              sync: "🌟 Almacenamiento de registros de exploración personal",
+              privacy: "🔒 Protección completa de privacidad (sin almacenamiento en servidor)"
+            },
+            availability: "Disponible en plataformas Android e iOS",
+            contact: "Para más información: captain@purpleship.io"
+          },
+          join: {
+            title: "Únete a Nosotros",
+            line1: "Nuestra exploración acaba de comenzar.",
+            line2: "Contáctanos si quieres explorar el universo desconocido juntos.",
+            line3: "Damos la bienvenida a aquellos apasionados por descubrir nuevos mundos.",
+            passionate: "Esperamos personas apasionadas"
+          },
+          donation: "Hacer una Donación",
+          footer: {
+            copyright: "© 2025 Purpleship. Todos los derechos reservados.",
+            contact: "Contacto: captain@purpleship.io",
+            privacy: "Política de Privacidad"
+          }
+        },
+        fr: {
+          title: "Purpleship",
+          nav: { apps: "Produit" },
+          description: {
+            line1: "Nous sommes une organisation qui découvre et développe des applications qui n'existent pas dans le monde.",
+            line2: "Trouvant des idées infinies de l'univers,",
+            line3: "Notre objectif est de créer quelque chose qui n'existe pas encore."
+          },
+          vision: {
+            title: "Notre Vision",
+            line1: "Grâce à des idées innovantes et à la technologie,",
+            line2: "Purpleship vise à créer des services qui brisent les cadres existants.",
+            line3: "En implémentant des applications qui n'existaient que dans l'imagination,",
+            line4: "Notre objectif est de fournir de nouvelles expériences."
+          },
+          movit: {
+            title: "Notre Produit : Movit",
+            subtitle: "Application de Carte Basée sur l'Exploration",
+            description: "Movit est une application mobile innovante qui vous permet d'explorer le monde réel et de créer votre carte personnelle. En utilisant le GPS, vous illuminez les zones sombres sur la carte et enregistrez où vous avez été lors de vos aventures.",
+            features: {
+              title: "Caractéristiques Principales",
+              location: "🗺️ Création de cartes basée sur l'exploration",
+              smart: "📍 Suivi GPS et déverrouillage de zones",
+              sync: "🌟 Stockage des enregistrements d'exploration personnels",
+              privacy: "🔒 Protection complète de la vie privée (pas de stockage serveur)"
+            },
+            availability: "Disponible sur les plateformes Android et iOS",
+            contact: "Pour plus d'informations : captain@purpleship.io"
+          },
+          join: {
+            title: "Rejoignez-Nous",
+            line1: "Notre exploration ne fait que commencer.",
+            line2: "Contactez-nous si vous voulez explorer l'univers inconnu ensemble.",
+            line3: "Nous accueillons ceux qui sont passionnés par la découverte de nouveaux mondes.",
+            passionate: "Nous attendons des personnes passionnées"
+          },
+          donation: "Faire un Don",
+          footer: {
+            copyright: "© 2025 Purpleship. Tous droits réservés.",
+            contact: "Contact : captain@purpleship.io",
+            privacy: "Politique de Confidentialité"
+          }
+        },
+        de: {
+          title: "Purpleship",
+          nav: { apps: "Produkt" },
+          description: {
+            line1: "Wir sind eine Organisation, die Apps entdeckt und entwickelt, die in der Welt nicht existieren.",
+            line2: "Unendliche Ideen aus dem Universum findend,",
+            line3: "Unser Ziel ist es, etwas zu schaffen, das noch nicht existiert."
+          },
+          vision: {
+            title: "Unsere Vision",
+            line1: "Durch innovative Ideen und Technologie",
+            line2: "zielt Purpleship darauf ab, Dienste zu schaffen, die bestehende Rahmen durchbrechen.",
+            line3: "Durch die Implementierung von Apps, die nur in der Vorstellung existierten,",
+            line4: "ist unser Ziel, neue Erfahrungen zu bieten."
+          },
+          movit: {
+            title: "Unser Produkt: Movit",
+            subtitle: "Erkundungsbasierte Karten-App",
+            description: "Movit ist eine innovative mobile Anwendung, mit der Sie die reale Welt erkunden und Ihre persönliche Karte erstellen können. Mit GPS beleuchten Sie dunkle Bereiche auf der Karte und zeichnen auf, wo Sie bei Ihren Abenteuern waren.",
+            features: {
+              title: "Hauptmerkmale",
+              location: "🗺️ Erkundungsbasierte Kartenerstellung",
+              smart: "📍 GPS-Standortverfolgung und Bereichsfreischaltung",
+              sync: "🌟 Persönliche Erkundungsaufzeichnungen",
+              privacy: "🔒 Vollständiger Datenschutz (keine Serverspeicherung)"
+            },
+            availability: "Verfügbar auf Android- und iOS-Plattformen",
+            contact: "Für weitere Informationen: captain@purpleship.io"
+          },
+          join: {
+            title: "Machen Sie Mit",
+            line1: "Unsere Erkundung hat gerade erst begonnen.",
+            line2: "Kontaktieren Sie uns, wenn Sie das unbekannte Universum gemeinsam erkunden möchten.",
+            line3: "Wir heißen diejenigen willkommen, die leidenschaftlich neue Welten entdecken.",
+            passionate: "Wir warten auf leidenschaftliche Menschen"
+          },
+          donation: "Spenden",
+          footer: {
+            copyright: "© 2025 Purpleship. Alle Rechte vorbehalten.",
+            contact: "Kontakt: captain@purpleship.io",
+            privacy: "Datenschutzrichtlinie"
+          }
+        },
+        ru: {
+          title: "Purpleship",
+          nav: { apps: "Продукт" },
+          description: {
+            line1: "Мы организация, которая открывает и разрабатывает приложения, не существующие в мире.",
+            line2: "Находя бесконечные идеи из вселенной,",
+            line3: "Наша цель - создать то, чего еще не существует."
+          },
+          vision: {
+            title: "Наше Видение",
+            line1: "Через инновационные идеи и технологии",
+            line2: "Purpleship стремится создавать сервисы, которые разрушают существующие рамки.",
+            line3: "Реализуя приложения, которые существовали только в воображении,",
+            line4: "наша цель - предоставить новые впечатления."
+          },
+          movit: {
+            title: "Наш Продукт: Movit",
+            subtitle: "Приложение Карт на Основе Исследований",
+            description: "Movit - это инновательное мобильное приложение, которое позволяет исследовать реальный мир и создавать личную карту. Используя GPS, вы освещаете темные области на карте и записываете, где вы были во время своих приключений.",
+            features: {
+              title: "Основные Функции",
+              location: "🗺️ Создание карт на основе исследований",
+              smart: "📍 GPS-отслеживание и разблокировка областей",
+              sync: "🌟 Хранение личных записей исследований",
+              privacy: "🔒 Полная защита конфиденциальности (без серверного хранения)"
+            },
+            availability: "Доступно на платформах Android и iOS",
+            contact: "Для получения дополнительной информации: captain@purpleship.io"
+          },
+          join: {
+            title: "Присоединяйтесь к Нам",
+            line1: "Наше исследование только началось.",
+            line2: "Свяжитесь с нами, если хотите вместе исследовать неизвестную вселенную.",
+            line3: "Мы приветствуем тех, кто увлечен открытием новых миров.",
+            passionate: "Мы ждем увлеченных людей"
+          },
+          donation: "Сделать Пожертвование",
+          footer: {
+            copyright: "© 2025 Purpleship. Все права защищены.",
+            contact: "Контакт: captain@purpleship.io",
+            privacy: "Политика Конфиденциальности"
+          }
+        },
+        ar: {
+          title: "Purpleship",
+          nav: { apps: "Product" },
+          description: {
+            line1: "نحن منظمة تكتشف وتطور التطبيقات التي لا توجد في العالم.",
+            line2: "العثور على أفكار لا نهائية من الكون،",
+            line3: "هدفنا هو إنشاء شيء لا يوجد بعد."
+          },
+          vision: {
+            title: "رؤيتنا",
+            line1: "من خلال الأفكار المبتكرة والتكنولوجيا،",
+            line2: "تهدف Purpleship إلى إنشاء خدمات تكسر الأطر الموجودة.",
+            line3: "من خلال تنفيذ التطبيقات التي كانت موجودة فقط في الخيال،",
+            line4: "هدفنا هو توفير تجارب جديدة."
+          },
+          movit: {
+            title: "منتجنا: Movit",
+            subtitle: "تطبيق خرائط قائم على الاستكشاف",
+            description: "Movit هو تطبيق محمول مبتكر يتيح لك استكشاف العالم الحقيقي وإنشاء خريطتك الشخصية. باستخدام نظام تحديد المواقع العالمي، تضيء المناطق المظلمة على الخريطة وتسجل أين كنت في مغامراتك.",
+            features: {
+              title: "الميزات الرئيسية",
+              location: "🗺️ إنشاء خرائط قائم على الاستكشاف",
+              smart: "📍 تتبع GPS وإلغاء قفل المناطق",
+              sync: "🌟 تخزين سجلات الاستكشاف الشخصية",
+              privacy: "🔒 حماية خصوصية كاملة (بدون تخزين على الخادم)"
+            },
+            availability: "متاح على منصات Android و iOS",
+            contact: "لمزيد من المعلومات: captain@purpleship.io"
+          },
+          join: {
+            title: "انضم إلينا",
+            line1: "استكشافنا بدأ للتو.",
+            line2: "اتصل بنا إذا كنت تريد استكشاف الكون المجهول معًا.",
+            line3: "نرحب بأولئك المتحمسين لاكتشاف عوالم جديدة."
+          },
+          donation: "تبرع",
+          footer: {
+            copyright: "© 2025 Purpleship. جميع الحقوق محفوظة.",
+            contact: "اتصال: captain@purpleship.io",
+            privacy: "سياسة الخصوصية"
+          }
+        },
+        hi: {
+          title: "Purpleship",
+          nav: { apps: "Product" },
+          description: {
+            line1: "हम एक संगठन हैं जो उन ऐप्स की खोज और विकास करता है जो दुनिया में मौजूद नहीं हैं।",
+            line2: "ब्रह्मांड से अनंत विचार खोजते हुए,",
+            line3: "हमका लक्ष्य कुछ ऐसा बनाना है जो अभी तक मौजूद नहीं है।"
+          },
+          vision: {
+            title: "हमारा दृष्टिकोण",
+            line1: "नवाचार विचारों और प्रौद्योगिकी के माध्यम से,",
+            line2: "Purpleship का लक्ष्य ऐसी सेवाएं बनाना है जो मौजूदा ढांचे को तोड़ें।",
+            line3: "उन ऐप्स को लागू करके जो केवल कल्पना में मौजूद थे,",
+            line4: "हमारा लक्ष्य नए अनुभव प्रदान करना है।"
+          },
+          movit: {
+            title: "हमारा उत्पाद: Movit",
+            subtitle: "अन्वेषण-आधारित मानचित्र ऐप",
+            description: "Movit एक अभिनव मोबाइल एप्लिकेशन है जो आपको वास्तविक दुनिया का अन्वेषण करने और अपना व्यक्तिगत मानचित्र बनाने की सुविधा देता है। GPS का उपयोग करके, आप मानचित्र पर अंधेरे क्षेत्रों को रोशन करते हैं और रिकॉर्ड करते हैं कि आप अपने रोमांच में कहाँ गए हैं।",
+            features: {
+              title: "मुख्य विशेषताएं",
+              location: "🗺️ अन्वेषण-आधारित मानचित्र निर्माण",
+              smart: "📍 GPS स्थान ट्रैकिंग और क्षेत्र अनलॉकिंग",
+              sync: "🌟 व्यक्तिगत अन्वेषण रिकॉर्ड भंडारण",
+              privacy: "🔒 पूर्ण गोपनीयता सुरक्षा (कोई सर्वर भंडारण नहीं)"
+            },
+            availability: "Android और iOS प्लेटफॉर्म पर उपलब्ध",
+            contact: "अधिक जानकारी के लिए: captain@purpleship.io"
+          },
+          join: {
+            title: "हमसे जुड़ें",
+            line1: "हमारी खोज अभी शुरू हुई है।",
+            line2: "अगर आप अज्ञात ब्रह्मांड की खोज एक साथ करना चाहते हैं तो हमसे संपर्क करें।",
+            line3: "हम उन लोगों का स्वागत करते हैं जो नई दुनिया की खोज के लिए जुनूनी हैं।"
+          },
+          donation: "दान करें",
+          footer: {
+            copyright: "© 2025 Purpleship. सभी अधिकार सुरक्षित।",
+            contact: "संपर्क: captain@purpleship.io",
+            privacy: "गोपनीयता नीति"
+          }
+        },
+        vi: {
+          title: "Purpleship",
+          nav: { apps: "Product" },
+          description: {
+            line1: "Chúng tôi là một tổ chức khám phá và phát triển các ứng dụng không tồn tại trên thế giới.",
+            line2: "Tìm kiếm những ý tưởng vô hạn từ vũ trụ,",
+            line3: "Mục tiêu của chúng tôi là tạo ra thứ gì đó chưa tồn tại."
+          },
+          vision: {
+            title: "Tầm Nhìn Của Chúng Tôi",
+            line1: "Thông qua những ý tưởng đổi mới và công nghệ,",
+            line2: "Purpleship hướng đến việc tạo ra các dịch vụ phá vỡ khuôn khổ hiện tại.",
+            line3: "Bằng cách triển khai các ứng dụng chỉ tồn tại trong trí tưởng tượng,",
+            line4: "mục tiêu của chúng tôi là mang đến những trải nghiệm mới."
+          },
+          movit: {
+            title: "Sản Phẩm Của Chúng Tôi: Movit",
+            subtitle: "Ứng Dụng Bản Đồ Dựa Trên Khám Phá",
+            description: "Movit là một ứng dụng di động đổi mới cho phép bạn khám phá thế giới thực và tạo bản đồ cá nhân của riêng mình. Sử dụng GPS, bạn làm sáng các khu vực tối trên bản đồ và ghi lại nơi bạn đã đến trong các cuộc phiêu lưu.",
+            features: {
+              title: "Tính Năng Chính",
+              location: "🗺️ Tạo bản đồ dựa trên khám phá",
+              smart: "📍 Theo dõi vị trí GPS và mở khóa khu vực",
+              sync: "🌟 Lưu trữ hồ sơ khám phá cá nhân",
+              privacy: "🔒 Bảo vệ quyền riêng tư hoàn toàn (không lưu trữ máy chủ)"
+            },
+            availability: "Có sẵn trên nền tảng Android và iOS",
+            contact: "Để biết thêm thông tin: captain@purpleship.io"
+          },
+          join: {
+            title: "Tham Gia Cùng Chúng Tôi",
+            line1: "Cuộc khám phá của chúng tôi mới chỉ bắt đầu.",
+            line2: "Liên hệ với chúng tôi nếu bạn muốn cùng khám phá vũ trụ chưa biết.",
+            line3: "Chúng tôi chào đón những người đam mê khám phá thế giới mới."
+          },
+          donation: "Quyên Góp",
+          footer: {
+            copyright: "© 2025 Purpleship. Tất cả quyền được bảo lưu.",
+            contact: "Liên hệ: captain@purpleship.io",
+            privacy: "Chính Sách Bảo Mật"
           }
         }
       };
@@ -404,6 +834,15 @@
           rgba(119, 60, 148, 0.2) 50%,
           rgba(139, 69, 19, 0.1) 100%
         );
+      }
+      
+      #sec4 { 
+        background: linear-gradient(
+          135deg, 
+          rgba(119, 60, 148, 0.2) 0%, 
+          rgba(139, 69, 19, 0.2) 50%,
+          rgba(164, 82, 39, 0.1) 100%
+        );
         justify-content: space-between;
         padding-bottom: 0;
       }
@@ -428,6 +867,160 @@
         font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
       }
       
+
+      /* Movit 섹션 스타일 */
+      .movit-container {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-2xl);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--spacing-xl);
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--border-radius-large);
+        backdrop-filter: var(--backdrop-blur);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: var(--shadow-medium);
+        transition: var(--transition-smooth);
+      }
+      
+      .movit-container:hover {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-heavy);
+      }
+      
+      .movit-icon {
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: var(--border-radius-large);
+        padding: var(--spacing-lg);
+        transition: var(--transition-smooth);
+      }
+      
+      .movit-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+        transition: var(--transition-smooth);
+      }
+      
+      .movit-icon:hover img {
+        transform: scale(1.05);
+        filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
+      }
+      
+      .movit-info {
+        flex: 1;
+        text-align: left;
+      }
+      
+      .movit-subtitle {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        color: var(--accent-blue);
+        font-weight: 600;
+        margin-bottom: var(--spacing-lg);
+        letter-spacing: -0.02em;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      }
+      
+      .movit-description {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.6;
+        margin-bottom: var(--spacing-xl);
+        color: var(--text-primary);
+        text-align: left;
+      }
+      
+      .movit-features {
+        margin-bottom: var(--spacing-xl);
+      }
+      
+      .movit-features h4 {
+        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+        color: var(--accent-gold);
+        font-weight: 600;
+        margin-bottom: var(--spacing-md);
+        letter-spacing: -0.02em;
+      }
+      
+      .movit-features ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .movit-features li {
+        font-size: clamp(1rem, 2vw, 1.125rem);
+        color: var(--text-primary);
+        margin-bottom: var(--spacing-sm);
+        padding-left: var(--spacing-md);
+        position: relative;
+        transition: var(--transition-smooth);
+      }
+      
+      .movit-features li:hover {
+        color: var(--accent-blue);
+        transform: translateX(4px);
+      }
+      
+      .movit-availability {
+        padding-top: var(--spacing-lg);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      .movit-availability p {
+        font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-sm);
+        text-align: left;
+      }
+      
+      .movit-availability p:last-child {
+        color: var(--accent-gold);
+        font-weight: 600;
+      }
+      
+      /* 모바일 반응형 - Movit 섹션 */
+      @media (max-width: 768px) {
+        .movit-container {
+          flex-direction: column;
+          text-align: center;
+          gap: var(--spacing-xl);
+          padding: var(--spacing-lg);
+        }
+        
+        .movit-icon {
+          width: 150px;
+          height: 150px;
+        }
+        
+        .movit-info {
+          text-align: center;
+        }
+        
+        .movit-description,
+        .movit-availability p {
+          text-align: center;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .movit-icon {
+          width: 120px;
+          height: 120px;
+        }
+        
+        .movit-container {
+          padding: var(--spacing-md);
+        }
+      }
 
       /* 뛰어난 스크롤 경험 */
       html {
@@ -540,6 +1133,46 @@
       }
       
       /* 네비게이션 오른쪽 그룹 */
+      /* 네비게이션 메뉴 */
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-lg);
+      }
+      
+      .nav-menu a {
+        color: var(--text-primary);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        transition: var(--transition-smooth);
+        position: relative;
+        padding: 8px 16px;
+        border-radius: var(--border-radius-small);
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+      }
+      
+      .nav-menu a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: var(--accent-blue);
+        transition: var(--transition-smooth);
+        transform: translateX(-50%);
+      }
+      
+      .nav-menu a:hover {
+        color: var(--accent-blue);
+        background: rgba(255, 255, 255, 0.05);
+      }
+      
+      .nav-menu a:hover::before {
+        width: 80%;
+      }
+
       .nav-actions {
         display: flex;
         align-items: center;
@@ -664,6 +1297,10 @@
         
         .brand-icon {
           font-size: 1.3rem;
+        }
+        
+        .nav-menu {
+          display: none;
         }
         
         .section {
@@ -844,6 +1481,9 @@
           <span class="brand-icon">🚀</span>
           <span class="brand-text">Purpleship</span>
         </div>
+        <nav class="nav-menu">
+          <a href="#sec3" data-i18n="nav.apps">우리의 앱</a>
+        </nav>
         <div class="nav-actions">
           <div class="language-selector">
             <select id="languageSelect" onchange="changeLanguage(this.value)">
@@ -964,8 +1604,40 @@
       <div class="subtitle" data-i18n="vision.line4">새로운 경험을 제공하는 것이 우리의 목표입니다</div>
     </div>
 
-    <!-- 세 번째 섹션 -->
+    <!-- 세 번째 섹션 - Movit 앱 소개 -->
     <div class="section" id="sec3">
+      <div class="section-content">
+        <h2 data-i18n="movit.title">우리의 제품: Movit</h2>
+        <div class="movit-container">
+          <div class="movit-icon">
+            <img src="images/ic_movit_512_alpha.png" alt="Movit App Icon" />
+          </div>
+          <div class="movit-info">
+            <h3 class="movit-subtitle" data-i18n="movit.subtitle">탐험 기반 지도 앱</h3>
+            <p class="movit-description" data-i18n="movit.description">
+              Movit은 실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. 
+              GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다.
+            </p>
+            <div class="movit-features">
+              <h4 data-i18n="movit.features.title">주요 기능</h4>
+              <ul>
+                <li data-i18n="movit.features.location">🗺️ 탐험 기반 지도 생성</li>
+                <li data-i18n="movit.features.smart">📍 GPS 위치 추적과 영역 해제</li>
+                <li data-i18n="movit.features.sync">🌟 개인 탐험 기록 저장</li>
+                <li data-i18n="movit.features.privacy">🔒 완전한 개인정보 보호 (서버 저장 없음)</li>
+              </ul>
+            </div>
+            <div class="movit-availability">
+              <p data-i18n="movit.availability">Android 및 iOS 플랫폼에서 이용 가능</p>
+              <p data-i18n="movit.contact">자세한 정보: captain@purpleship.io</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 네 번째 섹션 - 함께하기 -->
+    <div class="section" id="sec4">
       <div class="section-content">
         <h2 data-i18n="join.title">함께하기</h2>
         <p>
@@ -973,7 +1645,7 @@
           <span class="keyword" data-i18n="join.line2">미지의 우주를 함께</span>
           <span class="keyword" data-i18n="join.line3">새로운 세계 발견</span>
         </p>
-        <div class="subtitle">열정이 넘치는 분들을 기다립니다</div>
+        <div class="subtitle" data-i18n="join.passionate">열정이 넘치는 분들을 기다립니다</div>
       </div>
       
       <footer>

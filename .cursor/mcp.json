@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "sequentialthinking": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "mcp/sequentialthinking"
+      ]
+    },
+    "memMCP": {
+      "type": "sse",
+      "url": "http://15.165.61.104:8765/mcp/cursor/sse/homepage",
+      "env": {}
+    },
+    "context7": {
+      "url": "https://mcp.context7.com/mcp"
+    }
+  }
+}
