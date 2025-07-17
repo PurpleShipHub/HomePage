@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <!-- Google Search Console 인증 -->
+  <meta name="google-site-verification" content="1eG1L01j77M2NxyvMBdswaAxv22ujS5eBKwEgviGg40" />
+  <!-- SEO 메타 태그 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Movit - 탐험 기반 지도 앱. GPS를 통해 검은 영역을 밝혀나가며 자신만의 탐험 기록을 만드는 혁신적인 모바일 애플리케이션입니다.">
+  <meta name="keywords" content="Movit, 탐험 앱, 지도 앱, GPS 추적, 개인정보 보호, 모바일 앱, 탐험 기록, 위치 추적">
+  <meta name="author" content="Purpleship">
+  
+  <!-- Open Graph 태그 (소셜 미디어 공유용) -->
+  <meta property="og:title" content="Movit - 탐험 기반 지도 앱">
+  <meta property="og:description" content="GPS를 통해 검은 영역을 밝혀나가며 자신만의 탐험 기록을 만드는 혁신적인 모바일 애플리케이션">
+  <meta property="og:image" content="https://purpleship.io/images/ic_movit_512_alpha.png">
+  <meta property="og:url" content="https://purpleship.io/movit/">
+  
+  <!-- Twitter 카드 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Movit - 탐험 기반 지도 앱">
+  <meta name="twitter:description" content="GPS를 통해 검은 영역을 밝혀나가며 자신만의 탐험 기록을 만드는 혁신적인 모바일 애플리케이션">
+  <meta name="twitter:image" content="https://purpleship.io/images/ic_movit_512_alpha.png">
+  
+  <!-- 파비콘 -->
+  <link rel="icon" href="../images/ic_movit_512_alpha.png">
+  
+  <!-- 구조화된 데이터 (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Movit",
+    "description": "탐험 기반 지도 생성 모바일 애플리케이션",
+    "applicationCategory": "MapApplication",
+    "operatingSystem": "Android, iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Purpleship",
+      "url": "https://purpleship.io/"
+    }
+  }
+  </script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGB9Q3SNE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PQGB9Q3SNE');
+  </script>
+
+  <title>Movit - 탐험 기반 지도 앱</title>
+  <canvas id="bgCanvas"></canvas>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <script>
+    // 다국어 번역
+    const translations = {
+      ko: {
+        title: "Movit",
+        nav: {
+          home: "홈",
+          download: "다운로드"
+        },
+        hero: {
+          title: "Movit",
+          subtitle: "탐험 기반 지도 앱",
+          description: "실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다."
+        },
+        features: {
+          title: "주요 기능",
+          exploration: {
+            title: "탐험 기반 지도 생성",
+            description: "GPS를 활용하여 실제로 방문한 장소만 지도에서 밝혀집니다. 당신만의 고유한 탐험 지도를 만들어보세요."
+          },
+          tracking: {
+            title: "실시간 위치 추적",
+            description: "정확한 GPS 위치 추적으로 탐험한 영역을 실시간으로 해제합니다. 모든 발걸음이 기록됩니다."
+          },
+          privacy: {
+            title: "완전한 개인정보 보호",
+            description: "모든 데이터는 사용자 기기에만 저장됩니다. 회사 서버에는 어떤 개인정보도 저장되지 않습니다."
+          },
+          record: {
+            title: "개인 탐험 기록",
+            description: "탐험한 거리, 시간, 새로 발견한 영역 등을 상세히 기록하고 통계로 확인할 수 있습니다."
+          }
+        },
+        download: {
+          title: "지금 다운로드하세요",
+          description: "Android와 iOS에서 지금 바로 Movit을 다운로드하여 탐험을 시작하세요!",
+          android: "Android 다운로드",
+          ios: "iOS 다운로드",
+          comingSoon: "곧 출시 예정"
+        },
+        footer: {
+          copyright: "© 2025 Purpleship. All rights reserved.",
+          contact: "Contact: captain@purpleship.io",
+          privacy: "개인정보처리방침"
+        }
+      },
+      en: {
+        title: "Movit",
+        nav: {
+          home: "Home",
+          download: "Download"
+        },
+        hero: {
+          title: "Movit",
+          subtitle: "Exploration-Based Map App",
+          description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+        },
+        features: {
+          title: "Key Features",
+          exploration: {
+            title: "Exploration-Based Map Creation",
+            description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map."
+          },
+          tracking: {
+            title: "Real-Time Location Tracking",
+            description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded."
+          },
+          privacy: {
+            title: "Complete Privacy Protection",
+            description: "All data is stored only on your device. No personal information is stored on company servers."
+          },
+          record: {
+            title: "Personal Exploration Records",
+            description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics."
+          }
+        },
+        download: {
+          title: "Download Now",
+          description: "Download Movit now on Android and iOS to start your exploration!",
+          android: "Download for Android",
+          ios: "Download for iOS",
+          comingSoon: "Coming Soon"
+        },
+        footer: {
+          copyright: "© 2025 Purpleship. All rights reserved.",
+          contact: "Contact: captain@purpleship.io",
+          privacy: "Privacy Policy"
+        }
+      }
+    };
+  </script>
+  <style>
+    /* 기존 CSS 스타일 복사 */
+    #bgCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --primary-purple: #1d1d1f;
+      --secondary-purple: #2d2d30;
+      --tertiary-purple: #424245;
+      --accent-blue: #007aff;
+      --accent-gold: #ff9500;
+      --accent-green: #30d158;
+      --text-primary: #f5f5f7;
+      --text-secondary: #a1a1a6;
+      --text-tertiary: #86868b;
+      --surface-primary: rgba(29, 29, 31, 0.95);
+      --surface-secondary: rgba(45, 45, 48, 0.8);
+      --backdrop-blur: blur(20px);
+      --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --shadow-light: 0 2px 16px rgba(0, 0, 0, 0.12);
+      --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.24);
+      --shadow-heavy: 0 16px 64px rgba(0, 0, 0, 0.32);
+      --border-radius-small: 8px;
+      --border-radius-medium: 12px;
+      --border-radius-large: 20px;
+      --spacing-xs: 4px;
+      --spacing-sm: 8px;
+      --spacing-md: 16px;
+      --spacing-lg: 24px;
+      --spacing-xl: 32px;
+      --spacing-2xl: 48px;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    body {
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 400;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: linear-gradient(
+        135deg, 
+        var(--primary-purple) 0%,
+        var(--secondary-purple) 35%,
+        var(--tertiary-purple) 70%,
+        #773c96 100%
+      );
+      background-attachment: fixed;
+      position: relative;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .section {
+      min-height: 100vh;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      padding: var(--spacing-2xl) var(--spacing-lg);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    
+    .section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--border-radius);
+      backdrop-filter: var(--backdrop-blur);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+    
+    .section:hover::before {
+      opacity: 1;
+    }
+
+    .section.active {
+      animation: sectionSlideIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    @keyframes sectionSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 800;
+      margin-bottom: var(--spacing-2xl);
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      letter-spacing: -0.04em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      line-height: 1.1;
+    }
+    
+    h2 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      margin-bottom: var(--spacing-lg);
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      letter-spacing: -0.03em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      line-height: 1.1;
+    }
+    
+    h3 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--accent-blue);
+      font-weight: 600;
+      margin-bottom: var(--spacing-lg);
+      letter-spacing: -0.02em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    }
+    
+    p {
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 400;
+      max-width: min(90%, 900px);
+      line-height: 1.5;
+      margin-bottom: var(--spacing-2xl);
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    }
+    
+    .subtitle {
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 500;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+      margin-bottom: var(--spacing-2xl);
+      letter-spacing: -0.02em;
+    }
+
+    /* 네비게이션 */
+    .main-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--surface-primary);
+      backdrop-filter: var(--backdrop-blur);
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+      transition: var(--transition-smooth);
+      height: 64px;
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 1.125rem;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    
+    .nav-brand:hover {
+      opacity: 0.8;
+    }
+    
+    .brand-icon {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 0 8px rgba(255, 149, 0, 0.3));
+      animation: gentleFloat 3s ease-in-out infinite;
+    }
+    
+    .brand-text {
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      font-weight: 700;
+    }
+    
+    @keyframes gentleFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-2px) rotate(1deg); }
+    }
+    
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-lg);
+    }
+    
+    .nav-menu a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: var(--transition-smooth);
+      position: relative;
+      padding: 8px 16px;
+      border-radius: var(--border-radius-small);
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    }
+    
+    .nav-menu a::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--accent-blue);
+      transition: var(--transition-smooth);
+      transform: translateX(-50%);
+    }
+    
+    .nav-menu a:hover {
+      color: var(--accent-blue);
+      background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .nav-menu a:hover::before {
+      width: 80%;
+    }
+
+    .language-selector select {
+      padding: 6px 12px;
+      border-radius: var(--border-radius-small);
+      background: var(--surface-secondary);
+      backdrop-filter: var(--backdrop-blur);
+      color: var(--text-primary);
+      border: 0.5px solid rgba(255, 255, 255, 0.12);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+      outline: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    }
+
+    .language-selector select:hover {
+      background: rgba(66, 66, 69, 0.8);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Movit 아이콘 컨테이너 */
+    .movit-icon-container {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto var(--spacing-2xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--border-radius-large);
+      backdrop-filter: var(--backdrop-blur);
+      box-shadow: var(--shadow-medium);
+      transition: var(--transition-smooth);
+    }
+    
+    .movit-icon-container:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-heavy);
+    }
+    
+    .movit-icon {
+      width: 200px;
+      height: 200px;
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    }
+
+    /* 기능 그리드 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-xl);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--spacing-xl);
+    }
+    
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: var(--border-radius-large);
+      padding: var(--spacing-xl);
+      backdrop-filter: var(--backdrop-blur);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: var(--transition-smooth);
+      text-align: center;
+    }
+    
+    .feature-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-medium);
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: var(--spacing-lg);
+      display: block;
+    }
+    
+    .feature-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .feature-description {
+      font-size: 1rem;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* 다운로드 버튼들 */
+    .download-buttons {
+      display: flex;
+      gap: var(--spacing-lg);
+      justify-content: center;
+      margin-top: var(--spacing-2xl);
+      flex-wrap: wrap;
+    }
+    
+    .download-btn {
+      padding: var(--spacing-md) var(--spacing-xl);
+      border-radius: var(--border-radius-large);
+      background: linear-gradient(135deg, var(--accent-blue), #0051d5);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: var(--transition-spring);
+      box-shadow: var(--shadow-light);
+      position: relative;
+      overflow: hidden;
+      min-width: 200px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    
+    .download-btn.coming-soon,
+    .download-btn:disabled {
+      background: linear-gradient(135deg, var(--text-secondary), #666);
+      cursor: not-allowed;
+      opacity: 0.8;
+    }
+    
+    .download-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.6s ease;
+    }
+    
+    .download-btn:hover:not(.coming-soon):not(:disabled) {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: var(--shadow-medium);
+    }
+    
+    .download-btn:hover:not(.coming-soon):not(:disabled)::before {
+      left: 100%;
+    }
+
+    /* 푸터 */
+    footer {
+      width: 100%;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(
+        135deg,
+        rgba(44, 22, 90, 0.8) 0%,
+        rgba(69, 36, 108, 0.7) 100%
+      );
+      backdrop-filter: var(--backdrop-blur);
+      color: var(--text-primary);
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+    
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    }
+    
+    footer p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+    
+    footer p:hover {
+      color: #ffffff;
+    }
+    
+    footer a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    
+    footer a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-gold);
+      transition: width 0.3s ease;
+    }
+    
+    footer a:hover::after {
+      width: 100%;
+    }
+
+    /* 반응형 */
+    @media (max-width: 768px) {
+      .nav-container {
+        padding: 0.75rem 1rem;
+      }
+      
+      .section {
+        padding: 6rem 1.5rem 3rem;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-lg);
+      }
+      
+      .download-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .movit-icon-container {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .movit-icon {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="../" class="nav-brand">
+        <img src="../images/ic_movit_512_alpha.png" alt="Movit" class="brand-icon">
+        <span class="brand-text" data-i18n="title">Movit</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="../" data-i18n="nav.home">홈</a>
+        <a href="#download" data-i18n="nav.download">다운로드</a>
+      </nav>
+      <div class="language-selector">
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+          <option value="auto">🌐 Auto</option>
+          <option value="ko">🇰🇷 한국어</option>
+          <option value="en">🇺🇸 English</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 히어로 섹션 -->
+  <div class="section" id="hero">
+    <div class="movit-icon-container">
+      <img src="../images/ic_movit_512_alpha.png" alt="Movit App Icon" class="movit-icon">
+    </div>
+    <h1 data-i18n="hero.title">Movit</h1>
+    <div class="subtitle" data-i18n="hero.subtitle">탐험 기반 지도 앱</div>
+    <p data-i18n="hero.description">
+      실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. 
+      GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다.
+    </p>
+  </div>
+
+  <!-- 기능 섹션 -->
+  <div class="section" id="features">
+    <h2 data-i18n="features.title">주요 기능</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🗺️</span>
+        <h3 class="feature-title" data-i18n="features.exploration.title">탐험 기반 지도 생성</h3>
+        <p class="feature-description" data-i18n="features.exploration.description">
+          GPS를 활용하여 실제로 방문한 장소만 지도에서 밝혀집니다. 당신만의 고유한 탐험 지도를 만들어보세요.
+        </p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📍</span>
+        <h3 class="feature-title" data-i18n="features.tracking.title">실시간 위치 추적</h3>
+        <p class="feature-description" data-i18n="features.tracking.description">
+          정확한 GPS 위치 추적으로 탐험한 영역을 실시간으로 해제합니다. 모든 발걸음이 기록됩니다.
+        </p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔒</span>
+        <h3 class="feature-title" data-i18n="features.privacy.title">완전한 개인정보 보호</h3>
+        <p class="feature-description" data-i18n="features.privacy.description">
+          모든 데이터는 사용자 기기에만 저장됩니다. 회사 서버에는 어떤 개인정보도 저장되지 않습니다.
+        </p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📊</span>
+        <h3 class="feature-title" data-i18n="features.record.title">개인 탐험 기록</h3>
+        <p class="feature-description" data-i18n="features.record.description">
+          탐험한 거리, 시간, 새로 발견한 영역 등을 상세히 기록하고 통계로 확인할 수 있습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 다운로드 섹션 -->
+  <div class="section" id="download">
+    <h2 data-i18n="download.title">지금 다운로드하세요</h2>
+    <p data-i18n="download.description">
+      Android와 iOS에서 지금 바로 Movit을 다운로드하여 탐험을 시작하세요!
+    </p>
+    <div class="download-buttons">
+      <button class="download-btn coming-soon" data-i18n="download.android" disabled>Android 다운로드 (곧 출시 예정)</button>
+      <button class="download-btn coming-soon" data-i18n="download.ios" disabled>iOS 다운로드 (곧 출시 예정)</button>
+    </div>
+    
+    <footer>
+      <p>
+        <span data-i18n="footer.copyright">© 2025 Purpleship. All rights reserved.</span>
+      </p>
+      <p>
+        <span data-i18n="footer.contact">Contact: captain@purpleship.io</span>
+      </p>
+      <p>
+        <a href="../privacy/" data-i18n="footer.privacy">개인정보처리방침</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- WebGL 셰이더 스크립트들 -->
+  <script id="vertexShader" type="x-shader/x-vertex">
+    attribute vec2 position;
+    void main() {
+      gl_Position = vec4(position, 0.0, 1.0);
+    }
+  </script>
+
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec2 resolution;
+    uniform float time;
+
+    mat2 m(float a) {
+      float c = cos(a);
+      float s = sin(a);
+      return mat2(c, -s, s, c);
+    }
+
+    float map(vec3 p) {
+      p.xz *= m(time * 0.4);
+      p.xy *= m(time * 0.3);
+      vec3 q = p * 2.0 + time;
+      return length(p + vec3(sin(time * 0.7))) * log(length(p) + 1.0) + 
+             sin(q.x + sin(q.z + sin(q.y))) * 0.5 - 1.0;
+    }
+
+    void main() {
+      vec2 p = (gl_FragCoord.xy / resolution.y) - vec2(resolution.x/resolution.y * 0.5, 0.5);
+      vec3 cl = vec3(0.0);
+      float d = 2.5;
+
+      for(int i = 0; i <= 5; i++) {
+        vec3 p3 = vec3(0.0, 0.0, 5.0) + normalize(vec3(p, -1.0)) * d;
+        float rz = map(p3);
+        float f = clamp((rz - map(p3 + 0.1)) * 0.5, -0.1, 1.0);
+        vec3 l = vec3(0.1, 0.3, 0.4) + vec3(5.0, 2.5, 3.0) * f;
+        cl = cl * l + smoothstep(2.5, 0.0, rz) * 0.7 * l;
+        d += min(rz, 1.0);
+      }
+
+      gl_FragColor = vec4(cl, 1.0);
+    }
+  </script>
+
+  <script>
+    function detectLanguage() {
+      const savedLang = localStorage.getItem('preferred-language');
+      if (savedLang && translations[savedLang]) {
+        return savedLang;
+      }
+      
+      const browserLang = navigator.language.split('-')[0];
+      if (translations[browserLang]) {
+        return browserLang;
+      }
+      
+      return 'ko';
+    }
+
+    function changeLanguage(lang) {
+      if (lang === 'auto') {
+        lang = detectLanguage();
+      }
+      
+      if (!translations[lang]) {
+        lang = 'ko';
+      }
+      
+      localStorage.setItem('preferred-language', lang);
+      document.documentElement.lang = lang;
+      
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = translations[lang];
+        
+        try {
+          keys.forEach(k => {
+            value = value[k];
+          });
+          if (value) {
+            element.textContent = value;
+          }
+        } catch (error) {
+          console.error('Error setting text for key:', key, error);
+        }
+      });
+
+      // Google Analytics 이벤트
+      gtag('event', 'language_change', {
+        'language': lang
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 초기 언어 설정
+      changeLanguage(detectLanguage());
+
+      // Intersection Observer 설정
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      document.querySelectorAll('.section').forEach(section => {
+        observer.observe(section);
+      });
+
+      // WebGL 배경 애니메이션
+      const canvas = document.getElementById('bgCanvas');
+      const gl = canvas.getContext('webgl');
+      
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        gl.viewport(0, 0, canvas.width, canvas.height);
+      }
+      
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+      
+      function createShader(type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        return shader;
+      }
+      
+      const vertexShader = createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
+      const fragmentShader = createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
+      
+      const program = gl.createProgram();
+      gl.attachShader(program, vertexShader);
+      gl.attachShader(program, fragmentShader);
+      gl.linkProgram(program);
+      gl.useProgram(program);
+      
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+      
+      const position = gl.getAttribLocation(program, 'position');
+      gl.enableVertexAttribArray(position);
+      gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
+      
+      const timeLocation = gl.getUniformLocation(program, 'time');
+      const resolutionLocation = gl.getUniformLocation(program, 'resolution');
+      
+      function animate(time) {
+        time *= 0.001;
+        
+        gl.uniform1f(timeLocation, time);
+        gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+        
+        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        requestAnimationFrame(animate);
+      }
+      
+      requestAnimationFrame(animate);
+    });
+  </script>
+</body>
+</html> 
