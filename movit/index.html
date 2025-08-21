@@ -61,97 +61,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-  <script>
-    // 다국어 번역
-    const translations = {
-      ko: {
-        title: "Movit",
-        nav: {
-          home: "홈",
-          download: "다운로드"
-        },
-        hero: {
-          title: "Movit",
-          subtitle: "탐험 기반 지도 앱",
-          description: "실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다."
-        },
-        features: {
-          title: "주요 기능",
-          exploration: {
-            title: "탐험 기반 지도 생성",
-            description: "GPS를 활용하여 실제로 방문한 장소만 지도에서 밝혀집니다. 당신만의 고유한 탐험 지도를 만들어보세요."
-          },
-          tracking: {
-            title: "실시간 위치 추적",
-            description: "정확한 GPS 위치 추적으로 탐험한 영역을 실시간으로 해제합니다. 모든 발걸음이 기록됩니다."
-          },
-          privacy: {
-            title: "완전한 개인정보 보호",
-            description: "모든 데이터는 사용자 기기에만 저장됩니다. 회사 서버에는 어떤 개인정보도 저장되지 않습니다."
-          },
-          record: {
-            title: "개인 탐험 기록",
-            description: "탐험한 거리, 시간, 새로 발견한 영역 등을 상세히 기록하고 통계로 확인할 수 있습니다."
-          }
-        },
-        download: {
-          title: "지금 다운로드하세요",
-          description: "Android와 iOS에서 지금 바로 Movit을 다운로드하여 탐험을 시작하세요!",
-          android: "Android 다운로드",
-          ios: "iOS 다운로드",
-          comingSoon: "곧 출시 예정"
-        },
-        footer: {
-          copyright: "© 2025 Purpleship. All rights reserved.",
-          contact: "Contact: captain@purpleship.io",
-          privacy: "개인정보처리방침"
-        }
-      },
-      en: {
-        title: "Movit",
-        nav: {
-          home: "Home",
-          download: "Download"
-        },
-        hero: {
-          title: "Movit",
-          subtitle: "Exploration-Based Map App",
-          description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
-        },
-        features: {
-          title: "Key Features",
-          exploration: {
-            title: "Exploration-Based Map Creation",
-            description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map."
-          },
-          tracking: {
-            title: "Real-Time Location Tracking",
-            description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded."
-          },
-          privacy: {
-            title: "Complete Privacy Protection",
-            description: "All data is stored only on your device. No personal information is stored on company servers."
-          },
-          record: {
-            title: "Personal Exploration Records",
-            description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics."
-          }
-        },
-        download: {
-          title: "Download Now",
-          description: "Download Movit now on Android and iOS to start your exploration!",
-          android: "Download for Android",
-          ios: "Download for iOS",
-          comingSoon: "Coming Soon"
-        },
-        footer: {
-          copyright: "© 2025 Purpleship. All rights reserved.",
-          contact: "Contact: captain@purpleship.io",
-          privacy: "Privacy Policy"
-        }
-      }
-    };
-  </script>
+  <script src="../locales/translations.js"></script>
   <style>
     /* 기존 CSS 스타일 복사 */
     #bgCanvas {
@@ -675,7 +585,7 @@
       </a>
       <nav class="nav-menu">
         <a href="../" data-i18n="nav.home">홈</a>
-        <a href="#download" data-i18n="nav.download">다운로드</a>
+        <a href="#download" data-i18n="nav.download">설치</a>
       </nav>
       <div class="language-selector">
         <select id="languageSelect" onchange="changeLanguage(this.value)">
@@ -737,13 +647,13 @@
 
   <!-- 다운로드 섹션 -->
   <div class="section" id="download">
-    <h2 data-i18n="download.title">지금 다운로드하세요</h2>
+    <h2 data-i18n="download.title">지금 설치하세요</h2>
     <p data-i18n="download.description">
-      Android와 iOS에서 지금 바로 Movit을 다운로드하여 탐험을 시작하세요!
+      Android와 iOS에서 지금 바로 Movit을 설치하여 탐험을 시작하세요!
     </p>
     <div class="download-buttons">
-      <button class="download-btn coming-soon" data-i18n="download.android" disabled>Android 다운로드 (곧 출시 예정)</button>
-      <button class="download-btn coming-soon" data-i18n="download.ios" disabled>iOS 다운로드 (곧 출시 예정)</button>
+      <a class="download-btn" data-i18n="download.android" href="https://play.google.com/store/apps/details?id=com.purpleship.projectf" target="_blank" rel="noopener noreferrer">Android 설치</a>
+      <a class="download-btn" data-i18n="download.ios" href="https://apps.apple.com/app/id6747708096" target="_blank" rel="noopener noreferrer">iOS 설치</a>
     </div>
     
     <footer>
@@ -834,11 +744,12 @@
       document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         const keys = key.split('.');
-        let value = translations[lang];
+        const root = (translations[lang] && translations[lang].movit) || (translations['en'] && translations['en'].movit) || {};
+        let value = root;
         
         try {
           keys.forEach(k => {
-            value = value[k];
+            value = value && value[k];
           });
           if (value) {
             element.textContent = value;

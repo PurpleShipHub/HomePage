@@ -6,6 +6,34 @@ const translations = {
       line2: "우주의 무궁무진한 아이디어를 찾아내어,",
       line3: "아직 세상에 없는 무언가를 함께 만들고자 합니다."
     },
+    movit: {
+      title: "Movit",
+      nav: { home: "홈", download: "설치" },
+      hero: {
+        title: "Movit",
+        subtitle: "탐험 기반 지도 앱",
+        description: "실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다."
+      },
+      features: {
+        title: "주요 기능",
+        exploration: { title: "탐험 기반 지도 생성", description: "GPS를 활용하여 실제로 방문한 장소만 지도에서 밝혀집니다. 당신만의 고유한 탐험 지도를 만들어보세요." },
+        tracking: { title: "실시간 위치 추적", description: "정확한 GPS 위치 추적으로 탐험한 영역을 실시간으로 해제합니다. 모든 발걸음이 기록됩니다." },
+        privacy: { title: "완전한 개인정보 보호", description: "모든 데이터는 사용자 기기에만 저장됩니다. 회사 서버에는 어떤 개인정보도 저장되지 않습니다." },
+        record: { title: "개인 탐험 기록", description: "탐험한 거리, 시간, 새로 발견한 영역 등을 상세히 기록하고 통계로 확인할 수 있습니다." }
+      },
+      download: {
+        title: "지금 설치하세요",
+        description: "Android와 iOS에서 지금 바로 Movit을 설치하여 탐험을 시작하세요!",
+        android: "Android 설치",
+        ios: "iOS 설치",
+        comingSoon: "곧 출시 예정"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "개인정보처리방침"
+      }
+    },
     vision: {
       title: "우리의 비전",
       line1: "Purpleship은 혁신적인 아이디어와 기술을 통해,",
@@ -110,6 +138,34 @@ const translations = {
       line1: "We are an organization that discovers and develops apps that don't exist in the world.",
       line2: "Finding infinite ideas from the universe,",
       line3: "We aim to create something that doesn't exist yet."
+    },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
     },
     vision: {
       title: "Our Vision",
@@ -216,6 +272,34 @@ const translations = {
       line2: "从宇宙中寻找无限的创意，",
       line3: "我们致力于创造尚不存在的事物。"
     },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
+    },
     vision: {
       title: "我们的愿景",
       line1: "通过创新理念和技术，",
@@ -321,6 +405,34 @@ const translations = {
       line2: "宇宙の無限のアイデアを見つけ出し、",
       line3: "まだ世の中にない何かを一緒に作りたいと考えています。"
     },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
+    },
     vision: {
       title: "ビジョン",
       line1: "革新的なアイデアとテクノロジーを通じて、",
@@ -425,6 +537,34 @@ const translations = {
       line1: "Somos una organización que descubre y desarrolla aplicaciones que no existen en el mundo.",
       line2: "Encontrando ideas infinitas del universo,",
       line3: "Nuestro objetivo es crear algo que aún no existe."
+    },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
     },
     vision: {
       title: "Nuestra Visión",
@@ -536,6 +676,34 @@ const translations = {
       line2: "En trouvant des idées infinies de l'univers,",
       line3: "Nous visons à créer quelque chose qui n'existe pas encore."
     },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
+    },
     vision: {
       title: "Notre Vision",
       line1: "À travers des idées innovantes et la technologie,",
@@ -570,6 +738,34 @@ const translations = {
       line2: "Durch das Finden unendlicher Ideen aus dem Universum,",
       line3: "Zielen wir darauf ab, etwas zu erschaffen, das noch nicht existiert."
     },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
+    },
     vision: {
       title: "Unsere Vision",
       line1: "Durch innovative Ideen und Technologie,",
@@ -603,6 +799,34 @@ const translations = {
       line1: "Мы организация, которая открывает и разрабатывает приложения, которых нет в мире.",
       line2: "Находя бесконечные идеи из вселенной,",
       line3: "Мы стремимся создать то, чего еще не существует."
+    },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io",
+        privacy: "Privacy Policy"
+      }
     },
     vision: {
       title: "Наше Видение",
@@ -655,6 +879,33 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. جميع الحقوق محفوظة.",
       contact: "للتواصل: captain@purpleship.io"
+    },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io"
+      }
     }
   },
   hi: {
@@ -681,6 +932,33 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
       contact: "संपर्क: captain@purpleship.io"
+    },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io"
+      }
     }
   },
   vi: {
@@ -707,6 +985,33 @@ const translations = {
     footer: {
       copyright: "© 2025 Purpleship. Đã đăng ký bản quyền.",
       contact: "Liên hệ: captain@purpleship.io"
+    },
+    movit: {
+      title: "Movit",
+      nav: { home: "Home", download: "Install" },
+      hero: {
+        title: "Movit",
+        subtitle: "Exploration-Based Map App",
+        description: "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      features: {
+        title: "Key Features",
+        exploration: { title: "Exploration-Based Map Creation", description: "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map." },
+        tracking: { title: "Real-Time Location Tracking", description: "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded." },
+        privacy: { title: "Complete Privacy Protection", description: "All data is stored only on your device. No personal information is stored on company servers." },
+        record: { title: "Personal Exploration Records", description: "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics." }
+      },
+      download: {
+        title: "Install Now",
+        description: "Install Movit now on Android and iOS to start your exploration!",
+        android: "Install for Android",
+        ios: "Install for iOS",
+        comingSoon: "Coming Soon"
+      },
+      footer: {
+        copyright: "© 2025 Purpleship. All rights reserved.",
+        contact: "Contact: captain@purpleship.io"
+      }
     }
   }
 };
