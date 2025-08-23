@@ -1,6 +1,7 @@
 const translations = {
   ko: {
     title: "Purpleship",
+    nav: { apps: "우리의 앱" },
     description: {
       line1: "우리는 세상에 존재하지 않는 앱을 발견해서 개발하는 단체입니다.",
       line2: "우주의 무궁무진한 아이디어를 찾아내어,",
@@ -45,9 +46,19 @@ const translations = {
       title: "함께하기",
       line1: "우리의 탐험은 이제 시작 단계입니다.",
       line2: "미지의 우주를 함께 탐험하고 싶은 분들은 언제든 문의해주세요.",
-      line3: "새로운 세계를 발견하는 일에 열정이 넘치는 분들을 기다립니다."
+      line3: "새로운 세계를 발견하는 일에 열정이 넘치는 분들을 기다립니다.",
+      passionate: "열정이 넘치는 분들을 기다립니다"
     },
     donation: "도네이션하기",
+    qnote: {
+      hero: {
+        title: "“지금”을 위한 즉석 메모 보드",
+        description: "6자리 코드를 만들어 링크로 공유하면, 누구나 같은 공간에서 함께 메모하고 정리할 수 있습니다. 복잡한 설정 없이 빠르게 시작하고, 끝나면 깔끔하게 마무리하세요."
+      },
+      tagline: "6자리 코드를 만들어 링크로 공유하면, 누구나 같은 공간에서 함께 메모하고 정리할 수 있습니다. 복잡한 설정 없이 빠르게 시작하고, 끝나면 깔끔하게 마무리하세요.",
+      cta: "사용하기",
+      nav: { home: "홈", try: "사용하기" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. All rights reserved.",
       contact: "Contact: captain@purpleship.io",
@@ -134,6 +145,7 @@ const translations = {
   },
   en: {
     title: "Purpleship",
+    nav: { apps: "Product" },
     description: {
       line1: "We are an organization that discovers and develops apps that don't exist in the world.",
       line2: "Finding infinite ideas from the universe,",
@@ -178,9 +190,19 @@ const translations = {
       title: "Join Us",
       line1: "Our exploration is just beginning.",
       line2: "Contact us if you want to explore the unknown universe together.",
-      line3: "We welcome those who are passionate about discovering new worlds."
+      line3: "We welcome those who are passionate about discovering new worlds.",
+      passionate: "We're waiting for passionate people"
     },
     donation: "Make a Donation",
+    qnote: {
+      hero: {
+        title: "Instant memo board for “right now”",
+        description: "Create a 6-digit code and share the link so anyone can write and organize in the same space. Start fast with zero setup and wrap up clean when you’re done."
+      },
+      tagline: "Create a 6-digit code and share the link so anyone can write and organize in the same space. Start fast with zero setup and wrap up clean when you’re done.",
+      cta: "Use now",
+      nav: { home: "Home", try: "Use now" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. All rights reserved.",
       contact: "Contact: captain@purpleship.io",
@@ -267,6 +289,7 @@ const translations = {
   },
   zh: {
     title: "Purpleship",
+    nav: { apps: "产品" },
     description: {
       line1: "我们是一个发现并开发世界上不存在的应用程序的组织。",
       line2: "从宇宙中寻找无限的创意，",
@@ -311,9 +334,19 @@ const translations = {
       title: "加入我们",
       line1: "我们的探索才刚刚开始。",
       line2: "如果您想一起探索未知的宇宙，请随时联系我们。",
-      line3: "我们欢迎对发现新世界充满热情的人。"
+      line3: "我们欢迎对发现新世界充满热情的人。",
+      passionate: "我们正在等待充满热情的人们"
     },
     donation: "捐赠支持",
+    qnote: {
+      hero: {
+        title: "“此刻”的即时笔记板",
+        description: "生成6位编号并分享链接，任何人都能在同一空间共同记录与整理。无需复杂设置，立即开始，用完即可清爽收尾。"
+      },
+      tagline: "生成6位编号并分享链接，任何人都能在同一空间共同记录与整理。无需复杂设置，立即开始，用完即可清爽收尾。",
+      cta: "使用",
+      nav: { home: "首页", try: "使用" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. 版权所有。",
       contact: "联系方式：captain@purpleship.io",
@@ -400,6 +433,7 @@ const translations = {
   },
   ja: {
     title: "Purpleship",
+    nav: { apps: "プロダクト" },
     description: {
       line1: "私たちは、世界に存在しないアプリを発見し開発する団体です。",
       line2: "宇宙の無限のアイデアを見つけ出し、",
@@ -444,9 +478,19 @@ const translations = {
       title: "参加する",
       line1: "私たちの探検はまだ始まったばかりです。",
       line2: "未知の宇宙を一緒に探検したい方はいつでもご連絡ください。",
-      line3: "新しい世界の発見に情熱を持つ方をお待ちしています。"
+      line3: "新しい世界の発見に情熱を持つ方をお待ちしています。",
+      passionate: "情熱あふれる方々をお待ちしています"
     },
     donation: "寄付する",
+    qnote: {
+      hero: {
+        title: "“いま”のための即席メモボード",
+        description: "6桁コードを作成してリンクを共有すれば、誰でも同じスペースで一緒にメモして整理できます。面倒な設定なしで素早く開始し、終わったらすっきりクローズ。"
+      },
+      tagline: "6桁コードを作成してリンクを共有すれば、誰でも同じスペースで一緒にメモして整理できます。面倒な設定なしで素早く開始し、終わったらすっきりクローズ。",
+      cta: "使用する",
+      nav: { home: "ホーム", try: "使用する" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. 全著作権所有。",
       contact: "連絡先：captain@purpleship.io",
@@ -533,6 +577,7 @@ const translations = {
   },
   es: {
     title: "Purpleship",
+    nav: { apps: "Producto" },
     description: {
       line1: "Somos una organización que descubre y desarrolla aplicaciones que no existen en el mundo.",
       line2: "Encontrando ideas infinitas del universo,",
@@ -577,9 +622,19 @@ const translations = {
       title: "Únete a Nosotros",
       line1: "Nuestra exploración apenas comienza.",
       line2: "Contáctanos si quieres explorar el universo desconocido con nosotros.",
-      line3: "Damos la bienvenida a aquellos apasionados por descubrir nuevos mundos."
+      line3: "Damos la bienvenida a aquellos apasionados por descubrir nuevos mundos.",
+      passionate: "Esperamos personas apasionadas"
     },
     donation: "Hacer una Donación",
+    qnote: {
+      hero: {
+        title: "Tablero de notas instantáneo para “ahora”",
+        description: "Crea un código de 6 dígitos y comparte el enlace para que cualquiera pueda anotar y organizar en el mismo espacio. Empieza rápido sin configuraciones y termina limpio cuando acabes."
+      },
+      tagline: "Crea un código de 6 dígitos y comparte el enlace para que cualquiera pueda anotar y organizar en el mismo espacio. Empieza rápido sin configuraciones y termina limpio cuando acabes.",
+      cta: "Usar",
+      nav: { home: "Inicio", try: "Usar" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. Todos los derechos reservados.",
       contact: "Contacto: captain@purpleship.io",
@@ -671,6 +726,7 @@ const translations = {
   },
   fr: {
     title: "Purpleship",
+    nav: { apps: "Produit" },
     description: {
       line1: "Nous sommes une organisation qui découvre et développe des applications qui n'existent pas dans le monde.",
       line2: "En trouvant des idées infinies de l'univers,",
@@ -715,9 +771,19 @@ const translations = {
       title: "Rejoignez-nous",
       line1: "Notre exploration ne fait que commencer.",
       line2: "Contactez-nous si vous souhaitez explorer l'univers inconnu avec nous.",
-      line3: "Nous accueillons ceux qui sont passionnés par la découverte de nouveaux mondes."
+      line3: "Nous accueillons ceux qui sont passionnés par la découverte de nouveaux mondes.",
+      passionate: "Nous attendons des personnes passionnées"
     },
     donation: "Faire un Don",
+    qnote: {
+      hero: {
+        title: "Tableau de notes instantané pour “maintenant”",
+        description: "Créez un code à 6 chiffres et partagez le lien pour que chacun écrive et organise au même endroit. Démarrez sans réglages et terminez proprement quand c’est fini."
+      },
+      tagline: "Créez un code à 6 chiffres et partagez le lien pour que chacun écrive et organise au même endroit. Démarrez sans réglages et terminez proprement quand c’est fini.",
+      cta: "Utiliser",
+      nav: { home: "Accueil", try: "Utiliser" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. Tous droits réservés.",
       contact: "Contact : captain@purpleship.io",
@@ -733,6 +799,7 @@ const translations = {
   },
   de: {
     title: "Purpleship",
+    nav: { apps: "Produkt" },
     description: {
       line1: "Wir sind eine Organisation, die nicht existierende Apps entdeckt und entwickelt.",
       line2: "Durch das Finden unendlicher Ideen aus dem Universum,",
@@ -777,9 +844,19 @@ const translations = {
       title: "Mitmachen",
       line1: "Unsere Erkundung hat gerade erst begonnen.",
       line2: "Kontaktieren Sie uns, wenn Sie das unbekannte Universum mit uns erkunden möchten.",
-      line3: "Wir heißen alle willkommen, die leidenschaftlich neue Welten entdecken möchten."
+      line3: "Wir heißen alle willkommen, die leidenschaftlich neue Welten entdecken möchten.",
+      passionate: "Wir warten auf leidenschaftliche Menschen"
     },
     donation: "Spenden",
+    qnote: {
+      hero: {
+        title: "Sofort‑Notizboard für „jetzt“",
+        description: "Erstelle einen 6‑stelligen Code und teile den Link, damit alle im selben Bereich mitschreiben und ordnen können. Ohne Setup schnell starten und am Ende sauber abschließen."
+      },
+      tagline: "Erstelle einen 6‑stelligen Code und teile den Link, damit alle im selben Bereich mitschreiben und ordnen können. Ohne Setup schnell starten und am Ende sauber abschließen.",
+      cta: "Verwenden",
+      nav: { home: "Startseite", try: "Verwenden" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. Alle Rechte vorbehalten.",
       contact: "Kontakt: captain@purpleship.io",
@@ -795,6 +872,7 @@ const translations = {
   },
   ru: {
     title: "Purpleship",
+    nav: { apps: "Продукт" },
     description: {
       line1: "Мы организация, которая открывает и разрабатывает приложения, которых нет в мире.",
       line2: "Находя бесконечные идеи из вселенной,",
@@ -839,9 +917,19 @@ const translations = {
       title: "Присоединяйтесь",
       line1: "Наше исследование только начинается.",
       line2: "Свяжитесь с нами, если хотите вместе исследовать неизвестную вселенную.",
-      line3: "Мы приветствуем тех, кто увлечен открытием новых миров."
+      line3: "Мы приветствуем тех, кто увлечен открытием новых миров.",
+      passionate: "Мы ждем увлеченных людей"
     },
     donation: "Сделать Пожертвование",
+    qnote: {
+      hero: {
+        title: "Мгновенная доска заметок для «прямо сейчас»",
+        description: "Создайте 6‑значный код и поделитесь ссылкой — любой сможет писать и упорядочивать в одном пространстве. Никаких сложных настроек: быстро начали — легко завершили."
+      },
+      tagline: "Создайте 6‑значный код и поделитесь ссылкой — любой сможет писать и упорядочивать в одном пространстве. Никаких сложных настроек: быстро начали — легко завершили.",
+      cta: "Использовать",
+      nav: { home: "Главная", try: "Использовать" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. Все права защищены.",
       contact: "Контакт: captain@purpleship.io",
@@ -857,6 +945,7 @@ const translations = {
   },
   ar: {
     title: "Purpleship",
+    nav: { apps: "Product" },
     description: {
       line1: "نحن منظمة تكتشف وتطور تطبيقات غير موجودة في العالم.",
       line2: "من خلال إيجاد أفكار لا نهائية من الكون،",
@@ -873,12 +962,23 @@ const translations = {
       title: "انضم إلينا",
       line1: "استكشافنا يبدأ للتو.",
       line2: "اتصل بنا إذا كنت ترغب في استكشاف الكون المجهول معنا.",
-      line3: "نرحب بأولئك المتحمسين لاكتشاف عوالم جديدة."
+      line3: "نرحب بأولئك المتحمسين لاكتشاف عوالم جديدة.",
+      passionate: "نحن ننتظر الأشخاص الشغوفين"
     },
     donation: "قدم تبرعاً",
+    qnote: {
+      hero: {
+        title: "لوحة ملاحظات فورية لـ “الآن”",
+        description: "أنشئ رمزًا من 6 أرقام وشارك الرابط ليتمكن الجميع من التدوين والتنظيم في نفس المساحة. ابدأ فورًا دون إعداد معقد وأنهِ عملك بسلاسة عند الانتهاء."
+      },
+      tagline: "أنشئ رمزًا من 6 أرقام وشارك الرابط ليتمكن الجميع من التدوين والتنظيم في نفس المساحة. ابدأ فورًا دون إعداد معقد وأنهِ عملك بسلاسة عند الانتهاء.",
+      cta: "استخدم الآن",
+      nav: { home: "الرئيسية", try: "استخدم الآن" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. جميع الحقوق محفوظة.",
-      contact: "للتواصل: captain@purpleship.io"
+      contact: "للتواصل: captain@purpleship.io",
+      privacy: "سياسة الخصوصية"
     },
     movit: {
       title: "Movit",
@@ -910,6 +1010,7 @@ const translations = {
   },
   hi: {
     title: "Purpleship",
+    nav: { apps: "Product" },
     description: {
       line1: "हम एक संगठन हैं जो दुनिया में मौजूद नहीं होने वाले ऐप्स को खोजता और विकसित करता है।",
       line2: "ब्रह्मांड से अनंत विचारों को खोजते हुए,",
@@ -926,12 +1027,23 @@ const translations = {
       title: "हमसे जुड़ें",
       line1: "हमारी खोज अभी शुरू हुई है।",
       line2: "यदि आप अज्ञात ब्रह्मांड की खोज हमारे साथ करना चाहते हैं तो हमसे संपर्क करें।",
-      line3: "हम नई दुनिया की खोज के लिए उत्साहित लोगों का स्वागत करते हैं।"
+      line3: "हम नई दुनिया की खोज के लिए उत्साहित लोगों का स्वागत करते हैं।",
+      passionate: "हम उत्साही लोगों का इंतज़ार कर रहे हैं"
     },
     donation: "दान करें",
+    qnote: {
+      hero: {
+        title: "“अभी” के लिए त्वरित मेमो बोर्ड",
+        description: "6 अंकों का कोड बनाकर लिंक साझा करें और कोई भी उसी स्पेस में साथ‑साथ नोट्स लिखकर व्यवस्थित कर सकता है। बिना जटिल सेट‑अप के तुरंत शुरू करें और काम पूरा होने पर साफ‑सुथरे तरीके से समाप्त करें।"
+      },
+      tagline: "6 अंकों का कोड बनाकर लिंक साझा करें और कोई भी उसी स्पेस में साथ‑साथ नोट्स लिखकर व्यवस्थित कर सकता है। बिना जटिल सेट‑अप के तुरंत शुरू करें और काम पूरा होने पर साफ‑सुथरे तरीके से समाप्त करें।",
+      cta: "उपयोग करें",
+      nav: { home: "होम", try: "उपयोग करें" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
-      contact: "संपर्क: captain@purpleship.io"
+      contact: "संपर्क: captain@purpleship.io",
+      privacy: "गोपनीयता नीति"
     },
     movit: {
       title: "Movit",
@@ -963,6 +1075,7 @@ const translations = {
   },
   vi: {
     title: "Purpleship",
+    nav: { apps: "Product" },
     description: {
       line1: "Chúng tôi là tổ chức khám phá và phát triển các ứng dụng chưa từng tồn tại trên thế giới.",
       line2: "Tìm kiếm những ý tưởng vô hạn từ vũ trụ,",
@@ -979,12 +1092,23 @@ const translations = {
       title: "Tham Gia Cùng Chúng Tôi",
       line1: "Cuộc khám phá của chúng tôi mới chỉ bắt đầu.",
       line2: "Hãy liên hệ với chúng tôi nếu bạn muốn cùng khám phá vũ trụ chưa biết.",
-      line3: "Chúng tôi chào đón những người đam mê khám phá thế giới mới."
+      line3: "Chúng tôi chào đón những người đam mê khám phá thế giới mới.",
+      passionate: "Chúng tôi đang chờ đón những người nhiệt huyết"
     },
     donation: "Ủng Hộ",
+    qnote: {
+      hero: {
+        title: "Bảng ghi chú tức thời cho “ngay bây giờ”",
+        description: "Tạo mã 6 chữ số và chia sẻ liên kết để mọi người có thể cùng ghi chú và sắp xếp trong cùng một không gian. Bắt đầu nhanh, không cần cấu hình và kết thúc gọn gàng khi xong."
+      },
+      tagline: "Tạo mã 6 chữ số và chia sẻ liên kết để mọi người có thể cùng ghi chú và sắp xếp trong cùng một không gian. Bắt đầu nhanh, không cần cấu hình và kết thúc gọn gàng khi xong.",
+      cta: "Sử dụng",
+      nav: { home: "Trang chủ", try: "Sử dụng" }
+    },
     footer: {
       copyright: "© 2025 Purpleship. Đã đăng ký bản quyền.",
-      contact: "Liên hệ: captain@purpleship.io"
+      contact: "Liên hệ: captain@purpleship.io",
+      privacy: "Chính Sách Bảo Mật"
     },
     movit: {
       title: "Movit",
