@@ -330,25 +330,12 @@
       width: 80%;
     }
 
-    .language-selector select {
-      padding: 6px 12px;
-      border-radius: var(--border-radius-small);
-      background: var(--surface-secondary);
-      backdrop-filter: var(--backdrop-blur);
-      color: var(--text-primary);
-      border: 0.5px solid rgba(255, 255, 255, 0.12);
-      cursor: pointer;
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: var(--transition-smooth);
-      outline: none;
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
-    }
-
-    .language-selector select:hover {
-      background: rgba(66, 66, 69, 0.8);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
+    .language-selector { position: relative; }
+    .lang-button { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; height:28px; font-size:12px; color:var(--text-primary); background: var(--surface-secondary); border: .5px solid rgba(255,255,255,.12); border-radius:8px; cursor:pointer; }
+    .lang-menu { position:absolute; right:0; top:calc(100% + 6px); background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:6px; display:grid; gap:4px; min-width:140px; z-index:1001; }
+    .lang-menu[hidden] { display:none !important; }
+    .lang-menu button { text-align:left; background:transparent; color:var(--text-primary); border:none; padding:6px 8px; border-radius:6px; font-size:12px; cursor:pointer; }
+    .lang-menu button:hover { background:rgba(255,255,255,.06); }
 
     /* Movit 아이콘 컨테이너 */
     .movit-icon-container {
@@ -609,11 +596,21 @@
         <a href="#download" data-i18n="nav.download">설치</a>
       </nav>
       <div class="language-selector">
-        <select id="languageSelect" onchange="changeLanguage(this.value)">
-          <option value="auto">🌐 Auto</option>
-          <option value="ko">🇰🇷 한국어</option>
-          <option value="en">🇺🇸 English</option>
-        </select>
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="fr">🇫🇷 Français</button>
+          <button data-lang="de">🇩🇪 Deutsch</button>
+          <button data-lang="ru">🇷🇺 Русский</button>
+          <button data-lang="ar">🇸🇦 العربية</button>
+          <button data-lang="hi">🇮🇳 हिन्दी</button>
+          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -856,6 +853,34 @@
       }
       
       requestAnimationFrame(animate);
+      // Language button (qnote style)
+      const btn = document.getElementById('langBtn');
+      const menu = document.getElementById('langMenu');
+      function setLabel(lang){
+        const label = document.getElementById('langLabel');
+        if (!label) return;
+        const map = { ko:'한국어', en:'English', zh:'中文', ja:'日本語', es:'Español', fr:'Français', de:'Deutsch', ru:'Русский', ar:'العربية', hi:'हिन्दी', vi:'Tiếng Việt' };
+        label.textContent = map[lang] || 'Auto';
+      }
+      if (btn && menu) {
+        setLabel(document.documentElement.lang || 'auto');
+        btn.addEventListener('click', ()=>{
+          if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
+          else menu.setAttribute('hidden','');
+        });
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click', ()=>{
+            let lang = item.getAttribute('data-lang');
+            if (lang === 'auto') lang = detectLanguage();
+            changeLanguage(lang);
+            setLabel(lang);
+            menu.setAttribute('hidden','');
+          });
+        });
+        document.addEventListener('click', (e)=>{
+          if (!menu.contains(e.target) && !btn.contains(e.target)) menu.setAttribute('hidden','');
+        });
+      }
     });
   </script>
 </body>

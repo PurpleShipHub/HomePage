@@ -21,7 +21,11 @@
     .nav-menu a::before { content: ''; position: absolute; bottom: -2px; left: 50%; width: 0; height: 2px; background: var(--accent-blue); transition: all .28s ease; transform: translateX(-50%); }
     .nav-menu a:hover { color: var(--accent-blue); background: rgba(255,255,255,0.05); }
     .nav-menu a:hover::before { width: 80%; }
-    .language-selector select { padding: 6px 12px; border-radius: 8px; background: rgba(45,45,48,0.8); color: var(--text-primary); border: 0.5px solid rgba(255,255,255,0.12); cursor: pointer; font-size: 0.875rem; font-weight: 500; }
+    .language-selector { position: relative; }
+    .lang-button { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; height: 28px; font-size: 12px; color: var(--text-primary); background: rgba(45,45,48,.8); border: 0.5px solid rgba(255,255,255,.12); border-radius: 8px; cursor: pointer; }
+    .lang-menu { position: absolute; right: 0; top: calc(100% + 6px); background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 6px; display: grid; gap: 4px; min-width: 120px; z-index: 1001; }
+    .lang-menu button { text-align: left; background: transparent; color: var(--text-primary); border: none; padding: 6px 8px; border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .lang-menu button:hover { background: rgba(255,255,255,.06); }
     .section { min-height: calc(100vh - 64px); padding: 96px 24px 32px; display:flex; align-items:center; justify-content:center; text-align:center; }
     .card { max-width: 700px; width:100%; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 40px; text-align:center; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(0,0,0,.25); }
     h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 16px; }
@@ -41,11 +45,14 @@
         <a href="https://qnote.io" target="_blank" rel="noopener" data-i18n="qnote.nav.try">사용하기</a>
       </nav>
       <div class="language-selector">
-        <select id="languageSelect" onchange="changeLanguageQ(this.value)">
-          <option value="auto">🌐 Auto</option>
-          <option value="ko">🇰🇷 한국어</option>
-          <option value="en">🇺🇸 English</option>
-        </select>
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -77,6 +84,11 @@
         key.forEach(k=> v = v && v[k]);
         if (v) el.textContent = v;
       });
+      const label = document.getElementById('langLabel');
+      if (label) {
+        const map = { ko: '한국어', en: 'English', ja: '日本語', zh: '中文' };
+        label.textContent = map[lang] || 'Auto';
+      }
     }
     function changeLanguageQ(lang){
       if (lang === 'auto') lang = detectLanguage();
@@ -86,6 +98,25 @@
     }
     document.addEventListener('DOMContentLoaded', ()=>{
       applyI18n(detectLanguage());
+      const btn = document.getElementById('langBtn');
+      const menu = document.getElementById('langMenu');
+      if (btn && menu) {
+        btn.addEventListener('click', ()=>{
+          if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
+          else menu.setAttribute('hidden','');
+        });
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click', ()=>{
+            changeLanguageQ(item.getAttribute('data-lang'));
+            menu.setAttribute('hidden','');
+          });
+        });
+        document.addEventListener('click', (e)=>{
+          if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.setAttribute('hidden','');
+          }
+        });
+      }
     });
   </script>
 </body>
