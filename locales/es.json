@@ -1,0 +1,214 @@
+{
+    "title": "Purpleship",
+    "nav": {
+      "apps": "Productos"
+    },
+    "description": {
+      "line1": "Somos una organización que descubre y desarrolla aplicaciones que no existen en el mundo.",
+      "line2": "Encontrando ideas infinitas del universo,",
+      "line3": "Nuestro objetivo es crear algo que aún no existe."
+    },
+    "movit": {
+      "title": "Movit",
+      "nav": {
+        "home": "Inicio",
+        "download": "Descargar"
+      },
+      "hero": {
+        "title": "Movit",
+        "subtitle": "Aplicación de mapas basada en exploración",
+        "description": "Una innovadora aplicación móvil que te permite explorar el mundo real y crear tu propio mapa personal. Con el GPS iluminas las zonas oscuras del mapa y registras los lugares que visitas en tus aventuras."
+      },
+      "features": {
+        "title": "Funciones principales",
+        "exploration": {
+          "title": "Creación de mapas basada en exploración",
+          "description": "Con el GPS solo se muestran en el mapa los lugares que visitas de verdad. Crea un mapa de exploración único."
+        },
+        "tracking": {
+          "title": "Seguimiento de ubicación en tiempo real",
+          "description": "El rastreo preciso por GPS desbloquea al instante las áreas que recorres. Cada paso queda registrado."
+        },
+        "privacy": {
+          "title": "Protección total de la privacidad",
+          "description": "Todos los datos se guardan únicamente en tu dispositivo. No almacenamos información personal en nuestros servidores."
+        },
+        "record": {
+          "title": "Historial personal de exploración",
+          "description": "Registra con detalle la distancia, el tiempo y las zonas nuevas que descubres, con estadísticas completas."
+        }
+      },
+      "download": {
+        "title": "Instalar ahora",
+        "description": "Instala Movit en Android y iOS para comenzar tu exploración.",
+        "android": "Descargar para Android",
+        "ios": "Descargar para iOS",
+        "comingSoon": "Próximamente"
+      },
+      "footer": {
+        "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
+        "contact": "Contacto: captain@purpleship.io",
+        "privacy": "Política de Privacidad"
+      }
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "line1": "A través de ideas innovadoras y tecnología,",
+      "line2": "Purpleship busca crear servicios que rompan los marcos existentes.",
+      "line3": "Implementando aplicaciones que solo existían en la imaginación,",
+      "line4": "Nuestro objetivo es proporcionar nuevas experiencias."
+    },
+    "join": {
+      "title": "Únete a Nosotros",
+      "line1": "Nuestra exploración apenas comienza.",
+      "line2": "Contáctanos si quieres explorar el universo desconocido con nosotros.",
+      "line3": "Damos la bienvenida a aquellos apasionados por descubrir nuevos mundos.",
+      "passionate": "Esperamos personas apasionadas"
+    },
+    "donation": "Hacer una Donación",
+    "qnote": {
+      "hero": {
+        "title": "Tablero de notas instantáneo para “ahora”",
+        "description": "Crea un código de 6 dígitos y comparte el enlace para que cualquiera pueda anotar y organizar en el mismo espacio. Empieza rápido sin configuraciones y termina limpio cuando acabes."
+      },
+      "tagline": "Crea un código de 6 dígitos y comparte el enlace para que cualquiera pueda anotar y organizar en el mismo espacio. Empieza rápido sin configuraciones y termina limpio cuando acabes.",
+      "cta": "Usar",
+      "nav": {
+        "home": "Inicio",
+        "try": "Usar"
+      }
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
+      "contact": "Contacto: captain@purpleship.io",
+      "privacy": "Política de Privacidad"
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "subtitle": "Política de Privacidad de Purpleship",
+      "backToHome": "← Volver al inicio",
+      "section1": {
+        "title": "1. Finalidad de la recopilación y uso de datos personales",
+        "content": "Purpleship (en adelante, la \"Compañía\") no recopila actualmente ningún dato personal.",
+        "purpose": "Este sitio web es un sitio estático que solo proporciona presentación e información de la empresa, por lo que no requiere recopilar ni tratar datos personales de los usuarios."
+      },
+      "section2": {
+        "title": "2. Elementos de la recopilación de datos personales",
+        "no_collection": "Purpleship no recopila actualmente ningún dato personal.",
+        "static_content": "Este sitio web únicamente ofrece contenido estático y no solicita ni almacena la información personal de los usuarios. No hay funciones de registro, inicio de sesión ni formularios de datos personales, y no recopilamos la información que el usuario proporcione.",
+        "analytics": {
+          "title": "2.1 Herramientas de analítica web",
+          "content": "Utilizamos Google Analytics para las estadísticas de uso del sitio web, que solo recopila datos de visitantes anonimizados. No se recopila información que identifique personalmente al usuario."
+        },
+        "location": {
+          "title": "2.2 Información de ubicación",
+          "content": "Podemos solicitar información de ubicación en segundo plano para ofrecer los servicios de la app. La información recopilada se gestiona de la siguiente manera:",
+          "items": [
+            "La información de ubicación se almacena únicamente en el dispositivo del usuario (app).",
+            "No transmitimos ni recopilamos datos de ubicación en nuestros servidores.",
+            "La copia de seguridad en Google Drive del usuario solo es posible si el usuario la solicita expresamente.",
+            "El usuario puede detener o eliminar la información de ubicación en cualquier momento."
+          ]
+        }
+      },
+      "section3": {
+        "title": "3. Periodo de conservación y uso de los datos personales",
+        "content": "Como Purpleship no recopila datos personales, no existe un periodo específico de conservación y uso.",
+        "analytics": "Los datos anonimizados recopilados por Google Analytics se gestionan conforme a la política de privacidad de Google."
+      },
+      "section4": {
+        "title": "4. Cesión de datos personales a terceros",
+        "content": "La Compañía no proporciona datos personales de los usuarios a terceros, salvo en los siguientes casos:",
+        "items": [
+          "Cuando el usuario haya otorgado su consentimiento previo.",
+          "Cuando lo soliciten organismos de investigación conforme a los procedimientos y leyes aplicables con fines de investigación."
+        ]
+      },
+      "section5": {
+        "title": "5. Encargo del tratamiento de datos personales",
+        "content": "La Compañía puede encargar el tratamiento de datos personales a empresas externas especializadas para mejorar los servicios. Al hacerlo, firma contratos conforme a la legislación aplicable y especifica las medidas necesarias para proteger los datos personales."
+      },
+      "section6": {
+        "title": "6. Derechos de los usuarios",
+        "content": "Los usuarios pueden ejercer en cualquier momento los siguientes derechos:",
+        "items": [
+          "Solicitar información sobre el estado del tratamiento de sus datos personales.",
+          "Solicitar acceso a los datos personales.",
+          "Solicitar la corrección o eliminación de los datos personales.",
+          "Solicitar la suspensión del tratamiento de datos personales."
+        ]
+      },
+      "section7": {
+        "title": "7. Medidas técnicas y administrativas para la protección de datos personales",
+        "content": "La Compañía aplica las siguientes medidas técnicas y administrativas para proteger los datos personales:",
+        "items": [
+          "Cifrado de los datos personales.",
+          "Implementación de sistemas de seguridad contra ataques informáticos.",
+          "Minimización y formación del personal que trata datos personales.",
+          "Designación de un responsable de protección de datos personales."
+        ]
+      },
+      "section8": {
+        "title": "8. Responsable de protección de datos personales",
+        "officer": "Responsable de protección de datos personales: Equipo de operaciones de Purpleship",
+        "contact": "Contacto: captain@purpleship.io",
+        "report": "Órgano de reclamación: Comisión de Protección de Datos Personales (privacy.go.kr)"
+      },
+      "section9": {
+        "title": "9. Cambios de la política de privacidad",
+        "content": "Esta política de privacidad se aplica desde la fecha de entrada en vigor y, cuando se introduzcan adiciones, eliminaciones o modificaciones conforme a leyes y políticas, se anunciarán mediante avisos con al menos 7 días de antelación."
+      },
+      "effectiveDate": "Fecha de entrada en vigor: 1 de enero de 2024",
+      "lastModified": "Última modificación: 8 de enero de 2025"
+    },
+    "stampit": {
+      "title": "Stampit",
+      "nav": {
+        "home": "Inicio",
+        "download": "Descargar"
+      },
+      "hero": {
+        "title": "Stampit",
+        "subtitle": "Aplicación de gestión de membresías",
+        "description": "Una aplicación móvil inteligente para gestionar fácilmente membresías prepago, cupones y vales con usos limitados. Lleva todas tus membresías a un mismo lugar y no vuelvas a perder de vista las veces restantes."
+      },
+      "features": {
+        "title": "Funciones principales",
+        "register": {
+          "title": "Registrar y gestionar membresías",
+          "description": "Registra y administra fácilmente membresías prepago, vales y cupones en un solo lugar."
+        },
+        "check": {
+          "title": "Seguimiento de usos",
+          "description": "Marca cada visita para registrar el uso y ver el saldo restante en tiempo real."
+        },
+        "remaining": {
+          "title": "Consulta de usos restantes",
+          "description": "Observa de un vistazo cuántos usos quedan en cada membresía para evitar confusiones."
+        },
+        "integration": {
+          "title": "Gestión unificada",
+          "description": "Administra cómodamente distintos tipos de membresías y vales en una app integrada."
+        },
+        "expiry": {
+          "title": "Avisos de vencimiento",
+          "description": "Recibe alertas cuando se acerquen las fechas de caducidad y no pierdas ningún beneficio."
+        },
+        "history": {
+          "title": "Historial de uso",
+          "description": "Consulta cuándo utilizaste cada membresía y analiza tus patrones de consumo."
+        }
+      },
+      "download": {
+        "title": "Instalar ahora",
+        "description": "Instala Stampit en Android e iOS y empieza ya a gestionar tus membresías de forma inteligente.",
+        "android": "Descargar para Android",
+        "ios": "Descargar para iOS"
+      },
+      "footer": {
+        "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
+        "contact": "Contacto: captain@purpleship.io",
+        "privacy": "Política de Privacidad"
+      }
+    }
+  }

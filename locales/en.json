@@ -1,0 +1,214 @@
+{
+    "title": "Purpleship",
+    "nav": {
+      "apps": "Product"
+    },
+    "description": {
+      "line1": "We are an organization that discovers and develops apps that don't exist in the world.",
+      "line2": "Finding infinite ideas from the universe,",
+      "line3": "We aim to create something that doesn't exist yet."
+    },
+    "movit": {
+      "title": "Movit",
+      "nav": {
+        "home": "Home",
+        "download": "Install"
+      },
+      "hero": {
+        "title": "Movit",
+        "subtitle": "Exploration-Based Map App",
+        "description": "An innovative mobile application that lets you explore the real world and create your own personal map. Using GPS, you illuminate dark areas on the map and record where you've been on your adventures."
+      },
+      "features": {
+        "title": "Key Features",
+        "exploration": {
+          "title": "Exploration-Based Map Creation",
+          "description": "Using GPS, only the places you actually visit are revealed on the map. Create your own unique exploration map."
+        },
+        "tracking": {
+          "title": "Real-Time Location Tracking",
+          "description": "Precise GPS location tracking unlocks explored areas in real-time. Every step you take is recorded."
+        },
+        "privacy": {
+          "title": "Complete Privacy Protection",
+          "description": "All data is stored only on your device. No personal information is stored on company servers."
+        },
+        "record": {
+          "title": "Personal Exploration Records",
+          "description": "Detailed records of explored distance, time, and newly discovered areas with comprehensive statistics."
+        }
+      },
+      "download": {
+        "title": "Install Now",
+        "description": "Install Movit now on Android and iOS to start your exploration!",
+        "android": "Install for Android",
+        "ios": "Install for iOS",
+        "comingSoon": "Coming Soon"
+      },
+      "footer": {
+        "copyright": "© 2025 Purpleship. All rights reserved.",
+        "contact": "Contact: captain@purpleship.io",
+        "privacy": "Privacy Policy"
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "line1": "Through innovative ideas and technology,",
+      "line2": "Purpleship aims to create services that break existing frameworks.",
+      "line3": "By implementing apps that only existed in imagination,",
+      "line4": "Our goal is to provide new experiences."
+    },
+    "join": {
+      "title": "Join Us",
+      "line1": "Our exploration is just beginning.",
+      "line2": "Contact us if you want to explore the unknown universe together.",
+      "line3": "We welcome those who are passionate about discovering new worlds.",
+      "passionate": "We're waiting for passionate people"
+    },
+    "donation": "Make a Donation",
+    "stampit": {
+      "title": "Stampit",
+      "nav": {
+        "home": "Home",
+        "download": "Install"
+      },
+      "hero": {
+        "title": "Stampit",
+        "subtitle": "Membership Management App",
+        "description": "A smart mobile application for easily managing prepaid memberships, coupons, and vouchers with limited uses. Manage your complex memberships systematically in one place and never miss tracking your remaining uses."
+      },
+      "features": {
+        "title": "Key Features",
+        "register": {
+          "title": "Register & Manage Memberships",
+          "description": "Easily register and manage prepaid memberships, vouchers, and coupons in one place."
+        },
+        "check": {
+          "title": "Usage Tracking",
+          "description": "Simply check off each visit to record usage and see your remaining count in real-time."
+        },
+        "remaining": {
+          "title": "Check Remaining Uses",
+          "description": "View remaining uses for each membership at a glance, so you never get confused."
+        },
+        "integration": {
+          "title": "Unified Management",
+          "description": "Manage various types of memberships and vouchers conveniently in one integrated app."
+        },
+        "expiry": {
+          "title": "Expiry Notifications",
+          "description": "Receive alerts as expiration dates approach, so you never miss using your memberships."
+        },
+        "history": {
+          "title": "Usage History",
+          "description": "Check records of when you used which membership and analyze your usage patterns."
+        }
+      },
+      "download": {
+        "title": "Install Now",
+        "description": "Install Stampit on Android and iOS today to start managing your memberships smarter!",
+        "android": "Install for Android",
+        "ios": "Install for iOS"
+      },
+      "footer": {
+        "copyright": "© 2025 Purpleship. All rights reserved.",
+        "contact": "Contact: captain@purpleship.io",
+        "privacy": "Privacy Policy"
+      }
+    },
+    "qnote": {
+      "hero": {
+        "title": "Instant memo board for \"right now\"",
+        "description": "Create a 6-digit code and share the link so anyone can write and organize in the same space. Start fast with zero setup and wrap up clean when you're done."
+      },
+      "tagline": "Create a 6-digit code and share the link so anyone can write and organize in the same space. Start fast with zero setup and wrap up clean when you're done.",
+      "cta": "Use now",
+      "nav": {
+        "home": "Home",
+        "try": "Use now"
+      }
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. All rights reserved.",
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "Privacy Policy"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "Purpleship Privacy Policy",
+      "backToHome": "← Back to Home",
+      "section1": {
+        "title": "1. Purpose of Personal Information Collection and Use",
+        "content": "Purpleship (hereinafter referred to as \"Company\") does not currently collect any personal information.",
+        "purpose": "This website is a static website that simply provides company introduction and information, and does not require the collection or processing of users' personal information."
+      },
+      "section2": {
+        "title": "2. Personal Information Collection Items",
+        "no_collection": "Purpleship does not currently collect any personal information.",
+        "static_content": "This website only provides static content and does not request or store users' personal information. There are no membership registration, login, or personal information input functions, and we do not collect information provided by users.",
+        "analytics": {
+          "title": "2.1 Web Analytics Tools",
+          "content": "We use Google Analytics for website usage statistics, which only collects anonymized visitor data. No personally identifiable information is collected."
+        },
+        "location": {
+          "title": "2.2 Location Information",
+          "content": "We may request location information in the background to provide app services. Collected location information is processed as follows:",
+          "items": [
+            "Location information is stored only within the user's device (app)",
+            "We do not transmit or collect location data to our servers",
+            "Backup to the user's Google Drive is only possible upon direct user request",
+            "Users can stop using or delete location information at any time"
+          ]
+        }
+      },
+      "section3": {
+        "title": "3. Personal Information Retention and Use Period",
+        "content": "Purpleship does not collect personal information, so there is no separate retention and use period.",
+        "analytics": "Anonymized data collected by Google Analytics is managed according to Google's privacy policy."
+      },
+      "section4": {
+        "title": "4. Provision of Personal Information to Third Parties",
+        "content": "The Company does not provide users' personal information to external parties in principle. However, exceptions are made in the following cases:",
+        "items": [
+          "When users have given prior consent",
+          "When requested by investigative agencies according to legal procedures and methods for investigation purposes"
+        ]
+      },
+      "section5": {
+        "title": "5. Personal Information Processing Outsourcing",
+        "content": "The Company may outsource personal information processing tasks to external specialized companies to improve services. When outsourcing, contracts are concluded according to relevant laws and necessary matters for personal information protection are stipulated."
+      },
+      "section6": {
+        "title": "6. Users' Rights",
+        "content": "Users can exercise the following rights at any time:",
+        "items": [
+          "Request notification of personal information processing status",
+          "Request access to personal information",
+          "Request correction and deletion of personal information",
+          "Request suspension of personal information processing"
+        ]
+      },
+      "section7": {
+        "title": "7. Technical and Administrative Measures for Personal Information Protection",
+        "content": "The Company implements the following technical and administrative measures for personal information protection:",
+        "items": [
+          "Personal information encryption",
+          "Security system construction against hacking",
+          "Minimization and training of personal information processing staff",
+          "Designation of personal information protection officer"
+        ]
+      },
+      "section8": {
+        "title": "8. Personal Information Protection Officer",
+        "officer": "Personal Information Protection Officer: Purpleship Operations Team",
+        "contact": "Contact: captain@purpleship.io",
+        "report": "Processing Status Report: Personal Information Protection Commission (privacy.go.kr)"
+      },
+      "section9": {
+        "title": "9. Changes to Privacy Policy",
+        "content": "This privacy policy is applied from the effective date, and when there are additions, deletions, and corrections of changes according to laws and policies, they will be announced through notices from 7 days before the implementation of changes."
+      },
+      "effectiveDate": "Effective Date: January 1, 2024",
+      "lastModified": "Last Modified: January 8, 2025"
+    }
+  }

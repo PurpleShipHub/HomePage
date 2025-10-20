@@ -1,0 +1,214 @@
+{
+    "title": "Purpleship",
+    "nav": {
+      "apps": "产品"
+    },
+    "description": {
+      "line1": "我们是一个发现并开发世界上不存在的应用程序的组织。",
+      "line2": "从宇宙中寻找无限的创意，",
+      "line3": "我们致力于创造尚不存在的事物。"
+    },
+    "movit": {
+      "title": "Movit",
+      "nav": {
+        "home": "首页",
+        "download": "下载"
+      },
+      "hero": {
+        "title": "Movit",
+        "subtitle": "探索式地图应用",
+        "description": "一款创新的移动应用，让你在现实世界中探索并创建属于自己的私人地图。通过GPS点亮地图上的未知区域，记录每一次冒险的足迹。"
+      },
+      "features": {
+        "title": "核心功能",
+        "exploration": {
+          "title": "探索式地图生成",
+          "description": "依靠GPS，仅显示你亲自到访的地点，打造独一无二的探索地图。"
+        },
+        "tracking": {
+          "title": "实时位置追踪",
+          "description": "精准的GPS定位实时解锁你走过的区域，记录每一步。"
+        },
+        "privacy": {
+          "title": "全面隐私保护",
+          "description": "所有数据仅保存在你的设备中，我们的服务器不存储任何个人信息。"
+        },
+        "record": {
+          "title": "个人探索记录",
+          "description": "详细记录探索距离、时长与新发现区域，以全面统计回顾旅程。"
+        }
+      },
+      "download": {
+        "title": "立即下载",
+        "description": "立即在Android和iOS上安装Movit，开启你的探索之旅！",
+        "android": "Android 下载",
+        "ios": "iOS 下载",
+        "comingSoon": "敬请期待"
+      },
+      "footer": {
+        "copyright": "© 2025 Purpleship. 版权所有。",
+        "contact": "联系方式：captain@purpleship.io",
+        "privacy": "隐私政策"
+      }
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "line1": "通过创新理念和技术，",
+      "line2": "Purpleship旨在创建突破现有框架的服务。",
+      "line3": "通过实现仅存在于想象中的应用程序，",
+      "line4": "我们的目标是提供全新的体验。"
+    },
+    "join": {
+      "title": "加入我们",
+      "line1": "我们的探索才刚刚开始。",
+      "line2": "如果您想一起探索未知的宇宙，请随时联系我们。",
+      "line3": "我们欢迎对发现新世界充满热情的人。",
+      "passionate": "我们正在等待充满热情的人们"
+    },
+    "donation": "捐赠支持",
+    "qnote": {
+      "hero": {
+        "title": "“此刻”的即时笔记板",
+        "description": "生成6位编号并分享链接，任何人都能在同一空间共同记录与整理。无需复杂设置，立即开始，用完即可清爽收尾。"
+      },
+      "tagline": "生成6位编号并分享链接，任何人都能在同一空间共同记录与整理。无需复杂设置，立即开始，用完即可清爽收尾。",
+      "cta": "使用",
+      "nav": {
+        "home": "首页",
+        "try": "使用"
+      }
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. 版权所有。",
+      "contact": "联系方式：captain@purpleship.io",
+      "privacy": "隐私政策"
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "subtitle": "Purpleship隐私政策",
+      "backToHome": "← 返回首页",
+      "section1": {
+        "title": "1. 个人信息收集和使用目的",
+        "content": "Purpleship（以下简称\"公司\"）目前不收集任何个人信息。",
+        "purpose": "本网站是一个简单提供公司介绍和信息的静态网站，不需要收集或处理用户的个人信息。"
+      },
+      "section2": {
+        "title": "2. 个人信息收集项目",
+        "no_collection": "Purpleship目前不收集任何个人信息。",
+        "static_content": "本网站仅提供静态内容，不要求或存储用户的个人信息。没有会员注册、登录或个人信息输入功能，我们不收集用户提供的信息。",
+        "analytics": {
+          "title": "2.1 网站分析工具",
+          "content": "我们使用Google Analytics进行网站使用统计，只收集匿名化的访问数据。不收集任何可识别个人身份的信息。"
+        },
+        "location": {
+          "title": "2.2 位置信息",
+          "content": "为提供应用服务，我们可能在后台请求位置信息。收集的位置信息按以下方式处理：",
+          "items": [
+            "位置信息仅存储在用户的设备（应用）内",
+            "我们不向服务器传输或收集位置数据",
+            "仅在用户直接请求时才能备份到用户的Google Drive",
+            "用户可随时停止位置信息使用或删除相关信息"
+          ]
+        }
+      },
+      "section3": {
+        "title": "3. 个人信息保留和使用期限",
+        "content": "Purpleship不收集个人信息，因此没有单独的保留和使用期限。",
+        "analytics": "Google Analytics收集的匿名化数据按照Google的隐私政策进行管理。"
+      },
+      "section4": {
+        "title": "4. 向第三方提供个人信息",
+        "content": "公司原则上不向外部提供用户的个人信息。但是，以下情况除外：",
+        "items": [
+          "用户事先同意的情况",
+          "根据法律规定或为调查目的，按照法律规定的程序和方法，调查机关要求的情况"
+        ]
+      },
+      "section5": {
+        "title": "5. 个人信息处理委托",
+        "content": "公司为提高服务质量，可能将个人信息处理业务委托给外部专业公司。委托时，根据相关法律签署委托合同，并规定个人信息保护的必要事项。"
+      },
+      "section6": {
+        "title": "6. 用户权利",
+        "content": "用户随时可以行使以下权利：",
+        "items": [
+          "要求通知个人信息处理现状",
+          "要求查看个人信息",
+          "要求更正和删除个人信息",
+          "要求停止个人信息处理"
+        ]
+      },
+      "section7": {
+        "title": "7. 个人信息保护的技术和管理措施",
+        "content": "公司为保护个人信息，实施以下技术和管理措施：",
+        "items": [
+          "个人信息加密",
+          "构建防范黑客攻击的安全系统",
+          "最小化个人信息处理人员并进行培训",
+          "指定个人信息保护负责人"
+        ]
+      },
+      "section8": {
+        "title": "8. 个人信息保护负责人",
+        "officer": "个人信息保护负责人：Purpleship运营团队",
+        "contact": "联系方式：captain@purpleship.io",
+        "report": "处理现状举报：个人信息保护委员会 (privacy.go.kr)"
+      },
+      "section9": {
+        "title": "9. 隐私政策变更",
+        "content": "本隐私政策自生效日起适用，当根据法律和政策有变更内容的添加、删除和修正时，将在变更实施前7天通过公告进行告知。"
+      },
+      "effectiveDate": "生效日期：2024年1月1日",
+      "lastModified": "最后修改日期：2025年1月8日"
+    },
+    "stampit": {
+      "title": "Stampit",
+      "nav": {
+        "home": "首页",
+        "download": "下载"
+      },
+      "hero": {
+        "title": "Stampit",
+        "subtitle": "会员管理应用",
+        "description": "一款智能移动应用，轻松管理预付费会员、优惠券和限次票券。把复杂的会员集中管理，再也不会忘记剩余次数。"
+      },
+      "features": {
+        "title": "核心功能",
+        "register": {
+          "title": "注册并管理会员",
+          "description": "在一个地方轻松登记和管理预付费会员、票券与优惠券。"
+        },
+        "check": {
+          "title": "使用记录勾选",
+          "description": "每次到访只需轻点勾选即可记录使用情况，并实时查看剩余次数。"
+        },
+        "remaining": {
+          "title": "剩余次数总览",
+          "description": "各会员的剩余次数一目了然，再也不怕搞混。"
+        },
+        "integration": {
+          "title": "集中化管理",
+          "description": "在一个整合应用中便利管理多种会员和票券。"
+        },
+        "expiry": {
+          "title": "到期提醒",
+          "description": "到期日临近时即时通知，不错过任何使用机会。"
+        },
+        "history": {
+          "title": "使用历史",
+          "description": "查看每次使用的时间与项目，分析你的消费模式。"
+        }
+      },
+      "download": {
+        "title": "立即下载",
+        "description": "立即在 Android 和 iOS 上安装 Stampit，开始更聪明地管理会员。",
+        "android": "安装 Android 版",
+        "ios": "安装 iOS 版"
+      },
+      "footer": {
+        "copyright": "© 2025 Purpleship. 版权所有。",
+        "contact": "联系方式：captain@purpleship.io",
+        "privacy": "隐私政策"
+      }
+    }
+  }

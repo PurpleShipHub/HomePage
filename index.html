@@ -61,7 +61,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-  <script src="/locales/translations.js"></script>
+  <script src="/locales/i18n-loader.js"></script>
     <style>
       #bgCanvas {
         position: fixed;
@@ -322,31 +322,11 @@
       
 
       /* 섹션별 향상된 배경 및 레이아웃 */
-      #sec1 { 
-        background: linear-gradient(
-          135deg, 
-          rgba(44, 22, 90, 0.3) 0%, 
-          rgba(69, 36, 108, 0.2) 50%,
-          rgba(94, 48, 128, 0.1) 100%
-        );
-      }
-      
-      #sec2 { 
-        background: linear-gradient(
-          135deg, 
-          rgba(69, 36, 108, 0.2) 0%, 
-          rgba(94, 48, 128, 0.2) 50%,
-          rgba(119, 60, 148, 0.1) 100%
-        );
+      #sec1, #sec2, #sec3 { 
+        background: transparent;
       }
       
       #sec3 { 
-        background: linear-gradient(
-          135deg, 
-          rgba(119, 60, 148, 0.2) 0%, 
-          rgba(139, 69, 19, 0.2) 50%,
-          rgba(164, 82, 39, 0.1) 100%
-        );
         justify-content: space-between;
         padding-bottom: 0;
       }
@@ -866,70 +846,8 @@
   </nav>
 
     <script>
-      function detectLanguage() {
-        console.log('Browser language:', navigator.language);
-        const savedLang = localStorage.getItem('preferred-language');
-        console.log('Saved language:', savedLang);
-        
-        if (savedLang && translations[savedLang]) {
-          console.log('Using saved language:', savedLang);
-          return savedLang;
-        }
-        
-        const browserLang = navigator.language.split('-')[0];
-        console.log('Detected browser language:', browserLang);
-        console.log('Available translations:', Object.keys(translations));
-        
-        if (translations[browserLang]) {
-          console.log('Using browser language:', browserLang);
-          return browserLang;
-        }
-        
-        console.log('Falling back to English');
-        return 'en';
-      }
-
-      function changeLanguage(lang) {
-        console.log('Changing language to:', lang);
-        if (lang === 'auto') {
-          lang = detectLanguage();
-        }
-        
-        if (!translations[lang]) {
-          console.log('Language not supported:', lang, 'falling back to English');
-          lang = 'en';
-        }
-        
-        localStorage.setItem('preferred-language', lang);
-        document.documentElement.lang = lang;
-        
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-          const key = element.getAttribute('data-i18n');
-          const keys = key.split('.');
-          let value = translations[lang];
-          console.log('Processing element:', element, 'with key:', key);
-          
-          try {
-            keys.forEach(k => {
-              value = value[k];
-            });
-            if (value) {
-              if (element.tagName === 'INPUT' && element.type === 'submit') {
-                element.value = value;
-              } else {
-                element.textContent = value;
-              }
-            }
-          } catch (error) {
-            console.error('Error setting text for key:', key, error);
-          }
-        });
-
-        // 언어 변경 이벤트 추적
-        gtag('event', 'language_change', {
-          'language': lang
-        });
-      }
+      // i18n-loader.js를 사용하여 언어 관리
+      // changeLanguage 함수는 i18n-loader.js에서 제공
     </script>
   <script>
     // Mobile menu toggle
@@ -1040,9 +958,9 @@
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // 초기 언어 설정
-        changeLanguage(detectLanguage());
+      document.addEventListener('DOMContentLoaded', async () => {
+        // 초기 언어 설정 (i18n-loader.js 사용)
+        await window.i18n.init();
 
         // Intersection Observer 설정
         const observer = new IntersectionObserver((entries) => {
@@ -1155,10 +1073,10 @@
           else menu.setAttribute('hidden','');
         });
         menu.querySelectorAll('button[data-lang]').forEach(item=>{
-          item.addEventListener('click', ()=>{
+          item.addEventListener('click', async ()=>{
             let lang = item.getAttribute('data-lang');
-            if (lang === 'auto') lang = detectLanguage();
-            changeLanguage(lang);
+            if (lang === 'auto') lang = window.i18n.detectLanguage();
+            await window.i18n.changeLanguage(lang);
             setLabel(lang);
             menu.setAttribute('hidden','');
           });

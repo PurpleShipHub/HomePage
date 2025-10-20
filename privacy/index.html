@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-  <script src="../locales/translations.js"></script>
+  <script src="../locales/i18n-loader.js"></script>
   
   <style>
     #bgCanvas {
@@ -432,51 +432,22 @@
       updateLanguage();
     });
     
-    // 번역 함수
-    function getTranslation(key) {
-      if (!translations || !translations[currentLanguage]) {
-        return key;
-      }
+    // i18n-loader.js를 사용하여 언어 관리
+    async function updateLanguage() {
+      const lang = currentLanguage;
+      await window.i18n.loadLanguage(lang);
       
-      const keys = key.split('.');
-      let translation = translations[currentLanguage];
-      
-      for (const k of keys) {
-        if (translation && translation[k]) {
-          translation = translation[k];
-        } else {
-          // 현재 언어에 번역이 없으면 한국어로 폴백
-          if (currentLanguage !== 'ko' && translations.ko) {
-            translation = translations.ko;
-            for (const fallbackKey of keys) {
-              if (translation && translation[fallbackKey]) {
-                translation = translation[fallbackKey];
-              } else {
-                return key;
-              }
-            }
-            return translation;
-          }
-          return key; // 키를 찾을 수 없으면 원본 키 반환
-        }
-      }
-      
-      return translation;
-    }
-    
-    // 언어 업데이트 함수
-    function updateLanguage() {
       // 기본 텍스트 번역
       document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
-        const translation = getTranslation(key);
+        const translation = window.i18n.getTranslation('privacy', key);
         element.textContent = translation;
       });
       
       // 리스트 아이템 번역
       document.querySelectorAll('[data-translate-list]').forEach(list => {
         const key = list.getAttribute('data-translate-list');
-        const items = getTranslation(key);
+        const items = window.i18n.getTranslation('privacy', key);
         
         if (Array.isArray(items)) {
           list.innerHTML = '';
@@ -489,19 +460,18 @@
       });
       
       // HTML lang 속성 업데이트
-      document.documentElement.lang = currentLanguage;
+      document.documentElement.lang = lang;
       
       // 페이지 제목 업데이트
-      document.title = `Purpleship - ${getTranslation('privacy.title')}`;
+      const title = window.i18n.getTranslation('privacy', 'title');
+      document.title = `Purpleship - ${title}`;
     }
     
     // 페이지 로드 시 언어 적용
-    document.addEventListener('DOMContentLoaded', () => {
-      updateLanguage();
+    document.addEventListener('DOMContentLoaded', async () => {
+      await window.i18n.init('privacy');
+      await updateLanguage();
     });
-    
-    // 즉시 언어 적용 (DOMContentLoaded 이벤트 전에도)
-    updateLanguage();
   </script>
 </body>
 </html> 
