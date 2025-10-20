@@ -82,13 +82,20 @@ function getNestedValue(obj, path) {
 /**
  * 특정 앱의 번역 데이터 가져오기
  * @param {string} app - 앱 이름 ('movit', 'stampit', 'qnote' 등)
- * @param {string} key - 번역 키 (예: 'hero.title')
+ * @param {string} key - 번역 키 (예: 'hero.title' 또는 'qnote.hero.title')
  * @returns {string} 번역된 텍스트
  */
 function getTranslation(app, key) {
   if (!currentTranslations) {
     console.warn('Translations not loaded yet');
     return key;
+  }
+  
+  // key에 app 이름이 이미 포함되어 있는지 확인
+  let actualKey = key;
+  if (app && key.startsWith(app + '.')) {
+    // app 이름 제거: "privacy.title" -> "title"
+    actualKey = key.substring(app.length + 1);
   }
   
   // 앱별 번역 데이터
@@ -99,7 +106,7 @@ function getTranslation(app, key) {
     return value || key;
   }
   
-  const value = getNestedValue(appTranslations, key);
+  const value = getNestedValue(appTranslations, actualKey);
   return value || key;
 }
 
@@ -113,8 +120,14 @@ function updatePageTranslations(app = null) {
     
     let value;
     if (app) {
-      // 앱별 번역
-      value = getTranslation(app, key);
+      // key에 app 이름이 이미 포함되어 있는지 확인
+      // 예: data-i18n="qnote.hero.title"이고 app="qnote"인 경우
+      let actualKey = key;
+      if (key.startsWith(app + '.')) {
+        // app 이름 제거: "qnote.hero.title" -> "hero.title"
+        actualKey = key.substring(app.length + 1);
+      }
+      value = getTranslation(app, actualKey);
     } else {
       // 루트 레벨 번역
       value = getNestedValue(currentTranslations, key);
@@ -182,6 +195,7 @@ window.i18n = {
   changeLanguage,
   detectLanguage,
   getTranslation,
+  loadLanguage,
   SUPPORTED_LANGUAGES
 };
 
