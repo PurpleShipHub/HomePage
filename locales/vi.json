@@ -1,215 +1,272 @@
 {
-    "title": "Purpleship",
+  "title": "Purpleship",
+  "nav": {
+    "apps": "Sản phẩm"
+  },
+  "description": {
+    "line1": "Chúng tôi là tổ chức khám phá và phát triển các ứng dụng chưa từng tồn tại trên thế giới.",
+    "line2": "Tìm kiếm những ý tưởng vô hạn từ vũ trụ,",
+    "line3": "Chúng tôi hướng đến việc tạo ra điều chưa từng tồn tại."
+  },
+  "vision": {
+    "title": "Tầm Nhìn",
+    "line1": "Thông qua các ý tưởng và công nghệ đổi mới,",
+    "line2": "Purpleship hướng đến việc tạo ra các dịch vụ phá vỡ khuôn khổ hiện tại.",
+    "line3": "Bằng cách hiện thực hóa các ứng dụng chỉ tồn tại trong trí tưởng tượng,",
+    "line4": "Mục tiêu của chúng tôi là mang đến những trải nghiệm mới."
+  },
+  "join": {
+    "title": "Tham Gia Cùng Chúng Tôi",
+    "line1": "Cuộc khám phá của chúng tôi mới chỉ bắt đầu.",
+    "line2": "Hãy liên hệ với chúng tôi nếu bạn muốn cùng khám phá vũ trụ chưa biết.",
+    "line3": "Chúng tôi chào đón những người đam mê khám phá thế giới mới.",
+    "passionate": "Chúng tôi đang chờ đón những người nhiệt huyết"
+  },
+  "donation": "Ủng Hộ",
+  "qnote": {
+    "hero": {
+      "title": "Bảng ghi chú tức thời cho “ngay bây giờ”",
+      "description": "Tạo mã 6 chữ số và chia sẻ liên kết để mọi người có thể cùng ghi chú và sắp xếp trong cùng một không gian. Bắt đầu nhanh, không cần cấu hình và kết thúc gọn gàng khi xong."
+    },
+    "tagline": "Tạo mã 6 chữ số và chia sẻ liên kết để mọi người có thể cùng ghi chú và sắp xếp trong cùng một không gian. Bắt đầu nhanh, không cần cấu hình và kết thúc gọn gàng khi xong.",
+    "cta": "Sử dụng",
     "nav": {
-      "apps": "Sản phẩm"
+      "home": "Trang chủ",
+      "try": "Sử dụng"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Purpleship. Đã đăng ký bản quyền.",
+    "contact": "Liên hệ: captain@purpleship.io",
+    "privacy": "Chính Sách Bảo Mật"
+  },
+  "movit": {
+    "title": "Movit",
+    "nav": {
+      "home": "Trang chủ",
+      "download": "Tải về"
     },
-    "description": {
-      "line1": "Chúng tôi là tổ chức khám phá và phát triển các ứng dụng chưa từng tồn tại trên thế giới.",
-      "line2": "Tìm kiếm những ý tưởng vô hạn từ vũ trụ,",
-      "line3": "Chúng tôi hướng đến việc tạo ra điều chưa từng tồn tại."
+    "hero": {
+      "title": "Movit",
+      "subtitle": "Ứng dụng bản đồ dựa trên khám phá",
+      "description": "Một ứng dụng di động sáng tạo giúp bạn khám phá thế giới thực và tạo nên bản đồ cá nhân của riêng mình. Nhờ GPS, bạn thắp sáng những vùng tối trên bản đồ và ghi lại mọi nơi đã đặt chân trong hành trình."
     },
-    "vision": {
-      "title": "Tầm Nhìn",
-      "line1": "Thông qua các ý tưởng và công nghệ đổi mới,",
-      "line2": "Purpleship hướng đến việc tạo ra các dịch vụ phá vỡ khuôn khổ hiện tại.",
-      "line3": "Bằng cách hiện thực hóa các ứng dụng chỉ tồn tại trong trí tưởng tượng,",
-      "line4": "Mục tiêu của chúng tôi là mang đến những trải nghiệm mới."
-    },
-    "join": {
-      "title": "Tham Gia Cùng Chúng Tôi",
-      "line1": "Cuộc khám phá của chúng tôi mới chỉ bắt đầu.",
-      "line2": "Hãy liên hệ với chúng tôi nếu bạn muốn cùng khám phá vũ trụ chưa biết.",
-      "line3": "Chúng tôi chào đón những người đam mê khám phá thế giới mới.",
-      "passionate": "Chúng tôi đang chờ đón những người nhiệt huyết"
-    },
-    "donation": "Ủng Hộ",
-    "qnote": {
-      "hero": {
-        "title": "Bảng ghi chú tức thời cho “ngay bây giờ”",
-        "description": "Tạo mã 6 chữ số và chia sẻ liên kết để mọi người có thể cùng ghi chú và sắp xếp trong cùng một không gian. Bắt đầu nhanh, không cần cấu hình và kết thúc gọn gàng khi xong."
+    "features": {
+      "title": "Tính năng chính",
+      "exploration": {
+        "title": "Tạo bản đồ dựa trên hành trình",
+        "description": "Nhờ GPS, chỉ những nơi bạn thực sự ghé thăm mới hiện lên trên bản đồ. Hãy tạo nên bản đồ khám phá độc nhất của bạn."
       },
-      "tagline": "Tạo mã 6 chữ số và chia sẻ liên kết để mọi người có thể cùng ghi chú và sắp xếp trong cùng một không gian. Bắt đầu nhanh, không cần cấu hình và kết thúc gọn gàng khi xong.",
-      "cta": "Sử dụng",
-      "nav": {
-        "home": "Trang chủ",
-        "try": "Sử dụng"
+      "tracking": {
+        "title": "Theo dõi vị trí theo thời gian thực",
+        "description": "Định vị GPS chính xác giúp mở khóa ngay lập tức các khu vực bạn khám phá và lưu lại từng bước chân."
+      },
+      "privacy": {
+        "title": "Bảo mật quyền riêng tư tuyệt đối",
+        "description": "Toàn bộ dữ liệu được lưu trên thiết bị của bạn; chúng tôi không lưu trữ thông tin cá nhân trên máy chủ."
+      },
+      "record": {
+        "title": "Nhật ký khám phá cá nhân",
+        "description": "Ghi chép chi tiết quãng đường, thời gian và các khu vực mới khám phá với thống kê đầy đủ."
       }
+    },
+    "download": {
+      "title": "Tải ngay",
+      "description": "Cài đặt Movit trên Android và iOS để bắt đầu hành trình khám phá!",
+      "android": "Tải cho Android",
+      "ios": "Tải cho iOS",
+      "comingSoon": "Sắp ra mắt"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. Đã đăng ký bản quyền.",
+      "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
       "contact": "Liên hệ: captain@purpleship.io",
-      "privacy": "Chính Sách Bảo Mật"
-    },
-    "movit": {
-      "title": "Movit",
-      "nav": {
-        "home": "Trang chủ",
-        "download": "Tải về"
-      },
-      "hero": {
-        "title": "Movit",
-        "subtitle": "Ứng dụng bản đồ dựa trên khám phá",
-        "description": "Một ứng dụng di động sáng tạo giúp bạn khám phá thế giới thực và tạo nên bản đồ cá nhân của riêng mình. Nhờ GPS, bạn thắp sáng những vùng tối trên bản đồ và ghi lại mọi nơi đã đặt chân trong hành trình."
-      },
-      "features": {
-        "title": "Tính năng chính",
-        "exploration": {
-          "title": "Tạo bản đồ dựa trên hành trình",
-          "description": "Nhờ GPS, chỉ những nơi bạn thực sự ghé thăm mới hiện lên trên bản đồ. Hãy tạo nên bản đồ khám phá độc nhất của bạn."
-        },
-        "tracking": {
-          "title": "Theo dõi vị trí theo thời gian thực",
-          "description": "Định vị GPS chính xác giúp mở khóa ngay lập tức các khu vực bạn khám phá và lưu lại từng bước chân."
-        },
-        "privacy": {
-          "title": "Bảo mật quyền riêng tư tuyệt đối",
-          "description": "Toàn bộ dữ liệu được lưu trên thiết bị của bạn; chúng tôi không lưu trữ thông tin cá nhân trên máy chủ."
-        },
-        "record": {
-          "title": "Nhật ký khám phá cá nhân",
-          "description": "Ghi chép chi tiết quãng đường, thời gian và các khu vực mới khám phá với thống kê đầy đủ."
-        }
-      },
-      "download": {
-        "title": "Tải ngay",
-        "description": "Cài đặt Movit trên Android và iOS để bắt đầu hành trình khám phá!",
-        "android": "Tải cho Android",
-        "ios": "Tải cho iOS",
-        "comingSoon": "Sắp ra mắt"
-      },
-      "footer": {
-        "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
-        "contact": "Liên hệ: captain@purpleship.io",
-        "privacy": "Chính sách Bảo mật"
-      }
-    },
-    "stampit": {
-      "title": "Stampit",
-      "nav": {
-        "home": "Trang chủ",
-        "download": "Tải về"
-      },
-      "hero": {
-        "title": "Stampit",
-        "subtitle": "Ứng dụng quản lý hội viên",
-        "description": "Ứng dụng di động thông minh giúp bạn quản lý thẻ hội viên trả trước, phiếu giảm giá và voucher giới hạn lượt sử dụng thật dễ dàng. Gom tất cả chương trình vào một nơi và không bỏ lỡ số lượt còn lại."
-      },
-      "features": {
-        "title": "Tính năng chính",
-        "register": {
-          "title": "Đăng ký & quản lý hội viên",
-          "description": "Dễ dàng đăng ký và quản lý hội viên trả trước, voucher và phiếu giảm giá chỉ trong một nơi."
-        },
-        "check": {
-          "title": "Theo dõi lượt sử dụng",
-          "description": "Đánh dấu mỗi lần ghé thăm để ghi nhận lượt sử dụng và xem số lượt còn lại theo thời gian thực."
-        },
-        "remaining": {
-          "title": "Xem số lượt còn lại",
-          "description": "Nhìn nhanh số lượt còn lại của từng hội viên để không bị nhầm lẫn."
-        },
-        "integration": {
-          "title": "Quản lý tập trung",
-          "description": "Quản lý thuận tiện nhiều loại thẻ hội viên và voucher trong một ứng dụng tích hợp."
-        },
-        "expiry": {
-          "title": "Thông báo hết hạn",
-          "description": "Nhận thông báo khi ngày hết hạn đến gần để không bỏ lỡ quyền lợi."
-        },
-        "history": {
-          "title": "Lịch sử sử dụng",
-          "description": "Xem lại bạn đã dùng hội viên nào vào thời điểm nào và phân tích thói quen của mình."
-        }
-      },
-      "download": {
-        "title": "Tải ngay",
-        "description": "Cài đặt Stampit ngay trên Android và iOS để bắt đầu quản lý hội viên thật thông minh.",
-        "android": "Tải cho Android",
-        "ios": "Tải cho iOS"
-      },
-      "footer": {
-        "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
-        "contact": "Liên hệ: captain@purpleship.io",
-        "privacy": "Chính sách Bảo mật"
-      }
-    },
-    "privacy": {
-      "title": "Chính sách Bảo mật",
-      "subtitle": "Chính sách Bảo mật của Purpleship",
-      "backToHome": "← Quay về Trang chủ",
-      "section1": {
-        "title": "1. Mục đích thu thập và sử dụng thông tin cá nhân",
-        "content": "Purpleship (sau đây gọi là “Công ty”) hiện không thu thập bất kỳ thông tin cá nhân nào.",
-        "purpose": "Trang web này là trang tĩnh chỉ cung cấp phần giới thiệu và thông tin về công ty, nên không cần thu thập hay xử lý thông tin cá nhân của người dùng."
-      },
-      "section2": {
-        "title": "2. Hạng mục thông tin cá nhân được thu thập",
-        "no_collection": "Purpleship hiện không thu thập bất kỳ thông tin cá nhân nào.",
-        "static_content": "Trang web chỉ cung cấp nội dung tĩnh và không yêu cầu hay lưu trữ thông tin cá nhân của người dùng. Không có chức năng đăng ký, đăng nhập hay nhập thông tin cá nhân, và chúng tôi không thu thập dữ liệu mà người dùng cung cấp.",
-        "analytics": {
-          "title": "2.1 Công cụ phân tích web",
-          "content": "Chúng tôi sử dụng Google Analytics để thống kê việc sử dụng trang web; công cụ này chỉ thu thập dữ liệu khách truy cập đã được ẩn danh. Không có thông tin định danh cá nhân nào được thu thập."
-        },
-        "location": {
-          "title": "2.2 Thông tin vị trí",
-          "content": "Để cung cấp dịch vụ ứng dụng, chúng tôi có thể yêu cầu thông tin vị trí chạy nền. Thông tin thu thập được xử lý như sau:",
-          "items": [
-            "Thông tin vị trí chỉ được lưu trên thiết bị (ứng dụng) của người dùng.",
-            "Chúng tôi không truyền hoặc thu thập dữ liệu vị trí trên máy chủ của mình.",
-            "Chỉ khi người dùng yêu cầu trực tiếp mới có thể sao lưu lên Google Drive của họ.",
-            "Người dùng có thể dừng sử dụng hoặc xóa thông tin vị trí bất cứ lúc nào."
-          ]
-        }
-      },
-      "section3": {
-        "title": "3. Thời gian lưu trữ và sử dụng thông tin cá nhân",
-        "content": "Do Purpleship không thu thập thông tin cá nhân nên không có thời gian lưu trữ và sử dụng riêng biệt.",
-        "analytics": "Dữ liệu ẩn danh do Google Analytics thu thập được quản lý theo chính sách bảo mật của Google."
-      },
-      "section4": {
-        "title": "4. Cung cấp thông tin cá nhân cho bên thứ ba",
-        "content": "Công ty không cung cấp thông tin cá nhân của người dùng cho bên thứ ba, ngoại trừ các trường hợp sau:",
-        "items": [
-          "Khi người dùng đã đồng ý trước.",
-          "Khi cơ quan điều tra yêu cầu theo đúng quy trình và phương thức pháp luật quy định nhằm mục đích điều tra."
-        ]
-      },
-      "section5": {
-        "title": "5. Thuê ngoài xử lý thông tin cá nhân",
-        "content": "Để nâng cao chất lượng dịch vụ, Công ty có thể thuê các đơn vị chuyên môn bên ngoài xử lý thông tin cá nhân. Khi thuê ngoài, chúng tôi ký hợp đồng theo quy định pháp luật và quy định rõ các biện pháp cần thiết nhằm bảo vệ thông tin cá nhân."
-      },
-      "section6": {
-        "title": "6. Quyền của người dùng",
-        "content": "Người dùng có thể thực hiện bất kỳ lúc nào các quyền sau:",
-        "items": [
-          "Yêu cầu được thông báo về tình trạng xử lý thông tin cá nhân.",
-          "Yêu cầu truy cập thông tin cá nhân.",
-          "Yêu cầu chỉnh sửa hoặc xóa thông tin cá nhân.",
-          "Yêu cầu tạm dừng việc xử lý thông tin cá nhân."
-        ]
-      },
-      "section7": {
-        "title": "7. Biện pháp kỹ thuật và quản lý bảo vệ thông tin cá nhân",
-        "content": "Công ty thực hiện các biện pháp kỹ thuật và quản lý sau để bảo vệ thông tin cá nhân:",
-        "items": [
-          "Mã hóa thông tin cá nhân.",
-          "Xây dựng hệ thống bảo mật chống xâm nhập.",
-          "Giảm thiểu và đào tạo nhân sự xử lý thông tin cá nhân.",
-          "Bổ nhiệm người phụ trách bảo vệ thông tin cá nhân."
-        ]
-      },
-      "section8": {
-        "title": "8. Nhân sự phụ trách bảo vệ thông tin cá nhân",
-        "officer": "Nhân sự phụ trách bảo vệ thông tin cá nhân: Đội vận hành Purpleship",
-        "contact": "Liên hệ: captain@purpleship.io",
-        "report": "Cơ quan tiếp nhận khiếu nại: Ủy ban Bảo vệ Thông tin Cá nhân (privacy.go.kr)"
-      },
-      "section9": {
-        "title": "9. Thay đổi chính sách bảo mật",
-        "content": "Chính sách bảo mật này có hiệu lực từ ngày ghi trên đây. Khi có bổ sung, điều chỉnh hoặc thay đổi theo quy định pháp luật hay chính sách, chúng tôi sẽ thông báo qua mục thông báo tối thiểu 7 ngày trước khi áp dụng."
-      },
-      "effectiveDate": "Ngày hiệu lực: 01 tháng 01 năm 2024",
-      "lastModified": "Cập nhật lần cuối: 08 tháng 01 năm 2025"
+      "privacy": "Chính sách Bảo mật"
     }
+  },
+  "stampit": {
+    "title": "Stampit",
+    "nav": {
+      "home": "Trang chủ",
+      "download": "Tải về"
+    },
+    "hero": {
+      "title": "Stampit",
+      "subtitle": "Ứng dụng quản lý hội viên",
+      "description": "Ứng dụng di động thông minh giúp bạn quản lý thẻ hội viên trả trước, phiếu giảm giá và voucher giới hạn lượt sử dụng thật dễ dàng. Gom tất cả chương trình vào một nơi và không bỏ lỡ số lượt còn lại."
+    },
+    "features": {
+      "title": "Tính năng chính",
+      "register": {
+        "title": "Đăng ký & quản lý hội viên",
+        "description": "Dễ dàng đăng ký và quản lý hội viên trả trước, voucher và phiếu giảm giá chỉ trong một nơi."
+      },
+      "check": {
+        "title": "Theo dõi lượt sử dụng",
+        "description": "Đánh dấu mỗi lần ghé thăm để ghi nhận lượt sử dụng và xem số lượt còn lại theo thời gian thực."
+      },
+      "remaining": {
+        "title": "Xem số lượt còn lại",
+        "description": "Nhìn nhanh số lượt còn lại của từng hội viên để không bị nhầm lẫn."
+      },
+      "integration": {
+        "title": "Quản lý tập trung",
+        "description": "Quản lý thuận tiện nhiều loại thẻ hội viên và voucher trong một ứng dụng tích hợp."
+      },
+      "expiry": {
+        "title": "Thông báo hết hạn",
+        "description": "Nhận thông báo khi ngày hết hạn đến gần để không bỏ lỡ quyền lợi."
+      },
+      "history": {
+        "title": "Lịch sử sử dụng",
+        "description": "Xem lại bạn đã dùng hội viên nào vào thời điểm nào và phân tích thói quen của mình."
+      }
+    },
+    "download": {
+      "title": "Tải ngay",
+      "description": "Cài đặt Stampit ngay trên Android và iOS để bắt đầu quản lý hội viên thật thông minh.",
+      "android": "Tải cho Android",
+      "ios": "Tải cho iOS"
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
+      "contact": "Liên hệ: captain@purpleship.io",
+      "privacy": "Chính sách Bảo mật"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Purpleship Privacy Policy",
+    "backToHome": "← Back to Home",
+    "section1": {
+      "title": "1. Scope and Principles",
+      "content1": "This unified policy applies to Purpleship (the \"Company\") and all services we operate (e.g., Stampit, MOVIT, Qnote, WorldCanvas).",
+      "content2": "We collect only the minimum personal data needed to provide services. Any additional service-specific processing is described in the “Service-Specific Notices” and applies together with this policy."
+    },
+    "section2": {
+      "title": "2. Data We Collect and Purpose (Common)",
+      "intro": "We collect only what is necessary to deliver services and support users. Additional items, if any, are listed in the Service-Specific Notices below.",
+      "items": [
+        "Website visits: access logs, browser/OS information, service usage via cookies or similar tech (for analytics and service improvement)",
+        "Customer support: name, email address, and inquiry details received through support channels (e.g., email)",
+        "Technical logs: error logs and device information (model, OS version, etc.) for stability analysis"
+      ],
+      "analytics": {
+        "title": "2.1 Web/App Analytics Tools",
+        "content": "We may use analytics tools such as Google Analytics to collect anonymized usage statistics. IP anonymization or similar techniques are applied, and we do not directly identify individuals. You can opt out via your browser or the tool settings."
+      }
+    },
+    "section3": {
+      "title": "3. Retention and Storage Period",
+      "items": [
+        "We retain data only for the minimum period required by law or our policies, then destroy it without delay.",
+        "Access logs: retained for 3 months per legal requirements and then deleted automatically.",
+        "Customer inquiries: retained for 3 years after completion for dispute resolution, then deleted.",
+        "Account and service data: deleted without delay upon purpose fulfillment or account deletion, or kept only for the legally mandated period (see Service-Specific Notices).",
+        "Analytics data: kept only in a de-identified, statistical form."
+      ]
+    },
+    "section4": {
+      "title": "4. Third-Party Sharing and Overseas Transfer",
+      "content": "We do not provide personal data to third parties, except in the following cases:",
+      "items": [
+        "When the user has given explicit prior consent",
+        "When required by law or a legitimate request from authorities"
+      ],
+      "ga": "When using Google Analytics, data may be transferred to servers outside your country (e.g., the United States) and is subject to Google’s privacy policy and safeguards."
+    },
+    "section5": {
+      "title": "5. Outsourcing of Processing",
+      "content": "We may entrust certain operations to external partners. Contracts include security controls, restrictions on re-entrustment, and supervision obligations. Current delegates are:",
+      "items": [
+        "Service analytics: Google LLC (Google Analytics) – Storage location: Global/US; Purpose: usage statistics and quality improvement; Retention: per Google policy",
+        "User-initiated backup/sync: Apple iCloud Drive, Google Drive, etc., to the user’s own account – the Company cannot access backed-up data."
+      ]
+    },
+    "section6": {
+      "title": "6. Your Rights and How to Exercise Them",
+      "content": "You may exercise the rights below at any time, and we will act without undue delay:",
+      "items": [
+        "Withdraw consent: change or revoke permissions (e.g., location, notifications) via service or device settings.",
+        "Request access, correction, deletion, or restriction of processing by contacting us or using in-service settings where provided.",
+        "Delete on-device data and disable cloud backups.",
+        "Seek relief through official channels such as a privacy regulator or dispute mediation body."
+      ]
+    },
+    "section7": {
+      "title": "7. Safeguards",
+      "content": "We apply the following safeguards to protect personal data:",
+      "items": [
+        "Access control based on least privilege and access log management",
+        "Encryption for data in transit and at rest, with secure key management",
+        "Regular security patches and vulnerability checks",
+        "Training and audits for personnel handling personal data",
+        "Use of OS-level secure storage and device locks for on-device data"
+      ]
+    },
+    "section8": {
+      "title": "8. Service-Specific Notices",
+      "intro": "Additional processing details that apply depending on each service are as follows:",
+      "note": "We avoid collecting unnecessary personal data and collect only what is needed. Use the buttons below to view each service’s details.",
+      "toggle": {
+        "open": "View details",
+        "close": "Hide details"
+      },
+      "stampit": {
+        "title": "Stampit (Membership Management)",
+        "summary": "Membership/coupon usage tracking; data is stored locally on the user’s device by default.",
+        "items": [
+          "Data collected: store/membership names, stamp/visit records, notification settings",
+          "Storage: kept locally on your device and not transmitted to Company servers.",
+          "Backup/Sync: if you choose, data can be backed up to your personal iCloud/Google Drive; the Company cannot access this data.",
+          "Optional permissions: notifications and calendar access are used to provide visit/expiry reminders and are optional."
+        ]
+      },
+      "movit": {
+        "title": "MOVIT (Movement Logs)",
+        "summary": "Movement logs and favorites; default storage is on the user’s device.",
+        "items": [
+          "Data collected: movement routes, location/traffic data when you enable the feature, favorite places",
+          "Storage: stored on your device by default and not sent to Company servers.",
+          "Backup/Sync: backed up to your personal cloud (e.g., Google Drive) only when you explicitly request it.",
+          "Optional permissions: location (including background) and notification permissions may be used for route logging/alerts; collection stops when you disable them.",
+          "When using third-party map/location SDKs for navigation, the provider’s policy also applies."
+        ]
+      },
+      "qnote": {
+        "title": "Qnote (Notes/Checklists)",
+        "summary": "Notes/checklists are stored locally by default.",
+        "items": [
+          "Data collected: notes, checklists, tags, attachments you create",
+          "Storage: stored locally on your device and not transmitted to Company servers.",
+          "Backup/Sync: if you choose, data can be saved to your personal cloud or exported as files; the Company cannot access the content.",
+          "Optional permissions: notifications and file/photo access are requested only when you use those features."
+        ]
+      },
+      "worldcanvas": {
+        "title": "WorldCanvas (Collaborative Canvas)",
+        "summary": "Google sign-in based collaborative canvas; minimal data is collected for account identification and sync.",
+        "items": [
+          "Sign-up/Login: uses Google OAuth. Google account identifier (ID) and email are stored in our DB to create and identify your account for sign-in.",
+          "Auth tokens are used only to maintain/refresh the login session and are discarded on expiration or logout.",
+          "Service data: canvases, boards, comments, and attachments you create/upload are stored in our servers/DB to provide sync and recovery.",
+          "Collaboration/Sharing: collaborator emails/identifiers you invite may be processed to manage invitations and permissions.",
+          "Optional permissions: file/image upload and notifications are requested only when you use those features; declining limits the optional features only.",
+          "Deletion and retention: upon account deletion or service withdrawal, account data and service content are deleted without delay or after any legally required retention. Backups are purged on a rolling basis."
+        ]
+      },
+      "update": "We will add a separate notice in this section when launching new services or features."
+    },
+    "section9": {
+      "title": "9. Data Protection Officer",
+      "officer": "Data Protection Officer: Purpleship Operations Team",
+      "contact": "Contact: captain@purpleship.io",
+      "report": "For privacy complaints, you may also contact your local authority or privacy regulator."
+    },
+    "section10": {
+      "title": "10. Changes to This Policy",
+      "content": "When laws, services, or internal policies change, we will announce updates at least 7 days before they take effect via this website or in-app notice."
+    },
+    "effectiveDate": "Effective date: Feb 7, 2025",
+    "lastModified": "Last modified: Feb 7, 2025"
   }
 }

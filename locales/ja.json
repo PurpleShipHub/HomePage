@@ -1,214 +1,272 @@
 {
-    "title": "Purpleship",
+  "title": "Purpleship",
+  "nav": {
+    "apps": "プロダクト"
+  },
+  "description": {
+    "line1": "私たちは、世界に存在しないアプリを発見し開発する団体です。",
+    "line2": "宇宙の無限のアイデアを見つけ出し、",
+    "line3": "まだ世の中にない何かを一緒に作りたいと考えています。"
+  },
+  "movit": {
+    "title": "Movit",
     "nav": {
-      "apps": "プロダクト"
+      "home": "ホーム",
+      "download": "ダウンロード"
     },
-    "description": {
-      "line1": "私たちは、世界に存在しないアプリを発見し開発する団体です。",
-      "line2": "宇宙の無限のアイデアを見つけ出し、",
-      "line3": "まだ世の中にない何かを一緒に作りたいと考えています。"
-    },
-    "movit": {
+    "hero": {
       "title": "Movit",
-      "nav": {
-        "home": "ホーム",
-        "download": "ダウンロード"
+      "subtitle": "探検型マップアプリ",
+      "description": "現実世界を探検しながら自分だけのパーソナルマップを作れる革新的なモバイルアプリです。GPSで地図の暗いエリアを照らし、冒険で訪れた場所を記録します。"
+    },
+    "features": {
+      "title": "主な機能",
+      "exploration": {
+        "title": "探検ベースのマップ作成",
+        "description": "GPSを活用し、自分が実際に訪れた場所だけが地図に表示されます。あなただけの探検マップを完成させましょう。"
       },
-      "hero": {
-        "title": "Movit",
-        "subtitle": "探検型マップアプリ",
-        "description": "現実世界を探検しながら自分だけのパーソナルマップを作れる革新的なモバイルアプリです。GPSで地図の暗いエリアを照らし、冒険で訪れた場所を記録します。"
+      "tracking": {
+        "title": "リアルタイム位置追跡",
+        "description": "正確なGPS位置追跡で、歩いたエリアがリアルタイムで解放され、すべての足跡が記録されます。"
       },
-      "features": {
-        "title": "主な機能",
-        "exploration": {
-          "title": "探検ベースのマップ作成",
-          "description": "GPSを活用し、自分が実際に訪れた場所だけが地図に表示されます。あなただけの探検マップを完成させましょう。"
-        },
-        "tracking": {
-          "title": "リアルタイム位置追跡",
-          "description": "正確なGPS位置追跡で、歩いたエリアがリアルタイムで解放され、すべての足跡が記録されます。"
-        },
-        "privacy": {
-          "title": "完全なプライバシー保護",
-          "description": "データはすべてデバイス内にのみ保存され、当社サーバーには一切保存されません。"
-        },
-        "record": {
-          "title": "個人の探検記録",
-          "description": "探検距離・時間・新しく見つけたエリアなどを詳細な統計で振り返ることができます。"
-        }
+      "privacy": {
+        "title": "完全なプライバシー保護",
+        "description": "データはすべてデバイス内にのみ保存され、当社サーバーには一切保存されません。"
       },
-      "download": {
-        "title": "今すぐインストール",
-        "description": "AndroidとiOSにMovitをインストールして探検を始めましょう！",
-        "android": "Androidでインストール",
-        "ios": "iOSでインストール",
-        "comingSoon": "近日公開"
-      },
-      "footer": {
-        "copyright": "© 2025 Purpleship. 全著作権所有。",
-        "contact": "連絡先：captain@purpleship.io",
-        "privacy": "プライバシーポリシー"
+      "record": {
+        "title": "個人の探検記録",
+        "description": "探検距離・時間・新しく見つけたエリアなどを詳細な統計で振り返ることができます。"
       }
     },
-    "vision": {
-      "title": "ビジョン",
-      "line1": "革新的なアイデアとテクノロジーを通じて、",
-      "line2": "Purpleshipは既存の枠組みを超えるサービスを目指します。",
-      "line3": "想像の中にしか存在しなかったアプリを現実のものとし、",
-      "line4": "新しい体験を提供することが私たちの目標です。"
-    },
-    "join": {
-      "title": "参加する",
-      "line1": "私たちの探検はまだ始まったばかりです。",
-      "line2": "未知の宇宙を一緒に探検したい方はいつでもご連絡ください。",
-      "line3": "新しい世界の発見に情熱を持つ方をお待ちしています。",
-      "passionate": "情熱あふれる方々をお待ちしています"
-    },
-    "donation": "寄付する",
-    "qnote": {
-      "hero": {
-        "title": "“いま”のための即席メモボード",
-        "description": "6桁コードを作成してリンクを共有すれば、誰でも同じスペースで一緒にメモして整理できます。面倒な設定なしで素早く開始し、終わったらすっきりクローズ。"
-      },
-      "tagline": "6桁コードを作成してリンクを共有すれば、誰でも同じスペースで一緒にメモして整理できます。面倒な設定なしで素早く開始し、終わったらすっきりクローズ。",
-      "cta": "使用する",
-      "nav": {
-        "home": "ホーム",
-        "try": "使用する"
-      }
+    "download": {
+      "title": "今すぐインストール",
+      "description": "AndroidとiOSにMovitをインストールして探検を始めましょう！",
+      "android": "Androidでインストール",
+      "ios": "iOSでインストール",
+      "comingSoon": "近日公開"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 全著作権所有。",
       "contact": "連絡先：captain@purpleship.io",
       "privacy": "プライバシーポリシー"
+    }
+  },
+  "vision": {
+    "title": "ビジョン",
+    "line1": "革新的なアイデアとテクノロジーを通じて、",
+    "line2": "Purpleshipは既存の枠組みを超えるサービスを目指します。",
+    "line3": "想像の中にしか存在しなかったアプリを現実のものとし、",
+    "line4": "新しい体験を提供することが私たちの目標です。"
+  },
+  "join": {
+    "title": "参加する",
+    "line1": "私たちの探検はまだ始まったばかりです。",
+    "line2": "未知の宇宙を一緒に探検したい方はいつでもご連絡ください。",
+    "line3": "新しい世界の発見に情熱を持つ方をお待ちしています。",
+    "passionate": "情熱あふれる方々をお待ちしています"
+  },
+  "donation": "寄付する",
+  "qnote": {
+    "hero": {
+      "title": "“いま”のための即席メモボード",
+      "description": "6桁コードを作成してリンクを共有すれば、誰でも同じスペースで一緒にメモして整理できます。面倒な設定なしで素早く開始し、終わったらすっきりクローズ。"
     },
-    "privacy": {
-      "title": "プライバシーポリシー",
-      "subtitle": "Purpleshipプライバシーポリシー",
-      "backToHome": "← ホームに戻る",
-      "section1": {
-        "title": "1. 個人情報の収集および利用目的",
-        "content": "Purpleship（以下「当社」）は現在、個人情報を一切収集しておりません。",
-        "purpose": "本ウェブサイトは単純に会社紹介および情報提供を目的とする静的ウェブサイトであり、利用者の個人情報の収集や処理は必要ありません。"
-      },
-      "section2": {
-        "title": "2. 個人情報の収集項目",
-        "no_collection": "Purpleshipは現在、いかなる個人情報も収集しておりません。",
-        "static_content": "本ウェブサイトは静的コンテンツのみを提供し、利用者の個人情報を要求したり保存したりしません。会員登録、ログイン、または個人情報入力機能はなく、利用者が提供する情報を収集いたしません。",
-        "analytics": {
-          "title": "2.1 ウェブ分析ツール",
-          "content": "ウェブサイトの利用統計のためにGoogle Analyticsを使用しており、これは匿名化された訪問データのみを収集します。個人を特定できる情報は収集されません。"
-        },
-        "location": {
-          "title": "2.2 位置情報",
-          "content": "アプリサービスの提供のため、バックグラウンドで位置情報を要求する場合があります。収集された位置情報は以下のように処理されます：",
-          "items": [
-            "位置情報はユーザーの機器（アプリ）内にのみ保存されます",
-            "当社サーバーに位置データを送信したり収集したりしません",
-            "ユーザーが直接要求した場合のみ、ユーザーのGoogle Driveにバックアップできます",
-            "ユーザーはいつでも位置情報の使用を停止したり削除したりできます"
-          ]
-        }
-      },
-      "section3": {
-        "title": "3. 個人情報の保有および利用期間",
-        "content": "Purpleshipは個人情報を収集しないため、別途の保有および利用期間はありません。",
-        "analytics": "Google Analyticsで収集される匿名化されたデータは、Googleのプライバシーポリシーに従って管理されます。"
-      },
-      "section4": {
-        "title": "4. 個人情報の第三者提供",
-        "content": "当社は原則として利用者の個人情報を外部に提供しません。ただし、以下の場合は例外とします：",
-        "items": [
-          "利用者が事前に同意した場合",
-          "法令の規定により、または捜査目的で法令に定められた手続きと方法により捜査機関の要求がある場合"
-        ]
-      },
-      "section5": {
-        "title": "5. 個人情報処理の委託",
-        "content": "当社はサービス向上のため、個人情報処理業務を外部専門業者に委託することがあります。委託時には関連法令に従って委託契約を締結し、個人情報保護のために必要な事項を規定します。"
-      },
-      "section6": {
-        "title": "6. 利用者の権利",
-        "content": "利用者はいつでも以下の権利を行使することができます：",
-        "items": [
-          "個人情報処理現況の通知要求",
-          "個人情報の閲覧要求",
-          "個人情報の訂正・削除要求",
-          "個人情報処理の停止要求"
-        ]
-      },
-      "section7": {
-        "title": "7. 個人情報保護のための技術的・管理的対策",
-        "content": "当社は個人情報保護のため、以下の技術的・管理的対策を実施しています：",
-        "items": [
-          "個人情報の暗号化",
-          "ハッキング等に備えたセキュリティシステムの構築",
-          "個人情報処理スタッフの最小化および教育",
-          "個人情報保護責任者の指定"
-        ]
-      },
-      "section8": {
-        "title": "8. 個人情報保護責任者",
-        "officer": "個人情報保護責任者：Purpleship運営チーム",
-        "contact": "連絡先：captain@purpleship.io",
-        "report": "処理現況申告：個人情報保護委員会 (privacy.go.kr)"
-      },
-      "section9": {
-        "title": "9. プライバシーポリシーの変更",
-        "content": "このプライバシーポリシーは施行日から適用され、法令および方針による変更内容の追加、削除および訂正がある場合には、変更事項の施行7日前から公知事項を通じて告知いたします。"
-      },
-      "effectiveDate": "施行日：2024年1月1日",
-      "lastModified": "最終修正日：2025年1月8日"
+    "tagline": "6桁コードを作成してリンクを共有すれば、誰でも同じスペースで一緒にメモして整理できます。面倒な設定なしで素早く開始し、終わったらすっきりクローズ。",
+    "cta": "使用する",
+    "nav": {
+      "home": "ホーム",
+      "try": "使用する"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Purpleship. 全著作権所有。",
+    "contact": "連絡先：captain@purpleship.io",
+    "privacy": "プライバシーポリシー"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Purpleship Privacy Policy",
+    "backToHome": "← Back to Home",
+    "section1": {
+      "title": "1. Scope and Principles",
+      "content1": "This unified policy applies to Purpleship (the \"Company\") and all services we operate (e.g., Stampit, MOVIT, Qnote, WorldCanvas).",
+      "content2": "We collect only the minimum personal data needed to provide services. Any additional service-specific processing is described in the “Service-Specific Notices” and applies together with this policy."
     },
-    "stampit": {
-      "title": "Stampit",
-      "nav": {
-        "home": "ホーム",
-        "download": "ダウンロード"
-      },
-      "hero": {
-        "title": "Stampit",
-        "subtitle": "会員管理アプリ",
-        "description": "回数制のプリペイド会員やクーポン、チケットをスマートに管理できるモバイルアプリです。複雑な会員情報も1か所で整理し、残り回数の把握を逃しません。"
-      },
-      "features": {
-        "title": "主な機能",
-        "register": {
-          "title": "会員の登録と管理",
-          "description": "プリペイド会員、バウチャー、クーポンをひとつの場所で簡単に登録・管理できます。"
-        },
-        "check": {
-          "title": "利用チェック",
-          "description": "来店ごとにチェックするだけで利用記録を残し、残り回数をリアルタイムで確認できます。"
-        },
-        "remaining": {
-          "title": "残り回数の確認",
-          "description": "各会員の残り回数がひと目で分かり、混乱することがありません。"
-        },
-        "integration": {
-          "title": "一元管理",
-          "description": "多様な会員・バウチャーをひとつの統合アプリで便利に管理します。"
-        },
-        "expiry": {
-          "title": "有効期限アラート",
-          "description": "期限が近づくと通知が届き、使い忘れを防ぎます。"
-        },
-        "history": {
-          "title": "利用履歴",
-          "description": "いつどの会員を使ったのか記録を確認し、利用パターンを分析できます。"
-        }
-      },
-      "download": {
-        "title": "今すぐインストール",
-        "description": "AndroidとiOSで今すぐStampitをインストールして、賢く会員管理を始めましょう！",
-        "android": "Androidでインストール",
-        "ios": "iOSでインストール"
-      },
-      "footer": {
-        "copyright": "© 2025 Purpleship. 全著作権所有。",
-        "contact": "連絡先：captain@purpleship.io",
-        "privacy": "プライバシーポリシー"
+    "section2": {
+      "title": "2. Data We Collect and Purpose (Common)",
+      "intro": "We collect only what is necessary to deliver services and support users. Additional items, if any, are listed in the Service-Specific Notices below.",
+      "items": [
+        "Website visits: access logs, browser/OS information, service usage via cookies or similar tech (for analytics and service improvement)",
+        "Customer support: name, email address, and inquiry details received through support channels (e.g., email)",
+        "Technical logs: error logs and device information (model, OS version, etc.) for stability analysis"
+      ],
+      "analytics": {
+        "title": "2.1 Web/App Analytics Tools",
+        "content": "We may use analytics tools such as Google Analytics to collect anonymized usage statistics. IP anonymization or similar techniques are applied, and we do not directly identify individuals. You can opt out via your browser or the tool settings."
       }
+    },
+    "section3": {
+      "title": "3. Retention and Storage Period",
+      "items": [
+        "We retain data only for the minimum period required by law or our policies, then destroy it without delay.",
+        "Access logs: retained for 3 months per legal requirements and then deleted automatically.",
+        "Customer inquiries: retained for 3 years after completion for dispute resolution, then deleted.",
+        "Account and service data: deleted without delay upon purpose fulfillment or account deletion, or kept only for the legally mandated period (see Service-Specific Notices).",
+        "Analytics data: kept only in a de-identified, statistical form."
+      ]
+    },
+    "section4": {
+      "title": "4. Third-Party Sharing and Overseas Transfer",
+      "content": "We do not provide personal data to third parties, except in the following cases:",
+      "items": [
+        "When the user has given explicit prior consent",
+        "When required by law or a legitimate request from authorities"
+      ],
+      "ga": "When using Google Analytics, data may be transferred to servers outside your country (e.g., the United States) and is subject to Google’s privacy policy and safeguards."
+    },
+    "section5": {
+      "title": "5. Outsourcing of Processing",
+      "content": "We may entrust certain operations to external partners. Contracts include security controls, restrictions on re-entrustment, and supervision obligations. Current delegates are:",
+      "items": [
+        "Service analytics: Google LLC (Google Analytics) – Storage location: Global/US; Purpose: usage statistics and quality improvement; Retention: per Google policy",
+        "User-initiated backup/sync: Apple iCloud Drive, Google Drive, etc., to the user’s own account – the Company cannot access backed-up data."
+      ]
+    },
+    "section6": {
+      "title": "6. Your Rights and How to Exercise Them",
+      "content": "You may exercise the rights below at any time, and we will act without undue delay:",
+      "items": [
+        "Withdraw consent: change or revoke permissions (e.g., location, notifications) via service or device settings.",
+        "Request access, correction, deletion, or restriction of processing by contacting us or using in-service settings where provided.",
+        "Delete on-device data and disable cloud backups.",
+        "Seek relief through official channels such as a privacy regulator or dispute mediation body."
+      ]
+    },
+    "section7": {
+      "title": "7. Safeguards",
+      "content": "We apply the following safeguards to protect personal data:",
+      "items": [
+        "Access control based on least privilege and access log management",
+        "Encryption for data in transit and at rest, with secure key management",
+        "Regular security patches and vulnerability checks",
+        "Training and audits for personnel handling personal data",
+        "Use of OS-level secure storage and device locks for on-device data"
+      ]
+    },
+    "section8": {
+      "title": "8. Service-Specific Notices",
+      "intro": "Additional processing details that apply depending on each service are as follows:",
+      "note": "We avoid collecting unnecessary personal data and collect only what is needed. Use the buttons below to view each service’s details.",
+      "toggle": {
+        "open": "View details",
+        "close": "Hide details"
+      },
+      "stampit": {
+        "title": "Stampit (Membership Management)",
+        "summary": "Membership/coupon usage tracking; data is stored locally on the user’s device by default.",
+        "items": [
+          "Data collected: store/membership names, stamp/visit records, notification settings",
+          "Storage: kept locally on your device and not transmitted to Company servers.",
+          "Backup/Sync: if you choose, data can be backed up to your personal iCloud/Google Drive; the Company cannot access this data.",
+          "Optional permissions: notifications and calendar access are used to provide visit/expiry reminders and are optional."
+        ]
+      },
+      "movit": {
+        "title": "MOVIT (Movement Logs)",
+        "summary": "Movement logs and favorites; default storage is on the user’s device.",
+        "items": [
+          "Data collected: movement routes, location/traffic data when you enable the feature, favorite places",
+          "Storage: stored on your device by default and not sent to Company servers.",
+          "Backup/Sync: backed up to your personal cloud (e.g., Google Drive) only when you explicitly request it.",
+          "Optional permissions: location (including background) and notification permissions may be used for route logging/alerts; collection stops when you disable them.",
+          "When using third-party map/location SDKs for navigation, the provider’s policy also applies."
+        ]
+      },
+      "qnote": {
+        "title": "Qnote (Notes/Checklists)",
+        "summary": "Notes/checklists are stored locally by default.",
+        "items": [
+          "Data collected: notes, checklists, tags, attachments you create",
+          "Storage: stored locally on your device and not transmitted to Company servers.",
+          "Backup/Sync: if you choose, data can be saved to your personal cloud or exported as files; the Company cannot access the content.",
+          "Optional permissions: notifications and file/photo access are requested only when you use those features."
+        ]
+      },
+      "worldcanvas": {
+        "title": "WorldCanvas (Collaborative Canvas)",
+        "summary": "Google sign-in based collaborative canvas; minimal data is collected for account identification and sync.",
+        "items": [
+          "Sign-up/Login: uses Google OAuth. Google account identifier (ID) and email are stored in our DB to create and identify your account for sign-in.",
+          "Auth tokens are used only to maintain/refresh the login session and are discarded on expiration or logout.",
+          "Service data: canvases, boards, comments, and attachments you create/upload are stored in our servers/DB to provide sync and recovery.",
+          "Collaboration/Sharing: collaborator emails/identifiers you invite may be processed to manage invitations and permissions.",
+          "Optional permissions: file/image upload and notifications are requested only when you use those features; declining limits the optional features only.",
+          "Deletion and retention: upon account deletion or service withdrawal, account data and service content are deleted without delay or after any legally required retention. Backups are purged on a rolling basis."
+        ]
+      },
+      "update": "We will add a separate notice in this section when launching new services or features."
+    },
+    "section9": {
+      "title": "9. Data Protection Officer",
+      "officer": "Data Protection Officer: Purpleship Operations Team",
+      "contact": "Contact: captain@purpleship.io",
+      "report": "For privacy complaints, you may also contact your local authority or privacy regulator."
+    },
+    "section10": {
+      "title": "10. Changes to This Policy",
+      "content": "When laws, services, or internal policies change, we will announce updates at least 7 days before they take effect via this website or in-app notice."
+    },
+    "effectiveDate": "Effective date: Feb 7, 2025",
+    "lastModified": "Last modified: Feb 7, 2025"
+  },
+  "stampit": {
+    "title": "Stampit",
+    "nav": {
+      "home": "ホーム",
+      "download": "ダウンロード"
+    },
+    "hero": {
+      "title": "Stampit",
+      "subtitle": "会員管理アプリ",
+      "description": "回数制のプリペイド会員やクーポン、チケットをスマートに管理できるモバイルアプリです。複雑な会員情報も1か所で整理し、残り回数の把握を逃しません。"
+    },
+    "features": {
+      "title": "主な機能",
+      "register": {
+        "title": "会員の登録と管理",
+        "description": "プリペイド会員、バウチャー、クーポンをひとつの場所で簡単に登録・管理できます。"
+      },
+      "check": {
+        "title": "利用チェック",
+        "description": "来店ごとにチェックするだけで利用記録を残し、残り回数をリアルタイムで確認できます。"
+      },
+      "remaining": {
+        "title": "残り回数の確認",
+        "description": "各会員の残り回数がひと目で分かり、混乱することがありません。"
+      },
+      "integration": {
+        "title": "一元管理",
+        "description": "多様な会員・バウチャーをひとつの統合アプリで便利に管理します。"
+      },
+      "expiry": {
+        "title": "有効期限アラート",
+        "description": "期限が近づくと通知が届き、使い忘れを防ぎます。"
+      },
+      "history": {
+        "title": "利用履歴",
+        "description": "いつどの会員を使ったのか記録を確認し、利用パターンを分析できます。"
+      }
+    },
+    "download": {
+      "title": "今すぐインストール",
+      "description": "AndroidとiOSで今すぐStampitをインストールして、賢く会員管理を始めましょう！",
+      "android": "Androidでインストール",
+      "ios": "iOSでインストール"
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. 全著作権所有。",
+      "contact": "連絡先：captain@purpleship.io",
+      "privacy": "プライバシーポリシー"
     }
   }
+}
