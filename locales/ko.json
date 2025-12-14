@@ -3,6 +3,12 @@
   "nav": {
     "apps": "우리의 앱"
   },
+  "navMenu": {
+    "movit": "Movit",
+    "stampit": "Stampit",
+    "qnote": "QNote",
+    "worldcanvas": "WorldCanvas"
+  },
   "description": {
     "line1": "우리는 세상에 존재하지 않는 앱을 발견해서 개발하는 단체입니다.",
     "line2": "우주의 무궁무진한 아이디어를 찾아내어,",
@@ -66,6 +72,44 @@
     "passionate": "열정이 넘치는 분들을 기다립니다"
   },
   "donation": "도네이션하기",
+  "worldcanvas": {
+    "title": "WorldCanvas",
+    "nav": {
+      "home": "홈",
+      "download": "시작하기"
+    },
+    "hero": {
+      "title": "WorldCanvas",
+      "subtitle": "협업 캔버스",
+      "description": "전 세계의 사람들과 같은 캔버스에 픽셀을 찍고, 작품을 함께 완성해보세요."
+    },
+    "features": {
+      "title": "주요 기능",
+      "collab": {
+        "title": "실시간 협업",
+        "description": "여러 명이 동시에 같은 캔버스에서 작업하고 변화가 즉시 반영됩니다."
+      },
+      "palette": {
+        "title": "팔레트 & 픽셀",
+        "description": "색상을 선택해 픽셀을 찍고, 커뮤니티와 함께 거대한 캔버스를 채워나갑니다."
+      },
+      "fast": {
+        "title": "빠른 조작",
+        "description": "쾌적한 UI로 원하는 구역을 빠르게 탐색하고 작업할 수 있습니다."
+      }
+    },
+    "download": {
+      "title": "곧 만나요",
+      "description": "WorldCanvas는 현재 준비 중입니다. 출시 소식을 곧 공유할게요.",
+      "comingSoon": "Coming Soon"
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. All rights reserved.",
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "개인정보처리방침",
+      "terms": "WorldCanvas 구매 약관"
+    }
+  },
   "stampit": {
     "title": "Stampit",
     "nav": {
@@ -131,15 +175,17 @@
   "footer": {
     "copyright": "© 2025 Purpleship. All rights reserved.",
     "contact": "Contact: captain@purpleship.io",
-    "privacy": "개인정보처리방침"
+    "privacy": "개인정보처리방침",
+    "terms": "WorldCanvas 구매 약관"
   },
   "privacy": {
     "title": "개인정보처리방침",
     "subtitle": "Purpleship Privacy Policy",
     "backToHome": "← 홈으로 돌아가기",
+    "purchaseTerms": "WorldCanvas 구매 약관",
     "section1": {
       "title": "1. 적용 범위 및 기본 원칙",
-      "content1": "Purpleship(이하 \"회사\")과 회사가 운영하는 모든 서비스(예: Stampit, MOVIT, Qnote, WorldCanvas 등)에 공통 적용되는 개인정보 처리 기준을 안내합니다.",
+      "content1": "Purpleship(이하 \"회사\")과 회사가 운영하는 모든 서비스(예: Stampit, Movit, Qnote, WorldCanvas 등)에 공통 적용되는 개인정보 처리 기준을 안내합니다.",
       "content2": "회사는 서비스 제공에 필요한 최소한의 개인정보만을 수집하며, 서비스 특성상 추가로 필요한 사항은 「서비스별 추가 고지」에 별도로 명시하여 본 방침과 함께 적용합니다."
     },
     "section2": {
@@ -222,7 +268,7 @@
         ]
       },
       "movit": {
-        "title": "MOVIT (이동 기록)",
+        "title": "Movit (이동 기록)",
         "summary": "이동 기록과 즐겨찾기를 관리하며, 기본 저장 위치는 사용자 기기입니다.",
         "items": [
           "수집 항목: 이동 경로, 위치/교통 정보(사용자가 기능을 켠 경우), 즐겨찾기 장소",
@@ -268,5 +314,63 @@
     },
     "effectiveDate": "시행일: 2025년 2월 7일",
     "lastModified": "최종 수정일: 2025년 2월 7일"
+  },
+  "worldcanvasTerms": {
+    "title": "WorldCanvas 구매 약관",
+    "subtitle": "WorldCanvas 유료 상품 및 가상재화(Purple) 구매/사용에 관한 약관입니다.",
+    "effectiveDate": "시행일: 2025년 12월 14일",
+    "backToHome": "← 홈으로 돌아가기",
+    "nav": {
+      "home": "홈",
+      "privacy": "개인정보처리방침"
+    },
+    "section1": {
+      "title": "1. 목적 및 적용 범위",
+      "p1": "본 약관은 WorldCanvas 웹서비스에서 제공되는 유료 상품 및 가상재화 Purple의 구매·사용·환불(청약철회 포함) 등에 관한 조건을 정합니다."
+    },
+    "section2": {
+      "title": "2. 정의",
+      "d1": "“서비스”란 WorldCanvas 웹서비스 및 이에 부수하는 기능을 의미합니다.",
+      "d2": "“유료 상품”이란 결제를 통해 제공되는 디지털 콘텐츠/권한/가상재화 등을 의미합니다.",
+      "d3": "“Purple”이란 서비스 내에서 사용 가능한 가상재화(포인트/크레딧)로서, 현금과 동일한 가치로 환전되지 않습니다.",
+      "d4": "“소비”란 Purple을 사용하여 기능/아이템을 구매하거나 사용 한도를 증가시키는 행위를 의미합니다."
+    },
+    "section3": {
+      "title": "3. Purple 및 사용처",
+      "p1": "사용자는 Purple을 구매하여 서비스 내 기능을 이용할 수 있습니다. Purple의 구체적인 사용처는 서비스 화면에 표시되는 안내에 따릅니다.",
+      "li1": "예시: 팔레트 색상(팔레트 슬롯) 확장",
+      "li2": "예시: 픽셀을 한 번에 “찍을 수 있는 한도치” 증가(일괄 찍기 한도 확장)",
+      "li3": "예시: 기타 유료 아이템/기능(추후 추가될 수 있음)"
+    },
+    "section4": {
+      "title": "4. 결제 및 제공",
+      "p1": "유료 상품의 가격, 제공 내용, 결제 수단, 과금 시점은 결제 화면 또는 구매 과정에서 표시되는 정보를 따릅니다. 결제 완료 후 Purple 또는 해당 권한이 즉시(또는 합리적인 시간 내) 제공됩니다.",
+      "li1": "결제는 제3자 결제 서비스 제공자를 통해 처리될 수 있습니다.",
+      "li2": "구매 내역 및 지급 내역은 서비스 내 또는 결제 수단의 영수증에서 확인할 수 있습니다."
+    },
+    "section5": {
+      "title": "5. 청약철회(환불) 및 예외",
+      "p1": "원칙적으로 디지털 콘텐츠/가상재화는 제공 즉시 이용이 개시될 수 있으며, 관련 법령이 허용하는 범위 내에서 청약철회가 제한될 수 있습니다. 다만, 아래 사유에 해당하는 경우 합리적인 범위에서 환불 또는 보상 절차를 제공합니다.",
+      "li1": "미지급/오지급 등 회사 귀책 사유가 있는 경우",
+      "li2": "결제 오류/중복 결제 등 정당한 사유가 있는 경우",
+      "li3": "법령상 환불이 요구되는 경우",
+      "li4": "Purple이 이미 소비된 경우, 소비된 범위를 제외하고 처리될 수 있습니다(법령상 제한이 없는 범위)."
+    },
+    "section6": {
+      "title": "6. 미성년자 결제",
+      "p1": "미성년자가 결제하는 경우 법정대리인의 동의가 필요할 수 있으며, 법령에 따라 취소(환불) 요청이 가능할 수 있습니다."
+    },
+    "section7": {
+      "title": "7. 이용 제한 및 회수",
+      "p1": "부정 결제, 해킹/어뷰징, 약관 위반 등이 확인될 경우, 회사는 관련 법령 및 서비스 정책에 따라 지급된 Purple/권한을 회수하거나 계정 이용을 제한할 수 있습니다."
+    },
+    "section8": {
+      "title": "8. 약관의 변경",
+      "p1": "회사는 법령 또는 서비스 변경에 따라 본 약관을 개정할 수 있으며, 중요한 변경은 합리적인 기간 전에 서비스 내 공지 또는 웹사이트 공지를 통해 안내합니다."
+    },
+    "section9": {
+      "title": "9. 문의",
+      "p1": "결제/환불/구매 관련 문의는 아래 이메일로 접수해 주세요: captain@purpleship.io"
+    }
   }
 }

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WorldCanvas - 협업 캔버스. 함께 그리는 거대한 픽셀 월드를 만들어보세요.">
+  <meta name="keywords" content="WorldCanvas, 협업 캔버스, 픽셀 아트, 공동 작업, 웹 서비스, Purpleship">
+  <meta name="author" content="Purpleship">
+
+  <meta property="og:title" content="WorldCanvas - 협업 캔버스">
+  <meta property="og:description" content="함께 그리는 거대한 픽셀 월드">
+  <meta property="og:url" content="https://purpleship.io/worldcanvas/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WorldCanvas - 협업 캔버스">
+  <meta name="twitter:description" content="함께 그리는 거대한 픽셀 월드">
+
+  <title>WorldCanvas - 협업 캔버스</title>
+  <canvas id="bgCanvas"></canvas>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="../locales/i18n-loader.js"></script>
+
+  <style>
+    #bgCanvas { position: fixed; top:0; left:0; width:100%; height:100%; z-index:0; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    :root{
+      --primary-purple:#1d1d1f;
+      --secondary-purple:#2d2d30;
+      --tertiary-purple:#424245;
+      --accent-blue:#007aff;
+      --accent-gold:#ff9500;
+      --text-primary:#f5f5f7;
+      --text-secondary:#a1a1a6;
+      --surface-primary: rgba(29,29,31,.95);
+      --surface-secondary: rgba(45,45,48,.8);
+      --backdrop-blur: blur(20px);
+      --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --shadow-light: 0 2px 16px rgba(0,0,0,.12);
+      --shadow-medium: 0 8px 32px rgba(0,0,0,.24);
+      --shadow-heavy: 0 16px 64px rgba(0,0,0,.32);
+      --border-radius-small: 8px;
+      --border-radius-large: 20px;
+      --spacing-sm: 8px;
+      --spacing-md: 16px;
+      --spacing-lg: 24px;
+      --spacing-xl: 32px;
+      --spacing-2xl: 48px;
+    }
+    html { scroll-behavior:smooth; font-size:16px; line-height:1.6; }
+    body{
+      font-family:'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 35%, var(--tertiary-purple) 70%, #773c96 100%);
+      background-attachment: fixed;
+      color: var(--text-primary);
+      min-height:100vh;
+      overflow-x:hidden;
+      position:relative;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .section{
+      min-height:100vh;
+      height:auto;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+      z-index:2;
+      padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+    .section::before{
+      content:'';
+      position:absolute; inset:0;
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: var(--backdrop-blur);
+      z-index:-1;
+      opacity:0;
+      transition: opacity 0.6s ease;
+    }
+    .section:hover::before{ opacity:1; }
+    .section.active { animation: sectionSlideIn 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
+    @keyframes sectionSlideIn { 0%{opacity:0; transform: translateY(50px);} 100%{opacity:1; transform: translateY(0);} }
+
+    h1{
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 800;
+      margin-bottom: var(--spacing-2xl);
+      color:#fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+      letter-spacing: -0.04em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      line-height: 1.1;
+    }
+    h2{
+      font-size: clamp(2.25rem, 5.5vw, 3.25rem);
+      font-weight: 700;
+      margin-bottom: var(--spacing-lg);
+      color:#fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+      letter-spacing: -0.03em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      line-height:1.1;
+    }
+    h3{
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      color: var(--accent-blue);
+      font-weight: 600;
+      margin-bottom: var(--spacing-md);
+      letter-spacing: -0.02em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    }
+    p{
+      font-size: clamp(1.05rem, 2.6vw, 1.5rem);
+      max-width: min(90%, 900px);
+      line-height: 1.55;
+      margin-bottom: var(--spacing-2xl);
+      color:#fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,.8);
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    }
+    .subtitle{
+      font-size: clamp(1.35rem, 3.6vw, 2.05rem);
+      font-weight: 500;
+      color:#fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,.8);
+      margin-bottom: var(--spacing-2xl);
+      letter-spacing: -0.02em;
+    }
+
+    .main-nav{
+      position: fixed; top:0; left:0; right:0;
+      z-index:1000;
+      background: var(--surface-primary);
+      backdrop-filter: var(--backdrop-blur);
+      border-bottom: 0.5px solid rgba(255,255,255,0.08);
+      height:64px;
+    }
+    .nav-container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+      height:100%;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      gap: 12px;
+    }
+    .nav-brand{
+      display:flex; align-items:center; gap: var(--spacing-sm);
+      color: var(--text-primary);
+      text-decoration:none;
+      font-weight: 700;
+    }
+    .brand-icon{
+      width: 32px; height: 32px;
+      display:grid; place-items:center;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--shadow-light);
+    }
+    .brand-icon span{ font-size: 18px; }
+    .nav-menu{ display:flex; align-items:center; gap: var(--spacing-lg); }
+    .nav-menu a{
+      color: var(--text-primary);
+      text-decoration:none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      border-radius: var(--border-radius-small);
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .nav-menu a::before{
+      content:'';
+      position:absolute;
+      bottom:-2px; left:50%;
+      width:0; height:2px;
+      background: var(--accent-blue);
+      transition: var(--transition-smooth);
+      transform: translateX(-50%);
+    }
+    .nav-menu a:hover{ color: var(--accent-blue); background: rgba(255,255,255,0.05); }
+    .nav-menu a:hover::before{ width:80%; }
+
+    .language-selector{ position: relative; }
+    .lang-button{ display:inline-flex; align-items:center; gap:6px; padding:4px 8px; height:28px; font-size:12px; color:var(--text-primary); background: var(--surface-secondary); border: .5px solid rgba(255,255,255,.12); border-radius:8px; cursor:pointer; }
+    .lang-menu{ position:absolute; right:0; top:calc(100% + 6px); background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:6px; display:grid; gap:4px; min-width:140px; z-index:1001; }
+    .lang-menu[hidden]{ display:none !important; }
+    .lang-menu button{ text-align:left; background:transparent; color:var(--text-primary); border:none; padding:6px 8px; border-radius:6px; font-size:12px; cursor:pointer; }
+    .lang-menu button:hover{ background:rgba(255,255,255,.06); }
+
+    .app-icon-container{
+      width: 250px; height: 250px;
+      margin: 0 auto var(--spacing-2xl);
+      display:flex; align-items:center; justify-content:center;
+      background: rgba(255,255,255,0.10);
+      border-radius: var(--border-radius-large);
+      backdrop-filter: var(--backdrop-blur);
+      box-shadow: var(--shadow-medium);
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .app-icon-container:hover{ transform: scale(1.05); box-shadow: var(--shadow-heavy); }
+    .world-icon{
+      width: 200px; height: 200px;
+      border-radius: 28px;
+      display:grid; place-items:center;
+      background: rgba(29,29,31,0.55);
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+      font-size: 84px;
+    }
+
+    .features-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-xl);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--spacing-xl);
+    }
+    .feature-card{
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--border-radius-large);
+      padding: var(--spacing-lg);
+      backdrop-filter: var(--backdrop-blur);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: var(--transition-smooth);
+    }
+    .feature-card:hover{
+      background: rgba(255,255,255,0.08);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-medium);
+    }
+    .feature-icon{ font-size: 3rem; margin-bottom: var(--spacing-lg); display:block; }
+    .feature-description{ font-size: 1rem; color: #fff; opacity: 0.95; line-height:1.6; margin:0; text-shadow:none; }
+
+    .download-buttons{ display:flex; gap: var(--spacing-lg); justify-content:center; margin-top: var(--spacing-2xl); flex-wrap:wrap; }
+    .download-btn{
+      padding: var(--spacing-md) var(--spacing-lg);
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent-blue), #0051d5);
+      color:#fff;
+      text-decoration:none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: var(--transition-spring);
+      box-shadow: var(--shadow-light);
+      min-width: 220px;
+      text-align:center;
+      border:none;
+      cursor:pointer;
+      font-family: inherit;
+      position: relative;
+      overflow: hidden;
+    }
+    .download-btn.coming-soon,
+    .download-btn:disabled{
+      background: linear-gradient(135deg, var(--text-secondary), #666);
+      cursor:not-allowed;
+      opacity:0.85;
+      box-shadow: none;
+    }
+
+    footer{
+      width: 100%;
+      min-height: 120px;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, rgba(44,22,90,0.8) 0%, rgba(69,36,108,0.7) 100%);
+      backdrop-filter: var(--backdrop-blur);
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+    }
+    footer p{ font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; color: var(--text-primary); opacity: 0.95; text-shadow:none; }
+    footer a{ color: var(--accent-gold); text-decoration:none; font-weight:700; }
+    footer a:hover{ text-decoration: underline; }
+
+    @media (max-width: 768px){
+      .nav-container{ padding: 0.75rem 1rem; }
+      .section{ padding: 6rem 1.25rem 2rem; min-height: auto; }
+      h1{ font-size: 2.25rem; }
+      h2{ font-size: 1.75rem; margin-bottom: 0.75rem; }
+      .subtitle{ font-size: 1.25rem; margin-bottom: 1rem; }
+      p{ font-size: 1rem; max-width: 100%; text-shadow: none; opacity: 0.95; }
+      .features-grid{ grid-template-columns: 1fr; padding: var(--spacing-md); gap: var(--spacing-lg); }
+      .download-buttons{ flex-direction: column; align-items:center; }
+      .app-icon-container{ width: 180px; height: 180px; margin: 0 auto var(--spacing-xl); }
+      .world-icon{ width: 140px; height: 140px; font-size: 56px; border-radius: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="../" class="nav-brand">
+        <span class="brand-icon" aria-hidden="true"><span>🎨</span></span>
+        <span class="brand-text" data-i18n="title">WorldCanvas</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="../" data-i18n="nav.home">홈</a>
+        <a href="#download" data-i18n="nav.download">시작하기</a>
+      </nav>
+      <div class="language-selector">
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="fr">🇫🇷 Français</button>
+          <button data-lang="de">🇩🇪 Deutsch</button>
+          <button data-lang="ru">🇷🇺 Русский</button>
+          <button data-lang="ar">🇸🇦 العربية</button>
+          <button data-lang="hi">🇮🇳 हिन्दी</button>
+          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="section" id="hero">
+    <div class="app-icon-container">
+      <div class="world-icon" aria-hidden="true">🌍</div>
+    </div>
+    <h1 data-i18n="hero.title">WorldCanvas</h1>
+    <div class="subtitle" data-i18n="hero.subtitle">협업 캔버스</div>
+    <p data-i18n="hero.description">전 세계의 사람들과 같은 캔버스에 픽셀을 찍고, 작품을 함께 완성해보세요.</p>
+  </div>
+
+  <div class="section" id="features">
+    <h2 data-i18n="features.title">주요 기능</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🧩</span>
+        <h3 data-i18n="features.collab.title">실시간 협업</h3>
+        <p class="feature-description" data-i18n="features.collab.description">여러 명이 동시에 같은 캔버스에서 작업하고 변화가 즉시 반영됩니다.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎨</span>
+        <h3 data-i18n="features.palette.title">팔레트 & 픽셀</h3>
+        <p class="feature-description" data-i18n="features.palette.description">색상을 선택해 픽셀을 찍고, 커뮤니티와 함께 거대한 캔버스를 채워나갑니다.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🚀</span>
+        <h3 data-i18n="features.fast.title">빠른 조작</h3>
+        <p class="feature-description" data-i18n="features.fast.description">쾌적한 UI로 원하는 구역을 빠르게 탐색하고 작업할 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="download">
+    <h2 data-i18n="download.title">곧 만나요</h2>
+    <p data-i18n="download.description">WorldCanvas는 현재 준비 중입니다. 출시 소식을 곧 공유할게요.</p>
+    <div class="download-buttons">
+      <button class="download-btn coming-soon" type="button" disabled data-i18n="download.comingSoon">Coming Soon</button>
+    </div>
+
+    <footer>
+      <p><span data-i18n="footer.copyright">© 2025 Purpleship. All rights reserved.</span></p>
+      <p><span data-i18n="footer.contact">Contact: captain@purpleship.io</span></p>
+      <p><a href="../privacy/" data-i18n="footer.privacy">개인정보처리방침</a></p>
+      <p><a href="./terms/" data-i18n="footer.terms">WorldCanvas Purchase Terms</a></p>
+    </footer>
+  </div>
+
+  <script id="vertexShader" type="x-shader/x-vertex">
+    attribute vec2 position;
+    void main() { gl_Position = vec4(position, 0.0, 1.0); }
+  </script>
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec2 resolution;
+    uniform float time;
+    mat2 m(float a){ float c=cos(a); float s=sin(a); return mat2(c,-s,s,c); }
+    float map(vec3 p){
+      p.xz *= m(time * 0.4);
+      p.xy *= m(time * 0.3);
+      vec3 q = p * 2.0 + time;
+      return length(p + vec3(sin(time * 0.7))) * log(length(p) + 1.0) +
+             sin(q.x + sin(q.z + sin(q.y))) * 0.5 - 1.0;
+    }
+    void main(){
+      vec2 p = (gl_FragCoord.xy / resolution.y) - vec2(resolution.x/resolution.y * 0.5, 0.5);
+      vec3 cl = vec3(0.0);
+      float d = 2.5;
+      for(int i = 0; i <= 5; i++){
+        vec3 p3 = vec3(0.0, 0.0, 5.0) + normalize(vec3(p, -1.0)) * d;
+        float rz = map(p3);
+        float f = clamp((rz - map(p3 + 0.1)) * 0.5, -0.1, 1.0);
+        vec3 l = vec3(0.1, 0.3, 0.4) + vec3(5.0, 2.5, 3.0) * f;
+        cl = cl * l + smoothstep(2.5, 0.0, rz) * 0.7 * l;
+        d += min(rz, 1.0);
+      }
+      gl_FragColor = vec4(cl, 1.0);
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await window.i18n.init('worldcanvas');
+
+      // Section animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('active');
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.section').forEach(section => observer.observe(section));
+
+      // WebGL bg
+      const canvas = document.getElementById('bgCanvas');
+      const gl = canvas.getContext('webgl');
+      function resizeCanvas(){
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        gl.viewport(0,0,canvas.width,canvas.height);
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+      function createShader(type, source){
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        return shader;
+      }
+      const vs = createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
+      const fs = createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
+      const program = gl.createProgram();
+      gl.attachShader(program, vs);
+      gl.attachShader(program, fs);
+      gl.linkProgram(program);
+      gl.useProgram(program);
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+      const position = gl.getAttribLocation(program, 'position');
+      gl.enableVertexAttribArray(position);
+      gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
+      const timeLocation = gl.getUniformLocation(program, 'time');
+      const resolutionLocation = gl.getUniformLocation(program, 'resolution');
+      function animate(time){
+        time *= 0.001;
+        gl.uniform1f(timeLocation, time);
+        gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+
+      // Language button
+      const btn = document.getElementById('langBtn');
+      const menu = document.getElementById('langMenu');
+      function setLabel(lang){
+        const label = document.getElementById('langLabel');
+        if (!label) return;
+        const map = { ko:'한국어', en:'English', zh:'中文', ja:'日本語', es:'Español', fr:'Français', de:'Deutsch', ru:'Русский', ar:'العربية', hi:'हिन्दी', vi:'Tiếng Việt' };
+        label.textContent = map[lang] || 'Auto';
+      }
+      if (btn && menu) {
+        setLabel(document.documentElement.lang || 'auto');
+        btn.addEventListener('click', ()=>{
+          if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
+          else menu.setAttribute('hidden','');
+        });
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click', async ()=>{
+            let lang = item.getAttribute('data-lang');
+            if (lang === 'auto') lang = window.i18n.detectLanguage();
+            await window.i18n.changeLanguage(lang, 'worldcanvas');
+            setLabel(lang);
+            menu.setAttribute('hidden','');
+          });
+        });
+        document.addEventListener('click', (e)=>{
+          if (!menu.contains(e.target) && !btn.contains(e.target)) menu.setAttribute('hidden','');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+

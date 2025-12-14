@@ -3,6 +3,12 @@
   "nav": {
     "apps": "Produkt"
   },
+  "navMenu": {
+    "movit": "Movit",
+    "stampit": "Stampit",
+    "qnote": "QNote",
+    "worldcanvas": "WorldCanvas"
+  },
   "description": {
     "line1": "Wir sind eine Organisation, die nicht existierende Apps entdeckt und entwickelt.",
     "line2": "Durch das Finden unendlicher Ideen aus dem Universum,",
@@ -66,6 +72,44 @@
     "passionate": "Wir warten auf leidenschaftliche Menschen"
   },
   "donation": "Spenden",
+  "worldcanvas": {
+    "title": "WorldCanvas",
+    "nav": {
+      "home": "Home",
+      "download": "Get Started"
+    },
+    "hero": {
+      "title": "WorldCanvas",
+      "subtitle": "Collaborative Canvas",
+      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+    },
+    "features": {
+      "title": "Key Features",
+      "collab": {
+        "title": "Real-time collaboration",
+        "description": "Work together on the same canvas at the same time, with instant updates."
+      },
+      "palette": {
+        "title": "Palette & pixels",
+        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+      },
+      "fast": {
+        "title": "Fast controls",
+        "description": "A smooth UI to quickly navigate and work on the area you want."
+      }
+    },
+    "download": {
+      "title": "See you soon",
+      "description": "WorldCanvas is currently in the works. We’ll share the launch news soon.",
+      "comingSoon": "Coming Soon"
+    },
+    "footer": {
+      "copyright": "© 2025 Purpleship. All rights reserved.",
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "Privacy Policy",
+      "terms": "WorldCanvas Purchase Terms"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "Sofort‑Notizboard für „jetzt“",
@@ -81,15 +125,17 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Alle Rechte vorbehalten.",
     "contact": "Kontakt: captain@purpleship.io",
-    "privacy": "Datenschutzrichtlinie"
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "WorldCanvas Purchase Terms"
   },
   "privacy": {
     "title": "Privacy Policy",
     "subtitle": "Purpleship Privacy Policy",
     "backToHome": "← Back to Home",
+    "purchaseTerms": "WorldCanvas Purchase Terms",
     "section1": {
       "title": "1. Scope and Principles",
-      "content1": "This unified policy applies to Purpleship (the \"Company\") and all services we operate (e.g., Stampit, MOVIT, Qnote, WorldCanvas).",
+      "content1": "This unified policy applies to Purpleship (the \"Company\") and all services we operate (e.g., Stampit, Movit, Qnote, WorldCanvas).",
       "content2": "We collect only the minimum personal data needed to provide services. Any additional service-specific processing is described in the “Service-Specific Notices” and applies together with this policy."
     },
     "section2": {
@@ -172,7 +218,7 @@
         ]
       },
       "movit": {
-        "title": "MOVIT (Movement Logs)",
+        "title": "Movit (Movement Logs)",
         "summary": "Movement logs and favorites; default storage is on the user’s device.",
         "items": [
           "Data collected: movement routes, location/traffic data when you enable the feature, favorite places",
@@ -267,6 +313,64 @@
       "copyright": "© 2025 Purpleship. Alle Rechte vorbehalten.",
       "contact": "Kontakt: captain@purpleship.io",
       "privacy": "Datenschutzrichtlinie"
+    }
+  },
+  "worldcanvasTerms": {
+    "title": "WorldCanvas Purchase Terms",
+    "subtitle": "Terms for purchasing and using paid items and virtual currency (Purple) in WorldCanvas.",
+    "effectiveDate": "Effective date: Dec 14, 2025",
+    "backToHome": "← Back to Home",
+    "nav": {
+      "home": "Home",
+      "privacy": "Privacy Policy"
+    },
+    "section1": {
+      "title": "1. Purpose and Scope",
+      "p1": "These terms govern the purchase, use, and refund (including withdrawal) of paid items and the virtual currency Purple provided in the WorldCanvas web service."
+    },
+    "section2": {
+      "title": "2. Definitions",
+      "d1": "\"Service\" means the WorldCanvas web service and related features.",
+      "d2": "\"Paid items\" means digital content, entitlements, virtual currency, and similar items provided in exchange for payment.",
+      "d3": "\"Purple\" means virtual currency (points/credits) usable within the Service and is not exchangeable for cash.",
+      "d4": "\"Consumption\" means using Purple to purchase features/items or to increase usage limits."
+    },
+    "section3": {
+      "title": "3. Purple and Where It Can Be Used",
+      "p1": "You may purchase Purple to use features within the Service. Specific use cases follow what is shown in the Service UI.",
+      "li1": "Example: expand palette colors (palette slots)",
+      "li2": "Example: increase the limit for stamping pixels \"at once\" (bulk-stamp limit expansion)",
+      "li3": "Example: other paid items/features (may be added later)"
+    },
+    "section4": {
+      "title": "4. Payment and Delivery",
+      "p1": "Pricing, entitlements, payment methods, and billing timing follow what is displayed during checkout. After successful payment, Purple or the relevant entitlement will be delivered immediately (or within a reasonable time).",
+      "li1": "Payments may be processed through a third-party payment provider.",
+      "li2": "You may verify purchase and delivery details in the Service or via your payment receipt."
+    },
+    "section5": {
+      "title": "5. Refunds (Withdrawal) and Exceptions",
+      "p1": "Digital content/virtual currency may be made available immediately upon purchase, and withdrawal may be limited to the extent permitted by applicable law. However, we provide refunds or remedies within a reasonable scope in the cases below.",
+      "li1": "When non-delivery or mis-delivery occurs due to our fault",
+      "li2": "When there is a valid reason such as payment errors or duplicate charges",
+      "li3": "When a refund is required by applicable law",
+      "li4": "If Purple has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
+    },
+    "section6": {
+      "title": "6. Minors",
+      "p1": "If a minor makes a purchase, consent from a legal guardian may be required, and cancellation/refund may be available as provided by law."
+    },
+    "section7": {
+      "title": "7. Restrictions and Reversal",
+      "p1": "If fraudulent payment, hacking/abuse, or violations are detected, we may revoke Purple/entitlements or restrict account access in accordance with applicable law and service policies."
+    },
+    "section8": {
+      "title": "8. Changes to These Terms",
+      "p1": "We may revise these terms due to legal or service changes. Material changes will be announced with reasonable prior notice via the website or in-service notice."
+    },
+    "section9": {
+      "title": "9. Contact",
+      "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
     }
   }
 }
