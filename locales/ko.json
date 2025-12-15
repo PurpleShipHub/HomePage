@@ -54,7 +54,10 @@
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
       "contact": "Contact: captain@purpleship.io",
-      "privacy": "개인정보처리방침"
+      "privacy": "개인정보처리방침",
+      "termsConditions": "이용약관",
+      "refund": "환불정책",
+      "pricing": "가격"
     }
   },
   "vision": {
@@ -107,6 +110,9 @@
       "copyright": "© 2025 Purpleship. All rights reserved.",
       "contact": "Contact: captain@purpleship.io",
       "privacy": "개인정보처리방침",
+      "termsConditions": "이용약관",
+      "refund": "환불정책",
+      "pricing": "가격",
       "terms": "WorldCanvas 구매 약관"
     }
   },
@@ -157,7 +163,10 @@
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
       "contact": "Contact: captain@purpleship.io",
-      "privacy": "개인정보처리방침"
+      "privacy": "개인정보처리방침",
+      "termsConditions": "이용약관",
+      "refund": "환불정책",
+      "pricing": "가격"
     }
   },
   "qnote": {
@@ -176,7 +185,103 @@
     "copyright": "© 2025 Purpleship. All rights reserved.",
     "contact": "Contact: captain@purpleship.io",
     "privacy": "개인정보처리방침",
+    "termsConditions": "이용약관",
+    "refund": "환불정책",
+    "pricing": "가격",
     "terms": "WorldCanvas 구매 약관"
+  },
+  "termsPage": {
+    "brand": "Purpleship",
+    "title": "Purpleship 이용약관",
+    "subtitle": "Purpleship 웹사이트 및 관련 서비스 이용에 관한 약관입니다.",
+    "effectiveDate": "시행일: 2025년 12월 15일",
+    "backToHome": "← 홈으로 돌아가기",
+    "nav": {
+      "privacy": "개인정보처리방침",
+      "refund": "환불정책",
+      "pricing": "가격"
+    },
+    "section1": {
+      "title": "1. 사업자 정보",
+      "li1": "법적 상호(Legal business name): Purpleship",
+      "li2": "문의: captain@purpleship.io",
+      "li3": "웹사이트: purpleship.io"
+    },
+    "section2": {
+      "title": "2. 약관의 적용",
+      "p1": "본 약관은 Purpleship(이하 “회사”)가 제공하는 웹사이트 및 관련 서비스에 적용됩니다. 서비스별 결제/가상재화 등 별도의 약관이 있는 경우, 해당 약관이 우선 적용될 수 있습니다."
+    },
+    "section3": {
+      "title": "3. 이용자의 의무",
+      "li1": "관련 법령 및 본 약관을 준수해야 합니다.",
+      "li2": "서비스의 보안/안정성을 훼손하는 행위(부정접근, 리버스엔지니어링, 악용 등)를 해서는 안 됩니다."
+    },
+    "section4": {
+      "title": "4. 지식재산권",
+      "p1": "웹사이트 및 서비스에 포함된 콘텐츠와 소프트웨어에 대한 권리는 회사 또는 정당한 권리자에게 귀속됩니다."
+    },
+    "section5": {
+      "title": "5. 면책 및 책임 제한",
+      "p1": "회사는 관련 법령이 허용하는 범위 내에서 간접손해, 특별손해 등에 대해 책임을 제한할 수 있습니다. 서비스의 제공은 “있는 그대로” 제공될 수 있습니다."
+    },
+    "section6": {
+      "title": "6. 약관 변경",
+      "p1": "회사는 법령 또는 서비스 변경에 따라 본 약관을 개정할 수 있으며, 중요한 변경은 합리적인 기간 전에 공지합니다."
+    }
+  },
+  "refundPage": {
+    "brand": "Purpleship",
+    "title": "Purpleship 환불정책",
+    "subtitle": "유료 상품 및 가상재화(Purple 등) 환불/청약철회 기준을 안내합니다.",
+    "effectiveDate": "시행일: 2025년 12월 15일",
+    "backToHome": "← 홈으로 돌아가기",
+    "nav": {
+      "terms": "이용약관",
+      "privacy": "개인정보처리방침",
+      "pricing": "가격"
+    },
+    "section1": {
+      "title": "1. 적용 범위",
+      "p1": "본 정책은 Purpleship 웹사이트 및 관련 서비스에서 제공되는 유료 상품에 적용됩니다. 서비스별 구매 약관이 있는 경우, 해당 약관이 우선 적용될 수 있습니다."
+    },
+    "section2": {
+      "title": "2. 환불이 가능한 경우",
+      "li1": "미지급/오지급 등 회사 귀책 사유가 있는 경우",
+      "li2": "중복 결제, 결제 오류 등 정당한 사유가 있는 경우",
+      "li3": "법령상 환불이 요구되는 경우"
+    },
+    "section3": {
+      "title": "3. 환불 제한(예외)",
+      "li1": "디지털 콘텐츠/가상재화는 제공 즉시 이용이 개시될 수 있어, 관련 법령이 허용하는 범위 내에서 환불이 제한될 수 있습니다.",
+      "li2": "가상재화(Purple)가 이미 소비된 경우, 소비된 범위를 제외하고 처리될 수 있습니다(법령상 제한이 없는 범위)."
+    },
+    "section4": {
+      "title": "4. 신청 방법 및 처리 기간",
+      "p1": "환불 문의는 구매 내역(영수증/결제 정보)과 함께 이메일로 접수해 주세요: captain@purpleship.io",
+      "p2": "접수 후 합리적인 기간 내에 확인 및 처리 결과를 안내합니다. 결제 수단/결제 대행사 정책에 따라 환불 완료 시점은 달라질 수 있습니다."
+    }
+  },
+  "pricingPage": {
+    "brand": "Purpleship",
+    "title": "가격",
+    "subtitle": "WorldCanvas 가상재화(Purple) 패키지의 가격 안내입니다. (출시 전으로, 변경될 수 있습니다)",
+    "lastUpdated": "최종 업데이트: 2025년 12월 15일",
+    "backToHome": "← 홈으로 돌아가기",
+    "nav": {
+      "terms": "이용약관",
+      "refund": "환불정책",
+      "privacy": "개인정보처리방침"
+    },
+    "plans": {
+      "starter": { "title": "Starter", "price": "$5", "desc": "25,000 Purple" },
+      "standard": { "title": "Standard", "price": "$30", "desc": "150,000 Purple + 5% 보너스 (총 157,500 Purple)" },
+      "pro": { "title": "Pro", "price": "$50", "desc": "250,000 Purple + 10% 보너스 (총 275,000 Purple)" },
+      "common": {
+        "li1": "팔레트 색상/슬롯 확장 등에 사용",
+        "li2": "픽셀 일괄 찍기 한도 증가 등에 사용"
+      }
+    },
+    "note": "표시 가격은 참고용이며, 세금/환율/결제 수단에 따라 최종 결제 금액이 달라질 수 있습니다."
   },
   "privacy": {
     "title": "개인정보처리방침",
