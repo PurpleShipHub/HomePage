@@ -114,6 +114,17 @@
       "terms": "WorldCanvas Purchase Terms"
     }
   },
+  "qroom": {
+    "hero": {
+      "title": "Compartir archivos P2P sin dejar rastro",
+      "description": "Crea una sala con un PIN de 6 dígitos y comparte archivos. Nada se guarda en servidores: los archivos se transfieren directamente entre navegadores. Sal de la sala y todo rastro desaparece."
+    },
+    "cta": "Usar",
+    "nav": {
+      "home": "Inicio",
+      "try": "Usar"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "Tablero de notas instantáneo para “ahora”",

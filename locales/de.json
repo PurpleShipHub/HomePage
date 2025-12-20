@@ -114,6 +114,17 @@
       "terms": "WorldCanvas Purchase Terms"
     }
   },
+  "qroom": {
+    "hero": {
+      "title": "Spurlose P2P-Dateifreigabe",
+      "description": "Erstelle einen Raum mit einer 6-stelligen PIN und teile Dateien. Nichts wird auf Servern gespeichert – Dateien werden direkt zwischen Browsern übertragen. Verlasse den Raum und alle Spuren verschwinden."
+    },
+    "cta": "Verwenden",
+    "nav": {
+      "home": "Startseite",
+      "try": "Verwenden"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "Sofort‑Notizboard für „jetzt“",

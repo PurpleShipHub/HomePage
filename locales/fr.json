@@ -114,6 +114,17 @@
       "terms": "WorldCanvas Purchase Terms"
     }
   },
+  "qroom": {
+    "hero": {
+      "title": "Partage de fichiers P2P sans trace",
+      "description": "Créez une salle avec un code PIN à 6 chiffres et partagez des fichiers. Rien n'est stocké sur les serveurs : les fichiers sont transférés directement entre navigateurs. Quittez la salle et toute trace disparaît."
+    },
+    "cta": "Utiliser",
+    "nav": {
+      "home": "Accueil",
+      "try": "Utiliser"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "Tableau de notes instantané pour “maintenant”",

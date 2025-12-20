@@ -170,6 +170,17 @@
       "pricing": "Pricing"
     }
   },
+  "qroom": {
+    "hero": {
+      "title": "Volatile P2P File Sharing",
+      "description": "Create a room with a 6-digit PIN and share files. Nothing is stored on servers—files transfer directly between browsers. Leave the room and all traces vanish."
+    },
+    "cta": "Use now",
+    "nav": {
+      "home": "Home",
+      "try": "Use now"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "Instant memo board for \"right now\"",

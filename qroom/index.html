@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>qroom</title>
+  <base href="/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="/locales/i18n-loader.js"></script>
+  <style>
+    /* Movit 스타일과 정렬 */
+    :root { --primary-purple:#1d1d1f; --secondary-purple:#2d2d30; --tertiary-purple:#424245; --accent-blue:#007aff; --accent-gold:#ff9500; --text-primary:#f5f5f7; --text-secondary:#a1a1a6; --surface-primary: rgba(29,29,31,.95); --backdrop-blur: blur(20px); }
+    body { margin:0; font-family:'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 35%, var(--tertiary-purple) 70%, #773c96 100%); color: var(--text-primary); min-height:100vh; }
+    .main-nav { position:fixed; top:0; left:0; right:0; height:64px; z-index:1000; background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border-bottom: .5px solid rgba(255,255,255,.08); }
+    .nav-container { max-width:1200px; margin:0 auto; height:100%; padding:0 24px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-brand { display:flex; align-items:center; gap:12px; color:var(--text-primary); font-weight:900; font-size:1.25rem; text-decoration:none; }
+    .nav-menu { display:flex; align-items:center; gap:24px; margin: 0 auto; }
+    .nav-menu a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.9rem; position: relative; padding: 8px 16px; border-radius: 8px; }
+    .nav-menu a::before { content: ''; position: absolute; bottom: -2px; left: 50%; width: 0; height: 2px; background: var(--accent-blue); transition: all .28s ease; transform: translateX(-50%); }
+    .nav-menu a:hover { color: var(--accent-blue); background: rgba(255,255,255,0.05); }
+    .nav-menu a:hover::before { width: 80%; }
+    .language-selector { position: relative; }
+    .lang-button { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; height: 28px; font-size: 12px; color: var(--text-primary); background: rgba(45,45,48,.8); border: 0.5px solid rgba(255,255,255,.12); border-radius: 8px; cursor: pointer; }
+    .lang-menu { position: absolute; right: 0; top: calc(100% + 6px); background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 6px; display: grid; gap: 4px; min-width: 120px; z-index: 1001; }
+    .lang-menu[hidden] { display: none !important; }
+    .lang-menu button { text-align: left; background: transparent; color: var(--text-primary); border: none; padding: 6px 8px; border-radius: 6px; font-size: 12px; cursor: pointer; }
+    .lang-menu button:hover { background: rgba(255,255,255,.06); }
+    .section { min-height: calc(100vh - 64px); padding: 96px 24px 32px; display:flex; align-items:center; justify-content:center; text-align:center; }
+    .card { max-width: 700px; width:100%; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 40px; text-align:center; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(0,0,0,.25); }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 16px; }
+    p.lead { color: var(--text-secondary); font-size: clamp(1rem, 3.5vw, 1.25rem); margin: 0 0 24px; }
+    .actions { display: grid; gap: 12px; justify-content: center; }
+    .cta { display:inline-block; padding: 12px 16px; border-radius: 12px; background: var(--accent-blue); color:#fff; text-decoration:none; font-weight:700; }
+    .link { color:#fff; text-decoration:none; opacity:.9; }
+    footer { text-align:center; padding:24px; color:var(--text-secondary); }
+  </style>
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a class="nav-brand" href="/qroom/">qroom</a>
+      <nav class="nav-menu">
+        <a href="/" data-i18n="qroom.nav.home">홈</a>
+        <a href="https://qroom.live" target="_blank" rel="noopener" data-i18n="qroom.nav.try">사용하기</a>
+      </nav>
+      <div class="language-selector">
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="fr">🇫🇷 Français</button>
+          <button data-lang="de">🇩🇪 Deutsch</button>
+          <button data-lang="ru">🇷🇺 Русский</button>
+          <button data-lang="ar">🇸🇦 العربية</button>
+          <button data-lang="hi">🇮🇳 हिन्दी</button>
+          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="section">
+    <section class="card">
+      <h1 data-i18n="qroom.hero.title">기록이 남지 않는 P2P 파일 공유</h1>
+      <p class="lead" data-i18n="qroom.hero.description">6자리 PIN으로 방을 만들고, 파일을 공유하세요. 서버에 저장되지 않고 브라우저 간 직접 전송됩니다. 방을 나가면 모든 흔적이 사라집니다.</p>
+      <div class="actions">
+        <a class="cta" href="https://qroom.live" target="_blank" rel="noopener" data-i18n="qroom.cta">사용하기</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a class="link" href="/" data-i18n="privacy.backToHome">← 홈으로 돌아가기</a>
+  </footer>
+  <script>
+    // i18n-loader.js를 사용하여 언어 관리
+    document.addEventListener('DOMContentLoaded', async ()=>{
+      await window.i18n.init('qroom');
+      
+      const btn = document.getElementById('langBtn');
+      const menu = document.getElementById('langMenu');
+      const label = document.getElementById('langLabel');
+      
+      function setLabel(lang){
+        if (label) {
+          const map = { ko: '한국어', en: 'English', zh:'中文', ja:'日本語', es:'Español', fr:'Français', de:'Deutsch', ru:'Русский', ar:'العربية', hi:'हिन्दी', vi:'Tiếng Việt' };
+          label.textContent = map[lang] || 'Auto';
+        }
+      }
+      
+      setLabel(document.documentElement.lang || 'auto');
+      
+      if (btn && menu) {
+        btn.addEventListener('click', ()=>{
+          if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
+          else menu.setAttribute('hidden','');
+        });
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click', async ()=>{
+            let lang = item.getAttribute('data-lang');
+            if (lang === 'auto') lang = window.i18n.detectLanguage();
+            await window.i18n.changeLanguage(lang, 'qroom');
+            setLabel(lang);
+            menu.setAttribute('hidden','');
+          });
+        });
+        document.addEventListener('click', (e)=>{
+          if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.setAttribute('hidden','');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

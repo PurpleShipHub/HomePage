@@ -71,6 +71,17 @@
       "terms": "WorldCanvas Purchase Terms"
     }
   },
+  "qroom": {
+    "hero": {
+      "title": "Chia sẻ file P2P không để lại dấu vết",
+      "description": "Tạo phòng bằng mã PIN 6 chữ số và chia sẻ file. Không lưu trữ trên máy chủ — file được truyền trực tiếp giữa các trình duyệt. Rời phòng và mọi dấu vết đều biến mất."
+    },
+    "cta": "Sử dụng",
+    "nav": {
+      "home": "Trang chủ",
+      "try": "Sử dụng"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "Bảng ghi chú tức thời cho “ngay bây giờ”",

@@ -114,6 +114,17 @@
       "terms": "WorldCanvas Purchase Terms"
     }
   },
+  "qroom": {
+    "hero": {
+      "title": "不留痕迹的P2P文件共享",
+      "description": "用6位PIN创建房间并共享文件。文件不存储在服务器上，而是在浏览器之间直接传输。离开房间后所有痕迹都会消失。"
+    },
+    "cta": "使用",
+    "nav": {
+      "home": "首页",
+      "try": "使用"
+    }
+  },
   "qnote": {
     "hero": {
       "title": "“此刻”的即时笔记板",
