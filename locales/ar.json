@@ -33,6 +33,12 @@
     "passionate": "نحن ننتظر الأشخاص الشغوفين"
   },
   "donation": "قدم تبرعاً",
+  "footer": {
+    "copyright": "© 2025 Purpleship. جميع الحقوق محفوظة.",
+    "contact": "للتواصل: captain@purpleship.io",
+    "privacy": "سياسة الخصوصية",
+    "termsConditions": "الشروط والأحكام"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {

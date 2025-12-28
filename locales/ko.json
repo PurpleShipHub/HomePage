@@ -79,6 +79,12 @@
     "passionate": "열정이 넘치는 분들을 기다립니다"
   },
   "donation": "도네이션하기",
+  "footer": {
+    "copyright": "© 2025 Purpleship. 모든 권리 보유.",
+    "contact": "연락처: captain@purpleship.io",
+    "privacy": "개인정보처리방침",
+    "termsConditions": "이용약관"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {

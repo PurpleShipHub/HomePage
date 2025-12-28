@@ -76,6 +76,12 @@
     "passionate": "情熱あふれる方々をお待ちしています"
   },
   "donation": "寄付する",
+  "footer": {
+    "copyright": "© 2025 Purpleship. All rights reserved.",
+    "contact": "お問い合わせ: captain@purpleship.io",
+    "privacy": "プライバシーポリシー",
+    "termsConditions": "利用規約"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {

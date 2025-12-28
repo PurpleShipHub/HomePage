@@ -76,6 +76,12 @@
     "passionate": "我们正在等待充满热情的人们"
   },
   "donation": "捐赠支持",
+  "footer": {
+    "copyright": "© 2025 Purpleship. 版权所有。",
+    "contact": "联系方式：captain@purpleship.io",
+    "privacy": "隐私政策",
+    "termsConditions": "服务条款"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {

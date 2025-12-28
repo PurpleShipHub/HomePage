@@ -79,6 +79,12 @@
     "passionate": "We're waiting for passionate people"
   },
   "donation": "Make a Donation",
+  "footer": {
+    "copyright": "© 2025 Purpleship. All rights reserved.",
+    "contact": "Contact: captain@purpleship.io",
+    "privacy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {

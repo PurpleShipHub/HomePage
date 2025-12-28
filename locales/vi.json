@@ -33,6 +33,12 @@
     "passionate": "Chúng tôi đang chờ đón những người nhiệt huyết"
   },
   "donation": "Ủng Hộ",
+  "footer": {
+    "copyright": "© 2025 Purpleship. Đã đăng ký bản quyền.",
+    "contact": "Liên hệ: captain@purpleship.io",
+    "privacy": "Chính Sách Bảo Mật",
+    "termsConditions": "Điều Khoản và Điều Kiện"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {

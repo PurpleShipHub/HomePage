@@ -33,6 +33,12 @@
     "passionate": "हम उत्साही लोगों का इंतज़ार कर रहे हैं"
   },
   "donation": "दान करें",
+  "footer": {
+    "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
+    "contact": "संपर्क: captain@purpleship.io",
+    "privacy": "गोपनीयता नीति",
+    "termsConditions": "नियम और शर्तें"
+  },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
