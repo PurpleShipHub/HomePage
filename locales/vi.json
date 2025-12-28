@@ -1,7 +1,10 @@
 {
   "title": "Purpleship",
   "nav": {
-    "apps": "Sản phẩm"
+    "apps": "Sản phẩm",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ",
+    "refund": "Chính Sách Hoàn Tiền"
   },
   "navMenu": {
     "movit": "Movit",
@@ -523,6 +526,105 @@
     "section9": {
       "title": "9. Contact",
       "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
+    }
+  },
+  "privacyPage": {
+    "brand": "Purpleship",
+    "title": "Chính Sách Bảo Mật Purpleship",
+    "subtitle": "Chính sách về việc thu thập, sử dụng và quản lý thông tin cá nhân cho các dịch vụ Purpleship.",
+    "effectiveDate": "Ngày có hiệu lực: 7 tháng 2 năm 2025",
+    "backToHome": "← Quay lại Trang chủ",
+    "section1": {
+      "title": "1. Phạm Vi và Nguyên Tắc Cơ Bản",
+      "p1": "Chính sách này áp dụng cho Purpleship (sau đây gọi là \"Công ty\") và tất cả các dịch vụ do Công ty điều hành (ví dụ: Stampit, Movit, Qnote, WorldCanvas, v.v.).",
+      "p2": "Công ty chỉ thu thập thông tin cá nhân tối thiểu cần thiết để cung cấp dịch vụ. Các yêu cầu cụ thể cho từng dịch vụ được nêu riêng trong phần \"Thông Báo Dành Riêng Cho Dịch Vụ\"."
+    },
+    "section2": {
+      "title": "2. Thông Tin Thu Thập và Mục Đích Sử Dụng (Chung)",
+      "intro": "Công ty chỉ thu thập thông tin tối thiểu cần thiết cho việc cung cấp dịch vụ và hỗ trợ khách hàng.",
+      "li1": "Sử dụng trang web: Nhật ký truy cập, thông tin trình duyệt/hệ điều hành, lịch sử sử dụng qua cookie và công nghệ tương tự (cho thống kê và cải thiện dịch vụ)",
+      "li2": "Xử lý yêu cầu: Tên, email và nội dung yêu cầu nhận được qua các kênh liên hệ (email, v.v.)",
+      "li3": "Nhật ký kỹ thuật: Nhật ký lỗi, thông tin thiết bị (model, phiên bản hệ điều hành, v.v.) để phân tích ổn định",
+      "analytics": {
+        "title": "2.1 Công Cụ Phân Tích Web/Ứng Dụng",
+        "p1": "Chúng tôi có thể thu thập thống kê sử dụng ẩn danh bằng các công cụ phân tích như Google Analytics. Chúng tôi áp dụng ẩn danh hóa IP và không trực tiếp xác định cá nhân."
+      }
+    },
+    "section3": {
+      "title": "3. Thời Gian Lưu Giữ và Sử Dụng Thông Tin Cá Nhân",
+      "li1": "Dữ liệu chỉ được lưu giữ trong thời gian tối thiểu theo yêu cầu của pháp luật hoặc chính sách nội bộ và sau đó được hủy ngay lập tức.",
+      "li2": "Nhật ký truy cập: Được lưu giữ 3 tháng theo Luật Bảo vệ Quyền riêng tư Truyền thông rồi tự động hủy.",
+      "li3": "Hồ sơ yêu cầu: Được lưu giữ 3 năm sau khi giải quyết để chuẩn bị tranh chấp rồi hủy.",
+      "li4": "Dữ liệu tài khoản và dịch vụ: Được xóa ngay khi đạt mục đích hoặc kết thúc tài khoản."
+    },
+    "section4": {
+      "title": "4. Cung Cấp Cho Bên Thứ Ba và Chuyển Giao Quốc Tế",
+      "p1": "Về nguyên tắc, Công ty không cung cấp thông tin cá nhân của người dùng cho bên thứ ba. Tuy nhiên, có thể được cung cấp ngoại lệ trong các trường hợp sau:",
+      "li1": "Khi người dùng đã đồng ý rõ ràng trước",
+      "li2": "Khi có cơ sở pháp lý hoặc yêu cầu hợp pháp từ cơ quan điều tra"
+    },
+    "section5": {
+      "title": "5. Thuê Ngoài Xử Lý Thông Tin Cá Nhân",
+      "p1": "Chúng tôi có thể thuê ngoài công việc cho các bên ngoài để duy trì chất lượng dịch vụ, và áp đặt nghĩa vụ bảo mật, hạn chế thuê lại và nghĩa vụ quản lý/giám sát cho nhà thầu.",
+      "li1": "Phân tích sử dụng dịch vụ: Google LLC (Google Analytics)",
+      "li2": "Sao lưu/đồng bộ do người dùng chọn: Apple iCloud Drive, Google Drive, v.v."
+    },
+    "section6": {
+      "title": "6. Quyền Của Người Dùng và Cách Thực Hiện",
+      "p1": "Người dùng có thể thực hiện các quyền sau bất cứ lúc nào, và Công ty sẽ hành động ngay lập tức.",
+      "li1": "Rút lại đồng ý: Bạn có thể thay đổi hoặc rút lại các quyền như vị trí và thông báo qua cài đặt dịch vụ hoặc thiết bị bất cứ lúc nào.",
+      "li2": "Yêu cầu truy cập, sửa chữa, xóa hoặc tạm dừng: Bạn có thể yêu cầu Công ty hoặc quản lý trực tiếp qua các màn hình/cài đặt được cung cấp.",
+      "li3": "Nộp đơn khiếu nại qua các trung tâm bảo vệ thông tin cá nhân, ủy ban giải quyết tranh chấp, v.v."
+    },
+    "section7": {
+      "title": "7. Biện Pháp Bảo Mật",
+      "p1": "Công ty thực hiện các biện pháp sau để đảm bảo an toàn thông tin cá nhân:",
+      "li1": "Tối thiểu hóa quyền truy cập và quản lý hồ sơ truy cập",
+      "li2": "Mã hóa và quản lý khóa cho truyền tải và lưu trữ",
+      "li3": "Bản vá bảo mật thường xuyên và kiểm tra lỗ hổng",
+      "li4": "Đào tạo và kiểm tra cho người xử lý thông tin cá nhân"
+    },
+    "section8": {
+      "title": "8. Thông Báo Dành Riêng Cho Dịch Vụ",
+      "intro": "Sau đây cung cấp chi tiết xử lý thông tin cá nhân bổ sung dành riêng cho từng dịch vụ.",
+      "stampit": {
+        "title": "Stampit (Quản Lý Thành Viên)",
+        "summary": "Ứng dụng quản lý thành viên và sử dụng phiếu giảm giá. Dữ liệu được lưu trữ cục bộ trên thiết bị theo mặc định.",
+        "li1": "Thông tin thu thập: Tên cửa hàng/thành viên, hồ sơ tem/lượt ghé thăm, cài đặt thông báo",
+        "li2": "Vị trí lưu trữ: Được lưu trữ cục bộ trên thiết bị của người dùng và không được truyền đến máy chủ Công ty.",
+        "li3": "Sao lưu/Đồng bộ: Nếu người dùng chọn, được sao lưu dưới dạng tệp vào iCloud/Google Drive cá nhân."
+      },
+      "movit": {
+        "title": "Movit (Hồ Sơ Di Chuyển)",
+        "summary": "Quản lý hồ sơ di chuyển và yêu thích. Vị trí lưu trữ mặc định là thiết bị của người dùng.",
+        "li1": "Thông tin thu thập: Lộ trình di chuyển, thông tin vị trí/giao thông (khi người dùng bật), địa điểm yêu thích",
+        "li2": "Vị trí lưu trữ: Được lưu trữ cục bộ trên thiết bị theo mặc định và không được truyền đến máy chủ Công ty.",
+        "li3": "Quyền tùy chọn: Quyền vị trí (bao gồm nền), thông báo có thể được sử dụng để ghi lại di chuyển và cảnh báo."
+      },
+      "qnote": {
+        "title": "Qnote (Ghi Chú/Danh Sách Kiểm Tra)",
+        "summary": "Dữ liệu ghi chú/danh sách kiểm tra được lưu trữ cục bộ trên thiết bị theo mặc định.",
+        "li1": "Thông tin thu thập: Ghi chú, danh sách kiểm tra, thẻ, tệp đính kèm do người dùng tạo",
+        "li2": "Vị trí lưu trữ: Được lưu trữ cục bộ trên thiết bị và không được truyền đến máy chủ Công ty.",
+        "li3": "Sao lưu/Đồng bộ: Nếu người dùng chọn, được lưu vào đám mây cá nhân hoặc xuất dưới dạng tệp."
+      },
+      "worldcanvas": {
+        "title": "WorldCanvas (Canvas Cộng Tác)",
+        "summary": "Dịch vụ canvas cộng tác dựa trên đăng nhập Google thu thập và lưu trữ thông tin tối thiểu để xác định tài khoản và đồng bộ hóa.",
+        "li1": "Đăng ký/Xác thực: Sử dụng đăng nhập Google OAuth. Mã định danh tài khoản Google (ID) và email được lưu trữ trong cơ sở dữ liệu để tạo tài khoản và xác định đăng nhập.",
+        "li2": "Dữ liệu dịch vụ: Canvas, bảng, bình luận và tệp đính kèm do người dùng tạo/tải lên được lưu trữ trên máy chủ Công ty (cơ sở dữ liệu) để đồng bộ hóa và khôi phục.",
+        "li3": "Xóa và lưu giữ: Thông tin tài khoản và dữ liệu dịch vụ được xóa ngay khi xóa tài khoản hoặc rút khỏi dịch vụ."
+      }
+    },
+    "section9": {
+      "title": "9. Nhân Viên Bảo Mật",
+      "officer": "Nhân Viên Bảo Mật: Đội Vận Hành Purpleship",
+      "contact": "Liên hệ: captain@purpleship.io",
+      "report": "Báo cáo vi phạm bảo mật: Có thể thông qua Ủy ban Bảo vệ Thông tin Cá nhân (privacy.go.kr) và các cơ quan liên quan khác."
+    },
+    "section10": {
+      "title": "10. Thay Đổi và Thông Báo Chính Sách Bảo Mật",
+      "p1": "Khi luật pháp, nội dung dịch vụ hoặc chính sách nội bộ thay đổi, chúng tôi sẽ thông báo cho bạn về các thay đổi 7 ngày trước khi thực hiện qua thông báo trên trang web hoặc thông báo trong dịch vụ."
     }
   }
 }

@@ -1,7 +1,10 @@
 {
   "title": "Purpleship",
   "nav": {
-    "apps": "Produits"
+    "apps": "Produits",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "refund": "Politique de Remboursement"
   },
   "navMenu": {
     "movit": "Movit",
@@ -523,6 +526,105 @@
     "section9": {
       "title": "9. Contact",
       "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
+    }
+  },
+  "privacyPage": {
+    "brand": "Purpleship",
+    "title": "Politique de Confidentialité Purpleship",
+    "subtitle": "Politique concernant la collecte, l'utilisation et la gestion des informations personnelles pour les services Purpleship.",
+    "effectiveDate": "Date d'effet : 7 février 2025",
+    "backToHome": "← Retour à l'accueil",
+    "section1": {
+      "title": "1. Portée et Principes de Base",
+      "p1": "Cette politique s'applique à Purpleship (ci-après \"Société\") et à tous les services exploités par la Société (ex : Stampit, Movit, Qnote, WorldCanvas, etc.).",
+      "p2": "La Société ne collecte que les informations personnelles minimales nécessaires à la fourniture des services. Les exigences spécifiques à chaque service sont indiquées séparément dans la section \"Avis Spécifiques aux Services\"."
+    },
+    "section2": {
+      "title": "2. Informations Collectées et But de l'Utilisation (Général)",
+      "intro": "La Société ne collecte que les informations minimales nécessaires à la fourniture du service et au support client.",
+      "li1": "Utilisation du site web : Journaux d'accès, informations navigateur/OS, historique d'utilisation via cookies et technologies similaires (pour statistiques et amélioration du service)",
+      "li2": "Traitement des demandes : Nom, email et contenu de la demande reçus via les canaux de contact (email, etc.)",
+      "li3": "Journaux techniques : Journaux d'erreurs, informations appareil (modèle, version OS, etc.) pour l'analyse de stabilité",
+      "analytics": {
+        "title": "2.1 Outils d'Analyse Web/App",
+        "p1": "Nous pouvons collecter des statistiques d'utilisation anonymisées à l'aide d'outils d'analyse comme Google Analytics. Nous appliquons l'anonymisation IP et n'identifions pas directement les individus."
+      }
+    },
+    "section3": {
+      "title": "3. Période de Conservation et d'Utilisation des Informations Personnelles",
+      "li1": "Les données sont conservées uniquement pour la période minimale requise par la loi ou la politique interne et sont rapidement détruites ensuite.",
+      "li2": "Journaux d'accès : Conservés 3 mois conformément à la Loi sur la Protection de la Vie Privée des Communications puis automatiquement détruits.",
+      "li3": "Dossiers de demandes : Conservés 3 ans après résolution pour préparation aux litiges puis détruits.",
+      "li4": "Données de compte et service : Supprimées sans délai à l'accomplissement de l'objectif ou à la clôture du compte."
+    },
+    "section4": {
+      "title": "4. Fourniture à des Tiers et Transfert International",
+      "p1": "En principe, la Société ne fournit pas les informations personnelles des utilisateurs à des tiers. Cependant, elles peuvent être fournies exceptionnellement dans les cas suivants :",
+      "li1": "Lorsque l'utilisateur a donné son consentement explicite préalable",
+      "li2": "Lorsqu'il existe une base légale ou une demande légitime des autorités d'enquête"
+    },
+    "section5": {
+      "title": "5. Sous-traitance du Traitement des Informations Personnelles",
+      "p1": "Nous pouvons sous-traiter le travail à des parties externes pour maintenir la qualité du service, et nous imposons des obligations de sécurité, des restrictions de re-sous-traitance et de gestion/supervision aux sous-traitants.",
+      "li1": "Analyse d'utilisation du service : Google LLC (Google Analytics)",
+      "li2": "Sauvegarde/synchronisation choisie par l'utilisateur : Apple iCloud Drive, Google Drive, etc."
+    },
+    "section6": {
+      "title": "6. Droits des Utilisateurs et Comment les Exercer",
+      "p1": "Les utilisateurs peuvent exercer les droits suivants à tout moment, et la Société prendra des mesures sans délai.",
+      "li1": "Retrait du consentement : Vous pouvez modifier ou retirer les permissions comme la localisation et les notifications via les paramètres du service ou de l'appareil à tout moment.",
+      "li2": "Demande d'accès, correction, suppression ou suspension : Vous pouvez demander à la Société ou gérer directement via les écrans/paramètres fournis.",
+      "li3": "Demande de recours via les centres de protection des informations personnelles, comités de résolution des litiges, etc."
+    },
+    "section7": {
+      "title": "7. Mesures de Sécurité",
+      "p1": "La Société prend les mesures suivantes pour assurer la sécurité des informations personnelles :",
+      "li1": "Minimiser les droits d'accès et gérer les journaux d'accès",
+      "li2": "Chiffrement et gestion des clés pour la transmission et le stockage",
+      "li3": "Correctifs de sécurité réguliers et vérifications des vulnérabilités",
+      "li4": "Formation et inspection pour les gestionnaires d'informations personnelles"
+    },
+    "section8": {
+      "title": "8. Avis Spécifiques aux Services",
+      "intro": "Ce qui suit fournit des détails supplémentaires sur le traitement des informations personnelles spécifiques à chaque service.",
+      "stampit": {
+        "title": "Stampit (Gestion des Adhésions)",
+        "summary": "Une application pour gérer les adhésions et l'utilisation des coupons. Les données sont stockées localement sur l'appareil par défaut.",
+        "li1": "Informations collectées : Nom du magasin/adhésion, registres de tampons/visites, paramètres de notification",
+        "li2": "Emplacement de stockage : Stocké localement sur l'appareil de l'utilisateur et non transmis aux serveurs de la Société.",
+        "li3": "Sauvegarde/Synchronisation : Si sélectionné par l'utilisateur, sauvegardé au format fichier sur iCloud/Google Drive personnel."
+      },
+      "movit": {
+        "title": "Movit (Enregistrements de Déplacement)",
+        "summary": "Gère les enregistrements de déplacement et les favoris. L'emplacement de stockage par défaut est l'appareil de l'utilisateur.",
+        "li1": "Informations collectées : Itinéraires de déplacement, informations de localisation/trafic (si activé par l'utilisateur), lieux favoris",
+        "li2": "Emplacement de stockage : Stocké localement sur l'appareil par défaut et non transmis aux serveurs de la Société.",
+        "li3": "Permissions optionnelles : Les permissions de localisation (y compris en arrière-plan), notifications peuvent être utilisées pour l'enregistrement des déplacements et les alertes."
+      },
+      "qnote": {
+        "title": "Qnote (Notes/Listes de contrôle)",
+        "summary": "Les données de notes/listes de contrôle sont stockées localement sur l'appareil par défaut.",
+        "li1": "Informations collectées : Notes, listes de contrôle, tags, pièces jointes créés par l'utilisateur",
+        "li2": "Emplacement de stockage : Stocké localement sur l'appareil et non transmis aux serveurs de la Société.",
+        "li3": "Sauvegarde/Synchronisation : Si sélectionné par l'utilisateur, enregistré sur le cloud personnel ou exporté en fichiers."
+      },
+      "worldcanvas": {
+        "title": "WorldCanvas (Canevas Collaboratif)",
+        "summary": "Un service de canevas collaboratif basé sur la connexion Google qui collecte et stocke des informations minimales pour l'identification du compte et la synchronisation.",
+        "li1": "Inscription/Authentification : Utilise la connexion OAuth Google. L'identifiant de compte Google (ID) et l'email sont stockés dans la base de données pour la création de compte et l'identification de connexion.",
+        "li2": "Données de service : Les canevas, tableaux, commentaires et pièces jointes créés/téléchargés par les utilisateurs sont stockés sur les serveurs de la Société (base de données) pour la synchronisation et la récupération.",
+        "li3": "Suppression et conservation : Les informations de compte et données de service sont supprimées sans délai lors de la suppression du compte ou du retrait du service."
+      }
+    },
+    "section9": {
+      "title": "9. Responsable de la Confidentialité",
+      "officer": "Responsable de la Confidentialité : Équipe Opérations Purpleship",
+      "contact": "Contact : captain@purpleship.io",
+      "report": "Signalement de violation de confidentialité : Disponible via la Commission de Protection des Informations Personnelles (privacy.go.kr) et autres agences concernées."
+    },
+    "section10": {
+      "title": "10. Modifications et Notifications de la Politique de Confidentialité",
+      "p1": "Lorsque les lois, le contenu du service ou les politiques internes changent, nous vous informerons des changements 7 jours avant la mise en œuvre via un avis sur le site web ou une notification dans le service."
     }
   }
 }

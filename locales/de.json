@@ -1,7 +1,10 @@
 {
   "title": "Purpleship",
   "nav": {
-    "apps": "Produkt"
+    "apps": "Produkt",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "refund": "Rückerstattungsrichtlinie"
   },
   "navMenu": {
     "movit": "Movit",
@@ -523,6 +526,105 @@
     "section9": {
       "title": "9. Contact",
       "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
+    }
+  },
+  "privacyPage": {
+    "brand": "Purpleship",
+    "title": "Purpleship Datenschutzrichtlinie",
+    "subtitle": "Richtlinie zur Erhebung, Verwendung und Verwaltung personenbezogener Daten für Purpleship-Dienste.",
+    "effectiveDate": "Gültig ab: 7. Februar 2025",
+    "backToHome": "← Zurück zur Startseite",
+    "section1": {
+      "title": "1. Geltungsbereich und Grundprinzipien",
+      "p1": "Diese Richtlinie gilt für Purpleship (nachfolgend \"Unternehmen\") und alle vom Unternehmen betriebenen Dienste (z.B. Stampit, Movit, Qnote, WorldCanvas usw.).",
+      "p2": "Das Unternehmen erhebt nur die minimal erforderlichen personenbezogenen Daten zur Bereitstellung der Dienste. Dienstspezifische Anforderungen werden separat im Abschnitt \"Dienstspezifische Hinweise\" angegeben."
+    },
+    "section2": {
+      "title": "2. Erhobene Informationen und Verwendungszweck (Allgemein)",
+      "intro": "Das Unternehmen erhebt nur die minimal erforderlichen Informationen für die Dienstbereitstellung und den Kundensupport.",
+      "li1": "Website-Nutzung: Zugriffsprotokolle, Browser/OS-Informationen, Nutzungsverlauf über Cookies und ähnliche Technologien (für Statistiken und Dienstverbesserung)",
+      "li2": "Anfragenbearbeitung: Name, E-Mail und Anfrageinhalt über Kontaktkanäle (E-Mail usw.) erhalten",
+      "li3": "Technische Protokolle: Fehlerprotokolle, Geräteinformationen (Modell, OS-Version usw.) für Stabilitätsanalyse",
+      "analytics": {
+        "title": "2.1 Web/App-Analysetools",
+        "p1": "Wir können anonymisierte Nutzungsstatistiken mit Analysetools wie Google Analytics erheben. Wir wenden IP-Anonymisierung an und identifizieren Personen nicht direkt."
+      }
+    },
+    "section3": {
+      "title": "3. Aufbewahrungs- und Nutzungszeitraum personenbezogener Daten",
+      "li1": "Daten werden nur für den gesetzlich oder intern vorgeschriebenen Mindestzeitraum aufbewahrt und danach umgehend vernichtet.",
+      "li2": "Zugriffsprotokolle: Werden gemäß dem Kommunikationsdatenschutzgesetz 3 Monate aufbewahrt und dann automatisch vernichtet.",
+      "li3": "Anfragedatensätze: Werden 3 Jahre nach Lösung zur Streitvorbereitung aufbewahrt und dann vernichtet.",
+      "li4": "Konto- und Dienstdaten: Werden bei Zweckerfüllung oder Kontobeendigung unverzüglich gelöscht."
+    },
+    "section4": {
+      "title": "4. Weitergabe an Dritte und Internationale Übertragung",
+      "p1": "Grundsätzlich gibt das Unternehmen personenbezogene Daten der Nutzer nicht an Dritte weiter. In folgenden Fällen kann jedoch eine Weitergabe ausnahmsweise erfolgen:",
+      "li1": "Wenn der Nutzer vorher ausdrücklich zugestimmt hat",
+      "li2": "Wenn eine gesetzliche Grundlage oder eine rechtmäßige Anfrage von Ermittlungsbehörden vorliegt"
+    },
+    "section5": {
+      "title": "5. Auslagerung der Verarbeitung personenbezogener Daten",
+      "p1": "Wir können Arbeiten an externe Parteien auslagern, um die Dienstqualität aufrechtzuerhalten, und auferlegen den Auftragnehmern Sicherheitspflichten, Beschränkungen der Weitervergabe und Verwaltungs-/Überwachungspflichten.",
+      "li1": "Dienstnutzungsanalyse: Google LLC (Google Analytics)",
+      "li2": "Vom Nutzer gewählte Sicherung/Synchronisierung: Apple iCloud Drive, Google Drive usw."
+    },
+    "section6": {
+      "title": "6. Nutzerrechte und deren Ausübung",
+      "p1": "Nutzer können die folgenden Rechte jederzeit ausüben, und das Unternehmen wird unverzüglich handeln.",
+      "li1": "Widerruf der Einwilligung: Sie können Berechtigungen wie Standort und Benachrichtigungen jederzeit über die Dienst- oder Geräteeinstellungen ändern oder widerrufen.",
+      "li2": "Anfrage auf Zugriff, Berichtigung, Löschung oder Aussetzung: Sie können beim Unternehmen anfragen oder direkt über bereitgestellte Bildschirme/Einstellungen verwalten.",
+      "li3": "Antrag auf Abhilfe über Datenschutzzentren, Streitbeilegungsausschüsse usw."
+    },
+    "section7": {
+      "title": "7. Sicherheitsmaßnahmen",
+      "p1": "Das Unternehmen ergreift die folgenden Maßnahmen zur Gewährleistung der Sicherheit personenbezogener Daten:",
+      "li1": "Minimierung der Zugriffsrechte und Verwaltung der Zugriffsprotokolle",
+      "li2": "Verschlüsselung und Schlüsselverwaltung für Übertragung und Speicherung",
+      "li3": "Regelmäßige Sicherheitspatches und Schwachstellenprüfungen",
+      "li4": "Schulung und Überprüfung für Personen, die mit personenbezogenen Daten umgehen"
+    },
+    "section8": {
+      "title": "8. Dienstspezifische Hinweise",
+      "intro": "Im Folgenden werden zusätzliche Details zur Verarbeitung personenbezogener Daten für jeden Dienst aufgeführt.",
+      "stampit": {
+        "title": "Stampit (Mitgliedschaftsverwaltung)",
+        "summary": "Eine App zur Verwaltung von Mitgliedschaften und Coupon-Nutzung. Daten werden standardmäßig lokal auf dem Gerät gespeichert.",
+        "li1": "Erhobene Informationen: Geschäfts-/Mitgliedschaftsname, Stempel-/Besuchsdatensätze, Benachrichtigungseinstellungen",
+        "li2": "Speicherort: Lokal auf dem Gerät des Nutzers gespeichert und nicht an Unternehmensserver übertragen.",
+        "li3": "Sicherung/Synchronisierung: Bei Auswahl durch den Nutzer im Dateiformat auf persönliches iCloud/Google Drive gesichert."
+      },
+      "movit": {
+        "title": "Movit (Bewegungsdatensätze)",
+        "summary": "Verwaltet Bewegungsdatensätze und Favoriten. Standard-Speicherort ist das Gerät des Nutzers.",
+        "li1": "Erhobene Informationen: Bewegungsrouten, Standort-/Verkehrsinformationen (wenn vom Nutzer aktiviert), Lieblingsorte",
+        "li2": "Speicherort: Standardmäßig lokal auf dem Gerät gespeichert und nicht an Unternehmensserver übertragen.",
+        "li3": "Optionale Berechtigungen: Standort (einschließlich Hintergrund), Benachrichtigungsberechtigungen können für Bewegungsaufzeichnung und Warnungen verwendet werden."
+      },
+      "qnote": {
+        "title": "Qnote (Notizen/Checklisten)",
+        "summary": "Notiz-/Checklistendaten werden standardmäßig lokal auf dem Gerät gespeichert.",
+        "li1": "Erhobene Informationen: Vom Nutzer erstellte Notizen, Checklisten, Tags, Anhänge",
+        "li2": "Speicherort: Lokal auf dem Gerät gespeichert und nicht an Unternehmensserver übertragen.",
+        "li3": "Sicherung/Synchronisierung: Bei Auswahl durch den Nutzer in persönlicher Cloud gespeichert oder als Dateien exportiert."
+      },
+      "worldcanvas": {
+        "title": "WorldCanvas (Kollaborative Leinwand)",
+        "summary": "Ein auf Google-Anmeldung basierender kollaborativer Leinwanddienst, der minimale Informationen für Kontoidentifikation und Synchronisierung erhebt und speichert.",
+        "li1": "Registrierung/Authentifizierung: Verwendet Google OAuth-Anmeldung. Google-Kontoidentifikator (ID) und E-Mail werden in der Datenbank zur Kontoerstellung und Anmeldeidentifikation gespeichert.",
+        "li2": "Dienstdaten: Von Nutzern erstellte/hochgeladene Leinwände, Boards, Kommentare und Anhänge werden auf Unternehmensservern (Datenbank) zur Synchronisierung und Wiederherstellung gespeichert.",
+        "li3": "Löschung und Aufbewahrung: Kontoinformationen und Dienstdaten werden bei Kontolöschung oder Dienstaustritt unverzüglich gelöscht."
+      }
+    },
+    "section9": {
+      "title": "9. Datenschutzbeauftragter",
+      "officer": "Datenschutzbeauftragter: Purpleship Betriebsteam",
+      "contact": "Kontakt: captain@purpleship.io",
+      "report": "Meldung von Datenschutzverletzungen: Über die Datenschutzkommission (privacy.go.kr) und andere zuständige Stellen möglich."
+    },
+    "section10": {
+      "title": "10. Änderungen und Mitteilungen der Datenschutzrichtlinie",
+      "p1": "Bei Änderungen von Gesetzen, Dienstinhalten oder internen Richtlinien informieren wir Sie 7 Tage vor Inkrafttreten über Website-Ankündigung oder Benachrichtigung im Dienst über die Änderungen."
     }
   }
 }

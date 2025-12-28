@@ -1,7 +1,10 @@
 {
   "title": "Purpleship",
   "nav": {
-    "apps": "Product"
+    "apps": "Product",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "refund": "Refund Policy"
   },
   "navMenu": {
     "movit": "Movit",
@@ -529,6 +532,105 @@
     "section9": {
       "title": "9. Contact",
       "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
+    }
+  },
+  "privacyPage": {
+    "brand": "Purpleship",
+    "title": "Purpleship Privacy Policy",
+    "subtitle": "Privacy policy regarding the collection, use, and management of personal information for Purpleship services.",
+    "effectiveDate": "Effective Date: February 7, 2025",
+    "backToHome": "← Back to Home",
+    "section1": {
+      "title": "1. Scope and Basic Principles",
+      "p1": "This policy applies to Purpleship (hereinafter \"Company\") and all services operated by the Company (e.g., Stampit, Movit, Qnote, WorldCanvas, etc.).",
+      "p2": "The Company collects only the minimum personal information necessary to provide services. Additional requirements specific to each service are separately stated in the \"Service-Specific Notices\" section."
+    },
+    "section2": {
+      "title": "2. Information Collected and Purpose of Use (General)",
+      "intro": "The Company collects only the minimum information necessary for service provision and customer support.",
+      "li1": "Website usage: Access logs, browser/OS information, service usage history through cookies and similar technologies (for statistics and service improvement)",
+      "li2": "Customer inquiry processing: Name, email, and inquiry content received through inquiry channels (email, etc.)",
+      "li3": "Technical logs: Error logs, device information (model, OS version, etc.) for stability analysis",
+      "analytics": {
+        "title": "2.1 Web/App Analytics Tools",
+        "p1": "We may collect anonymized usage statistics using analytics tools such as Google Analytics. We apply IP anonymization and pseudonymization and do not directly identify individuals."
+      }
+    },
+    "section3": {
+      "title": "3. Retention and Use Period of Personal Information",
+      "li1": "Data is retained only for the minimum period required by law or internal policy and is promptly destroyed thereafter.",
+      "li2": "Access logs: Retained for 3 months in accordance with the Communications Privacy Protection Act and then automatically destroyed.",
+      "li3": "Customer inquiry records: Retained for 3 years after resolution for dispute preparation and then destroyed.",
+      "li4": "Account and service data: Deleted without delay upon purpose fulfillment or account termination."
+    },
+    "section4": {
+      "title": "4. Third-Party Provision and International Transfer",
+      "p1": "In principle, the Company does not provide users' personal information to third parties. However, it may be provided exceptionally in the following cases:",
+      "li1": "When the user has given explicit prior consent",
+      "li2": "When there is a legal basis or a lawful request from investigative authorities"
+    },
+    "section5": {
+      "title": "5. Outsourcing of Personal Information Processing",
+      "p1": "We may outsource work to external parties to maintain service quality, and we impose security, re-outsourcing restrictions, and management/supervision obligations on contractors.",
+      "li1": "Service usage analysis: Google LLC (Google Analytics)",
+      "li2": "User-selected backup/sync: Apple iCloud Drive, Google Drive, etc."
+    },
+    "section6": {
+      "title": "6. User Rights and How to Exercise Them",
+      "p1": "Users may exercise the following rights at any time, and the Company will take action without delay.",
+      "li1": "Withdrawal of consent: You can change or withdraw permissions such as location and notifications through service or device settings at any time.",
+      "li2": "Request for access, correction, deletion, or suspension: You can request from the Company or manage directly through provided screens/settings.",
+      "li3": "Filing for remedy through personal information protection centers, dispute resolution committees, etc."
+    },
+    "section7": {
+      "title": "7. Security Measures",
+      "p1": "The Company takes the following measures to ensure the safety of personal information:",
+      "li1": "Minimizing access rights and managing access records",
+      "li2": "Encryption and key management for transmission and storage",
+      "li3": "Regular security patches and vulnerability checks",
+      "li4": "Training and inspection for personal information handlers"
+    },
+    "section8": {
+      "title": "8. Service-Specific Notices",
+      "intro": "The following provides additional personal information processing details specific to each service.",
+      "stampit": {
+        "title": "Stampit (Membership Management)",
+        "summary": "An app for managing membership and coupon usage. Data is stored locally on the device by default.",
+        "li1": "Information collected: Store/membership name, stamp/visit records, notification settings",
+        "li2": "Storage location: Stored locally on the user's device and not transmitted to Company servers.",
+        "li3": "Backup/Sync: If selected by the user, backed up in file format to personal iCloud/Google Drive."
+      },
+      "movit": {
+        "title": "Movit (Movement Records)",
+        "summary": "Manages movement records and favorites. Default storage location is the user's device.",
+        "li1": "Information collected: Movement routes, location/traffic information (when enabled by user), favorite places",
+        "li2": "Storage location: Stored locally on the device by default and not transmitted to Company servers.",
+        "li3": "Optional permissions: Location (including background), notification permissions may be used for movement recording and alerts."
+      },
+      "qnote": {
+        "title": "Qnote (Notes/Checklists)",
+        "summary": "Note/checklist data is stored locally on the device by default.",
+        "li1": "Information collected: Notes, checklists, tags, attachments created by the user",
+        "li2": "Storage location: Stored locally on the device and not transmitted to Company servers.",
+        "li3": "Backup/Sync: If selected by the user, saved to personal cloud or exported as files."
+      },
+      "worldcanvas": {
+        "title": "WorldCanvas (Collaborative Canvas)",
+        "summary": "A Google login-based collaborative canvas service that collects and stores minimal information for account identification and synchronization.",
+        "li1": "Registration/Authentication: Uses Google OAuth login. Google account identifier (ID) and email are stored in the database for account creation and login identification purposes.",
+        "li2": "Service data: Canvases, boards, comments, and attachments created/uploaded by users are stored on Company servers (database) for synchronization and recovery.",
+        "li3": "Deletion and retention: Account information and service data are deleted without delay upon account deletion or service withdrawal."
+      }
+    },
+    "section9": {
+      "title": "9. Privacy Officer",
+      "officer": "Privacy Officer: Purpleship Operations Team",
+      "contact": "Contact: captain@purpleship.io",
+      "report": "Privacy violation reports: Available through the Personal Information Protection Commission (privacy.go.kr) and other relevant agencies."
+    },
+    "section10": {
+      "title": "10. Privacy Policy Changes and Notices",
+      "p1": "When laws, service content, or internal policies change, we will notify you of the changes 7 days before implementation through website notice or in-service notification."
     }
   }
 }
