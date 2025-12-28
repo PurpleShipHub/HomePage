@@ -108,114 +108,114 @@
   },
   "termsPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Terms & Conditions",
-    "subtitle": "These terms govern the use of the Purpleship website and related services.",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Purpleship नियम और शर्तें",
+    "subtitle": "ये शर्तें Purpleship वेबसाइट और संबंधित सेवाओं के उपयोग को नियंत्रित करती हैं।",
+    "effectiveDate": "प्रभावी तिथि: 15 दिसंबर 2025",
+    "backToHome": "← होम पर वापस जाएं",
     "nav": {
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy",
-      "pricing": "Pricing"
+      "privacy": "गोपनीयता नीति",
+      "refund": "वापसी नीति",
+      "pricing": "मूल्य निर्धारण"
     },
     "section1": {
-      "title": "1. Business Information",
-      "li1": "Legal business name: Purpleship",
-      "li2": "Contact: captain@purpleship.io",
-      "li3": "Website: purpleship.io"
+      "title": "1. व्यवसाय की जानकारी",
+      "li1": "कानूनी व्यवसाय नाम: Purpleship",
+      "li2": "संपर्क: captain@purpleship.io",
+      "li3": "वेबसाइट: purpleship.io"
     },
     "section2": {
-      "title": "2. Scope",
-      "p1": "These terms apply to the Purpleship website and related services. If service-specific terms (e.g., payments/virtual currency) exist, those terms may take precedence."
+      "title": "2. दायरा",
+      "p1": "ये शर्तें Purpleship वेबसाइट और संबंधित सेवाओं पर लागू होती हैं। यदि सेवा-विशिष्ट शर्तें (जैसे भुगतान/आभासी मुद्रा) मौजूद हैं, तो वे शर्तें प्राथमिकता ले सकती हैं।"
     },
     "section3": {
-      "title": "3. User Responsibilities",
-      "li1": "You must comply with applicable laws and these terms.",
-      "li2": "You must not harm the security or stability of the service (unauthorized access, reverse engineering, abuse, etc.)."
+      "title": "3. उपयोगकर्ता जिम्मेदारियां",
+      "li1": "आपको लागू कानूनों और इन शर्तों का पालन करना होगा।",
+      "li2": "आपको सेवा की सुरक्षा या स्थिरता को नुकसान नहीं पहुंचाना चाहिए (अनधिकृत पहुंच, रिवर्स इंजीनियरिंग, दुरुपयोग, आदि)।"
     },
     "section4": {
-      "title": "4. Intellectual Property",
-      "p1": "Rights to the website, content, and software belong to Purpleship or the rightful owners."
+      "title": "4. बौद्धिक संपदा",
+      "p1": "वेबसाइट, सामग्री और सॉफ़्टवेयर के अधिकार Purpleship या वैध मालिकों के हैं।"
     },
     "section5": {
-      "title": "5. Disclaimer and Limitation of Liability",
-      "p1": "To the extent permitted by law, we may limit liability for indirect or consequential damages. The service may be provided “as is”."
+      "title": "5. अस्वीकरण और दायित्व की सीमा",
+      "p1": "कानून द्वारा अनुमत सीमा तक, हम अप्रत्यक्ष या परिणामी क्षतियों के लिए दायित्व को सीमित कर सकते हैं। सेवा \"जैसी है\" प्रदान की जा सकती है।"
     },
     "section6": {
-      "title": "6. Changes to These Terms",
-      "p1": "We may revise these terms due to legal or service changes and will provide reasonable prior notice for material updates."
+      "title": "6. इन शर्तों में बदलाव",
+      "p1": "हम कानूनी या सेवा परिवर्तनों के कारण इन शर्तों को संशोधित कर सकते हैं और महत्वपूर्ण अपडेट के लिए उचित पूर्व सूचना प्रदान करेंगे।"
     },
     "section7": {
-      "title": "7. Paid Services and Payments (WorldCanvas)",
-      "intro": "This section sets forth additional terms for purchasing and using paid products and virtual currency (Purple) in WorldCanvas.",
+      "title": "7. सशुल्क सेवाएं और भुगतान (WorldCanvas)",
+      "intro": "यह खंड WorldCanvas में सशुल्क उत्पादों और आभासी मुद्रा (Purple) की खरीद और उपयोग के लिए अतिरिक्त शर्तें निर्धारित करता है।",
       "definitions": {
-        "title": "7.1 Definitions",
-        "d1": "\"Paid Products\" means digital content, permissions, or virtual currency provided through payment.",
-        "d2": "\"Purple\" refers to virtual currency (points/credits) usable within WorldCanvas services, which cannot be exchanged for cash.",
-        "d3": "\"Consumption\" means using Purple to purchase functions/items or increase usage limits."
+        "title": "7.1 परिभाषाएं",
+        "d1": "\"सशुल्क उत्पाद\" का अर्थ है भुगतान के माध्यम से प्रदान की गई डिजिटल सामग्री, अनुमतियां या आभासी मुद्रा।",
+        "d2": "\"Purple\" आभासी मुद्रा (अंक/क्रेडिट) को संदर्भित करता है जो WorldCanvas सेवाओं के भीतर उपयोग योग्य है, जिसे नकद में बदला नहीं जा सकता।",
+        "d3": "\"उपभोग\" का अर्थ है कार्यों/वस्तुओं को खरीदने या उपयोग सीमा बढ़ाने के लिए Purple का उपयोग करना।"
       },
       "usage": {
-        "title": "7.2 Purple Usage",
-        "p1": "Users can purchase Purple to use features within WorldCanvas. Specific uses are displayed in the service interface.",
-        "li1": "Example: Palette color (palette slot) expansion",
-        "li2": "Example: Increasing the \"pixel placement limit\" for bulk pixel placement",
-        "li3": "Example: Other paid items/features (may be added in the future)"
+        "title": "7.2 Purple का उपयोग",
+        "p1": "उपयोगकर्ता WorldCanvas के भीतर सुविधाओं का उपयोग करने के लिए Purple खरीद सकते हैं। विशिष्ट उपयोग सेवा इंटरफ़ेस में प्रदर्शित होते हैं।",
+        "li1": "उदाहरण: पैलेट रंग (पैलेट स्लॉट) विस्तार",
+        "li2": "उदाहरण: थोक पिक्सेल प्लेसमेंट के लिए \"पिक्सेल प्लेसमेंट सीमा\" बढ़ाना",
+        "li3": "उदाहरण: अन्य सशुल्क वस्तुएं/सुविधाएं (भविष्य में जोड़ी जा सकती हैं)"
       },
       "payment": {
-        "title": "7.3 Payment and Delivery",
-        "p1": "Prices, contents, payment methods, and billing times are shown during the purchase process. Purple or permissions are provided immediately (or within a reasonable time) after payment.",
-        "li1": "Payments may be processed through third-party payment service providers.",
-        "li2": "Purchase history and payment details can be verified in the service or payment receipt.",
-        "li3": "For detailed pricing information, please refer to the pricing page."
+        "title": "7.3 भुगतान और वितरण",
+        "p1": "कीमतें, सामग्री, भुगतान विधियां और बिलिंग समय खरीद प्रक्रिया के दौरान दिखाए जाते हैं। Purple या अनुमतियां भुगतान के बाद तुरंत (या उचित समय के भीतर) प्रदान की जाती हैं।",
+        "li1": "भुगतान तृतीय-पक्ष भुगतान सेवा प्रदाताओं के माध्यम से संसाधित किए जा सकते हैं।",
+        "li2": "खरीद इतिहास और भुगतान विवरण सेवा या भुगतान रसीद में सत्यापित किए जा सकते हैं।",
+        "li3": "विस्तृत मूल्य निर्धारण जानकारी के लिए, कृपया मूल्य निर्धारण पृष्ठ देखें।"
       },
       "refund": {
-        "title": "7.4 Withdrawal (Refunds) and Exceptions",
-        "p1": "Digital content/virtual currency may be available for use immediately upon provision, and withdrawal may be restricted within the scope permitted by law. However, refunds or compensation may be provided in the following cases:",
-        "li1": "Cases where there is a company fault (non-delivery, incorrect delivery, etc.)",
-        "li2": "Cases with legitimate reasons (payment errors, duplicate payments, etc.)",
-        "li3": "Cases required by law",
-        "li4": "If Purple has already been consumed, processing may exclude the consumed portion (within the scope not restricted by law).",
-        "li5": "For detailed refund policies, please refer to the refund policy page."
+        "title": "7.4 निकासी (वापसी) और अपवाद",
+        "p1": "डिजिटल सामग्री/आभासी मुद्रा प्रावधान पर तुरंत उपयोग के लिए उपलब्ध हो सकती है, और निकासी कानून द्वारा अनुमत दायरे में प्रतिबंधित हो सकती है। हालांकि, निम्नलिखित मामलों में वापसी या मुआवजा प्रदान किया जा सकता है:",
+        "li1": "ऐसे मामले जहां कंपनी की गलती है (गैर-वितरण, गलत वितरण, आदि)",
+        "li2": "वैध कारणों वाले मामले (भुगतान त्रुटियां, डुप्लिकेट भुगतान, आदि)",
+        "li3": "कानून द्वारा आवश्यक मामले",
+        "li4": "यदि Purple पहले ही उपभोग किया जा चुका है, तो प्रसंस्करण उपभोग किए गए हिस्से को बाहर कर सकता है (कानून द्वारा प्रतिबंधित नहीं किए गए दायरे में)।",
+        "li5": "विस्तृत वापसी नीतियों के लिए, कृपया वापसी नीति पृष्ठ देखें।"
       },
       "minors": {
-        "title": "7.5 Minor Payments",
-        "p1": "Minors making payments may require legal guardian consent, and cancellation (refund) requests may be possible according to law."
+        "title": "7.5 नाबालिग भुगतान",
+        "p1": "नाबालिगों द्वारा किए गए भुगतान में कानूनी अभिभावक की सहमति की आवश्यकता हो सकती है, और कानून के अनुसार रद्दीकरण (वापसी) अनुरोध संभव हो सकते हैं।"
       },
       "restriction": {
-        "title": "7.6 Usage Restrictions and Recovery",
-        "p1": "If fraudulent payments, hacking/abuse, or terms violations are confirmed, we may recover granted Purple/permissions or restrict account usage according to applicable laws and service policies."
+        "title": "7.6 उपयोग प्रतिबंध और पुनर्प्राप्ति",
+        "p1": "यदि धोखाधड़ी भुगतान, हैकिंग/दुरुपयोग, या शर्तों के उल्लंघन की पुष्टि की जाती है, तो हम लागू कानूनों और सेवा नीतियों के अनुसार दी गई Purple/अनुमतियां पुनर्प्राप्त कर सकते हैं या खाता उपयोग को प्रतिबंधित कर सकते हैं।"
       }
     }
   },
   "refundPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Refund Policy",
-    "subtitle": "This policy describes refunds/withdrawal rules for paid items and virtual currency (e.g., Purple).",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Purpleship वापसी नीति",
+    "subtitle": "यह नीति सशुल्क वस्तुओं और आभासी मुद्रा (जैसे Purple) के लिए वापसी/निकासी नियमों का वर्णन करती है।",
+    "effectiveDate": "प्रभावी तिथि: 15 दिसंबर 2025",
+    "backToHome": "← होम पर वापस जाएं",
     "nav": {
-      "terms": "Terms & Conditions",
-      "privacy": "Privacy Policy",
-      "pricing": "Pricing"
+      "terms": "नियम और शर्तें",
+      "privacy": "गोपनीयता नीति",
+      "pricing": "मूल्य निर्धारण"
     },
     "section1": {
-      "title": "1. Scope",
-      "p1": "This policy applies to paid items provided on the Purpleship website and related services. If service-specific purchase terms exist, those terms may take precedence."
+      "title": "1. दायरा",
+      "p1": "यह नीति Purpleship वेबसाइट और संबंधित सेवाओं पर प्रदान की गई सशुल्क वस्तुओं पर लागू होती है। यदि सेवा-विशिष्ट खरीद शर्तें मौजूद हैं, तो वे शर्तें प्राथमिकता ले सकती हैं।"
     },
     "section2": {
-      "title": "2. Eligible Refund Cases",
-      "li1": "Non-delivery or mis-delivery due to our fault",
-      "li2": "Valid reasons such as duplicate charges or payment errors",
-      "li3": "When refunds are required by applicable law"
+      "title": "2. पात्र वापसी मामले",
+      "li1": "हमारी गलती के कारण गैर-वितरण या गलत वितरण",
+      "li2": "वैध कारण जैसे डुप्लिकेट शुल्क या भुगतान त्रुटियां",
+      "li3": "जब लागू कानून द्वारा वापसी आवश्यक हो"
     },
     "section3": {
-      "title": "3. Refund Limitations (Exceptions)",
-      "li1": "Digital content/virtual currency may be made available immediately, and refunds may be restricted to the extent permitted by law.",
-      "li2": "If virtual currency (Purple) has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
+      "title": "3. वापसी सीमाएं (अपवाद)",
+      "li1": "डिजिटल सामग्री/आभासी मुद्रा तुरंत उपलब्ध कराई जा सकती है, और वापसी कानून द्वारा अनुमत सीमा तक प्रतिबंधित हो सकती है।",
+      "li2": "यदि आभासी मुद्रा (Purple) पहले ही उपभोग की जा चुकी है, तो प्रबंधन कानून द्वारा अनुमत सीमा तक उपभोग किए गए हिस्से को बाहर कर सकता है।"
     },
     "section4": {
-      "title": "4. How to Request and Processing Time",
-      "p1": "To request a refund, email us with your purchase details (receipt/payment info): captain@purpleship.io",
-      "p2": "We will review and respond within a reasonable time. Refund completion timing may vary by payment method/provider."
+      "title": "4. अनुरोध कैसे करें और प्रसंस्करण समय",
+      "p1": "वापसी का अनुरोध करने के लिए, अपने खरीद विवरण (रसीद/भुगतान जानकारी) के साथ हमें ईमेल करें: captain@purpleship.io",
+      "p2": "हम उचित समय के भीतर समीक्षा और जवाब देंगे। वापसी पूर्ण होने का समय भुगतान विधि/प्रदाता के अनुसार भिन्न हो सकता है।"
     }
   },
   "pricingPage": {

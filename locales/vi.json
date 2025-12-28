@@ -108,114 +108,114 @@
   },
   "termsPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Terms & Conditions",
-    "subtitle": "These terms govern the use of the Purpleship website and related services.",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Điều Khoản và Điều Kiện Purpleship",
+    "subtitle": "Các điều khoản này điều chỉnh việc sử dụng trang web Purpleship và các dịch vụ liên quan.",
+    "effectiveDate": "Ngày có hiệu lực: 15 tháng 12 năm 2025",
+    "backToHome": "← Quay lại Trang chủ",
     "nav": {
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy",
-      "pricing": "Pricing"
+      "privacy": "Chính Sách Bảo Mật",
+      "refund": "Chính Sách Hoàn Tiền",
+      "pricing": "Bảng Giá"
     },
     "section1": {
-      "title": "1. Business Information",
-      "li1": "Legal business name: Purpleship",
-      "li2": "Contact: captain@purpleship.io",
-      "li3": "Website: purpleship.io"
+      "title": "1. Thông Tin Doanh Nghiệp",
+      "li1": "Tên doanh nghiệp hợp pháp: Purpleship",
+      "li2": "Liên hệ: captain@purpleship.io",
+      "li3": "Trang web: purpleship.io"
     },
     "section2": {
-      "title": "2. Scope",
-      "p1": "These terms apply to the Purpleship website and related services. If service-specific terms (e.g., payments/virtual currency) exist, those terms may take precedence."
+      "title": "2. Phạm Vi",
+      "p1": "Các điều khoản này áp dụng cho trang web Purpleship và các dịch vụ liên quan. Nếu tồn tại các điều khoản cụ thể cho dịch vụ (ví dụ: thanh toán/tiền tệ ảo), các điều khoản đó có thể được ưu tiên."
     },
     "section3": {
-      "title": "3. User Responsibilities",
-      "li1": "You must comply with applicable laws and these terms.",
-      "li2": "You must not harm the security or stability of the service (unauthorized access, reverse engineering, abuse, etc.)."
+      "title": "3. Trách Nhiệm Người Dùng",
+      "li1": "Bạn phải tuân thủ các luật áp dụng và các điều khoản này.",
+      "li2": "Bạn không được làm hại tính bảo mật hoặc ổn định của dịch vụ (truy cập trái phép, kỹ thuật đảo ngược, lạm dụng, v.v.)."
     },
     "section4": {
-      "title": "4. Intellectual Property",
-      "p1": "Rights to the website, content, and software belong to Purpleship or the rightful owners."
+      "title": "4. Sở Hữu Trí Tuệ",
+      "p1": "Quyền đối với trang web, nội dung và phần mềm thuộc về Purpleship hoặc chủ sở hữu hợp pháp."
     },
     "section5": {
-      "title": "5. Disclaimer and Limitation of Liability",
-      "p1": "To the extent permitted by law, we may limit liability for indirect or consequential damages. The service may be provided “as is”."
+      "title": "5. Tuyên Bố Miễn Trừ và Giới Hạn Trách Nhiệm",
+      "p1": "Trong phạm vi được pháp luật cho phép, chúng tôi có thể giới hạn trách nhiệm đối với thiệt hại gián tiếp hoặc thiệt hại do hậu quả. Dịch vụ có thể được cung cấp \"nguyên trạng\"."
     },
     "section6": {
-      "title": "6. Changes to These Terms",
-      "p1": "We may revise these terms due to legal or service changes and will provide reasonable prior notice for material updates."
+      "title": "6. Thay Đổi Các Điều Khoản Này",
+      "p1": "Chúng tôi có thể sửa đổi các điều khoản này do thay đổi pháp luật hoặc dịch vụ và sẽ cung cấp thông báo trước hợp lý cho các cập nhật quan trọng."
     },
     "section7": {
-      "title": "7. Paid Services and Payments (WorldCanvas)",
-      "intro": "This section sets forth additional terms for purchasing and using paid products and virtual currency (Purple) in WorldCanvas.",
+      "title": "7. Dịch Vụ Trả Phí và Thanh Toán (WorldCanvas)",
+      "intro": "Phần này nêu ra các điều khoản bổ sung để mua và sử dụng sản phẩm trả phí và tiền tệ ảo (Purple) trong WorldCanvas.",
       "definitions": {
-        "title": "7.1 Definitions",
-        "d1": "\"Paid Products\" means digital content, permissions, or virtual currency provided through payment.",
-        "d2": "\"Purple\" refers to virtual currency (points/credits) usable within WorldCanvas services, which cannot be exchanged for cash.",
-        "d3": "\"Consumption\" means using Purple to purchase functions/items or increase usage limits."
+        "title": "7.1 Định Nghĩa",
+        "d1": "\"Sản phẩm trả phí\" có nghĩa là nội dung kỹ thuật số, quyền hoặc tiền tệ ảo được cung cấp thông qua thanh toán.",
+        "d2": "\"Purple\" đề cập đến tiền tệ ảo (điểm/tín dụng) có thể sử dụng trong các dịch vụ WorldCanvas, không thể đổi lấy tiền mặt.",
+        "d3": "\"Tiêu thụ\" có nghĩa là sử dụng Purple để mua chức năng/vật phẩm hoặc tăng giới hạn sử dụng."
       },
       "usage": {
-        "title": "7.2 Purple Usage",
-        "p1": "Users can purchase Purple to use features within WorldCanvas. Specific uses are displayed in the service interface.",
-        "li1": "Example: Palette color (palette slot) expansion",
-        "li2": "Example: Increasing the \"pixel placement limit\" for bulk pixel placement",
-        "li3": "Example: Other paid items/features (may be added in the future)"
+        "title": "7.2 Sử Dụng Purple",
+        "p1": "Người dùng có thể mua Purple để sử dụng các tính năng trong WorldCanvas. Các mục đích sử dụng cụ thể được hiển thị trong giao diện dịch vụ.",
+        "li1": "Ví dụ: Mở rộng màu bảng màu (ô bảng màu)",
+        "li2": "Ví dụ: Tăng \"giới hạn đặt pixel\" cho việc đặt pixel hàng loạt",
+        "li3": "Ví dụ: Các vật phẩm/tính năng trả phí khác (có thể được thêm vào trong tương lai)"
       },
       "payment": {
-        "title": "7.3 Payment and Delivery",
-        "p1": "Prices, contents, payment methods, and billing times are shown during the purchase process. Purple or permissions are provided immediately (or within a reasonable time) after payment.",
-        "li1": "Payments may be processed through third-party payment service providers.",
-        "li2": "Purchase history and payment details can be verified in the service or payment receipt.",
-        "li3": "For detailed pricing information, please refer to the pricing page."
+        "title": "7.3 Thanh Toán và Giao Hàng",
+        "p1": "Giá cả, nội dung, phương thức thanh toán và thời gian thanh toán được hiển thị trong quá trình mua hàng. Purple hoặc quyền được cung cấp ngay lập tức (hoặc trong thời gian hợp lý) sau khi thanh toán.",
+        "li1": "Thanh toán có thể được xử lý thông qua các nhà cung cấp dịch vụ thanh toán bên thứ ba.",
+        "li2": "Lịch sử mua hàng và chi tiết thanh toán có thể được xác minh trong dịch vụ hoặc biên lai thanh toán.",
+        "li3": "Để biết thông tin chi tiết về giá cả, vui lòng tham khảo trang bảng giá."
       },
       "refund": {
-        "title": "7.4 Withdrawal (Refunds) and Exceptions",
-        "p1": "Digital content/virtual currency may be available for use immediately upon provision, and withdrawal may be restricted within the scope permitted by law. However, refunds or compensation may be provided in the following cases:",
-        "li1": "Cases where there is a company fault (non-delivery, incorrect delivery, etc.)",
-        "li2": "Cases with legitimate reasons (payment errors, duplicate payments, etc.)",
-        "li3": "Cases required by law",
-        "li4": "If Purple has already been consumed, processing may exclude the consumed portion (within the scope not restricted by law).",
-        "li5": "For detailed refund policies, please refer to the refund policy page."
+        "title": "7.4 Rút Tiền (Hoàn Tiền) và Ngoại Lệ",
+        "p1": "Nội dung kỹ thuật số/tiền tệ ảo có thể sẵn sàng để sử dụng ngay khi được cung cấp, và việc rút tiền có thể bị hạn chế trong phạm vi được pháp luật cho phép. Tuy nhiên, hoàn tiền hoặc bồi thường có thể được cung cấp trong các trường hợp sau:",
+        "li1": "Các trường hợp có lỗi của công ty (không giao hàng, giao sai hàng, v.v.)",
+        "li2": "Các trường hợp có lý do hợp lý (lỗi thanh toán, thanh toán trùng lặp, v.v.)",
+        "li3": "Các trường hợp được yêu cầu bởi pháp luật",
+        "li4": "Nếu Purple đã được tiêu thụ, xử lý có thể loại trừ phần đã tiêu thụ (trong phạm vi không bị pháp luật hạn chế).",
+        "li5": "Để biết chính sách hoàn tiền chi tiết, vui lòng tham khảo trang chính sách hoàn tiền."
       },
       "minors": {
-        "title": "7.5 Minor Payments",
-        "p1": "Minors making payments may require legal guardian consent, and cancellation (refund) requests may be possible according to law."
+        "title": "7.5 Thanh Toán của Trẻ Vị Thành Niên",
+        "p1": "Việc thanh toán của trẻ vị thành niên có thể yêu cầu sự đồng ý của người giám hộ hợp pháp, và yêu cầu hủy bỏ (hoàn tiền) có thể thực hiện được theo pháp luật."
       },
       "restriction": {
-        "title": "7.6 Usage Restrictions and Recovery",
-        "p1": "If fraudulent payments, hacking/abuse, or terms violations are confirmed, we may recover granted Purple/permissions or restrict account usage according to applicable laws and service policies."
+        "title": "7.6 Hạn Chế Sử Dụng và Thu Hồi",
+        "p1": "Nếu thanh toán gian lận, hack/lạm dụng, hoặc vi phạm điều khoản được xác nhận, chúng tôi có thể thu hồi Purple/quyền đã cấp hoặc hạn chế sử dụng tài khoản theo pháp luật và chính sách dịch vụ áp dụng."
       }
     }
   },
   "refundPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Refund Policy",
-    "subtitle": "This policy describes refunds/withdrawal rules for paid items and virtual currency (e.g., Purple).",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Chính Sách Hoàn Tiền Purpleship",
+    "subtitle": "Chính sách này mô tả các quy tắc hoàn tiền/rút tiền cho các vật phẩm trả phí và tiền tệ ảo (ví dụ: Purple).",
+    "effectiveDate": "Ngày có hiệu lực: 15 tháng 12 năm 2025",
+    "backToHome": "← Quay lại Trang chủ",
     "nav": {
-      "terms": "Terms & Conditions",
-      "privacy": "Privacy Policy",
-      "pricing": "Pricing"
+      "terms": "Điều Khoản và Điều Kiện",
+      "privacy": "Chính Sách Bảo Mật",
+      "pricing": "Bảng Giá"
     },
     "section1": {
-      "title": "1. Scope",
-      "p1": "This policy applies to paid items provided on the Purpleship website and related services. If service-specific purchase terms exist, those terms may take precedence."
+      "title": "1. Phạm Vi",
+      "p1": "Chính sách này áp dụng cho các vật phẩm trả phí được cung cấp trên trang web Purpleship và các dịch vụ liên quan. Nếu tồn tại các điều khoản mua hàng cụ thể cho dịch vụ, các điều khoản đó có thể được ưu tiên."
     },
     "section2": {
-      "title": "2. Eligible Refund Cases",
-      "li1": "Non-delivery or mis-delivery due to our fault",
-      "li2": "Valid reasons such as duplicate charges or payment errors",
-      "li3": "When refunds are required by applicable law"
+      "title": "2. Các Trường Hợp Đủ Điều Kiện Hoàn Tiền",
+      "li1": "Không giao hàng hoặc giao sai hàng do lỗi của chúng tôi",
+      "li2": "Lý do hợp lý như phí trùng lặp hoặc lỗi thanh toán",
+      "li3": "Khi hoàn tiền được yêu cầu bởi pháp luật áp dụng"
     },
     "section3": {
-      "title": "3. Refund Limitations (Exceptions)",
-      "li1": "Digital content/virtual currency may be made available immediately, and refunds may be restricted to the extent permitted by law.",
-      "li2": "If virtual currency (Purple) has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
+      "title": "3. Giới Hạn Hoàn Tiền (Ngoại Lệ)",
+      "li1": "Nội dung kỹ thuật số/tiền tệ ảo có thể được cung cấp ngay lập tức, và hoàn tiền có thể bị hạn chế trong phạm vi được pháp luật cho phép.",
+      "li2": "Nếu tiền tệ ảo (Purple) đã được tiêu thụ, xử lý có thể loại trừ phần đã tiêu thụ trong phạm vi được pháp luật cho phép."
     },
     "section4": {
-      "title": "4. How to Request and Processing Time",
-      "p1": "To request a refund, email us with your purchase details (receipt/payment info): captain@purpleship.io",
-      "p2": "We will review and respond within a reasonable time. Refund completion timing may vary by payment method/provider."
+      "title": "4. Cách Yêu Cầu và Thời Gian Xử Lý",
+      "p1": "Để yêu cầu hoàn tiền, gửi email cho chúng tôi với chi tiết mua hàng của bạn (biên lai/thông tin thanh toán): captain@purpleship.io",
+      "p2": "Chúng tôi sẽ xem xét và phản hồi trong thời gian hợp lý. Thời gian hoàn thành hoàn tiền có thể khác nhau tùy theo phương thức thanh toán/nhà cung cấp."
     }
   },
   "pricingPage": {
