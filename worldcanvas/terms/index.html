@@ -3,291 +3,66 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WorldCanvas 구매 약관</title>
-  <base href="/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-  <script src="/locales/i18n-loader.js"></script>
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0; url=/terms/#worldcanvas">
+  <link rel="canonical" href="/terms/#worldcanvas">
   <style>
     :root {
       --primary-purple:#1d1d1f;
       --secondary-purple:#2d2d30;
-      --tertiary-purple:#424245;
       --accent-blue:#007aff;
-      --accent-gold:#ff9500;
       --text-primary:#f5f5f7;
-      --text-secondary:#a1a1a6;
-      --surface-primary: rgba(29,29,31,.95);
-      --surface-secondary: rgba(45,45,48,.8);
-      --backdrop-blur: blur(20px);
     }
-    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family:'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 35%, var(--tertiary-purple) 70%, #773c96 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 100%);
       color: var(--text-primary);
-      min-height:100vh;
-    }
-    .main-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 64px;
-      z-index: 1000;
-      background: var(--surface-primary);
-      backdrop-filter: var(--backdrop-blur);
-      border-bottom: .5px solid rgba(255,255,255,.08);
-    }
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      height: 100%;
-      padding: 0 20px;
+      min-height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
     }
-    .nav-brand {
-      display:flex; align-items:center; gap:10px;
-      color: var(--text-primary);
-      font-weight: 900;
-      font-size: 1.1rem;
+    .container {
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 1.5rem;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--accent-blue);
+      color: white;
       text-decoration: none;
-    }
-    .nav-menu { display:flex; align-items:center; gap: 10px; }
-    .nav-menu a {
-      color: var(--text-primary);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding: 8px 12px;
-      border-radius: 10px;
-    }
-    .nav-menu a:hover { background: rgba(255,255,255,0.06); color: var(--accent-blue); }
-
-    .language-selector { position: relative; }
-    .lang-button {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 4px 8px; height: 28px;
-      font-size: 12px;
-      color: var(--text-primary);
-      background: var(--surface-secondary);
-      border: 0.5px solid rgba(255,255,255,0.12);
       border-radius: 8px;
-      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
     }
-    .lang-menu {
-      position: absolute;
-      right: 0;
-      top: calc(100% + 6px);
-      background: var(--surface-primary);
-      backdrop-filter: var(--backdrop-blur);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 10px;
-      padding: 6px;
-      display: grid;
-      gap: 4px;
-      min-width: 140px;
-      z-index: 1001;
+    a:hover {
+      background: #0051d5;
+      transform: translateY(-2px);
     }
-    .lang-menu[hidden] { display: none !important; }
-    .lang-menu button {
-      text-align: left;
-      background: transparent;
-      color: var(--text-primary);
-      border: none;
-      padding: 6px 8px;
-      border-radius: 6px;
-      font-size: 12px;
-      cursor: pointer;
-    }
-    .lang-menu button:hover { background: rgba(255,255,255,.06); }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 96px 20px 40px;
-    }
-    .card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 28px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0,0,0,.25);
-    }
-    h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4.5vw, 2.6rem); }
-    .subtitle { margin: 0 0 18px; color: var(--text-secondary); font-size: 1rem; line-height: 1.5; }
-    .meta { margin: 0 0 22px; color: var(--text-secondary); font-size: 0.95rem; }
-    .section { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); }
-    h2 { margin: 0 0 10px; font-size: 1.15rem; color: var(--accent-gold); }
-    p { margin: 0 0 10px; color: var(--text-primary); line-height: 1.7; }
-    ul { margin: 0; padding-left: 18px; }
-    li { margin: 6px 0; color: var(--text-primary); line-height: 1.6; }
-    footer { margin-top: 18px; text-align: center; }
-    footer a { color: var(--accent-gold); text-decoration: none; font-weight: 700; }
-    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a class="nav-brand" href="/worldcanvas/terms/" aria-label="WorldCanvas Terms">WorldCanvas</a>
-      <nav class="nav-menu" aria-label="Navigation">
-        <a href="/" data-i18n="worldcanvasTerms.nav.home">홈</a>
-        <a href="/privacy/" data-i18n="worldcanvasTerms.nav.privacy">개인정보처리방침</a>
-      </nav>
-      <div class="language-selector">
-        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
-        <div class="lang-menu" id="langMenu" hidden>
-          <button data-lang="auto">🌐 Auto</button>
-          <button data-lang="ko">🇰🇷 한국어</button>
-          <button data-lang="en">🇺🇸 English</button>
-          <button data-lang="zh">🇨🇳 中文</button>
-          <button data-lang="ja">🇯🇵 日本語</button>
-          <button data-lang="es">🇪🇸 Español</button>
-          <button data-lang="fr">🇫🇷 Français</button>
-          <button data-lang="de">🇩🇪 Deutsch</button>
-          <button data-lang="ru">🇷🇺 Русский</button>
-          <button data-lang="ar">🇸🇦 العربية</button>
-          <button data-lang="hi">🇮🇳 हिन्दी</button>
-          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <article class="card">
-      <header>
-        <h1 data-i18n="worldcanvasTerms.title">WorldCanvas 구매 약관</h1>
-        <p class="subtitle" data-i18n="worldcanvasTerms.subtitle">WorldCanvas 유료 상품 및 가상재화(Purple) 구매/사용에 관한 약관입니다.</p>
-        <p class="meta" data-i18n="worldcanvasTerms.effectiveDate">시행일: 2025년 12월 14일</p>
-      </header>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section1.title">1. 목적 및 적용 범위</h2>
-        <p data-i18n="worldcanvasTerms.section1.p1">본 약관은 WorldCanvas 웹서비스에서 제공되는 유료 상품 및 가상재화 Purple의 구매·사용·환불(청약철회 포함) 등에 관한 조건을 정합니다.</p>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section2.title">2. 정의</h2>
-        <ul>
-          <li data-i18n="worldcanvasTerms.section2.d1">“서비스”란 WorldCanvas 웹서비스 및 이에 부수하는 기능을 의미합니다.</li>
-          <li data-i18n="worldcanvasTerms.section2.d2">“유료 상품”이란 결제를 통해 제공되는 디지털 콘텐츠/권한/가상재화 등을 의미합니다.</li>
-          <li data-i18n="worldcanvasTerms.section2.d3">“Purple”이란 서비스 내에서 사용 가능한 가상재화(포인트/크레딧)로서, 현금과 동일한 가치로 환전되지 않습니다.</li>
-          <li data-i18n="worldcanvasTerms.section2.d4">“소비”란 Purple을 사용하여 기능/아이템을 구매하거나 사용 한도를 증가시키는 행위를 의미합니다.</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section3.title">3. Purple 및 사용처</h2>
-        <p data-i18n="worldcanvasTerms.section3.p1">사용자는 Purple을 구매하여 서비스 내 기능을 이용할 수 있습니다. Purple의 구체적인 사용처는 서비스 화면에 표시되는 안내에 따릅니다.</p>
-        <ul>
-          <li data-i18n="worldcanvasTerms.section3.li1">예시: 팔레트 색상(팔레트 슬롯) 확장</li>
-          <li data-i18n="worldcanvasTerms.section3.li2">예시: 픽셀을 한 번에 “찍을 수 있는 한도치” 증가(일괄 찍기 한도 확장)</li>
-          <li data-i18n="worldcanvasTerms.section3.li3">예시: 기타 유료 아이템/기능(추후 추가될 수 있음)</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section4.title">4. 결제 및 제공</h2>
-        <p data-i18n="worldcanvasTerms.section4.p1">유료 상품의 가격, 제공 내용, 결제 수단, 과금 시점은 결제 화면 또는 구매 과정에서 표시되는 정보를 따릅니다. 결제 완료 후 Purple 또는 해당 권한이 즉시(또는 합리적인 시간 내) 제공됩니다.</p>
-        <ul>
-          <li data-i18n="worldcanvasTerms.section4.li1">결제는 제3자 결제 서비스 제공자를 통해 처리될 수 있습니다.</li>
-          <li data-i18n="worldcanvasTerms.section4.li2">구매 내역 및 지급 내역은 서비스 내 또는 결제 수단의 영수증에서 확인할 수 있습니다.</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section5.title">5. 청약철회(환불) 및 예외</h2>
-        <p data-i18n="worldcanvasTerms.section5.p1">원칙적으로 디지털 콘텐츠/가상재화는 제공 즉시 이용이 개시될 수 있으며, 관련 법령이 허용하는 범위 내에서 청약철회가 제한될 수 있습니다. 다만, 아래 사유에 해당하는 경우 합리적인 범위에서 환불 또는 보상 절차를 제공합니다.</p>
-        <ul>
-          <li data-i18n="worldcanvasTerms.section5.li1">미지급/오지급 등 회사 귀책 사유가 있는 경우</li>
-          <li data-i18n="worldcanvasTerms.section5.li2">결제 오류/중복 결제 등 정당한 사유가 있는 경우</li>
-          <li data-i18n="worldcanvasTerms.section5.li3">법령상 환불이 요구되는 경우</li>
-          <li data-i18n="worldcanvasTerms.section5.li4">Purple이 이미 소비된 경우, 소비된 범위를 제외하고 처리될 수 있습니다(법령상 제한이 없는 범위).</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section6.title">6. 미성년자 결제</h2>
-        <p data-i18n="worldcanvasTerms.section6.p1">미성년자가 결제하는 경우 법정대리인의 동의가 필요할 수 있으며, 법령에 따라 취소(환불) 요청이 가능할 수 있습니다.</p>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section7.title">7. 이용 제한 및 회수</h2>
-        <p data-i18n="worldcanvasTerms.section7.p1">부정 결제, 해킹/어뷰징, 약관 위반 등이 확인될 경우, 회사는 관련 법령 및 서비스 정책에 따라 지급된 Purple/권한을 회수하거나 계정 이용을 제한할 수 있습니다.</p>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section8.title">8. 약관의 변경</h2>
-        <p data-i18n="worldcanvasTerms.section8.p1">회사는 법령 또는 서비스 변경에 따라 본 약관을 개정할 수 있으며, 중요한 변경은 합리적인 기간 전에 서비스 내 공지 또는 웹사이트 공지를 통해 안내합니다.</p>
-      </section>
-
-      <section class="section">
-        <h2 data-i18n="worldcanvasTerms.section9.title">9. 문의</h2>
-        <p data-i18n="worldcanvasTerms.section9.p1">결제/환불/구매 관련 문의는 아래 이메일로 접수해 주세요: captain@purpleship.io</p>
-      </section>
-
-      <footer>
-        <a href="/" data-i18n="worldcanvasTerms.backToHome">← 홈으로 돌아가기</a>
-      </footer>
-    </article>
-  </main>
-
+  <div class="container">
+    <h1>페이지 이동 중...</h1>
+    <p>WorldCanvas 구매 약관이 통합 이용약관으로 이동되었습니다.</p>
+    <p>자동으로 이동되지 않으면 아래 링크를 클릭하세요:</p>
+    <a href="/terms/#worldcanvas">이용약관으로 이동</a>
+  </div>
   <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      await window.i18n.init('worldcanvasTerms');
-
-      // Title 업데이트
-      const title = window.i18n.getTranslation('worldcanvasTerms', 'title');
-      document.title = title || document.title;
-
-      const btn = document.getElementById('langBtn');
-      const menu = document.getElementById('langMenu');
-      const label = document.getElementById('langLabel');
-
-      function labelFor(lang) {
-        const item = menu && menu.querySelector(`button[data-lang="${lang}"]`);
-        if (!item) return 'Auto';
-        const raw = (item.textContent || '').trim();
-        const parts = raw.split(' ');
-        return (parts.slice(1).join(' ') || raw).trim();
-      }
-
-      function setLabel(lang) {
-        if (!label) return;
-        label.textContent = labelFor(lang);
-      }
-
-      // 초기 라벨 설정
-      const current = (localStorage.getItem('preferred-language') || document.documentElement.lang || 'auto').toLowerCase();
-      setLabel(current === 'auto' ? 'auto' : current);
-
-      if (btn && menu) {
-        btn.addEventListener('click', () => {
-          if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
-          else menu.setAttribute('hidden', '');
-        });
-        menu.querySelectorAll('button[data-lang]').forEach(item => {
-          item.addEventListener('click', async () => {
-            let lang = item.getAttribute('data-lang');
-            if (lang === 'auto') lang = window.i18n.detectLanguage();
-            await window.i18n.changeLanguage(lang, 'worldcanvasTerms');
-            setLabel(lang);
-            menu.setAttribute('hidden', '');
-          });
-        });
-        document.addEventListener('click', (e) => {
-          if (!menu.contains(e.target) && !btn.contains(e.target)) menu.setAttribute('hidden', '');
-        });
-      }
-    });
+    // 즉시 리다이렉트
+    window.location.href = '/terms/#worldcanvas';
   </script>
 </body>
 </html>
-
-
