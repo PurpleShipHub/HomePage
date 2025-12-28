@@ -174,7 +174,7 @@
     },
     "section2": {
       "title": "2. Geltungsbereich",
-      "p1": "Diese Bedingungen gelten für die Purpleship-Website (im Folgenden „das Unternehmen") und die zugehörigen Dienste. Wenn dienstspezifische Bedingungen (z. B. Zahlungen/virtuelle Währung) existieren, können diese Vorrang haben."
+      "p1": "Diese Bedingungen gelten für die Purpleship-Website (im Folgenden „das Unternehmen“) und die zugehörigen Dienste. Wenn dienstspezifische Bedingungen (z. B. Zahlungen/virtuelle Währung) existieren, können diese Vorrang haben."
     },
     "section3": {
       "title": "3. Verantwortlichkeiten der Benutzer",
@@ -187,7 +187,7 @@
     },
     "section5": {
       "title": "5. Haftungsausschluss und Haftungsbeschränkung",
-      "p1": "Soweit gesetzlich zulässig, können wir die Haftung für indirekte oder Folgeschäden einschränken. Der Dienst kann „wie besehen" bereitgestellt werden."
+      "p1": "Soweit gesetzlich zulässig, können wir die Haftung für indirekte oder Folgeschäden einschränken. Der Dienst kann „wie besehen“ bereitgestellt werden."
     },
     "section6": {
       "title": "6. Änderungen der Bedingungen",
@@ -198,15 +198,15 @@
       "intro": "Dieser Abschnitt legt zusätzliche Bedingungen für den Kauf und die Nutzung von kostenpflichtigen Produkten und virtueller Währung (Purple) in WorldCanvas fest.",
       "definitions": {
         "title": "7.1 Definitionen",
-        "d1": "„Kostenpflichtige Produkte" bedeuten digitale Inhalte, Berechtigungen oder virtuelle Währung, die durch Zahlung bereitgestellt werden.",
-        "d2": "„Purple" bezieht sich auf virtuelle Währung (Punkte/Credits), die innerhalb der WorldCanvas-Dienste verwendet werden kann und nicht gegen Bargeld eingetauscht werden kann.",
-        "d3": "„Verbrauch" bedeutet die Verwendung von Purple zum Kauf von Funktionen/Artikeln oder zur Erhöhung von Nutzungsgrenzen."
+        "d1": "„Kostenpflichtige Produkte“ bedeuten digitale Inhalte, Berechtigungen oder virtuelle Währung, die durch Zahlung bereitgestellt werden.",
+        "d2": "„Purple“ bezieht sich auf virtuelle Währung (Punkte/Credits), die innerhalb der WorldCanvas-Dienste verwendet werden kann und nicht gegen Bargeld eingetauscht werden kann.",
+        "d3": "„Verbrauch“ bedeutet die Verwendung von Purple zum Kauf von Funktionen/Artikeln oder zur Erhöhung von Nutzungsgrenzen."
       },
       "usage": {
         "title": "7.2 Purple-Nutzung",
         "p1": "Benutzer können Purple kaufen, um Funktionen in WorldCanvas zu nutzen. Spezifische Verwendungen werden in der Dienst-Oberfläche angezeigt.",
         "li1": "Beispiel: Palettenfarbenerweiterung (Palettenslot)",
-        "li2": "Beispiel: Erhöhung des „Pixel-Platzierungslimits" für die Massenplatzierung von Pixeln",
+        "li2": "Beispiel: Erhöhung des „Pixel-Platzierungslimits“ für die Massenplatzierung von Pixeln",
         "li3": "Beispiel: Andere kostenpflichtige Artikel/Funktionen (können in Zukunft hinzugefügt werden)"
       },
       "payment": {
