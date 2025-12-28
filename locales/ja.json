@@ -151,114 +151,114 @@
   },
   "termsPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Terms & Conditions",
-    "subtitle": "These terms govern the use of the Purpleship website and related services.",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Purpleship 利用規約",
+    "subtitle": "Purpleship ウェブサイトおよび関連サービスの利用に関する規約です。",
+    "effectiveDate": "施行日：2025年12月15日",
+    "backToHome": "← ホームに戻る",
     "nav": {
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy",
-      "pricing": "Pricing"
+      "privacy": "プライバシーポリシー",
+      "refund": "返金ポリシー",
+      "pricing": "価格"
     },
     "section1": {
-      "title": "1. Business Information",
-      "li1": "Legal business name: Purpleship",
-      "li2": "Contact: captain@purpleship.io",
-      "li3": "Website: purpleship.io"
+      "title": "1. 事業者情報",
+      "li1": "法的商号：Purpleship",
+      "li2": "お問い合わせ：captain@purpleship.io",
+      "li3": "ウェブサイト：purpleship.io"
     },
     "section2": {
-      "title": "2. Scope",
-      "p1": "These terms apply to the Purpleship website and related services. If service-specific terms (e.g., payments/virtual currency) exist, those terms may take precedence."
+      "title": "2. 規約の適用",
+      "p1": "本規約は Purpleship（以下「当社」）が提供するウェブサイトおよび関連サービスに適用されます。サービスごとに決済/仮想財等の別途規約がある場合、該当規約が優先適用される場合があります。"
     },
     "section3": {
-      "title": "3. User Responsibilities",
-      "li1": "You must comply with applicable laws and these terms.",
-      "li2": "You must not harm the security or stability of the service (unauthorized access, reverse engineering, abuse, etc.)."
+      "title": "3. 利用者の義務",
+      "li1": "関連法令および本規約を遵守する必要があります。",
+      "li2": "サービスのセキュリティ/安定性を損なう行為（不正アクセス、リバースエンジニアリング、悪用等）を行ってはなりません。"
     },
     "section4": {
-      "title": "4. Intellectual Property",
-      "p1": "Rights to the website, content, and software belong to Purpleship or the rightful owners."
+      "title": "4. 知的財産権",
+      "p1": "ウェブサイトおよびサービスに含まれるコンテンツとソフトウェアに対する権利は、当社または正当な権利者に帰属します。"
     },
     "section5": {
-      "title": "5. Disclaimer and Limitation of Liability",
-      "p1": "To the extent permitted by law, we may limit liability for indirect or consequential damages. The service may be provided “as is”."
+      "title": "5. 免責および責任の制限",
+      "p1": "当社は関連法令が許容する範囲内で間接損害、特別損害等について責任を制限することができます。サービスの提供は「現状のまま」提供される場合があります。"
     },
     "section6": {
-      "title": "6. Changes to These Terms",
-      "p1": "We may revise these terms due to legal or service changes and will provide reasonable prior notice for material updates."
+      "title": "6. 規約の変更",
+      "p1": "当社は法令またはサービス変更に伴い本規約を改定することができ、重要な変更は合理的な期間前に通知します。"
     },
     "section7": {
-      "title": "7. Paid Services and Payments (WorldCanvas)",
-      "intro": "This section sets forth additional terms for purchasing and using paid products and virtual currency (Purple) in WorldCanvas.",
+      "title": "7. 有料サービスおよび決済（WorldCanvas）",
+      "intro": "本セクションは WorldCanvas ウェブサービスで提供される有料商品および仮想財 Purple の購入・使用・返金等に関する追加条件を定めます。",
       "definitions": {
-        "title": "7.1 Definitions",
-        "d1": "\"Paid Products\" means digital content, permissions, or virtual currency provided through payment.",
-        "d2": "\"Purple\" refers to virtual currency (points/credits) usable within WorldCanvas services, which cannot be exchanged for cash.",
-        "d3": "\"Consumption\" means using Purple to purchase functions/items or increase usage limits."
+        "title": "7.1 定義",
+        "d1": "「有料商品」とは決済を通じて提供されるデジタルコンテンツ/権限/仮想財等を意味します。",
+        "d2": "「Purple」とは WorldCanvas サービス内で使用可能な仮想財（ポイント/クレジット）であり、現金と同等の価値で換金されません。",
+        "d3": "「消費」とは Purple を使用して機能/アイテムを購入したり使用限度を増加させる行為を意味します。"
       },
       "usage": {
-        "title": "7.2 Purple Usage",
-        "p1": "Users can purchase Purple to use features within WorldCanvas. Specific uses are displayed in the service interface.",
-        "li1": "Example: Palette color (palette slot) expansion",
-        "li2": "Example: Increasing the \"pixel placement limit\" for bulk pixel placement",
-        "li3": "Example: Other paid items/features (may be added in the future)"
+        "title": "7.2 Purple の使用先",
+        "p1": "ユーザーは Purple を購入して WorldCanvas サービス内の機能を利用できます。Purple の具体的な使用先はサービス画面に表示される案内に従います。",
+        "li1": "例：パレットカラー（パレットスロット）拡張",
+        "li2": "例：一度に「配置できるピクセル数の上限」増加（一括配置上限拡張）",
+        "li3": "例：その他の有料アイテム/機能（今後追加される可能性があります）"
       },
       "payment": {
-        "title": "7.3 Payment and Delivery",
-        "p1": "Prices, contents, payment methods, and billing times are shown during the purchase process. Purple or permissions are provided immediately (or within a reasonable time) after payment.",
-        "li1": "Payments may be processed through third-party payment service providers.",
-        "li2": "Purchase history and payment details can be verified in the service or payment receipt.",
-        "li3": "For detailed pricing information, please refer to the pricing page."
+        "title": "7.3 決済および提供",
+        "p1": "有料商品の価格、提供内容、決済手段、課金時点は決済画面または購入過程で表示される情報に従います。決済完了後 Purple または該当権限が即時（または合理的な時間内）に提供されます。",
+        "li1": "決済は第三者決済サービスプロバイダーを通じて処理される場合があります。",
+        "li2": "購入履歴および支給履歴はサービス内または決済手段の領収書で確認できます。",
+        "li3": "詳細な価格情報は価格ページをご参照ください。"
       },
       "refund": {
-        "title": "7.4 Withdrawal (Refunds) and Exceptions",
-        "p1": "Digital content/virtual currency may be available for use immediately upon provision, and withdrawal may be restricted within the scope permitted by law. However, refunds or compensation may be provided in the following cases:",
-        "li1": "Cases where there is a company fault (non-delivery, incorrect delivery, etc.)",
-        "li2": "Cases with legitimate reasons (payment errors, duplicate payments, etc.)",
-        "li3": "Cases required by law",
-        "li4": "If Purple has already been consumed, processing may exclude the consumed portion (within the scope not restricted by law).",
-        "li5": "For detailed refund policies, please refer to the refund policy page."
+        "title": "7.4 撤回（返金）および例外",
+        "p1": "原則としてデジタルコンテンツ/仮想財は提供即時利用が開始される場合があり、関連法令が許容する範囲内で撤回が制限される場合があります。ただし、以下の事由に該当する場合は合理的な範囲で返金または補償手続きを提供します。",
+        "li1": "未支給/誤支給等、当社責任事由がある場合",
+        "li2": "決済エラー/重複決済等、正当な事由がある場合",
+        "li3": "法令上返金が要求される場合",
+        "li4": "Purple がすでに消費された場合、消費された範囲を除いて処理される場合があります（法令上制限がない範囲）。",
+        "li5": "詳細な返金ポリシーは返金ポリシーページをご参照ください。"
       },
       "minors": {
-        "title": "7.5 Minor Payments",
-        "p1": "Minors making payments may require legal guardian consent, and cancellation (refund) requests may be possible according to law."
+        "title": "7.5 未成年者の決済",
+        "p1": "未成年者が決済する場合、法定代理人の同意が必要な場合があり、法令に従ってキャンセル（返金）リクエストが可能な場合があります。"
       },
       "restriction": {
-        "title": "7.6 Usage Restrictions and Recovery",
-        "p1": "If fraudulent payments, hacking/abuse, or terms violations are confirmed, we may recover granted Purple/permissions or restrict account usage according to applicable laws and service policies."
+        "title": "7.6 利用制限および回収",
+        "p1": "不正決済、ハッキング/不正利用、規約違反等が確認された場合、当社は関連法令およびサービスポリシーに従って支給された Purple/権限を回収したりアカウント利用を制限することができます。"
       }
     }
   },
   "refundPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Refund Policy",
-    "subtitle": "This policy describes refunds/withdrawal rules for paid items and virtual currency (e.g., Purple).",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Purpleship 返金ポリシー",
+    "subtitle": "有料商品および仮想財（Purple 等）の返金/撤回基準を案内します。",
+    "effectiveDate": "施行日：2025年12月15日",
+    "backToHome": "← ホームに戻る",
     "nav": {
-      "terms": "Terms & Conditions",
-      "privacy": "Privacy Policy",
-      "pricing": "Pricing"
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "pricing": "価格"
     },
     "section1": {
-      "title": "1. Scope",
-      "p1": "This policy applies to paid items provided on the Purpleship website and related services. If service-specific purchase terms exist, those terms may take precedence."
+      "title": "1. 適用範囲",
+      "p1": "本ポリシーは Purpleship ウェブサイトおよび関連サービスで提供される有料商品に適用されます。サービスごとに購入規約がある場合、該当規約が優先適用される場合があります。"
     },
     "section2": {
-      "title": "2. Eligible Refund Cases",
-      "li1": "Non-delivery or mis-delivery due to our fault",
-      "li2": "Valid reasons such as duplicate charges or payment errors",
-      "li3": "When refunds are required by applicable law"
+      "title": "2. 返金可能な場合",
+      "li1": "未支給/誤支給等、当社責任事由がある場合",
+      "li2": "重複決済、決済エラー等の正当な事由がある場合",
+      "li3": "法令上返金が要求される場合"
     },
     "section3": {
-      "title": "3. Refund Limitations (Exceptions)",
-      "li1": "Digital content/virtual currency may be made available immediately, and refunds may be restricted to the extent permitted by law.",
-      "li2": "If virtual currency (Purple) has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
+      "title": "3. 返金制限（例外）",
+      "li1": "デジタルコンテンツ/仮想財は提供即時利用が開始される場合があり、関連法令が許容する範囲内で返金が制限される場合があります。",
+      "li2": "仮想財（Purple）がすでに消費された場合、消費された範囲を除いて処理される場合があります（法令上制限がない範囲）。"
     },
     "section4": {
-      "title": "4. How to Request and Processing Time",
-      "p1": "To request a refund, email us with your purchase details (receipt/payment info): captain@purpleship.io",
-      "p2": "We will review and respond within a reasonable time. Refund completion timing may vary by payment method/provider."
+      "title": "4. 申請方法および処理期間",
+      "p1": "返金のお問い合わせは購入履歴（領収書/決済情報）と共にメールで受け付けてください：captain@purpleship.io",
+      "p2": "受付後、合理的な期間内に確認および処理結果を案内します。決済手段/決済代行業者のポリシーにより返金完了時点は異なる場合があります。"
     }
   },
   "pricingPage": {

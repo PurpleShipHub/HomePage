@@ -151,114 +151,114 @@
   },
   "termsPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Terms & Conditions",
-    "subtitle": "These terms govern the use of the Purpleship website and related services.",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Conditions d'utilisation de Purpleship",
+    "subtitle": "Ces conditions régissent l'utilisation du site Web Purpleship et des services associés.",
+    "effectiveDate": "Date d'entrée en vigueur : 15 décembre 2025",
+    "backToHome": "← Retour à l'accueil",
     "nav": {
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy",
-      "pricing": "Pricing"
+      "privacy": "Politique de confidentialité",
+      "refund": "Politique de remboursement",
+      "pricing": "Tarifs"
     },
     "section1": {
-      "title": "1. Business Information",
-      "li1": "Legal business name: Purpleship",
-      "li2": "Contact: captain@purpleship.io",
-      "li3": "Website: purpleship.io"
+      "title": "1. Informations sur l'entreprise",
+      "li1": "Nom commercial légal : Purpleship",
+      "li2": "Contact : captain@purpleship.io",
+      "li3": "Site Web : purpleship.io"
     },
     "section2": {
-      "title": "2. Scope",
-      "p1": "These terms apply to the Purpleship website and related services. If service-specific terms (e.g., payments/virtual currency) exist, those terms may take precedence."
+      "title": "2. Champ d'application",
+      "p1": "Ces conditions s'appliquent au site Web de Purpleship (ci-après « la Société ») et aux services associés. Si des conditions spécifiques au service existent (par exemple, paiements/monnaie virtuelle), ces conditions peuvent prévaloir."
     },
     "section3": {
-      "title": "3. User Responsibilities",
-      "li1": "You must comply with applicable laws and these terms.",
-      "li2": "You must not harm the security or stability of the service (unauthorized access, reverse engineering, abuse, etc.)."
+      "title": "3. Responsabilités de l'utilisateur",
+      "li1": "Vous devez respecter les lois applicables et ces conditions.",
+      "li2": "Vous ne devez pas nuire à la sécurité ou à la stabilité du service (accès non autorisé, rétro-ingénierie, abus, etc.)."
     },
     "section4": {
-      "title": "4. Intellectual Property",
-      "p1": "Rights to the website, content, and software belong to Purpleship or the rightful owners."
+      "title": "4. Propriété intellectuelle",
+      "p1": "Les droits sur le site Web, le contenu et le logiciel appartiennent à la Société ou aux propriétaires légitimes."
     },
     "section5": {
-      "title": "5. Disclaimer and Limitation of Liability",
-      "p1": "To the extent permitted by law, we may limit liability for indirect or consequential damages. The service may be provided “as is”."
+      "title": "5. Clause de non-responsabilité et limitation de responsabilité",
+      "p1": "Dans la mesure permise par la loi, nous pouvons limiter la responsabilité pour les dommages indirects ou consécutifs. Le service peut être fourni « tel quel »."
     },
     "section6": {
-      "title": "6. Changes to These Terms",
-      "p1": "We may revise these terms due to legal or service changes and will provide reasonable prior notice for material updates."
+      "title": "6. Modifications des conditions",
+      "p1": "Nous pouvons réviser ces conditions en raison de changements légaux ou de service et fournirons un préavis raisonnable pour les mises à jour importantes."
     },
     "section7": {
-      "title": "7. Paid Services and Payments (WorldCanvas)",
-      "intro": "This section sets forth additional terms for purchasing and using paid products and virtual currency (Purple) in WorldCanvas.",
+      "title": "7. Services payants et paiements (WorldCanvas)",
+      "intro": "Cette section définit des conditions supplémentaires pour l'achat et l'utilisation de produits payants et de monnaie virtuelle (Purple) dans WorldCanvas.",
       "definitions": {
-        "title": "7.1 Definitions",
-        "d1": "\"Paid Products\" means digital content, permissions, or virtual currency provided through payment.",
-        "d2": "\"Purple\" refers to virtual currency (points/credits) usable within WorldCanvas services, which cannot be exchanged for cash.",
-        "d3": "\"Consumption\" means using Purple to purchase functions/items or increase usage limits."
+        "title": "7.1 Définitions",
+        "d1": "« Produits payants » désigne le contenu numérique, les autorisations ou la monnaie virtuelle fournis par paiement.",
+        "d2": "« Purple » fait référence à la monnaie virtuelle (points/crédits) utilisable dans les services WorldCanvas, qui ne peut pas être échangée contre de l'argent.",
+        "d3": "« Consommation » signifie utiliser Purple pour acheter des fonctions/articles ou augmenter les limites d'utilisation."
       },
       "usage": {
-        "title": "7.2 Purple Usage",
-        "p1": "Users can purchase Purple to use features within WorldCanvas. Specific uses are displayed in the service interface.",
-        "li1": "Example: Palette color (palette slot) expansion",
-        "li2": "Example: Increasing the \"pixel placement limit\" for bulk pixel placement",
-        "li3": "Example: Other paid items/features (may be added in the future)"
+        "title": "7.2 Utilisation de Purple",
+        "p1": "Les utilisateurs peuvent acheter Purple pour utiliser des fonctionnalités dans WorldCanvas. Les utilisations spécifiques sont affichées dans l'interface du service.",
+        "li1": "Exemple : Extension de couleur de palette (emplacement de palette)",
+        "li2": "Exemple : Augmentation de la « limite de placement de pixels » pour le placement en masse de pixels",
+        "li3": "Exemple : Autres articles/fonctionnalités payants (peuvent être ajoutés à l'avenir)"
       },
       "payment": {
-        "title": "7.3 Payment and Delivery",
-        "p1": "Prices, contents, payment methods, and billing times are shown during the purchase process. Purple or permissions are provided immediately (or within a reasonable time) after payment.",
-        "li1": "Payments may be processed through third-party payment service providers.",
-        "li2": "Purchase history and payment details can be verified in the service or payment receipt.",
-        "li3": "For detailed pricing information, please refer to the pricing page."
+        "title": "7.3 Paiement et livraison",
+        "p1": "Les prix, contenus, méthodes de paiement et temps de facturation sont affichés pendant le processus d'achat. Purple ou les autorisations sont fournis immédiatement (ou dans un délai raisonnable) après le paiement.",
+        "li1": "Les paiements peuvent être traités par des prestataires de services de paiement tiers.",
+        "li2": "L'historique des achats et les détails de paiement peuvent être vérifiés dans le service ou sur le reçu de paiement.",
+        "li3": "Pour des informations détaillées sur les prix, veuillez consulter la page des tarifs."
       },
       "refund": {
-        "title": "7.4 Withdrawal (Refunds) and Exceptions",
-        "p1": "Digital content/virtual currency may be available for use immediately upon provision, and withdrawal may be restricted within the scope permitted by law. However, refunds or compensation may be provided in the following cases:",
-        "li1": "Cases where there is a company fault (non-delivery, incorrect delivery, etc.)",
-        "li2": "Cases with legitimate reasons (payment errors, duplicate payments, etc.)",
-        "li3": "Cases required by law",
-        "li4": "If Purple has already been consumed, processing may exclude the consumed portion (within the scope not restricted by law).",
-        "li5": "For detailed refund policies, please refer to the refund policy page."
+        "title": "7.4 Retrait (remboursements) et exceptions",
+        "p1": "Le contenu numérique/la monnaie virtuelle peut être disponible immédiatement après la fourniture, et le retrait peut être restreint dans la mesure permise par la loi. Cependant, des remboursements ou des compensations peuvent être fournis dans les cas suivants :",
+        "li1": "Cas où il y a une faute de l'entreprise (non-livraison, livraison incorrecte, etc.)",
+        "li2": "Cas avec des raisons légitimes (erreurs de paiement, paiements en double, etc.)",
+        "li3": "Cas requis par la loi",
+        "li4": "Si Purple a déjà été consommé, le traitement peut exclure la portion consommée (dans la mesure non restreinte par la loi).",
+        "li5": "Pour les politiques de remboursement détaillées, veuillez consulter la page de politique de remboursement."
       },
       "minors": {
-        "title": "7.5 Minor Payments",
-        "p1": "Minors making payments may require legal guardian consent, and cancellation (refund) requests may be possible according to law."
+        "title": "7.5 Paiements de mineurs",
+        "p1": "Les paiements effectués par des mineurs peuvent nécessiter le consentement du tuteur légal, et les demandes d'annulation (remboursement) peuvent être possibles selon la loi."
       },
       "restriction": {
-        "title": "7.6 Usage Restrictions and Recovery",
-        "p1": "If fraudulent payments, hacking/abuse, or terms violations are confirmed, we may recover granted Purple/permissions or restrict account usage according to applicable laws and service policies."
+        "title": "7.6 Restrictions d'utilisation et récupération",
+        "p1": "Si des paiements frauduleux, du piratage/abus ou des violations des conditions sont confirmés, nous pouvons récupérer Purple/autorisations accordés ou restreindre l'utilisation du compte selon les lois applicables et les politiques du service."
       }
     }
   },
   "refundPage": {
     "brand": "Purpleship",
-    "title": "Purpleship Refund Policy",
-    "subtitle": "This policy describes refunds/withdrawal rules for paid items and virtual currency (e.g., Purple).",
-    "effectiveDate": "Effective date: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Politique de remboursement de Purpleship",
+    "subtitle": "Cette politique décrit les règles de remboursement/retrait pour les articles payants et la monnaie virtuelle (par exemple, Purple).",
+    "effectiveDate": "Date d'entrée en vigueur : 15 décembre 2025",
+    "backToHome": "← Retour à l'accueil",
     "nav": {
-      "terms": "Terms & Conditions",
-      "privacy": "Privacy Policy",
-      "pricing": "Pricing"
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "pricing": "Tarifs"
     },
     "section1": {
-      "title": "1. Scope",
-      "p1": "This policy applies to paid items provided on the Purpleship website and related services. If service-specific purchase terms exist, those terms may take precedence."
+      "title": "1. Champ d'application",
+      "p1": "Cette politique s'applique aux articles payants fournis sur le site Web Purpleship et les services associés. Si des conditions d'achat spécifiques au service existent, ces conditions peuvent prévaloir."
     },
     "section2": {
-      "title": "2. Eligible Refund Cases",
-      "li1": "Non-delivery or mis-delivery due to our fault",
-      "li2": "Valid reasons such as duplicate charges or payment errors",
-      "li3": "When refunds are required by applicable law"
+      "title": "2. Cas de remboursement éligibles",
+      "li1": "Non-livraison ou livraison incorrecte due à notre faute",
+      "li2": "Raisons valables telles que des frais en double ou des erreurs de paiement",
+      "li3": "Lorsque les remboursements sont requis par la loi applicable"
     },
     "section3": {
-      "title": "3. Refund Limitations (Exceptions)",
-      "li1": "Digital content/virtual currency may be made available immediately, and refunds may be restricted to the extent permitted by law.",
-      "li2": "If virtual currency (Purple) has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
+      "title": "3. Limitations de remboursement (exceptions)",
+      "li1": "Le contenu numérique/la monnaie virtuelle peut être disponible immédiatement, et les remboursements peuvent être restreints dans la mesure permise par la loi.",
+      "li2": "Si la monnaie virtuelle (Purple) a déjà été consommée, le traitement peut exclure la portion consommée dans la mesure permise par la loi."
     },
     "section4": {
-      "title": "4. How to Request and Processing Time",
-      "p1": "To request a refund, email us with your purchase details (receipt/payment info): captain@purpleship.io",
-      "p2": "We will review and respond within a reasonable time. Refund completion timing may vary by payment method/provider."
+      "title": "4. Comment demander et délai de traitement",
+      "p1": "Pour demander un remboursement, envoyez-nous un e-mail avec les détails de votre achat (reçu/informations de paiement) : captain@purpleship.io",
+      "p2": "Nous examinerons et répondrons dans un délai raisonnable. Le délai d'achèvement du remboursement peut varier selon la méthode de paiement/le fournisseur."
     }
   },
   "pricingPage": {
