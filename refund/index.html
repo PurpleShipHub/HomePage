@@ -19,6 +19,7 @@
     .nav-links { display:flex; gap:10px; }
     .nav-links a { color: var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem; padding:8px 12px; border-radius:10px; }
     .nav-links a:hover { background: rgba(255,255,255,0.06); color: var(--accent-blue); }
+    .nav-links a[aria-current="page"] { color: var(--accent-gold); border-bottom: 2px solid var(--accent-gold); border-radius: 10px 10px 0 0; }
     .language-selector { position: relative; }
     .lang-button { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; height:28px; font-size:12px; color:var(--text-primary); background: var(--surface-secondary); border: 0.5px solid rgba(255,255,255,0.12); border-radius: 8px; cursor:pointer; }
     .lang-menu { position:absolute; right:0; top:calc(100% + 6px); background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border:1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 6px; display:grid; gap:4px; min-width: 140px; z-index:1001; }
@@ -45,8 +46,9 @@
     <div class="nav-container">
       <a class="nav-brand" href="/" data-i18n="refundPage.brand">Purpleship</a>
       <nav class="nav-links" aria-label="Legal navigation">
-        <a href="/terms/" data-i18n="refundPage.nav.terms">이용약관</a>
-        <a href="/privacy/" data-i18n="refundPage.nav.privacy">개인정보처리방침</a>
+        <a href="/privacy/" data-i18n="nav.privacy">개인정보처리방침</a>
+        <a href="/terms/" data-i18n="nav.terms">이용약관</a>
+        <a href="/refund/" aria-current="page" data-i18n="nav.refund">환불정책</a>
       </nav>
       <div class="language-selector">
         <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>

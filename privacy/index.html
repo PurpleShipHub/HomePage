@@ -2,22 +2,15 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8"/>
-  <!-- SEO 메타 태그 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Purpleship 개인정보처리방침 - 개인정보 수집, 이용, 관리에 대한 정책">
   <meta name="keywords" content="Purpleship, 개인정보처리방침, 개인정보보호, 프라이버시">
   <meta name="author" content="Purpleship">
-  
-  <!-- Open Graph 태그 -->
   <meta property="og:title" content="Purpleship - 개인정보처리방침">
   <meta property="og:description" content="Purpleship의 개인정보 수집, 이용, 관리에 대한 정책">
   <meta property="og:url" content="https://purpleship.io/privacy/">
-  
-  <!-- 파비콘 -->
   <link rel="icon" type="image/png" href="../favicon.png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGB9Q3SNE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,411 +18,245 @@
     gtag('js', new Date());
     gtag('config', 'G-PQGB9Q3SNE');
   </script>
-  
-  <title>Purpleship - 개인정보처리방침</title>
+  <title>Purpleship 개인정보처리방침</title>
+  <base href="/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-  <script src="../locales/i18n-loader.js"></script>
-  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="/locales/i18n-loader.js"></script>
   <style>
     :root {
-      --bg-gradient: linear-gradient(180deg, #2c165a 0%, #45246c 50%, #5e3080 100%);
-      --bg-base: #2c165a;
+      --primary-purple:#1d1d1f;
+      --secondary-purple:#2d2d30;
+      --tertiary-purple:#424245;
+      --accent-blue:#007aff;
+      --accent-gold:#ff9500;
+      --text-primary:#f5f5f7;
+      --text-secondary:#a1a1a6;
+      --surface-primary: rgba(29,29,31,.95);
+      --surface-secondary: rgba(45,45,48,.8);
+      --backdrop-blur: blur(20px);
     }
-
-    html {
-      width: 100%;
-      min-height: 100%;
-      background: var(--bg-gradient);
-      background-color: var(--bg-base);
-      background-repeat: no-repeat;
-    }
-
-    #bgCanvas {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-      background: var(--bg-gradient);
-      background-color: var(--bg-base);
-      background-repeat: no-repeat;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
-    
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 16px;
-      background: var(--bg-gradient);
-      background-color: var(--bg-base);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #ffffff;
-      line-height: 1.6;
-      position: relative;
-      z-index: 0;
+      margin: 0;
+      font-family:'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 35%, var(--tertiary-purple) 70%, #773c96 100%);
+      color: var(--text-primary);
       min-height: 100vh;
-      overscroll-behavior: none;
-      overflow-x: hidden;
     }
-    
-    .container {
-      max-width: 1000px;
+    .main-nav {
+      position: fixed; top:0; left:0; right:0;
+      height: 64px;
+      z-index: 1000;
+      background: var(--surface-primary);
+      backdrop-filter: var(--backdrop-blur);
+      border-bottom: .5px solid rgba(255,255,255,.08);
+    }
+    .nav-container {
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 2rem;
-      position: relative;
-      z-index: 2;
-      min-height: 100vh;
+      height: 100%;
+      padding: 0 20px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
     }
-    
-    .header {
-      text-align: center;
-      margin-bottom: 3rem;
-      padding: 2rem 0;
-    }
-    
-    .header h1 {
-      font-family: 'Black Han Sans', sans-serif;
-      font-size: 3rem;
-      background: linear-gradient(
-        45deg,
-        #ffd700 0%,
-        #ff7f50 25%,
-        #da70d6 50%,
-        #9370db 75%,
-        #8a2be2 100%
-      );
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
-      margin-bottom: 1rem;
-    }
-    
-    .header .subtitle {
-      font-size: 1.2rem;
-      color: #f0f0f0;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    }
-    
-    .nav-link {
-      display: inline-block;
-      margin-bottom: 2rem;
-      padding: 0.5rem 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 5px;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(5px);
-    }
-    
-    .nav-link:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-2px);
-    }
-    
-    .content {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 3rem;
+    .nav-brand { color: var(--text-primary); font-weight: 900; text-decoration:none; }
+    .nav-links { display:flex; gap: 10px; }
+    .nav-links a { color: var(--text-primary); text-decoration:none; font-weight: 600; font-size: 0.9rem; padding: 8px 12px; border-radius: 10px; }
+    .nav-links a:hover { background: rgba(255,255,255,0.06); color: var(--accent-blue); }
+    .nav-links a[aria-current="page"] { color: var(--accent-gold); border-bottom: 2px solid var(--accent-gold); border-radius: 10px 10px 0 0; }
+    .language-selector { position: relative; }
+    .lang-button { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; height:28px; font-size:12px; color:var(--text-primary); background: var(--surface-secondary); border: 0.5px solid rgba(255,255,255,0.12); border-radius: 8px; cursor:pointer; }
+    .lang-menu { position:absolute; right:0; top:calc(100% + 6px); background: var(--surface-primary); backdrop-filter: var(--backdrop-blur); border:1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 6px; display:grid; gap:4px; min-width: 140px; z-index:1001; }
+    .lang-menu[hidden] { display:none !important; }
+    .lang-menu button { text-align:left; background:transparent; color:var(--text-primary); border:none; padding:6px 8px; border-radius:6px; font-size:12px; cursor:pointer; }
+    .lang-menu button:hover { background: rgba(255,255,255,.06); }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 96px 20px 40px; }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 28px;
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 32px rgba(0,0,0,.25);
     }
-    
-    .section {
-      margin-bottom: 2.5rem;
-    }
-    
-    .section h2 {
-      font-size: 1.5rem;
-      color: #ffd700;
-      margin-bottom: 1rem;
-      font-weight: 700;
-    }
-    
-    .section h3 {
-      font-size: 1.2rem;
-      color: #ff7f50;
-      margin-bottom: 0.8rem;
-      margin-top: 1.5rem;
-      font-weight: 600;
-    }
-    
-    .section p, .section li {
-      font-size: 1rem;
-      color: #f0f0f0;
-      margin-bottom: 0.8rem;
-    }
-    
-    .section ul {
-      margin-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .section li {
-      margin-bottom: 0.5rem;
-    }
+    h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4.5vw, 2.6rem); }
+    .subtitle { margin: 0 0 18px; color: var(--text-secondary); font-size: 1rem; line-height: 1.5; }
+    .meta { margin: 0 0 22px; color: var(--text-secondary); font-size: 0.95rem; }
+    .section { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); }
+    h2 { margin: 0 0 10px; font-size: 1.15rem; color: var(--accent-gold); }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: var(--accent-blue); }
+    p { margin: 0 0 10px; line-height: 1.7; }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin: 6px 0; line-height: 1.6; }
+    footer { margin-top: 18px; text-align:center; }
+    footer a { color: var(--accent-gold); text-decoration:none; font-weight:700; }
+    footer a:hover { text-decoration: underline; }
 
     .service-block {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 12px;
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 1.25rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 12px 0;
     }
-    
     .service-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 12px;
     }
-    
-    .service-block h3 {
-      color: #ffd700;
-      margin-bottom: 0.35rem;
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-
-    .service-summary {
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-
+    .service-block h3 { margin: 0 0 4px; color: var(--accent-gold); font-size: 1rem; }
+    .service-summary { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
     .toggle-service {
-      background: rgba(255, 255, 255, 0.12);
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      padding: 0.45rem 0.9rem;
+      background: rgba(255,255,255,0.08);
+      color: var(--text-primary);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
       cursor: pointer;
-      font-weight: 600;
-      transition: all 0.2s ease;
       white-space: nowrap;
     }
+    .toggle-service:hover { background: rgba(255,255,255,0.12); }
+    .service-details { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .service-block.open .service-details { display: block; }
 
-    .toggle-service:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-1px);
-    }
-
-    .service-details {
-      display: none;
-      margin-top: 1rem;
-    }
-
-    .service-block.open .service-details {
-      display: block;
-    }
-    
     .contact-info {
-      background: rgba(255, 215, 0, 0.1);
-      border-left: 4px solid #ffd700;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin: 1.5rem 0;
+      background: rgba(255,149,0,0.1);
+      border-left: 3px solid var(--accent-gold);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 12px 0;
     }
-    
-    .contact-info strong {
-      color: #ffd700;
-    }
-    
-    .footer {
-      text-align: center;
-      margin-top: 3rem;
-      padding: 2rem 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      color: rgba(255, 255, 255, 0.8);
-    }
-    
-    @media (max-width: 768px) {
-      .container {
-        padding: 1rem;
-      }
-      
-      .header h1 {
-        font-size: 2rem;
-      }
-      
-      .content {
-        padding: 2rem;
-      }
-    }
-    
-    /* 언어 선택기 스타일 */
-    .language-selector {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 25px;
-      padding: 0.5rem 1rem;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .language-selector select {
-      background: transparent;
-      border: none;
-      color: #ffffff;
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 0.9rem;
-      cursor: pointer;
-      outline: none;
-    }
-    
-    .language-selector select option {
-      background: #2c165a;
-      color: #ffffff;
-    }
-    
-    @media (max-width: 768px) {
-      .language-selector {
-        top: 10px;
-        right: 10px;
-        padding: 0.3rem 0.8rem;
-      }
-      
-      .language-selector select {
-        font-size: 0.8rem;
-      }
-    }
+    .contact-info p { margin: 4px 0; }
   </style>
 </head>
 <body>
-  <canvas id="bgCanvas"></canvas>
-  
-  <!-- 언어 선택기 -->
-  <div class="language-selector">
-    <select id="languageSelect">
-      <option value="ko">한국어</option>
-      <option value="en">English</option>
-      <option value="zh">中文</option>
-      <option value="ja">日本語</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="de">Deutsch</option>
-      <option value="ru">Русский</option>
-    </select>
-  </div>
-  
-  <div class="container">
-    <div class="header">
-      <h1 data-translate="privacy.title">개인정보처리방침</h1>
-      <p class="subtitle" data-translate="privacy.subtitle">Purpleship Privacy Policy</p>
-      <a href="../" class="nav-link" data-translate="privacy.backToHome">← 홈으로 돌아가기</a>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a class="nav-brand" href="/" data-i18n="privacyPage.brand">Purpleship</a>
+      <nav class="nav-links" aria-label="Legal navigation">
+        <a href="/privacy/" aria-current="page" data-i18n="nav.privacy">개인정보처리방침</a>
+        <a href="/terms/" data-i18n="nav.terms">이용약관</a>
+        <a href="/refund/" data-i18n="nav.refund">환불정책</a>
+      </nav>
+      <div class="language-selector">
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="fr">🇫🇷 Français</button>
+          <button data-lang="de">🇩🇪 Deutsch</button>
+          <button data-lang="ru">🇷🇺 Русский</button>
+          <button data-lang="ar">🇸🇦 العربية</button>
+          <button data-lang="hi">🇮🇳 हिन्दी</button>
+          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
+      </div>
     </div>
-    
-    <div class="content">
-      <div class="section">
-        <h2 data-translate="privacy.section1.title">1. 적용 범위 및 기본 원칙</h2>
-        <p data-translate="privacy.section1.content1">Purpleship(이하 "회사"라 함)과 회사가 운영하는 모든 서비스(예: Stampit, Movit, Qnote, WorldCanvas 등)에 공통 적용되는 개인정보 처리 기준을 안내합니다.</p>
-        <p data-translate="privacy.section1.content2">회사는 서비스 제공에 필요한 최소한의 개인정보만을 수집하며, 서비스 특성상 추가로 필요한 사항은 「서비스별 추가 고지」에 별도로 명시하여 본 방침과 함께 적용합니다.</p>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section2.title">2. 수집 항목 및 이용 목적(공통)</h2>
-        <p data-translate="privacy.section2.intro">회사는 서비스 제공과 고객 지원을 위해 필요한 최소한의 정보만을 수집하며, 서비스별로 추가되는 항목은 아래 「서비스별 추가 고지」에서 안내합니다.</p>
-        <ul data-translate-list="privacy.section2.items">
-          <li>홈페이지 이용 시: 접속 기록, 브라우저/OS 정보, 쿠키·유사 기술을 통한 서비스 이용 내역(통계 및 서비스 개선 목적)</li>
-          <li>고객 문의 처리 시: 문의 채널(이메일 등)로 수신한 이름, 이메일, 문의 내용</li>
-          <li>기술 로그: 오류 로그, 기기 정보(모델, OS 버전 등)와 같은 안정성 분석을 위한 정보</li>
+  </nav>
+
+  <main>
+    <article class="card">
+      <header>
+        <h1 data-i18n="privacyPage.title">Purpleship 개인정보처리방침</h1>
+        <p class="subtitle" data-i18n="privacyPage.subtitle">Purpleship 서비스의 개인정보 수집, 이용, 관리에 대한 정책입니다.</p>
+        <p class="meta" data-i18n="privacyPage.effectiveDate">시행일: 2025년 2월 7일</p>
+      </header>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section1.title">1. 적용 범위 및 기본 원칙</h2>
+        <p data-i18n="privacyPage.section1.p1">Purpleship(이하 "회사"라 함)과 회사가 운영하는 모든 서비스(예: Stampit, Movit, Qnote, WorldCanvas 등)에 공통 적용되는 개인정보 처리 기준을 안내합니다.</p>
+        <p data-i18n="privacyPage.section1.p2">회사는 서비스 제공에 필요한 최소한의 개인정보만을 수집하며, 서비스 특성상 추가로 필요한 사항은 「서비스별 추가 고지」에 별도로 명시하여 본 방침과 함께 적용합니다.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section2.title">2. 수집 항목 및 이용 목적(공통)</h2>
+        <p data-i18n="privacyPage.section2.intro">회사는 서비스 제공과 고객 지원을 위해 필요한 최소한의 정보만을 수집합니다.</p>
+        <ul>
+          <li data-i18n="privacyPage.section2.li1">홈페이지 이용 시: 접속 기록, 브라우저/OS 정보, 쿠키·유사 기술을 통한 서비스 이용 내역(통계 및 서비스 개선 목적)</li>
+          <li data-i18n="privacyPage.section2.li2">고객 문의 처리 시: 문의 채널(이메일 등)로 수신한 이름, 이메일, 문의 내용</li>
+          <li data-i18n="privacyPage.section2.li3">기술 로그: 오류 로그, 기기 정보(모델, OS 버전 등)와 같은 안정성 분석을 위한 정보</li>
         </ul>
-        
-        <h3 data-translate="privacy.section2.analytics.title">2.1 웹/앱 분석 도구</h3>
-        <p data-translate="privacy.section2.analytics.content">Google Analytics 등 분석 도구를 사용해 익명화된 이용 통계를 수집할 수 있습니다. IP 익명화 등 가명처리를 적용하며 개인을 직접 식별하지 않습니다. 브라우저 설정 또는 도구에서 분석 거부를 선택할 수 있습니다.</p>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section3.title">3. 개인정보 보유 및 이용 기간</h2>
-        <ul data-translate-list="privacy.section3.items">
-          <li>법령 또는 내부 정책에 따른 최소 기간만 보관 후 지체 없이 파기합니다.</li>
-          <li>접속 기록: 통신비밀보호법에 따라 3개월 보관 후 자동 파기합니다.</li>
-          <li>고객 문의 내역: 분쟁 대비를 위해 처리 완료 후 3년간 보관 후 파기합니다.</li>
-          <li>계정 및 서비스별 데이터: 목적 달성 또는 탈퇴 시 지체 없이 삭제하거나, 법령상 의무가 있는 경우 해당 기간 동안만 보관합니다(서비스별 추가 고지 참조).</li>
-          <li>분석 데이터: 개인을 식별할 수 없는 통계 형태로만 보존합니다.</li>
+        <h3 data-i18n="privacyPage.section2.analytics.title">2.1 웹/앱 분석 도구</h3>
+        <p data-i18n="privacyPage.section2.analytics.p1">Google Analytics 등 분석 도구를 사용해 익명화된 이용 통계를 수집할 수 있습니다. IP 익명화 등 가명처리를 적용하며 개인을 직접 식별하지 않습니다.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section3.title">3. 개인정보 보유 및 이용 기간</h2>
+        <ul>
+          <li data-i18n="privacyPage.section3.li1">법령 또는 내부 정책에 따른 최소 기간만 보관 후 지체 없이 파기합니다.</li>
+          <li data-i18n="privacyPage.section3.li2">접속 기록: 통신비밀보호법에 따라 3개월 보관 후 자동 파기합니다.</li>
+          <li data-i18n="privacyPage.section3.li3">고객 문의 내역: 분쟁 대비를 위해 처리 완료 후 3년간 보관 후 파기합니다.</li>
+          <li data-i18n="privacyPage.section3.li4">계정 및 서비스별 데이터: 목적 달성 또는 탈퇴 시 지체 없이 삭제합니다.</li>
         </ul>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section4.title">4. 개인정보 제3자 제공 및 국외 이전</h2>
-        <p data-translate="privacy.section4.content">회사는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 다음의 경우 예외적으로 제공될 수 있습니다.</p>
-        <ul data-translate-list="privacy.section4.items">
-          <li>이용자가 사전에 명시적으로 동의한 경우</li>
-          <li>법령에 근거가 있거나 수사기관의 적법한 요청이 있는 경우</li>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section4.title">4. 개인정보 제3자 제공 및 국외 이전</h2>
+        <p data-i18n="privacyPage.section4.p1">회사는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 다음의 경우 예외적으로 제공될 수 있습니다.</p>
+        <ul>
+          <li data-i18n="privacyPage.section4.li1">이용자가 사전에 명시적으로 동의한 경우</li>
+          <li data-i18n="privacyPage.section4.li2">법령에 근거가 있거나 수사기관의 적법한 요청이 있는 경우</li>
         </ul>
-        <p data-translate="privacy.section4.ga">Google Analytics 사용 시 데이터가 해외(미국 등) 서버로 이전될 수 있으며, 구글의 개인정보처리방침과 보호조치가 적용됩니다.</p>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section5.title">5. 개인정보 처리 위탁</h2>
-        <p data-translate="privacy.section5.content">서비스 품질 유지를 위해 업무를 외부에 위탁할 수 있으며, 수탁자에 대해 보안, 재위탁 제한, 관리·감독 의무를 부과합니다. 현재 위탁 내역은 다음과 같습니다.</p>
-        <ul data-translate-list="privacy.section5.items">
-          <li>서비스 이용 분석: Google LLC (Google Analytics) - 데이터 저장 위치: 글로벌/미국, 목적: 이용 통계 및 품질 개선, 보유 기간: Google 정책에 따름</li>
-          <li>사용자 선택 백업/동기화: Apple iCloud Drive, Google Drive 등 사용자 계정으로의 백업 - 회사는 백업 데이터에 접근하지 않습니다.</li>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section5.title">5. 개인정보 처리 위탁</h2>
+        <p data-i18n="privacyPage.section5.p1">서비스 품질 유지를 위해 업무를 외부에 위탁할 수 있으며, 수탁자에 대해 보안, 재위탁 제한, 관리·감독 의무를 부과합니다.</p>
+        <ul>
+          <li data-i18n="privacyPage.section5.li1">서비스 이용 분석: Google LLC (Google Analytics)</li>
+          <li data-i18n="privacyPage.section5.li2">사용자 선택 백업/동기화: Apple iCloud Drive, Google Drive 등</li>
         </ul>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section6.title">6. 이용자의 권리 및 행사 방법</h2>
-        <p data-translate="privacy.section6.content">이용자는 아래 권리를 언제든지 행사할 수 있으며, 회사는 지체 없이 조치합니다.</p>
-        <ul data-translate-list="privacy.section6.items">
-          <li>동의 철회: 서비스 또는 단말 설정을 통해 위치·알림 등 권한을 언제든지 변경하거나 철회할 수 있습니다.</li>
-          <li>열람·정정·삭제·처리정지 요구: 회사에 요청하거나 제공된 화면/설정에서 직접 관리할 수 있습니다.</li>
-          <li>기기 내 저장 데이터 삭제 및 클라우드 백업 해제</li>
-          <li>개인정보 침해신고센터, 분쟁조정위원회 등을 통한 권리 구제 신청</li>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section6.title">6. 이용자의 권리 및 행사 방법</h2>
+        <p data-i18n="privacyPage.section6.p1">이용자는 아래 권리를 언제든지 행사할 수 있으며, 회사는 지체 없이 조치합니다.</p>
+        <ul>
+          <li data-i18n="privacyPage.section6.li1">동의 철회: 서비스 또는 단말 설정을 통해 위치·알림 등 권한을 언제든지 변경하거나 철회할 수 있습니다.</li>
+          <li data-i18n="privacyPage.section6.li2">열람·정정·삭제·처리정지 요구: 회사에 요청하거나 제공된 화면/설정에서 직접 관리할 수 있습니다.</li>
+          <li data-i18n="privacyPage.section6.li3">개인정보 침해신고센터, 분쟁조정위원회 등을 통한 권리 구제 신청</li>
         </ul>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section7.title">7. 안전성 확보조치</h2>
-        <p data-translate="privacy.section7.content">회사는 개인정보의 안전성을 확보하기 위해 다음과 같은 조치를 취합니다.</p>
-        <ul data-translate-list="privacy.section7.items">
-          <li>접근 권한 최소화 및 접근 기록 관리</li>
-          <li>전송·보관 구간의 암호화 및 키 관리</li>
-          <li>정기적 보안 패치와 취약점 점검</li>
-          <li>개인정보 취급자 교육 및 점검</li>
-          <li>기기 내 로컬 저장 시 OS 보안영역 활용 및 잠금 연동</li>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section7.title">7. 안전성 확보조치</h2>
+        <p data-i18n="privacyPage.section7.p1">회사는 개인정보의 안전성을 확보하기 위해 다음과 같은 조치를 취합니다.</p>
+        <ul>
+          <li data-i18n="privacyPage.section7.li1">접근 권한 최소화 및 접근 기록 관리</li>
+          <li data-i18n="privacyPage.section7.li2">전송·보관 구간의 암호화 및 키 관리</li>
+          <li data-i18n="privacyPage.section7.li3">정기적 보안 패치와 취약점 점검</li>
+          <li data-i18n="privacyPage.section7.li4">개인정보 취급자 교육 및 점검</li>
         </ul>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section8.title">8. 서비스별 추가 고지</h2>
-        <p data-translate="privacy.section8.intro">서비스 특성에 따라 추가로 적용되는 개인정보 처리 내용을 안내합니다.</p>
-        <p data-translate="privacy.section8.note">기본적으로 불필요한 개인정보는 수집하지 않으며, 필요한 경우에 한해 최소 정보를 수집합니다. 아래 서비스별 세부 내용을 확인하려면 버튼을 눌러 주세요.</p>
-        
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section8.title">8. 서비스별 추가 고지</h2>
+        <p data-i18n="privacyPage.section8.intro">서비스 특성에 따라 추가로 적용되는 개인정보 처리 내용을 안내합니다.</p>
+
         <div class="service-block" data-service="stampit">
           <div class="service-header">
             <div>
-              <h3 data-translate="privacy.section8.stampit.title">Stampit (회원권 관리)</h3>
-              <p class="service-summary" data-translate="privacy.section8.stampit.summary">회원권·쿠폰 사용 횟수를 관리하는 앱으로, 데이터는 기본적으로 기기 내에 저장됩니다.</p>
+              <h3 data-i18n="privacyPage.section8.stampit.title">Stampit (회원권 관리)</h3>
+              <p class="service-summary" data-i18n="privacyPage.section8.stampit.summary">회원권·쿠폰 사용 횟수를 관리하는 앱으로, 데이터는 기본적으로 기기 내에 저장됩니다.</p>
             </div>
-            <button type="button" class="toggle-service" data-service-toggle="stampit" data-translate="privacy.section8.toggle.open" aria-expanded="false">세부 보기</button>
+            <button type="button" class="toggle-service" aria-expanded="false">세부 보기</button>
           </div>
           <div class="service-details">
-            <ul data-translate-list="privacy.section8.stampit.items">
-              <li>수집 항목: 매장/회원권 이름, 스탬프·방문 기록, 알림 설정</li>
-              <li>저장 위치: 사용자의 기기 내에 로컬 저장하며 회사 서버로 전송하지 않습니다.</li>
-              <li>백업/동기화: 사용자가 선택한 경우 개인 iCloud/Google Drive 등에 파일 형태로 백업되며, 회사는 해당 데이터에 접근하지 않습니다.</li>
-              <li>선택 권한: 푸시/알림, 캘린더 접근 등은 이용권 만료·방문 알림 제공을 위한 선택 항목입니다.</li>
+            <ul>
+              <li data-i18n="privacyPage.section8.stampit.li1">수집 항목: 매장/회원권 이름, 스탬프·방문 기록, 알림 설정</li>
+              <li data-i18n="privacyPage.section8.stampit.li2">저장 위치: 사용자의 기기 내에 로컬 저장하며 회사 서버로 전송하지 않습니다.</li>
+              <li data-i18n="privacyPage.section8.stampit.li3">백업/동기화: 사용자가 선택한 경우 개인 iCloud/Google Drive 등에 파일 형태로 백업됩니다.</li>
             </ul>
           </div>
         </div>
@@ -437,18 +264,16 @@
         <div class="service-block" data-service="movit">
           <div class="service-header">
             <div>
-              <h3 data-translate="privacy.section8.movit.title">Movit (이동 기록)</h3>
-              <p class="service-summary" data-translate="privacy.section8.movit.summary">이동 기록과 즐겨찾기를 관리하며, 기본 저장 위치는 사용자 기기입니다.</p>
+              <h3 data-i18n="privacyPage.section8.movit.title">Movit (이동 기록)</h3>
+              <p class="service-summary" data-i18n="privacyPage.section8.movit.summary">이동 기록과 즐겨찾기를 관리하며, 기본 저장 위치는 사용자 기기입니다.</p>
             </div>
-            <button type="button" class="toggle-service" data-service-toggle="movit" data-translate="privacy.section8.toggle.open" aria-expanded="false">세부 보기</button>
+            <button type="button" class="toggle-service" aria-expanded="false">세부 보기</button>
           </div>
           <div class="service-details">
-            <ul data-translate-list="privacy.section8.movit.items">
-              <li>수집 항목: 이동 경로, 위치/교통 정보(사용자가 기능을 켠 경우), 즐겨찾기 장소</li>
-              <li>저장 위치: 기본적으로 기기 내에 저장하며, 회사 서버로 전송하지 않습니다.</li>
-              <li>백업/동기화: 사용자가 명시적으로 요청한 경우에만 개인 클라우드(예: Google Drive)에 백업됩니다.</li>
-              <li>선택 권한: 위치(백그라운드 포함), 알림 권한을 이동 기록·알림 제공을 위해 사용할 수 있으며, 해제 시 수집이 중단됩니다.</li>
-              <li>지도/길찾기 제공 시 사용되는 제3자 지도·위치 SDK는 해당 제공사의 정책이 함께 적용됩니다.</li>
+            <ul>
+              <li data-i18n="privacyPage.section8.movit.li1">수집 항목: 이동 경로, 위치/교통 정보(사용자가 기능을 켠 경우), 즐겨찾기 장소</li>
+              <li data-i18n="privacyPage.section8.movit.li2">저장 위치: 기본적으로 기기 내에 저장하며, 회사 서버로 전송하지 않습니다.</li>
+              <li data-i18n="privacyPage.section8.movit.li3">선택 권한: 위치(백그라운드 포함), 알림 권한을 이동 기록·알림 제공을 위해 사용할 수 있습니다.</li>
             </ul>
           </div>
         </div>
@@ -456,17 +281,16 @@
         <div class="service-block" data-service="qnote">
           <div class="service-header">
             <div>
-              <h3 data-translate="privacy.section8.qnote.title">Qnote (노트/체크리스트)</h3>
-              <p class="service-summary" data-translate="privacy.section8.qnote.summary">노트/체크리스트 작성 데이터는 기본적으로 기기 내에 저장됩니다.</p>
+              <h3 data-i18n="privacyPage.section8.qnote.title">Qnote (노트/체크리스트)</h3>
+              <p class="service-summary" data-i18n="privacyPage.section8.qnote.summary">노트/체크리스트 작성 데이터는 기본적으로 기기 내에 저장됩니다.</p>
             </div>
-            <button type="button" class="toggle-service" data-service-toggle="qnote" data-translate="privacy.section8.toggle.open" aria-expanded="false">세부 보기</button>
+            <button type="button" class="toggle-service" aria-expanded="false">세부 보기</button>
           </div>
           <div class="service-details">
-            <ul data-translate-list="privacy.section8.qnote.items">
-              <li>수집 항목: 사용자가 작성하는 노트, 체크리스트, 태그, 첨부파일 등</li>
-              <li>저장 위치: 기기 내에 로컬 저장되며 회사 서버로 전송하지 않습니다.</li>
-              <li>백업/동기화: 사용자가 선택할 경우 개인 클라우드 또는 파일 내보내기 형태로 저장되며, 회사는 내용에 접근하지 않습니다.</li>
-              <li>선택 권한: 알림, 파일/사진 첨부 권한은 사용자가 기능을 사용하는 경우에만 요청합니다.</li>
+            <ul>
+              <li data-i18n="privacyPage.section8.qnote.li1">수집 항목: 사용자가 작성하는 노트, 체크리스트, 태그, 첨부파일 등</li>
+              <li data-i18n="privacyPage.section8.qnote.li2">저장 위치: 기기 내에 로컬 저장되며 회사 서버로 전송하지 않습니다.</li>
+              <li data-i18n="privacyPage.section8.qnote.li3">백업/동기화: 사용자가 선택할 경우 개인 클라우드 또는 파일 내보내기 형태로 저장됩니다.</li>
             </ul>
           </div>
         </div>
@@ -474,207 +298,80 @@
         <div class="service-block" data-service="worldcanvas">
           <div class="service-header">
             <div>
-              <h3 data-translate="privacy.section8.worldcanvas.title">WorldCanvas (협업 캔버스)</h3>
-              <p class="service-summary" data-translate="privacy.section8.worldcanvas.summary">Google 로그인 기반 협업 캔버스 서비스로, 계정 식별과 동기화를 위해 최소 정보를 수집·저장합니다.</p>
+              <h3 data-i18n="privacyPage.section8.worldcanvas.title">WorldCanvas (협업 캔버스)</h3>
+              <p class="service-summary" data-i18n="privacyPage.section8.worldcanvas.summary">Google 로그인 기반 협업 캔버스 서비스로, 계정 식별과 동기화를 위해 최소 정보를 수집·저장합니다.</p>
             </div>
-            <button type="button" class="toggle-service" data-service-toggle="worldcanvas" data-translate="privacy.section8.toggle.open" aria-expanded="false">세부 보기</button>
+            <button type="button" class="toggle-service" aria-expanded="false">세부 보기</button>
           </div>
           <div class="service-details">
-            <ul data-translate-list="privacy.section8.worldcanvas.items">
-              <li>가입/인증: Google OAuth 로그인 사용. Google 계정 식별자(ID) 및 이메일을 계정 생성·로그인 식별 목적으로 DB에 저장합니다.</li>
-              <li>인증 토큰은 로그인 세션 유지·재발급 목적 범위 내에서만 사용하며, 만료 또는 로그아웃 시 폐기합니다.</li>
-              <li>서비스 데이터: 사용자가 생성/업로드한 캔버스, 보드, 댓글, 첨부파일을 동기화·복구 제공을 위해 회사 서버(DB)에 저장합니다.</li>
-              <li>협업/공유: 사용자가 초대한 협업자의 이메일/식별자를 초대·권한 관리 목적으로 처리할 수 있습니다.</li>
-              <li>선택 권한: 파일/이미지 업로드, 알림 권한은 기능 사용 시에만 요청하며, 거부 시 선택 기능을 제외하고 서비스 이용에는 영향을 주지 않습니다.</li>
-              <li>삭제 및 보관: 계정 삭제 또는 서비스 탈퇴 시 계정 정보와 서비스 데이터는 지체 없이 삭제하거나, 법정 보존 기간 경과 후 즉시 파기합니다. 백업본은 순차적으로 삭제됩니다.</li>
+            <ul>
+              <li data-i18n="privacyPage.section8.worldcanvas.li1">가입/인증: Google OAuth 로그인 사용. Google 계정 식별자(ID) 및 이메일을 계정 생성·로그인 식별 목적으로 DB에 저장합니다.</li>
+              <li data-i18n="privacyPage.section8.worldcanvas.li2">서비스 데이터: 사용자가 생성/업로드한 캔버스, 보드, 댓글, 첨부파일을 동기화·복구 제공을 위해 회사 서버(DB)에 저장합니다.</li>
+              <li data-i18n="privacyPage.section8.worldcanvas.li3">삭제 및 보관: 계정 삭제 또는 서비스 탈퇴 시 계정 정보와 서비스 데이터는 지체 없이 삭제합니다.</li>
             </ul>
           </div>
         </div>
+      </section>
 
-        <p data-translate="privacy.section8.update">새로운 서비스 출시 또는 기능 추가 시, 본 섹션에 별도 고지를 추가하여 안내하겠습니다.</p>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section9.title">9. 개인정보 보호책임자</h2>
+      <section class="section">
+        <h2 data-i18n="privacyPage.section9.title">9. 개인정보 보호책임자</h2>
         <div class="contact-info">
-          <p><strong data-translate="privacy.section9.officer">개인정보 보호책임자: Purpleship 운영팀</strong></p>
-          <p><strong data-translate="privacy.section9.contact">연락처: captain@purpleship.io</strong></p>
-          <p><strong data-translate="privacy.section9.report">개인정보 침해 관련 신고: 개인정보보호위원회 (privacy.go.kr) 등 관계기관을 통해 가능합니다.</strong></p>
+          <p data-i18n="privacyPage.section9.officer">개인정보 보호책임자: Purpleship 운영팀</p>
+          <p data-i18n="privacyPage.section9.contact">연락처: captain@purpleship.io</p>
+          <p data-i18n="privacyPage.section9.report">개인정보 침해 관련 신고: 개인정보보호위원회 (privacy.go.kr) 등 관계기관을 통해 가능합니다.</p>
         </div>
-      </div>
-      
-      <div class="section">
-        <h2 data-translate="privacy.section10.title">10. 개인정보처리방침 변경 및 고지</h2>
-        <p data-translate="privacy.section10.content">법령, 서비스 내용, 내부 정책 변경 시 개정 내용을 시행 7일 전에 웹사이트 공지 또는 서비스 내 고지로 안내합니다.</p>
-      </div>
-      
-      <div class="footer">
-        <p><strong data-translate="privacy.effectiveDate">시행일: 2025년 2월 7일</strong></p>
-        <p><strong data-translate="privacy.lastModified">최종 수정일: 2025년 2월 7일</strong></p>
-      </div>
-    </div>
-  </div>
-  
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="privacyPage.section10.title">10. 개인정보처리방침 변경 및 고지</h2>
+        <p data-i18n="privacyPage.section10.p1">법령, 서비스 내용, 내부 정책 변경 시 개정 내용을 시행 7일 전에 웹사이트 공지 또는 서비스 내 고지로 안내합니다.</p>
+      </section>
+
+      <footer>
+        <a href="/" data-i18n="privacyPage.backToHome">← 홈으로 돌아가기</a>
+      </footer>
+    </article>
+  </main>
+
   <script>
-    // 메인 페이지와 동일한 배경 효과
-    const canvas = document.getElementById('bgCanvas');
-    const ctx = canvas.getContext('2d');
-    let logicalWidth = window.innerWidth;
-    let logicalHeight = window.innerHeight;
-    
-    function resizeCanvas() {
-      const dpr = window.devicePixelRatio || 1;
-      logicalWidth = window.innerWidth;
-      logicalHeight = window.innerHeight;
-      canvas.width = logicalWidth * dpr;
-      canvas.height = logicalHeight * dpr;
-      canvas.style.width = '100%';
-      canvas.style.height = '100%';
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); // 스케일 초기화 후 고해상도 대응
-    }
-    
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-    
-    const particles = [];
-    const numParticles = 50;
-    
-    class Particle {
-      constructor() {
-        this.reset(true);
-      }
-
-      reset(initial = false) {
-        this.x = Math.random() * logicalWidth;
-        this.y = Math.random() * logicalHeight;
-        this.vx = (Math.random() - 0.5) * 0.5;
-        this.vy = (Math.random() - 0.5) * 0.5;
-        this.radius = Math.random() * 2 + 1;
-        this.opacity = Math.random() * 0.5 + 0.2;
-        if (!initial) {
-          // 화면 밖에서 다시 시작할 때 가장자리에서 재배치
-          this.x = Math.random() * logicalWidth;
-          this.y = Math.random() * logicalHeight;
-        }
-      }
-      
-      update() {
-        this.x += this.vx;
-        this.y += this.vy;
-        
-        if (this.x < 0 || this.x > logicalWidth) this.vx *= -1;
-        if (this.y < 0 || this.y > logicalHeight) this.vy *= -1;
-      }
-      
-      draw() {
-        ctx.globalAlpha = this.opacity;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = '#ffffff';
-        ctx.fill();
-      }
-    }
-    
-    for (let i = 0; i < numParticles; i++) {
-      particles.push(new Particle());
-    }
-    
-    function animate() {
-      ctx.clearRect(0, 0, logicalWidth, logicalHeight);
-      
-      particles.forEach(particle => {
-        particle.update();
-        particle.draw();
-      });
-      
-      requestAnimationFrame(animate);
-    }
-    
-    animate();
-    
-    // 다국어 지원 시스템
-    let currentLanguage = 'ko';
-    const languageSelect = document.getElementById('languageSelect');
-    const toggleButtons = document.querySelectorAll('.toggle-service');
-    
-    // 저장된 언어 설정 불러오기
-    const savedLanguage = localStorage.getItem('language') || 'ko';
-    currentLanguage = savedLanguage;
-    languageSelect.value = savedLanguage;
-    
-    // 언어 변경 이벤트
-    languageSelect.addEventListener('change', (e) => {
-      currentLanguage = e.target.value;
-      localStorage.setItem('language', currentLanguage);
-      updateLanguage();
-    });
-
-    function applyToggleLabels() {
-      const openLabel = window.i18n.getTranslation('privacy', 'section8.toggle.open');
-      const closeLabel = window.i18n.getTranslation('privacy', 'section8.toggle.close');
-      toggleButtons.forEach(button => {
-        const block = button.closest('.service-block');
-        const expanded = block.classList.contains('open');
-        button.textContent = expanded ? closeLabel : openLabel;
-        button.setAttribute('aria-expanded', expanded);
-      });
-    }
-
-    // 서비스별 세부 정보 토글
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const block = button.closest('.service-block');
-        const expanded = block.classList.toggle('open');
-        const label = expanded
-          ? window.i18n.getTranslation('privacy', 'section8.toggle.close')
-          : window.i18n.getTranslation('privacy', 'section8.toggle.open');
-        button.textContent = label;
-        button.setAttribute('aria-expanded', expanded);
-      });
-    });
-    
-    // i18n-loader.js를 사용하여 언어 관리
-    async function updateLanguage() {
-      const lang = currentLanguage;
-      await window.i18n.loadLanguage(lang);
-      
-      // 기본 텍스트 번역
-      document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.getAttribute('data-translate');
-        const translation = window.i18n.getTranslation('privacy', key);
-        element.textContent = translation;
-      });
-      
-      // 리스트 아이템 번역
-      document.querySelectorAll('[data-translate-list]').forEach(list => {
-        const key = list.getAttribute('data-translate-list');
-        const items = window.i18n.getTranslation('privacy', key);
-        
-        if (Array.isArray(items)) {
-          list.innerHTML = '';
-          items.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            list.appendChild(li);
-          });
-        }
-      });
-
-      applyToggleLabels();
-      
-      // HTML lang 속성 업데이트
-      document.documentElement.lang = lang;
-      
-      // 페이지 제목 업데이트
-      const title = window.i18n.getTranslation('privacy', 'title');
-      document.title = `Purpleship - ${title}`;
-    }
-    
-    // 페이지 로드 시 언어 적용
     document.addEventListener('DOMContentLoaded', async () => {
-      await window.i18n.init('privacy');
-      await updateLanguage();
+      await window.i18n.init();
+
+      const btn = document.getElementById('langBtn');
+      const menu = document.getElementById('langMenu');
+      const label = document.getElementById('langLabel');
+      function setLabel(lang){
+        if (!label) return;
+        const map = { ko:'한국어', en:'English', zh:'中文', ja:'日本語', es:'Español', fr:'Français', de:'Deutsch', ru:'Русский', ar:'العربية', hi:'हिन्दी', vi:'Tiếng Việt' };
+        label.textContent = map[lang] || 'Auto';
+      }
+      setLabel(document.documentElement.lang || 'auto');
+      if (btn && menu) {
+        btn.addEventListener('click', ()=> menu.hasAttribute('hidden') ? menu.removeAttribute('hidden') : menu.setAttribute('hidden',''));
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click', async ()=>{
+            let lang = item.getAttribute('data-lang');
+            if (lang === 'auto') lang = window.i18n.detectLanguage();
+            await window.i18n.changeLanguage(lang);
+            setLabel(lang);
+            menu.setAttribute('hidden','');
+          });
+        });
+        document.addEventListener('click', (e)=>{
+          if (!menu.contains(e.target) && !btn.contains(e.target)) menu.setAttribute('hidden','');
+        });
+      }
+
+      // 서비스별 세부 정보 토글
+      document.querySelectorAll('.toggle-service').forEach(button => {
+        button.addEventListener('click', () => {
+          const block = button.closest('.service-block');
+          const expanded = block.classList.toggle('open');
+          button.setAttribute('aria-expanded', expanded);
+          button.textContent = expanded ? '접기' : '세부 보기';
+        });
+      });
     });
   </script>
 </body>
-</html> 
+</html>
