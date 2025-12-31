@@ -321,6 +321,50 @@
       "title": "4. How to Request and Processing Time",
       "p1": "To request a refund, email us with your purchase details (receipt/payment info): captain@purpleship.io",
       "p2": "We will review and respond within a reasonable time. Refund completion timing may vary by payment method/provider."
+    },
+    "section5": {
+      "title": "5. Service-Specific Refund Policies",
+      "intro": "Different refund policies may apply depending on the service.",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Uses Paddle payment system with a 14-day refund guarantee.",
+        "link": "Learn more →"
+      }
+    }
+  },
+  "worldcanvasRefundPage": {
+    "brand": "WorldCanvas",
+    "title": "WorldCanvas Refund Policy",
+    "subtitle": "Refund information for Paddle payment system",
+    "effectiveDate": "Effective date: Jan 1, 2026",
+    "backToRefund": "← Back to Refund Policy",
+    "section1": {
+      "title": "1. Payment Processing",
+      "p1": "All payments for WorldCanvas are processed by Paddle.com as the Merchant of Record. Paddle is an authorized payment service provider that handles payments, tax processing, and refunds.",
+      "p2": "Paddle's payment terms apply to purchases, and receipts and payment inquiries are processed through Paddle."
+    },
+    "section2": {
+      "title": "2. 14-Day Refund Guarantee",
+      "highlight": "You can request a refund within 14 days from the date of purchase without giving any reason.",
+      "p1": "The refund period expires 14 days after the payment completion date. To meet the cancellation deadline, it is sufficient to send your refund request before the 14-day period expires.",
+      "p2": "This refund guarantee is for consumer rights protection and applies to initial purchases."
+    },
+    "section3": {
+      "title": "3. How to Request a Refund",
+      "intro": "To request a refund, please use one of the following methods:",
+      "li1": "Paddle Customer Support: Request a refund directly at paddle.net",
+      "li2": "Email: Contact captain@purpleship.io with your purchase details (receipt/payment info)",
+      "p1": "For immediate processing, please provide the email address used for purchase and payment information when requesting a refund."
+    },
+    "section4": {
+      "title": "4. Refund Limitations",
+      "li1": "If virtual currency (Purple) has already been used, the refund may exclude the consumed portion.",
+      "li2": "Refund processing time may vary by payment method. (Card payments: up to 120 days, PayPal: up to 179 days)",
+      "li3": "Refunds may be denied in cases of fraudulent payments, abuse, or terms violations."
+    },
+    "section5": {
+      "title": "5. Contact",
+      "p1": "For additional inquiries regarding refunds and payments, please contact us at:"
     }
   },
   "pricingPage": {

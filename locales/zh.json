@@ -265,6 +265,50 @@
       "title": "4. 申请方法及处理期限",
       "p1": "退款咨询请附购买记录（收据/支付信息）发送邮件至：captain@purpleship.io",
       "p2": "接收后将在合理时间内确认并通知处理结果。退款完成时间可能因支付方式/支付代理商政策而异。"
+    },
+    "section5": {
+      "title": "5. 服务专属退款政策",
+      "intro": "不同服务可能适用不同的退款政策。",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "使用 Paddle 支付系统，提供14天退款保证。",
+        "link": "了解更多 →"
+      }
+    }
+  },
+  "worldcanvasRefundPage": {
+    "brand": "WorldCanvas",
+    "title": "WorldCanvas 退款政策",
+    "subtitle": "Paddle 支付系统退款说明",
+    "effectiveDate": "生效日期：2026年1月1日",
+    "backToRefund": "← 返回退款政策",
+    "section1": {
+      "title": "1. 支付处理",
+      "p1": "WorldCanvas 的所有支付由 Paddle.com 作为销售商（Merchant of Record）处理。Paddle 是经授权的支付服务提供商，负责处理支付、税务和退款。",
+      "p2": "购买时同时适用 Paddle 的支付条款，收据和支付相关咨询通过 Paddle 处理。"
+    },
+    "section2": {
+      "title": "2. 14天退款保证",
+      "highlight": "自购买之日起14天内，您可以无需任何理由申请退款。",
+      "p1": "退款期限在付款完成后14天届满。只要在14天期限届满前表达退款意向，退款请求即为有效。",
+      "p2": "此退款保证是为保护消费者权益而设，适用于首次购买。"
+    },
+    "section3": {
+      "title": "3. 退款申请方法",
+      "intro": "申请退款，请使用以下方式之一：",
+      "li1": "Paddle 客户支持：在 paddle.net 直接申请退款",
+      "li2": "电子邮件：发送购买记录（收据/支付信息）至 captain@purpleship.io",
+      "p1": "为确保及时处理，申请退款时请提供购买时使用的电子邮件地址和支付信息。"
+    },
+    "section4": {
+      "title": "4. 退款限制",
+      "li1": "如虚拟货币（Purple）已被使用，退款可能扣除已消费部分。",
+      "li2": "退款处理时间可能因支付方式而异。（银行卡支付：最长120天内交易，PayPal：最长179天内交易）",
+      "li3": "如确认存在欺诈支付、滥用或违反条款行为，退款可能被拒绝。"
+    },
+    "section5": {
+      "title": "5. 联系方式",
+      "p1": "有关退款和支付的其他问题，请联系："
     }
   },
   "pricingPage": {

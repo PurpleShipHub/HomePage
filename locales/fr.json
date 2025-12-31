@@ -265,6 +265,50 @@
       "title": "4. Comment demander et délai de traitement",
       "p1": "Pour demander un remboursement, envoyez-nous un e-mail avec les détails de votre achat (reçu/informations de paiement) : captain@purpleship.io",
       "p2": "Nous examinerons et répondrons dans un délai raisonnable. Le délai d'achèvement du remboursement peut varier selon la méthode de paiement/le fournisseur."
+    },
+    "section5": {
+      "title": "5. Politiques de remboursement par service",
+      "intro": "Différentes politiques de remboursement peuvent s'appliquer selon le service.",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Utilise le système de paiement Paddle avec une garantie de remboursement de 14 jours.",
+        "link": "En savoir plus →"
+      }
+    }
+  },
+  "worldcanvasRefundPage": {
+    "brand": "WorldCanvas",
+    "title": "Politique de remboursement WorldCanvas",
+    "subtitle": "Informations de remboursement du système de paiement Paddle",
+    "effectiveDate": "Date d'entrée en vigueur : 1er janvier 2026",
+    "backToRefund": "← Retour à la politique de remboursement",
+    "section1": {
+      "title": "1. Traitement des paiements",
+      "p1": "Tous les paiements pour WorldCanvas sont traités par Paddle.com en tant que Merchant of Record (vendeur). Paddle est un prestataire de services de paiement agréé qui gère les paiements, le traitement fiscal et les remboursements.",
+      "p2": "Les conditions de paiement de Paddle s'appliquent aux achats, et les reçus et demandes de paiement sont traités via Paddle."
+    },
+    "section2": {
+      "title": "2. Garantie de remboursement de 14 jours",
+      "highlight": "Vous pouvez demander un remboursement dans les 14 jours suivant la date d'achat sans donner de raison.",
+      "p1": "La période de remboursement expire 14 jours après la date d'achèvement du paiement. Pour respecter le délai d'annulation, il suffit d'envoyer votre demande de remboursement avant l'expiration de la période de 14 jours.",
+      "p2": "Cette garantie de remboursement vise à protéger les droits des consommateurs et s'applique aux achats initiaux."
+    },
+    "section3": {
+      "title": "3. Comment demander un remboursement",
+      "intro": "Pour demander un remboursement, veuillez utiliser l'une des méthodes suivantes :",
+      "li1": "Support client Paddle : Demandez un remboursement directement sur paddle.net",
+      "li2": "E-mail : Contactez captain@purpleship.io avec les détails de votre achat (reçu/informations de paiement)",
+      "p1": "Pour un traitement immédiat, veuillez fournir l'adresse e-mail utilisée pour l'achat et les informations de paiement lors de la demande de remboursement."
+    },
+    "section4": {
+      "title": "4. Limitations de remboursement",
+      "li1": "Si la monnaie virtuelle (Purple) a déjà été utilisée, le remboursement peut exclure la partie consommée.",
+      "li2": "Le délai de traitement du remboursement peut varier selon le mode de paiement. (Paiements par carte : jusqu'à 120 jours, PayPal : jusqu'à 179 jours)",
+      "li3": "Les remboursements peuvent être refusés en cas de paiements frauduleux, d'abus ou de violations des conditions."
+    },
+    "section5": {
+      "title": "5. Contact",
+      "p1": "Pour toute question supplémentaire concernant les remboursements et les paiements, veuillez nous contacter à :"
     }
   },
   "pricingPage": {

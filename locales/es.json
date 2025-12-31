@@ -265,6 +265,50 @@
       "title": "4. Cómo solicitarlo y tiempo de procesamiento",
       "p1": "Para solicitar un reembolso, envíenos un correo electrónico con los detalles de su compra (recibo/información de pago): captain@purpleship.io",
       "p2": "Revisaremos y responderemos dentro de un tiempo razonable. El tiempo de finalización del reembolso puede variar según el método de pago/proveedor."
+    },
+    "section5": {
+      "title": "5. Políticas de reembolso por servicio",
+      "intro": "Pueden aplicarse diferentes políticas de reembolso según el servicio.",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Utiliza el sistema de pago Paddle con garantía de reembolso de 14 días.",
+        "link": "Más información →"
+      }
+    }
+  },
+  "worldcanvasRefundPage": {
+    "brand": "WorldCanvas",
+    "title": "Política de reembolso de WorldCanvas",
+    "subtitle": "Información de reembolso del sistema de pago Paddle",
+    "effectiveDate": "Fecha de vigencia: 1 de enero de 2026",
+    "backToRefund": "← Volver a Política de reembolso",
+    "section1": {
+      "title": "1. Procesamiento de pagos",
+      "p1": "Todos los pagos de WorldCanvas son procesados por Paddle.com como Merchant of Record (vendedor). Paddle es un proveedor de servicios de pago autorizado que maneja pagos, procesamiento fiscal y reembolsos.",
+      "p2": "Los términos de pago de Paddle se aplican a las compras, y los recibos y consultas de pago se procesan a través de Paddle."
+    },
+    "section2": {
+      "title": "2. Garantía de reembolso de 14 días",
+      "highlight": "Puede solicitar un reembolso dentro de los 14 días posteriores a la fecha de compra sin dar ninguna razón.",
+      "p1": "El período de reembolso expira 14 días después de la fecha de finalización del pago. Para cumplir con el plazo de cancelación, es suficiente enviar su solicitud de reembolso antes de que expire el período de 14 días.",
+      "p2": "Esta garantía de reembolso es para la protección de los derechos del consumidor y se aplica a las compras iniciales."
+    },
+    "section3": {
+      "title": "3. Cómo solicitar un reembolso",
+      "intro": "Para solicitar un reembolso, utilice uno de los siguientes métodos:",
+      "li1": "Soporte al cliente de Paddle: Solicite un reembolso directamente en paddle.net",
+      "li2": "Correo electrónico: Contacte a captain@purpleship.io con los detalles de su compra (recibo/información de pago)",
+      "p1": "Para un procesamiento inmediato, proporcione la dirección de correo electrónico utilizada para la compra y la información de pago al solicitar un reembolso."
+    },
+    "section4": {
+      "title": "4. Limitaciones de reembolso",
+      "li1": "Si la moneda virtual (Purple) ya ha sido utilizada, el reembolso puede excluir la porción consumida.",
+      "li2": "El tiempo de procesamiento del reembolso puede variar según el método de pago. (Pagos con tarjeta: hasta 120 días, PayPal: hasta 179 días)",
+      "li3": "Los reembolsos pueden ser denegados en casos de pagos fraudulentos, abuso o violaciones de los términos."
+    },
+    "section5": {
+      "title": "5. Contacto",
+      "p1": "Para consultas adicionales sobre reembolsos y pagos, contáctenos en:"
     }
   },
   "pricingPage": {

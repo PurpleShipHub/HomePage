@@ -265,6 +265,50 @@
       "title": "4. Antragsverfahren und Bearbeitungszeit",
       "p1": "Um eine Rückerstattung anzufordern, senden Sie uns eine E-Mail mit Ihren Kaufdetails (Quittung/Zahlungsinformationen): captain@purpleship.io",
       "p2": "Wir werden innerhalb einer angemessenen Zeit prüfen und antworten. Die Rückerstattungsabschlusszeit kann je nach Zahlungsmethode/Anbieter variieren."
+    },
+    "section5": {
+      "title": "5. Servicespezifische Rückerstattungsrichtlinien",
+      "intro": "Je nach Service können unterschiedliche Rückerstattungsrichtlinien gelten.",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Verwendet das Paddle-Zahlungssystem mit 14-tägiger Rückerstattungsgarantie.",
+        "link": "Mehr erfahren →"
+      }
+    }
+  },
+  "worldcanvasRefundPage": {
+    "brand": "WorldCanvas",
+    "title": "WorldCanvas Rückerstattungsrichtlinie",
+    "subtitle": "Rückerstattungsinformationen für das Paddle-Zahlungssystem",
+    "effectiveDate": "Gültig ab: 1. Januar 2026",
+    "backToRefund": "← Zurück zur Rückerstattungsrichtlinie",
+    "section1": {
+      "title": "1. Zahlungsabwicklung",
+      "p1": "Alle Zahlungen für WorldCanvas werden von Paddle.com als Merchant of Record (Verkäufer) verarbeitet. Paddle ist ein autorisierter Zahlungsdienstleister, der Zahlungen, Steuerverarbeitung und Rückerstattungen abwickelt.",
+      "p2": "Die Zahlungsbedingungen von Paddle gelten für Käufe, und Quittungen sowie Zahlungsanfragen werden über Paddle bearbeitet."
+    },
+    "section2": {
+      "title": "2. 14-Tage-Rückerstattungsgarantie",
+      "highlight": "Sie können innerhalb von 14 Tagen ab Kaufdatum ohne Angabe von Gründen eine Rückerstattung beantragen.",
+      "p1": "Die Rückerstattungsfrist endet 14 Tage nach dem Zahlungsabschlussdatum. Um die Widerrufsfrist einzuhalten, genügt es, Ihren Rückerstattungsantrag vor Ablauf der 14-Tage-Frist zu senden.",
+      "p2": "Diese Rückerstattungsgarantie dient dem Verbraucherschutz und gilt für Erstkäufe."
+    },
+    "section3": {
+      "title": "3. Wie Sie eine Rückerstattung beantragen",
+      "intro": "Um eine Rückerstattung zu beantragen, nutzen Sie bitte eine der folgenden Methoden:",
+      "li1": "Paddle-Kundensupport: Beantragen Sie eine Rückerstattung direkt auf paddle.net",
+      "li2": "E-Mail: Kontaktieren Sie captain@purpleship.io mit Ihren Kaufdetails (Quittung/Zahlungsinformationen)",
+      "p1": "Für eine sofortige Bearbeitung geben Sie bitte bei der Rückerstattungsanfrage die für den Kauf verwendete E-Mail-Adresse und Zahlungsinformationen an."
+    },
+    "section4": {
+      "title": "4. Rückerstattungsbeschränkungen",
+      "li1": "Wenn virtuelle Währung (Purple) bereits verwendet wurde, kann die Rückerstattung den verbrauchten Teil ausschließen.",
+      "li2": "Die Bearbeitungszeit der Rückerstattung kann je nach Zahlungsmethode variieren. (Kartenzahlungen: bis zu 120 Tage, PayPal: bis zu 179 Tage)",
+      "li3": "Rückerstattungen können bei betrügerischen Zahlungen, Missbrauch oder Verstößen gegen die Bedingungen abgelehnt werden."
+    },
+    "section5": {
+      "title": "5. Kontakt",
+      "p1": "Für weitere Fragen zu Rückerstattungen und Zahlungen kontaktieren Sie uns bitte unter:"
     }
   },
   "pricingPage": {

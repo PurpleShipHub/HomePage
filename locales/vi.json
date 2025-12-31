@@ -222,6 +222,50 @@
       "title": "4. Cách Yêu Cầu và Thời Gian Xử Lý",
       "p1": "Để yêu cầu hoàn tiền, gửi email cho chúng tôi với chi tiết mua hàng của bạn (biên lai/thông tin thanh toán): captain@purpleship.io",
       "p2": "Chúng tôi sẽ xem xét và phản hồi trong thời gian hợp lý. Thời gian hoàn thành hoàn tiền có thể khác nhau tùy theo phương thức thanh toán/nhà cung cấp."
+    },
+    "section5": {
+      "title": "5. Chính Sách Hoàn Tiền Theo Dịch Vụ",
+      "intro": "Các chính sách hoàn tiền khác nhau có thể áp dụng tùy theo dịch vụ.",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Sử dụng hệ thống thanh toán Paddle với bảo đảm hoàn tiền 14 ngày.",
+        "link": "Tìm hiểu thêm →"
+      }
+    }
+  },
+  "worldcanvasRefundPage": {
+    "brand": "WorldCanvas",
+    "title": "Chính Sách Hoàn Tiền WorldCanvas",
+    "subtitle": "Thông tin hoàn tiền cho hệ thống thanh toán Paddle",
+    "effectiveDate": "Ngày có hiệu lực: 1 tháng 1, 2026",
+    "backToRefund": "← Quay lại Chính sách hoàn tiền",
+    "section1": {
+      "title": "1. Xử Lý Thanh Toán",
+      "p1": "Tất cả các khoản thanh toán cho WorldCanvas được xử lý bởi Paddle.com với tư cách là Merchant of Record (người bán). Paddle là nhà cung cấp dịch vụ thanh toán được ủy quyền xử lý thanh toán, thuế và hoàn tiền.",
+      "p2": "Các điều khoản thanh toán của Paddle áp dụng cho các giao dịch mua, và biên lai cũng như yêu cầu thanh toán được xử lý qua Paddle."
+    },
+    "section2": {
+      "title": "2. Bảo Đảm Hoàn Tiền 14 Ngày",
+      "highlight": "Bạn có thể yêu cầu hoàn tiền trong vòng 14 ngày kể từ ngày mua mà không cần nêu lý do.",
+      "p1": "Thời hạn hoàn tiền hết hạn 14 ngày sau ngày hoàn thành thanh toán. Để đáp ứng thời hạn hủy, chỉ cần gửi yêu cầu hoàn tiền trước khi hết thời hạn 14 ngày.",
+      "p2": "Bảo đảm hoàn tiền này nhằm bảo vệ quyền lợi người tiêu dùng và áp dụng cho các giao dịch mua ban đầu."
+    },
+    "section3": {
+      "title": "3. Cách Yêu Cầu Hoàn Tiền",
+      "intro": "Để yêu cầu hoàn tiền, vui lòng sử dụng một trong các phương thức sau:",
+      "li1": "Hỗ trợ khách hàng Paddle: Yêu cầu hoàn tiền trực tiếp tại paddle.net",
+      "li2": "Email: Liên hệ captain@purpleship.io với chi tiết mua hàng của bạn (biên lai/thông tin thanh toán)",
+      "p1": "Để xử lý ngay lập tức, vui lòng cung cấp địa chỉ email được sử dụng để mua hàng và thông tin thanh toán khi yêu cầu hoàn tiền."
+    },
+    "section4": {
+      "title": "4. Giới Hạn Hoàn Tiền",
+      "li1": "Nếu tiền tệ ảo (Purple) đã được sử dụng, hoàn tiền có thể không bao gồm phần đã tiêu thụ.",
+      "li2": "Thời gian xử lý hoàn tiền có thể khác nhau tùy theo phương thức thanh toán. (Thanh toán bằng thẻ: đến 120 ngày, PayPal: đến 179 ngày)",
+      "li3": "Hoàn tiền có thể bị từ chối trong trường hợp thanh toán gian lận, lạm dụng hoặc vi phạm điều khoản."
+    },
+    "section5": {
+      "title": "5. Liên Hệ",
+      "p1": "Để biết thêm câu hỏi về hoàn tiền và thanh toán, vui lòng liên hệ với chúng tôi tại:"
     }
   },
   "pricingPage": {
