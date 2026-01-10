@@ -37,7 +37,10 @@
     "copyright": "© 2025 Purpleship. Đã đăng ký bản quyền.",
     "contact": "Liên hệ: captain@purpleship.io",
     "privacy": "Chính Sách Bảo Mật",
-    "termsConditions": "Điều Khoản và Điều Kiện"
+    "termsConditions": "Terms & Conditions",
+    "refund": "Refund Policy",
+    "pricing": "Pricing",
+    "terms": "WorldCanvas Purchase Terms"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -102,15 +105,6 @@
       "home": "Trang chủ",
       "try": "Sử dụng"
     }
-  },
-  "footer": {
-    "copyright": "© 2025 Purpleship. Đã đăng ký bản quyền.",
-    "contact": "Liên hệ: captain@purpleship.io",
-    "privacy": "Chính Sách Bảo Mật",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
   },
   "termsPage": {
     "brand": "Purpleship",
@@ -196,7 +190,7 @@
     "brand": "Purpleship",
     "title": "Chính Sách Hoàn Tiền Purpleship",
     "subtitle": "Chính sách này mô tả các quy tắc hoàn tiền/rút tiền cho các vật phẩm trả phí và tiền tệ ảo (ví dụ: Purple).",
-    "effectiveDate": "Ngày có hiệu lực: 15 tháng 12 năm 2025",
+    "effectiveDate": "Ngày có hiệu lực: 10 tháng 1, 2026",
     "backToHome": "← Quay lại Trang chủ",
     "nav": {
       "terms": "Điều Khoản và Điều Kiện",
@@ -205,30 +199,40 @@
     },
     "section1": {
       "title": "1. Phạm Vi",
-      "p1": "Chính sách này áp dụng cho các vật phẩm trả phí được cung cấp trên trang web Purpleship và các dịch vụ liên quan. Nếu tồn tại các điều khoản mua hàng cụ thể cho dịch vụ, các điều khoản đó có thể được ưu tiên."
+      "p1": "Chính sách này áp dụng cho tất cả các dịch vụ trả phí do Purpleship cung cấp, bao gồm WorldCanvas. Tất cả các khoản thanh toán được xử lý bởi Paddle.com với tư cách là Merchant of Record, đảm bảo xử lý thanh toán an toàn và bảo vệ người tiêu dùng."
     },
     "section2": {
-      "title": "2. Các Trường Hợp Đủ Điều Kiện Hoàn Tiền",
+      "title": "2. Bảo Đảm Hoàn Tiền 14 Ngày",
+      "highlight": "Bạn có thể yêu cầu hoàn tiền trong vòng 14 ngày kể từ ngày mua mà không cần nêu lý do.",
+      "p1": "Thời hạn hoàn tiền hết hạn 14 ngày sau ngày hoàn thành thanh toán. Để đáp ứng thời hạn hủy, chỉ cần gửi yêu cầu hoàn tiền trước khi hết thời hạn 14 ngày.",
+      "p2": "Bảo đảm hoàn tiền này nhằm bảo vệ quyền lợi người tiêu dùng và áp dụng cho các giao dịch mua ban đầu."
+    },
+    "section3": {
+      "title": "3. Các trường hợp hoàn tiền bổ sung",
+      "intro": "Ngoài bảo đảm hoàn tiền 14 ngày, hoàn tiền cũng có thể được cấp trong các trường hợp sau:",
       "li1": "Không giao hàng hoặc giao sai hàng do lỗi của chúng tôi",
       "li2": "Lý do hợp lý như phí trùng lặp hoặc lỗi thanh toán",
       "li3": "Khi hoàn tiền được yêu cầu bởi pháp luật áp dụng"
     },
-    "section3": {
-      "title": "3. Giới Hạn Hoàn Tiền (Ngoại Lệ)",
-      "li1": "Nội dung kỹ thuật số/tiền tệ ảo có thể được cung cấp ngay lập tức, và hoàn tiền có thể bị hạn chế trong phạm vi được pháp luật cho phép.",
-      "li2": "Nếu tiền tệ ảo (Purple) đã được tiêu thụ, xử lý có thể loại trừ phần đã tiêu thụ trong phạm vi được pháp luật cho phép."
-    },
     "section4": {
-      "title": "4. Cách Yêu Cầu và Thời Gian Xử Lý",
-      "p1": "Để yêu cầu hoàn tiền, gửi email cho chúng tôi với chi tiết mua hàng của bạn (biên lai/thông tin thanh toán): captain@purpleship.io",
-      "p2": "Chúng tôi sẽ xem xét và phản hồi trong thời gian hợp lý. Thời gian hoàn thành hoàn tiền có thể khác nhau tùy theo phương thức thanh toán/nhà cung cấp."
+      "title": "4. Hạn chế hoàn tiền sau 14 ngày",
+      "li1": "Sau thời hạn 14 ngày, nếu tiền ảo (Purple) đã được sử dụng, hoàn tiền có thể loại trừ phần đã tiêu thụ.",
+      "li2": "Nội dung kỹ thuật số/tiền ảo có thể được cung cấp ngay lập tức và các hạn chế bổ sung có thể áp dụng theo mức độ được phép bởi pháp luật."
     },
     "section5": {
-      "title": "5. Chính Sách Hoàn Tiền Theo Dịch Vụ",
+      "title": "5. Cách yêu cầu hoàn tiền",
+      "intro": "Để yêu cầu hoàn tiền, vui lòng sử dụng một trong các phương thức sau:",
+      "li1": "Hỗ trợ khách hàng Paddle: Yêu cầu hoàn tiền trực tiếp tại paddle.net",
+      "li2": "Email: Liên hệ captain@purpleship.io với chi tiết mua hàng của bạn (biên lai/thông tin thanh toán)",
+      "p1": "Để xử lý ngay lập tức, vui lòng cung cấp địa chỉ email được sử dụng để mua hàng và thông tin thanh toán khi yêu cầu hoàn tiền.",
+      "p2": "Chúng tôi sẽ xem xét và phản hồi trong thời gian hợp lý. Thời gian hoàn thành hoàn tiền có thể khác nhau tùy theo phương thức thanh toán/nhà cung cấp."
+    },
+    "section6": {
+      "title": "6. Chính sách hoàn tiền theo dịch vụ",
       "intro": "Các chính sách hoàn tiền khác nhau có thể áp dụng tùy theo dịch vụ.",
       "worldcanvas": {
         "title": "WorldCanvas",
-        "desc": "Sử dụng hệ thống thanh toán Paddle với bảo đảm hoàn tiền 14 ngày.",
+        "desc": "Chi tiết bổ sung về mua hàng WorldCanvas và xử lý thanh toán Paddle.",
         "link": "Tìm hiểu thêm →"
       }
     }
@@ -280,9 +284,21 @@
       "privacy": "Privacy Policy"
     },
     "plans": {
-      "starter": { "title": "Starter", "price": "$5", "desc": "25,000 Purple" },
-      "standard": { "title": "Standard", "price": "$30", "desc": "150,000 Purple + 5% bonus (157,500 total)" },
-      "pro": { "title": "Pro", "price": "$50", "desc": "250,000 Purple + 10% bonus (275,000 total)" },
+      "starter": {
+        "title": "Starter",
+        "price": "$5",
+        "desc": "25,000 Purple"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "$30",
+        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$50",
+        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+      },
       "common": {
         "li1": "Use for palette color/slot expansions, etc.",
         "li2": "Use to increase bulk pixel-stamp limits, etc."

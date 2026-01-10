@@ -80,7 +80,10 @@
     "copyright": "© 2025 Purpleship. Tous droits réservés.",
     "contact": "Contact : captain@purpleship.io",
     "privacy": "Politique de Confidentialité",
-    "termsConditions": "Conditions Générales"
+    "termsConditions": "Terms & Conditions",
+    "refund": "Refund Policy",
+    "pricing": "Pricing",
+    "terms": "WorldCanvas Purchase Terms"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -145,15 +148,6 @@
       "home": "Accueil",
       "try": "Utiliser"
     }
-  },
-  "footer": {
-    "copyright": "© 2025 Purpleship. Tous droits réservés.",
-    "contact": "Contact : captain@purpleship.io",
-    "privacy": "Politique de Confidentialité",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
   },
   "termsPage": {
     "brand": "Purpleship",
@@ -239,7 +233,7 @@
     "brand": "Purpleship",
     "title": "Politique de remboursement de Purpleship",
     "subtitle": "Cette politique décrit les règles de remboursement/retrait pour les articles payants et la monnaie virtuelle (par exemple, Purple).",
-    "effectiveDate": "Date d'entrée en vigueur : 15 décembre 2025",
+    "effectiveDate": "Date d'entrée en vigueur : 10 janvier 2026",
     "backToHome": "← Retour à l'accueil",
     "nav": {
       "terms": "Conditions d'utilisation",
@@ -248,30 +242,40 @@
     },
     "section1": {
       "title": "1. Champ d'application",
-      "p1": "Cette politique s'applique aux articles payants fournis sur le site Web Purpleship et les services associés. Si des conditions d'achat spécifiques au service existent, ces conditions peuvent prévaloir."
+      "p1": "Cette politique s'applique à tous les services payants fournis par Purpleship, y compris WorldCanvas. Tous les paiements sont traités par Paddle.com en tant que Merchant of Record, garantissant un traitement sécurisé des paiements et la protection des consommateurs."
     },
     "section2": {
-      "title": "2. Cas de remboursement éligibles",
+      "title": "2. Garantie de remboursement de 14 jours",
+      "highlight": "Vous pouvez demander un remboursement dans les 14 jours suivant la date d'achat sans donner de raison.",
+      "p1": "La période de remboursement expire 14 jours après la date d'achèvement du paiement. Pour respecter le délai d'annulation, il suffit d'envoyer votre demande de remboursement avant l'expiration de la période de 14 jours.",
+      "p2": "Cette garantie de remboursement vise à protéger les droits des consommateurs et s'applique aux achats initiaux."
+    },
+    "section3": {
+      "title": "3. Cas de remboursement supplémentaires",
+      "intro": "Au-delà de la garantie de remboursement de 14 jours, des remboursements peuvent également être accordés dans les cas suivants :",
       "li1": "Non-livraison ou livraison incorrecte due à notre faute",
       "li2": "Raisons valables telles que des frais en double ou des erreurs de paiement",
       "li3": "Lorsque les remboursements sont requis par la loi applicable"
     },
-    "section3": {
-      "title": "3. Limitations de remboursement (exceptions)",
-      "li1": "Le contenu numérique/la monnaie virtuelle peut être disponible immédiatement, et les remboursements peuvent être restreints dans la mesure permise par la loi.",
-      "li2": "Si la monnaie virtuelle (Purple) a déjà été consommée, le traitement peut exclure la portion consommée dans la mesure permise par la loi."
-    },
     "section4": {
-      "title": "4. Comment demander et délai de traitement",
-      "p1": "Pour demander un remboursement, envoyez-nous un e-mail avec les détails de votre achat (reçu/informations de paiement) : captain@purpleship.io",
-      "p2": "Nous examinerons et répondrons dans un délai raisonnable. Le délai d'achèvement du remboursement peut varier selon la méthode de paiement/le fournisseur."
+      "title": "4. Limitations de remboursement après 14 jours",
+      "li1": "Après la période de 14 jours, si la monnaie virtuelle (Purple) a déjà été utilisée, le remboursement peut exclure la portion consommée.",
+      "li2": "Le contenu numérique/la monnaie virtuelle peut être rendu disponible immédiatement, et des restrictions supplémentaires peuvent s'appliquer dans la mesure permise par la loi."
     },
     "section5": {
-      "title": "5. Politiques de remboursement par service",
+      "title": "5. Comment demander un remboursement",
+      "intro": "Pour demander un remboursement, veuillez utiliser l'une des méthodes suivantes :",
+      "li1": "Support client Paddle : Demandez un remboursement directement sur paddle.net",
+      "li2": "E-mail : Contactez captain@purpleship.io avec les détails de votre achat (reçu/informations de paiement)",
+      "p1": "Pour un traitement immédiat, veuillez fournir l'adresse e-mail utilisée pour l'achat et les informations de paiement lors de la demande de remboursement.",
+      "p2": "Nous examinerons et répondrons dans un délai raisonnable. Le délai d'achèvement du remboursement peut varier selon la méthode de paiement/le fournisseur."
+    },
+    "section6": {
+      "title": "6. Politiques de remboursement spécifiques au service",
       "intro": "Différentes politiques de remboursement peuvent s'appliquer selon le service.",
       "worldcanvas": {
         "title": "WorldCanvas",
-        "desc": "Utilise le système de paiement Paddle avec une garantie de remboursement de 14 jours.",
+        "desc": "Détails supplémentaires sur les achats WorldCanvas et le traitement des paiements Paddle.",
         "link": "En savoir plus →"
       }
     }
@@ -323,9 +327,21 @@
       "privacy": "Privacy Policy"
     },
     "plans": {
-      "starter": { "title": "Starter", "price": "$5", "desc": "25,000 Purple" },
-      "standard": { "title": "Standard", "price": "$30", "desc": "150,000 Purple + 5% bonus (157,500 total)" },
-      "pro": { "title": "Pro", "price": "$50", "desc": "250,000 Purple + 10% bonus (275,000 total)" },
+      "starter": {
+        "title": "Starter",
+        "price": "$5",
+        "desc": "25,000 Purple"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "$30",
+        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$50",
+        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+      },
       "common": {
         "li1": "Use for palette color/slot expansions, etc.",
         "li2": "Use to increase bulk pixel-stamp limits, etc."

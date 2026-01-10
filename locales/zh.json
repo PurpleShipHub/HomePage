@@ -80,7 +80,10 @@
     "copyright": "© 2025 Purpleship. 版权所有。",
     "contact": "联系方式：captain@purpleship.io",
     "privacy": "隐私政策",
-    "termsConditions": "服务条款"
+    "termsConditions": "Terms & Conditions",
+    "refund": "Refund Policy",
+    "pricing": "Pricing",
+    "terms": "WorldCanvas Purchase Terms"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -145,15 +148,6 @@
       "home": "首页",
       "try": "使用"
     }
-  },
-  "footer": {
-    "copyright": "© 2025 Purpleship. 版权所有。",
-    "contact": "联系方式：captain@purpleship.io",
-    "privacy": "隐私政策",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
   },
   "termsPage": {
     "brand": "Purpleship",
@@ -239,7 +233,7 @@
     "brand": "Purpleship",
     "title": "Purpleship 退款政策",
     "subtitle": "本政策说明付费产品及虚拟货币（如 Purple）的退款/撤销规则。",
-    "effectiveDate": "生效日期：2025年12月15日",
+    "effectiveDate": "生效日期：2026年1月10日",
     "backToHome": "← 返回首页",
     "nav": {
       "terms": "使用条款",
@@ -248,30 +242,40 @@
     },
     "section1": {
       "title": "1. 适用范围",
-      "p1": "本政策适用于 Purpleship 网站及相关服务中提供的付费产品。如果特定服务有单独的购买条款，则该条款优先适用。"
+      "p1": "本政策适用于 Purpleship 提供的所有付费服务，包括 WorldCanvas。所有支付由 Paddle.com 作为销售商（Merchant of Record）处理，确保安全支付和消费者保护。"
     },
     "section2": {
-      "title": "2. 可退款情况",
+      "title": "2. 14天退款保证",
+      "highlight": "自购买之日起14天内，您可以无需任何理由申请退款。",
+      "p1": "退款期限在付款完成后14天届满。只要在14天期限届满前表达退款意向，退款请求即为有效。",
+      "p2": "此退款保证是为保护消费者权益而设，适用于首次购买。"
+    },
+    "section3": {
+      "title": "3. 额外退款情况",
+      "intro": "除14天退款保证外，以下情况也可能提供退款：",
       "li1": "公司责任原因（未提供/错误提供等）",
       "li2": "重复支付、支付错误等正当理由",
       "li3": "法律要求退款的情况"
     },
-    "section3": {
-      "title": "3. 退款限制（例外）",
-      "li1": "数字内容/虚拟货币可在提供后立即开始使用，在法律允许的范围内可限制退款。",
-      "li2": "虚拟货币（Purple）已被消费的情况，可能扣除已消费部分处理（法律无限制的范围）。"
-    },
     "section4": {
-      "title": "4. 申请方法及处理期限",
-      "p1": "退款咨询请附购买记录（收据/支付信息）发送邮件至：captain@purpleship.io",
-      "p2": "接收后将在合理时间内确认并通知处理结果。退款完成时间可能因支付方式/支付代理商政策而异。"
+      "title": "4. 14天后退款限制",
+      "li1": "14天期限之后，如虚拟货币（Purple）已被使用，可能扣除已使用部分处理退款。",
+      "li2": "数字内容/虚拟货币可在提供后立即开始使用，在法律允许的范围内可能适用额外限制。"
     },
     "section5": {
-      "title": "5. 服务专属退款政策",
+      "title": "5. 退款申请方法",
+      "intro": "申请退款，请使用以下方式之一：",
+      "li1": "Paddle 客户支持：在 paddle.net 直接申请退款",
+      "li2": "邮件咨询：发送购买记录（收据/支付信息）至 captain@purpleship.io",
+      "p1": "为确保快速处理，申请退款时请一并提供购买时使用的邮箱地址和支付信息。",
+      "p2": "接收后将在合理时间内确认并通知处理结果。退款处理时间可能因支付方式而异。"
+    },
+    "section6": {
+      "title": "6. 服务专属退款政策",
       "intro": "不同服务可能适用不同的退款政策。",
       "worldcanvas": {
         "title": "WorldCanvas",
-        "desc": "使用 Paddle 支付系统，提供14天退款保证。",
+        "desc": "有关 WorldCanvas 购买和 Paddle 支付处理的其他详细信息。",
         "link": "了解更多 →"
       }
     }
@@ -323,9 +327,21 @@
       "privacy": "Privacy Policy"
     },
     "plans": {
-      "starter": { "title": "Starter", "price": "$5", "desc": "25,000 Purple" },
-      "standard": { "title": "Standard", "price": "$30", "desc": "150,000 Purple + 5% bonus (157,500 total)" },
-      "pro": { "title": "Pro", "price": "$50", "desc": "250,000 Purple + 10% bonus (275,000 total)" },
+      "starter": {
+        "title": "Starter",
+        "price": "$5",
+        "desc": "25,000 Purple"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "$30",
+        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$50",
+        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+      },
       "common": {
         "li1": "Use for palette color/slot expansions, etc.",
         "li2": "Use to increase bulk pixel-stamp limits, etc."

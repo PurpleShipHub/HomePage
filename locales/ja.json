@@ -77,10 +77,13 @@
   },
   "donation": "寄付する",
   "footer": {
-    "copyright": "© 2025 Purpleship. All rights reserved.",
-    "contact": "お問い合わせ: captain@purpleship.io",
+    "copyright": "© 2025 Purpleship. 全著作権所有。",
+    "contact": "連絡先：captain@purpleship.io",
     "privacy": "プライバシーポリシー",
-    "termsConditions": "利用規約"
+    "termsConditions": "Terms & Conditions",
+    "refund": "Refund Policy",
+    "pricing": "Pricing",
+    "terms": "WorldCanvas Purchase Terms"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -145,15 +148,6 @@
       "home": "ホーム",
       "try": "使用する"
     }
-  },
-  "footer": {
-    "copyright": "© 2025 Purpleship. 全著作権所有。",
-    "contact": "連絡先：captain@purpleship.io",
-    "privacy": "プライバシーポリシー",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
   },
   "termsPage": {
     "brand": "Purpleship",
@@ -239,7 +233,7 @@
     "brand": "Purpleship",
     "title": "Purpleship 返金ポリシー",
     "subtitle": "有料商品および仮想財（Purple 等）の返金/撤回基準を案内します。",
-    "effectiveDate": "施行日：2025年12月15日",
+    "effectiveDate": "施行日：2026年1月10日",
     "backToHome": "← ホームに戻る",
     "nav": {
       "terms": "利用規約",
@@ -248,30 +242,40 @@
     },
     "section1": {
       "title": "1. 適用範囲",
-      "p1": "本ポリシーは Purpleship ウェブサイトおよび関連サービスで提供される有料商品に適用されます。サービスごとに購入規約がある場合、該当規約が優先適用される場合があります。"
+      "p1": "本ポリシーはPurpleshipが提供するすべての有料サービスに適用され、WorldCanvasを含みます。すべての決済はPaddle.comがMerchant of Record（販売者）として処理し、安全な決済と消費者保護を提供します。"
     },
     "section2": {
-      "title": "2. 返金可能な場合",
+      "title": "2. 14日間返金保証",
+      "highlight": "購入日から14日以内であれば、理由を問わず返金を申請できます。",
+      "p1": "返金期間は決済完了日から14日後に終了します。14日間の期限が満了する前に返金の意思を伝えれば、返金申請は有効です。",
+      "p2": "この返金保証は消費者の権利保護のためのもので、初回購入に適用されます。"
+    },
+    "section3": {
+      "title": "3. 追加返金事由",
+      "intro": "14日間返金保証以外にも、以下の場合に返金が提供される場合があります：",
       "li1": "未支給/誤支給等、当社責任事由がある場合",
       "li2": "重複決済、決済エラー等の正当な事由がある場合",
       "li3": "法令上返金が要求される場合"
     },
-    "section3": {
-      "title": "3. 返金制限（例外）",
-      "li1": "デジタルコンテンツ/仮想財は提供即時利用が開始される場合があり、関連法令が許容する範囲内で返金が制限される場合があります。",
-      "li2": "仮想財（Purple）がすでに消費された場合、消費された範囲を除いて処理される場合があります（法令上制限がない範囲）。"
-    },
     "section4": {
-      "title": "4. 申請方法および処理期間",
-      "p1": "返金のお問い合わせは購入履歴（領収書/決済情報）と共にメールで受け付けてください：captain@purpleship.io",
-      "p2": "受付後、合理的な期間内に確認および処理結果を案内します。決済手段/決済代行業者のポリシーにより返金完了時点は異なる場合があります。"
+      "title": "4. 14日以降の返金制限事項",
+      "li1": "14日間の期間以降は、仮想財（Purple）がすでに使用されている場合、使用された部分を除いて返金処理される場合があります。",
+      "li2": "デジタルコンテンツ/仮想財は提供即時利用が開始される場合があり、関連法令が許容する範囲内で追加制限が適用される場合があります。"
     },
     "section5": {
-      "title": "5. サービス別返金ポリシー",
+      "title": "5. 返金申請方法",
+      "intro": "返金を申請するには、以下のいずれかの方法をご利用ください：",
+      "li1": "Paddleカスタマーサポート：paddle.netで直接返金を申請",
+      "li2": "メールでのお問い合わせ：captain@purpleship.ioに購入履歴（領収書/決済情報）と共に申請",
+      "p1": "迅速な処理のため、返金申請時には購入時に使用したメールアドレスと決済情報を併せてご提供ください。",
+      "p2": "受付後、合理的な期間内に確認および処理結果を案内します。決済手段により返金処理期間が異なる場合があります。"
+    },
+    "section6": {
+      "title": "6. サービス別返金ポリシー",
       "intro": "サービスごとに異なる返金ポリシーが適用される場合があります。",
       "worldcanvas": {
         "title": "WorldCanvas",
-        "desc": "Paddle決済システムを使用し、14日間の返金保証が適用されます。",
+        "desc": "WorldCanvas購入およびPaddle決済処理に関する追加詳細情報です。",
         "link": "詳細を見る →"
       }
     }
@@ -323,9 +327,21 @@
       "privacy": "Privacy Policy"
     },
     "plans": {
-      "starter": { "title": "Starter", "price": "$5", "desc": "25,000 Purple" },
-      "standard": { "title": "Standard", "price": "$30", "desc": "150,000 Purple + 5% bonus (157,500 total)" },
-      "pro": { "title": "Pro", "price": "$50", "desc": "250,000 Purple + 10% bonus (275,000 total)" },
+      "starter": {
+        "title": "Starter",
+        "price": "$5",
+        "desc": "25,000 Purple"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "$30",
+        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$50",
+        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+      },
       "common": {
         "li1": "Use for palette color/slot expansions, etc.",
         "li2": "Use to increase bulk pixel-stamp limits, etc."

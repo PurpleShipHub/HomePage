@@ -83,7 +83,10 @@
     "copyright": "© 2025 Purpleship. All rights reserved.",
     "contact": "Contact: captain@purpleship.io",
     "privacy": "Privacy Policy",
-    "termsConditions": "Terms & Conditions"
+    "termsConditions": "Terms & Conditions",
+    "refund": "Refund Policy",
+    "pricing": "Pricing",
+    "terms": "WorldCanvas Purchase Terms"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -202,15 +205,6 @@
       "try": "Use now"
     }
   },
-  "footer": {
-    "copyright": "© 2025 Purpleship. All rights reserved.",
-    "contact": "Contact: captain@purpleship.io",
-    "privacy": "Privacy Policy",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
-  },
   "termsPage": {
     "brand": "Purpleship",
     "title": "Purpleship Terms & Conditions",
@@ -295,7 +289,7 @@
     "brand": "Purpleship",
     "title": "Purpleship Refund Policy",
     "subtitle": "This policy describes refunds/withdrawal rules for paid items and virtual currency (e.g., Purple).",
-    "effectiveDate": "Effective date: Dec 15, 2025",
+    "effectiveDate": "Effective date: Jan 10, 2026",
     "backToHome": "← Back to Home",
     "nav": {
       "terms": "Terms & Conditions",
@@ -304,30 +298,40 @@
     },
     "section1": {
       "title": "1. Scope",
-      "p1": "This policy applies to paid items provided on the Purpleship website and related services. If service-specific purchase terms exist, those terms may take precedence."
+      "p1": "This policy applies to all paid services provided by Purpleship, including WorldCanvas. All payments are processed by Paddle.com as the Merchant of Record, ensuring secure payment processing and consumer protection."
     },
     "section2": {
-      "title": "2. Eligible Refund Cases",
+      "title": "2. 14-Day Refund Guarantee",
+      "highlight": "You can request a refund within 14 days from the date of purchase without giving any reason.",
+      "p1": "The refund period expires 14 days after the payment completion date. To meet the cancellation deadline, it is sufficient to send your refund request before the 14-day period expires.",
+      "p2": "This refund guarantee is for consumer rights protection and applies to initial purchases."
+    },
+    "section3": {
+      "title": "3. Additional Refund Cases",
+      "intro": "Beyond the 14-day guarantee, refunds may also be granted in the following cases:",
       "li1": "Non-delivery or mis-delivery due to our fault",
       "li2": "Valid reasons such as duplicate charges or payment errors",
       "li3": "When refunds are required by applicable law"
     },
-    "section3": {
-      "title": "3. Refund Limitations (Exceptions)",
-      "li1": "Digital content/virtual currency may be made available immediately, and refunds may be restricted to the extent permitted by law.",
-      "li2": "If virtual currency (Purple) has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
-    },
     "section4": {
-      "title": "4. How to Request and Processing Time",
-      "p1": "To request a refund, email us with your purchase details (receipt/payment info): captain@purpleship.io",
-      "p2": "We will review and respond within a reasonable time. Refund completion timing may vary by payment method/provider."
+      "title": "4. Refund Limitations After 14 Days",
+      "li1": "After the 14-day period, if virtual currency (Purple) has already been used, the refund may exclude the consumed portion.",
+      "li2": "Digital content/virtual currency may be made available immediately, and additional restrictions may apply to the extent permitted by law."
     },
     "section5": {
-      "title": "5. Service-Specific Refund Policies",
+      "title": "5. How to Request a Refund",
+      "intro": "To request a refund, please use one of the following methods:",
+      "li1": "Paddle Customer Support: Request a refund directly at paddle.net",
+      "li2": "Email: Contact captain@purpleship.io with your purchase details (receipt/payment info)",
+      "p1": "For immediate processing, please provide the email address used for purchase and payment information when requesting a refund.",
+      "p2": "We will review and respond within a reasonable time. Refund processing time may vary by payment method."
+    },
+    "section6": {
+      "title": "6. Service-Specific Refund Policies",
       "intro": "Different refund policies may apply depending on the service.",
       "worldcanvas": {
         "title": "WorldCanvas",
-        "desc": "Uses Paddle payment system with a 14-day refund guarantee.",
+        "desc": "Additional details about WorldCanvas purchases and Paddle payment processing.",
         "link": "Learn more →"
       }
     }
@@ -379,9 +383,21 @@
       "privacy": "Privacy Policy"
     },
     "plans": {
-      "starter": { "title": "Starter", "price": "$5", "desc": "25,000 Purple" },
-      "standard": { "title": "Standard", "price": "$30", "desc": "150,000 Purple + 5% bonus (157,500 total)" },
-      "pro": { "title": "Pro", "price": "$50", "desc": "250,000 Purple + 10% bonus (275,000 total)" },
+      "starter": {
+        "title": "Starter",
+        "price": "$5",
+        "desc": "25,000 Purple"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "$30",
+        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$50",
+        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+      },
       "common": {
         "li1": "Use for palette color/slot expansions, etc.",
         "li2": "Use to increase bulk pixel-stamp limits, etc."
