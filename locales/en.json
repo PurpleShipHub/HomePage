@@ -670,5 +670,49 @@
       "title": "10. Privacy Policy Changes and Notices",
       "p1": "When laws, service content, or internal policies change, we will notify you of the changes 7 days before implementation through website notice or in-service notification."
     }
+  },
+  "worldcanvasTermsPage": {
+    "brand": "WorldCanvas",
+    "title": "WorldCanvas Purchase Terms",
+    "subtitle": "This section sets forth additional terms for purchasing and using paid products and virtual currency (Purple) in WorldCanvas.",
+    "effectiveDate": "Effective Date: December 15, 2025",
+    "backToTerms": "← Back to Terms",
+    "section1": {
+      "title": "1. Definitions",
+      "d1": "\"Paid Products\" means digital content, permissions, or virtual currency provided through payment.",
+      "d2": "\"Purple\" refers to virtual currency (points/credits) usable within WorldCanvas services, which cannot be exchanged for cash.",
+      "d3": "\"Consumption\" means using Purple to purchase functions/items or increase usage limits."
+    },
+    "section2": {
+      "title": "2. Purple Usage",
+      "p1": "Users can purchase Purple to use features within WorldCanvas. Specific uses are displayed in the service interface.",
+      "li1": "Example: Palette color (palette slot) expansion",
+      "li2": "Example: Increasing the \"pixel placement limit\" for bulk pixel placement",
+      "li3": "Example: Other paid items/features (may be added in the future)"
+    },
+    "section3": {
+      "title": "3. Payment and Delivery",
+      "p1": "Prices, contents, payment methods, and billing times are shown during the purchase process. Purple or permissions are provided immediately (or within a reasonable time) after payment.",
+      "li1": "Payments may be processed through third-party payment service providers.",
+      "li2": "Purchase history and payment details can be verified in the service or payment receipt.",
+      "li3": "For detailed pricing information, please refer to the pricing page."
+    },
+    "section4": {
+      "title": "4. Withdrawal (Refunds) and Exceptions",
+      "p1": "Digital content/virtual currency may be available for use immediately upon provision, and withdrawal may be restricted within the scope permitted by law. However, refunds or compensation may be provided in the following cases:",
+      "li1": "Cases where there is a company fault (non-delivery, incorrect delivery, etc.)",
+      "li2": "Cases with legitimate reasons (payment errors, duplicate payments, etc.)",
+      "li3": "Cases required by law",
+      "li4": "If Purple has already been consumed, processing may exclude the consumed portion (within the scope not restricted by law).",
+      "li5": "For detailed refund policies, please refer to the refund policy page."
+    },
+    "section5": {
+      "title": "5. Minor Payments",
+      "p1": "Minors making payments may require legal guardian consent, and cancellation (refund) requests may be possible according to law."
+    },
+    "section6": {
+      "title": "6. Usage Restrictions and Recovery",
+      "p1": "If fraudulent payments, hacking/abuse, or terms violations are confirmed, we may recover granted Purple/permissions or restrict account usage according to applicable laws and service policies."
+    }
   }
 }

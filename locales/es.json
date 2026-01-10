@@ -664,5 +664,49 @@
       "title": "10. Cambios y Notificaciones de la Política de Privacidad",
       "p1": "Cuando las leyes, el contenido del servicio o las políticas internas cambien, le notificaremos los cambios 7 días antes de la implementación a través de aviso en el sitio web o notificación en el servicio."
     }
+  },
+  "worldcanvasTermsPage": {
+    "brand": "WorldCanvas",
+    "title": "Términos de compra de WorldCanvas",
+    "subtitle": "Esta sección establece términos adicionales para la compra y uso de productos de pago y moneda virtual (Purple) en WorldCanvas.",
+    "effectiveDate": "Fecha de entrada en vigor: 15 de diciembre de 2025",
+    "backToTerms": "← Volver a los Términos",
+    "section1": {
+      "title": "1. Definiciones",
+      "d1": "\"Productos de pago\" significa contenido digital, permisos o moneda virtual proporcionados a través del pago.",
+      "d2": "\"Purple\" se refiere a moneda virtual (puntos/créditos) utilizable dentro de los servicios de WorldCanvas, que no se puede cambiar por dinero en efectivo.",
+      "d3": "\"Consumo\" significa usar Purple para comprar funciones/artículos o aumentar los límites de uso."
+    },
+    "section2": {
+      "title": "2. Uso de Purple",
+      "p1": "Los usuarios pueden comprar Purple para usar funciones dentro de WorldCanvas. Los usos específicos se muestran en la interfaz del servicio.",
+      "li1": "Ejemplo: Expansión de color de paleta (ranura de paleta)",
+      "li2": "Ejemplo: Aumento del \"límite de colocación de píxeles\" para la colocación masiva de píxeles",
+      "li3": "Ejemplo: Otros artículos/funciones de pago (pueden agregarse en el futuro)"
+    },
+    "section3": {
+      "title": "3. Pago y entrega",
+      "p1": "Los precios, contenidos, métodos de pago y tiempos de facturación se muestran durante el proceso de compra. Purple o permisos se proporcionan inmediatamente (o dentro de un tiempo razonable) después del pago.",
+      "li1": "Los pagos pueden procesarse a través de proveedores de servicios de pago de terceros.",
+      "li2": "El historial de compras y los detalles de pago se pueden verificar en el servicio o en el recibo de pago.",
+      "li3": "Para obtener información detallada sobre precios, consulte la página de precios."
+    },
+    "section4": {
+      "title": "4. Retiro (reembolsos) y excepciones",
+      "p1": "El contenido digital/moneda virtual puede estar disponible para su uso inmediatamente después de la provisión, y el retiro puede estar restringido dentro del alcance permitido por la ley. Sin embargo, se pueden proporcionar reembolsos o compensaciones en los siguientes casos:",
+      "li1": "Casos en los que hay una falla de la compañía (falta de entrega, entrega incorrecta, etc.)",
+      "li2": "Casos con razones legítimas (errores de pago, pagos duplicados, etc.)",
+      "li3": "Casos requeridos por la ley",
+      "li4": "Si Purple ya se ha consumido, el procesamiento puede excluir la porción consumida (dentro del alcance no restringido por la ley).",
+      "li5": "Para políticas de reembolso detalladas, consulte la página de política de reembolso."
+    },
+    "section5": {
+      "title": "5. Pagos de menores",
+      "p1": "Los pagos realizados por menores pueden requerir el consentimiento del tutor legal, y las solicitudes de cancelación (reembolso) pueden ser posibles según la ley."
+    },
+    "section6": {
+      "title": "6. Restricciones de uso y recuperación",
+      "p1": "Si se confirman pagos fraudulentos, piratería/abuso o violaciones de los términos, podemos recuperar Purple/permisos otorgados o restringir el uso de la cuenta según las leyes aplicables y las políticas del servicio."
+    }
   }
 }
