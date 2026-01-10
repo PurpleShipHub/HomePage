@@ -145,44 +145,16 @@
       "p1": "Chúng tôi có thể sửa đổi các điều khoản này do thay đổi pháp luật hoặc dịch vụ và sẽ cung cấp thông báo trước hợp lý cho các cập nhật quan trọng."
     },
     "section7": {
-      "title": "7. Dịch Vụ Trả Phí và Thanh Toán (WorldCanvas)",
-      "intro": "Phần này nêu ra các điều khoản bổ sung để mua và sử dụng sản phẩm trả phí và tiền tệ ảo (Purple) trong WorldCanvas.",
-      "definitions": {
-        "title": "7.1 Định Nghĩa",
-        "d1": "\"Sản phẩm trả phí\" có nghĩa là nội dung kỹ thuật số, quyền hoặc tiền tệ ảo được cung cấp thông qua thanh toán.",
-        "d2": "\"Purple\" đề cập đến tiền tệ ảo (điểm/tín dụng) có thể sử dụng trong các dịch vụ WorldCanvas, không thể đổi lấy tiền mặt.",
-        "d3": "\"Tiêu thụ\" có nghĩa là sử dụng Purple để mua chức năng/vật phẩm hoặc tăng giới hạn sử dụng."
-      },
-      "usage": {
-        "title": "7.2 Sử Dụng Purple",
-        "p1": "Người dùng có thể mua Purple để sử dụng các tính năng trong WorldCanvas. Các mục đích sử dụng cụ thể được hiển thị trong giao diện dịch vụ.",
-        "li1": "Ví dụ: Mở rộng màu bảng màu (ô bảng màu)",
-        "li2": "Ví dụ: Tăng \"giới hạn đặt pixel\" cho việc đặt pixel hàng loạt",
-        "li3": "Ví dụ: Các vật phẩm/tính năng trả phí khác (có thể được thêm vào trong tương lai)"
-      },
-      "payment": {
-        "title": "7.3 Thanh Toán và Giao Hàng",
-        "p1": "Giá cả, nội dung, phương thức thanh toán và thời gian thanh toán được hiển thị trong quá trình mua hàng. Purple hoặc quyền được cung cấp ngay lập tức (hoặc trong thời gian hợp lý) sau khi thanh toán.",
-        "li1": "Thanh toán có thể được xử lý thông qua các nhà cung cấp dịch vụ thanh toán bên thứ ba.",
-        "li2": "Lịch sử mua hàng và chi tiết thanh toán có thể được xác minh trong dịch vụ hoặc biên lai thanh toán.",
-        "li3": "Để biết thông tin chi tiết về giá cả, vui lòng tham khảo trang bảng giá."
-      },
-      "refund": {
-        "title": "7.4 Rút Tiền (Hoàn Tiền) và Ngoại Lệ",
-        "p1": "Nội dung kỹ thuật số/tiền tệ ảo có thể sẵn sàng để sử dụng ngay khi được cung cấp, và việc rút tiền có thể bị hạn chế trong phạm vi được pháp luật cho phép. Tuy nhiên, hoàn tiền hoặc bồi thường có thể được cung cấp trong các trường hợp sau:",
-        "li1": "Các trường hợp có lỗi của công ty (không giao hàng, giao sai hàng, v.v.)",
-        "li2": "Các trường hợp có lý do hợp lý (lỗi thanh toán, thanh toán trùng lặp, v.v.)",
-        "li3": "Các trường hợp được yêu cầu bởi pháp luật",
-        "li4": "Nếu Purple đã được tiêu thụ, xử lý có thể loại trừ phần đã tiêu thụ (trong phạm vi không bị pháp luật hạn chế).",
-        "li5": "Để biết chính sách hoàn tiền chi tiết, vui lòng tham khảo trang chính sách hoàn tiền."
-      },
-      "minors": {
-        "title": "7.5 Thanh Toán của Trẻ Vị Thành Niên",
-        "p1": "Việc thanh toán của trẻ vị thành niên có thể yêu cầu sự đồng ý của người giám hộ hợp pháp, và yêu cầu hủy bỏ (hoàn tiền) có thể thực hiện được theo pháp luật."
-      },
-      "restriction": {
-        "title": "7.6 Hạn Chế Sử Dụng và Thu Hồi",
-        "p1": "Nếu thanh toán gian lận, hack/lạm dụng, hoặc vi phạm điều khoản được xác nhận, chúng tôi có thể thu hồi Purple/quyền đã cấp hoặc hạn chế sử dụng tài khoản theo pháp luật và chính sách dịch vụ áp dụng."
+      "title": "7. Dịch vụ trả phí và thanh toán",
+      "p1": "Phần này thiết lập các nguyên tắc cơ bản thường áp dụng cho các dịch vụ trả phí do Purpleship cung cấp.",
+      "li1": "Thanh toán được xử lý thông qua các nhà cung cấp dịch vụ thanh toán bên thứ ba đáng tin cậy.",
+      "li2": "Đối với các chính sách hoàn tiền, vui lòng tham khảo trang Chính sách hoàn tiền riêng biệt.",
+      "li3": "Các điều khoản mua hàng cụ thể, tiền tệ ảo và chi tiết cung cấp cho mỗi dịch vụ được điều chỉnh bởi các điều khoản mua hàng của dịch vụ đó, có quyền ưu tiên hơn các điều khoản này.",
+      "p2": "Điều khoản mua hàng theo dịch vụ:",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Các điều khoản chi tiết để mua sản phẩm trả phí và tiền tệ ảo (Purple) trong WorldCanvas.",
+        "link": "Xem điều khoản mua hàng →"
       }
     }
   },
@@ -262,8 +234,8 @@
       "p1": "Để xử lý ngay lập tức, vui lòng cung cấp địa chỉ email được sử dụng để mua hàng và thông tin thanh toán khi yêu cầu hoàn tiền."
     },
     "section4": {
-      "title": "4. Giới Hạn Hoàn Tiền",
-      "li1": "Nếu tiền tệ ảo (Purple) đã được sử dụng, hoàn tiền có thể không bao gồm phần đã tiêu thụ.",
+      "title": "4. Hạn chế hoàn tiền sau 14 ngày",
+      "li1": "Sau khoảng thời gian 14 ngày, nếu tiền tệ ảo (Purple) đã được sử dụng, hoàn tiền có thể được xử lý loại trừ phần đã sử dụng.",
       "li2": "Thời gian xử lý hoàn tiền có thể khác nhau tùy theo phương thức thanh toán. (Thanh toán bằng thẻ: đến 120 ngày, PayPal: đến 179 ngày)",
       "li3": "Hoàn tiền có thể bị từ chối trong trường hợp thanh toán gian lận, lạm dụng hoặc vi phạm điều khoản."
     },

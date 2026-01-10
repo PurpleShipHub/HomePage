@@ -188,44 +188,16 @@
       "p1": "Wir können diese Bedingungen aufgrund rechtlicher oder dienstlicher Änderungen überarbeiten und werden für wichtige Aktualisierungen eine angemessene Vorankündigung bereitstellen."
     },
     "section7": {
-      "title": "7. Bezahldienste und Zahlungen (WorldCanvas)",
-      "intro": "Dieser Abschnitt legt zusätzliche Bedingungen für den Kauf und die Nutzung von kostenpflichtigen Produkten und virtueller Währung (Purple) in WorldCanvas fest.",
-      "definitions": {
-        "title": "7.1 Definitionen",
-        "d1": "„Kostenpflichtige Produkte“ bedeuten digitale Inhalte, Berechtigungen oder virtuelle Währung, die durch Zahlung bereitgestellt werden.",
-        "d2": "„Purple“ bezieht sich auf virtuelle Währung (Punkte/Credits), die innerhalb der WorldCanvas-Dienste verwendet werden kann und nicht gegen Bargeld eingetauscht werden kann.",
-        "d3": "„Verbrauch“ bedeutet die Verwendung von Purple zum Kauf von Funktionen/Artikeln oder zur Erhöhung von Nutzungsgrenzen."
-      },
-      "usage": {
-        "title": "7.2 Purple-Nutzung",
-        "p1": "Benutzer können Purple kaufen, um Funktionen in WorldCanvas zu nutzen. Spezifische Verwendungen werden in der Dienst-Oberfläche angezeigt.",
-        "li1": "Beispiel: Palettenfarbenerweiterung (Palettenslot)",
-        "li2": "Beispiel: Erhöhung des „Pixel-Platzierungslimits“ für die Massenplatzierung von Pixeln",
-        "li3": "Beispiel: Andere kostenpflichtige Artikel/Funktionen (können in Zukunft hinzugefügt werden)"
-      },
-      "payment": {
-        "title": "7.3 Zahlung und Lieferung",
-        "p1": "Preise, Inhalte, Zahlungsmethoden und Abrechnungszeiten werden während des Kaufprozesses angezeigt. Purple oder Berechtigungen werden unmittelbar (oder innerhalb einer angemessenen Zeit) nach der Zahlung bereitgestellt.",
-        "li1": "Zahlungen können über Drittanbieter-Zahlungsdienstleister abgewickelt werden.",
-        "li2": "Kaufhistorie und Zahlungsdetails können im Dienst oder auf der Zahlungsquittung überprüft werden.",
-        "li3": "Detaillierte Preisinformationen finden Sie auf der Preisseite."
-      },
-      "refund": {
-        "title": "7.4 Widerruf (Rückerstattungen) und Ausnahmen",
-        "p1": "Digitale Inhalte/virtuelle Währung können unmittelbar nach Bereitstellung zur Nutzung verfügbar sein, und der Widerruf kann im gesetzlich zulässigen Rahmen eingeschränkt sein. In den folgenden Fällen können jedoch Rückerstattungen oder Entschädigungen gewährt werden:",
-        "li1": "Fälle, in denen ein Verschulden des Unternehmens vorliegt (Nicht-Lieferung, falsche Lieferung usw.)",
-        "li2": "Fälle mit berechtigten Gründen (Zahlungsfehler, Doppelzahlungen usw.)",
-        "li3": "Gesetzlich vorgeschriebene Fälle",
-        "li4": "Wenn Purple bereits verbraucht wurde, kann die Bearbeitung den verbrauchten Teil ausschließen (im gesetzlich nicht eingeschränkten Rahmen).",
-        "li5": "Detaillierte Rückerstattungsrichtlinien finden Sie auf der Rückerstattungsrichtlinienseite."
-      },
-      "minors": {
-        "title": "7.5 Zahlungen von Minderjährigen",
-        "p1": "Zahlungen von Minderjährigen können die Zustimmung des gesetzlichen Vormunds erfordern, und Stornierungsanträge (Rückerstattung) können nach Gesetz möglich sein."
-      },
-      "restriction": {
-        "title": "7.6 Nutzungsbeschränkungen und Wiederherstellung",
-        "p1": "Wenn betrügerische Zahlungen, Hacking/Missbrauch oder Verstöße gegen die Bedingungen bestätigt werden, können wir gewährtes Purple/Berechtigungen zurückfordern oder die Kontonutzung gemäß den geltenden Gesetzen und Dienstrichtlinien einschränken."
+      "title": "7. Bezahlte Dienste und Zahlung",
+      "p1": "Dieser Abschnitt legt die grundlegenden Prinzipien fest, die allgemein für bezahlte Dienste gelten, die von Purpleship bereitgestellt werden.",
+      "li1": "Zahlungen werden über vertrauenswürdige Drittanbieter-Zahlungsdienstleister abgewickelt.",
+      "li2": "Für Rückerstattungsrichtlinien beziehen Sie sich bitte auf die separate Rückerstattungsrichtlinie-Seite.",
+      "li3": "Spezifische Kaufbedingungen, virtuelle Währung und Bereitstellungsdetails für jeden Dienst unterliegen den Kaufbedingungen dieses Dienstes, die Vorrang vor diesen Bedingungen haben.",
+      "p2": "Kaufbedingungen nach Dienst:",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Detaillierte Bedingungen für den Kauf von kostenpflichtigen Produkten und virtueller Währung (Purple) in WorldCanvas.",
+        "link": "Kaufbedingungen ansehen →"
       }
     }
   },
@@ -305,8 +277,8 @@
       "p1": "Für eine sofortige Bearbeitung geben Sie bitte bei der Rückerstattungsanfrage die für den Kauf verwendete E-Mail-Adresse und Zahlungsinformationen an."
     },
     "section4": {
-      "title": "4. Rückerstattungsbeschränkungen",
-      "li1": "Wenn virtuelle Währung (Purple) bereits verwendet wurde, kann die Rückerstattung den verbrauchten Teil ausschließen.",
+      "title": "4. Rückerstattungsbeschränkungen nach 14 Tagen",
+      "li1": "Nach der 14-Tage-Frist können Rückerstattungen unter Ausschluss des verwendeten Teils verarbeitet werden, wenn virtuelle Währung (Purple) bereits verwendet wurde.",
       "li2": "Die Bearbeitungszeit der Rückerstattung kann je nach Zahlungsmethode variieren. (Kartenzahlungen: bis zu 120 Tage, PayPal: bis zu 179 Tage)",
       "li3": "Rückerstattungen können bei betrügerischen Zahlungen, Missbrauch oder Verstößen gegen die Bedingungen abgelehnt werden."
     },

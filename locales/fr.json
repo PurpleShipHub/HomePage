@@ -188,44 +188,16 @@
       "p1": "Nous pouvons réviser ces conditions en raison de changements légaux ou de service et fournirons un préavis raisonnable pour les mises à jour importantes."
     },
     "section7": {
-      "title": "7. Services payants et paiements (WorldCanvas)",
-      "intro": "Cette section définit des conditions supplémentaires pour l'achat et l'utilisation de produits payants et de monnaie virtuelle (Purple) dans WorldCanvas.",
-      "definitions": {
-        "title": "7.1 Définitions",
-        "d1": "« Produits payants » désigne le contenu numérique, les autorisations ou la monnaie virtuelle fournis par paiement.",
-        "d2": "« Purple » fait référence à la monnaie virtuelle (points/crédits) utilisable dans les services WorldCanvas, qui ne peut pas être échangée contre de l'argent.",
-        "d3": "« Consommation » signifie utiliser Purple pour acheter des fonctions/articles ou augmenter les limites d'utilisation."
-      },
-      "usage": {
-        "title": "7.2 Utilisation de Purple",
-        "p1": "Les utilisateurs peuvent acheter Purple pour utiliser des fonctionnalités dans WorldCanvas. Les utilisations spécifiques sont affichées dans l'interface du service.",
-        "li1": "Exemple : Extension de couleur de palette (emplacement de palette)",
-        "li2": "Exemple : Augmentation de la « limite de placement de pixels » pour le placement en masse de pixels",
-        "li3": "Exemple : Autres articles/fonctionnalités payants (peuvent être ajoutés à l'avenir)"
-      },
-      "payment": {
-        "title": "7.3 Paiement et livraison",
-        "p1": "Les prix, contenus, méthodes de paiement et temps de facturation sont affichés pendant le processus d'achat. Purple ou les autorisations sont fournis immédiatement (ou dans un délai raisonnable) après le paiement.",
-        "li1": "Les paiements peuvent être traités par des prestataires de services de paiement tiers.",
-        "li2": "L'historique des achats et les détails de paiement peuvent être vérifiés dans le service ou sur le reçu de paiement.",
-        "li3": "Pour des informations détaillées sur les prix, veuillez consulter la page des tarifs."
-      },
-      "refund": {
-        "title": "7.4 Retrait (remboursements) et exceptions",
-        "p1": "Le contenu numérique/la monnaie virtuelle peut être disponible immédiatement après la fourniture, et le retrait peut être restreint dans la mesure permise par la loi. Cependant, des remboursements ou des compensations peuvent être fournis dans les cas suivants :",
-        "li1": "Cas où il y a une faute de l'entreprise (non-livraison, livraison incorrecte, etc.)",
-        "li2": "Cas avec des raisons légitimes (erreurs de paiement, paiements en double, etc.)",
-        "li3": "Cas requis par la loi",
-        "li4": "Si Purple a déjà été consommé, le traitement peut exclure la portion consommée (dans la mesure non restreinte par la loi).",
-        "li5": "Pour les politiques de remboursement détaillées, veuillez consulter la page de politique de remboursement."
-      },
-      "minors": {
-        "title": "7.5 Paiements de mineurs",
-        "p1": "Les paiements effectués par des mineurs peuvent nécessiter le consentement du tuteur légal, et les demandes d'annulation (remboursement) peuvent être possibles selon la loi."
-      },
-      "restriction": {
-        "title": "7.6 Restrictions d'utilisation et récupération",
-        "p1": "Si des paiements frauduleux, du piratage/abus ou des violations des conditions sont confirmés, nous pouvons récupérer Purple/autorisations accordés ou restreindre l'utilisation du compte selon les lois applicables et les politiques du service."
+      "title": "7. Services payants et paiement",
+      "p1": "Cette section établit les principes de base qui s'appliquent généralement aux services payants fournis par Purpleship.",
+      "li1": "Les paiements sont traités par des prestataires de services de paiement tiers fiables.",
+      "li2": "Pour les politiques de remboursement, veuillez consulter la page Politique de remboursement séparée.",
+      "li3": "Les conditions d'achat spécifiques, la devise virtuelle et les détails de fourniture de chaque service sont régis par les conditions d'achat de ce service, qui prévalent sur ces conditions.",
+      "p2": "Conditions d'achat par service:",
+      "worldcanvas": {
+        "title": "WorldCanvas",
+        "desc": "Conditions détaillées pour l'achat de produits payants et de devise virtuelle (Purple) dans WorldCanvas.",
+        "link": "Voir les conditions d'achat →"
       }
     }
   },
@@ -305,8 +277,8 @@
       "p1": "Pour un traitement immédiat, veuillez fournir l'adresse e-mail utilisée pour l'achat et les informations de paiement lors de la demande de remboursement."
     },
     "section4": {
-      "title": "4. Limitations de remboursement",
-      "li1": "Si la monnaie virtuelle (Purple) a déjà été utilisée, le remboursement peut exclure la partie consommée.",
+      "title": "4. Restrictions de remboursement après 14 jours",
+      "li1": "Après la période de 14 jours, si la devise virtuelle (Purple) a déjà été utilisée, les remboursements peuvent être traités en excluant la partie utilisée.",
       "li2": "Le délai de traitement du remboursement peut varier selon le mode de paiement. (Paiements par carte : jusqu'à 120 jours, PayPal : jusqu'à 179 jours)",
       "li3": "Les remboursements peuvent être refusés en cas de paiements frauduleux, d'abus ou de violations des conditions."
     },
