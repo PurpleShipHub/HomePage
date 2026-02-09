@@ -1,10 +1,7 @@
 {
   "title": "Purpleship",
   "nav": {
-    "apps": "Продукт",
-    "privacy": "Политика конфиденциальности",
-    "terms": "Условия использования",
-    "refund": "Политика возврата"
+    "apps": "Продукт"
   },
   "navMenu": {
     "movit": "Movit",
@@ -55,8 +52,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Все права защищены.",
-      "contact": "Контакт: captain@purpleship.io",
-      "privacy": "Политика конфиденциальности"
+      "contact": "Контакт: captain@purpleship.io"
     }
   },
   "vision": {
@@ -77,11 +73,7 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Все права защищены.",
     "contact": "Контакт: captain@purpleship.io",
-    "privacy": "Политика Конфиденциальности",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
+    "pricing": "Pricing"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -117,11 +109,7 @@
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
       "contact": "Contact: captain@purpleship.io",
-      "privacy": "Privacy Policy",
-      "termsConditions": "Terms & Conditions",
-      "refund": "Refund Policy",
-      "pricing": "Pricing",
-      "terms": "WorldCanvas Purchase Terms"
+      "pricing": "Pricing"
     }
   },
   "qroom": {
@@ -147,155 +135,13 @@
       "try": "Использовать"
     }
   },
-  "termsPage": {
-    "brand": "Purpleship",
-    "title": "Условия использования Purpleship",
-    "subtitle": "Эти условия регулируют использование веб-сайта Purpleship и связанных услуг.",
-    "effectiveDate": "Дата вступления в силу: 15 декабря 2025 г.",
-    "backToHome": "← Вернуться на главную",
-    "nav": {
-      "privacy": "Политика конфиденциальности",
-      "refund": "Политика возврата",
-      "pricing": "Цены"
-    },
-    "section1": {
-      "title": "1. Информация о компании",
-      "li1": "Юридическое название: Purpleship",
-      "li2": "Контакт: captain@purpleship.io",
-      "li3": "Веб-сайт: purpleship.io"
-    },
-    "section2": {
-      "title": "2. Сфера применения",
-      "p1": "Эти условия применяются к веб-сайту Purpleship (далее «Компания») и связанным услугам. Если существуют специфические для услуги условия (например, платежи/виртуальная валюта), эти условия могут иметь приоритет."
-    },
-    "section3": {
-      "title": "3. Обязанности пользователя",
-      "li1": "Вы должны соблюдать применимые законы и эти условия.",
-      "li2": "Вы не должны наносить ущерб безопасности или стабильности сервиса (несанкционированный доступ, реверс-инжиниринг, злоупотребление и т.д.)."
-    },
-    "section4": {
-      "title": "4. Интеллектуальная собственность",
-      "p1": "Права на веб-сайт, контент и программное обеспечение принадлежат Компании или законным владельцам."
-    },
-    "section5": {
-      "title": "5. Отказ от ответственности и ограничение ответственности",
-      "p1": "В пределах, разрешенных законом, мы можем ограничить ответственность за косвенный или косвенный ущерб. Сервис может предоставляться «как есть»."
-    },
-    "section6": {
-      "title": "6. Изменения условий",
-      "p1": "Мы можем пересматривать эти условия из-за юридических или служебных изменений и предоставим разумное предварительное уведомление о важных обновлениях."
-    },
-    "section7": {
-      "title": "7. Платные услуги и оплата",
-      "p1": "Этот раздел устанавливает основные принципы, которые обычно применяются к платным услугам, предоставляемым Purpleship.",
-      "li1": "Платежи обрабатываются через надежных сторонних поставщиков платежных услуг.",
-      "li2": "Для политик возврата, пожалуйста, обратитесь к отдельной странице Политики возврата.",
-      "li3": "Конкретные условия покупки, виртуальная валюта и детали предоставления для каждой услуги регулируются условиями покупки этой услуги, которые имеют приоритет над этими условиями.",
-      "p2": "Условия покупки по услуге:",
-      "worldcanvas": {
-        "title": "WorldCanvas",
-        "desc": "Подробные условия покупки платных продуктов и виртуальной валюты (Purple) в WorldCanvas.",
-        "link": "Просмотреть условия покупки →"
-      }
-    }
-  },
-  "refundPage": {
-    "brand": "Purpleship",
-    "title": "Политика возврата Purpleship",
-    "subtitle": "Эта политика описывает правила возврата/отзыва для платных предметов и виртуальной валюты (например, Purple).",
-    "effectiveDate": "Дата вступления в силу: 10 января 2026 г.",
-    "backToHome": "← Вернуться на главную",
-    "nav": {
-      "terms": "Условия использования",
-      "privacy": "Политика конфиденциальности",
-      "pricing": "Цены"
-    },
-    "section1": {
-      "title": "1. Сфера применения",
-      "p1": "Эта политика применяется ко всем платным услугам, предоставляемым Purpleship, включая WorldCanvas. Все платежи обрабатываются Paddle.com в качестве Merchant of Record, обеспечивая безопасную обработку платежей и защиту прав потребителей."
-    },
-    "section2": {
-      "title": "2. 14-дневная гарантия возврата",
-      "highlight": "Вы можете запросить возврат в течение 14 дней с даты покупки без указания причин.",
-      "p1": "Период возврата истекает через 14 дней после даты завершения платежа. Чтобы уложиться в срок отмены, достаточно отправить запрос на возврат до истечения 14-дневного периода.",
-      "p2": "Эта гарантия возврата предназначена для защиты прав потребителей и применяется к первоначальным покупкам."
-    },
-    "section3": {
-      "title": "3. Дополнительные случаи возврата",
-      "intro": "Помимо 14-дневной гарантии возврата, возврат также может быть предоставлен в следующих случаях:",
-      "li1": "Недоставка или неправильная доставка по нашей вине",
-      "li2": "Законные причины, такие как двойные списания или ошибки оплаты",
-      "li3": "Когда возвраты требуются применимым законодательством"
-    },
-    "section4": {
-      "title": "4. Ограничения на возврат после 14 дней",
-      "li1": "По истечении 14-дневного периода, если виртуальная валюта (Purple) уже была использована, возврат может исключать использованную часть.",
-      "li2": "Цифровой контент/виртуальная валюта может быть предоставлена немедленно, и дополнительные ограничения могут применяться в пределах, разрешенных законом."
-    },
-    "section5": {
-      "title": "5. Как запросить возврат",
-      "intro": "Чтобы запросить возврат, воспользуйтесь одним из следующих способов:",
-      "li1": "Служба поддержки Paddle: Запросите возврат напрямую на paddle.net",
-      "li2": "Электронная почта: Свяжитесь с captain@purpleship.io с деталями покупки (квитанция/информация об оплате)",
-      "p1": "Для немедленной обработки при запросе возврата укажите адрес электронной почты, использованный при покупке, и платежную информацию.",
-      "p2": "Мы рассмотрим и ответим в разумные сроки. Время завершения возврата может варьироваться в зависимости от способа оплаты/поставщика."
-    },
-    "section6": {
-      "title": "6. Политики возврата для конкретных услуг",
-      "intro": "В зависимости от сервиса могут применяться различные политики возврата.",
-      "worldcanvas": {
-        "title": "WorldCanvas",
-        "desc": "Дополнительные сведения о покупках WorldCanvas и обработке платежей Paddle.",
-        "link": "Подробнее →"
-      }
-    }
-  },
-  "worldcanvasRefundPage": {
-    "brand": "WorldCanvas",
-    "title": "Политика возврата WorldCanvas",
-    "subtitle": "Информация о возврате через платежную систему Paddle",
-    "effectiveDate": "Дата вступления в силу: 1 января 2026 г.",
-    "backToRefund": "← Вернуться к политике возврата",
-    "section1": {
-      "title": "1. Обработка платежей",
-      "p1": "Все платежи для WorldCanvas обрабатываются Paddle.com в качестве Merchant of Record (продавца). Paddle — авторизованный поставщик платежных услуг, который обрабатывает платежи, налоги и возвраты.",
-      "p2": "К покупкам применяются условия оплаты Paddle, квитанции и запросы по платежам обрабатываются через Paddle."
-    },
-    "section2": {
-      "title": "2. 14-дневная гарантия возврата",
-      "highlight": "Вы можете запросить возврат в течение 14 дней с даты покупки без указания причин.",
-      "p1": "Период возврата истекает через 14 дней после даты завершения платежа. Чтобы уложиться в срок отмены, достаточно отправить запрос на возврат до истечения 14-дневного периода.",
-      "p2": "Эта гарантия возврата предназначена для защиты прав потребителей и применяется к первоначальным покупкам."
-    },
-    "section3": {
-      "title": "3. Как запросить возврат",
-      "intro": "Чтобы запросить возврат, воспользуйтесь одним из следующих способов:",
-      "li1": "Служба поддержки Paddle: Запросите возврат напрямую на paddle.net",
-      "li2": "Электронная почта: Свяжитесь с captain@purpleship.io с деталями покупки (квитанция/информация об оплате)",
-      "p1": "Для немедленной обработки при запросе возврата укажите адрес электронной почты, использованный при покупке, и платежную информацию."
-    },
-    "section4": {
-      "title": "4. Ограничения на возврат средств после 14 дней",
-      "li1": "После 14-дневного периода, если виртуальная валюта (Purple) уже использована, возвраты могут быть обработаны за исключением использованной части.",
-      "li2": "Время обработки возврата может варьироваться в зависимости от способа оплаты. (Карточные платежи: до 120 дней, PayPal: до 179 дней)",
-      "li3": "Возврат может быть отклонен в случаях мошеннических платежей, злоупотреблений или нарушений условий."
-    },
-    "section5": {
-      "title": "5. Контакты",
-      "p1": "По дополнительным вопросам о возвратах и платежах свяжитесь с нами:"
-    }
-  },
   "pricingPage": {
     "brand": "Purpleship",
     "title": "Pricing",
     "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
     "lastUpdated": "Last updated: Dec 15, 2025",
     "backToHome": "← Back to Home",
-    "nav": {
-      "terms": "Terms & Conditions",
-      "refund": "Refund Policy",
-      "privacy": "Privacy Policy"
-    },
+    "nav": {},
     "plans": {
       "starter": {
         "title": "Starter",
@@ -318,143 +164,6 @@
       }
     },
     "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
-  },
-  "privacy": {
-    "title": "Privacy Policy",
-    "subtitle": "Purpleship Privacy Policy",
-    "backToHome": "← Back to Home",
-    "purchaseTerms": "WorldCanvas Purchase Terms",
-    "section1": {
-      "title": "1. Scope and Principles",
-      "content1": "This unified policy applies to Purpleship (the \"Company\") and all services we operate (e.g., Stampit, Movit, Qnote, WorldCanvas).",
-      "content2": "We collect only the minimum personal data needed to provide services. Any additional service-specific processing is described in the “Service-Specific Notices” and applies together with this policy."
-    },
-    "section2": {
-      "title": "2. Data We Collect and Purpose (Common)",
-      "intro": "We collect only what is necessary to deliver services and support users. Additional items, if any, are listed in the Service-Specific Notices below.",
-      "items": [
-        "Website visits: access logs, browser/OS information, service usage via cookies or similar tech (for analytics and service improvement)",
-        "Customer support: name, email address, and inquiry details received through support channels (e.g., email)",
-        "Technical logs: error logs and device information (model, OS version, etc.) for stability analysis"
-      ],
-      "analytics": {
-        "title": "2.1 Web/App Analytics Tools",
-        "content": "We may use analytics tools such as Google Analytics to collect anonymized usage statistics. IP anonymization or similar techniques are applied, and we do not directly identify individuals. You can opt out via your browser or the tool settings."
-      }
-    },
-    "section3": {
-      "title": "3. Retention and Storage Period",
-      "items": [
-        "We retain data only for the minimum period required by law or our policies, then destroy it without delay.",
-        "Access logs: retained for 3 months per legal requirements and then deleted automatically.",
-        "Customer inquiries: retained for 3 years after completion for dispute resolution, then deleted.",
-        "Account and service data: deleted without delay upon purpose fulfillment or account deletion, or kept only for the legally mandated period (see Service-Specific Notices).",
-        "Analytics data: kept only in a de-identified, statistical form."
-      ]
-    },
-    "section4": {
-      "title": "4. Third-Party Sharing and Overseas Transfer",
-      "content": "We do not provide personal data to third parties, except in the following cases:",
-      "items": [
-        "When the user has given explicit prior consent",
-        "When required by law or a legitimate request from authorities"
-      ],
-      "ga": "When using Google Analytics, data may be transferred to servers outside your country (e.g., the United States) and is subject to Google’s privacy policy and safeguards."
-    },
-    "section5": {
-      "title": "5. Outsourcing of Processing",
-      "content": "We may entrust certain operations to external partners. Contracts include security controls, restrictions on re-entrustment, and supervision obligations. Current delegates are:",
-      "items": [
-        "Service analytics: Google LLC (Google Analytics) – Storage location: Global/US; Purpose: usage statistics and quality improvement; Retention: per Google policy",
-        "User-initiated backup/sync: Apple iCloud Drive, Google Drive, etc., to the user’s own account – the Company cannot access backed-up data."
-      ]
-    },
-    "section6": {
-      "title": "6. Your Rights and How to Exercise Them",
-      "content": "You may exercise the rights below at any time, and we will act without undue delay:",
-      "items": [
-        "Withdraw consent: change or revoke permissions (e.g., location, notifications) via service or device settings.",
-        "Request access, correction, deletion, or restriction of processing by contacting us or using in-service settings where provided.",
-        "Delete on-device data and disable cloud backups.",
-        "Seek relief through official channels such as a privacy regulator or dispute mediation body."
-      ]
-    },
-    "section7": {
-      "title": "7. Safeguards",
-      "content": "We apply the following safeguards to protect personal data:",
-      "items": [
-        "Access control based on least privilege and access log management",
-        "Encryption for data in transit and at rest, with secure key management",
-        "Regular security patches and vulnerability checks",
-        "Training and audits for personnel handling personal data",
-        "Use of OS-level secure storage and device locks for on-device data"
-      ]
-    },
-    "section8": {
-      "title": "8. Service-Specific Notices",
-      "intro": "Additional processing details that apply depending on each service are as follows:",
-      "note": "We avoid collecting unnecessary personal data and collect only what is needed. Use the buttons below to view each service’s details.",
-      "toggle": {
-        "open": "View details",
-        "close": "Hide details"
-      },
-      "stampit": {
-        "title": "Stampit (Membership Management)",
-        "summary": "Membership/coupon usage tracking; data is stored locally on the user’s device by default.",
-        "items": [
-          "Data collected: store/membership names, stamp/visit records, notification settings",
-          "Storage: kept locally on your device and not transmitted to Company servers.",
-          "Backup/Sync: if you choose, data can be backed up to your personal iCloud/Google Drive; the Company cannot access this data.",
-          "Optional permissions: notifications and calendar access are used to provide visit/expiry reminders and are optional."
-        ]
-      },
-      "movit": {
-        "title": "Movit (Movement Logs)",
-        "summary": "Movement logs and favorites; default storage is on the user’s device.",
-        "items": [
-          "Data collected: movement routes, location/traffic data when you enable the feature, favorite places",
-          "Storage: stored on your device by default and not sent to Company servers.",
-          "Backup/Sync: backed up to your personal cloud (e.g., Google Drive) only when you explicitly request it.",
-          "Optional permissions: location (including background) and notification permissions may be used for route logging/alerts; collection stops when you disable them.",
-          "When using third-party map/location SDKs for navigation, the provider’s policy also applies."
-        ]
-      },
-      "qnote": {
-        "title": "Qnote (Notes/Checklists)",
-        "summary": "Notes/checklists are stored locally by default.",
-        "items": [
-          "Data collected: notes, checklists, tags, attachments you create",
-          "Storage: stored locally on your device and not transmitted to Company servers.",
-          "Backup/Sync: if you choose, data can be saved to your personal cloud or exported as files; the Company cannot access the content.",
-          "Optional permissions: notifications and file/photo access are requested only when you use those features."
-        ]
-      },
-      "worldcanvas": {
-        "title": "WorldCanvas (Collaborative Canvas)",
-        "summary": "Google sign-in based collaborative canvas; minimal data is collected for account identification and sync.",
-        "items": [
-          "Sign-up/Login: uses Google OAuth. Google account identifier (ID) and email are stored in our DB to create and identify your account for sign-in.",
-          "Auth tokens are used only to maintain/refresh the login session and are discarded on expiration or logout.",
-          "Service data: canvases, boards, comments, and attachments you create/upload are stored in our servers/DB to provide sync and recovery.",
-          "Collaboration/Sharing: collaborator emails/identifiers you invite may be processed to manage invitations and permissions.",
-          "Optional permissions: file/image upload and notifications are requested only when you use those features; declining limits the optional features only.",
-          "Deletion and retention: upon account deletion or service withdrawal, account data and service content are deleted without delay or after any legally required retention. Backups are purged on a rolling basis."
-        ]
-      },
-      "update": "We will add a separate notice in this section when launching new services or features."
-    },
-    "section9": {
-      "title": "9. Data Protection Officer",
-      "officer": "Data Protection Officer: Purpleship Operations Team",
-      "contact": "Contact: captain@purpleship.io",
-      "report": "For privacy complaints, you may also contact your local authority or privacy regulator."
-    },
-    "section10": {
-      "title": "10. Changes to This Policy",
-      "content": "When laws, services, or internal policies change, we will announce updates at least 7 days before they take effect via this website or in-app notice."
-    },
-    "effectiveDate": "Effective date: Feb 7, 2025",
-    "lastModified": "Last modified: Feb 7, 2025"
   },
   "stampit": {
     "title": "Stampit",
@@ -502,209 +211,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Все права защищены.",
-      "contact": "Контакт: captain@purpleship.io",
-      "privacy": "Политика конфиденциальности"
-    }
-  },
-  "worldcanvasTerms": {
-    "title": "WorldCanvas Purchase Terms",
-    "subtitle": "Terms for purchasing and using paid items and virtual currency (Purple) in WorldCanvas.",
-    "effectiveDate": "Effective date: Dec 14, 2025",
-    "backToHome": "← Back to Home",
-    "nav": {
-      "home": "Home",
-      "privacy": "Privacy Policy"
-    },
-    "section1": {
-      "title": "1. Purpose and Scope",
-      "p1": "These terms govern the purchase, use, and refund (including withdrawal) of paid items and the virtual currency Purple provided in the WorldCanvas web service."
-    },
-    "section2": {
-      "title": "2. Definitions",
-      "d1": "\"Service\" means the WorldCanvas web service and related features.",
-      "d2": "\"Paid items\" means digital content, entitlements, virtual currency, and similar items provided in exchange for payment.",
-      "d3": "\"Purple\" means virtual currency (points/credits) usable within the Service and is not exchangeable for cash.",
-      "d4": "\"Consumption\" means using Purple to purchase features/items or to increase usage limits."
-    },
-    "section3": {
-      "title": "3. Purple and Where It Can Be Used",
-      "p1": "You may purchase Purple to use features within the Service. Specific use cases follow what is shown in the Service UI.",
-      "li1": "Example: expand palette colors (palette slots)",
-      "li2": "Example: increase the limit for stamping pixels \"at once\" (bulk-stamp limit expansion)",
-      "li3": "Example: other paid items/features (may be added later)"
-    },
-    "section4": {
-      "title": "4. Payment and Delivery",
-      "p1": "Pricing, entitlements, payment methods, and billing timing follow what is displayed during checkout. After successful payment, Purple or the relevant entitlement will be delivered immediately (or within a reasonable time).",
-      "li1": "Payments may be processed through a third-party payment provider.",
-      "li2": "You may verify purchase and delivery details in the Service or via your payment receipt."
-    },
-    "section5": {
-      "title": "5. Refunds (Withdrawal) and Exceptions",
-      "p1": "Digital content/virtual currency may be made available immediately upon purchase, and withdrawal may be limited to the extent permitted by applicable law. However, we provide refunds or remedies within a reasonable scope in the cases below.",
-      "li1": "When non-delivery or mis-delivery occurs due to our fault",
-      "li2": "When there is a valid reason such as payment errors or duplicate charges",
-      "li3": "When a refund is required by applicable law",
-      "li4": "If Purple has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
-    },
-    "section6": {
-      "title": "6. Minors",
-      "p1": "If a minor makes a purchase, consent from a legal guardian may be required, and cancellation/refund may be available as provided by law."
-    },
-    "section7": {
-      "title": "7. Restrictions and Reversal",
-      "p1": "If fraudulent payment, hacking/abuse, or violations are detected, we may revoke Purple/entitlements or restrict account access in accordance with applicable law and service policies."
-    },
-    "section8": {
-      "title": "8. Changes to These Terms",
-      "p1": "We may revise these terms due to legal or service changes. Material changes will be announced with reasonable prior notice via the website or in-service notice."
-    },
-    "section9": {
-      "title": "9. Contact",
-      "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
-    }
-  },
-  "privacyPage": {
-    "brand": "Purpleship",
-    "title": "Политика конфиденциальности Purpleship",
-    "subtitle": "Политика в отношении сбора, использования и управления персональными данными для сервисов Purpleship.",
-    "effectiveDate": "Дата вступления в силу: 7 февраля 2025 г.",
-    "backToHome": "← Вернуться на главную",
-    "section1": {
-      "title": "1. Область применения и основные принципы",
-      "p1": "Данная политика применяется к Purpleship (далее \"Компания\") и всем сервисам, управляемым Компанией (например, Stampit, Movit, Qnote, WorldCanvas и др.).",
-      "p2": "Компания собирает только минимально необходимые персональные данные для предоставления услуг. Специфические требования каждого сервиса указаны отдельно в разделе \"Уведомления для отдельных сервисов\"."
-    },
-    "section2": {
-      "title": "2. Собираемая информация и цели использования (Общие)",
-      "intro": "Компания собирает только минимально необходимую информацию для предоставления услуг и поддержки клиентов.",
-      "li1": "Использование веб-сайта: Журналы доступа, информация о браузере/ОС, история использования через cookies и аналогичные технологии (для статистики и улучшения сервиса)",
-      "li2": "Обработка запросов: Имя, email и содержание запроса, полученные через каналы связи (email и т.д.)",
-      "li3": "Технические журналы: Журналы ошибок, информация об устройстве (модель, версия ОС и т.д.) для анализа стабильности",
-      "analytics": {
-        "title": "2.1 Инструменты веб/приложений аналитики",
-        "p1": "Мы можем собирать анонимизированную статистику использования с помощью аналитических инструментов, таких как Google Analytics. Мы применяем анонимизацию IP и не идентифицируем лиц напрямую."
-      }
-    },
-    "section3": {
-      "title": "3. Срок хранения и использования персональных данных",
-      "li1": "Данные хранятся только в течение минимального периода, требуемого законом или внутренней политикой, и затем незамедлительно уничтожаются.",
-      "li2": "Журналы доступа: Хранятся 3 месяца в соответствии с Законом о защите тайны связи, затем автоматически уничтожаются.",
-      "li3": "Записи запросов: Хранятся 3 года после разрешения для подготовки к спорам, затем уничтожаются.",
-      "li4": "Данные аккаунта и сервиса: Удаляются незамедлительно по достижении цели или закрытии аккаунта."
-    },
-    "section4": {
-      "title": "4. Предоставление третьим лицам и международная передача",
-      "p1": "В принципе, Компания не предоставляет персональные данные пользователей третьим лицам. Однако данные могут быть предоставлены в исключительных случаях:",
-      "li1": "Когда пользователь дал предварительное явное согласие",
-      "li2": "Когда есть правовое основание или законный запрос от следственных органов"
-    },
-    "section5": {
-      "title": "5. Передача обработки персональных данных на аутсорсинг",
-      "p1": "Мы можем передавать работу внешним сторонам для поддержания качества сервиса и налагаем на подрядчиков обязательства по безопасности, ограничения на повторный аутсорсинг и обязанности по управлению/надзору.",
-      "li1": "Анализ использования сервиса: Google LLC (Google Analytics)",
-      "li2": "Резервное копирование/синхронизация по выбору пользователя: Apple iCloud Drive, Google Drive и т.д."
-    },
-    "section6": {
-      "title": "6. Права пользователей и способы их реализации",
-      "p1": "Пользователи могут реализовать следующие права в любое время, и Компания незамедлительно примет меры.",
-      "li1": "Отзыв согласия: Вы можете изменить или отозвать разрешения, такие как местоположение и уведомления, через настройки сервиса или устройства в любое время.",
-      "li2": "Запрос на доступ, исправление, удаление или приостановку: Вы можете обратиться в Компанию или управлять напрямую через предоставленные экраны/настройки.",
-      "li3": "Подача заявления на защиту через центры защиты персональных данных, комиссии по урегулированию споров и т.д."
-    },
-    "section7": {
-      "title": "7. Меры безопасности",
-      "p1": "Компания принимает следующие меры для обеспечения безопасности персональных данных:",
-      "li1": "Минимизация прав доступа и управление журналами доступа",
-      "li2": "Шифрование и управление ключами для передачи и хранения",
-      "li3": "Регулярные патчи безопасности и проверки уязвимостей",
-      "li4": "Обучение и проверка для обработчиков персональных данных"
-    },
-    "section8": {
-      "title": "8. Уведомления для отдельных сервисов",
-      "intro": "Ниже приведены дополнительные сведения об обработке персональных данных для каждого сервиса.",
-      "stampit": {
-        "title": "Stampit (Управление членством)",
-        "summary": "Приложение для управления членством и использованием купонов. Данные по умолчанию хранятся локально на устройстве.",
-        "li1": "Собираемая информация: Название магазина/членства, записи штампов/посещений, настройки уведомлений",
-        "li2": "Место хранения: Хранится локально на устройстве пользователя и не передается на серверы Компании.",
-        "li3": "Резервное копирование/Синхронизация: При выборе пользователем сохраняется в формате файла в личный iCloud/Google Drive."
-      },
-      "movit": {
-        "title": "Movit (Записи передвижений)",
-        "summary": "Управляет записями передвижений и избранным. Место хранения по умолчанию — устройство пользователя.",
-        "li1": "Собираемая информация: Маршруты передвижения, информация о местоположении/трафике (при включении пользователем), избранные места",
-        "li2": "Место хранения: По умолчанию хранится локально на устройстве и не передается на серверы Компании.",
-        "li3": "Дополнительные разрешения: Разрешения на местоположение (включая фоновое), уведомления могут использоваться для записи передвижений и оповещений."
-      },
-      "qnote": {
-        "title": "Qnote (Заметки/Чек-листы)",
-        "summary": "Данные заметок/чек-листов по умолчанию хранятся локально на устройстве.",
-        "li1": "Собираемая информация: Заметки, чек-листы, теги, вложения, созданные пользователем",
-        "li2": "Место хранения: Хранится локально на устройстве и не передается на серверы Компании.",
-        "li3": "Резервное копирование/Синхронизация: При выборе пользователем сохраняется в личное облако или экспортируется как файлы."
-      },
-      "worldcanvas": {
-        "title": "WorldCanvas (Совместный холст)",
-        "summary": "Сервис совместного холста на основе входа через Google, который собирает и хранит минимальную информацию для идентификации аккаунта и синхронизации.",
-        "li1": "Регистрация/Аутентификация: Использует вход через Google OAuth. Идентификатор аккаунта Google (ID) и email хранятся в базе данных для создания аккаунта и идентификации при входе.",
-        "li2": "Данные сервиса: Холсты, доски, комментарии и вложения, созданные/загруженные пользователями, хранятся на серверах Компании (базе данных) для синхронизации и восстановления.",
-        "li3": "Удаление и хранение: Информация об аккаунте и данные сервиса удаляются незамедлительно при удалении аккаунта или выходе из сервиса."
-      }
-    },
-    "section9": {
-      "title": "9. Ответственный за конфиденциальность",
-      "officer": "Ответственный за конфиденциальность: Команда операций Purpleship",
-      "contact": "Контакт: captain@purpleship.io",
-      "report": "Сообщения о нарушении конфиденциальности: Доступно через Комиссию по защите персональных данных (privacy.go.kr) и другие соответствующие органы."
-    },
-    "section10": {
-      "title": "10. Изменения и уведомления Политики конфиденциальности",
-      "p1": "При изменении законов, содержания сервиса или внутренних политик мы уведомим вас об изменениях за 7 дней до вступления в силу через объявление на веб-сайте или уведомление в сервисе."
-    }
-  },
-  "worldcanvasTermsPage": {
-    "brand": "WorldCanvas",
-    "title": "Условия покупки WorldCanvas",
-    "subtitle": "Этот раздел устанавливает дополнительные условия покупки и использования платных продуктов и виртуальной валюты (Purple) в WorldCanvas.",
-    "effectiveDate": "Дата вступления в силу: 15 декабря 2025 г.",
-    "backToTerms": "← Вернуться к условиям",
-    "section1": {
-      "title": "1. Определения",
-      "d1": "«Платные продукты» означают цифровой контент, разрешения или виртуальную валюту, предоставляемые через оплату.",
-      "d2": "«Purple» относится к виртуальной валюте (баллы/кредиты), которая может использоваться в сервисах WorldCanvas и не может быть обменяна на наличные.",
-      "d3": "«Потребление» означает использование Purple для покупки функций/предметов или увеличения лимитов использования."
-    },
-    "section2": {
-      "title": "2. Использование Purple",
-      "p1": "Пользователи могут приобрести Purple для использования функций в WorldCanvas. Конкретные варианты использования отображаются в интерфейсе сервиса.",
-      "li1": "Пример: расширение цвета палитры (слот палитры)",
-      "li2": "Пример: увеличение «лимита размещения пикселей» для массового размещения пикселей",
-      "li3": "Пример: другие платные предметы/функции (могут быть добавлены в будущем)"
-    },
-    "section3": {
-      "title": "3. Оплата и доставка",
-      "p1": "Цены, содержание, способы оплаты и время выставления счетов отображаются в процессе покупки. Purple или разрешения предоставляются немедленно (или в разумные сроки) после оплаты.",
-      "li1": "Платежи могут обрабатываться через сторонних поставщиков платежных услуг.",
-      "li2": "История покупок и детали платежа могут быть проверены в сервисе или в квитанции об оплате.",
-      "li3": "Для получения подробной информации о ценах см. страницу с ценами."
-    },
-    "section4": {
-      "title": "4. Отзыв (возвраты) и исключения",
-      "p1": "Цифровой контент/виртуальная валюта могут быть доступны для использования сразу после предоставления, и отзыв может быть ограничен в пределах, разрешенных законом. Однако возвраты или компенсации могут быть предоставлены в следующих случаях:",
-      "li1": "Случаи, когда есть вина компании (недоставка, неправильная доставка и т.д.)",
-      "li2": "Случаи с законными причинами (ошибки оплаты, двойные платежи и т.д.)",
-      "li3": "Случаи, требуемые законом",
-      "li4": "Если Purple уже был потреблен, обработка может исключить потребленную часть (в пределах, не ограниченных законом).",
-      "li5": "Для получения подробной политики возврата см. страницу политики возврата."
-    },
-    "section5": {
-      "title": "5. Платежи несовершеннолетних",
-      "p1": "Платежи несовершеннолетних могут требовать согласия законного опекуна, и запросы на отмену (возврат) могут быть возможны в соответствии с законом."
-    },
-    "section6": {
-      "title": "6. Ограничения использования и восстановление",
-      "p1": "Если подтверждаются мошеннические платежи, взлом/злоупотребление или нарушения условий, мы можем восстановить предоставленные Purple/разрешения или ограничить использование аккаунта в соответствии с применимыми законами и политиками сервиса."
+      "contact": "Контакт: captain@purpleship.io"
     }
   }
 }

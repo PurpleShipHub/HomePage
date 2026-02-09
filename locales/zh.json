@@ -1,10 +1,7 @@
 {
   "title": "Purpleship",
   "nav": {
-    "apps": "产品",
-    "privacy": "隐私政策",
-    "terms": "服务条款",
-    "refund": "退款政策"
+    "apps": "产品"
   },
   "navMenu": {
     "movit": "Movit",
@@ -55,8 +52,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 版权所有。",
-      "contact": "联系方式：captain@purpleship.io",
-      "privacy": "隐私政策"
+      "contact": "联系方式：captain@purpleship.io"
     }
   },
   "vision": {
@@ -77,11 +73,7 @@
   "footer": {
     "copyright": "© 2025 Purpleship. 版权所有。",
     "contact": "联系方式：captain@purpleship.io",
-    "privacy": "隐私政策",
-    "termsConditions": "Terms & Conditions",
-    "refund": "Refund Policy",
-    "pricing": "Pricing",
-    "terms": "WorldCanvas Purchase Terms"
+    "pricing": "Pricing"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -117,11 +109,7 @@
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
       "contact": "Contact: captain@purpleship.io",
-      "privacy": "Privacy Policy",
-      "termsConditions": "Terms & Conditions",
-      "refund": "Refund Policy",
-      "pricing": "Pricing",
-      "terms": "WorldCanvas Purchase Terms"
+      "pricing": "Pricing"
     }
   },
   "qroom": {
@@ -147,155 +135,13 @@
       "try": "使用"
     }
   },
-  "termsPage": {
-    "brand": "Purpleship",
-    "title": "Purpleship 使用条款",
-    "subtitle": "本条款适用于 Purpleship 网站及相关服务的使用。",
-    "effectiveDate": "生效日期：2025年12月15日",
-    "backToHome": "← 返回首页",
-    "nav": {
-      "privacy": "隐私政策",
-      "refund": "退款政策",
-      "pricing": "价格"
-    },
-    "section1": {
-      "title": "1. 企业信息",
-      "li1": "法定名称：Purpleship",
-      "li2": "联系方式：captain@purpleship.io",
-      "li3": "网站：purpleship.io"
-    },
-    "section2": {
-      "title": "2. 适用范围",
-      "p1": "本条款适用于 Purpleship（以下简称\"公司\"）提供的网站及相关服务。如果特定服务有单独的条款（如支付/虚拟货币等），则该条款优先适用。"
-    },
-    "section3": {
-      "title": "3. 用户义务",
-      "li1": "您必须遵守相关法律法规和本条款。",
-      "li2": "不得进行损害服务安全/稳定性的行为（非法访问、逆向工程、滥用等）。"
-    },
-    "section4": {
-      "title": "4. 知识产权",
-      "p1": "网站及服务中包含的内容和软件的权利归公司或合法权利人所有。"
-    },
-    "section5": {
-      "title": "5. 免责与责任限制",
-      "p1": "在法律允许的范围内,公司可对间接损害、特殊损害等限制责任。服务可能\"按原样\"提供。"
-    },
-    "section6": {
-      "title": "6. 条款变更",
-      "p1": "公司可因法律或服务变更修订本条款，重要变更将提前合理时间通知。"
-    },
-    "section7": {
-      "title": "7. 付费服务和支付",
-      "p1": "本节规定了适用于Purpleship提供的付费服务的基本原则。",
-      "li1": "支付通过可信赖的第三方支付服务提供商处理。",
-      "li2": "有关退款政策，请参阅单独的退款政策页面。",
-      "li3": "每项服务的具体购买条件、虚拟货币、提供内容等由该服务的购买条款管辖，该条款优先于本条款。",
-      "p2": "服务购买条款:",
-      "worldcanvas": {
-        "title": "WorldCanvas",
-        "desc": "有关WorldCanvas付费产品购买和虚拟货币Purple的详细条款。",
-        "link": "查看购买条款 →"
-      }
-    }
-  },
-  "refundPage": {
-    "brand": "Purpleship",
-    "title": "Purpleship 退款政策",
-    "subtitle": "本政策说明付费产品及虚拟货币（如 Purple）的退款/撤销规则。",
-    "effectiveDate": "生效日期：2026年1月10日",
-    "backToHome": "← 返回首页",
-    "nav": {
-      "terms": "使用条款",
-      "privacy": "隐私政策",
-      "pricing": "价格"
-    },
-    "section1": {
-      "title": "1. 适用范围",
-      "p1": "本政策适用于 Purpleship 提供的所有付费服务，包括 WorldCanvas。所有支付由 Paddle.com 作为销售商（Merchant of Record）处理，确保安全支付和消费者保护。"
-    },
-    "section2": {
-      "title": "2. 14天退款保证",
-      "highlight": "自购买之日起14天内，您可以无需任何理由申请退款。",
-      "p1": "退款期限在付款完成后14天届满。只要在14天期限届满前表达退款意向，退款请求即为有效。",
-      "p2": "此退款保证是为保护消费者权益而设，适用于首次购买。"
-    },
-    "section3": {
-      "title": "3. 额外退款情况",
-      "intro": "除14天退款保证外，以下情况也可能提供退款：",
-      "li1": "公司责任原因（未提供/错误提供等）",
-      "li2": "重复支付、支付错误等正当理由",
-      "li3": "法律要求退款的情况"
-    },
-    "section4": {
-      "title": "4. 14天后退款限制",
-      "li1": "14天期限之后，如虚拟货币（Purple）已被使用，可能扣除已使用部分处理退款。",
-      "li2": "数字内容/虚拟货币可在提供后立即开始使用，在法律允许的范围内可能适用额外限制。"
-    },
-    "section5": {
-      "title": "5. 退款申请方法",
-      "intro": "申请退款，请使用以下方式之一：",
-      "li1": "Paddle 客户支持：在 paddle.net 直接申请退款",
-      "li2": "邮件咨询：发送购买记录（收据/支付信息）至 captain@purpleship.io",
-      "p1": "为确保快速处理，申请退款时请一并提供购买时使用的邮箱地址和支付信息。",
-      "p2": "接收后将在合理时间内确认并通知处理结果。退款处理时间可能因支付方式而异。"
-    },
-    "section6": {
-      "title": "6. 服务专属退款政策",
-      "intro": "不同服务可能适用不同的退款政策。",
-      "worldcanvas": {
-        "title": "WorldCanvas",
-        "desc": "有关 WorldCanvas 购买和 Paddle 支付处理的其他详细信息。",
-        "link": "了解更多 →"
-      }
-    }
-  },
-  "worldcanvasRefundPage": {
-    "brand": "WorldCanvas",
-    "title": "WorldCanvas 退款政策",
-    "subtitle": "Paddle 支付系统退款说明",
-    "effectiveDate": "生效日期：2026年1月1日",
-    "backToRefund": "← 返回退款政策",
-    "section1": {
-      "title": "1. 支付处理",
-      "p1": "WorldCanvas 的所有支付由 Paddle.com 作为销售商（Merchant of Record）处理。Paddle 是经授权的支付服务提供商，负责处理支付、税务和退款。",
-      "p2": "购买时同时适用 Paddle 的支付条款，收据和支付相关咨询通过 Paddle 处理。"
-    },
-    "section2": {
-      "title": "2. 14天退款保证",
-      "highlight": "自购买之日起14天内，您可以无需任何理由申请退款。",
-      "p1": "退款期限在付款完成后14天届满。只要在14天期限届满前表达退款意向，退款请求即为有效。",
-      "p2": "此退款保证是为保护消费者权益而设，适用于首次购买。"
-    },
-    "section3": {
-      "title": "3. 退款申请方法",
-      "intro": "申请退款，请使用以下方式之一：",
-      "li1": "Paddle 客户支持：在 paddle.net 直接申请退款",
-      "li2": "电子邮件：发送购买记录（收据/支付信息）至 captain@purpleship.io",
-      "p1": "为确保及时处理，申请退款时请提供购买时使用的电子邮件地址和支付信息。"
-    },
-    "section4": {
-      "title": "4. 14天后退款限制",
-      "li1": "14天期限后，如果虚拟货币（Purple）已被使用，则可能在扣除已使用部分后处理退款。",
-      "li2": "退款处理时间可能因支付方式而异。（银行卡支付：最长120天内交易，PayPal：最长179天内交易）",
-      "li3": "如确认存在欺诈支付、滥用或违反条款行为，退款可能被拒绝。"
-    },
-    "section5": {
-      "title": "5. 联系方式",
-      "p1": "有关退款和支付的其他问题，请联系："
-    }
-  },
   "pricingPage": {
     "brand": "Purpleship",
     "title": "Pricing",
     "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
     "lastUpdated": "Last updated: Dec 15, 2025",
     "backToHome": "← Back to Home",
-    "nav": {
-      "terms": "Terms & Conditions",
-      "refund": "Refund Policy",
-      "privacy": "Privacy Policy"
-    },
+    "nav": {},
     "plans": {
       "starter": {
         "title": "Starter",
@@ -318,143 +164,6 @@
       }
     },
     "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
-  },
-  "privacy": {
-    "title": "Privacy Policy",
-    "subtitle": "Purpleship Privacy Policy",
-    "backToHome": "← Back to Home",
-    "purchaseTerms": "WorldCanvas Purchase Terms",
-    "section1": {
-      "title": "1. Scope and Principles",
-      "content1": "This unified policy applies to Purpleship (the \"Company\") and all services we operate (e.g., Stampit, Movit, Qnote, WorldCanvas).",
-      "content2": "We collect only the minimum personal data needed to provide services. Any additional service-specific processing is described in the “Service-Specific Notices” and applies together with this policy."
-    },
-    "section2": {
-      "title": "2. Data We Collect and Purpose (Common)",
-      "intro": "We collect only what is necessary to deliver services and support users. Additional items, if any, are listed in the Service-Specific Notices below.",
-      "items": [
-        "Website visits: access logs, browser/OS information, service usage via cookies or similar tech (for analytics and service improvement)",
-        "Customer support: name, email address, and inquiry details received through support channels (e.g., email)",
-        "Technical logs: error logs and device information (model, OS version, etc.) for stability analysis"
-      ],
-      "analytics": {
-        "title": "2.1 Web/App Analytics Tools",
-        "content": "We may use analytics tools such as Google Analytics to collect anonymized usage statistics. IP anonymization or similar techniques are applied, and we do not directly identify individuals. You can opt out via your browser or the tool settings."
-      }
-    },
-    "section3": {
-      "title": "3. Retention and Storage Period",
-      "items": [
-        "We retain data only for the minimum period required by law or our policies, then destroy it without delay.",
-        "Access logs: retained for 3 months per legal requirements and then deleted automatically.",
-        "Customer inquiries: retained for 3 years after completion for dispute resolution, then deleted.",
-        "Account and service data: deleted without delay upon purpose fulfillment or account deletion, or kept only for the legally mandated period (see Service-Specific Notices).",
-        "Analytics data: kept only in a de-identified, statistical form."
-      ]
-    },
-    "section4": {
-      "title": "4. Third-Party Sharing and Overseas Transfer",
-      "content": "We do not provide personal data to third parties, except in the following cases:",
-      "items": [
-        "When the user has given explicit prior consent",
-        "When required by law or a legitimate request from authorities"
-      ],
-      "ga": "When using Google Analytics, data may be transferred to servers outside your country (e.g., the United States) and is subject to Google’s privacy policy and safeguards."
-    },
-    "section5": {
-      "title": "5. Outsourcing of Processing",
-      "content": "We may entrust certain operations to external partners. Contracts include security controls, restrictions on re-entrustment, and supervision obligations. Current delegates are:",
-      "items": [
-        "Service analytics: Google LLC (Google Analytics) – Storage location: Global/US; Purpose: usage statistics and quality improvement; Retention: per Google policy",
-        "User-initiated backup/sync: Apple iCloud Drive, Google Drive, etc., to the user’s own account – the Company cannot access backed-up data."
-      ]
-    },
-    "section6": {
-      "title": "6. Your Rights and How to Exercise Them",
-      "content": "You may exercise the rights below at any time, and we will act without undue delay:",
-      "items": [
-        "Withdraw consent: change or revoke permissions (e.g., location, notifications) via service or device settings.",
-        "Request access, correction, deletion, or restriction of processing by contacting us or using in-service settings where provided.",
-        "Delete on-device data and disable cloud backups.",
-        "Seek relief through official channels such as a privacy regulator or dispute mediation body."
-      ]
-    },
-    "section7": {
-      "title": "7. Safeguards",
-      "content": "We apply the following safeguards to protect personal data:",
-      "items": [
-        "Access control based on least privilege and access log management",
-        "Encryption for data in transit and at rest, with secure key management",
-        "Regular security patches and vulnerability checks",
-        "Training and audits for personnel handling personal data",
-        "Use of OS-level secure storage and device locks for on-device data"
-      ]
-    },
-    "section8": {
-      "title": "8. Service-Specific Notices",
-      "intro": "Additional processing details that apply depending on each service are as follows:",
-      "note": "We avoid collecting unnecessary personal data and collect only what is needed. Use the buttons below to view each service’s details.",
-      "toggle": {
-        "open": "View details",
-        "close": "Hide details"
-      },
-      "stampit": {
-        "title": "Stampit (Membership Management)",
-        "summary": "Membership/coupon usage tracking; data is stored locally on the user’s device by default.",
-        "items": [
-          "Data collected: store/membership names, stamp/visit records, notification settings",
-          "Storage: kept locally on your device and not transmitted to Company servers.",
-          "Backup/Sync: if you choose, data can be backed up to your personal iCloud/Google Drive; the Company cannot access this data.",
-          "Optional permissions: notifications and calendar access are used to provide visit/expiry reminders and are optional."
-        ]
-      },
-      "movit": {
-        "title": "Movit (Movement Logs)",
-        "summary": "Movement logs and favorites; default storage is on the user’s device.",
-        "items": [
-          "Data collected: movement routes, location/traffic data when you enable the feature, favorite places",
-          "Storage: stored on your device by default and not sent to Company servers.",
-          "Backup/Sync: backed up to your personal cloud (e.g., Google Drive) only when you explicitly request it.",
-          "Optional permissions: location (including background) and notification permissions may be used for route logging/alerts; collection stops when you disable them.",
-          "When using third-party map/location SDKs for navigation, the provider’s policy also applies."
-        ]
-      },
-      "qnote": {
-        "title": "Qnote (Notes/Checklists)",
-        "summary": "Notes/checklists are stored locally by default.",
-        "items": [
-          "Data collected: notes, checklists, tags, attachments you create",
-          "Storage: stored locally on your device and not transmitted to Company servers.",
-          "Backup/Sync: if you choose, data can be saved to your personal cloud or exported as files; the Company cannot access the content.",
-          "Optional permissions: notifications and file/photo access are requested only when you use those features."
-        ]
-      },
-      "worldcanvas": {
-        "title": "WorldCanvas (Collaborative Canvas)",
-        "summary": "Google sign-in based collaborative canvas; minimal data is collected for account identification and sync.",
-        "items": [
-          "Sign-up/Login: uses Google OAuth. Google account identifier (ID) and email are stored in our DB to create and identify your account for sign-in.",
-          "Auth tokens are used only to maintain/refresh the login session and are discarded on expiration or logout.",
-          "Service data: canvases, boards, comments, and attachments you create/upload are stored in our servers/DB to provide sync and recovery.",
-          "Collaboration/Sharing: collaborator emails/identifiers you invite may be processed to manage invitations and permissions.",
-          "Optional permissions: file/image upload and notifications are requested only when you use those features; declining limits the optional features only.",
-          "Deletion and retention: upon account deletion or service withdrawal, account data and service content are deleted without delay or after any legally required retention. Backups are purged on a rolling basis."
-        ]
-      },
-      "update": "We will add a separate notice in this section when launching new services or features."
-    },
-    "section9": {
-      "title": "9. Data Protection Officer",
-      "officer": "Data Protection Officer: Purpleship Operations Team",
-      "contact": "Contact: captain@purpleship.io",
-      "report": "For privacy complaints, you may also contact your local authority or privacy regulator."
-    },
-    "section10": {
-      "title": "10. Changes to This Policy",
-      "content": "When laws, services, or internal policies change, we will announce updates at least 7 days before they take effect via this website or in-app notice."
-    },
-    "effectiveDate": "Effective date: Feb 7, 2025",
-    "lastModified": "Last modified: Feb 7, 2025"
   },
   "stampit": {
     "title": "Stampit",
@@ -502,209 +211,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 版权所有。",
-      "contact": "联系方式：captain@purpleship.io",
-      "privacy": "隐私政策"
-    }
-  },
-  "worldcanvasTerms": {
-    "title": "WorldCanvas Purchase Terms",
-    "subtitle": "Terms for purchasing and using paid items and virtual currency (Purple) in WorldCanvas.",
-    "effectiveDate": "Effective date: Dec 14, 2025",
-    "backToHome": "← Back to Home",
-    "nav": {
-      "home": "Home",
-      "privacy": "Privacy Policy"
-    },
-    "section1": {
-      "title": "1. Purpose and Scope",
-      "p1": "These terms govern the purchase, use, and refund (including withdrawal) of paid items and the virtual currency Purple provided in the WorldCanvas web service."
-    },
-    "section2": {
-      "title": "2. Definitions",
-      "d1": "\"Service\" means the WorldCanvas web service and related features.",
-      "d2": "\"Paid items\" means digital content, entitlements, virtual currency, and similar items provided in exchange for payment.",
-      "d3": "\"Purple\" means virtual currency (points/credits) usable within the Service and is not exchangeable for cash.",
-      "d4": "\"Consumption\" means using Purple to purchase features/items or to increase usage limits."
-    },
-    "section3": {
-      "title": "3. Purple and Where It Can Be Used",
-      "p1": "You may purchase Purple to use features within the Service. Specific use cases follow what is shown in the Service UI.",
-      "li1": "Example: expand palette colors (palette slots)",
-      "li2": "Example: increase the limit for stamping pixels \"at once\" (bulk-stamp limit expansion)",
-      "li3": "Example: other paid items/features (may be added later)"
-    },
-    "section4": {
-      "title": "4. Payment and Delivery",
-      "p1": "Pricing, entitlements, payment methods, and billing timing follow what is displayed during checkout. After successful payment, Purple or the relevant entitlement will be delivered immediately (or within a reasonable time).",
-      "li1": "Payments may be processed through a third-party payment provider.",
-      "li2": "You may verify purchase and delivery details in the Service or via your payment receipt."
-    },
-    "section5": {
-      "title": "5. Refunds (Withdrawal) and Exceptions",
-      "p1": "Digital content/virtual currency may be made available immediately upon purchase, and withdrawal may be limited to the extent permitted by applicable law. However, we provide refunds or remedies within a reasonable scope in the cases below.",
-      "li1": "When non-delivery or mis-delivery occurs due to our fault",
-      "li2": "When there is a valid reason such as payment errors or duplicate charges",
-      "li3": "When a refund is required by applicable law",
-      "li4": "If Purple has already been consumed, handling may exclude the consumed portion to the extent permitted by law."
-    },
-    "section6": {
-      "title": "6. Minors",
-      "p1": "If a minor makes a purchase, consent from a legal guardian may be required, and cancellation/refund may be available as provided by law."
-    },
-    "section7": {
-      "title": "7. Restrictions and Reversal",
-      "p1": "If fraudulent payment, hacking/abuse, or violations are detected, we may revoke Purple/entitlements or restrict account access in accordance with applicable law and service policies."
-    },
-    "section8": {
-      "title": "8. Changes to These Terms",
-      "p1": "We may revise these terms due to legal or service changes. Material changes will be announced with reasonable prior notice via the website or in-service notice."
-    },
-    "section9": {
-      "title": "9. Contact",
-      "p1": "For payment/refund/purchase inquiries, contact us at: captain@purpleship.io"
-    }
-  },
-  "privacyPage": {
-    "brand": "Purpleship",
-    "title": "Purpleship 隐私政策",
-    "subtitle": "关于Purpleship服务个人信息收集、使用和管理的政策。",
-    "effectiveDate": "生效日期：2025年2月7日",
-    "backToHome": "← 返回首页",
-    "section1": {
-      "title": "1. 适用范围和基本原则",
-      "p1": "本政策适用于Purpleship（以下简称\"公司\"）及公司运营的所有服务（如Stampit、Movit、Qnote、WorldCanvas等）。",
-      "p2": "公司仅收集提供服务所需的最少个人信息。各服务的特殊要求在\"服务特定通知\"部分另行说明。"
-    },
-    "section2": {
-      "title": "2. 收集的信息和使用目的（通用）",
-      "intro": "公司仅收集服务提供和客户支持所需的最少信息。",
-      "li1": "网站使用时：访问记录、浏览器/操作系统信息、通过Cookie等技术收集的服务使用记录（用于统计和服务改进）",
-      "li2": "客户咨询处理时：通过咨询渠道（电子邮件等）收到的姓名、电子邮件、咨询内容",
-      "li3": "技术日志：错误日志、设备信息（型号、操作系统版本等）用于稳定性分析",
-      "analytics": {
-        "title": "2.1 网站/应用分析工具",
-        "p1": "我们可能使用Google Analytics等分析工具收集匿名使用统计数据。我们应用IP匿名化等处理，不直接识别个人。"
-      }
-    },
-    "section3": {
-      "title": "3. 个人信息的保留和使用期限",
-      "li1": "仅按法律或内部政策要求的最短期限保留数据，之后立即销毁。",
-      "li2": "访问记录：根据通信隐私保护法保留3个月后自动销毁。",
-      "li3": "客户咨询记录：为争议准备保留3年后销毁。",
-      "li4": "账户和服务数据：目的达成或账户注销时立即删除。"
-    },
-    "section4": {
-      "title": "4. 向第三方提供和国际传输",
-      "p1": "原则上，公司不向第三方提供用户的个人信息。但在以下情况下可能例外提供：",
-      "li1": "用户事先明确同意时",
-      "li2": "有法律依据或执法机关合法要求时"
-    },
-    "section5": {
-      "title": "5. 个人信息处理委托",
-      "p1": "为维护服务质量，我们可能将工作委托给外部机构，并对承包商施加安全、再委托限制及管理/监督义务。",
-      "li1": "服务使用分析：Google LLC（Google Analytics）",
-      "li2": "用户选择的备份/同步：Apple iCloud Drive、Google Drive等"
-    },
-    "section6": {
-      "title": "6. 用户权利及行使方式",
-      "p1": "用户可随时行使以下权利，公司将立即采取行动。",
-      "li1": "撤回同意：您可以随时通过服务或设备设置更改或撤回位置、通知等权限。",
-      "li2": "访问、更正、删除或暂停处理的请求：您可以向公司请求或通过提供的界面/设置直接管理。",
-      "li3": "通过个人信息保护中心、争议调解委员会等申请救济"
-    },
-    "section7": {
-      "title": "7. 安全措施",
-      "p1": "公司采取以下措施确保个人信息安全：",
-      "li1": "最小化访问权限并管理访问记录",
-      "li2": "传输和存储的加密及密钥管理",
-      "li3": "定期安全补丁和漏洞检查",
-      "li4": "个人信息处理人员的培训和检查"
-    },
-    "section8": {
-      "title": "8. 服务特定通知",
-      "intro": "以下提供各服务特定的个人信息处理详情。",
-      "stampit": {
-        "title": "Stampit（会员管理）",
-        "summary": "用于管理会员和优惠券使用的应用。数据默认存储在设备本地。",
-        "li1": "收集的信息：商店/会员名称、印章/访问记录、通知设置",
-        "li2": "存储位置：存储在用户设备本地，不传输到公司服务器。",
-        "li3": "备份/同步：如用户选择，以文件形式备份到个人iCloud/Google Drive。"
-      },
-      "movit": {
-        "title": "Movit（移动记录）",
-        "summary": "管理移动记录和收藏夹。默认存储位置是用户设备。",
-        "li1": "收集的信息：移动路线、位置/交通信息（用户启用时）、收藏地点",
-        "li2": "存储位置：默认存储在设备本地，不传输到公司服务器。",
-        "li3": "可选权限：位置（包括后台）、通知权限可用于移动记录和提醒。"
-      },
-      "qnote": {
-        "title": "Qnote（笔记/清单）",
-        "summary": "笔记/清单数据默认存储在设备本地。",
-        "li1": "收集的信息：用户创建的笔记、清单、标签、附件",
-        "li2": "存储位置：存储在设备本地，不传输到公司服务器。",
-        "li3": "备份/同步：如用户选择，保存到个人云或导出为文件。"
-      },
-      "worldcanvas": {
-        "title": "WorldCanvas（协作画布）",
-        "summary": "基于Google登录的协作画布服务，为账户识别和同步收集并存储最少信息。",
-        "li1": "注册/认证：使用Google OAuth登录。Google账户标识符(ID)和电子邮件存储在数据库中用于账户创建和登录识别。",
-        "li2": "服务数据：用户创建/上传的画布、面板、评论和附件存储在公司服务器（数据库）用于同步和恢复。",
-        "li3": "删除和保留：账户删除或服务退出时，账户信息和服务数据将立即删除。"
-      }
-    },
-    "section9": {
-      "title": "9. 隐私负责人",
-      "officer": "隐私负责人：Purpleship运营团队",
-      "contact": "联系方式：captain@purpleship.io",
-      "report": "隐私侵权报告：可通过个人信息保护委员会（privacy.go.kr）等相关机构进行。"
-    },
-    "section10": {
-      "title": "10. 隐私政策变更和通知",
-      "p1": "当法律、服务内容或内部政策发生变更时，我们将在实施前7天通过网站通知或服务内通知告知变更内容。"
-    }
-  },
-  "worldcanvasTermsPage": {
-    "brand": "WorldCanvas",
-    "title": "WorldCanvas 购买条款",
-    "subtitle": "本节规定 WorldCanvas 网络服务中提供的付费产品及虚拟货币 Purple 的购买、使用、退款等附加条件。",
-    "effectiveDate": "生效日期：2025年12月15日",
-    "backToTerms": "← 返回服务条款",
-    "section1": {
-      "title": "1. 定义",
-      "d1": "\"付费产品\"是指通过支付提供的数字内容/权限/虚拟货币等。",
-      "d2": "\"Purple\"是指 WorldCanvas 服务中可使用的虚拟货币（积分/点数），不可兑换为现金。",
-      "d3": "\"消费\"是指使用 Purple 购买功能/物品或增加使用限额的行为。"
-    },
-    "section2": {
-      "title": "2. Purple 用途",
-      "p1": "用户可购买 Purple 以使用 WorldCanvas 服务中的功能。具体用途按服务界面显示的说明执行。",
-      "li1": "示例：扩展调色板颜色（调色板插槽）",
-      "li2": "示例：增加一次可\"放置像素的限额\"（批量放置限额扩展）",
-      "li3": "示例：其他付费物品/功能（可能会添加）"
-    },
-    "section3": {
-      "title": "3. 支付与提供",
-      "p1": "付费产品的价格、提供内容、支付方式、计费时点按结账界面或购买过程中显示的信息执行。支付完成后立即（或在合理时间内）提供 Purple 或相应权限。",
-      "li1": "支付可通过第三方支付服务提供商处理。",
-      "li2": "购买记录及支付详情可在服务内或支付凭证中确认。",
-      "li3": "详细价格信息请参考价格页面。"
-    },
-    "section4": {
-      "title": "4. 撤销（退款）及例外",
-      "p1": "原则上数字内容/虚拟货币可在提供后立即开始使用，在法律允许的范围内可限制撤销。但在以下情况下，公司会在合理范围内提供退款或补偿程序。",
-      "li1": "公司责任原因（未提供/错误提供等）",
-      "li2": "支付错误/重复支付等正当理由",
-      "li3": "法律要求退款的情况",
-      "li4": "Purple 已被消费的情况，可能扣除已消费部分处理（法律无限制的范围）。",
-      "li5": "详细退款政策请参考退款政策页面。"
-    },
-    "section5": {
-      "title": "5. 未成年人支付",
-      "p1": "未成年人支付可能需要法定代理人同意，根据法律可请求取消（退款）。"
-    },
-    "section6": {
-      "title": "6. 使用限制与回收",
-      "p1": "如确认存在欺诈支付、黑客/滥用、违反条款等情况，公司可根据相关法律和服务政策回收已提供的 Purple/权限或限制账户使用。"
+      "contact": "联系方式：captain@purpleship.io"
     }
   }
 }
