@@ -67,6 +67,12 @@
   <style>
     body { --page-accent: var(--stampit-accent); }
 
+    /* Shimmer animation */
+    @keyframes textShimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
     .feature-icon {
       background: rgba(245, 158, 11, 0.1);
       border-color: rgba(245, 158, 11, 0.15);
@@ -75,7 +81,7 @@
 
     .feature-card:hover .feature-icon {
       transform: scale(1.05);
-      box-shadow: 0 0 24px rgba(245, 158, 11, 0.25), 0 0 48px rgba(245, 158, 11, 0.1);
+      box-shadow: 0 0 24px rgba(245, 158, 11, 0.175), 0 0 48px rgba(245, 158, 11, 0.07);
     }
 
     /* Hero 2-column */
@@ -106,7 +112,7 @@
 
     .app-icon-container:hover {
       transform: scale(1.03);
-      box-shadow: var(--glow-purple);
+      box-shadow: 0 8px 24px rgba(139, 92, 246, 0.105), 0 0 40px rgba(139, 92, 246, 0.07);
       border-color: rgba(245, 158, 11, 0.4);
     }
 
@@ -125,12 +131,14 @@
       font-size: clamp(3rem, 8vw, 5rem);
       font-weight: 900;
       background: linear-gradient(135deg, var(--text-primary) 0%, rgba(240, 240, 240, 0.6) 100%);
+      background-size: 200% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       letter-spacing: -0.04em;
       line-height: 1;
       margin-bottom: var(--space-sm);
+      animation: textShimmer 8s linear infinite;
     }
 
     .hero-text .subtitle {

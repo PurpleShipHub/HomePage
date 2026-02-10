@@ -13,15 +13,15 @@
   --brand-purple-light: #A78BFA;
   --brand-purple-dark: #5B21B6;
 
-  /* Backgrounds - Deeper Black Palette */
-  --bg-primary: #000000;
-  --bg-secondary: #050505;
-  --bg-tertiary: #0a0a0a;
-  --bg-quaternary: #0f0f0f;
+  /* Backgrounds - Deeper Black Palette with Blue Tint */
+  --bg-primary: #060610;
+  --bg-secondary: #0a0a14;
+  --bg-tertiary: #0f0f18;
+  --bg-quaternary: #14141c;
 
   /* Text - Warm Off-White */
   --text-primary: #F0F0F0;
-  --text-secondary: #B4B4B8;
+  --text-secondary: #9898A0;
   --text-muted: #6B6B70;
 
   /* Product accents - Enhanced */
@@ -36,32 +36,32 @@
   /* Glass surfaces - Purple Tinted */
   --surface-glass: rgba(139, 92, 246, 0.03);
   --surface-glass-hover: rgba(139, 92, 246, 0.06);
-  --surface-glass-border: rgba(255, 255, 255, 0.06);
-  --surface-glass-border-hover: rgba(167, 139, 250, 0.2);
+  --surface-glass-border: rgba(139, 92, 246, 0.08);
+  --surface-glass-border-hover: rgba(167, 139, 250, 0.14);
 
-  /* Glow effects */
-  --glow-purple: 0 0 24px rgba(167, 139, 250, 0.3), 0 0 48px rgba(167, 139, 250, 0.1);
-  --glow-purple-strong: 0 0 32px rgba(167, 139, 250, 0.4), 0 0 64px rgba(167, 139, 250, 0.2);
+  /* Glow effects - More subtle */
+  --glow-purple: 0 0 20px rgba(167, 139, 250, 0.2), 0 0 40px rgba(167, 139, 250, 0.08);
+  --glow-purple-strong: 0 0 28px rgba(167, 139, 250, 0.3), 0 0 56px rgba(167, 139, 250, 0.15);
 
   /* Legacy compat */
   --accent-gold: #F59E0B;
   --accent-blue: var(--page-accent);
 
-  /* Transitions - Enhanced Curves */
-  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Transitions - Enhanced Curves (Linear-style faster) */
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  --transition-micro: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-micro: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Shadows - Deeper */
   --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 8px 40px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 20px 80px rgba(0, 0, 0, 0.6);
 
-  /* Radii */
-  --radius-sm: 10px;
-  --radius-md: 14px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
+  /* Radii - Linear-style (less rounded) */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
 
   /* Spacing - More Generous */
   --space-xs: 4px;
@@ -94,18 +94,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Noise Texture Overlay */
+/* Dot Grid Pattern Overlay (Linear-style) */
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 /* Aurora Ambient Effect */
@@ -457,7 +455,7 @@ p {
 
 .glass-card:hover, .feature-card:hover, .card:hover {
   background: var(--surface-glass-hover);
-  transform: translateY(-6px) scale(1.01);
+  transform: translateY(-4px) scale(1.01);
   box-shadow: var(--shadow-md), var(--glow-purple);
 }
 
@@ -568,7 +566,7 @@ p {
 
 .download-btn:hover:not(.coming-soon):not(:disabled),
 .cta:hover {
-  transform: translateY(-3px) scale(1.03);
+  transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), var(--glow-purple-strong);
   filter: brightness(1.15);
 }
@@ -654,8 +652,8 @@ footer a:hover::after {
   box-shadow: 0 0 8px var(--page-accent);
 }
 
-/* --- Scrollbar --- */
-::-webkit-scrollbar { width: 4px; }
+/* --- Scrollbar (thinner) --- */
+::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, rgba(167, 139, 250, 0.4), rgba(139, 92, 246, 0.4));

@@ -43,6 +43,12 @@
   <style>
     body { --page-accent: var(--worldcanvas-accent); }
 
+    /* Shimmer animation */
+    @keyframes textShimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
     .feature-icon {
       background: rgba(59, 130, 246, 0.1);
       border-color: rgba(59, 130, 246, 0.15);
@@ -88,7 +94,7 @@
 
     .app-icon-container:hover {
       transform: scale(1.03);
-      box-shadow: var(--shadow-md), 0 0 40px rgba(59, 130, 246, 0.3);
+      box-shadow: var(--shadow-md), 0 0 40px rgba(59, 130, 246, 0.21);
       background: var(--surface-glass-hover);
     }
 
@@ -109,7 +115,7 @@
     }
 
     .app-icon-container:hover .world-icon {
-      box-shadow: 0 0 32px rgba(59, 130, 246, 0.4);
+      box-shadow: 0 0 32px rgba(59, 130, 246, 0.28);
       border-color: rgba(59, 130, 246, 0.4);
     }
 
@@ -122,13 +128,15 @@
       font-size: clamp(3rem, 8vw, 5rem);
       font-weight: 900;
       background: linear-gradient(135deg, var(--text-primary) 0%, var(--worldcanvas-accent) 100%);
+      background-size: 200% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       letter-spacing: -0.05em;
       line-height: 1;
       margin-bottom: var(--space-md);
-      filter: drop-shadow(0 0 24px rgba(59, 130, 246, 0.2));
+      filter: drop-shadow(0 0 24px rgba(59, 130, 246, 0.14));
+      animation: textShimmer 8s linear infinite;
     }
 
     .hero-text .subtitle {
