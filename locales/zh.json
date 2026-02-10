@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "我们的产品",
+    "learnMore": "了解更多",
+    "movitSummary": "探索真实世界，创建属于你的地图。",
+    "stampitSummary": "智能管理预付会员卡、优惠券和使用券。",
+    "worldcanvasSummary": "与全球用户一起在共享画布上绘制像素。"
+  },
   "description": {
     "line1": "我们是一个发现并开发世界上不存在的应用程序的组织。",
     "line2": "从宇宙中寻找无限的创意，",

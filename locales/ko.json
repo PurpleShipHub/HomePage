@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "우리의 제품",
+    "learnMore": "자세히 보기",
+    "movitSummary": "실제 세계를 탐험하며 자신만의 지도를 만들어보세요.",
+    "stampitSummary": "선불 회원권, 쿠폰, 이용권을 스마트하게 관리하세요.",
+    "worldcanvasSummary": "전 세계 사람들과 함께 캔버스에 픽셀을 찍어보세요."
+  },
   "description": {
     "line1": "우리는 세상에 존재하지 않는 앱을 발견해서 개발하는 단체입니다.",
     "line2": "우주의 무궁무진한 아이디어를 찾아내어,",
@@ -52,8 +59,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "가격"
+      "contact": "Contact: captain@purpleship.io"
     }
   },
   "vision": {
@@ -73,8 +79,7 @@
   "donation": "도네이션하기",
   "footer": {
     "copyright": "© 2025 Purpleship. All rights reserved.",
-    "contact": "Contact: captain@purpleship.io",
-    "pricing": "가격"
+    "contact": "Contact: captain@purpleship.io"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -109,8 +114,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "가격"
+      "contact": "Contact: captain@purpleship.io"
     }
   },
   "stampit": {
@@ -159,31 +163,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "가격"
-    }
-  },
-  "qroom": {
-    "hero": {
-      "title": "기록이 남지 않는 P2P 파일 공유",
-      "description": "6자리 PIN으로 방을 만들고, 파일을 공유하세요. 서버에 저장되지 않고 브라우저 간 직접 전송됩니다. 방을 나가면 모든 흔적이 사라집니다."
-    },
-    "cta": "사용하기",
-    "nav": {
-      "home": "홈",
-      "try": "사용하기"
-    }
-  },
-  "qnote": {
-    "hero": {
-      "title": "\"지금\"을 위한 즉석 메모 보드",
-      "description": "6자리 코드를 만들어 링크로 공유하면, 누구나 같은 공간에서 함께 메모하고 정리할 수 있습니다. 복잡한 설정 없이 빠르게 시작하고, 끝나면 깔끔하게 마무리하세요."
-    },
-    "tagline": "6자리 코드를 만들어 링크로 공유하면, 누구나 같은 공간에서 함께 메모하고 정리할 수 있습니다. 복잡한 설정 없이 빠르게 시작하고, 끝나면 깔끔하게 마무리하세요.",
-    "cta": "사용하기",
-    "nav": {
-      "home": "홈",
-      "try": "사용하기"
+      "contact": "Contact: captain@purpleship.io"
     }
   },
   "pricingPage": {

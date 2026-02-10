@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "プロダクト",
+    "learnMore": "詳しく見る",
+    "movitSummary": "現実世界を探検して自分だけの地図を作りましょう。",
+    "stampitSummary": "会員券、クーポン、利用券をスマートに管理しましょう。",
+    "worldcanvasSummary": "世界中の人々と一緒にキャンバスにピクセルを描きましょう。"
+  },
   "description": {
     "line1": "私たちは、世界に存在しないアプリを発見し開発する団体です。",
     "line2": "宇宙の無限のアイデアを見つけ出し、",

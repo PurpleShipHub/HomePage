@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "name": "purpleship",
+  "version": "1.0.0",
+  "description": "Purpleship - 정적 웹사이트 (5개 HTML 페이지, 공유 CSS, i18n 11개 언어)",
+  "language": "ko",
+
+  "project": {
+    "type": "static-website",
+    "architecture": "multi-page-static",
+    "hosting": "github-pages",
+    "domain": "purpleship.io"
+  },
+
+  "components": {
+    "pages": {
+      "language": "html",
+      "count": 5,
+      "list": ["index", "movit", "stampit", "worldcanvas", "pricing"]
+    },
+    "styles": {
+      "language": "css",
+      "shared": "styles/common.css",
+      "inline": true
+    },
+    "i18n": {
+      "loader": "locales/i18n-loader.js",
+      "languages": ["ko", "en", "zh", "ja", "es", "fr", "de", "ru", "ar", "hi", "vi"],
+      "format": "json"
+    },
+    "webgl": {
+      "type": "shadertoy-converted",
+      "uniforms": ["resolution", "time"]
+    }
+  },
+
+  "conventions": {
+    "naming": {
+      "files": "kebab-case",
+      "css_variables": "--kebab-case",
+      "i18n_keys": "camelCase-dot-notation"
+    },
+    "colors": {
+      "system": "css-custom-properties",
+      "theme": "dark",
+      "brand": "#6C3CE0 / #8B5CF6",
+      "accents": {
+        "movit": "#10B981",
+        "stampit": "#F59E0B",
+        "worldcanvas": "#3B82F6"
+      }
+    }
+  },
+
+  "agents": {
+    "default_model": "sonnet",
+    "critical_agents": ["design-expert", "static-page-expert"],
+    "auto_include": {
+      "style_changes": ["design-expert"],
+      "html_changes": ["static-page-expert"],
+      "i18n_changes": ["static-page-expert"],
+      "shader_changes": ["design-expert"],
+      "full_redesign": ["design-expert", "static-page-expert"]
+    }
+  },
+
+  "excluded_paths": [".git", "*.log", ".DS_Store"],
+  "important_files": [
+    "styles/common.css",
+    "locales/i18n-loader.js",
+    "locales/en.json",
+    "locales/ko.json",
+    "index.html",
+    "sitemap.xml"
+  ]
+}

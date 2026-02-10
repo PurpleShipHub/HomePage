@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "Unsere Produkte",
+    "learnMore": "Mehr erfahren",
+    "movitSummary": "Erkunden Sie die reale Welt und erstellen Sie Ihre eigene Karte.",
+    "stampitSummary": "Verwalten Sie Mitgliedschaften, Gutscheine und Voucher smart.",
+    "worldcanvasSummary": "Setzen Sie Pixel mit Menschen weltweit auf eine gemeinsame Leinwand."
+  },
   "description": {
     "line1": "Wir sind eine Organisation, die nicht existierende Apps entdeckt und entwickelt.",
     "line2": "Durch das Finden unendlicher Ideen aus dem Universum,",

@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "Nuestros productos",
+    "learnMore": "Saber mas",
+    "movitSummary": "Explora el mundo real y crea tu propio mapa personal.",
+    "stampitSummary": "Gestiona membresías, cupones y vales de forma inteligente.",
+    "worldcanvasSummary": "Coloca píxeles con personas de todo el mundo en un lienzo compartido."
+  },
   "description": {
     "line1": "Somos una organización que descubre y desarrolla aplicaciones que no existen en el mundo.",
     "line2": "Encontrando ideas infinitas del universo,",

@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "San pham",
+    "learnMore": "Tim hieu them",
+    "movitSummary": "Kham pha the gioi thuc va tao ban do cua rieng ban.",
+    "stampitSummary": "Quan ly the thanh vien, phieu giam gia va voucher thong minh.",
+    "worldcanvasSummary": "Dat pixel cung moi nguoi tren toan the gioi tren canvas chung."
+  },
   "description": {
     "line1": "Chúng tôi là tổ chức khám phá và phát triển các ứng dụng chưa từng tồn tại trên thế giới.",
     "line2": "Tìm kiếm những ý tưởng vô hạn từ vũ trụ,",

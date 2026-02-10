@@ -8,6 +8,13 @@
     "stampit": "Stampit",
     "worldcanvas": "WorldCanvas"
   },
+  "products": {
+    "title": "Our Products",
+    "learnMore": "Learn more",
+    "movitSummary": "Explore the real world and create your own personal map.",
+    "stampitSummary": "Manage prepaid memberships, coupons, and vouchers smartly.",
+    "worldcanvasSummary": "Stamp pixels with people worldwide on a shared canvas."
+  },
   "description": {
     "line1": "We are an organization that discovers and develops apps that don't exist in the world.",
     "line2": "Finding infinite ideas from the universe,",
@@ -52,8 +59,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "contact": "Contact: captain@purpleship.io"
     }
   },
   "vision": {
@@ -73,8 +79,7 @@
   "donation": "Make a Donation",
   "footer": {
     "copyright": "© 2025 Purpleship. All rights reserved.",
-    "contact": "Contact: captain@purpleship.io",
-    "pricing": "Pricing"
+    "contact": "Contact: captain@purpleship.io"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -104,13 +109,12 @@
     },
     "download": {
       "title": "See you soon",
-      "description": "WorldCanvas is currently in the works. We’ll share the launch news soon.",
+      "description": "WorldCanvas is currently in the works. We'll share the launch news soon.",
       "comingSoon": "Coming Soon"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "contact": "Contact: captain@purpleship.io"
     }
   },
   "stampit": {
@@ -159,31 +163,7 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
-    }
-  },
-  "qroom": {
-    "hero": {
-      "title": "Volatile P2P File Sharing",
-      "description": "Create a room with a 6-digit PIN and share files. Nothing is stored on servers—files transfer directly between browsers. Leave the room and all traces vanish."
-    },
-    "cta": "Use now",
-    "nav": {
-      "home": "Home",
-      "try": "Use now"
-    }
-  },
-  "qnote": {
-    "hero": {
-      "title": "Instant memo board for \"right now\"",
-      "description": "Create a 6-digit code and share the link so anyone can write and organize in the same space. Start fast with zero setup and wrap up clean when you're done."
-    },
-    "tagline": "Create a 6-digit code and share the link so anyone can write and organize in the same space. Start fast with zero setup and wrap up clean when you're done.",
-    "cta": "Use now",
-    "nav": {
-      "home": "Home",
-      "try": "Use now"
+      "contact": "Contact: captain@purpleship.io"
     }
   },
   "pricingPage": {
