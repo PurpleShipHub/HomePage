@@ -228,7 +228,7 @@
         gap: var(--space-2xl);
       }
 
-      .hero-text { text-align: center; }
+      .hero-text { text-align: center; width: 100%; }
       .hero-text p { text-align: center; max-width: 100%; }
 
       .app-icon-container {
@@ -286,33 +286,33 @@
   <div class="section" id="hero">
     <div class="hero-layout">
       <div class="hero-icon-area">
-        <div class="app-icon-container">
+        <div class="app-icon-container sda-scale-reveal">
           <div class="world-icon" aria-hidden="true">🌍</div>
         </div>
       </div>
       <div class="hero-text">
-        <h1 data-i18n="hero.title">WorldCanvas</h1>
-        <div class="subtitle" data-i18n="hero.subtitle">협업 캔버스</div>
-        <p data-i18n="hero.description">전 세계의 사람들과 같은 캔버스에 픽셀을 찍고, 작품을 함께 완성해보세요.</p>
+        <h1 class="sda-fade-right sda-delay-1" data-i18n="hero.title">WorldCanvas</h1>
+        <div class="subtitle sda-fade-right sda-delay-2" data-i18n="hero.subtitle">협업 캔버스</div>
+        <p class="sda-fade-right sda-delay-3" data-i18n="hero.description">전 세계의 사람들과 같은 캔버스에 픽셀을 찍고, 작품을 함께 완성해보세요.</p>
       </div>
     </div>
   </div>
 
   <!-- Features -->
   <div class="section" id="features">
-    <h2 data-i18n="features.title">주요 기능</h2>
+    <h2 class="sda-text-reveal" data-i18n="features.title">주요 기능</h2>
     <div class="features-grid">
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-1">
         <span class="feature-icon">🧩</span>
         <h3 class="feature-title" data-i18n="features.collab.title">실시간 협업</h3>
         <p class="feature-description" data-i18n="features.collab.description">여러 명이 동시에 같은 캔버스에서 작업하고 변화가 즉시 반영됩니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-2">
         <span class="feature-icon">🎨</span>
         <h3 class="feature-title" data-i18n="features.palette.title">팔레트 & 픽셀</h3>
         <p class="feature-description" data-i18n="features.palette.description">색상을 선택해 픽셀을 찍고, 커뮤니티와 함께 거대한 캔버스를 채워나갑니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-3">
         <span class="feature-icon">🚀</span>
         <h3 class="feature-title" data-i18n="features.fast.title">빠른 조작</h3>
         <p class="feature-description" data-i18n="features.fast.description">쾌적한 UI로 원하는 구역을 빠르게 탐색하고 작업할 수 있습니다.</p>
@@ -322,9 +322,9 @@
 
   <!-- Download -->
   <div class="section" id="download">
-    <h2 data-i18n="download.title">곧 만나요</h2>
-    <p data-i18n="download.description">WorldCanvas는 현재 준비 중입니다. 출시 소식을 곧 공유할게요.</p>
-    <div class="download-buttons">
+    <h2 class="sda-text-reveal" data-i18n="download.title">곧 만나요</h2>
+    <p class="sda-fade-up sda-delay-1" data-i18n="download.description">WorldCanvas는 현재 준비 중입니다. 출시 소식을 곧 공유할게요.</p>
+    <div class="download-buttons sda-scale-reveal sda-delay-2">
       <a class="download-btn" href="https://worldcanvas.art" target="_blank" rel="noopener" data-i18n="download.comingSoon">WorldCanvas.art</a>
     </div>
   </div>
@@ -345,9 +345,13 @@
     uniform float time;
     void main(){
       vec2 uv = gl_FragCoord.xy / resolution.xy;
-      float l1 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31, 0.5, 0.501);
-      float l2 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32, 0.5, 0.501);
-      float l3 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32, 0.5, 0.501);
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
       float l = l1 + l2 + l3;
       gl_FragColor = vec4(l, l, l, 1.0);
     }
@@ -356,10 +360,18 @@
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       await window.i18n.init('worldcanvas');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-      }, { threshold: 0.15 });
-      document.querySelectorAll('.section').forEach(s => observer.observe(s));
+      // Scroll Animation Init
+      const SDA = CSS.supports('animation-timeline', 'view()');
+      const so = new IntersectionObserver(es => {
+        es.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+      }, { threshold: SDA ? 0.05 : 0.15 });
+      document.querySelectorAll('.section').forEach(s => so.observe(s));
+      if (!SDA) {
+        const eo = new IntersectionObserver(es => {
+          es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); eo.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('[class*="sda-"]').forEach(el => eo.observe(el));
+      }
 
       // Nav scroll
       const nav = document.querySelector('.main-nav');

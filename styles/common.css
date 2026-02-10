@@ -6,6 +6,7 @@
 
 /* --- Reset & Root Variables --- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { overflow-x: clip; }
 
 :root {
   /* Brand - Enhanced Vivid Purple */
@@ -71,6 +72,11 @@
   --space-xl: 40px;
   --space-2xl: 56px;
   --space-3xl: 96px;
+
+  /* Scroll-Driven Animation Tokens */
+  --anim-ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --anim-duration-enter: 0.9s;
+  --anim-stagger: 0.12s;
 }
 
 /* --- Base Typography --- */
@@ -92,6 +98,8 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 /* Dot Grid Pattern Overlay (Linear-style) */
@@ -129,6 +137,42 @@ body::after {
   25% { transform: translate(5%, 5%) rotate(2deg); }
   50% { transform: translate(-5%, 3%) rotate(-2deg); }
   75% { transform: translate(3%, -5%) rotate(1deg); }
+}
+
+/* === Scroll-Driven Animation Keyframes === */
+@keyframes sda-fade-up {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sda-fade-left {
+  from { opacity: 0; transform: translateX(-80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes sda-fade-right {
+  from { opacity: 0; transform: translateX(80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes sda-scale-reveal {
+  from { opacity: 0; transform: scale(0.85); filter: blur(8px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0px); }
+}
+
+@keyframes sda-text-reveal {
+  from { opacity: 0; transform: translateY(100%); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0px); }
+}
+
+@keyframes sda-card-enter {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes sda-parallax-up {
+  from { transform: translateY(40px); }
+  to { transform: translateY(-40px); }
 }
 
 /* Text Selection */
@@ -250,6 +294,7 @@ body::after {
   position: relative;
   padding: 8px 16px;
   border-radius: var(--radius-sm);
+  white-space: nowrap;
 }
 
 .nav-menu a::after {
@@ -377,6 +422,7 @@ body::after {
   font-size: 13px;
   cursor: pointer;
   transition: var(--transition-smooth);
+  white-space: nowrap;
 }
 
 .lang-menu button:hover {
@@ -515,6 +561,7 @@ p {
   color: var(--text-primary);
   margin-bottom: var(--space-md);
   letter-spacing: -0.06em;
+  white-space: nowrap;
 }
 
 .feature-description {
@@ -551,6 +598,7 @@ p {
   cursor: pointer;
   font-family: inherit;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .download-btn::before, .cta::before {
@@ -711,7 +759,139 @@ footer a:hover::after {
   .lang-button { padding: 4px 8px; height: 28px; font-size: 11px; }
 
   .download-btn, .cta {
-    padding: 16px 32px;
-    min-width: 160px;
+    padding: 16px 24px;
+    min-width: auto;
+  }
+}
+
+/* ============================================
+   Scroll-Driven Animation System
+   - Native CSS SDA with IntersectionObserver fallback
+   - GPU-accelerated (transform, opacity, filter only)
+   ============================================ */
+
+/* --- SDA Path: Native CSS Scroll-Driven Animations --- */
+@supports (animation-timeline: view()) {
+  .section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .sda-fade-up,
+  .sda-fade-left,
+  .sda-fade-right,
+  .sda-scale-reveal,
+  .sda-text-reveal,
+  .sda-card-enter,
+  .sda-parallax-up {
+    animation-fill-mode: backwards;
+    animation-timing-function: var(--anim-ease-out-expo);
+    animation-duration: var(--anim-duration-enter);
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+  }
+
+  .sda-fade-up { animation-name: sda-fade-up; }
+  .sda-fade-left { animation-name: sda-fade-left; }
+  .sda-fade-right { animation-name: sda-fade-right; }
+  .sda-scale-reveal { animation-name: sda-scale-reveal; }
+  .sda-text-reveal { animation-name: sda-text-reveal; }
+  .sda-card-enter { animation-name: sda-card-enter; }
+  .sda-parallax-up {
+    animation-name: sda-parallax-up;
+    animation-range: entry 0% exit 100%;
+  }
+
+  .sda-delay-1 { animation-range: entry 5% entry 100%; }
+  .sda-delay-2 { animation-range: entry 10% entry 100%; }
+  .sda-delay-3 { animation-range: entry 15% entry 100%; }
+  .sda-delay-4 { animation-range: entry 20% entry 100%; }
+  .sda-delay-5 { animation-range: entry 25% entry 100%; }
+  .sda-delay-6 { animation-range: entry 30% entry 100%; }
+
+  .feature-card:nth-child(n) { transition-delay: 0s; }
+}
+
+/* --- Fallback: IntersectionObserver-based animations --- */
+@supports not (animation-timeline: view()) {
+  .sda-fade-up,
+  .sda-fade-left,
+  .sda-fade-right,
+  .sda-scale-reveal,
+  .sda-text-reveal,
+  .sda-card-enter {
+    opacity: 0;
+    transition: opacity var(--anim-duration-enter) var(--anim-ease-out-expo),
+                transform var(--anim-duration-enter) var(--anim-ease-out-expo),
+                filter var(--anim-duration-enter) var(--anim-ease-out-expo);
+  }
+
+  .sda-fade-up { transform: translateY(60px); }
+  .sda-fade-left { transform: translateX(-80px); }
+  .sda-fade-right { transform: translateX(80px); }
+  .sda-scale-reveal { transform: scale(0.85); filter: blur(8px); }
+  .sda-text-reveal { transform: translateY(100%); filter: blur(4px); }
+  .sda-card-enter { transform: translateY(40px) scale(0.95); }
+
+  .section.active .sda-fade-up,
+  .section.active .sda-fade-left,
+  .section.active .sda-fade-right,
+  .section.active .sda-scale-reveal,
+  .section.active .sda-text-reveal,
+  .section.active .sda-card-enter,
+  .sda-fade-up.in-view,
+  .sda-fade-left.in-view,
+  .sda-fade-right.in-view,
+  .sda-scale-reveal.in-view,
+  .sda-text-reveal.in-view,
+  .sda-card-enter.in-view {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+
+  .sda-delay-1 { transition-delay: calc(var(--anim-stagger) * 1); }
+  .sda-delay-2 { transition-delay: calc(var(--anim-stagger) * 2); }
+  .sda-delay-3 { transition-delay: calc(var(--anim-stagger) * 3); }
+  .sda-delay-4 { transition-delay: calc(var(--anim-stagger) * 4); }
+  .sda-delay-5 { transition-delay: calc(var(--anim-stagger) * 5); }
+  .sda-delay-6 { transition-delay: calc(var(--anim-stagger) * 6); }
+}
+
+/* --- Mobile: simplify directional animations --- */
+@media (max-width: 768px) {
+  @supports (animation-timeline: view()) {
+    .sda-fade-left,
+    .sda-fade-right {
+      animation-name: sda-fade-up;
+    }
+    .sda-parallax-up {
+      animation: none;
+    }
+  }
+
+  @supports not (animation-timeline: view()) {
+    .sda-fade-left,
+    .sda-fade-right {
+      transform: translateY(60px);
+    }
+  }
+}
+
+/* --- Accessibility: respect reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .sda-fade-up,
+  .sda-fade-left,
+  .sda-fade-right,
+  .sda-scale-reveal,
+  .sda-text-reveal,
+  .sda-card-enter,
+  .sda-parallax-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
   }
 }

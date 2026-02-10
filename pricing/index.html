@@ -158,6 +158,7 @@
       margin-bottom: var(--space-md);
       letter-spacing: -0.02em;
       text-transform: uppercase;
+      white-space: nowrap;
     }
 
     .price {
@@ -237,6 +238,7 @@
       font-size: 0.95rem;
       transition: var(--transition-smooth);
       letter-spacing: -0.01em;
+      white-space: nowrap;
     }
 
     .back-link a:hover {
@@ -295,13 +297,13 @@
 
   <main>
     <div class="page-header">
-      <h1 data-i18n="pricingPage.title">가격</h1>
-      <p class="subtitle" data-i18n="pricingPage.subtitle">WorldCanvas 가상재화(Purple) 패키지의 가격 안내입니다. (출시 전으로, 변경될 수 있습니다)</p>
+      <h1 class="sda-text-reveal" data-i18n="pricingPage.title">가격</h1>
+      <p class="subtitle sda-fade-up sda-delay-1" data-i18n="pricingPage.subtitle">WorldCanvas 가상재화(Purple) 패키지의 가격 안내입니다. (출시 전으로, 변경될 수 있습니다)</p>
       <p class="meta" data-i18n="pricingPage.lastUpdated">최종 업데이트: 2025년 12월 15일</p>
     </div>
 
     <div class="pricing-grid" aria-label="Pricing plans">
-      <section class="plan">
+      <section class="plan sda-card-enter sda-delay-1">
         <h2 data-i18n="pricingPage.plans.starter.title">Starter</h2>
         <div class="price" data-i18n="pricingPage.plans.starter.price">$5</div>
         <div class="desc" data-i18n="pricingPage.plans.starter.desc">25,000 Purple</div>
@@ -310,7 +312,7 @@
           <li data-i18n="pricingPage.plans.common.li2">픽셀 일괄 찍기 한도 증가 등에 사용</li>
         </ul>
       </section>
-      <section class="plan recommended">
+      <section class="plan recommended sda-scale-reveal sda-delay-2">
         <h2 data-i18n="pricingPage.plans.standard.title">Standard</h2>
         <div class="price" data-i18n="pricingPage.plans.standard.price">$30</div>
         <div class="desc" data-i18n="pricingPage.plans.standard.desc">150,000 Purple + 5% bonus (157,500 total)</div>
@@ -319,7 +321,7 @@
           <li data-i18n="pricingPage.plans.common.li2">픽셀 일괄 찍기 한도 증가 등에 사용</li>
         </ul>
       </section>
-      <section class="plan">
+      <section class="plan sda-card-enter sda-delay-3">
         <h2 data-i18n="pricingPage.plans.pro.title">Pro</h2>
         <div class="price" data-i18n="pricingPage.plans.pro.price">$50</div>
         <div class="desc" data-i18n="pricingPage.plans.pro.desc">250,000 Purple + 10% bonus (275,000 total)</div>
@@ -349,9 +351,13 @@
     uniform float time;
     void main(){
       vec2 uv = gl_FragCoord.xy / resolution.xy;
-      float l1 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31, 0.5, 0.501);
-      float l2 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32, 0.5, 0.501);
-      float l3 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32, 0.5, 0.501);
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
       float l = l1 + l2 + l3;
       gl_FragColor = vec4(l, l, l, 1.0);
     }
@@ -359,6 +365,15 @@
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       await window.i18n.init();
+
+      // Scroll Animation Init
+      const SDA = CSS.supports('animation-timeline', 'view()');
+      if (!SDA) {
+        const eo = new IntersectionObserver(es => {
+          es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); eo.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('[class*="sda-"]').forEach(el => eo.observe(el));
+      }
 
       // WebGL
       const canvas = document.getElementById('bgCanvas');

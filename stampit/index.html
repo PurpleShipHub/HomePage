@@ -201,7 +201,7 @@
         gap: var(--space-xl);
       }
 
-      .hero-text { text-align: center; }
+      .hero-text { text-align: center; width: 100%; }
       .hero-text p { text-align: center; max-width: 100%; }
 
       .app-icon-container {
@@ -256,48 +256,48 @@
   <div class="section" id="hero">
     <div class="hero-layout">
       <div class="hero-icon-area">
-        <div class="app-icon-container">
+        <div class="app-icon-container sda-scale-reveal">
           <img src="../images/ic_stampit_alpha.png" alt="Stampit App Icon" class="app-icon">
         </div>
       </div>
       <div class="hero-text">
-        <h1 data-i18n="hero.title">Stampit</h1>
-        <div class="subtitle" data-i18n="hero.subtitle">회원권 관리 앱</div>
-        <p data-i18n="hero.description">선불 회원권, 쿠폰, 이용권 등 횟수 제한이 있는 상품을 간편하게 관리하는 스마트한 모바일 애플리케이션입니다. 복잡한 회원권 관리를 한 곳에서 체계적으로, 남은 횟수를 놓치지 않고 똑똑하게 관리하세요.</p>
+        <h1 class="sda-fade-right sda-delay-1" data-i18n="hero.title">Stampit</h1>
+        <div class="subtitle sda-fade-right sda-delay-2" data-i18n="hero.subtitle">회원권 관리 앱</div>
+        <p class="sda-fade-right sda-delay-3" data-i18n="hero.description">선불 회원권, 쿠폰, 이용권 등 횟수 제한이 있는 상품을 간편하게 관리하는 스마트한 모바일 애플리케이션입니다. 복잡한 회원권 관리를 한 곳에서 체계적으로, 남은 횟수를 놓치지 않고 똑똑하게 관리하세요.</p>
       </div>
     </div>
   </div>
 
   <!-- Features -->
   <div class="section" id="features">
-    <h2 data-i18n="features.title">주요 기능</h2>
+    <h2 class="sda-text-reveal" data-i18n="features.title">주요 기능</h2>
     <div class="features-grid">
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-1">
         <span class="feature-icon">🎫</span>
         <h3 class="feature-title" data-i18n="features.register.title">회원권 등록</h3>
         <p class="feature-description" data-i18n="features.register.description">선불 회원권, 쿠폰, 이용권 등 다양한 종류의 회원권을 간편하게 등록하고 관리하세요.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-2">
         <span class="feature-icon">✅</span>
         <h3 class="feature-title" data-i18n="features.check.title">사용 체크</h3>
         <p class="feature-description" data-i18n="features.check.description">회원권 사용 시 간편하게 체크하여 남은 횟수를 자동으로 차감합니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-3">
         <span class="feature-icon">🔢</span>
         <h3 class="feature-title" data-i18n="features.remaining.title">남은 횟수 관리</h3>
         <p class="feature-description" data-i18n="features.remaining.description">각 회원권의 남은 횟수를 한눈에 확인하고 놓치지 않도록 관리합니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-4">
         <span class="feature-icon">📋</span>
         <h3 class="feature-title" data-i18n="features.integration.title">통합 관리</h3>
         <p class="feature-description" data-i18n="features.integration.description">여러 매장의 회원권을 한 곳에서 통합하여 체계적으로 관리할 수 있습니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-5">
         <span class="feature-icon">⏰</span>
         <h3 class="feature-title" data-i18n="features.expiry.title">만료일 알림</h3>
         <p class="feature-description" data-i18n="features.expiry.description">회원권 만료일이 다가오면 알림을 받아 소중한 이용권을 놓치지 마세요.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-6">
         <span class="feature-icon">📊</span>
         <h3 class="feature-title" data-i18n="features.history.title">이용 내역</h3>
         <p class="feature-description" data-i18n="features.history.description">회원권 사용 이력을 상세히 기록하고 통계로 확인할 수 있습니다.</p>
@@ -307,9 +307,9 @@
 
   <!-- Download -->
   <div class="section" id="download">
-    <h2 data-i18n="download.title">지금 설치하세요</h2>
-    <p data-i18n="download.description">Android와 iOS에서 지금 바로 Stampit을 설치하여 회원권 관리를 시작하세요!</p>
-    <div class="download-buttons">
+    <h2 class="sda-text-reveal" data-i18n="download.title">지금 설치하세요</h2>
+    <p class="sda-fade-up sda-delay-1" data-i18n="download.description">Android와 iOS에서 지금 바로 Stampit을 설치하여 회원권 관리를 시작하세요!</p>
+    <div class="download-buttons sda-scale-reveal sda-delay-2">
       <a class="download-btn" data-i18n="download.android" href="https://play.google.com/store/apps/details?id=io.purpleship.stampit" target="_blank" rel="noopener noreferrer">Android 설치</a>
       <a class="download-btn" data-i18n="download.ios" href="https://apps.apple.com/app/id6753583567" target="_blank" rel="noopener noreferrer">iOS 설치</a>
     </div>
@@ -331,9 +331,13 @@
     uniform float time;
     void main(){
       vec2 uv = gl_FragCoord.xy / resolution.xy;
-      float l1 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31, 0.5, 0.501);
-      float l2 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32, 0.5, 0.501);
-      float l3 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32, 0.5, 0.501);
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
       float l = l1 + l2 + l3;
       gl_FragColor = vec4(l, l, l, 1.0);
     }
@@ -342,10 +346,18 @@
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       await window.i18n.init('stampit');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-      }, { threshold: 0.15 });
-      document.querySelectorAll('.section').forEach(s => observer.observe(s));
+      // Scroll Animation Init
+      const SDA = CSS.supports('animation-timeline', 'view()');
+      const so = new IntersectionObserver(es => {
+        es.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+      }, { threshold: SDA ? 0.05 : 0.15 });
+      document.querySelectorAll('.section').forEach(s => so.observe(s));
+      if (!SDA) {
+        const eo = new IntersectionObserver(es => {
+          es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); eo.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('[class*="sda-"]').forEach(el => eo.observe(el));
+      }
 
       // Nav scroll
       const nav = document.querySelector('.main-nav');

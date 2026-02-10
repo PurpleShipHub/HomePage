@@ -197,7 +197,7 @@
         gap: var(--space-xl);
       }
 
-      .hero-text { text-align: center; }
+      .hero-text { text-align: center; width: 100%; }
       .hero-text p { text-align: center; max-width: 100%; }
 
       .app-icon-container {
@@ -248,38 +248,38 @@
   <div class="section" id="hero">
     <div class="hero-layout">
       <div class="hero-icon-area">
-        <div class="app-icon-container">
+        <div class="app-icon-container sda-scale-reveal">
           <img src="../images/ic_movit_512_alpha.png" alt="Movit App Icon" class="app-icon">
         </div>
       </div>
       <div class="hero-text">
-        <h1 data-i18n="hero.title">Movit</h1>
-        <div class="subtitle" data-i18n="hero.subtitle">탐험 기반 지도 앱</div>
-        <p data-i18n="hero.description">실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다.</p>
+        <h1 class="sda-fade-right sda-delay-1" data-i18n="hero.title">Movit</h1>
+        <div class="subtitle sda-fade-right sda-delay-2" data-i18n="hero.subtitle">탐험 기반 지도 앱</div>
+        <p class="sda-fade-right sda-delay-3" data-i18n="hero.description">실제 세계를 탐험하며 자신만의 지도를 만들어가는 혁신적인 모바일 애플리케이션입니다. GPS를 통해 검은 영역으로 덮힌 지도를 밝혀나가며, 당신이 어디를 탐험했는지 기록합니다.</p>
       </div>
     </div>
   </div>
 
   <!-- Features -->
   <div class="section" id="features">
-    <h2 data-i18n="features.title">주요 기능</h2>
+    <h2 class="sda-text-reveal" data-i18n="features.title">주요 기능</h2>
     <div class="features-grid">
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-1">
         <span class="feature-icon">🗺️</span>
         <h3 class="feature-title" data-i18n="features.exploration.title">탐험 기반 지도 생성</h3>
         <p class="feature-description" data-i18n="features.exploration.description">GPS를 활용하여 실제로 방문한 장소만 지도에서 밝혀집니다. 당신만의 고유한 탐험 지도를 만들어보세요.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-2">
         <span class="feature-icon">📍</span>
         <h3 class="feature-title" data-i18n="features.tracking.title">실시간 위치 추적</h3>
         <p class="feature-description" data-i18n="features.tracking.description">정확한 GPS 위치 추적으로 탐험한 영역을 실시간으로 해제합니다. 모든 발걸음이 기록됩니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-3">
         <span class="feature-icon">🔒</span>
         <h3 class="feature-title" data-i18n="features.privacy.title">완전한 개인정보 보호</h3>
         <p class="feature-description" data-i18n="features.privacy.description">모든 데이터는 사용자 기기에만 저장됩니다. 회사 서버에는 어떤 개인정보도 저장되지 않습니다.</p>
       </div>
-      <div class="feature-card">
+      <div class="feature-card sda-card-enter sda-delay-4">
         <span class="feature-icon">📊</span>
         <h3 class="feature-title" data-i18n="features.record.title">개인 탐험 기록</h3>
         <p class="feature-description" data-i18n="features.record.description">탐험한 거리, 시간, 새로 발견한 영역 등을 상세히 기록하고 통계로 확인할 수 있습니다.</p>
@@ -289,9 +289,9 @@
 
   <!-- Download -->
   <div class="section" id="download">
-    <h2 data-i18n="download.title">지금 설치하세요</h2>
-    <p data-i18n="download.description">Android와 iOS에서 지금 바로 Movit을 설치하여 탐험을 시작하세요!</p>
-    <div class="download-buttons">
+    <h2 class="sda-text-reveal" data-i18n="download.title">지금 설치하세요</h2>
+    <p class="sda-fade-up sda-delay-1" data-i18n="download.description">Android와 iOS에서 지금 바로 Movit을 설치하여 탐험을 시작하세요!</p>
+    <div class="download-buttons sda-scale-reveal sda-delay-2">
       <a class="download-btn" data-i18n="download.android" href="https://play.google.com/store/apps/details?id=com.purpleship.projectf" target="_blank" rel="noopener noreferrer">Android 설치</a>
       <a class="download-btn" data-i18n="download.ios" href="https://apps.apple.com/app/id6747708096" target="_blank" rel="noopener noreferrer">iOS 설치</a>
     </div>
@@ -313,9 +313,13 @@
     uniform float time;
     void main(){
       vec2 uv = gl_FragCoord.xy / resolution.xy;
-      float l1 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31, 0.5, 0.501);
-      float l2 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32, 0.5, 0.501);
-      float l3 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32, 0.5, 0.501);
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
       float l = l1 + l2 + l3;
       gl_FragColor = vec4(l, l, l, 1.0);
     }
@@ -324,10 +328,18 @@
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       await window.i18n.init('movit');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-      }, { threshold: 0.15 });
-      document.querySelectorAll('.section').forEach(s => observer.observe(s));
+      // Scroll Animation Init
+      const SDA = CSS.supports('animation-timeline', 'view()');
+      const so = new IntersectionObserver(es => {
+        es.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+      }, { threshold: SDA ? 0.05 : 0.15 });
+      document.querySelectorAll('.section').forEach(s => so.observe(s));
+      if (!SDA) {
+        const eo = new IntersectionObserver(es => {
+          es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); eo.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('[class*="sda-"]').forEach(el => eo.observe(el));
+      }
 
       // Nav scroll
       const nav = document.querySelector('.main-nav');

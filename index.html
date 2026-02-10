@@ -344,6 +344,7 @@
       align-items: center;
       gap: 6px;
       transition: var(--transition-smooth);
+      white-space: nowrap;
     }
 
     .product-card:hover .learn-more {
@@ -417,6 +418,7 @@
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      white-space: nowrap;
       position: relative;
       overflow: hidden;
       min-width: 80px;
@@ -556,6 +558,7 @@
 
       .hero-text {
         text-align: center;
+        width: 100%;
       }
 
       .hero-text .subtitle {
@@ -567,8 +570,9 @@
       }
 
       .hero-keywords .keyword {
-        padding: 12px 24px;
-        font-size: 1rem;
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        max-width: 100%;
       }
 
       .hero-visual {
@@ -673,14 +677,14 @@
   <div class="section" id="sec1">
     <div class="hero-content">
       <div class="hero-text">
-        <h1 data-i18n="title">Purpleship</h1>
-        <div class="subtitle" data-i18n="description.line1">세상에 존재하지 않는 앱을 발견해서 개발하는 단체</div>
+        <h1 class="sda-text-reveal" data-i18n="title">Purpleship</h1>
+        <div class="subtitle sda-fade-up sda-delay-1" data-i18n="description.line1">세상에 존재하지 않는 앱을 발견해서 개발하는 단체</div>
         <div class="hero-keywords">
-          <span class="keyword" data-i18n="description.line2">무궁무진한 아이디어</span>
-          <span class="keyword" data-i18n="description.line3">아직 세상에 없는 무언가</span>
+          <span class="keyword sda-fade-up sda-delay-2" data-i18n="description.line2">무궁무진한 아이디어</span>
+          <span class="keyword sda-fade-up sda-delay-3" data-i18n="description.line3">아직 세상에 없는 무언가</span>
         </div>
       </div>
-      <div class="hero-visual">
+      <div class="hero-visual sda-fade-up sda-delay-2">
         <a href="/movit/" class="hero-icon-card" title="Movit"><img src="/images/ic_movit_512_alpha.png" alt="Movit"></a>
         <a href="/stampit/" class="hero-icon-card" title="Stampit"><img src="/images/ic_stampit_alpha.png" alt="Stampit"></a>
         <a href="/worldcanvas/" class="hero-icon-card" title="WorldCanvas">🌍</a>
@@ -695,9 +699,9 @@
 
   <!-- Product Showcase -->
   <div class="section" id="products">
-    <h2 data-i18n="products.title">우리의 제품</h2>
+    <h2 class="sda-text-reveal" data-i18n="products.title">우리의 제품</h2>
     <div class="product-grid">
-      <a href="/movit/" class="product-card" style="--card-accent: var(--movit-accent);">
+      <a href="/movit/" class="product-card sda-scale-reveal" style="--card-accent: var(--movit-accent);">
         <div class="product-card-icon">
           <img src="/images/ic_movit_512_alpha.png" alt="Movit">
         </div>
@@ -705,7 +709,7 @@
         <p data-i18n="products.movitSummary">실제 세계를 탐험하며 자신만의 지도를 만들어보세요.</p>
         <span class="learn-more" data-i18n="products.learnMore">자세히 보기 →</span>
       </a>
-      <a href="/stampit/" class="product-card" style="--card-accent: var(--stampit-accent);">
+      <a href="/stampit/" class="product-card sda-card-enter sda-delay-2" style="--card-accent: var(--stampit-accent);">
         <div class="product-card-icon">
           <img src="/images/ic_stampit_alpha.png" alt="Stampit">
         </div>
@@ -713,7 +717,7 @@
         <p data-i18n="products.stampitSummary">선불 회원권, 쿠폰, 이용권을 스마트하게 관리하세요.</p>
         <span class="learn-more" data-i18n="products.learnMore">자세히 보기 →</span>
       </a>
-      <a href="/worldcanvas/" class="product-card" style="--card-accent: var(--worldcanvas-accent);">
+      <a href="/worldcanvas/" class="product-card sda-card-enter sda-delay-3" style="--card-accent: var(--worldcanvas-accent);">
         <div class="product-card-icon">🌍</div>
         <h3>WorldCanvas</h3>
         <p data-i18n="products.worldcanvasSummary">전 세계 사람들과 함께 캔버스에 픽셀을 찍어보세요.</p>
@@ -724,11 +728,11 @@
 
   <!-- Vision -->
   <div class="section" id="sec2">
-    <h2 data-i18n="vision.title">우리의 비전</h2>
+    <h2 class="sda-text-reveal" data-i18n="vision.title">우리의 비전</h2>
     <p>
-      <span class="keyword" data-i18n="vision.line1">혁신적인 아이디어</span>
-      <span class="keyword" data-i18n="vision.line2">기존의 틀을 깨는 서비스</span>
-      <span class="keyword" data-i18n="vision.line3">상상을 현실로</span>
+      <span class="keyword sda-fade-left sda-delay-1" data-i18n="vision.line1">혁신적인 아이디어</span>
+      <span class="keyword sda-fade-left sda-delay-2" data-i18n="vision.line2">기존의 틀을 깨는 서비스</span>
+      <span class="keyword sda-fade-left sda-delay-3" data-i18n="vision.line3">상상을 현실로</span>
     </p>
     <div class="subtitle" data-i18n="vision.line4">새로운 경험을 제공하는 것이 우리의 목표입니다</div>
   </div>
@@ -736,11 +740,11 @@
   <!-- Join Us -->
   <div class="section" id="sec3">
     <div class="section-content">
-      <h2 data-i18n="join.title">함께하기</h2>
+      <h2 class="sda-text-reveal" data-i18n="join.title">함께하기</h2>
       <p>
-        <span class="keyword" data-i18n="join.line1">탐험의 시작</span>
-        <span class="keyword" data-i18n="join.line2">미지의 우주를 함께</span>
-        <span class="keyword" data-i18n="join.line3">새로운 세계 발견</span>
+        <span class="keyword sda-fade-right sda-delay-1" data-i18n="join.line1">탐험의 시작</span>
+        <span class="keyword sda-fade-right sda-delay-2" data-i18n="join.line2">미지의 우주를 함께</span>
+        <span class="keyword sda-fade-right sda-delay-3" data-i18n="join.line3">새로운 세계 발견</span>
       </p>
       <div class="subtitle" data-i18n="join.passionate">열정이 넘치는 분들을 기다립니다</div>
     </div>
@@ -764,9 +768,13 @@
     uniform float time;
     void main(){
       vec2 uv = gl_FragCoord.xy / resolution.xy;
-      float l1 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31, 0.5, 0.501);
-      float l2 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32, 0.5, 0.501);
-      float l3 = 1.0 - smoothstep(uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32, 0.5, 0.501);
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
       float l = l1 + l2 + l3;
       gl_FragColor = vec4(l, l, l, 1.0);
     }
@@ -776,13 +784,18 @@
     document.addEventListener('DOMContentLoaded', async () => {
       await window.i18n.init();
 
-      // Intersection Observer
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) entry.target.classList.add('active');
-        });
-      }, { threshold: 0.15 });
-      document.querySelectorAll('.section').forEach(s => observer.observe(s));
+      // Scroll Animation Init
+      const SDA = CSS.supports('animation-timeline', 'view()');
+      const so = new IntersectionObserver(es => {
+        es.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+      }, { threshold: SDA ? 0.05 : 0.15 });
+      document.querySelectorAll('.section').forEach(s => so.observe(s));
+      if (!SDA) {
+        const eo = new IntersectionObserver(es => {
+          es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); eo.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('[class*="sda-"]').forEach(el => eo.observe(el));
+      }
 
       // Nav scroll state
       const nav = document.querySelector('.main-nav');
