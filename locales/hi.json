@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Purpleship",
   "nav": {
     "apps": "उत्पाद"
@@ -67,9 +67,9 @@
       }
     },
     "download": {
-      "title": "See you soon",
-      "description": "WorldCanvas is currently in the works. We’ll share the launch news soon.",
-      "comingSoon": "Coming Soon"
+      "title": "Start Now",
+      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
+      "cta": "Open Canvas →"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
@@ -165,7 +165,7 @@
       "description": "Android और iOS पर अभी Movit इंस्टॉल करें और अपनी खोज शुरू करें!",
       "android": "Android के लिए इंस्टॉल करें",
       "ios": "iOS के लिए इंस्टॉल करें",
-      "comingSoon": "जल्द आ रहा है"
+      "cta": "Open Canvas →"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
