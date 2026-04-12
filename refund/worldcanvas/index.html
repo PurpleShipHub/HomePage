@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorldCanvas 환불정책</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGB9Q3SNE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PQGB9Q3SNE');
+  </script>
+  <base href="/">
+  <canvas id="bgCanvas"></canvas>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/common.css">
+  <script src="/locales/i18n-loader.js"></script>
+  <style>
+    body { --page-accent: var(--brand-purple-light); }
+    main { max-width: 900px; margin: 0 auto; padding: 120px 28px 64px; position: relative; z-index: 2; }
+    .page-header { text-align: center; margin-bottom: var(--space-2xl); }
+    .page-header h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; background: linear-gradient(135deg, var(--text-primary) 0%, var(--brand-purple-light) 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.05em; margin-bottom: var(--space-md); }
+    .page-header .subtitle { color: var(--text-secondary); font-size: 1rem; line-height: 1.7; max-width: 650px; margin: 0 auto var(--space-sm); }
+    .page-header .meta { color: var(--text-muted); font-size: 0.85rem; }
+    .legal-card { background: var(--surface-glass); border: 1px solid var(--surface-glass-border); border-radius: var(--radius-lg); padding: var(--space-2xl); position: relative; }
+    .legal-section { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--surface-glass-border); }
+    .legal-section h2 { font-size: 1.1rem; color: var(--brand-purple-light); margin-bottom: var(--space-md); letter-spacing: -0.03em; }
+    .legal-section p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-bottom: var(--space-sm); }
+    .legal-section ul { padding-left: 20px; margin: var(--space-sm) 0; }
+    .legal-section li { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin: var(--space-xs) 0; }
+    .highlight-box { background: rgba(167, 139, 250, 0.06); border: 1px solid rgba(167, 139, 250, 0.2); border-radius: var(--radius-md); padding: var(--space-lg); margin: var(--space-md) 0; }
+    .highlight-box p { margin: 0; color: var(--text-primary); font-weight: 500; }
+    .contact-link { color: var(--worldcanvas-accent); text-decoration: none; }
+    .contact-link:hover { text-decoration: underline; }
+    .legal-footer { margin-top: var(--space-2xl); text-align: center; }
+    .legal-footer a { color: var(--brand-purple-light); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: var(--transition-smooth); }
+    .legal-footer a:hover { color: var(--text-primary); }
+    @media (max-width: 768px) { main { padding: 100px 16px 40px; } .legal-card { padding: var(--space-xl) var(--space-lg); } }
+  </style>
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="/worldcanvas/" class="nav-brand">
+        <span class="brand-icon-emoji"><span>🎨</span></span>
+        <span class="brand-text" data-i18n="worldcanvasRefundPage.brand">WorldCanvas</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="/privacy/" data-i18n="worldcanvasRefundPage.navPrivacy">개인정보처리방침</a>
+        <a href="/terms/" data-i18n="worldcanvasRefundPage.navTerms">이용약관</a>
+        <a href="/refund/" data-i18n="worldcanvasRefundPage.navRefund">환불정책</a>
+      </nav>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+      <div class="language-selector">
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="fr">🇫🇷 Français</button>
+          <button data-lang="de">🇩🇪 Deutsch</button>
+          <button data-lang="ru">🇷🇺 Русский</button>
+          <button data-lang="ar">🇸🇦 العربية</button>
+          <button data-lang="hi">🇮🇳 हिन्दी</button>
+          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/privacy/" data-i18n="worldcanvasRefundPage.navPrivacy">개인정보처리방침</a>
+    <a href="/terms/" data-i18n="worldcanvasRefundPage.navTerms">이용약관</a>
+    <a href="/refund/" data-i18n="worldcanvasRefundPage.navRefund">환불정책</a>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <h1 data-i18n="worldcanvasRefundPage.title">WorldCanvas 환불정책</h1>
+      <p class="subtitle" data-i18n="worldcanvasRefundPage.subtitle">Paddle 결제 시스템을 통한 환불 안내</p>
+      <p class="meta" data-i18n="worldcanvasRefundPage.effectiveDate">시행일: 2026년 1월 1일</p>
+    </div>
+
+    <div class="legal-card">
+      <div class="legal-section" style="margin-top:0; padding-top:0; border-top:none;">
+        <h2 data-i18n="worldcanvasRefundPage.s1Title">제1조 (결제 처리)</h2>
+        <p data-i18n="worldcanvasRefundPage.s1p1">WorldCanvas의 모든 결제는 Paddle.com(Paddle Payments Ltd.)을 통해 처리됩니다. Paddle은 공식 판매 대행자(Merchant of Record)로서, 결제·세금 징수·환불을 포함한 모든 거래를 관리합니다.</p>
+        <p data-i18n="worldcanvasRefundPage.s1p2">따라서 환불은 Paddle의 환불 정책에 준하여 처리되며, 결제 수단에 따라 환불 소요 시간이 다를 수 있습니다.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasRefundPage.s2Title">제2조 (14일 환불 보장)</h2>
+        <div class="highlight-box">
+          <p data-i18n="worldcanvasRefundPage.s2Highlight">구매일로부터 14일 이내에는 사유와 관계없이 전액 환불을 받으실 수 있습니다.</p>
+        </div>
+        <p data-i18n="worldcanvasRefundPage.s2p1">14일 환불 보장은 구매한 Purple(가상재화)을 소비하지 않은 경우에 적용됩니다. 일부 또는 전부를 소비한 경우, 미사용분에 한하여 비례 환불이 진행됩니다.</p>
+        <p data-i18n="worldcanvasRefundPage.s2p2">보너스로 지급된 Purple은 환불 금액 산정 시 제외됩니다.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasRefundPage.s3Title">제3조 (환불 요청 방법)</h2>
+        <p data-i18n="worldcanvasRefundPage.s3Intro">환불을 요청하시려면 아래 방법 중 하나를 이용해 주세요:</p>
+        <ul>
+          <li data-i18n="worldcanvasRefundPage.s3li1">Paddle 결제 완료 이메일에 포함된 환불 링크를 통해 직접 환불 요청</li>
+          <li data-i18n="worldcanvasRefundPage.s3li2">captain@purpleship.io로 주문 번호와 함께 환불 요청 이메일 전송</li>
+        </ul>
+        <p data-i18n="worldcanvasRefundPage.s3p1">환불 요청 접수 후, 영업일 기준 3~5일 이내에 처리되며, 결제 수단에 따라 실제 환불까지 추가 시일이 소요될 수 있습니다.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasRefundPage.s4Title">제4조 (14일 이후 환불 제한사항)</h2>
+        <ul>
+          <li data-i18n="worldcanvasRefundPage.s4li1">구매일로부터 14일이 경과한 경우, 원칙적으로 환불이 불가합니다.</li>
+          <li data-i18n="worldcanvasRefundPage.s4li2">서비스 장애, 결제 오류 등 회사 귀책 사유가 있는 경우에는 14일 경과 후에도 환불이 가능합니다.</li>
+          <li data-i18n="worldcanvasRefundPage.s4li3">부정 사용, 악용, 또는 약관 위반이 확인된 경우 환불이 거부될 수 있습니다.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasRefundPage.s5Title">제5조 (문의)</h2>
+        <p>
+          <span data-i18n="worldcanvasRefundPage.s5p1">환불 관련 문의 사항이 있으시면 </span>
+          <a href="mailto:captain@purpleship.io" class="contact-link">captain@purpleship.io</a>
+          <span data-i18n="worldcanvasRefundPage.s5p1After">로 연락해 주세요.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="legal-footer">
+      <a href="/refund/" data-i18n="worldcanvasRefundPage.backToRefund">&larr; 환불정책으로 돌아가기</a>
+    </div>
+  </main>
+
+  <script id="vertexShader" type="x-shader/x-vertex">
+    attribute vec2 position;
+    void main() { gl_Position = vec4(position, 0.0, 1.0); }
+  </script>
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec2 resolution;
+    uniform float time;
+    void main(){
+      vec2 uv = gl_FragCoord.xy / resolution.xy;
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
+      float l = l1 + l2 + l3;
+      gl_FragColor = vec4(l, l, l, 1.0);
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await window.i18n.init();
+
+      // WebGL
+      const canvas = document.getElementById('bgCanvas');
+      const gl = canvas.getContext('webgl');
+      if (gl) {
+        function resizeCanvas(){ canvas.width=window.innerWidth; canvas.height=window.innerHeight; gl.viewport(0,0,canvas.width,canvas.height); }
+        window.addEventListener('resize', resizeCanvas); resizeCanvas();
+        function createShader(type, source){ const s=gl.createShader(type); gl.shaderSource(s,source); gl.compileShader(s); return s; }
+        const vs=createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
+        const fs=createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
+        const program=gl.createProgram(); gl.attachShader(program,vs); gl.attachShader(program,fs); gl.linkProgram(program); gl.useProgram(program);
+        const buffer=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+        const position=gl.getAttribLocation(program,'position'); gl.enableVertexAttribArray(position);
+        gl.vertexAttribPointer(position,2,gl.FLOAT,false,0,0);
+        const tLoc=gl.getUniformLocation(program,'time'), rLoc=gl.getUniformLocation(program,'resolution');
+        function animate(t){ t*=0.001; gl.uniform1f(tLoc,t); gl.uniform2f(rLoc,canvas.width,canvas.height); gl.drawArrays(gl.TRIANGLE_STRIP,0,4); requestAnimationFrame(animate); }
+        requestAnimationFrame(animate);
+      }
+
+      // Nav scroll
+      const nav = document.querySelector('.main-nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+      });
+
+      // Mobile menu toggle
+      const burger = document.querySelector('.nav-burger');
+      const panel = document.getElementById('mobileMenu');
+      if (burger && panel) {
+        burger.addEventListener('click', () => {
+          const isOpen = burger.getAttribute('aria-expanded') === 'true';
+          burger.setAttribute('aria-expanded', String(!isOpen));
+          if (panel.hasAttribute('hidden')) panel.removeAttribute('hidden');
+          else panel.setAttribute('hidden', '');
+        });
+      }
+
+      // Language
+      const btn=document.getElementById('langBtn'), menu=document.getElementById('langMenu'), label=document.getElementById('langLabel');
+      function setLabel(lang){ if(!label)return; const map={ko:'한국어',en:'English',zh:'中文',ja:'日本語',es:'Español',fr:'Français',de:'Deutsch',ru:'Русский',ar:'العربية',hi:'हिन्दी',vi:'Tiếng Việt'}; label.textContent=map[lang]||'Auto'; }
+      setLabel(document.documentElement.lang||'auto');
+      if(btn&&menu){
+        btn.addEventListener('click',()=> menu.hasAttribute('hidden') ? menu.removeAttribute('hidden') : menu.setAttribute('hidden',''));
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click',async()=>{ let lang=item.getAttribute('data-lang'); if(lang==='auto')lang=window.i18n.detectLanguage(); await window.i18n.changeLanguage(lang); setLabel(lang); menu.setAttribute('hidden',''); });
+        });
+        document.addEventListener('click',(e)=>{ if(!menu.contains(e.target)&&!btn.contains(e.target))menu.setAttribute('hidden',''); });
+      }
+    });
+  </script>
+</body>
+</html>

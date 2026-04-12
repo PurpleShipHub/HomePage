@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorldCanvas 구매 약관</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGB9Q3SNE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PQGB9Q3SNE');
+  </script>
+  <base href="/">
+  <canvas id="bgCanvas"></canvas>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/common.css">
+  <script src="/locales/i18n-loader.js"></script>
+  <style>
+    body { --page-accent: var(--brand-purple-light); }
+    main { max-width: 900px; margin: 0 auto; padding: 120px 28px 64px; position: relative; z-index: 2; }
+    .page-header { text-align: center; margin-bottom: var(--space-2xl); }
+    .page-header h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; background: linear-gradient(135deg, var(--text-primary) 0%, var(--brand-purple-light) 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.05em; margin-bottom: var(--space-md); }
+    .page-header .subtitle { color: var(--text-secondary); font-size: 1rem; line-height: 1.7; max-width: 650px; margin: 0 auto var(--space-sm); }
+    .page-header .meta { color: var(--text-muted); font-size: 0.85rem; }
+    .legal-card { background: var(--surface-glass); border: 1px solid var(--surface-glass-border); border-radius: var(--radius-lg); padding: var(--space-2xl); position: relative; }
+    .legal-section { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--surface-glass-border); }
+    .legal-section h2 { font-size: 1.1rem; color: var(--brand-purple-light); margin-bottom: var(--space-md); letter-spacing: -0.03em; }
+    .legal-section p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-bottom: var(--space-sm); }
+    .legal-section ul { padding-left: 20px; margin: var(--space-sm) 0; }
+    .legal-section li { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin: var(--space-xs) 0; }
+    .highlight-box { background: rgba(167, 139, 250, 0.06); border: 1px solid rgba(167, 139, 250, 0.2); border-radius: var(--radius-md); padding: var(--space-lg); margin: var(--space-md) 0; }
+    .highlight-box p { margin: 0; color: var(--text-primary); font-weight: 500; }
+    .contact-link { color: var(--worldcanvas-accent); text-decoration: none; }
+    .contact-link:hover { text-decoration: underline; }
+    .legal-footer { margin-top: var(--space-2xl); text-align: center; }
+    .legal-footer a { color: var(--brand-purple-light); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: var(--transition-smooth); }
+    .legal-footer a:hover { color: var(--text-primary); }
+    @media (max-width: 768px) { main { padding: 100px 16px 40px; } .legal-card { padding: var(--space-xl) var(--space-lg); } }
+  </style>
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="/worldcanvas/" class="nav-brand">
+        <span class="brand-icon-emoji"><span>🎨</span></span>
+        <span class="brand-text" data-i18n="worldcanvasTermsPage.brand">WorldCanvas</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="/privacy/" data-i18n="worldcanvasTermsPage.navPrivacy">개인정보처리방침</a>
+        <a href="/terms/" data-i18n="worldcanvasTermsPage.navTerms">이용약관</a>
+        <a href="/refund/" data-i18n="worldcanvasTermsPage.navRefund">환불정책</a>
+      </nav>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+      <div class="language-selector">
+        <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <button data-lang="auto">🌐 Auto</button>
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="en">🇺🇸 English</button>
+          <button data-lang="zh">🇨🇳 中文</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="es">🇪🇸 Español</button>
+          <button data-lang="fr">🇫🇷 Français</button>
+          <button data-lang="de">🇩🇪 Deutsch</button>
+          <button data-lang="ru">🇷🇺 Русский</button>
+          <button data-lang="ar">🇸🇦 العربية</button>
+          <button data-lang="hi">🇮🇳 हिन्दी</button>
+          <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/privacy/" data-i18n="worldcanvasTermsPage.navPrivacy">개인정보처리방침</a>
+    <a href="/terms/" data-i18n="worldcanvasTermsPage.navTerms">이용약관</a>
+    <a href="/refund/" data-i18n="worldcanvasTermsPage.navRefund">환불정책</a>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <h1 data-i18n="worldcanvasTermsPage.title">WorldCanvas 구매 약관</h1>
+      <p class="subtitle" data-i18n="worldcanvasTermsPage.subtitle">WorldCanvas 서비스 내 유료 상품 및 가상재화 Purple의 구매·사용·환불에 관한 약관입니다.</p>
+      <p class="meta" data-i18n="worldcanvasTermsPage.effectiveDate">시행일: 2025년 12월 15일</p>
+    </div>
+
+    <div class="legal-card">
+      <div class="legal-section" style="margin-top:0; padding-top:0; border-top:none;">
+        <h2 data-i18n="worldcanvasTermsPage.s1Title">제1조 (정의)</h2>
+        <ul>
+          <li data-i18n="worldcanvasTermsPage.s1d1">"유료 상품"이란 WorldCanvas 내에서 실제 통화로 구매할 수 있는 디지털 콘텐츠 및 서비스를 말합니다.</li>
+          <li data-i18n="worldcanvasTermsPage.s1d2">"Purple"이란 WorldCanvas 내에서 사용되는 가상재화로, 팔레트 확장·일괄 찍기 한도 증가 등 다양한 기능에 사용됩니다.</li>
+          <li data-i18n="worldcanvasTermsPage.s1d3">"소비"란 Purple을 사용하여 서비스 내 기능을 이용하는 행위를 말합니다.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasTermsPage.s2Title">제2조 (Purple 사용처)</h2>
+        <p data-i18n="worldcanvasTermsPage.s2p1">Purple은 WorldCanvas 서비스 내에서 다음과 같은 기능에 사용됩니다:</p>
+        <ul>
+          <li data-i18n="worldcanvasTermsPage.s2li1">팔레트 색상 및 슬롯 확장 (예: 추가 색상 팔레트 잠금 해제)</li>
+          <li data-i18n="worldcanvasTermsPage.s2li2">픽셀 일괄 찍기 한도 증가 (예: 한 번에 더 많은 픽셀 배치)</li>
+          <li data-i18n="worldcanvasTermsPage.s2li3">기타 향후 추가되는 프리미엄 기능</li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasTermsPage.s3Title">제3조 (결제 및 제공)</h2>
+        <p data-i18n="worldcanvasTermsPage.s3p1">Purple 구매는 다음 조건에 따라 처리됩니다:</p>
+        <ul>
+          <li data-i18n="worldcanvasTermsPage.s3li1">결제는 Paddle.com(공식 결제 대행사)을 통해 처리되며, 결제 완료 즉시 Purple이 계정에 지급됩니다.</li>
+          <li data-i18n="worldcanvasTermsPage.s3li2">결제 금액에는 부가가치세(VAT) 및 기타 세금이 포함될 수 있으며, 세금은 구매자의 거주 국가에 따라 달라집니다.</li>
+          <li>
+            <span data-i18n="worldcanvasTermsPage.s3li3">패키지별 Purple 수량 및 가격은 </span>
+            <a href="/pricing/" style="color: var(--worldcanvas-accent); text-decoration: none;" data-i18n="worldcanvasTermsPage.s3li3Link">가격 페이지</a>
+            <span data-i18n="worldcanvasTermsPage.s3li3After">에서 확인할 수 있습니다.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasTermsPage.s4Title">제4조 (청약철회(환불) 및 예외)</h2>
+        <p data-i18n="worldcanvasTermsPage.s4p1">구매한 Purple에 대해 다음 조건에 따라 환불이 가능합니다:</p>
+        <ul>
+          <li data-i18n="worldcanvasTermsPage.s4li1">구매일로부터 14일 이내에 환불을 요청할 수 있습니다.</li>
+          <li data-i18n="worldcanvasTermsPage.s4li2">구매한 Purple의 일부 또는 전부를 이미 소비한 경우, 미사용분에 한하여 환불이 가능합니다.</li>
+          <li data-i18n="worldcanvasTermsPage.s4li3">보너스로 지급된 Purple은 환불 대상에서 제외됩니다.</li>
+          <li data-i18n="worldcanvasTermsPage.s4li4">부정 사용, 악용, 또는 약관 위반으로 인한 구매 건은 환불이 거부될 수 있습니다.</li>
+          <li>
+            <span data-i18n="worldcanvasTermsPage.s4li5">환불 절차 및 상세 내용은 </span>
+            <a href="/refund/" style="color: var(--worldcanvas-accent); text-decoration: none;" data-i18n="worldcanvasTermsPage.s4li5Link">환불정책 페이지</a>
+            <span data-i18n="worldcanvasTermsPage.s4li5After">를 참고하세요.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasTermsPage.s5Title">제5조 (미성년자 결제)</h2>
+        <p data-i18n="worldcanvasTermsPage.s5p1">미성년자가 결제를 진행할 경우, 법정대리인(부모 등)의 동의가 필요합니다. 동의 없이 이루어진 결제는 법정대리인이 취소를 요청할 수 있으며, 이 경우 관련 법령에 따라 처리됩니다.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2 data-i18n="worldcanvasTermsPage.s6Title">제6조 (이용 제한 및 회수)</h2>
+        <p data-i18n="worldcanvasTermsPage.s6p1">부정한 방법으로 Purple을 취득하거나, 서비스 이용약관을 위반한 경우, 회사는 사전 통지 후 해당 Purple을 회수하거나 계정 이용을 제한할 수 있습니다. 이 경우 환불은 제공되지 않습니다.</p>
+      </div>
+    </div>
+
+    <div class="legal-footer">
+      <a href="/terms/" data-i18n="worldcanvasTermsPage.backToTerms">&larr; 이용약관으로 돌아가기</a>
+    </div>
+  </main>
+
+  <script id="vertexShader" type="x-shader/x-vertex">
+    attribute vec2 position;
+    void main() { gl_Position = vec4(position, 0.0, 1.0); }
+  </script>
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec2 resolution;
+    uniform float time;
+    void main(){
+      vec2 uv = gl_FragCoord.xy / resolution.xy;
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
+      float l = l1 + l2 + l3;
+      gl_FragColor = vec4(l, l, l, 1.0);
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await window.i18n.init();
+
+      // WebGL
+      const canvas = document.getElementById('bgCanvas');
+      const gl = canvas.getContext('webgl');
+      if (gl) {
+        function resizeCanvas(){ canvas.width=window.innerWidth; canvas.height=window.innerHeight; gl.viewport(0,0,canvas.width,canvas.height); }
+        window.addEventListener('resize', resizeCanvas); resizeCanvas();
+        function createShader(type, source){ const s=gl.createShader(type); gl.shaderSource(s,source); gl.compileShader(s); return s; }
+        const vs=createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
+        const fs=createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
+        const program=gl.createProgram(); gl.attachShader(program,vs); gl.attachShader(program,fs); gl.linkProgram(program); gl.useProgram(program);
+        const buffer=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+        const position=gl.getAttribLocation(program,'position'); gl.enableVertexAttribArray(position);
+        gl.vertexAttribPointer(position,2,gl.FLOAT,false,0,0);
+        const tLoc=gl.getUniformLocation(program,'time'), rLoc=gl.getUniformLocation(program,'resolution');
+        function animate(t){ t*=0.001; gl.uniform1f(tLoc,t); gl.uniform2f(rLoc,canvas.width,canvas.height); gl.drawArrays(gl.TRIANGLE_STRIP,0,4); requestAnimationFrame(animate); }
+        requestAnimationFrame(animate);
+      }
+
+      // Nav scroll
+      const nav = document.querySelector('.main-nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+      });
+
+      // Mobile menu toggle
+      const burger = document.querySelector('.nav-burger');
+      const panel = document.getElementById('mobileMenu');
+      if (burger && panel) {
+        burger.addEventListener('click', () => {
+          const isOpen = burger.getAttribute('aria-expanded') === 'true';
+          burger.setAttribute('aria-expanded', String(!isOpen));
+          if (panel.hasAttribute('hidden')) panel.removeAttribute('hidden');
+          else panel.setAttribute('hidden', '');
+        });
+      }
+
+      // Language
+      const btn=document.getElementById('langBtn'), menu=document.getElementById('langMenu'), label=document.getElementById('langLabel');
+      function setLabel(lang){ if(!label)return; const map={ko:'한국어',en:'English',zh:'中文',ja:'日本語',es:'Español',fr:'Français',de:'Deutsch',ru:'Русский',ar:'العربية',hi:'हिन्दी',vi:'Tiếng Việt'}; label.textContent=map[lang]||'Auto'; }
+      setLabel(document.documentElement.lang||'auto');
+      if(btn&&menu){
+        btn.addEventListener('click',()=> menu.hasAttribute('hidden') ? menu.removeAttribute('hidden') : menu.setAttribute('hidden',''));
+        menu.querySelectorAll('button[data-lang]').forEach(item=>{
+          item.addEventListener('click',async()=>{ let lang=item.getAttribute('data-lang'); if(lang==='auto')lang=window.i18n.detectLanguage(); await window.i18n.changeLanguage(lang); setLabel(lang); menu.setAttribute('hidden',''); });
+        });
+        document.addEventListener('click',(e)=>{ if(!menu.contains(e.target)&&!btn.contains(e.target))menu.setAttribute('hidden',''); });
+      }
+    });
+  </script>
+</body>
+</html>
