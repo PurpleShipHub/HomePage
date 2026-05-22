@@ -62,7 +62,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io"
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "개인정보처리방침",
+      "termsConditions": "이용약관",
+      "refund": "환불정책"
     }
   },
   "vision": {
@@ -82,7 +85,11 @@
   "donation": "도네이션하기",
   "footer": {
     "copyright": "© 2025 Purpleship. All rights reserved.",
-    "contact": "Contact: captain@purpleship.io"
+    "contact": "Contact: captain@purpleship.io",
+    "pricing": "가격",
+    "privacy": "개인정보처리방침",
+    "termsConditions": "이용약관",
+    "refund": "환불정책"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -117,7 +124,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io"
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "개인정보처리방침",
+      "termsConditions": "이용약관",
+      "refund": "환불정책"
     }
   },
   "stampit": {
@@ -166,7 +176,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io"
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "개인정보처리방침",
+      "termsConditions": "이용약관",
+      "refund": "환불정책"
     }
   },
   "pricingPage": {
@@ -258,6 +271,8 @@
     "section8": {
       "title": "8. 서비스별 추가 고지",
       "intro": "서비스 특성에 따라 추가로 적용되는 개인정보 처리 내용을 안내합니다.",
+      "toggleDetails": "자세히 보기",
+      "collapseDetails": "접기",
       "stampit": {
         "title": "Stampit (회원권 관리)",
         "summary": "회원권·쿠폰 사용 횟수를 관리하는 앱으로, 데이터는 기본적으로 기기 내에 저장됩니다.",

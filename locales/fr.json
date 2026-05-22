@@ -57,12 +57,14 @@
       "title": "Installer maintenant",
       "description": "Installez Movit dès maintenant sur Android et iOS pour commencer votre exploration.",
       "android": "Installer sur Android",
-      "ios": "Installer sur iOS",
-      "cta": "Open Canvas →"
+      "ios": "Installer sur iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Tous droits réservés.",
-      "contact": "Contact : captain@purpleship.io"
+      "contact": "Contact : captain@purpleship.io",
+      "privacy": "Politique de confidentialité",
+      "termsConditions": "Conditions d'utilisation",
+      "refund": "Politique de remboursement"
     }
   },
   "vision": {
@@ -83,43 +85,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Tous droits réservés.",
     "contact": "Contact : captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "Tarifs",
+    "privacy": "Politique de confidentialité",
+    "termsConditions": "Conditions d'utilisation",
+    "refund": "Politique de remboursement"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "Accueil",
+      "download": "Commencer"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "Canevas collaboratif",
+      "description": "Placez des pixels sur un canevas partagé avec des gens du monde entier et terminez une œuvre ensemble."
     },
     "features": {
-      "title": "Key Features",
+      "title": "Fonctionnalités clés",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "Collaboration en temps réel",
+        "description": "Travaillez ensemble sur le même canevas en même temps, avec des mises à jour instantanées."
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "Palette et pixels",
+        "description": "Choisissez des couleurs, placez des pixels et remplissez un immense canevas avec la communauté."
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "Contrôles rapides",
+        "description": "Une interface fluide pour naviguer rapidement et travailler sur la zone souhaitée."
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "Commencer maintenant",
+      "description": "WorldCanvas est en ligne. Placez vos pixels sur un canevas partagé par des gens du monde entier.",
+      "cta": "Ouvrir le canevas →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. Tous droits réservés.",
+      "contact": "Contact : captain@purpleship.io",
+      "pricing": "Tarifs",
+      "privacy": "Politique de confidentialité",
+      "termsConditions": "Conditions d'utilisation",
+      "refund": "Politique de remboursement"
     }
   },
   "qroom": {
@@ -147,33 +155,33 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Tarifs",
+    "subtitle": "Tarifs des packs de monnaie virtuelle (Purple) de WorldCanvas. (Avant le lancement ; susceptibles d'être modifiés.)",
+    "lastUpdated": "Dernière mise à jour : 15 décembre 2025",
+    "backToHome": "← Retour à l'accueil",
     "nav": {},
     "plans": {
       "starter": {
         "title": "Starter",
         "price": "$5",
-        "desc": "25,000 Purple"
+        "desc": "25 000 Purple"
       },
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150 000 Purple + 5 % de bonus (157 500 au total)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250 000 Purple + 10 % de bonus (275 000 au total)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "Pour étendre les couleurs/emplacements de la palette, etc.",
+        "li2": "Pour augmenter la limite de placement groupé de pixels, etc."
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "Les prix affichés sont indicatifs ; le montant final peut varier selon les taxes, les taux de change et le mode de paiement."
   },
   "stampit": {
     "title": "Stampit",
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Tous droits réservés.",
-      "contact": "Contact : captain@purpleship.io"
+      "contact": "Contact : captain@purpleship.io",
+      "privacy": "Politique de confidentialité",
+      "termsConditions": "Conditions d'utilisation",
+      "refund": "Politique de remboursement"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. Avis Spécifiques aux Services",
       "intro": "Ce qui suit fournit des détails supplémentaires sur le traitement des informations personnelles spécifiques à chaque service.",
+      "toggleDetails": "Voir les détails",
+      "collapseDetails": "Réduire",
       "stampit": {
         "title": "Stampit (Gestion des Adhésions)",
         "summary": "Une application pour gérer les adhésions et l'utilisation des coupons. Les données sont stockées localement sur l'appareil par défaut.",

@@ -57,12 +57,14 @@
       "title": "Установить сейчас",
       "description": "Установите Movit на Android и iOS и начните своё исследование!",
       "android": "Скачать для Android",
-      "ios": "Скачать для iOS",
-      "cta": "Open Canvas →"
+      "ios": "Скачать для iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Все права защищены.",
-      "contact": "Контакт: captain@purpleship.io"
+      "contact": "Контакт: captain@purpleship.io",
+      "privacy": "Политика конфиденциальности",
+      "termsConditions": "Условия использования",
+      "refund": "Политика возврата"
     }
   },
   "vision": {
@@ -83,43 +85,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Все права защищены.",
     "contact": "Контакт: captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "Цены",
+    "privacy": "Политика конфиденциальности",
+    "termsConditions": "Условия использования",
+    "refund": "Политика возврата"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "Главная",
+      "download": "Начать"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "Совместный холст",
+      "description": "Размещайте пиксели на общем холсте с людьми со всего мира и вместе завершите произведение."
     },
     "features": {
-      "title": "Key Features",
+      "title": "Ключевые возможности",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "Совместная работа в реальном времени",
+        "description": "Работайте одновременно на одном холсте с мгновенными обновлениями."
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "Палитра и пиксели",
+        "description": "Выбирайте цвета, ставьте пиксели и заполняйте огромный холст вместе с сообществом."
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "Быстрое управление",
+        "description": "Плавный интерфейс, чтобы быстро перемещаться и работать в нужной области."
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "Начать сейчас",
+      "description": "WorldCanvas уже доступен. Размещайте свои пиксели на холсте, общем для людей со всего мира.",
+      "cta": "Открыть холст →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. Все права защищены.",
+      "contact": "Контакт: captain@purpleship.io",
+      "pricing": "Цены",
+      "privacy": "Политика конфиденциальности",
+      "termsConditions": "Условия использования",
+      "refund": "Политика возврата"
     }
   },
   "qroom": {
@@ -147,33 +155,33 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Цены",
+    "subtitle": "Цены на пакеты виртуальной валюты (Purple) для WorldCanvas. (До запуска; могут измениться.)",
+    "lastUpdated": "Последнее обновление: 15 декабря 2025 г.",
+    "backToHome": "← Вернуться на главную",
     "nav": {},
     "plans": {
       "starter": {
         "title": "Starter",
         "price": "$5",
-        "desc": "25,000 Purple"
+        "desc": "25 000 Purple"
       },
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150 000 Purple + 5% бонус (всего 157 500 Purple)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250 000 Purple + 10% бонус (всего 275 000 Purple)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "Используется для расширения цветов/слотов палитры и т. п.",
+        "li2": "Используется для увеличения лимита массовой расстановки пикселей и т. п."
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "Указанные цены являются ориентировочными; итоговая сумма может отличаться в зависимости от налогов, курса валют и способа оплаты."
   },
   "stampit": {
     "title": "Stampit",
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Все права защищены.",
-      "contact": "Контакт: captain@purpleship.io"
+      "contact": "Контакт: captain@purpleship.io",
+      "privacy": "Политика конфиденциальности",
+      "termsConditions": "Условия использования",
+      "refund": "Политика возврата"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. Уведомления для отдельных сервисов",
       "intro": "Ниже приведены дополнительные сведения об обработке персональных данных для каждого сервиса.",
+      "toggleDetails": "Подробнее",
+      "collapseDetails": "Свернуть",
       "stampit": {
         "title": "Stampit (Управление членством)",
         "summary": "Приложение для управления членством и использованием купонов. Данные по умолчанию хранятся локально на устройстве.",

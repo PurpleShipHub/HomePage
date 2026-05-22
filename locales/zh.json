@@ -57,12 +57,14 @@
       "title": "立即下载",
       "description": "立即在Android和iOS上安装Movit，开启你的探索之旅！",
       "android": "Android 下载",
-      "ios": "iOS 下载",
-      "cta": "Open Canvas →"
+      "ios": "iOS 下载"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 版权所有。",
-      "contact": "联系方式：captain@purpleship.io"
+      "contact": "联系方式：captain@purpleship.io",
+      "privacy": "隐私政策",
+      "termsConditions": "服务条款",
+      "refund": "退款政策"
     }
   },
   "vision": {
@@ -83,43 +85,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. 版权所有。",
     "contact": "联系方式：captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "价格",
+    "privacy": "隐私政策",
+    "termsConditions": "服务条款",
+    "refund": "退款政策"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "首页",
+      "download": "开始使用"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "协作画布",
+      "description": "与全球用户一起在同一画布上绘制像素，共同完成作品。"
     },
     "features": {
-      "title": "Key Features",
+      "title": "核心功能",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "实时协作",
+        "description": "多人同时在同一画布上作画，变化即时反映。"
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "调色板与像素",
+        "description": "选择颜色绘制像素，与社区一起填满巨型画布。"
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "快速操控",
+        "description": "流畅的 UI 让你快速浏览并在所需区域作画。"
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "立即开始",
+      "description": "WorldCanvas 现已开放。在全世界共享的画布上放置你的像素吧。",
+      "cta": "打开画布 →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. 版权所有。",
+      "contact": "联系方式：captain@purpleship.io",
+      "pricing": "价格",
+      "privacy": "隐私政策",
+      "termsConditions": "服务条款",
+      "refund": "退款政策"
     }
   },
   "qroom": {
@@ -147,10 +155,10 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "价格",
+    "subtitle": "WorldCanvas 虚拟商品（Purple）套餐价格说明。（上线前，可能会有调整）",
+    "lastUpdated": "最后更新：2025年12月15日",
+    "backToHome": "← 返回首页",
     "nav": {},
     "plans": {
       "starter": {
@@ -161,19 +169,19 @@
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150,000 Purple + 5% 奖励（共 157,500 Purple）"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250,000 Purple + 10% 奖励（共 275,000 Purple）"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "用于扩展调色板颜色/槽位等",
+        "li2": "用于提升批量像素绘制上限等"
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "显示价格仅供参考，最终结算金额可能因税费/汇率/支付方式而异。"
   },
   "stampit": {
     "title": "Stampit",
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 版权所有。",
-      "contact": "联系方式：captain@purpleship.io"
+      "contact": "联系方式：captain@purpleship.io",
+      "privacy": "隐私政策",
+      "termsConditions": "服务条款",
+      "refund": "退款政策"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. 服务特定通知",
       "intro": "以下提供各服务特定的个人信息处理详情。",
+      "toggleDetails": "查看详情",
+      "collapseDetails": "收起",
       "stampit": {
         "title": "Stampit（会员管理）",
         "summary": "用于管理会员和优惠券使用的应用。数据默认存储在设备本地。",

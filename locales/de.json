@@ -57,12 +57,14 @@
       "title": "Jetzt installieren",
       "description": "Installiere Movit jetzt auf Android und iOS und starte deine Entdeckungsreise!",
       "android": "Für Android herunterladen",
-      "ios": "Für iOS herunterladen",
-      "cta": "Open Canvas →"
+      "ios": "Für iOS herunterladen"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Alle Rechte vorbehalten.",
-      "contact": "Kontakt: captain@purpleship.io"
+      "contact": "Kontakt: captain@purpleship.io",
+      "privacy": "Datenschutzerklärung",
+      "termsConditions": "Nutzungsbedingungen",
+      "refund": "Rückerstattungsrichtlinie"
     }
   },
   "vision": {
@@ -83,43 +85,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Alle Rechte vorbehalten.",
     "contact": "Kontakt: captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "Preise",
+    "privacy": "Datenschutzerklärung",
+    "termsConditions": "Nutzungsbedingungen",
+    "refund": "Rückerstattungsrichtlinie"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "Startseite",
+      "download": "Loslegen"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "Kollaborative Leinwand",
+      "description": "Setze Pixel auf einer geteilten Leinwand mit Menschen aus aller Welt und vollendet gemeinsam ein Kunstwerk."
     },
     "features": {
-      "title": "Key Features",
+      "title": "Wichtigste Funktionen",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "Echtzeit-Zusammenarbeit",
+        "description": "Arbeitet gleichzeitig auf derselben Leinwand mit sofortigen Aktualisierungen."
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "Palette & Pixel",
+        "description": "Wähle Farben, setze Pixel und füllt mit der Community eine riesige Leinwand."
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "Schnelle Steuerung",
+        "description": "Eine flüssige Oberfläche, um schnell zu navigieren und im gewünschten Bereich zu arbeiten."
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "Jetzt starten",
+      "description": "WorldCanvas ist live. Setzt eure Pixel auf einer Leinwand, die von Menschen weltweit geteilt wird.",
+      "cta": "Leinwand öffnen →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. Alle Rechte vorbehalten.",
+      "contact": "Kontakt: captain@purpleship.io",
+      "pricing": "Preise",
+      "privacy": "Datenschutzerklärung",
+      "termsConditions": "Nutzungsbedingungen",
+      "refund": "Rückerstattungsrichtlinie"
     }
   },
   "qroom": {
@@ -147,33 +155,33 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Preise",
+    "subtitle": "Preisinformationen für die Pakete der virtuellen Währung (Purple) von WorldCanvas. (Vor dem Launch; Änderungen möglich.)",
+    "lastUpdated": "Zuletzt aktualisiert: 15. Dezember 2025",
+    "backToHome": "← Zurück zur Startseite",
     "nav": {},
     "plans": {
       "starter": {
         "title": "Starter",
         "price": "$5",
-        "desc": "25,000 Purple"
+        "desc": "25.000 Purple"
       },
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150.000 Purple + 5 % Bonus (insgesamt 157.500 Purple)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250.000 Purple + 10 % Bonus (insgesamt 275.000 Purple)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "Zur Erweiterung von Paletten-Farben/Slots usw.",
+        "li2": "Zur Erhöhung des Limits für gebündeltes Pixel-Setzen usw."
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "Die angezeigten Preise sind Richtwerte; der Endbetrag kann je nach Steuern, Wechselkursen und Zahlungsmittel abweichen."
   },
   "stampit": {
     "title": "Stampit",
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Alle Rechte vorbehalten.",
-      "contact": "Kontakt: captain@purpleship.io"
+      "contact": "Kontakt: captain@purpleship.io",
+      "privacy": "Datenschutzerklärung",
+      "termsConditions": "Nutzungsbedingungen",
+      "refund": "Rückerstattungsrichtlinie"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. Dienstspezifische Hinweise",
       "intro": "Im Folgenden werden zusätzliche Details zur Verarbeitung personenbezogener Daten für jeden Dienst aufgeführt.",
+      "toggleDetails": "Details anzeigen",
+      "collapseDetails": "Einklappen",
       "stampit": {
         "title": "Stampit (Mitgliedschaftsverwaltung)",
         "summary": "Eine App zur Verwaltung von Mitgliedschaften und Coupon-Nutzung. Daten werden standardmäßig lokal auf dem Gerät gespeichert.",

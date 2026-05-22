@@ -41,43 +41,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
     "contact": "संपर्क: captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "मूल्य निर्धारण",
+    "privacy": "गोपनीयता नीति",
+    "termsConditions": "नियम एवं शर्तें",
+    "refund": "धनवापसी नीति"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "होम",
+      "download": "शुरू करें"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "सहयोगात्मक कैनवास",
+      "description": "दुनिया भर के लोगों के साथ साझा कैनवास पर पिक्सेल लगाएं और मिलकर एक कलाकृति पूरी करें।"
     },
     "features": {
-      "title": "Key Features",
+      "title": "मुख्य विशेषताएँ",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "रीयल-टाइम सहयोग",
+        "description": "एक ही समय में एक ही कैनवास पर मिलकर काम करें, बदलाव तुरंत दिखें।"
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "पैलेट और पिक्सेल",
+        "description": "रंग चुनें, पिक्सेल लगाएं और कम्युनिटी के साथ विशाल कैनवास भरें।"
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "तेज़ नियंत्रण",
+        "description": "एक चिकनी UI से इच्छित क्षेत्र में तेज़ी से नेविगेट करें और काम करें।"
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "अभी शुरू करें",
+      "description": "WorldCanvas अब लाइव है। दुनिया भर के लोगों द्वारा साझा किए गए कैनवास पर अपने पिक्सेल रखें।",
+      "cta": "कैनवास खोलें →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
+      "contact": "संपर्क: captain@purpleship.io",
+      "pricing": "मूल्य निर्धारण",
+      "privacy": "गोपनीयता नीति",
+      "termsConditions": "नियम एवं शर्तें",
+      "refund": "धनवापसी नीति"
     }
   },
   "qroom": {
@@ -105,10 +111,10 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "मूल्य निर्धारण",
+    "subtitle": "WorldCanvas वर्चुअल मुद्रा (Purple) पैकेजों का मूल्य विवरण। (लॉन्च से पहले; बदल सकता है।)",
+    "lastUpdated": "अंतिम अपडेट: 15 दिसंबर 2025",
+    "backToHome": "← होम पर वापस जाएँ",
     "nav": {},
     "plans": {
       "starter": {
@@ -119,19 +125,19 @@
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150,000 Purple + 5% बोनस (कुल 157,500 Purple)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250,000 Purple + 10% बोनस (कुल 275,000 Purple)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "पैलेट के रंग/स्लॉट विस्तार आदि के लिए उपयोग।",
+        "li2": "एक साथ कई पिक्सेल लगाने की सीमा बढ़ाने आदि के लिए उपयोग।"
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "दिखाए गए मूल्य संकेतात्मक हैं; अंतिम राशि कर, विनिमय दर एवं भुगतान विधि के अनुसार भिन्न हो सकती है।"
   },
   "movit": {
     "title": "Movit",
@@ -167,12 +173,14 @@
       "title": "अभी इंस्टॉल करें",
       "description": "Android और iOS पर अभी Movit इंस्टॉल करें और अपनी खोज शुरू करें!",
       "android": "Android के लिए इंस्टॉल करें",
-      "ios": "iOS के लिए इंस्टॉल करें",
-      "cta": "Open Canvas →"
+      "ios": "iOS के लिए इंस्टॉल करें"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
-      "contact": "संपर्क: captain@purpleship.io"
+      "contact": "संपर्क: captain@purpleship.io",
+      "privacy": "गोपनीयता नीति",
+      "termsConditions": "नियम एवं शर्तें",
+      "refund": "धनवापसी नीति"
     }
   },
   "stampit": {
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",
-      "contact": "संपर्क: captain@purpleship.io"
+      "contact": "संपर्क: captain@purpleship.io",
+      "privacy": "गोपनीयता नीति",
+      "termsConditions": "नियम एवं शर्तें",
+      "refund": "धनवापसी नीति"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. सेवा-विशिष्ट सूचनाएं",
       "intro": "निम्नलिखित प्रत्येक सेवा के लिए विशिष्ट व्यक्तिगत जानकारी प्रसंस्करण विवरण प्रदान करता है।",
+      "toggleDetails": "विवरण देखें",
+      "collapseDetails": "बंद करें",
       "stampit": {
         "title": "Stampit (सदस्यता प्रबंधन)",
         "summary": "सदस्यता और कूपन उपयोग प्रबंधित करने के लिए एक ऐप। डेटा डिफ़ॉल्ट रूप से डिवाइस पर स्थानीय रूप से संग्रहीत होता है।",

@@ -57,12 +57,14 @@
       "title": "Instalar ahora",
       "description": "Instala Movit en Android y iOS para comenzar tu exploración.",
       "android": "Descargar para Android",
-      "ios": "Descargar para iOS",
-      "cta": "Open Canvas →"
+      "ios": "Descargar para iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
-      "contact": "Contacto: captain@purpleship.io"
+      "contact": "Contacto: captain@purpleship.io",
+      "privacy": "Política de Privacidad",
+      "termsConditions": "Términos y Condiciones",
+      "refund": "Política de reembolso"
     }
   },
   "vision": {
@@ -83,43 +85,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
     "contact": "Contacto: captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "Precios",
+    "privacy": "Política de Privacidad",
+    "termsConditions": "Términos y Condiciones",
+    "refund": "Política de reembolso"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "Inicio",
+      "download": "Comenzar"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "Lienzo colaborativo",
+      "description": "Pinta píxeles en un lienzo compartido con personas de todo el mundo y completa una obra juntos."
     },
     "features": {
-      "title": "Key Features",
+      "title": "Funciones principales",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "Colaboración en tiempo real",
+        "description": "Trabajen al mismo tiempo en el mismo lienzo con actualizaciones instantáneas."
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "Paleta y píxeles",
+        "description": "Elige colores, coloca píxeles y llena un enorme lienzo con la comunidad."
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "Controles rápidos",
+        "description": "Una UI fluida para navegar rápidamente y trabajar en la zona que quieras."
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "Empezar ahora",
+      "description": "WorldCanvas ya está en vivo. Coloca tus píxeles en un lienzo compartido por personas de todo el mundo.",
+      "cta": "Abrir lienzo →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
+      "contact": "Contacto: captain@purpleship.io",
+      "pricing": "Precios",
+      "privacy": "Política de Privacidad",
+      "termsConditions": "Términos y Condiciones",
+      "refund": "Política de reembolso"
     }
   },
   "qroom": {
@@ -147,10 +155,10 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Precios",
+    "subtitle": "Información de precios de los paquetes de moneda virtual (Purple) de WorldCanvas. (Antes del lanzamiento; puede cambiar.)",
+    "lastUpdated": "Última actualización: 15 de diciembre de 2025",
+    "backToHome": "← Volver al inicio",
     "nav": {},
     "plans": {
       "starter": {
@@ -161,19 +169,19 @@
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150,000 Purple + 5% de bono (total 157,500 Purple)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250,000 Purple + 10% de bono (total 275,000 Purple)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "Para ampliar colores/ranuras de la paleta, etc.",
+        "li2": "Para aumentar el límite de colocación masiva de píxeles, etc."
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "Los precios mostrados son orientativos; el importe final puede variar según impuestos, tipo de cambio y método de pago."
   },
   "stampit": {
     "title": "Stampit",
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Todos los derechos reservados.",
-      "contact": "Contacto: captain@purpleship.io"
+      "contact": "Contacto: captain@purpleship.io",
+      "privacy": "Política de Privacidad",
+      "termsConditions": "Términos y Condiciones",
+      "refund": "Política de reembolso"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. Avisos Específicos del Servicio",
       "intro": "Lo siguiente proporciona detalles adicionales de procesamiento de información personal específicos para cada servicio.",
+      "toggleDetails": "Ver detalles",
+      "collapseDetails": "Contraer",
       "stampit": {
         "title": "Stampit (Gestión de Membresías)",
         "summary": "Una aplicación para gestionar membresías y uso de cupones. Los datos se almacenan localmente en el dispositivo por defecto.",

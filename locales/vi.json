@@ -12,11 +12,11 @@
     "worldcanvas": "WorldCanvas"
   },
   "products": {
-    "title": "San pham",
-    "learnMore": "Tim hieu them",
-    "movitSummary": "Kham pha the gioi thuc va tao ban do cua rieng ban.",
-    "stampitSummary": "Quan ly the thanh vien, phieu giam gia va voucher thong minh.",
-    "worldcanvasSummary": "Dat pixel cung moi nguoi tren toan the gioi tren canvas chung."
+    "title": "Sản phẩm của chúng tôi",
+    "learnMore": "Tìm hiểu thêm",
+    "movitSummary": "Khám phá thế giới thực và tạo bản đồ cá nhân của riêng bạn.",
+    "stampitSummary": "Quản lý thẻ thành viên, phiếu giảm giá và voucher một cách thông minh.",
+    "worldcanvasSummary": "Đặt pixel cùng mọi người trên toàn thế giới trên canvas chung."
   },
   "description": {
     "line1": "Chúng tôi là tổ chức khám phá và phát triển các ứng dụng chưa từng tồn tại trên thế giới.",
@@ -41,43 +41,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. Đã đăng ký bản quyền.",
     "contact": "Liên hệ: captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "Giá",
+    "privacy": "Chính sách bảo mật",
+    "termsConditions": "Điều khoản dịch vụ",
+    "refund": "Chính sách hoàn tiền"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "Trang chủ",
+      "download": "Bắt đầu"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "Canvas cộng tác",
+      "description": "Đặt pixel trên canvas chia sẻ cùng mọi người trên khắp thế giới và cùng nhau hoàn thành tác phẩm."
     },
     "features": {
-      "title": "Key Features",
+      "title": "Tính năng chính",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "Cộng tác thời gian thực",
+        "description": "Cùng làm việc trên cùng một canvas tại cùng thời điểm, mọi thay đổi cập nhật tức thì."
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "Bảng màu & pixel",
+        "description": "Chọn màu, đặt pixel và lấp đầy canvas khổng lồ cùng cộng đồng."
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "Điều khiển nhanh",
+        "description": "Giao diện mượt mà giúp di chuyển nhanh và làm việc tại khu vực bạn muốn."
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "Bắt đầu ngay",
+      "description": "WorldCanvas đã ra mắt. Đặt pixel của bạn trên canvas được chia sẻ bởi mọi người trên khắp thế giới.",
+      "cta": "Mở canvas →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
+      "contact": "Liên hệ: captain@purpleship.io",
+      "pricing": "Giá",
+      "privacy": "Chính sách bảo mật",
+      "termsConditions": "Điều khoản dịch vụ",
+      "refund": "Chính sách hoàn tiền"
     }
   },
   "qroom": {
@@ -105,33 +111,33 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "Giá",
+    "subtitle": "Thông tin giá các gói tiền tệ ảo (Purple) của WorldCanvas. (Trước khi ra mắt; có thể thay đổi.)",
+    "lastUpdated": "Cập nhật lần cuối: 15 tháng 12 năm 2025",
+    "backToHome": "← Quay lại Trang chủ",
     "nav": {},
     "plans": {
       "starter": {
         "title": "Starter",
         "price": "$5",
-        "desc": "25,000 Purple"
+        "desc": "25.000 Purple"
       },
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150.000 Purple + 5% thưởng (tổng 157.500 Purple)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250.000 Purple + 10% thưởng (tổng 275.000 Purple)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "Dùng để mở rộng màu/ô bảng màu, v.v.",
+        "li2": "Dùng để tăng giới hạn đặt pixel hàng loạt, v.v."
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "Giá hiển thị chỉ mang tính tham khảo; số tiền thanh toán cuối cùng có thể thay đổi tùy thuộc vào thuế/tỷ giá/phương thức thanh toán."
   },
   "movit": {
     "title": "Movit",
@@ -167,12 +173,14 @@
       "title": "Tải ngay",
       "description": "Cài đặt Movit trên Android và iOS để bắt đầu hành trình khám phá!",
       "android": "Tải cho Android",
-      "ios": "Tải cho iOS",
-      "cta": "Open Canvas →"
+      "ios": "Tải cho iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
-      "contact": "Liên hệ: captain@purpleship.io"
+      "contact": "Liên hệ: captain@purpleship.io",
+      "privacy": "Chính sách bảo mật",
+      "termsConditions": "Điều khoản dịch vụ",
+      "refund": "Chính sách hoàn tiền"
     }
   },
   "stampit": {
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",
-      "contact": "Liên hệ: captain@purpleship.io"
+      "contact": "Liên hệ: captain@purpleship.io",
+      "privacy": "Chính sách bảo mật",
+      "termsConditions": "Điều khoản dịch vụ",
+      "refund": "Chính sách hoàn tiền"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. Thông Báo Dành Riêng Cho Dịch Vụ",
       "intro": "Sau đây cung cấp chi tiết xử lý thông tin cá nhân bổ sung dành riêng cho từng dịch vụ.",
+      "toggleDetails": "Xem chi tiết",
+      "collapseDetails": "Thu gọn",
       "stampit": {
         "title": "Stampit (Quản Lý Thành Viên)",
         "summary": "Ứng dụng quản lý thành viên và sử dụng phiếu giảm giá. Dữ liệu được lưu trữ cục bộ trên thiết bị theo mặc định.",

@@ -57,12 +57,14 @@
       "title": "今すぐインストール",
       "description": "AndroidとiOSにMovitをインストールして探検を始めましょう！",
       "android": "Androidでインストール",
-      "ios": "iOSでインストール",
-      "cta": "Open Canvas →"
+      "ios": "iOSでインストール"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 全著作権所有。",
-      "contact": "連絡先：captain@purpleship.io"
+      "contact": "連絡先：captain@purpleship.io",
+      "privacy": "プライバシーポリシー",
+      "termsConditions": "利用規約",
+      "refund": "返金ポリシー"
     }
   },
   "vision": {
@@ -83,43 +85,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. 全著作権所有。",
     "contact": "連絡先：captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "価格",
+    "privacy": "プライバシーポリシー",
+    "termsConditions": "利用規約",
+    "refund": "返金ポリシー"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "ホーム",
+      "download": "はじめる"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "コラボキャンバス",
+      "description": "世界中の人と同じキャンバスにピクセルを打ち、作品を一緒に完成させましょう。"
     },
     "features": {
-      "title": "Key Features",
+      "title": "主な機能",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "リアルタイム協業",
+        "description": "複数人が同じキャンバスで同時に作業し、変化が即座に反映されます。"
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "パレット & ピクセル",
+        "description": "色を選んでピクセルを置き、コミュニティと共に巨大なキャンバスを埋めていきます。"
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "素早い操作",
+        "description": "快適なUIで、見たいエリアへ素早く移動して作業できます。"
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "今すぐはじめる",
+      "description": "WorldCanvasは公開中です。世界中で共有されるキャンバスにあなたのピクセルを置きましょう。",
+      "cta": "キャンバスを開く →"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. 全著作権所有。",
+      "contact": "連絡先：captain@purpleship.io",
+      "pricing": "価格",
+      "privacy": "プライバシーポリシー",
+      "termsConditions": "利用規約",
+      "refund": "返金ポリシー"
     }
   },
   "qroom": {
@@ -147,10 +155,10 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "価格",
+    "subtitle": "WorldCanvas の仮想通貨（Purple）パッケージの価格案内です。（公開前のため、変更される可能性があります）",
+    "lastUpdated": "最終更新：2025年12月15日",
+    "backToHome": "← ホームに戻る",
     "nav": {},
     "plans": {
       "starter": {
@@ -161,19 +169,19 @@
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150,000 Purple + 5% ボーナス（合計 157,500 Purple）"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250,000 Purple + 10% ボーナス（合計 275,000 Purple）"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "パレットの色/スロット拡張などに使用",
+        "li2": "ピクセル一括配置の上限拡張などに使用"
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "表示価格は参考であり、税金・為替レート・決済手段により最終決済金額が異なる場合があります。"
   },
   "stampit": {
     "title": "Stampit",
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 全著作権所有。",
-      "contact": "連絡先：captain@purpleship.io"
+      "contact": "連絡先：captain@purpleship.io",
+      "privacy": "プライバシーポリシー",
+      "termsConditions": "利用規約",
+      "refund": "返金ポリシー"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. サービス別追加通知",
       "intro": "以下は各サービス固有の個人情報処理の詳細です。",
+      "toggleDetails": "詳細を見る",
+      "collapseDetails": "閉じる",
       "stampit": {
         "title": "Stampit（会員権管理）",
         "summary": "会員権とクーポンの使用を管理するアプリです。データはデフォルトでデバイスにローカル保存されます。",

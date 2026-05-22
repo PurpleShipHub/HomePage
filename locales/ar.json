@@ -41,43 +41,49 @@
   "footer": {
     "copyright": "© 2025 Purpleship. جميع الحقوق محفوظة.",
     "contact": "للتواصل: captain@purpleship.io",
-    "pricing": "Pricing"
+    "pricing": "الأسعار",
+    "privacy": "سياسة الخصوصية",
+    "termsConditions": "الشروط والأحكام",
+    "refund": "سياسة الاسترداد"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
     "nav": {
-      "home": "Home",
-      "download": "Get Started"
+      "home": "الرئيسية",
+      "download": "ابدأ"
     },
     "hero": {
       "title": "WorldCanvas",
-      "subtitle": "Collaborative Canvas",
-      "description": "Stamp pixels on a shared canvas with people around the world—and finish an artwork together."
+      "subtitle": "لوحة تعاونية",
+      "description": "ضع بكسلات على لوحة مشتركة مع أشخاص من جميع أنحاء العالم وأكملوا عملاً فنياً معًا."
     },
     "features": {
-      "title": "Key Features",
+      "title": "الميزات الرئيسية",
       "collab": {
-        "title": "Real-time collaboration",
-        "description": "Work together on the same canvas at the same time, with instant updates."
+        "title": "التعاون الفوري",
+        "description": "اعملوا معًا على نفس اللوحة في الوقت نفسه مع تحديثات فورية."
       },
       "palette": {
-        "title": "Palette & pixels",
-        "description": "Pick colors, place pixels, and fill a massive canvas with the community."
+        "title": "اللوحة والبكسلات",
+        "description": "اختر الألوان وضع البكسلات واملأ لوحة ضخمة مع المجتمع."
       },
       "fast": {
-        "title": "Fast controls",
-        "description": "A smooth UI to quickly navigate and work on the area you want."
+        "title": "تحكم سريع",
+        "description": "واجهة سلسة للتنقل بسرعة والعمل على المنطقة التي تريدها."
       }
     },
     "download": {
-      "title": "Start Now",
-      "description": "WorldCanvas is live. Place your pixels on a canvas shared by people around the world.",
-      "cta": "Open Canvas →"
+      "title": "ابدأ الآن",
+      "description": "WorldCanvas متاح الآن. ضع بكسلاتك على لوحة يشاركها أشخاص من جميع أنحاء العالم.",
+      "cta": "افتح اللوحة ←"
     },
     "footer": {
-      "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io",
-      "pricing": "Pricing"
+      "copyright": "© 2025 Purpleship. جميع الحقوق محفوظة.",
+      "contact": "للتواصل: captain@purpleship.io",
+      "pricing": "الأسعار",
+      "privacy": "سياسة الخصوصية",
+      "termsConditions": "الشروط والأحكام",
+      "refund": "سياسة الاسترداد"
     }
   },
   "qroom": {
@@ -105,10 +111,10 @@
   },
   "pricingPage": {
     "brand": "Purpleship",
-    "title": "Pricing",
-    "subtitle": "Pricing for WorldCanvas virtual currency (Purple). (Pre-launch; subject to change.)",
-    "lastUpdated": "Last updated: Dec 15, 2025",
-    "backToHome": "← Back to Home",
+    "title": "الأسعار",
+    "subtitle": "معلومات أسعار باقات العملة الافتراضية (Purple) في WorldCanvas. (قبل الإطلاق؛ قابلة للتغيير.)",
+    "lastUpdated": "آخر تحديث: 15 ديسمبر 2025",
+    "backToHome": "← العودة إلى الرئيسية",
     "nav": {},
     "plans": {
       "starter": {
@@ -119,19 +125,19 @@
       "standard": {
         "title": "Standard",
         "price": "$30",
-        "desc": "150,000 Purple + 5% bonus (157,500 total)"
+        "desc": "150,000 Purple + 5% مكافأة (الإجمالي 157,500 Purple)"
       },
       "pro": {
         "title": "Pro",
         "price": "$50",
-        "desc": "250,000 Purple + 10% bonus (275,000 total)"
+        "desc": "250,000 Purple + 10% مكافأة (الإجمالي 275,000 Purple)"
       },
       "common": {
-        "li1": "Use for palette color/slot expansions, etc.",
-        "li2": "Use to increase bulk pixel-stamp limits, etc."
+        "li1": "تُستخدم لتوسيع ألوان/فتحات اللوحة، إلخ.",
+        "li2": "تُستخدم لرفع حد وضع البكسلات الجماعي، إلخ."
       }
     },
-    "note": "Displayed prices are indicative; taxes/exchange rates/payment methods may affect the final charged amount."
+    "note": "الأسعار المعروضة تقديرية؛ وقد يختلف المبلغ النهائي حسب الضرائب وأسعار الصرف ووسيلة الدفع."
   },
   "movit": {
     "title": "Movit",
@@ -167,12 +173,14 @@
       "title": "قم بالتثبيت الآن",
       "description": "قم بتثبيت Movit على Android وiOS وابدأ مغامرتك اليوم!",
       "android": "تنزيل لـ Android",
-      "ios": "تنزيل لـ iOS",
-      "cta": "Open Canvas →"
+      "ios": "تنزيل لـ iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. جميع الحقوق محفوظة.",
-      "contact": "للتواصل: captain@purpleship.io"
+      "contact": "للتواصل: captain@purpleship.io",
+      "privacy": "سياسة الخصوصية",
+      "termsConditions": "الشروط والأحكام",
+      "refund": "سياسة الاسترداد"
     }
   },
   "stampit": {
@@ -221,7 +229,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. جميع الحقوق محفوظة.",
-      "contact": "للتواصل: captain@purpleship.io"
+      "contact": "للتواصل: captain@purpleship.io",
+      "privacy": "سياسة الخصوصية",
+      "termsConditions": "الشروط والأحكام",
+      "refund": "سياسة الاسترداد"
     }
   },
   "privacyPage": {
@@ -283,6 +294,8 @@
     "section8": {
       "title": "8. إشعارات الخدمات المحددة",
       "intro": "فيما يلي تفاصيل إضافية لمعالجة المعلومات الشخصية الخاصة بكل خدمة.",
+      "toggleDetails": "عرض التفاصيل",
+      "collapseDetails": "طي",
       "stampit": {
         "title": "Stampit (إدارة العضوية)",
         "summary": "تطبيق لإدارة العضوية واستخدام الكوبونات. يتم تخزين البيانات محلياً على الجهاز افتراضياً.",

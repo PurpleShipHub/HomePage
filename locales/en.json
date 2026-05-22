@@ -62,7 +62,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io"
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "Privacy Policy",
+      "termsConditions": "Terms & Conditions",
+      "refund": "Refund Policy"
     }
   },
   "vision": {
@@ -82,7 +85,11 @@
   "donation": "Make a Donation",
   "footer": {
     "copyright": "© 2025 Purpleship. All rights reserved.",
-    "contact": "Contact: captain@purpleship.io"
+    "contact": "Contact: captain@purpleship.io",
+    "pricing": "Pricing",
+    "privacy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "refund": "Refund Policy"
   },
   "worldcanvas": {
     "title": "WorldCanvas",
@@ -117,7 +124,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io"
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "Privacy Policy",
+      "termsConditions": "Terms & Conditions",
+      "refund": "Refund Policy"
     }
   },
   "stampit": {
@@ -166,7 +176,10 @@
     },
     "footer": {
       "copyright": "© 2025 Purpleship. All rights reserved.",
-      "contact": "Contact: captain@purpleship.io"
+      "contact": "Contact: captain@purpleship.io",
+      "privacy": "Privacy Policy",
+      "termsConditions": "Terms & Conditions",
+      "refund": "Refund Policy"
     }
   },
   "pricingPage": {
@@ -258,6 +271,8 @@
     "section8": {
       "title": "8. Service-Specific Notices",
       "intro": "The following provides additional personal information processing details specific to each service.",
+      "toggleDetails": "Show details",
+      "collapseDetails": "Collapse",
       "stampit": {
         "title": "Stampit (Membership Management)",
         "summary": "An app for managing membership and coupon usage. Data is stored locally on the device by default.",
