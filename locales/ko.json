@@ -55,9 +55,8 @@
     },
     "download": {
       "title": "지금 설치하세요",
-      "description": "Android와 iOS에서 지금 바로 Movit을 설치하여 탐험을 시작하세요!",
+      "description": "Android에서 지금 바로 Movit을 설치하여 탐험을 시작하세요!",
       "android": "Android 설치",
-      "ios": "iOS 설치",
       "comingSoon": "곧 출시 예정"
     },
     "footer": {

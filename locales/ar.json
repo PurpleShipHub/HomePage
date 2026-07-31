@@ -171,9 +171,8 @@
     },
     "download": {
       "title": "قم بالتثبيت الآن",
-      "description": "قم بتثبيت Movit على Android وiOS وابدأ مغامرتك اليوم!",
-      "android": "تنزيل لـ Android",
-      "ios": "تنزيل لـ iOS"
+      "description": "قم بتثبيت Movit على Android وابدأ مغامرتك اليوم!",
+      "android": "تنزيل لـ Android"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. جميع الحقوق محفوظة.",

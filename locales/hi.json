@@ -171,9 +171,8 @@
     },
     "download": {
       "title": "अभी इंस्टॉल करें",
-      "description": "Android और iOS पर अभी Movit इंस्टॉल करें और अपनी खोज शुरू करें!",
-      "android": "Android के लिए इंस्टॉल करें",
-      "ios": "iOS के लिए इंस्टॉल करें"
+      "description": "Android पर अभी Movit इंस्टॉल करें और अपनी खोज शुरू करें!",
+      "android": "Android के लिए इंस्टॉल करें"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. सर्वाधिकार सुरक्षित।",

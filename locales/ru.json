@@ -55,9 +55,8 @@
     },
     "download": {
       "title": "Установить сейчас",
-      "description": "Установите Movit на Android и iOS и начните своё исследование!",
-      "android": "Скачать для Android",
-      "ios": "Скачать для iOS"
+      "description": "Установите Movit на Android и начните своё исследование!",
+      "android": "Скачать для Android"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Все права защищены.",

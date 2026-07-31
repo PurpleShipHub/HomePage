@@ -12,7 +12,7 @@ Purpleship 사이트의 5개 페이지를 전체 점검합니다.
 ### 1. 보존 항목 확인
 - [ ] PayPal 폼 ID `PN2WRW4NEXA2L` 존재 확인
 - [ ] Google Analytics `G-PQGB9Q3SNE` 존재 확인
-- [ ] Movit 앱스토어 링크 (iOS: `id6747708096`, Android: `com.siltarae.projectf`)
+- [ ] Movit 앱스토어 링크 (Android: `com.purpleship.projectf`, iOS 링크 없음)
 - [ ] Stampit 앱스토어 링크 (iOS: `id6753583567`)
 - [ ] 서비스 URL (worldcanvas.art)
 - [ ] 연락처 이메일 (`captain@purpleship.io`)

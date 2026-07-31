@@ -55,9 +55,8 @@
     },
     "download": {
       "title": "Install Now",
-      "description": "Install Movit now on Android and iOS to start your exploration!",
+      "description": "Install Movit now on Android to start your exploration!",
       "android": "Install for Android",
-      "ios": "Install for iOS",
       "comingSoon": "Coming Soon"
     },
     "footer": {
