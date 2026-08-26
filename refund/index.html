@@ -45,12 +45,6 @@
     .legal-section li { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin: var(--space-xs) 0; }
     .highlight-box { background: rgba(167, 139, 250, 0.06); border: 1px solid rgba(167, 139, 250, 0.2); border-radius: var(--radius-md); padding: var(--space-lg); margin: var(--space-md) 0; }
     .highlight-box p { margin: 0; color: var(--text-primary); font-weight: 500; }
-    .service-cards { display: flex; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-md); }
-    .service-card { display: block; background: rgba(139, 92, 246, 0.03); border: 1px solid var(--surface-glass-border); border-radius: var(--radius-md); padding: var(--space-xl); text-decoration: none; color: var(--text-primary); transition: var(--transition-smooth); flex: 1; min-width: 250px; max-width: 400px; }
-    .service-card:hover { background: var(--surface-glass-hover); border-color: var(--surface-glass-border-hover); transform: translateY(-2px); box-shadow: var(--glow-purple); }
-    .service-card h3 { margin: 0 0 var(--space-sm); font-size: 1rem; color: var(--brand-purple-light); }
-    .service-card p { margin: 0 0 var(--space-md); font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
-    .service-card .card-link { font-size: 0.85rem; color: var(--worldcanvas-accent); font-weight: 600; }
     .legal-footer { margin-top: var(--space-2xl); text-align: center; }
     .legal-footer a { color: var(--brand-purple-light); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: var(--transition-smooth); }
     .legal-footer a:hover { color: var(--text-primary); }
@@ -109,12 +103,6 @@
 
     <div class="legal-card">
 
-      <!-- Section 1: 적용 범위 -->
-      <div class="legal-section" style="margin-top:0; padding-top:0; border-top:none;">
-        <h2 data-i18n="refundPage.section1.title">1. 적용 범위</h2>
-        <p data-i18n="refundPage.section1.p1">본 정책은 Purpleship이 제공하는 모든 유료 서비스에 적용되며, WorldCanvas를 포함합니다. 모든 결제는 Paddle.com이 Merchant of Record(판매자)로서 처리하여 안전한 결제와 소비자 보호를 제공합니다.</p>
-      </div>
-
       <!-- Section 2: 14일 환불 보장 -->
       <div class="legal-section">
         <h2 data-i18n="refundPage.section2.title">2. 14일 환불 보장</h2>
@@ -157,18 +145,6 @@
         <p data-i18n="refundPage.section5.p2">접수 후 합리적인 기간 내에 확인 및 처리 결과를 안내합니다. 결제 수단에 따라 환불 처리 기간이 다를 수 있습니다.</p>
       </div>
 
-      <!-- Section 6: 서비스별 환불정책 -->
-      <div class="legal-section">
-        <h2 data-i18n="refundPage.section6.title">6. 서비스별 환불정책</h2>
-        <p data-i18n="refundPage.section6.intro">각 서비스에 따라 별도의 환불정책이 적용될 수 있습니다.</p>
-        <div class="service-cards">
-          <a href="/refund/worldcanvas/" class="service-card">
-            <h3 data-i18n="refundPage.section6.worldcanvas.title">WorldCanvas</h3>
-            <p data-i18n="refundPage.section6.worldcanvas.desc">WorldCanvas 구매 및 Paddle 결제 처리에 대한 추가 세부 정보입니다.</p>
-            <span class="card-link" data-i18n="refundPage.section6.worldcanvas.link">자세히 보기 →</span>
-          </a>
-        </div>
-      </div>
 
     </div>
 

@@ -28,8 +28,6 @@ html { overflow-x: clip; }
   /* Product accents - Enhanced */
   --movit-accent: #10B981;
   --stampit-accent: #F59E0B;
-  --worldcanvas-accent: #3B82F6;
-  --pricing-accent: #F59E0B;
 
   /* Page accent (overridden per page) */
   --page-accent: var(--brand-purple-light);

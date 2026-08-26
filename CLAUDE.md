@@ -17,8 +17,6 @@ Purpleship은 정적 웹사이트(5개 HTML 페이지)로, GitHub Pages에서 �
 | `/index.html` | 메인 (Bento grid 제품 소개, PayPal 기부) | purple |
 | `/movit/` | 탐험 지도 앱 | #10B981 (green) |
 | `/stampit/` | 회원권 관리 앱 | #F59E0B (amber) |
-| `/worldcanvas/` | 협업 캔버스 | #3B82F6 (blue) |
-| `/pricing/` | WorldCanvas 가격 | #F59E0B (gold) |
 
 ## 에이전트 활용 규칙
 
@@ -45,7 +43,6 @@ Purpleship은 정적 웹사이트(5개 HTML 페이지)로, GitHub Pages에서 �
 ## 보존 필수 항목 (절대 변경 금지)
 - PayPal 폼: `PN2WRW4NEXA2L` (index.html)
 - 앱스토어 링크: Movit (Android), Stampit (iOS/Android)
-- 서비스 URL: worldcanvas.art
 - Google Analytics: `G-PQGB9Q3SNE` (모든 페이지에 포함 필수)
 - `data-i18n` 속성의 기존 키 이름
 - WebGL 셰이더 코드 (vertexShader, fragmentShader)
