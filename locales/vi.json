@@ -305,9 +305,11 @@
       "movit": {
         "title": "Movit (Hồ Sơ Di Chuyển)",
         "summary": "Quản lý hồ sơ di chuyển và yêu thích. Vị trí lưu trữ mặc định là thiết bị của người dùng.",
-        "li1": "Thông tin thu thập: Lộ trình di chuyển, thông tin vị trí/giao thông (khi người dùng bật), địa điểm yêu thích",
-        "li2": "Vị trí lưu trữ: Được lưu trữ cục bộ trên thiết bị theo mặc định và không được truyền đến máy chủ Công ty.",
-        "li3": "Quyền tùy chọn: Quyền vị trí (bao gồm nền), thông báo có thể được sử dụng để ghi lại di chuyển và cảnh báo."
+        "li1": "Truy cập, thu thập và sử dụng: khi bạn bật tính năng ghi lộ trình, Movit truy cập và thu thập dữ liệu vị trí chính xác trên thiết bị, kể cả khi ứng dụng đã đóng hoặc không được sử dụng, để tạo lộ trình di chuyển và lịch sử khám phá.",
+        "li2": "Lưu trữ và thu thập trên máy chủ: dữ liệu vị trí chỉ được lưu trên thiết bị của người dùng. Chúng tôi không truyền dữ liệu vị trí đến hoặc thu thập dữ liệu này trên máy chủ của Công ty.",
+        "li3": "Quyền tùy chọn: quyền vị trí (bao gồm vị trí nền) và thông báo có thể được dùng để ghi lại lộ trình và gửi cảnh báo; việc thu thập dừng khi người dùng tắt các quyền này.",
+        "li4": "Sao lưu/đồng bộ: dữ liệu vị trí chỉ được sao lưu lên đám mây cá nhân của người dùng (ví dụ: Google Drive) khi người dùng yêu cầu rõ ràng.",
+        "li5": "Khi sử dụng SDK bản đồ/vị trí của bên thứ ba để cung cấp bản đồ hoặc chỉ đường, chính sách quyền riêng tư của nhà cung cấp đó cũng được áp dụng."
       },
       "qnote": {
         "title": "Qnote (Ghi Chú/Danh Sách Kiểm Tra)",

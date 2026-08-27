@@ -282,9 +282,11 @@
       "movit": {
         "title": "Movit (Movement Records)",
         "summary": "Manages movement records and favorites. Default storage location is the user's device.",
-        "li1": "Information collected: Movement routes, location/traffic information (when enabled by user), favorite places",
-        "li2": "Storage location: Stored locally on the device by default and not transmitted to Company servers.",
-        "li3": "Optional permissions: Location (including background), notification permissions may be used for movement recording and alerts."
+        "li1": "Access, collection, and use: When you enable route recording, Movit accesses and collects precise location data on your device, including while the app is closed or not in use, to create movement routes and exploration records.",
+        "li2": "Storage and server collection: Location data is stored only on the user's device. We do not transmit location data to or collect it on Company servers.",
+        "li3": "Optional permissions: Location (including background) and notification permissions may be used for route logging and alerts; collection stops when you disable them.",
+        "li4": "Backup/Sync: Location data is backed up to your personal cloud (e.g., Google Drive) only when you explicitly request it.",
+        "li5": "When third-party map/location SDKs are used for maps or navigation, the provider’s privacy policy also applies."
       },
       "qnote": {
         "title": "Qnote (Notes/Checklists)",

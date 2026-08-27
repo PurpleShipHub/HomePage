@@ -203,19 +203,21 @@
           </div>
         </div>
 
-        <div class="service-block" id="serviceMovit">
+        <div class="service-block open" id="serviceMovit">
           <div class="service-header">
             <div>
               <h3 data-i18n="privacyPage.section8.movit.title">Movit (이동 기록)</h3>
               <p class="service-summary" data-i18n="privacyPage.section8.movit.summary">이동 기록과 즐겨찾기를 관리하며, 기본 저장 위치는 사용자 기기입니다.</p>
             </div>
-            <button class="toggle-service" data-i18n="privacyPage.section8.toggleDetails">자세히 보기</button>
+            <button class="toggle-service" data-i18n="privacyPage.section8.collapseDetails" aria-expanded="true">접기</button>
           </div>
           <div class="service-details">
             <ul>
-              <li data-i18n="privacyPage.section8.movit.li1">수집 항목: 이동 경로, 위치/교통 정보(사용자가 기능을 켠 경우), 즐겨찾기 장소</li>
-              <li data-i18n="privacyPage.section8.movit.li2">저장 위치: 기본적으로 기기 내에 저장하며, 회사 서버로 전송하지 않습니다.</li>
-              <li data-i18n="privacyPage.section8.movit.li3">선택 권한: 위치(백그라운드 포함), 알림 권한을 이동 기록·알림 제공을 위해 사용할 수 있습니다.</li>
+              <li data-i18n="privacyPage.section8.movit.li1">접근·수집 및 사용 목적: Movit은 사용자가 이동 기록 기능을 켠 경우 앱이 닫혀 있거나 사용 중이 아닐 때도 정확한 위치 정보에 접근하고, 이를 기기 내에서 수집·사용하여 이동 경로와 탐험 기록을 생성합니다.</li>
+              <li data-i18n="privacyPage.section8.movit.li2">저장 및 서버 수집 여부: 위치 정보는 사용자의 기기 내에만 저장되며, 당사 서버로 전송하거나 수집하지 않습니다.</li>
+              <li data-i18n="privacyPage.section8.movit.li3">선택 권한: 위치(백그라운드 포함), 알림 권한을 이동 기록·알림 제공을 위해 사용할 수 있으며, 해제 시 수집이 중단됩니다.</li>
+              <li data-i18n="privacyPage.section8.movit.li4">백업/동기화: 사용자가 명시적으로 요청한 경우에만 개인 클라우드(예: Google Drive)에 백업됩니다.</li>
+              <li data-i18n="privacyPage.section8.movit.li5">지도/길찾기 제공 시 사용되는 제3자 지도·위치 SDK는 해당 제공사의 정책이 함께 적용됩니다.</li>
             </ul>
           </div>
         </div>
@@ -323,7 +325,9 @@
         btn.addEventListener('click', () => {
           const block = btn.closest('.service-block');
           block.classList.toggle('open');
-          const key = block.classList.contains('open')
+          const isOpen = block.classList.contains('open');
+          btn.setAttribute('aria-expanded', String(isOpen));
+          const key = isOpen
             ? 'privacyPage.section8.collapseDetails'
             : 'privacyPage.section8.toggleDetails';
           btn.textContent = window.i18n.getTranslation(null, key);

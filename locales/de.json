@@ -305,9 +305,11 @@
       "movit": {
         "title": "Movit (Bewegungsdatensätze)",
         "summary": "Verwaltet Bewegungsdatensätze und Favoriten. Standard-Speicherort ist das Gerät des Nutzers.",
-        "li1": "Erhobene Informationen: Bewegungsrouten, Standort-/Verkehrsinformationen (wenn vom Nutzer aktiviert), Lieblingsorte",
-        "li2": "Speicherort: Standardmäßig lokal auf dem Gerät gespeichert und nicht an Unternehmensserver übertragen.",
-        "li3": "Optionale Berechtigungen: Standort (einschließlich Hintergrund), Benachrichtigungsberechtigungen können für Bewegungsaufzeichnung und Warnungen verwendet werden."
+        "li1": "Zugriff, Erhebung und Nutzung: Wenn Sie die Routenaufzeichnung aktivieren, greift Movit auf präzise Standortdaten auf Ihrem Gerät zu und erhebt sie dort – auch wenn die App geschlossen ist oder nicht verwendet wird –, um Bewegungsrouten und Erkundungsverläufe zu erstellen.",
+        "li2": "Speicherung und serverseitige Erhebung: Standortdaten werden ausschließlich auf dem Gerät des Nutzers gespeichert. Wir übertragen sie nicht an Unternehmensserver und erheben sie dort nicht.",
+        "li3": "Optionale Berechtigungen: Standort (einschließlich Hintergrundstandort) und Benachrichtigungen können für Bewegungsaufzeichnungen und Hinweise verwendet werden; bei Deaktivierung endet die Erhebung.",
+        "li4": "Sicherung/Synchronisierung: Standortdaten werden nur auf ausdrücklichen Wunsch in der persönlichen Cloud des Nutzers (z. B. Google Drive) gesichert.",
+        "li5": "Bei Verwendung von Karten-/Standort-SDKs Dritter für Karten oder Navigation gilt zusätzlich die Datenschutzrichtlinie des jeweiligen Anbieters."
       },
       "qnote": {
         "title": "Qnote (Notizen/Checklisten)",

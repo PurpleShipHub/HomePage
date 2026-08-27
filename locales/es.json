@@ -305,9 +305,11 @@
       "movit": {
         "title": "Movit (Registros de Movimiento)",
         "summary": "Gestiona registros de movimiento y favoritos. La ubicación de almacenamiento predeterminada es el dispositivo del usuario.",
-        "li1": "Información recopilada: Rutas de movimiento, información de ubicación/tráfico (cuando el usuario lo habilita), lugares favoritos",
-        "li2": "Ubicación de almacenamiento: Almacenado localmente en el dispositivo por defecto y no transmitido a servidores de la Compañía.",
-        "li3": "Permisos opcionales: Los permisos de ubicación (incluyendo fondo), notificaciones pueden usarse para registro de movimiento y alertas."
+        "li1": "Acceso, recopilación y uso: cuando activas el registro de rutas, Movit accede y recopila datos de ubicación precisa en tu dispositivo, incluso cuando la aplicación está cerrada o no se utiliza, para crear rutas de movimiento y registros de exploración.",
+        "li2": "Almacenamiento y recopilación en servidores: los datos de ubicación se almacenan únicamente en el dispositivo del usuario. No los transmitimos ni recopilamos en los servidores de la Compañía.",
+        "li3": "Permisos opcionales: los permisos de ubicación (incluida la ubicación en segundo plano) y notificaciones pueden utilizarse para registrar movimientos y enviar alertas; la recopilación se detiene al desactivarlos.",
+        "li4": "Copia de seguridad/sincronización: los datos de ubicación solo se guardan en la nube personal del usuario (p. ej., Google Drive) cuando este lo solicita expresamente.",
+        "li5": "Al utilizar SDK de mapas o ubicación de terceros para mapas o navegación, también se aplica la política de privacidad del proveedor."
       },
       "qnote": {
         "title": "Qnote (Notas/Listas de verificación)",

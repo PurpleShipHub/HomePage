@@ -305,9 +305,11 @@
       "movit": {
         "title": "Movit (Enregistrements de Déplacement)",
         "summary": "Gère les enregistrements de déplacement et les favoris. L'emplacement de stockage par défaut est l'appareil de l'utilisateur.",
-        "li1": "Informations collectées : Itinéraires de déplacement, informations de localisation/trafic (si activé par l'utilisateur), lieux favoris",
-        "li2": "Emplacement de stockage : Stocké localement sur l'appareil par défaut et non transmis aux serveurs de la Société.",
-        "li3": "Permissions optionnelles : Les permissions de localisation (y compris en arrière-plan), notifications peuvent être utilisées pour l'enregistrement des déplacements et les alertes."
+        "li1": "Accès, collecte et utilisation : lorsque vous activez l’enregistrement des trajets, Movit accède aux données de localisation précise et les collecte sur votre appareil, y compris lorsque l’application est fermée ou inutilisée, afin de créer des itinéraires et des historiques d’exploration.",
+        "li2": "Stockage et collecte côté serveur : les données de localisation sont stockées uniquement sur l’appareil de l’utilisateur. Nous ne les transmettons pas aux serveurs de la Société et ne les y collectons pas.",
+        "li3": "Autorisations facultatives : les autorisations de localisation (y compris en arrière-plan) et de notification peuvent être utilisées pour enregistrer les déplacements et envoyer des alertes ; la collecte cesse lorsqu’elles sont désactivées.",
+        "li4": "Sauvegarde/synchronisation : les données de localisation ne sont sauvegardées dans le cloud personnel de l’utilisateur (par ex. Google Drive) que sur demande explicite.",
+        "li5": "Lors de l’utilisation de SDK tiers de cartographie ou de localisation pour la navigation, la politique de confidentialité du fournisseur s’applique également."
       },
       "qnote": {
         "title": "Qnote (Notes/Listes de contrôle)",
