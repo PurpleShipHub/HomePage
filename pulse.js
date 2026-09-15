@@ -3,7 +3,7 @@
 
   const ENDPOINT = 'https://pulse-api.purpleshiphub.workers.dev/api/v1/ping';
   const PROJECT_ID = 'pp_purpleship_7f96f8d2';
-  const VERSION = 'web-20260914';
+  const VERSION = 'web-20260916';
   const INSTALL_KEY = 'purpleship:pulse:install_id';
   const LAST_ATTEMPT_KEY = 'purpleship:pulse:last_attempt_utc';
 
@@ -49,7 +49,8 @@
             install_id: installId,
             version: VERSION,
             os: detectOs(),
-            platform: 'web'
+            platform: 'web',
+            schema_version: 2
           }),
           signal: controller.signal,
           keepalive: true
