@@ -267,7 +267,8 @@
       "title": "4. Cung Cấp Cho Bên Thứ Ba và Chuyển Giao Quốc Tế",
       "p1": "Về nguyên tắc, Công ty không cung cấp thông tin cá nhân của người dùng cho bên thứ ba. Tuy nhiên, có thể được cung cấp ngoại lệ trong các trường hợp sau:",
       "li1": "Khi người dùng đã đồng ý rõ ràng trước",
-      "li2": "Khi có cơ sở pháp lý hoặc yêu cầu hợp pháp từ cơ quan điều tra"
+      "li2": "Khi có cơ sở pháp lý hoặc yêu cầu hợp pháp từ cơ quan điều tra",
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
     },
     "section5": {
       "title": "5. Thuê Ngoài Xử Lý Thông Tin Cá Nhân",
@@ -309,7 +310,18 @@
         "li2": "Lưu trữ và thu thập trên máy chủ: dữ liệu vị trí chỉ được lưu trên thiết bị của người dùng. Chúng tôi không truyền dữ liệu vị trí đến hoặc thu thập dữ liệu này trên máy chủ của Công ty.",
         "li3": "Quyền tùy chọn: quyền vị trí (bao gồm vị trí nền) và thông báo có thể được dùng để ghi lại lộ trình và gửi cảnh báo; việc thu thập dừng khi người dùng tắt các quyền này.",
         "li4": "Sao lưu/đồng bộ: dữ liệu vị trí chỉ được sao lưu lên đám mây cá nhân của người dùng (ví dụ: Google Drive) khi người dùng yêu cầu rõ ràng.",
-        "li5": "Khi sử dụng SDK bản đồ/vị trí của bên thứ ba để cung cấp bản đồ hoặc chỉ đường, chính sách quyền riêng tư của nhà cung cấp đó cũng được áp dụng."
+        "li5": "Khi sử dụng SDK bản đồ/vị trí của bên thứ ba để cung cấp bản đồ hoặc chỉ đường, chính sách quyền riêng tư của nhà cung cấp đó cũng được áp dụng.",
+        "ios": {
+          "title": "Additional notice for Movit on iOS",
+          "dates": "Amendment announced: October 14, 2026 · Effective: October 21, 2026",
+          "locationTitle": "Location records and optional backup",
+          "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
+          "mapTitle": "Map display — MapTiler",
+          "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
+          "adsTitle": "Advertising and consent management — Google",
+          "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+        }
       },
       "qnote": {
         "title": "Qnote (Ghi Chú/Danh Sách Kiểm Tra)",

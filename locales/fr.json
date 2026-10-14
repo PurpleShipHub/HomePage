@@ -267,7 +267,8 @@
       "title": "4. Fourniture à des Tiers et Transfert International",
       "p1": "En principe, la Société ne fournit pas les informations personnelles des utilisateurs à des tiers. Cependant, elles peuvent être fournies exceptionnellement dans les cas suivants :",
       "li1": "Lorsque l'utilisateur a donné son consentement explicite préalable",
-      "li2": "Lorsqu'il existe une base légale ou une demande légitime des autorités d'enquête"
+      "li2": "Lorsqu'il existe une base légale ou une demande légitime des autorités d'enquête",
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
     },
     "section5": {
       "title": "5. Sous-traitance du Traitement des Informations Personnelles",
@@ -309,7 +310,18 @@
         "li2": "Stockage et collecte côté serveur : les données de localisation sont stockées uniquement sur l’appareil de l’utilisateur. Nous ne les transmettons pas aux serveurs de la Société et ne les y collectons pas.",
         "li3": "Autorisations facultatives : les autorisations de localisation (y compris en arrière-plan) et de notification peuvent être utilisées pour enregistrer les déplacements et envoyer des alertes ; la collecte cesse lorsqu’elles sont désactivées.",
         "li4": "Sauvegarde/synchronisation : les données de localisation ne sont sauvegardées dans le cloud personnel de l’utilisateur (par ex. Google Drive) que sur demande explicite.",
-        "li5": "Lors de l’utilisation de SDK tiers de cartographie ou de localisation pour la navigation, la politique de confidentialité du fournisseur s’applique également."
+        "li5": "Lors de l’utilisation de SDK tiers de cartographie ou de localisation pour la navigation, la politique de confidentialité du fournisseur s’applique également.",
+        "ios": {
+          "title": "Additional notice for Movit on iOS",
+          "dates": "Amendment announced: October 14, 2026 · Effective: October 21, 2026",
+          "locationTitle": "Location records and optional backup",
+          "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
+          "mapTitle": "Map display — MapTiler",
+          "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
+          "adsTitle": "Advertising and consent management — Google",
+          "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+        }
       },
       "qnote": {
         "title": "Qnote (Notes/Listes de contrôle)",

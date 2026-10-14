@@ -267,7 +267,8 @@
       "title": "4. 第三者提供および国外移転",
       "p1": "原則として、会社はユーザーの個人情報を第三者に提供しません。ただし、以下の場合は例外的に提供される場合があります：",
       "li1": "ユーザーが事前に明示的に同意した場合",
-      "li2": "法令に基づく場合、または捜査機関からの適法な要請がある場合"
+      "li2": "法令に基づく場合、または捜査機関からの適法な要請がある場合",
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
     },
     "section5": {
       "title": "5. 個人情報処理の委託",
@@ -309,7 +310,18 @@
         "li2": "保存およびサーバーでの収集：位置情報はユーザーのデバイス内にのみ保存されます。当社サーバーへ送信したり、当社サーバーで収集したりすることはありません。",
         "li3": "オプション権限：位置情報（バックグラウンドを含む）および通知権限は、移動記録やアラートの提供に使用される場合があります。これらを無効にすると位置情報の収集は停止します。",
         "li4": "バックアップ/同期：ユーザーが明示的に要求した場合に限り、位置データを個人のクラウド（例：Google Drive）にバックアップします。",
-        "li5": "地図・経路案内の提供に第三者の地図・位置情報 SDK を使用する場合、その提供者のプライバシーポリシーも適用されます。"
+        "li5": "地図・経路案内の提供に第三者の地図・位置情報 SDK を使用する場合、その提供者のプライバシーポリシーも適用されます。",
+        "ios": {
+          "title": "Additional notice for Movit on iOS",
+          "dates": "Amendment announced: October 14, 2026 · Effective: October 21, 2026",
+          "locationTitle": "Location records and optional backup",
+          "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
+          "mapTitle": "Map display — MapTiler",
+          "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
+          "adsTitle": "Advertising and consent management — Google",
+          "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+        }
       },
       "qnote": {
         "title": "Qnote（ノート/チェックリスト）",

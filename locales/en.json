@@ -244,7 +244,8 @@
       "title": "4. Third-Party Provision and International Transfer",
       "p1": "In principle, the Company does not provide users' personal information to third parties. However, it may be provided exceptionally in the following cases:",
       "li1": "When the user has given explicit prior consent",
-      "li2": "When there is a legal basis or a lawful request from investigative authorities"
+      "li2": "When there is a legal basis or a lawful request from investigative authorities",
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
     },
     "section5": {
       "title": "5. Outsourcing of Personal Information Processing",
@@ -286,7 +287,18 @@
         "li2": "Storage and server collection: Location data is stored only on the user's device. We do not transmit location data to or collect it on Company servers.",
         "li3": "Optional permissions: Location (including background) and notification permissions may be used for route logging and alerts; collection stops when you disable them.",
         "li4": "Backup/Sync: Location data is backed up to your personal cloud (e.g., Google Drive) only when you explicitly request it.",
-        "li5": "When third-party map/location SDKs are used for maps or navigation, the provider’s privacy policy also applies."
+        "li5": "When third-party map/location SDKs are used for maps or navigation, the provider’s privacy policy also applies.",
+        "ios": {
+          "title": "Additional notice for Movit on iOS",
+          "dates": "Amendment announced: October 14, 2026 · Effective: October 21, 2026",
+          "locationTitle": "Location records and optional backup",
+          "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
+          "mapTitle": "Map display — MapTiler",
+          "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
+          "adsTitle": "Advertising and consent management — Google",
+          "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+        }
       },
       "qnote": {
         "title": "Qnote (Notes/Checklists)",
