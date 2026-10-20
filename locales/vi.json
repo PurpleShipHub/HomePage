@@ -172,7 +172,8 @@
     "download": {
       "title": "Tải ngay",
       "description": "Cài đặt Movit trên Android để bắt đầu hành trình khám phá!",
-      "android": "Tải cho Android"
+      "android": "Tải cho Android",
+      "ios": "Tải cho iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Bảo lưu mọi quyền.",

@@ -56,7 +56,8 @@
     "download": {
       "title": "立即下载",
       "description": "立即在 Android 上安装 Movit，开启你的探索之旅！",
-      "android": "Android 下载"
+      "android": "Android 下载",
+      "ios": "iOS 下载"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 版权所有。",

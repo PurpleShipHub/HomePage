@@ -56,7 +56,8 @@
     "download": {
       "title": "Установить сейчас",
       "description": "Установите Movit на Android и начните своё исследование!",
-      "android": "Скачать для Android"
+      "android": "Скачать для Android",
+      "ios": "Скачать для iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Все права защищены.",

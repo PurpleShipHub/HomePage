@@ -56,7 +56,8 @@
     "download": {
       "title": "Installer maintenant",
       "description": "Installez Movit dès maintenant sur Android pour commencer votre exploration.",
-      "android": "Installer sur Android"
+      "android": "Installer sur Android",
+      "ios": "Installer sur iOS"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. Tous droits réservés.",

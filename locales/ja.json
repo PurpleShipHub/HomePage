@@ -56,7 +56,8 @@
     "download": {
       "title": "今すぐインストール",
       "description": "AndroidにMovitをインストールして探検を始めましょう！",
-      "android": "Androidでインストール"
+      "android": "Androidでインストール",
+      "ios": "iOSでインストール"
     },
     "footer": {
       "copyright": "© 2025 Purpleship. 全著作権所有。",
