@@ -344,6 +344,14 @@
         "li1": "Đăng ký/Xác thực: Sử dụng đăng nhập Google OAuth. Mã định danh tài khoản Google (ID) và email được lưu trữ trong cơ sở dữ liệu để tạo tài khoản và xác định đăng nhập.",
         "li2": "Dữ liệu dịch vụ: Canvas, bảng, bình luận và tệp đính kèm do người dùng tạo/tải lên được lưu trữ trên máy chủ Công ty (cơ sở dữ liệu) để đồng bộ hóa và khôi phục.",
         "li3": "Xóa và lưu giữ: Thông tin tài khoản và dữ liệu dịch vụ được xóa ngay khi xóa tài khoản hoặc rút khỏi dịch vụ."
+      },
+      "roboescape": {
+        "title": "RoboEscape (trò chơi vượt ngục lén lút)",
+        "summary": "Trò chơi Android không thu thập hay truyền thông tin cá nhân; chỉ tiến trình trò chơi và cài đặt ngôn ngữ được lưu trên thiết bị.",
+        "li1": "Thông tin thu thập: không. Không có tài khoản, quảng cáo, mua hàng trong ứng dụng, công cụ phân tích hay giao tiếp mạng.",
+        "li2": "Nơi lưu trữ: chỉ tiến trình trò chơi và cài đặt ngôn ngữ được lưu trong bộ nhớ riêng của ứng dụng trên thiết bị và không truyền đến máy chủ của Công ty.",
+        "li3": "Xóa: bị xóa cùng ứng dụng khi gỡ cài đặt hoặc xóa bộ nhớ ứng dụng. Không dùng sao lưu tự động của Android.",
+        "link": "Xem thông báo RoboEscape →"
       }
     },
     "section9": {
@@ -355,6 +363,49 @@
     "section10": {
       "title": "10. Thay Đổi và Thông Báo Chính Sách Bảo Mật",
       "p1": "Khi luật pháp, nội dung dịch vụ hoặc chính sách nội bộ thay đổi, chúng tôi sẽ thông báo cho bạn về các thay đổi 7 ngày trước khi thực hiện qua thông báo trên trang web hoặc thông báo trong dịch vụ."
+    }
+  },
+  "roboescapePrivacyPage": {
+    "title": "Thông báo quyền riêng tư RoboEscape",
+    "subtitle": "Thông báo riêng cho ứng dụng RoboEscape trên Android (phiên bản 0.1.7, bản dựng 19). Áp dụng cùng với Chính sách quyền riêng tư của Purpleship.",
+    "effectiveDate": "Ngày hiệu lực: 26 tháng 10, 2026",
+    "backToPrivacy": "← Quay lại Chính sách quyền riêng tư",
+    "section1": {
+      "title": "1. Phạm vi áp dụng",
+      "p1": "Thông báo này áp dụng cho ứng dụng RoboEscape trên Android phiên bản 0.1.7 (bản dựng 19) được phân phối qua Google Play. Các phiên bản hoặc nền tảng khác tuân theo thông báo của phiên bản đó.",
+      "p2": "Những nội dung không được nêu ở đây tuân theo Chính sách quyền riêng tư của Purpleship."
+    },
+    "section2": {
+      "title": "2. Thông tin ứng dụng thu thập hoặc truyền đi",
+      "p1": "Phiên bản này của ứng dụng không thu thập thông tin cá nhân và không truyền bất kỳ dữ liệu nào đến máy chủ của Công ty hoặc bên thứ ba.",
+      "li1": "Không có tài khoản hay đăng nhập: mọi tính năng đều dùng được mà không cần đăng ký hay đăng nhập.",
+      "li2": "Không có quảng cáo hay mua hàng trong ứng dụng: không tích hợp SDK quảng cáo hay tính năng thanh toán.",
+      "li3": "Không có phân tích hay theo dõi: không tích hợp SDK phân tích, báo cáo sự cố hay theo dõi.",
+      "li4": "Không có giao tiếp mạng: ứng dụng không yêu cầu bất kỳ quyền Android nào, kể cả truy cập Internet.",
+      "li5": "Ứng dụng không đọc mã nhận dạng thiết bị, vị trí, danh bạ, ảnh hay thông tin thiết bị khác."
+    },
+    "section3": {
+      "title": "3. Dữ liệu lưu trên thiết bị của bạn",
+      "p1": "Chỉ các dữ liệu sau được lưu trong bộ nhớ riêng của ứng dụng trên thiết bị của bạn, và ứng dụng không gửi chúng đi đâu.",
+      "li1": "Tiến trình trò chơi: các màn đã hoàn thành, hội thoại đã đọc, màn hiện tại và điểm lưu",
+      "li2": "Cài đặt ngôn ngữ: ngôn ngữ hiển thị đã chọn trong ứng dụng",
+      "li3": "Sao lưu: ứng dụng được cấu hình không dùng sao lưu tự động của Android, và Công ty không cung cấp sao lưu hay đồng bộ đám mây."
+    },
+    "section4": {
+      "title": "4. Xóa dữ liệu",
+      "li1": "Gỡ cài đặt ứng dụng hoặc xóa bộ nhớ của ứng dụng trong cài đặt Android sẽ xóa các dữ liệu nêu trên.",
+      "li2": "Nút 'Chơi lại' trong trò chơi chỉ bắt đầu lại màn hiện tại từ đầu; không xóa tiến trình đã lưu.",
+      "li3": "Vì ứng dụng không gửi gì cho Công ty, Công ty không lưu giữ dữ liệu người dùng ứng dụng và không cần yêu cầu xóa riêng."
+    },
+    "section5": {
+      "title": "5. Nền tảng (Google Play và Android)",
+      "p1": "Thông tin do Google Play và hệ điều hành Android tự xử lý, như cài đặt, cập nhật, phương thức thanh toán hay chẩn đoán thiết bị, tuân theo chính sách quyền riêng tư của Google và cài đặt thiết bị của bạn, nằm ngoài phạm vi của ứng dụng này."
+    },
+    "section6": {
+      "title": "6. Liên hệ và chính sách chung",
+      "p1": "Mọi câu hỏi về ứng dụng, vui lòng gửi email đến địa chỉ bên dưới. Địa chỉ email và nội dung nhận được sẽ được xử lý theo Chính sách quyền riêng tư của Purpleship.",
+      "contact": "Liên hệ: captain@purpleship.io",
+      "p2": "Công cụ phân tích và nhật ký truy cập của trang web purpleship.io tách biệt với ứng dụng; xem Chính sách quyền riêng tư của Purpleship."
     }
   },
   "termsPage": {

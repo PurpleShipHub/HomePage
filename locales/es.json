@@ -344,6 +344,14 @@
         "li1": "Registro/Autenticación: Usa inicio de sesión OAuth de Google. El identificador de cuenta de Google (ID) y correo electrónico se almacenan en la base de datos para creación de cuenta e identificación de inicio de sesión.",
         "li2": "Datos del servicio: Lienzos, tableros, comentarios y archivos adjuntos creados/subidos por usuarios se almacenan en servidores de la Compañía (base de datos) para sincronización y recuperación.",
         "li3": "Eliminación y retención: La información de cuenta y datos del servicio se eliminan sin demora al eliminar la cuenta o retirarse del servicio."
+      },
+      "roboescape": {
+        "title": "RoboEscape (juego de sigilo y escape)",
+        "summary": "Un juego para Android que no recopila ni transmite información personal; solo el progreso del juego y el ajuste de idioma se guardan en el dispositivo.",
+        "li1": "Información recopilada: ninguna. Sin cuentas, anuncios, compras dentro de la app, herramientas de análisis ni comunicación de red.",
+        "li2": "Ubicación de almacenamiento: solo el progreso del juego y el ajuste de idioma se guardan en el almacenamiento privado de la app en el dispositivo y no se transmiten a los servidores de la Compañía.",
+        "li3": "Eliminación: se elimina junto con la app al desinstalarla o borrar su almacenamiento. No se usa la copia de seguridad automática de Android.",
+        "link": "Ver aviso de RoboEscape →"
       }
     },
     "section9": {
@@ -355,6 +363,49 @@
     "section10": {
       "title": "10. Cambios y Notificaciones de la Política de Privacidad",
       "p1": "Cuando las leyes, el contenido del servicio o las políticas internas cambien, le notificaremos los cambios 7 días antes de la implementación a través de aviso en el sitio web o notificación en el servicio."
+    }
+  },
+  "roboescapePrivacyPage": {
+    "title": "Aviso de privacidad de RoboEscape",
+    "subtitle": "Aviso específico para la app RoboEscape para Android (versión 0.1.7, compilación 19). Se aplica junto con la Política de Privacidad de Purpleship.",
+    "effectiveDate": "Fecha de entrada en vigor: 26 de octubre de 2026",
+    "backToPrivacy": "← Volver a la Política de Privacidad",
+    "section1": {
+      "title": "1. Ámbito de aplicación",
+      "p1": "Este aviso se aplica a la app RoboEscape para Android, versión 0.1.7 (compilación 19), distribuida a través de Google Play. Otras versiones o plataformas se rigen por el aviso de esa versión.",
+      "p2": "Todo lo no previsto aquí se rige por la Política de Privacidad de Purpleship."
+    },
+    "section2": {
+      "title": "2. Información que la app recopila o transmite",
+      "p1": "Esta versión de la app no recopila información personal ni transmite ningún dato a los servidores de la Compañía ni a terceros.",
+      "li1": "Sin cuentas ni inicio de sesión: todas las funciones están disponibles sin registrarse ni iniciar sesión.",
+      "li2": "Sin anuncios ni compras dentro de la app: no incluye SDK de publicidad ni funciones de pago.",
+      "li3": "Sin análisis ni seguimiento: no incluye SDK de análisis, informes de fallos ni seguimiento.",
+      "li4": "Sin comunicación de red: la app no solicita ningún permiso de Android, incluido el acceso a internet.",
+      "li5": "La app no lee identificadores del dispositivo, ubicación, contactos, fotos ni otra información del dispositivo."
+    },
+    "section3": {
+      "title": "3. Datos almacenados en su dispositivo",
+      "p1": "Solo los siguientes datos se guardan en el almacenamiento privado de la app en su dispositivo, y la app no los envía a ningún sitio.",
+      "li1": "Progreso del juego: niveles completados, diálogos ya leídos, nivel actual y punto de control",
+      "li2": "Ajuste de idioma: el idioma de visualización elegido en la app",
+      "li3": "Copia de seguridad: la app está configurada para no usar la copia de seguridad automática de Android, y la Compañía no ofrece copia ni sincronización en la nube."
+    },
+    "section4": {
+      "title": "4. Eliminación de datos",
+      "li1": "Desinstalar la app o borrar su almacenamiento en los ajustes de Android elimina los datos anteriores.",
+      "li2": "El botón 'Reiniciar' del juego solo reinicia el nivel actual desde el principio; no elimina el progreso guardado.",
+      "li3": "Como la app no envía nada a la Compañía, esta no conserva datos de usuarios de la app y no se necesita una solicitud de eliminación aparte."
+    },
+    "section5": {
+      "title": "5. Plataforma (Google Play y Android)",
+      "p1": "La información que Google Play y el sistema operativo Android procesan por su cuenta, como instalación, actualizaciones, métodos de pago o diagnósticos del dispositivo, se rige por la política de privacidad de Google y los ajustes de su dispositivo, y queda fuera del alcance de esta app."
+    },
+    "section6": {
+      "title": "6. Contacto y política general",
+      "p1": "Para consultas sobre la app, escríbanos a la dirección siguiente. La dirección de correo y el mensaje recibidos se tratan conforme a la Política de Privacidad de Purpleship.",
+      "contact": "Contacto: captain@purpleship.io",
+      "p2": "Las herramientas de análisis y los registros de acceso del sitio purpleship.io son independientes de la app; consulte la Política de Privacidad de Purpleship."
     }
   },
   "termsPage": {

@@ -321,6 +321,14 @@
         "li1": "Registration/Authentication: Uses Google OAuth login. Google account identifier (ID) and email are stored in the database for account creation and login identification purposes.",
         "li2": "Service data: Canvases, boards, comments, and attachments created/uploaded by users are stored on Company servers (database) for synchronization and recovery.",
         "li3": "Deletion and retention: Account information and service data are deleted without delay upon account deletion or service withdrawal."
+      },
+      "roboescape": {
+        "title": "RoboEscape (Stealth Escape Game)",
+        "summary": "An Android game that collects and transmits no personal information; only game progress and the language setting are stored on the device.",
+        "li1": "Information collected: None. No accounts, ads, in-app purchases, analytics tools, or network communication.",
+        "li2": "Storage location: Only game progress and the language setting are stored in the app's private storage on the device and are not transmitted to Company servers.",
+        "li3": "Deletion: Deleted together with the app when it is uninstalled or its storage is cleared. Android auto backup is not used.",
+        "link": "View RoboEscape notice →"
       }
     },
     "section9": {
@@ -332,6 +340,49 @@
     "section10": {
       "title": "10. Privacy Policy Changes and Notices",
       "p1": "When laws, service content, or internal policies change, we will notify you of the changes 7 days before implementation through website notice or in-service notification."
+    }
+  },
+  "roboescapePrivacyPage": {
+    "title": "RoboEscape Privacy Notice",
+    "subtitle": "Service-specific notice for the RoboEscape Android app (version 0.1.7, build 19). It applies together with the Purpleship Privacy Policy.",
+    "effectiveDate": "Effective date: Oct 26, 2026",
+    "backToPrivacy": "← Back to Privacy Policy",
+    "section1": {
+      "title": "1. Scope",
+      "p1": "This notice applies to the RoboEscape Android app version 0.1.7 (build 19) distributed through Google Play. Other versions or platforms are covered by the notice for that version.",
+      "p2": "Anything not covered here follows the Purpleship Privacy Policy."
+    },
+    "section2": {
+      "title": "2. Information the App Collects or Transmits",
+      "p1": "This version of the app does not collect personal information and does not transmit any data to Company servers or to third parties.",
+      "li1": "No accounts or login: all features are available without signing up or signing in.",
+      "li2": "No ads or in-app purchases: no advertising SDK or payment feature is included.",
+      "li3": "No analytics or tracking: no analytics, crash-reporting, or tracking SDK is included.",
+      "li4": "No network communication: the app requests no Android permissions, including internet access.",
+      "li5": "The app does not read device identifiers, location, contacts, photos, or other device information."
+    },
+    "section3": {
+      "title": "3. Data Stored on Your Device",
+      "p1": "Only the following data is stored in the app's private storage on your device, and the app does not send it anywhere.",
+      "li1": "Game progress: completed stages, dialogue already read, current stage, and checkpoint",
+      "li2": "Language setting: the display language chosen in the app",
+      "li3": "Backup: the app is configured not to use Android auto backup, and the Company provides no cloud backup or sync."
+    },
+    "section4": {
+      "title": "4. Deleting Data",
+      "li1": "Uninstalling the app or clearing its storage in Android settings deletes the data above.",
+      "li2": "The in-game 'Restart' only restarts the current stage from the beginning; it does not delete saved progress.",
+      "li3": "Because the app sends nothing to the Company, the Company holds no app user data and no separate deletion request is needed."
+    },
+    "section5": {
+      "title": "5. Platform (Google Play and Android)",
+      "p1": "Information that Google Play and the Android operating system process on their own, such as installation, updates, payment methods, or device diagnostics, is governed by Google's privacy policy and your device settings and is outside the scope of this app."
+    },
+    "section6": {
+      "title": "6. Contact and General Policy",
+      "p1": "For questions about the app, email us at the address below. The email address and message we receive are handled under the Purpleship Privacy Policy.",
+      "contact": "Contact: captain@purpleship.io",
+      "p2": "Analytics and access logs on the purpleship.io website are separate from the app; see the Purpleship Privacy Policy."
     }
   },
   "termsPage": {
