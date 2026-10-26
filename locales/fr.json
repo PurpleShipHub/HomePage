@@ -347,11 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (jeu d'évasion furtive)",
-        "summary": "Un jeu Android qui ne collecte ni ne transmet aucune information personnelle ; seuls la progression du jeu et le paramètre de langue sont stockés sur l'appareil.",
-        "li1": "Informations collectées : aucune. Pas de compte, de publicité, d'achats intégrés, d'outils d'analyse ni de communication réseau.",
-        "li2": "Lieu de stockage : seuls la progression du jeu et le paramètre de langue sont enregistrés dans le stockage privé de l'application sur l'appareil et ne sont pas transmis aux serveurs de la Société.",
-        "li3": "Suppression : supprimé avec l'application lors de sa désinstallation ou de l'effacement de son stockage. La sauvegarde automatique Android n'est pas utilisée.",
-        "link": "Voir l'avis RoboEscape →"
+        "summary": "RoboEscape ne collecte aucune information personnelle et n'en transmet pas à un serveur. La progression du jeu et le paramètre de langue sont enregistrés uniquement sur l'appareil."
       }
     },
     "section9": {
@@ -363,49 +359,6 @@
     "section10": {
       "title": "10. Modifications et Notifications de la Politique de Confidentialité",
       "p1": "Lorsque les lois, le contenu du service ou les politiques internes changent, nous vous informerons des changements 7 jours avant la mise en œuvre via un avis sur le site web ou une notification dans le service."
-    }
-  },
-  "roboescapePrivacyPage": {
-    "title": "Avis de confidentialité RoboEscape",
-    "subtitle": "Avis spécifique à l'application Android RoboEscape (version 0.1.7, build 19). Il s'applique conjointement avec la Politique de confidentialité de Purpleship.",
-    "effectiveDate": "Date d'entrée en vigueur : 26 octobre 2026",
-    "backToPrivacy": "← Retour à la Politique de confidentialité",
-    "section1": {
-      "title": "1. Champ d'application",
-      "p1": "Cet avis s'applique à l'application Android RoboEscape version 0.1.7 (build 19) distribuée via Google Play. Les autres versions ou plateformes relèvent de l'avis propre à cette version.",
-      "p2": "Tout point non couvert ici relève de la Politique de confidentialité de Purpleship."
-    },
-    "section2": {
-      "title": "2. Informations collectées ou transmises par l'application",
-      "p1": "Cette version de l'application ne collecte aucune information personnelle et ne transmet aucune donnée aux serveurs de la Société ni à des tiers.",
-      "li1": "Pas de compte ni de connexion : toutes les fonctionnalités sont disponibles sans inscription ni connexion.",
-      "li2": "Pas de publicité ni d'achats intégrés : aucun SDK publicitaire ni fonction de paiement n'est inclus.",
-      "li3": "Pas d'analyse ni de suivi : aucun SDK d'analyse, de rapport de plantage ou de suivi n'est inclus.",
-      "li4": "Pas de communication réseau : l'application ne demande aucune autorisation Android, y compris l'accès à Internet.",
-      "li5": "L'application ne lit pas les identifiants de l'appareil, la localisation, les contacts, les photos ni d'autres informations de l'appareil."
-    },
-    "section3": {
-      "title": "3. Données stockées sur votre appareil",
-      "p1": "Seules les données suivantes sont enregistrées dans l'espace de stockage privé de l'application sur votre appareil, et l'application ne les envoie nulle part.",
-      "li1": "Progression du jeu : niveaux terminés, dialogues déjà lus, niveau actuel et point de contrôle",
-      "li2": "Paramètre de langue : la langue d'affichage choisie dans l'application",
-      "li3": "Sauvegarde : l'application est configurée pour ne pas utiliser la sauvegarde automatique Android, et la Société ne propose aucune sauvegarde ni synchronisation cloud."
-    },
-    "section4": {
-      "title": "4. Suppression des données",
-      "li1": "La désinstallation de l'application ou l'effacement de son stockage dans les paramètres Android supprime les données ci-dessus.",
-      "li2": "Le bouton « Recommencer » du jeu relance uniquement le niveau actuel depuis le début ; il ne supprime pas la progression enregistrée.",
-      "li3": "Comme l'application n'envoie rien à la Société, celle-ci ne détient aucune donnée d'utilisateur de l'application et aucune demande de suppression distincte n'est nécessaire."
-    },
-    "section5": {
-      "title": "5. Plateforme (Google Play et Android)",
-      "p1": "Les informations que Google Play et le système Android traitent de leur côté, telles que l'installation, les mises à jour, les moyens de paiement ou les diagnostics de l'appareil, relèvent de la politique de confidentialité de Google et des paramètres de votre appareil, et sortent du cadre de cette application."
-    },
-    "section6": {
-      "title": "6. Contact et politique générale",
-      "p1": "Pour toute question sur l'application, écrivez-nous à l'adresse ci-dessous. L'adresse e-mail et le message reçus sont traités conformément à la Politique de confidentialité de Purpleship.",
-      "contact": "Contact : captain@purpleship.io",
-      "p2": "Les outils d'analyse et les journaux d'accès du site purpleship.io sont distincts de l'application ; consultez la Politique de confidentialité de Purpleship."
     }
   },
   "termsPage": {

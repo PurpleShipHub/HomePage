@@ -347,11 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (Stealth-Fluchtspiel)",
-        "summary": "Ein Android-Spiel, das keine personenbezogenen Daten erhebt oder überträgt; nur Spielfortschritt und Spracheinstellung werden auf dem Gerät gespeichert.",
-        "li1": "Erhobene Daten: keine. Keine Konten, Werbung, In-App-Käufe, Analysetools oder Netzwerkkommunikation.",
-        "li2": "Speicherort: Nur Spielfortschritt und Spracheinstellung werden im privaten App-Speicher auf dem Gerät abgelegt und nicht an Server des Unternehmens übertragen.",
-        "li3": "Löschung: Wird zusammen mit der App bei Deinstallation oder Löschen des Speichers entfernt. Die automatische Android-Sicherung wird nicht genutzt.",
-        "link": "RoboEscape-Hinweis ansehen →"
+        "summary": "RoboEscape erhebt keine personenbezogenen Daten und überträgt sie nicht an einen Server. Spielfortschritt und Spracheinstellung werden nur auf dem Gerät gespeichert."
       }
     },
     "section9": {
@@ -363,49 +359,6 @@
     "section10": {
       "title": "10. Änderungen und Mitteilungen der Datenschutzrichtlinie",
       "p1": "Bei Änderungen von Gesetzen, Dienstinhalten oder internen Richtlinien informieren wir Sie 7 Tage vor Inkrafttreten über Website-Ankündigung oder Benachrichtigung im Dienst über die Änderungen."
-    }
-  },
-  "roboescapePrivacyPage": {
-    "title": "RoboEscape Datenschutzhinweis",
-    "subtitle": "Dienstspezifischer Hinweis für die RoboEscape Android-App (Version 0.1.7, Build 19). Er gilt zusammen mit der Purpleship-Datenschutzerklärung.",
-    "effectiveDate": "Gültig ab: 26. Oktober 2026",
-    "backToPrivacy": "← Zurück zur Datenschutzerklärung",
-    "section1": {
-      "title": "1. Geltungsbereich",
-      "p1": "Dieser Hinweis gilt für die über Google Play verteilte RoboEscape Android-App Version 0.1.7 (Build 19). Für andere Versionen oder Plattformen gilt der Hinweis der jeweiligen Version.",
-      "p2": "Alles hier nicht Geregelte richtet sich nach der Purpleship-Datenschutzerklärung."
-    },
-    "section2": {
-      "title": "2. Von der App erhobene oder übertragene Informationen",
-      "p1": "Diese Version der App erhebt keine personenbezogenen Daten und überträgt keinerlei Daten an Server des Unternehmens oder an Dritte.",
-      "li1": "Keine Konten oder Anmeldung: Alle Funktionen sind ohne Registrierung oder Anmeldung verfügbar.",
-      "li2": "Keine Werbung oder In-App-Käufe: Es ist kein Werbe-SDK und keine Zahlungsfunktion enthalten.",
-      "li3": "Keine Analyse oder Nachverfolgung: Es ist kein Analyse-, Absturzbericht- oder Tracking-SDK enthalten.",
-      "li4": "Keine Netzwerkkommunikation: Die App fordert keine Android-Berechtigungen an, auch keinen Internetzugriff.",
-      "li5": "Die App liest keine Gerätekennungen, Standortdaten, Kontakte, Fotos oder sonstige Geräteinformationen."
-    },
-    "section3": {
-      "title": "3. Auf Ihrem Gerät gespeicherte Daten",
-      "p1": "Nur die folgenden Daten werden im privaten Speicher der App auf Ihrem Gerät abgelegt, und die App sendet sie nirgendwohin.",
-      "li1": "Spielfortschritt: abgeschlossene Level, bereits gelesene Dialoge, aktuelles Level und Checkpoint",
-      "li2": "Spracheinstellung: die in der App gewählte Anzeigesprache",
-      "li3": "Sicherung: Die App ist so konfiguriert, dass sie die automatische Android-Sicherung nicht nutzt; das Unternehmen bietet keine Cloud-Sicherung oder Synchronisierung an."
-    },
-    "section4": {
-      "title": "4. Löschen von Daten",
-      "li1": "Durch Deinstallation der App oder Löschen ihres Speichers in den Android-Einstellungen werden die oben genannten Daten gelöscht.",
-      "li2": "„Neustart“ im Spiel startet nur das aktuelle Level von vorn; der gespeicherte Fortschritt wird nicht gelöscht.",
-      "li3": "Da die App nichts an das Unternehmen sendet, hält das Unternehmen keine Daten von App-Nutzern, und ein gesonderter Löschantrag ist nicht erforderlich."
-    },
-    "section5": {
-      "title": "5. Plattform (Google Play und Android)",
-      "p1": "Informationen, die Google Play und das Android-Betriebssystem selbst verarbeiten, etwa Installation, Updates, Zahlungsmethoden oder Gerätediagnosen, unterliegen der Datenschutzerklärung von Google und Ihren Geräteeinstellungen und liegen außerhalb des Bereichs dieser App."
-    },
-    "section6": {
-      "title": "6. Kontakt und allgemeine Erklärung",
-      "p1": "Bei Fragen zur App schreiben Sie uns an die unten stehende Adresse. Die empfangene E-Mail-Adresse und Nachricht werden gemäß der Purpleship-Datenschutzerklärung verarbeitet.",
-      "contact": "Kontakt: captain@purpleship.io",
-      "p2": "Analysetools und Zugriffsprotokolle der Website purpleship.io sind von der App getrennt; siehe die Purpleship-Datenschutzerklärung."
     }
   },
   "termsPage": {
