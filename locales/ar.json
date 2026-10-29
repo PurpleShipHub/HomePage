@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (لعبة هروب تسلل)",
-        "summary": "لا يجمع RoboEscape أي معلومات شخصية ولا ينقلها إلى خادم. يُخزن تقدم اللعبة وإعداد اللغة على الجهاز فقط."
+        "summary": "يُخزن RoboEscape تقدم اللعبة وإعداد اللغة على الجهاز فقط ولا ينقلهما إلى خوادم Purpleship. تستخدم الإعلانات المكافِئة الاختيارية Google AdMob وGoogle User Messaging Platform (UMP)؛ وعند طلب إعلان، قد تُرسل إلى Google بيانات مثل عنوان IP (لتقدير الموقع التقريبي) والتفاعلات مع الإعلانات ومعلومات التشخيص ومعرّفات الجهاز. تخضع معالجة Google للبيانات لسياسة خصوصية Google (https://policies.google.com/privacy)."
       }
     },
     "section9": {

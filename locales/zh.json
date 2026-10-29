@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape（潜行逃脱游戏）",
-        "summary": "RoboEscape 不收集个人信息，也不会将其传输到服务器。游戏进度和语言设置仅保存在设备上。"
+        "summary": "RoboEscape 的游戏进度和语言设置仅保存在设备上，不会传输到 Purpleship 服务器。可选的激励广告使用 Google AdMob 和 Google User Messaging Platform（UMP）；请求广告时，IP 地址（用于推测大致位置）、广告互动、诊断信息和设备标识符等可能会发送给 Google。Google 的数据处理遵循 Google 隐私权政策（https://policies.google.com/privacy）。"
       }
     },
     "section9": {

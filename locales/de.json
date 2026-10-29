@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (Stealth-Fluchtspiel)",
-        "summary": "RoboEscape erhebt keine personenbezogenen Daten und überträgt sie nicht an einen Server. Spielfortschritt und Spracheinstellung werden nur auf dem Gerät gespeichert."
+        "summary": "RoboEscape speichert Spielfortschritt und Spracheinstellung nur auf dem Gerät und überträgt sie nicht an Purpleship-Server. Optionale Prämienanzeigen nutzen Google AdMob und die Google User Messaging Platform (UMP); bei einer Anzeigenanfrage können IP-Adresse (zur Schätzung des ungefähren Standorts), Anzeigeninteraktionen, Diagnoseinformationen und Gerätekennungen an Google übermittelt werden. Die Datenverarbeitung durch Google unterliegt der Google-Datenschutzerklärung (https://policies.google.com/privacy)."
       }
     },
     "section9": {

@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (juego de sigilo y escape)",
-        "summary": "RoboEscape no recopila información personal ni la envía a un servidor. El progreso del juego y el ajuste de idioma se guardan solo en el dispositivo."
+        "summary": "RoboEscape guarda el progreso del juego y el ajuste de idioma solo en el dispositivo y no los envía a los servidores de Purpleship. Los anuncios recompensados opcionales usan Google AdMob y Google User Messaging Platform (UMP); al solicitar un anuncio, la dirección IP (para estimar la ubicación aproximada), las interacciones con anuncios, la información de diagnóstico y los identificadores del dispositivo pueden enviarse a Google. El tratamiento de datos de Google se rige por la Política de Privacidad de Google (https://policies.google.com/privacy)."
       }
     },
     "section9": {

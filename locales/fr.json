@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (jeu d'évasion furtive)",
-        "summary": "RoboEscape ne collecte aucune information personnelle et n'en transmet pas à un serveur. La progression du jeu et le paramètre de langue sont enregistrés uniquement sur l'appareil."
+        "summary": "RoboEscape enregistre la progression du jeu et le paramètre de langue uniquement sur l'appareil et ne les transmet pas aux serveurs de Purpleship. Les publicités avec récompense facultatives utilisent Google AdMob et Google User Messaging Platform (UMP) ; lors d'une demande de publicité, l'adresse IP (pour estimer la localisation approximative), les interactions publicitaires, les informations de diagnostic et les identifiants de l'appareil peuvent être transmis à Google. Le traitement des données par Google est régi par les Règles de confidentialité de Google (https://policies.google.com/privacy)."
       }
     },
     "section9": {

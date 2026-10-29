@@ -324,7 +324,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (Stealth Escape Game)",
-        "summary": "RoboEscape does not collect personal information or send it to a server. Game progress and the language setting are stored only on your device."
+        "summary": "RoboEscape stores game progress and the language setting only on your device and does not send them to Purpleship servers. Optional rewarded ads use Google AdMob and the Google User Messaging Platform (UMP); when an ad is requested, your IP address (used to estimate approximate location), ad interactions, diagnostic information, and device identifiers may be sent to Google. Google's data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
       }
     },
     "section9": {

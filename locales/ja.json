@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape（ステルス脱出ゲーム）",
-        "summary": "RoboEscapeは個人情報を収集したり、サーバーに送信したりしません。ゲームの進行状況と言語設定は端末内にのみ保存されます。"
+        "summary": "RoboEscapeのゲーム進行状況と言語設定は端末内にのみ保存され、Purpleshipのサーバーには送信されません。任意のリワード広告にはGoogle AdMobとGoogle User Messaging Platform（UMP）を使用しており、広告リクエスト時にIPアドレス（おおよその位置の推定に使用）、広告への操作、診断情報、端末識別子などがGoogleに送信される場合があります。Googleのデータ処理はGoogleプライバシーポリシー（https://policies.google.com/privacy）に従います。"
       }
     },
     "section9": {

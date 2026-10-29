@@ -347,7 +347,7 @@
       },
       "roboescape": {
         "title": "RoboEscape (trò chơi vượt ngục lén lút)",
-        "summary": "RoboEscape không thu thập thông tin cá nhân hay truyền thông tin đó đến máy chủ. Tiến trình trò chơi và cài đặt ngôn ngữ chỉ được lưu trên thiết bị."
+        "summary": "RoboEscape chỉ lưu tiến trình trò chơi và cài đặt ngôn ngữ trên thiết bị và không gửi chúng đến máy chủ của Purpleship. Quảng cáo có tặng thưởng tùy chọn sử dụng Google AdMob và Google User Messaging Platform (UMP); khi yêu cầu quảng cáo, địa chỉ IP (để ước tính vị trí gần đúng), tương tác với quảng cáo, thông tin chẩn đoán và mã nhận dạng thiết bị có thể được gửi đến Google. Việc xử lý dữ liệu của Google tuân theo Chính sách quyền riêng tư của Google (https://policies.google.com/privacy)."
       }
     },
     "section9": {
