@@ -239,7 +239,7 @@
     "brand": "Purpleship",
     "title": "Chính Sách Bảo Mật Purpleship",
     "subtitle": "Chính sách về việc thu thập, sử dụng và quản lý thông tin cá nhân cho các dịch vụ Purpleship.",
-    "effectiveDate": "Ngày có hiệu lực: 7 tháng 2 năm 2025",
+    "effectiveDate": "Ngày có hiệu lực: 10 tháng 11 năm 2026",
     "backToHome": "← Quay lại Trang chủ",
     "section1": {
       "title": "1. Phạm Vi và Nguyên Tắc Cơ Bản",
@@ -269,13 +269,16 @@
       "p1": "Về nguyên tắc, Công ty không cung cấp thông tin cá nhân của người dùng cho bên thứ ba. Tuy nhiên, có thể được cung cấp ngoại lệ trong các trường hợp sau:",
       "li1": "Khi người dùng đã đồng ý rõ ràng trước",
       "li2": "Khi có cơ sở pháp lý hoặc yêu cầu hợp pháp từ cơ quan điều tra",
-      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
+      "p3": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng RoboEscape được mô tả trong mục ‘RoboEscape’ bên dưới.",
+      "p4": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng Movit (iOS và Android) được mô tả trong mục ‘Movit’ bên dưới."
     },
     "section5": {
       "title": "5. Thuê Ngoài Xử Lý Thông Tin Cá Nhân",
       "p1": "Chúng tôi có thể thuê ngoài công việc cho các bên ngoài để duy trì chất lượng dịch vụ, và áp đặt nghĩa vụ bảo mật, hạn chế thuê lại và nghĩa vụ quản lý/giám sát cho nhà thầu.",
       "li1": "Phân tích sử dụng dịch vụ: Google LLC (Google Analytics)",
-      "li2": "Sao lưu/đồng bộ do người dùng chọn: Apple iCloud Drive, Google Drive, v.v."
+      "li2": "Sao lưu/đồng bộ do người dùng chọn: Apple iCloud Drive, Google Drive, v.v.",
+      "li3": "Phân phối quảng cáo, đo lường quảng cáo và ngăn chặn gian lận (RoboEscape, Movit): Google LLC (Google AdMob)"
     },
     "section6": {
       "title": "6. Quyền Của Người Dùng và Cách Thực Hiện",
@@ -314,21 +317,27 @@
         "li5": "Khi sử dụng SDK bản đồ/vị trí của bên thứ ba để cung cấp bản đồ hoặc chỉ đường, chính sách quyền riêng tư của nhà cung cấp đó cũng được áp dụng.",
         "ios": {
           "title": "Additional notice for Movit on iOS",
-          "dates": "Amendment announced: October 14, 2026 · Effective: October 14, 2026",
           "locationTitle": "Location records and optional backup",
           "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
           "mapTitle": "Map display — MapTiler",
           "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
           "adsTitle": "Advertising and consent management — Google",
           "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
-          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy).",
+          "transferTitle": "Chuyển dữ liệu ra nước ngoài — Google (iOS)",
+          "transfer": "Bên nhận là Google LLC (Hoa Kỳ; liên hệ về quyền riêng tư: https://support.google.com/policies/contact/general_privacy_form). Dữ liệu được chuyển là các dữ liệu SDK quảng cáo nêu ở trên (địa chỉ IP và vị trí gần đúng suy ra từ đó, mã nhận dạng thiết bị trong phạm vi ứng dụng hoặc nhà phát triển, lượt hiển thị quảng cáo, lượt xem video và tương tác, dữ liệu lỗi và hiệu suất), cùng với mã định danh quảng cáo (IDFA) nếu bạn cho phép theo dõi. Mục đích: phân phối, đo lường và phân tích quảng cáo, cũng như chẩn đoán và cải thiện SDK quảng cáo. Dữ liệu được gửi qua mạng khi yêu cầu quảng cáo trong lúc sử dụng ứng dụng và được lưu giữ theo chính sách của Google (https://policies.google.com/technologies/retention). Công ty thực hiện việc chuyển này bằng cách công khai các nội dung trên trong chính sách này (Điều 28-8 khoản 1 điểm 3 của 「개인정보 보호법」 (Luật Bảo vệ Thông tin Cá nhân)).",
+          "refuse": "Cách từ chối và hệ quả: (1) Chọn “Yêu cầu ứng dụng không theo dõi” khi ứng dụng hỏi lần đầu, hoặc tắt cho phép theo dõi của Movit trong Cài đặt iOS > Quyền riêng tư & Bảo mật > Theo dõi. Khi đó mã định danh quảng cáo (IDFA) không được chia sẻ và quảng cáo cá nhân hóa bị hạn chế. Tuy nhiên, một số dữ liệu như địa chỉ IP và dữ liệu chẩn đoán vẫn tiếp tục được gửi khi yêu cầu quảng cáo; ứng dụng vẫn dùng được. (2) Nếu bạn gỡ cài đặt ứng dụng, mọi việc truyền dữ liệu đều dừng."
         },
         "stats": {
           "title": "Movit app usage statistics (Android and iOS)",
-          "dates": "Posted: October 15, 2026 · Supplement to the amendment effective October 14, 2026",
           "p1": "To understand how each version is used, Movit sends once per day on days the app is opened: a random install identifier created on first launch (not generated from device or account information), the app version, the operating system and platform (Android/iOS), and a data-format version, to Purpleship's statistics server. Movement records, GPS location coordinates, advertising identifiers and account information are not sent.",
           "p2": "The statistics server does not store the IP address. Together with the daily record for each install identifier, it stores the country code determined from the connecting IP address and a device type derived from the app's fixed identification string. The statistics server runs on Cloudflare infrastructure.",
           "p3": "The install identifier is removed from the device when the app is deleted or its data is cleared. Daily records on the server are kept while the statistics purpose continues and are deleted without delay once the purpose is achieved, such as when the service ends."
+        },
+        "android": {
+          "ads": "Quảng cáo (Android): ứng dụng Android có Google Mobile Ads SDK (AdMob) và Google User Messaging Platform (UMP) và hiển thị quảng cáo.",
+          "transfer": "Chuyển dữ liệu ra nước ngoài (quảng cáo, Android): bên nhận là Google LLC (Hoa Kỳ; liên hệ về quyền riêng tư: https://support.google.com/policies/contact/general_privacy_form). Dữ liệu được chuyển: mã nhận dạng thiết bị như ID quảng cáo và app set ID; địa chỉ IP (có thể dùng để ước tính vị trí gần đúng); thông tin tương tác với quảng cáo; dữ liệu chẩn đoán của ứng dụng và SDK quảng cáo. Mục đích: phân phối quảng cáo, phân tích (bao gồm đo lường quảng cáo) và ngăn chặn gian lận. Dữ liệu được gửi qua mạng khi yêu cầu quảng cáo trong lúc sử dụng ứng dụng và được lưu giữ theo chính sách của Google (https://policies.google.com/technologies/retention). Công ty thực hiện việc chuyển này bằng cách công khai các nội dung trên trong chính sách này (Điều 28-8 khoản 1 điểm 3 của 「개인정보 보호법」 (Luật Bảo vệ Thông tin Cá nhân)). Tài liệu căn cứ: Google, công bố dữ liệu của Google Mobile Ads SDK (Legacy) (https://developers.google.com/admob/android/privacy/play-data-disclosure).",
+          "refuse": "Cách từ chối và hệ quả (Android): (1) Nếu bạn đặt lại hoặc xóa ID quảng cáo trong cài đặt thiết bị, quảng cáo cá nhân hóa sẽ bị hạn chế. Tuy nhiên, một số dữ liệu như địa chỉ IP và dữ liệu chẩn đoán vẫn tiếp tục được gửi khi yêu cầu quảng cáo; ứng dụng vẫn dùng được. (2) Nếu bạn gỡ cài đặt ứng dụng, mọi việc truyền dữ liệu đều dừng."
         }
       },
       "qnote": {
@@ -338,27 +347,44 @@
         "li2": "Vị trí lưu trữ: Được lưu trữ cục bộ trên thiết bị và không được truyền đến máy chủ Công ty.",
         "li3": "Sao lưu/Đồng bộ: Nếu người dùng chọn, được lưu vào đám mây cá nhân hoặc xuất dưới dạng tệp."
       },
-      "worldcanvas": {
-        "title": "WorldCanvas (Canvas Cộng Tác)",
-        "summary": "Dịch vụ canvas cộng tác dựa trên đăng nhập Google thu thập và lưu trữ thông tin tối thiểu để xác định tài khoản và đồng bộ hóa.",
-        "li1": "Đăng ký/Xác thực: Sử dụng đăng nhập Google OAuth. Mã định danh tài khoản Google (ID) và email được lưu trữ trong cơ sở dữ liệu để tạo tài khoản và xác định đăng nhập.",
-        "li2": "Dữ liệu dịch vụ: Canvas, bảng, bình luận và tệp đính kèm do người dùng tạo/tải lên được lưu trữ trên máy chủ Công ty (cơ sở dữ liệu) để đồng bộ hóa và khôi phục.",
-        "li3": "Xóa và lưu giữ: Thông tin tài khoản và dữ liệu dịch vụ được xóa ngay khi xóa tài khoản hoặc rút khỏi dịch vụ."
-      },
       "roboescape": {
         "title": "RoboEscape (trò chơi vượt ngục lén lút)",
-        "summary": "RoboEscape chỉ lưu tiến trình trò chơi và cài đặt ngôn ngữ trên thiết bị và không gửi chúng đến máy chủ của Purpleship. Quảng cáo có tặng thưởng tùy chọn sử dụng Google AdMob và Google User Messaging Platform (UMP); khi yêu cầu quảng cáo, địa chỉ IP (để ước tính vị trí gần đúng), tương tác với quảng cáo, thông tin chẩn đoán và mã nhận dạng thiết bị có thể được gửi đến Google. Việc xử lý dữ liệu của Google tuân theo Chính sách quyền riêng tư của Google (https://policies.google.com/privacy)."
+        "summary": "Trò chơi lén lút về một robot vượt ngục. Tiến trình chơi và thông tin xác nhận mua hàng chỉ được lưu trên thiết bị và không được gửi đến máy chủ của Purpleship. Ứng dụng có quảng cáo Google AdMob (xen kẽ và có thưởng) và thanh toán Google Play.",
+        "ads": "Quảng cáo: quảng cáo xen kẽ có thể xuất hiện khi bạn chuyển tiếp từ màn hình hoàn thành màn chơi, còn quảng cáo có thưởng chỉ phát khi bạn chọn xem. Mua “Xóa quảng cáo” hoặc Gói khởi đầu sẽ tắt quảng cáo xen kẽ. Dự kiến áp dụng mức phân loại nội dung quảng cáo tối đa G.",
+        "iap": "Mua trong ứng dụng: “Xóa quảng cáo” và Gói khởi đầu (Xóa quảng cáo + bảng màu riêng) được bán qua thanh toán Google Play (Play Billing). Google trực tiếp thu thập thông tin phương thức thanh toán; Công ty không nhận thông tin này. Để xác nhận mua hàng, ứng dụng chỉ lưu trên thiết bị mã sản phẩm, thời điểm cấp và giá trị băm (hash) của mã thông báo mua hàng.",
+        "transfer": "Chuyển dữ liệu ra nước ngoài (quảng cáo): bên nhận là Google LLC (Hoa Kỳ; liên hệ về quyền riêng tư: https://support.google.com/policies/contact/general_privacy_form). Dữ liệu được chuyển: mã nhận dạng thiết bị như ID quảng cáo và ID nhóm ứng dụng (app set ID), và thông tin thiết bị (bao gồm loại mạng di động và thông tin nhà mạng); địa chỉ IP (có thể dùng để ước tính vị trí gần đúng); thông tin tương tác với quảng cáo (mở ứng dụng, chạm, xem quảng cáo); dữ liệu chẩn đoán của ứng dụng và SDK quảng cáo. Mục đích: phân phối quảng cáo, phân tích (bao gồm đo lường quảng cáo) và ngăn chặn gian lận. Dữ liệu được gửi qua mạng (mã hóa TLS) trong khi sử dụng ứng dụng và được lưu giữ theo chính sách của Google (https://policies.google.com/technologies/retention). Công ty thực hiện việc chuyển này bằng cách công khai các nội dung trên trong chính sách này (Điều 28-8 khoản 1 điểm 3 của 「개인정보 보호법」 (Luật Bảo vệ Thông tin Cá nhân)).",
+        "refuse": "Cách từ chối và hệ quả: có hai cách. (1) Nếu bạn đặt lại hoặc xóa ID quảng cáo trong cài đặt thiết bị, quảng cáo cá nhân hóa sẽ bị hạn chế. Tuy nhiên, một số dữ liệu như địa chỉ IP, thông tin thiết bị và dữ liệu chẩn đoán vẫn tiếp tục được gửi khi yêu cầu quảng cáo. Sau khi xóa, ứng dụng nhận một chuỗi số 0 thay cho ID và trò chơi vẫn chơi được. (2) Nếu bạn gỡ cài đặt ứng dụng, mọi việc truyền dữ liệu đều dừng.",
+        "consent": "Quản lý sự đồng ý: ứng dụng dùng Google User Messaging Platform (UMP) để kiểm tra có cần sự đồng ý hay không và chỉ hiển thị biểu mẫu đồng ý ở nơi cần (ví dụ: Khu vực Kinh tế Châu Âu). Nếu bạn từ chối, ứng dụng không yêu cầu quảng cáo.",
+        "sources": "Tài liệu căn cứ: Google, công bố dữ liệu của GMA Next-Gen SDK (https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure); Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google (https://policies.google.com/technologies/partner-sites); Google Play, ID quảng cáo (https://support.google.com/googleplay/android-developer/answer/6048248). Google xử lý dữ liệu theo Chính sách quyền riêng tư của Google (https://policies.google.com/privacy).",
+        "age": "Đối tượng: ứng dụng dành cho người dùng từ 16 tuổi trở lên và không hướng đến trẻ em. Công ty không cố ý thu thập thông tin cá nhân của trẻ em dưới 14 tuổi. Nếu biết thông tin đó đã được xử lý, Công ty sẽ hủy ngay thông tin mình đang giữ (như email liên hệ) và hướng dẫn cách xóa dữ liệu còn lại trên thiết bị hoặc tại Google.",
+        "permissions": "Quyền và SDK: internet, trạng thái mạng, ID quảng cáo (AD_ID), trạng thái điện thoại cơ bản (READ_BASIC_PHONE_STATE), thanh toán Google Play (BILLING), giữ thiết bị hoạt động (WAKE_LOCK), dịch vụ nền trước và một quyền bảo vệ bộ nhận nội bộ của ứng dụng. READ_BASIC_PHONE_STATE là quyền thông thường (không nguy hiểm) do SDK quảng cáo của Google khai báo. SDK quảng cáo của Google có thể đọc loại mạng di động và thông tin nhà mạng để phân phối quảng cáo; cả ứng dụng và SDK đều không đọc số điện thoại hay nội dung, trạng thái cuộc gọi. Thông tin này thuộc ‘thông tin thiết bị’ trong mục chuyển dữ liệu ra nước ngoài ở trên. Không có quyền vị trí, danh bạ, máy ảnh hay micrô. SDK: Google Mobile Ads (GMA Next-Gen) 1.4.0, Google UMP 4.0.0 và Google Play Billing 9.1.0; không có SDK phân tích hay báo cáo sự cố.",
+        "retention": "Lưu giữ: tiến trình chơi, cài đặt và thông tin xác nhận mua hàng chỉ nằm trên thiết bị và bị xóa cùng ứng dụng (sao lưu tự động của Android đã tắt). Email liên hệ được lưu 3 năm như hồ sơ xử lý khiếu nại hoặc tranh chấp của người tiêu dùng rồi hủy (「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (Nghị định thi hành Luật Bảo vệ Người tiêu dùng trong Thương mại Điện tử) Điều 6 khoản 1 điểm 4). Hồ sơ thanh toán và đơn hàng do Google Play lưu giữ.",
+        "analytics": "Công cụ phân tích: phân tích trang web ở mục 2.1, như Google Analytics, áp dụng cho trang web, không áp dụng cho ứng dụng RoboEscape. Nhật ký chơi của ứng dụng chỉ nằm trên thiết bị và không được gửi đi.",
+        "inAppLink": "Thông báo trong ứng dụng: liên kết đến chính sách này sẽ được thêm vào màn hình cài đặt của ứng dụng."
       }
     },
     "section9": {
       "title": "9. Nhân Viên Bảo Mật",
-      "officer": "Nhân Viên Bảo Mật: Đội Vận Hành Purpleship",
+      "officer": "Nhân Viên Bảo Mật: 김현우 (Người đại diện)",
       "contact": "Liên hệ: captain@purpleship.io",
-      "report": "Báo cáo vi phạm bảo mật: Có thể thông qua Ủy ban Bảo vệ Thông tin Cá nhân (privacy.go.kr) và các cơ quan liên quan khác."
+      "report": "Nếu cần báo cáo hoặc tư vấn về vi phạm thông tin cá nhân, bạn có thể liên hệ các cơ quan sau:",
+      "agency1": "개인정보침해신고센터 (Trung tâm Báo cáo Vi phạm Thông tin Cá nhân, KISA): 118 (không cần mã vùng) / privacy.kisa.or.kr",
+      "agency2": "개인정보분쟁조정위원회 (Ủy ban Hòa giải Tranh chấp Thông tin Cá nhân): 1833-6972 (không cần mã vùng) / www.kopico.go.kr",
+      "agency3": "대검찰청 (Viện Kiểm sát Tối cao): 1301 (không cần mã vùng) / www.spo.go.kr",
+      "agency4": "경찰청 사이버범죄 신고시스템 (Hệ thống Báo cáo Tội phạm Mạng của Cơ quan Cảnh sát Quốc gia): 182 (không cần mã vùng) / ecrm.police.go.kr"
     },
     "section10": {
       "title": "10. Thay Đổi và Thông Báo Chính Sách Bảo Mật",
-      "p1": "Khi luật pháp, nội dung dịch vụ hoặc chính sách nội bộ thay đổi, chúng tôi sẽ thông báo cho bạn về các thay đổi 7 ngày trước khi thực hiện qua thông báo trên trang web hoặc thông báo trong dịch vụ."
+      "p1": "Khi luật pháp, nội dung dịch vụ hoặc chính sách nội bộ thay đổi, chúng tôi sẽ thông báo cho bạn về các thay đổi 7 ngày trước khi thực hiện qua thông báo trên trang web hoặc thông báo trong dịch vụ.",
+      "p2": "Sau khi chính sách này có hiệu lực, mọi thay đổi ảnh hưởng quan trọng đến quyền của người dùng (như thu thập thêm dữ liệu, thay đổi mục đích, hoặc thêm việc cung cấp cho bên thứ ba hay chuyển dữ liệu ra nước ngoài) sẽ được thông báo 30 ngày trước khi thay đổi đó có hiệu lực."
+    },
+    "history": {
+      "title": "11. Lịch Sử Sửa Đổi",
+      "li1": "Có hiệu lực từ ngày 7 tháng 2 năm 2025: chính sách bảo mật chung",
+      "li2": "Có hiệu lực từ ngày 14 tháng 10 năm 2026: sửa đổi Thông báo bổ sung cho Movit trên iOS (lịch sử vị trí, hiển thị bản đồ, quảng cáo và quản lý sự đồng ý)",
+      "li3": "Đăng ngày 15 tháng 10 năm 2026: thông báo bổ sung về thống kê sử dụng ứng dụng Movit (Android và iOS)",
+      "li4": "Đăng 2026-10-26 / 10-29: thêm mục RoboEscape",
+      "li5": "Có hiệu lực từ ngày 10 tháng 11 năm 2026: chính sách hiện hành"
     }
   },
   "termsPage": {

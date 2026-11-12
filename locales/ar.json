@@ -239,7 +239,7 @@
     "brand": "Purpleship",
     "title": "سياسة خصوصية Purpleship",
     "subtitle": "سياسة جمع واستخدام وإدارة المعلومات الشخصية لخدمات Purpleship.",
-    "effectiveDate": "تاريخ السريان: 7 فبراير 2025",
+    "effectiveDate": "تاريخ السريان: 10 نوفمبر 2026",
     "backToHome": "← العودة إلى الرئيسية",
     "section1": {
       "title": "1. النطاق والمبادئ الأساسية",
@@ -269,13 +269,16 @@
       "p1": "من حيث المبدأ، لا تقدم الشركة المعلومات الشخصية للمستخدمين لأطراف ثالثة. ومع ذلك، قد يتم تقديمها استثنائياً في الحالات التالية:",
       "li1": "عندما يعطي المستخدم موافقة صريحة مسبقة",
       "li2": "عندما يوجد أساس قانوني أو طلب قانوني من سلطات التحقيق",
-      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
+      "p3": "يرد وصف نقل البيانات إلى الخارج إلى Google LLC (الولايات المتحدة) عبر حزمة SDK الإعلانية في تطبيق RoboEscape في قسم ‘RoboEscape’ أدناه.",
+      "p4": "يرد وصف نقل البيانات إلى الخارج إلى Google LLC (الولايات المتحدة) عبر حزمة SDK الإعلانية في تطبيق Movit (iOS وAndroid) في قسم ‘Movit’ أدناه."
     },
     "section5": {
       "title": "5. الاستعانة بمصادر خارجية لمعالجة المعلومات الشخصية",
       "p1": "قد نستعين بمصادر خارجية للحفاظ على جودة الخدمة، ونفرض التزامات الأمان وقيود إعادة الاستعانة بمصادر خارجية والإدارة/الإشراف على المقاولين.",
       "li1": "تحليل استخدام الخدمة: Google LLC (Google Analytics)",
-      "li2": "النسخ الاحتياطي/المزامنة التي يختارها المستخدم: Apple iCloud Drive وGoogle Drive وما إلى ذلك"
+      "li2": "النسخ الاحتياطي/المزامنة التي يختارها المستخدم: Apple iCloud Drive وGoogle Drive وما إلى ذلك",
+      "li3": "عرض الإعلانات وقياس أدائها ومنع الاحتيال (RoboEscape وMovit): Google LLC (Google AdMob)"
     },
     "section6": {
       "title": "6. حقوق المستخدم وكيفية ممارستها",
@@ -314,21 +317,27 @@
         "li5": "عند استخدام حِزم SDK للخرائط أو الموقع من جهات خارجية لأغراض الخرائط أو التنقل، تنطبق أيضاً سياسة الخصوصية لمزود الخدمة.",
         "ios": {
           "title": "Additional notice for Movit on iOS",
-          "dates": "Amendment announced: October 14, 2026 · Effective: October 14, 2026",
           "locationTitle": "Location records and optional backup",
           "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
           "mapTitle": "Map display — MapTiler",
           "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
           "adsTitle": "Advertising and consent management — Google",
           "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
-          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy).",
+          "transferTitle": "النقل إلى الخارج — Google (iOS)",
+          "transfer": "الجهة المتلقية هي Google LLC (الولايات المتحدة؛ استفسارات الخصوصية: https://support.google.com/policies/contact/general_privacy_form). البيانات المنقولة هي بيانات حزمة SDK الإعلانية المذكورة أعلاه (عنوان IP والموقع التقريبي المستنتج منه، ومعرّفات الجهاز على مستوى التطبيق أو المطوّر، ومرات ظهور الإعلانات ومشاهدات الفيديو والتفاعلات، وبيانات الأخطاء والأداء)، إضافة إلى معرّف الإعلانات (IDFA) إذا سمحت بالتتبع. الأغراض: عرض الإعلانات وقياسها وتحليلها، وتشخيص حزمة SDK الإعلانية وتحسينها. تُرسل البيانات عبر الشبكة عند طلب الإعلانات أثناء استخدام التطبيق وتُحفظ وفق سياسات Google (https://policies.google.com/technologies/retention). تجري الشركة هذا النقل بالإفصاح عن هذه المعلومات في هذه السياسة (البند 3 من الفقرة 1 من المادة 28-8 من 「개인정보 보호법」 (قانون حماية المعلومات الشخصية)).",
+          "refuse": "طريقة الرفض وأثره: (1) اختر «طلب عدم التتبع من التطبيق» عندما يسأل التطبيق أول مرة، أو أوقف السماح بالتتبع لـ Movit من إعدادات iOS > الخصوصية والأمن > التتبع. عندها لا يُشارك معرّف الإعلانات (IDFA) وتُقيَّد الإعلانات المخصّصة. ومع ذلك يستمر إرسال بعض البيانات، مثل عنوان IP وبيانات التشخيص، عند طلب الإعلانات، ويبقى التطبيق قابلًا للاستخدام. (2) إذا ألغيت تثبيت التطبيق، يتوقف كل إرسال."
         },
         "stats": {
           "title": "Movit app usage statistics (Android and iOS)",
-          "dates": "Posted: October 15, 2026 · Supplement to the amendment effective October 14, 2026",
           "p1": "To understand how each version is used, Movit sends once per day on days the app is opened: a random install identifier created on first launch (not generated from device or account information), the app version, the operating system and platform (Android/iOS), and a data-format version, to Purpleship's statistics server. Movement records, GPS location coordinates, advertising identifiers and account information are not sent.",
           "p2": "The statistics server does not store the IP address. Together with the daily record for each install identifier, it stores the country code determined from the connecting IP address and a device type derived from the app's fixed identification string. The statistics server runs on Cloudflare infrastructure.",
           "p3": "The install identifier is removed from the device when the app is deleted or its data is cleared. Daily records on the server are kept while the statistics purpose continues and are deleted without delay once the purpose is achieved, such as when the service ends."
+        },
+        "android": {
+          "ads": "الإعلانات (Android): يتضمن تطبيق Android حزمة Google Mobile Ads SDK (AdMob) وGoogle User Messaging Platform (UMP) ويعرض إعلانات.",
+          "transfer": "النقل إلى الخارج (الإعلانات، Android): الجهة المتلقية هي Google LLC (الولايات المتحدة؛ استفسارات الخصوصية: https://support.google.com/policies/contact/general_privacy_form). البيانات المنقولة: معرّفات الجهاز مثل معرّف الإعلانات وapp set ID؛ وعنوان IP (قد يُستخدم لتقدير الموقع التقريبي)؛ ومعلومات التفاعل مع الإعلانات؛ وبيانات التشخيص للتطبيق وحزمة SDK الإعلانية. الأغراض: عرض الإعلانات، والتحليلات (بما فيها قياس أداء الإعلانات)، ومنع الاحتيال. تُرسل البيانات عبر الشبكة عند طلب الإعلانات أثناء استخدام التطبيق وتُحفظ وفق سياسات Google (https://policies.google.com/technologies/retention). تجري الشركة هذا النقل بالإفصاح عن هذه المعلومات في هذه السياسة (البند 3 من الفقرة 1 من المادة 28-8 من 「개인정보 보호법」 (قانون حماية المعلومات الشخصية)). المصدر: Google، الإفصاح عن بيانات Google Mobile Ads SDK (Legacy) (https://developers.google.com/admob/android/privacy/play-data-disclosure).",
+          "refuse": "طريقة الرفض وأثره (Android): (1) إذا أعدت ضبط معرّف الإعلانات أو حذفته من إعدادات الجهاز، تُقيَّد الإعلانات المخصّصة. ومع ذلك يستمر إرسال بعض البيانات، مثل عنوان IP وبيانات التشخيص، عند طلب الإعلانات، ويبقى التطبيق قابلًا للاستخدام. (2) إذا ألغيت تثبيت التطبيق، يتوقف كل إرسال."
         }
       },
       "qnote": {
@@ -338,27 +347,44 @@
         "li2": "موقع التخزين: مخزنة محلياً على الجهاز ولا يتم نقلها إلى خوادم الشركة.",
         "li3": "النسخ الاحتياطي/المزامنة: إذا اختار المستخدم، يتم الحفظ في السحابة الشخصية أو التصدير كملفات."
       },
-      "worldcanvas": {
-        "title": "WorldCanvas (لوحة تعاونية)",
-        "summary": "خدمة لوحة تعاونية تعتمد على تسجيل الدخول بـGoogle تجمع وتخزن الحد الأدنى من المعلومات لتحديد الحساب والمزامنة.",
-        "li1": "التسجيل/المصادقة: يستخدم تسجيل الدخول بـGoogle OAuth. يتم تخزين معرف حساب Google (ID) والبريد الإلكتروني في قاعدة البيانات لإنشاء الحساب وتحديد هوية تسجيل الدخول.",
-        "li2": "بيانات الخدمة: يتم تخزين اللوحات والمجالس والتعليقات والمرفقات التي أنشأها/حملها المستخدمون على خوادم الشركة (قاعدة البيانات) للمزامنة والاسترداد.",
-        "li3": "الحذف والاحتفاظ: يتم حذف معلومات الحساب وبيانات الخدمة فوراً عند حذف الحساب أو الانسحاب من الخدمة."
-      },
       "roboescape": {
         "title": "RoboEscape (لعبة هروب تسلل)",
-        "summary": "يُخزن RoboEscape تقدم اللعبة وإعداد اللغة على الجهاز فقط ولا ينقلهما إلى خوادم Purpleship. تستخدم الإعلانات المكافِئة الاختيارية Google AdMob وGoogle User Messaging Platform (UMP)؛ وعند طلب إعلان، قد تُرسل إلى Google بيانات مثل عنوان IP (لتقدير الموقع التقريبي) والتفاعلات مع الإعلانات ومعلومات التشخيص ومعرّفات الجهاز. تخضع معالجة Google للبيانات لسياسة خصوصية Google (https://policies.google.com/privacy)."
+        "summary": "لعبة تسلل عن روبوت يهرب من السجن. يُحفظ تقدم اللعب وبيانات تأكيد الشراء على الجهاز فقط ولا تُرسل إلى خوادم Purpleship. يتضمن التطبيق إعلانات Google AdMob (بينية ومكافآت) والدفع عبر Google Play.",
+        "ads": "الإعلانات: قد يظهر إعلان بيني عند الانتقال من شاشة إكمال المرحلة، ولا تُعرض إعلانات المكافآت إلا عندما تختار مشاهدتها. عند شراء «إزالة الإعلانات» أو حزمة البداية لا تظهر الإعلانات البينية. من المقرر تطبيق أعلى تصنيف لمحتوى الإعلانات G.",
+        "iap": "عمليات الشراء داخل التطبيق: تُباع «إزالة الإعلانات» وحزمة البداية («إزالة الإعلانات» + لوحة ألوان حصرية) عبر نظام الدفع في Google Play (Play Billing). تجمع Google معلومات وسيلة الدفع مباشرة ولا تتلقاها الشركة. لتأكيد الشراء، يحفظ التطبيق على الجهاز معرّف المنتج ووقت المنح وقيمة التجزئة (hash) لرمز الشراء فقط.",
+        "transfer": "النقل إلى الخارج (الإعلانات): الجهة المتلقية هي Google LLC (الولايات المتحدة؛ استفسارات الخصوصية: https://support.google.com/policies/contact/general_privacy_form). البيانات المنقولة: معرّفات الجهاز مثل معرّف الإعلانات ومعرّف مجموعة التطبيقات (app set ID)، ومعلومات الجهاز (بما فيها نوع شبكة الهاتف المحمول ومعلومات مشغّل الاتصالات)؛ وعنوان IP (قد يُستخدم لتقدير الموقع التقريبي)؛ ومعلومات التفاعل مع الإعلانات (تشغيل التطبيق، والنقرات، ومشاهدة الإعلانات)؛ وبيانات التشخيص للتطبيق وحزمة SDK الإعلانية. الأغراض: عرض الإعلانات، والتحليلات (بما فيها قياس أداء الإعلانات)، ومنع الاحتيال. تُرسل البيانات عبر الشبكة (بتشفير TLS) أثناء استخدام التطبيق وتُحفظ وفق سياسات Google (https://policies.google.com/technologies/retention). تجري الشركة هذا النقل بالإفصاح عن هذه المعلومات في هذه السياسة (البند 3 من الفقرة 1 من المادة 28-8 من 「개인정보 보호법」 (قانون حماية المعلومات الشخصية)).",
+        "refuse": "طريقة الرفض وأثره: هناك طريقتان. (1) إذا أعدت ضبط معرّف الإعلانات أو حذفته من إعدادات الجهاز، تُقيَّد الإعلانات المخصّصة. ومع ذلك يستمر إرسال بعض البيانات، مثل عنوان IP ومعلومات الجهاز وبيانات التشخيص، عند طلب الإعلانات. بعد الحذف يتلقى التطبيق سلسلة من الأصفار بدلًا من المعرّف، وتبقى اللعبة متاحة. (2) إذا ألغيت تثبيت التطبيق، يتوقف كل إرسال.",
+        "consent": "إدارة الموافقة: يستخدم التطبيق Google User Messaging Platform (UMP) للتحقق مما إذا كانت الموافقة مطلوبة، ولا يعرض نموذج الموافقة إلا حيث تكون مطلوبة (مثل المنطقة الاقتصادية الأوروبية). إذا رفضت، لا يطلب التطبيق إعلانات.",
+        "sources": "المصادر: Google، الإفصاح عن بيانات GMA Next-Gen SDK (https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure)؛ كيف تستخدم Google المعلومات من المواقع أو التطبيقات التي تستخدم خدماتها (https://policies.google.com/technologies/partner-sites)؛ Google Play، معرّف الإعلانات (https://support.google.com/googleplay/android-developer/answer/6048248). تعالج Google البيانات وفق سياسة الخصوصية لدى Google (https://policies.google.com/privacy).",
+        "age": "الفئة المستهدفة: التطبيق موجّه للمستخدمين بعمر 16 عامًا فأكثر وليس موجّهًا للأطفال. لا تجمع الشركة عن علم معلومات شخصية لأطفال دون 14 عامًا. وإذا علمت بمعالجة مثل هذه المعلومات، تُتلف فورًا ما لديها منها (مثل رسائل الاستفسار) وتشرح كيفية حذف البيانات المتبقية على الجهاز أو لدى Google.",
+        "permissions": "الأذونات وحزم SDK: الإنترنت، وحالة الشبكة، ومعرّف الإعلانات (AD_ID)، وحالة الهاتف الأساسية (READ_BASIC_PHONE_STATE)، والدفع عبر Google Play (BILLING)، ومنع السكون (WAKE_LOCK)، والخدمة في المقدمة، وإذن داخلي لحماية المستقبِلات. READ_BASIC_PHONE_STATE إذن عادي (غير خطير) تعلنه حزمة SDK الإعلانية من Google. قد تقرأ حزمة SDK الإعلانية من Google نوع شبكة الهاتف المحمول ومعلومات مشغّل الاتصالات لعرض الإعلانات، ولا يقرأ التطبيق ولا حزمة SDK أرقام الهواتف أو محتوى المكالمات أو حالتها. تندرج هذه المعلومات ضمن ‘معلومات الجهاز’ في النقل إلى الخارج المذكور أعلاه. لا توجد أذونات للموقع أو جهات الاتصال أو الكاميرا أو الميكروفون. حزم SDK: Google Mobile Ads (GMA Next-Gen) 1.4.0 وGoogle UMP 4.0.0 وGoogle Play Billing 9.1.0؛ ولا توجد حزم SDK للتحليلات أو تقارير الأعطال.",
+        "retention": "الاحتفاظ: يبقى تقدم اللعب والإعدادات وبيانات تأكيد الشراء على الجهاز فقط وتُحذف مع التطبيق (النسخ الاحتياطي التلقائي في Android معطّل). تُحفظ رسائل الاستفسار 3 سنوات بوصفها سجلات لشكاوى المستهلكين أو تسوية النزاعات ثم تُتلف (البند 4 من الفقرة 1 من المادة 6 من 「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (المرسوم التنفيذي لقانون حماية المستهلك في التجارة الإلكترونية)). تحتفظ Google Play بسجلات الدفع والطلبات.",
+        "analytics": "أدوات التحليل: تحليلات الموقع الواردة في 2.1، مثل Google Analytics، تخص الموقع الإلكتروني ولا تنطبق على تطبيق RoboEscape. يبقى سجل اللعب في التطبيق على الجهاز ولا يُرسل.",
+        "inAppLink": "إشعار داخل التطبيق: سيُضاف رابط لهذه السياسة إلى شاشة إعدادات التطبيق."
       }
     },
     "section9": {
       "title": "9. مسؤول الخصوصية",
-      "officer": "مسؤول الخصوصية: فريق عمليات Purpleship",
+      "officer": "مسؤول الخصوصية: 김현우 (الممثل)",
       "contact": "الاتصال: captain@purpleship.io",
-      "report": "تقارير انتهاك الخصوصية: متاحة عبر لجنة حماية المعلومات الشخصية (privacy.go.kr) والوكالات ذات الصلة الأخرى."
+      "report": "للإبلاغ عن انتهاك المعلومات الشخصية أو طلب الاستشارة، يمكنك التواصل مع الجهات التالية:",
+      "agency1": "개인정보침해신고센터 (مركز الإبلاغ عن انتهاكات المعلومات الشخصية، KISA): 118 (بدون رمز منطقة) / privacy.kisa.or.kr",
+      "agency2": "개인정보분쟁조정위원회 (لجنة الوساطة في نزاعات المعلومات الشخصية): 1833-6972 (بدون رمز منطقة) / www.kopico.go.kr",
+      "agency3": "대검찰청 (النيابة العامة العليا): 1301 (بدون رمز منطقة) / www.spo.go.kr",
+      "agency4": "경찰청 사이버범죄 신고시스템 (نظام الإبلاغ عن الجرائم الإلكترونية التابع لوكالة الشرطة الوطنية): 182 (بدون رمز منطقة) / ecrm.police.go.kr"
     },
     "section10": {
       "title": "10. تغييرات وإشعارات سياسة الخصوصية",
-      "p1": "عندما تتغير القوانين أو محتوى الخدمة أو السياسات الداخلية، سنخطرك بالتغييرات قبل 7 أيام من التنفيذ عبر إعلان الموقع أو إشعار الخدمة."
+      "p1": "عندما تتغير القوانين أو محتوى الخدمة أو السياسات الداخلية، سنخطرك بالتغييرات قبل 7 أيام من التنفيذ عبر إعلان الموقع أو إشعار الخدمة.",
+      "p2": "بعد سريان هذه السياسة، سنعلن عن أي تغيير يؤثر بشكل مهم في حقوق المستخدمين (مثل جمع بيانات جديدة أو تغيير الغرض أو إضافة تقديم البيانات لطرف ثالث أو نقلها إلى الخارج) قبل 30 يومًا من سريان ذلك التغيير."
+    },
+    "history": {
+      "title": "11. سجل المراجعات",
+      "li1": "سارية منذ 7 فبراير 2025: سياسة الخصوصية العامة",
+      "li2": "سارية منذ 14 أكتوبر 2026: مراجعة الإشعار الإضافي لتطبيق Movit على iOS (سجل المواقع، وعرض الخرائط، والإعلانات وإدارة الموافقة)",
+      "li3": "نُشر في 15 أكتوبر 2026: إشعار إضافي بشأن إحصاءات استخدام تطبيق Movit (Android وiOS)",
+      "li4": "نُشر 2026-10-26 / 10-29: إضافة قسم RoboEscape",
+      "li5": "سارية منذ 10 نوفمبر 2026: السياسة الحالية"
     }
   },
   "termsPage": {

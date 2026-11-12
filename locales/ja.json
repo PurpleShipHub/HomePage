@@ -239,7 +239,7 @@
     "brand": "Purpleship",
     "title": "Purpleship プライバシーポリシー",
     "subtitle": "Purpleshipサービスの個人情報の収集、利用、管理に関するポリシーです。",
-    "effectiveDate": "施行日：2025年2月7日",
+    "effectiveDate": "施行日：2026年11月10日",
     "backToHome": "← ホームに戻る",
     "section1": {
       "title": "1. 適用範囲と基本原則",
@@ -269,13 +269,16 @@
       "p1": "原則として、会社はユーザーの個人情報を第三者に提供しません。ただし、以下の場合は例外的に提供される場合があります：",
       "li1": "ユーザーが事前に明示的に同意した場合",
       "li2": "法令に基づく場合、または捜査機関からの適法な要請がある場合",
-      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
+      "p3": "RoboEscapeアプリの広告SDKを通じたGoogle LLC（米国）への国外移転については、下記の「RoboEscape」欄で説明します。",
+      "p4": "Movitアプリ（iOS・Android）の広告SDKを通じたGoogle LLC（米国）への国外移転については、下記の「Movit」欄で説明します。"
     },
     "section5": {
       "title": "5. 個人情報処理の委託",
       "p1": "サービス品質維持のため業務を外部に委託する場合があり、受託者にセキュリティ、再委託制限、管理・監督義務を課します。",
       "li1": "サービス利用分析：Google LLC（Google Analytics）",
-      "li2": "ユーザー選択のバックアップ/同期：Apple iCloud Drive、Google Driveなど"
+      "li2": "ユーザー選択のバックアップ/同期：Apple iCloud Drive、Google Driveなど",
+      "li3": "広告配信・効果測定・不正利用防止（RoboEscape、Movit）：Google LLC（Google AdMob）"
     },
     "section6": {
       "title": "6. ユーザーの権利と行使方法",
@@ -314,21 +317,27 @@
         "li5": "地図・経路案内の提供に第三者の地図・位置情報 SDK を使用する場合、その提供者のプライバシーポリシーも適用されます。",
         "ios": {
           "title": "Additional notice for Movit on iOS",
-          "dates": "Amendment announced: October 14, 2026 · Effective: October 14, 2026",
           "locationTitle": "Location records and optional backup",
           "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
           "mapTitle": "Map display — MapTiler",
           "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
           "adsTitle": "Advertising and consent management — Google",
           "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
-          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy).",
+          "transferTitle": "国外移転 — Google（iOS）",
+          "transfer": "移転先はGoogle LLC（米国、プライバシーに関するお問い合わせ：https://support.google.com/policies/contact/general_privacy_form）です。移転項目は上記の広告SDKの処理項目（IPアドレスおよびそれを用いたおおよその位置、アプリまたは開発者単位の端末識別子、広告表示・動画視聴・操作情報、エラーおよびパフォーマンス情報）で、利用者が「トラッキングを許可」した場合は広告識別子（IDFA）が加わります。目的は広告の配信・測定・分析と広告SDKの診断・改善です。アプリの利用中に広告をリクエストする際にネットワーク経由で送信されます。保有期間はGoogleのポリシーに従います（https://policies.google.com/technologies/retention）。会社はこれらの事項を本ポリシーで公開する方法で移転します（「개인정보 보호법」（個人情報保護法）第28条の8第1項第3号）。",
+          "refuse": "拒否の方法と効果：①アプリが最初に尋ねたときに「Appにトラッキングしないように要求」を選ぶか、iOSの設定＞プライバシーとセキュリティ＞トラッキングでMovitのトラッキング許可をオフにすると、広告識別子（IDFA）は提供されず、パーソナライズ広告が制限されます。ただし、IPアドレス、診断情報など一部の情報は広告リクエスト時に引き続き送信され、アプリはそのまま利用できます。②アプリを削除すると、すべての送信が停止します。"
         },
         "stats": {
           "title": "Movit app usage statistics (Android and iOS)",
-          "dates": "Posted: October 15, 2026 · Supplement to the amendment effective October 14, 2026",
           "p1": "To understand how each version is used, Movit sends once per day on days the app is opened: a random install identifier created on first launch (not generated from device or account information), the app version, the operating system and platform (Android/iOS), and a data-format version, to Purpleship's statistics server. Movement records, GPS location coordinates, advertising identifiers and account information are not sent.",
           "p2": "The statistics server does not store the IP address. Together with the daily record for each install identifier, it stores the country code determined from the connecting IP address and a device type derived from the app's fixed identification string. The statistics server runs on Cloudflare infrastructure.",
           "p3": "The install identifier is removed from the device when the app is deleted or its data is cleared. Daily records on the server are kept while the statistics purpose continues and are deleted without delay once the purpose is achieved, such as when the service ends."
+        },
+        "android": {
+          "ads": "広告（Android）：AndroidアプリにはGoogle Mobile Ads SDK（AdMob）とGoogle User Messaging Platform（UMP）が含まれており、広告を表示します。",
+          "transfer": "国外移転（広告、Android）：移転先はGoogle LLC（米国、プライバシーに関するお問い合わせ：https://support.google.com/policies/contact/general_privacy_form）です。移転項目は、広告ID・アプリセットIDなどの端末識別子、IPアドレス（おおよその位置の推定に使われる場合があります）、広告への操作情報、アプリ・広告SDKの診断情報です。目的は広告配信、分析（広告効果測定を含む）、不正利用防止で、アプリの利用中に広告をリクエストする際にネットワーク経由で送信されます。保有期間はGoogleのポリシーに従います（https://policies.google.com/technologies/retention）。会社はこれらの事項を本ポリシーで公開する方法で移転します（「개인정보 보호법」（個人情報保護法）第28条の8第1項第3号）。根拠資料：Google Mobile Ads SDK（Legacy）のデータ開示（https://developers.google.com/admob/android/privacy/play-data-disclosure）。",
+          "refuse": "拒否の方法と効果（Android）：①端末の設定で広告IDをリセットまたは削除すると、パーソナライズ広告が制限されます。ただし、IPアドレス、診断情報など一部の情報は広告リクエスト時に引き続き送信され、アプリはそのまま利用できます。②アプリを削除すると、すべての送信が停止します。"
         }
       },
       "qnote": {
@@ -338,27 +347,44 @@
         "li2": "保存場所：デバイスにローカル保存され、会社サーバーには送信されません。",
         "li3": "バックアップ/同期：ユーザーが選択した場合、個人のクラウドに保存またはファイルとしてエクスポートされます。"
       },
-      "worldcanvas": {
-        "title": "WorldCanvas（コラボレーションキャンバス）",
-        "summary": "Googleログインベースのコラボレーションキャンバスサービスで、アカウント識別と同期のために最小限の情報を収集・保存します。",
-        "li1": "登録/認証：Google OAuthログインを使用。Googleアカウント識別子(ID)とメールアドレスがアカウント作成とログイン識別のためにデータベースに保存されます。",
-        "li2": "サービスデータ：ユーザーが作成/アップロードしたキャンバス、ボード、コメント、添付ファイルは同期と復旧のため会社サーバー（データベース）に保存されます。",
-        "li3": "削除と保管：アカウント削除またはサービス退会時、アカウント情報とサービスデータは遅滞なく削除されます。"
-      },
       "roboescape": {
         "title": "RoboEscape（ステルス脱出ゲーム）",
-        "summary": "RoboEscapeのゲーム進行状況と言語設定は端末内にのみ保存され、Purpleshipのサーバーには送信されません。任意のリワード広告にはGoogle AdMobとGoogle User Messaging Platform（UMP）を使用しており、広告リクエスト時にIPアドレス（おおよその位置の推定に使用）、広告への操作、診断情報、端末識別子などがGoogleに送信される場合があります。Googleのデータ処理はGoogleプライバシーポリシー（https://policies.google.com/privacy）に従います。"
+        "summary": "ロボットの脱獄ステルスゲームです。ゲームの進行状況と購入確認情報は端末内にのみ保存され、Purpleshipのサーバーには送信されません。アプリにはGoogle AdMob広告（インタースティシャル・リワード）とGoogle Play決済が含まれます。",
+        "ads": "広告：ステージクリア画面から次へ進むときにインタースティシャル広告が表示されることがあり、リワード広告は利用者が希望したときのみ再生されます。「広告削除」またはスターターパックを購入すると、インタースティシャル広告は表示されません。広告コンテンツの最大レーティングはGを適用する予定です。",
+        "iap": "アプリ内購入：「広告削除」とスターターパック（広告削除＋専用カラー）をGoogle Play決済（Play Billing）で販売します。支払い方法の情報はGoogleが直接収集し、会社は受け取りません。購入確認のため、アプリは商品ID、付与時刻、購入トークンのハッシュ値のみを端末に保存します。",
+        "transfer": "国外移転（広告）：移転先はGoogle LLC（米国、プライバシーに関するお問い合わせ：https://support.google.com/policies/contact/general_privacy_form）です。移転項目は、広告ID・アプリセットIDなどの端末識別子と端末情報（モバイルネットワークの種類・通信事業者情報を含む）、IPアドレス（おおよその位置の推定に使われる場合があります）、広告への操作情報（アプリ起動、タップ、広告視聴）、アプリ・広告SDKの診断情報です。目的は広告配信、分析（広告効果測定を含む）、不正利用防止で、アプリの利用中にネットワーク経由で送信されます（TLS暗号化）。保有期間はGoogleのポリシーに従います（https://policies.google.com/technologies/retention）。会社はこれらの事項を本ポリシーで公開する方法で移転します（「개인정보 보호법」（個人情報保護法）第28条の8第1項第3号）。",
+        "refuse": "拒否の方法と効果：方法は2つあります。①端末の設定で広告IDをリセットまたは削除すると、パーソナライズ広告が制限されます。ただし、IPアドレス、端末情報、診断情報など一部の情報は広告リクエスト時に引き続き送信されます。広告IDを削除すると、アプリは広告IDの代わりに0の値を受け取り、ゲームはそのまま利用できます。②アプリを削除すると、すべての送信が停止します。",
+        "consent": "同意管理：アプリはGoogle User Messaging Platform（UMP）で同意の要否を確認し、同意が必要な地域（例：欧州経済領域）でのみ同意画面を表示します。同意しない場合、広告をリクエストしません。",
+        "sources": "根拠資料：Google GMA Next-Gen SDKのデータ開示（https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure）、Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用（https://policies.google.com/technologies/partner-sites）、Google Play 広告IDの案内（https://support.google.com/googleplay/android-developer/answer/6048248）。Googleによるデータ処理はGoogleプライバシーポリシー（https://policies.google.com/privacy）に従います。",
+        "age": "対象：16歳以上を対象としており、子どもを対象としていません。14歳未満の子どもの個人情報を故意に収集することはなく、処理された事実を知った場合は、会社が保有する情報（お問い合わせメールなど）を遅滞なく破棄し、端末とGoogleに残る情報の削除方法をご案内します。",
+        "permissions": "権限とSDK：インターネット、ネットワーク状態、広告ID（AD_ID）、基本的な電話の状態（READ_BASIC_PHONE_STATE）、Google Play決済（BILLING）、スリープ防止（WAKE_LOCK）、フォアグラウンドサービス、アプリ内部用のレシーバー保護権限を使用します。READ_BASIC_PHONE_STATEはGoogleの広告SDKが宣言する通常（危険でない）権限です。Googleの広告SDKは広告配信のためにモバイルネットワークの種類と通信事業者情報を読み取ることがありますが、アプリとSDKは電話番号や通話の内容・状態を読み取りません。この情報は上記の国外移転項目の「端末情報」に含まれます。位置情報・連絡先・カメラ・マイクの権限はありません。SDKはGoogle Mobile Ads（GMA Next-Gen）1.4.0、Google UMP 4.0.0、Google Play Billing 9.1.0で、分析・クラッシュSDKはありません。",
+        "retention": "保管：ゲームの進行状況・設定・購入確認情報は端末内にのみ保存され、アプリを削除すると一緒に消去されます（Androidの自動バックアップはオフ）。お問い合わせメールは消費者の苦情・紛争処理の記録として3年間保管した後に破棄します（「전자상거래 등에서의 소비자보호에 관한 법률 시행령」（電子商取引等における消費者保護に関する法律施行令）第6条第1項第4号）。決済・注文の記録はGoogle Playが保管します。",
+        "analytics": "分析ツール：2.1のGoogle Analyticsなどのサイト分析はウェブサイトに適用され、RoboEscapeアプリには適用されません。アプリのプレイ記録は端末内にのみ残り、送信されません。",
+        "inAppLink": "アプリ内の案内：アプリの設定画面に本ポリシーへのリンクを追加する予定です。"
       }
     },
     "section9": {
       "title": "9. 個人情報保護責任者",
-      "officer": "個人情報保護責任者：Purpleship運営チーム",
+      "officer": "個人情報保護責任者：김현우（代表）",
       "contact": "連絡先：captain@purpleship.io",
-      "report": "個人情報侵害の報告：個人情報保護委員会（privacy.go.kr）などの関係機関を通じて可能です。"
+      "report": "個人情報の侵害に関する申告や相談が必要な場合は、以下の機関にお問い合わせいただけます。",
+      "agency1": "개인정보침해신고센터（個人情報侵害申告センター、韓国インターネット振興院）：（局番なし）118 / privacy.kisa.or.kr",
+      "agency2": "개인정보분쟁조정위원회（個人情報紛争調停委員会）：（局番なし）1833-6972 / www.kopico.go.kr",
+      "agency3": "대검찰청（大検察庁）：（局番なし）1301 / www.spo.go.kr",
+      "agency4": "경찰청 사이버범죄 신고시스템（警察庁サイバー犯罪申告システム）：（局番なし）182 / ecrm.police.go.kr"
     },
     "section10": {
       "title": "10. プライバシーポリシーの変更と通知",
-      "p1": "法令、サービス内容、内部方針に変更がある場合、施行7日前にウェブサイト告知またはサービス内通知で変更内容をお知らせします。"
+      "p1": "法令、サービス内容、内部方針に変更がある場合、施行7日前にウェブサイト告知またはサービス内通知で変更内容をお知らせします。",
+      "p2": "本ポリシーの施行後、利用者の権利に重要な変更（収集項目の追加、利用目的の変更、第三者提供・国外移転の追加など）を行う場合は、その変更の施行30日前にお知らせします。"
+    },
+    "history": {
+      "title": "11. 改定履歴",
+      "li1": "2025年2月7日施行：共通プライバシーポリシー",
+      "li2": "2026年10月14日施行：Movit iOS追加告知（位置記録、地図表示、広告および同意管理）の改定",
+      "li3": "2026年10月15日掲載：Movitアプリ利用統計（Android・iOS）の追加告知",
+      "li4": "2026-10-26 / 10-29 掲載：RoboEscape欄を追加",
+      "li5": "2026年11月10日施行：現行ポリシー"
     }
   },
   "termsPage": {

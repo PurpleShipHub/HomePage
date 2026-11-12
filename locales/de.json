@@ -239,7 +239,7 @@
     "brand": "Purpleship",
     "title": "Purpleship Datenschutzrichtlinie",
     "subtitle": "Richtlinie zur Erhebung, Verwendung und Verwaltung personenbezogener Daten für Purpleship-Dienste.",
-    "effectiveDate": "Gültig ab: 7. Februar 2025",
+    "effectiveDate": "Gültig ab: 10. November 2026",
     "backToHome": "← Zurück zur Startseite",
     "section1": {
       "title": "1. Geltungsbereich und Grundprinzipien",
@@ -269,13 +269,16 @@
       "p1": "Grundsätzlich gibt das Unternehmen personenbezogene Daten der Nutzer nicht an Dritte weiter. In folgenden Fällen kann jedoch eine Weitergabe ausnahmsweise erfolgen:",
       "li1": "Wenn der Nutzer vorher ausdrücklich zugestimmt hat",
       "li2": "Wenn eine gesetzliche Grundlage oder eine rechtmäßige Anfrage von Ermittlungsbehörden vorliegt",
-      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below."
+      "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
+      "p3": "Übermittlungen ins Ausland an Google LLC (USA) über das Werbe-SDK der App RoboEscape werden unten im Abschnitt ‘RoboEscape’ beschrieben.",
+      "p4": "Übermittlungen ins Ausland an Google LLC (USA) über das Werbe-SDK der App Movit (iOS und Android) werden unten im Abschnitt ‘Movit’ beschrieben."
     },
     "section5": {
       "title": "5. Auslagerung der Verarbeitung personenbezogener Daten",
       "p1": "Wir können Arbeiten an externe Parteien auslagern, um die Dienstqualität aufrechtzuerhalten, und auferlegen den Auftragnehmern Sicherheitspflichten, Beschränkungen der Weitervergabe und Verwaltungs-/Überwachungspflichten.",
       "li1": "Dienstnutzungsanalyse: Google LLC (Google Analytics)",
-      "li2": "Vom Nutzer gewählte Sicherung/Synchronisierung: Apple iCloud Drive, Google Drive usw."
+      "li2": "Vom Nutzer gewählte Sicherung/Synchronisierung: Apple iCloud Drive, Google Drive usw.",
+      "li3": "Anzeigenauslieferung, Werbemessung und Betrugsprävention (RoboEscape, Movit): Google LLC (Google AdMob)"
     },
     "section6": {
       "title": "6. Nutzerrechte und deren Ausübung",
@@ -314,21 +317,27 @@
         "li5": "Bei Verwendung von Karten-/Standort-SDKs Dritter für Karten oder Navigation gilt zusätzlich die Datenschutzrichtlinie des jeweiligen Anbieters.",
         "ios": {
           "title": "Additional notice for Movit on iOS",
-          "dates": "Amendment announced: October 14, 2026 · Effective: October 14, 2026",
           "locationTitle": "Location records and optional backup",
           "locationP1": "When you allow location access, Movit stores your movement records on your device. On iOS the app requests “While Using the App” location permission; while recording, it uses background location updates and the system location indicator. You can stop recording from the app menu or withdraw location permission in iOS Settings. Movement records are not uploaded to Purpleship servers. If you choose a Google Drive backup, the backup file is sent to your own Google Drive account.",
           "mapTitle": "Map display — MapTiler",
           "mapP1": "Movit displays the map with map tiles fetched from MapTiler’s servers. For this, the tile coordinates and zoom level of the map area being displayed, your IP address and an app identification string are sent to MapTiler. The purpose is to deliver the requested map images. The app does not upload your stored movement record files to MapTiler. The displayed map area may correspond to your current location. MapTiler’s privacy policy is available at https://www.maptiler.com/privacy-policy/.",
           "adsTitle": "Advertising and consent management — Google",
           "adsP1": "Movit uses Google AdMob banner ads, optional rewarded ads and the Google User Messaging Platform (UMP). Ad requests are sent to Google. The ad SDK processing items published by Google are: IP address and the approximate location derived from it, app- or developer-scoped device identifiers, ad impression, video view and interaction information, and error and performance information. The purposes are third-party ad delivery, measurement and analytics, and diagnosis and improvement of the ad SDK. Processing of each item depends on device permissions, consent status and Google’s ad processing. The app does not put GPS coordinates or stored movement records directly into ad requests.",
-          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy)."
+          "adsP2": "The app updates consent information through UMP, shows any required form, and requests ads only once ad requests are allowed. If UMP requires a privacy options entry point, you can reopen it from the app menu. Purpleship does not use this advertising data for its own marketing or to promote other apps. Google’s data processing is governed by the Google Privacy Policy (https://policies.google.com/privacy).",
+          "transferTitle": "Übermittlung ins Ausland — Google (iOS)",
+          "transfer": "Empfänger ist Google LLC (USA; Datenschutzanfragen: https://support.google.com/policies/contact/general_privacy_form). Übermittelt werden die oben genannten vom Werbe-SDK verarbeiteten Daten (IP-Adresse und daraus abgeleiteter ungefährer Standort, app- oder entwicklerbezogene Gerätekennungen, Anzeigenimpressionen, Videoaufrufe und Interaktionen, Fehler- und Leistungsdaten) sowie, wenn Sie das Tracking erlauben, die Werbe-ID (IDFA). Zwecke: Anzeigenauslieferung, -messung und -analyse sowie Diagnose und Verbesserung des Werbe-SDK. Die Daten werden während der Nutzung der App bei Anzeigenanfragen über das Netzwerk gesendet und nach den Richtlinien von Google aufbewahrt (https://policies.google.com/technologies/retention). Das Unternehmen nimmt diese Übermittlung vor, indem es diese Angaben in dieser Richtlinie offenlegt (Art. 28-8 Abs. 1 Nr. 3 des 「개인정보 보호법」 (Gesetz zum Schutz personenbezogener Daten)).",
+          "refuse": "Widerspruch und Folgen: (1) Wählen Sie bei der ersten Abfrage „App bitten, kein Tracking durchzuführen“ oder deaktivieren Sie unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking das Tracking für Movit. Dann wird die Werbe-ID (IDFA) nicht weitergegeben und personalisierte Werbung eingeschränkt. Einige Daten wie IP-Adresse und Diagnosedaten werden bei Anzeigenanfragen jedoch weiterhin gesendet; die App bleibt nutzbar. (2) Wenn Sie die App deinstallieren, endet jede Übermittlung."
         },
         "stats": {
           "title": "Movit app usage statistics (Android and iOS)",
-          "dates": "Posted: October 15, 2026 · Supplement to the amendment effective October 14, 2026",
           "p1": "To understand how each version is used, Movit sends once per day on days the app is opened: a random install identifier created on first launch (not generated from device or account information), the app version, the operating system and platform (Android/iOS), and a data-format version, to Purpleship's statistics server. Movement records, GPS location coordinates, advertising identifiers and account information are not sent.",
           "p2": "The statistics server does not store the IP address. Together with the daily record for each install identifier, it stores the country code determined from the connecting IP address and a device type derived from the app's fixed identification string. The statistics server runs on Cloudflare infrastructure.",
           "p3": "The install identifier is removed from the device when the app is deleted or its data is cleared. Daily records on the server are kept while the statistics purpose continues and are deleted without delay once the purpose is achieved, such as when the service ends."
+        },
+        "android": {
+          "ads": "Werbung (Android): Die Android-App enthält das Google Mobile Ads SDK (AdMob) und die Google User Messaging Platform (UMP) und zeigt Anzeigen an.",
+          "transfer": "Übermittlung ins Ausland (Werbung, Android): Empfänger ist Google LLC (USA; Datenschutzanfragen: https://support.google.com/policies/contact/general_privacy_form). Übermittelte Daten: Gerätekennungen wie Werbe-ID und App-Set-ID; IP-Adresse (kann zur Schätzung des ungefähren Standorts verwendet werden); Anzeigeninteraktionen; Diagnosedaten der App und des Werbe-SDK. Zwecke: Anzeigenauslieferung, Analyse (einschließlich Werbemessung) und Betrugsprävention. Die Daten werden während der Nutzung der App bei Anzeigenanfragen über das Netzwerk gesendet und nach den Richtlinien von Google aufbewahrt (https://policies.google.com/technologies/retention). Das Unternehmen nimmt diese Übermittlung vor, indem es diese Angaben in dieser Richtlinie offenlegt (Art. 28-8 Abs. 1 Nr. 3 des 「개인정보 보호법」 (Gesetz zum Schutz personenbezogener Daten)). Quelle: Google, Datenoffenlegung des Google Mobile Ads SDK (Legacy) (https://developers.google.com/admob/android/privacy/play-data-disclosure).",
+          "refuse": "Widerspruch und Folgen (Android): (1) Wenn Sie die Werbe-ID in den Geräteeinstellungen zurücksetzen oder löschen, wird personalisierte Werbung eingeschränkt. Einige Daten wie IP-Adresse und Diagnosedaten werden bei Anzeigenanfragen jedoch weiterhin gesendet; die App bleibt nutzbar. (2) Wenn Sie die App deinstallieren, endet jede Übermittlung."
         }
       },
       "qnote": {
@@ -338,27 +347,44 @@
         "li2": "Speicherort: Lokal auf dem Gerät gespeichert und nicht an Unternehmensserver übertragen.",
         "li3": "Sicherung/Synchronisierung: Bei Auswahl durch den Nutzer in persönlicher Cloud gespeichert oder als Dateien exportiert."
       },
-      "worldcanvas": {
-        "title": "WorldCanvas (Kollaborative Leinwand)",
-        "summary": "Ein auf Google-Anmeldung basierender kollaborativer Leinwanddienst, der minimale Informationen für Kontoidentifikation und Synchronisierung erhebt und speichert.",
-        "li1": "Registrierung/Authentifizierung: Verwendet Google OAuth-Anmeldung. Google-Kontoidentifikator (ID) und E-Mail werden in der Datenbank zur Kontoerstellung und Anmeldeidentifikation gespeichert.",
-        "li2": "Dienstdaten: Von Nutzern erstellte/hochgeladene Leinwände, Boards, Kommentare und Anhänge werden auf Unternehmensservern (Datenbank) zur Synchronisierung und Wiederherstellung gespeichert.",
-        "li3": "Löschung und Aufbewahrung: Kontoinformationen und Dienstdaten werden bei Kontolöschung oder Dienstaustritt unverzüglich gelöscht."
-      },
       "roboescape": {
         "title": "RoboEscape (Stealth-Fluchtspiel)",
-        "summary": "RoboEscape speichert Spielfortschritt und Spracheinstellung nur auf dem Gerät und überträgt sie nicht an Purpleship-Server. Optionale Prämienanzeigen nutzen Google AdMob und die Google User Messaging Platform (UMP); bei einer Anzeigenanfrage können IP-Adresse (zur Schätzung des ungefähren Standorts), Anzeigeninteraktionen, Diagnoseinformationen und Gerätekennungen an Google übermittelt werden. Die Datenverarbeitung durch Google unterliegt der Google-Datenschutzerklärung (https://policies.google.com/privacy)."
+        "summary": "Ein Roboter-Ausbruchs- und Schleichspiel. Spielfortschritt und Kaufbestätigungsdaten werden nur auf dem Gerät gespeichert und nicht an Purpleship-Server gesendet. Die App enthält Google-AdMob-Anzeigen (Interstitial und Rewarded) und die Google-Play-Abrechnung.",
+        "ads": "Anzeigen: Beim Weitergehen vom Bildschirm nach einer abgeschlossenen Stufe kann eine Interstitial-Anzeige erscheinen; Rewarded-Anzeigen werden nur abgespielt, wenn Sie sie ansehen möchten. Nach dem Kauf von „Werbung entfernen“ oder des Starterpakets erscheinen keine Interstitial-Anzeigen mehr. Eine maximale Inhaltseinstufung für Anzeigen von G ist geplant.",
+        "iap": "In-App-Käufe: „Werbung entfernen“ und das Starterpaket („Werbung entfernen“ + exklusive Farbpalette) werden über die Google-Play-Abrechnung (Play Billing) verkauft. Zahlungsdaten erhebt Google direkt; das Unternehmen erhält sie nicht. Zur Kaufbestätigung speichert die App nur die Produkt-ID, den Zeitpunkt der Freischaltung und einen Hash des Kauf-Tokens auf dem Gerät.",
+        "transfer": "Übermittlung ins Ausland (Werbung): Empfänger ist Google LLC (USA; Datenschutzanfragen: https://support.google.com/policies/contact/general_privacy_form). Übermittelte Daten: Gerätekennungen wie Werbe-ID und App-Set-ID sowie Geräteinformationen (einschließlich Mobilfunknetztyp und Mobilfunkanbieter); IP-Adresse (kann zur Schätzung des ungefähren Standorts verwendet werden); Anzeigeninteraktionen (App-Starts, Tippen, Anzeigenaufrufe); Diagnosedaten der App und des Werbe-SDK. Zwecke: Anzeigenauslieferung, Analyse (einschließlich Werbemessung) und Betrugsprävention. Die Daten werden während der Nutzung der App über das Netzwerk gesendet (TLS-verschlüsselt) und nach den Richtlinien von Google aufbewahrt (https://policies.google.com/technologies/retention). Das Unternehmen nimmt diese Übermittlung vor, indem es diese Angaben in dieser Richtlinie offenlegt (Art. 28-8 Abs. 1 Nr. 3 des 「개인정보 보호법」 (Gesetz zum Schutz personenbezogener Daten)).",
+        "refuse": "Widerspruch und Folgen: Es gibt zwei Möglichkeiten. (1) Wenn Sie die Werbe-ID in den Geräteeinstellungen zurücksetzen oder löschen, wird personalisierte Werbung eingeschränkt. Einige Daten wie IP-Adresse, Geräteinformationen und Diagnosedaten werden bei Anzeigenanfragen jedoch weiterhin gesendet. Nach dem Löschen erhält die App statt der ID eine Folge von Nullen; das Spiel bleibt spielbar. (2) Wenn Sie die App deinstallieren, endet jede Übermittlung.",
+        "consent": "Einwilligungsverwaltung: Die App prüft mit der Google User Messaging Platform (UMP), ob eine Einwilligung erforderlich ist, und zeigt ein Einwilligungsformular nur dort an, wo dies der Fall ist (z.B. im EWR). Wenn Sie ablehnen, fordert die App keine Anzeigen an.",
+        "sources": "Quellen: Google, Datenoffenlegung des GMA Next-Gen SDK (https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure); Wie Google Daten von Websites oder Apps verwendet, die unsere Dienste nutzen (https://policies.google.com/technologies/partner-sites); Google Play, Werbe-ID (https://support.google.com/googleplay/android-developer/answer/6048248). Google verarbeitet die Daten gemäß der Datenschutzerklärung von Google (https://policies.google.com/privacy).",
+        "age": "Zielgruppe: Die App richtet sich an Nutzer ab 16 Jahren und nicht an Kinder. Das Unternehmen erhebt nicht wissentlich personenbezogene Daten von Kindern unter 14 Jahren. Erfährt es von einer solchen Verarbeitung, vernichtet es unverzüglich die bei ihm vorhandenen Daten (z.B. Anfrage-E-Mails) und erklärt, wie auf dem Gerät oder bei Google verbliebene Daten gelöscht werden können.",
+        "permissions": "Berechtigungen und SDKs: Internet, Netzwerkstatus, Werbe-ID (AD_ID), grundlegender Telefonstatus (READ_BASIC_PHONE_STATE), Google-Play-Abrechnung (BILLING), Gerät wach halten (WAKE_LOCK), Vordergrunddienst und eine app-interne Berechtigung zum Schutz von Empfängern. READ_BASIC_PHONE_STATE ist eine normale (nicht gefährliche) Berechtigung, die das Werbe-SDK von Google deklariert. Das Werbe-SDK von Google kann zur Anzeigenauslieferung den Mobilfunknetztyp und Informationen zum Mobilfunkanbieter lesen; weder die App noch das SDK lesen Telefonnummern oder Inhalt oder Status von Anrufen. Diese Informationen gehören zu den ‘Geräteinformationen’ der oben beschriebenen Übermittlung ins Ausland. Es gibt keine Berechtigungen für Standort, Kontakte, Kamera oder Mikrofon. SDKs: Google Mobile Ads (GMA Next-Gen) 1.4.0, Google UMP 4.0.0 und Google Play Billing 9.1.0; es gibt keine Analyse- oder Absturzberichts-SDKs.",
+        "retention": "Aufbewahrung: Spielfortschritt, Einstellungen und Kaufbestätigungsdaten bleiben nur auf dem Gerät und werden mit der App gelöscht (die automatische Android-Sicherung ist deaktiviert). Anfrage-E-Mails werden als Aufzeichnungen über Verbraucherbeschwerden oder Streitbeilegung 3 Jahre aufbewahrt und dann vernichtet (Art. 6 Abs. 1 Nr. 4 der 「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (Durchführungsverordnung zum Gesetz über den Verbraucherschutz im elektronischen Handel)). Zahlungs- und Bestelldaten bewahrt Google Play auf.",
+        "analytics": "Analyse: Die Website-Analyse in 2.1, etwa Google Analytics, gilt für die Website, nicht für die App RoboEscape. Das Spielprotokoll der App bleibt auf dem Gerät und wird nicht gesendet.",
+        "inAppLink": "Hinweis in der App: Ein Link zu dieser Richtlinie wird dem Einstellungsbildschirm der App hinzugefügt."
       }
     },
     "section9": {
       "title": "9. Datenschutzbeauftragter",
-      "officer": "Datenschutzbeauftragter: Purpleship Betriebsteam",
+      "officer": "Datenschutzbeauftragter: 김현우 (Vertreter)",
       "contact": "Kontakt: captain@purpleship.io",
-      "report": "Meldung von Datenschutzverletzungen: Über die Datenschutzkommission (privacy.go.kr) und andere zuständige Stellen möglich."
+      "report": "Für Meldungen oder Beratung zu Verletzungen personenbezogener Daten können Sie sich an folgende Stellen wenden:",
+      "agency1": "개인정보침해신고센터 (Meldezentrum für Datenschutzverletzungen, KISA): 118 (ohne Vorwahl) / privacy.kisa.or.kr",
+      "agency2": "개인정보분쟁조정위원회 (Schlichtungsausschuss für Datenschutzstreitigkeiten): 1833-6972 (ohne Vorwahl) / www.kopico.go.kr",
+      "agency3": "대검찰청 (Oberste Staatsanwaltschaft): 1301 (ohne Vorwahl) / www.spo.go.kr",
+      "agency4": "경찰청 사이버범죄 신고시스템 (Meldesystem für Cyberkriminalität der Nationalen Polizeibehörde): 182 (ohne Vorwahl) / ecrm.police.go.kr"
     },
     "section10": {
       "title": "10. Änderungen und Mitteilungen der Datenschutzrichtlinie",
-      "p1": "Bei Änderungen von Gesetzen, Dienstinhalten oder internen Richtlinien informieren wir Sie 7 Tage vor Inkrafttreten über Website-Ankündigung oder Benachrichtigung im Dienst über die Änderungen."
+      "p1": "Bei Änderungen von Gesetzen, Dienstinhalten oder internen Richtlinien informieren wir Sie 7 Tage vor Inkrafttreten über Website-Ankündigung oder Benachrichtigung im Dienst über die Änderungen.",
+      "p2": "Nach Inkrafttreten dieser Richtlinie kündigen wir jede Änderung, die die Rechte der Nutzer wesentlich betrifft (z.B. neu erhobene Daten, geänderte Zwecke, neue Weitergabe an Dritte oder neue Übermittlung ins Ausland), 30 Tage vor dem Inkrafttreten dieser Änderung an."
+    },
+    "history": {
+      "title": "11. Änderungsverlauf",
+      "li1": "Gültig ab 7. Februar 2025: allgemeine Datenschutzrichtlinie",
+      "li2": "Gültig ab 14. Oktober 2026: überarbeiteter Zusatzhinweis für Movit unter iOS (Standortverlauf, Kartenanzeige, Werbung und Einwilligungsverwaltung)",
+      "li3": "Veröffentlicht am 15. Oktober 2026: Zusatzhinweis zu Nutzungsstatistiken der App Movit (Android und iOS)",
+      "li4": "Veröffentlicht 2026-10-26 / 10-29: Abschnitt RoboEscape hinzugefügt",
+      "li5": "Gültig ab 10. November 2026: aktuelle Richtlinie"
     }
   },
   "termsPage": {
