@@ -248,14 +248,15 @@
       "li2": "법령에 근거가 있거나 수사기관의 적법한 요청이 있는 경우",
       "p2": "Movit iOS에서 이용하는 외부 지도·광고 서비스와 선택적 Google Drive 백업의 정보 전달은 아래 ‘Movit iOS 추가 고지’에서 별도로 설명합니다.",
       "p3": "RoboEscape 앱의 광고 SDK를 통한 Google LLC(미국)로의 국외 이전은 아래 ‘RoboEscape’ 칸에서 설명합니다.",
-      "p4": "Movit 앱(iOS·Android)의 광고 SDK를 통한 Google LLC(미국)로의 국외 이전은 아래 ‘Movit’ 칸에서 설명합니다."
+      "p4": "Movit 앱(iOS·Android)의 광고 SDK를 통한 Google LLC(미국)로의 국외 이전은 아래 ‘Movit’ 칸에서 설명합니다.",
+      "p5": "Squadron Rush 앱(iOS·Android)의 광고 SDK를 통한 Google LLC(미국)로의 국외 이전은 아래 ‘Squadron Rush’ 칸에서 설명합니다."
     },
     "section5": {
       "title": "5. 개인정보 처리 위탁",
       "p1": "서비스 품질 유지를 위해 업무를 외부에 위탁할 수 있으며, 수탁자에 대해 보안, 재위탁 제한, 관리·감독 의무를 부과합니다.",
       "li1": "서비스 이용 분석: Google LLC (Google Analytics)",
       "li2": "사용자 선택 백업/동기화: Apple iCloud Drive, Google Drive 등",
-      "li3": "광고 게재·성과 측정·부정 이용 방지(RoboEscape, Movit): Google LLC (Google AdMob)"
+      "li3": "광고 게재·성과 측정·부정 이용 방지(RoboEscape, Movit, Squadron Rush): Google LLC (Google AdMob)"
     },
     "section6": {
       "title": "6. 이용자의 권리 및 행사 방법",
@@ -338,6 +339,22 @@
         "retention": "보관: 게임 진행·설정·구매 확인 정보는 기기에만 저장되며 앱을 삭제하면 함께 지워집니다(Android 자동 백업 꺼짐). 문의 메일은 소비자 불만·분쟁 처리 기록으로 3년 보관한 뒤 파기합니다(「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 제6조 제1항 제4호). 결제·주문 기록은 Google Play가 보관합니다.",
         "analytics": "분석 도구: 2.1의 Google Analytics 등 사이트 분석은 홈페이지에 해당하며 RoboEscape 앱에는 적용되지 않습니다. 앱의 플레이 기록은 기기에만 남고 전송되지 않습니다.",
         "inAppLink": "앱 안 안내: 앱 설정 화면에 이 처리방침 링크를 추가할 예정입니다."
+      },
+      "squadronrush": {
+        "title": "Squadron Rush (슈팅 게임)",
+        "summary": "세로 스크롤 슈팅 게임입니다. 계정이나 로그인이 없으며, 게임 진행 정보는 기기에만 저장되고 Purpleship 서버로 전송되지 않습니다. 앱에는 Google AdMob 광고(배너·전면·보상형)와 인앱 구매(Android는 Google Play 결제, iOS는 Apple App Store 인앱 구매)가 포함됩니다.",
+        "ads": "광고: Google Mobile Ads Unity 플러그인으로 Google AdMob 광고를 표시합니다. 배너 광고는 메뉴, 스테이지 선택, 상점, 결과 화면에 표시되며 게임 플레이 중이나 일시정지·설정 화면에는 표시되지 않습니다. 스테이지 결과 화면에서 나갈 때 전면 광고가 표시될 수 있고, 보상형 광고는 이용자가 선택할 때만(실패 후 부활, 코인 보상 2배) 재생됩니다. 광고 제거(remove_ads) 또는 스타터팩(starter_pack)을 구매하면 배너 광고와 전면 광고가 표시되지 않으며, 보상형 광고는 계속 이용자가 선택할 때만 재생됩니다. 앱은 최대 광고 콘텐츠 등급을 G로 설정합니다. 앱은 광고 요청에 ‘비맞춤형 광고’ 표시를 따로 넣지 않으며, 광고가 맞춤형으로 제공되는지는 UMP 동의 선택, 기기의 광고 ID 설정, Google 정책에 따라 달라집니다. iOS에서는 앱이 Apple의 앱 추적 투명성(ATT) 허용 요청을 표시하지 않으므로 광고 식별자(IDFA)가 Google에 제공되지 않으며, Google 광고 SDK는 광고 기여 분석(어트리뷰션)에 Apple의 SKAdNetwork를 사용합니다.",
+        "iap": "인앱 구매: 광고 제거(remove_ads)와 스타터팩(starter_pack, 광고 제거 + 스타터 스킨 2종)을 Unity IAP를 통해 판매하며, Android에서는 Google Play 결제(Play Billing), iOS에서는 Apple App Store 인앱 구매를 이용합니다. 두 상품 모두 비소모성 상품이며 복원할 수 있습니다. 결제수단 정보는 Google 또는 Apple이 직접 수집하며 회사는 받지 않습니다. 앱의 저장 파일에는 상품별 보유 여부(true/false)만 저장되며, 스토어에서 구매를 복원하면 이 값을 덮어씁니다. 결제·주문 기록은 Google Play 또는 Apple이 보관합니다.",
+        "transfer": "국외 이전(광고): 이전받는 자는 Google LLC(미국, 개인정보 문의 https://support.google.com/policies/contact/general_privacy_form)입니다. Android에서 이전되는 항목은 광고 ID·앱 세트 ID 등 기기 식별자, 기기 정보, IP 주소(대략적 위치 추정에 쓰일 수 있음), 광고 상호작용 정보, 앱·광고 SDK 진단 정보입니다. 목적은 광고 제공, 분석(광고 성과 측정 포함), 부정 이용 방지이며, 앱을 이용하는 동안 광고를 요청할 때 네트워크로 전송됩니다. 보유 기간은 Google 정책을 따릅니다(https://policies.google.com/technologies/retention). 회사는 이 사항을 이 방침에 공개하는 방식으로 이전합니다(「개인정보 보호법」 제28조의8 제1항 제3호).",
+        "transferIos": "국외 이전(광고, iOS): iOS에서도 이전받는 자, 목적, 전송 시점, 보유 기간, 이전 근거는 위와 같습니다. 이전 항목은 Android와 같은 종류의 정보(기기 정보, IP 주소, 광고 상호작용 정보, 앱·광고 SDK 진단 정보)이지만, 앱이 ATT 허용 요청을 표시하지 않으므로 광고 식별자(IDFA)는 제공되지 않습니다. 앱 또는 개발자 범위의 식별자가 쓰일 수 있습니다.",
+        "refuse": "거부 방법과 효과: ① Android에서는 기기 설정에서 광고 ID를 재설정하거나 삭제하면 맞춤형 광고가 제한됩니다. 다만 IP 주소, 기기 정보, 진단 정보 등 일부 정보는 광고 요청 때 계속 전송되며, 게임은 그대로 이용할 수 있습니다. UMP 동의가 적용되는 지역에서는 동의를 거부하거나 설정 화면의 개인정보 옵션 버튼으로 선택을 바꿀 수 있습니다. ② 앱을 삭제하면 모든 전송이 멈춥니다. 광고 제거를 구매하면 배너·전면 광고 요청이 멈춥니다(보상형 광고는 이용자가 선택한 경우에만).",
+        "consent": "동의 관리: 앱은 Google User Messaging Platform(UMP)으로 동의 필요 여부를 확인하며, 동의가 필요한 지역(예: 유럽경제지역, 영국)에서만 동의 화면을 표시합니다. 광고는 UMP가 광고 요청을 허용한 뒤에만 요청합니다. UMP가 개인정보 옵션 진입점을 요구하는 경우 설정 화면에 이를 다시 여는 버튼이 표시됩니다. 광고 제거를 구매한 이용자에게는 동의 화면을 표시하지 않습니다.",
+        "sources": "근거 문서: Google Mobile Ads SDK 데이터 공개(https://developers.google.com/admob/android/privacy/play-data-disclosure), 사이트 또는 앱에서 수집한 정보를 Google이 사용하는 방법(https://policies.google.com/technologies/partner-sites), Google Play 광고 ID 안내(https://support.google.com/googleplay/android-developer/answer/6048248). Google의 데이터 처리는 Google 개인정보처리방침(https://policies.google.com/privacy)을 따릅니다.",
+        "age": "이용 대상: 일반 이용자를 대상으로 하며 아동을 대상으로 하지 않습니다(최대 광고 콘텐츠 등급 G). 만 14세 미만 아동의 개인정보를 알면서 수집하지 않으며, 처리된 사실을 알게 되면 회사가 보유한 정보(문의 메일 등)를 지체 없이 파기하고 기기와 Google에 남은 정보의 삭제 방법을 안내합니다.",
+        "permissions": "권한과 SDK: Android에서는 인터넷(INTERNET), 네트워크 상태(ACCESS_NETWORK_STATE), 광고 ID(AD_ID), Google 광고 SDK가 선언한 Android 개인정보 보호 샌드박스 광고 권한(ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_ATTRIBUTION, ACCESS_ADSERVICES_TOPICS), Google Play 결제(BILLING), 절전 해제 방지(WAKE_LOCK), 포그라운드 서비스(FOREGROUND_SERVICE), 앱 내부용 수신자 보호 권한을 사용합니다. 위치·연락처·카메라·마이크·전화 권한은 없으며, iOS에서도 카메라·위치·마이크·추적 권한을 요청하지 않습니다. SDK는 Google Mobile Ads Unity 플러그인 11.6.0(Android Google Mobile Ads SDK 25.5.0), Google UMP 4.0.0, Unity IAP 5.5.0입니다. 분석·크래시 보고 SDK는 없으며, 프로젝트에서 Unity Analytics, 크래시 보고, 성능 보고를 꺼 두었습니다.",
+        "retention": "보관: 저장 데이터(스테이지 진행과 별, 코인, 엔드리스 최고 점수, 보유·장착 스킨, 구매 여부, 소리 설정)는 기기 안의 앱 저장 공간에 보관되며 앱을 삭제하면 함께 지워집니다. 이 앱은 Android 자동 백업을 끄지 않았으므로, 이용자의 기기 설정에 따라 저장 파일이 이용자 본인의 Google 계정 백업에 포함될 수 있습니다(Google이 관리하며 Purpleship으로 전송되지 않음). 문의 메일은 소비자 불만·분쟁 처리 기록으로 3년 보관한 뒤 파기합니다(「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 제6조 제1항 제4호). 결제·주문 기록은 Google Play 또는 Apple이 보관합니다.",
+        "analytics": "분석 도구: 2.1의 Google Analytics 등 사이트 분석은 홈페이지에 해당하며 Squadron Rush 앱에는 적용되지 않습니다. 앱에는 연결된 분석 서비스가 없으며 플레이 데이터를 전송하지 않습니다.",
+        "inAppLink": "앱 안 안내: 앱 설정 화면에서 이 칸(https://purpleship.io/privacy/#squadronrush)으로 연결됩니다. 문의는 아래 9의 연락처(captain@purpleship.io)로 보낼 수 있습니다."
       }
     },
     "section9": {
@@ -361,7 +378,8 @@
       "li2": "2026년 10월 14일 시행: Movit iOS 추가 고지(위치 기록, 지도 표시, 광고 및 동의 관리) 개정",
       "li3": "2026년 10월 15일 게시: Movit 앱 사용 통계(Android·iOS) 추가 고지",
       "li4": "2026-10-26 / 10-29 게시: RoboEscape 칸 추가",
-      "li5": "2026년 11월 10일 시행: 현행 처리방침"
+      "li5": "2026년 11월 10일 시행: 현행 처리방침",
+      "li6": "2026년 11월 14일 게시: Squadron Rush 칸 추가"
     }
   },
   "termsPage": {

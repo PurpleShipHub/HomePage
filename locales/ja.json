@@ -271,14 +271,15 @@
       "li2": "法令に基づく場合、または捜査機関からの適法な要請がある場合",
       "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
       "p3": "RoboEscapeアプリの広告SDKを通じたGoogle LLC（米国）への国外移転については、下記の「RoboEscape」欄で説明します。",
-      "p4": "Movitアプリ（iOS・Android）の広告SDKを通じたGoogle LLC（米国）への国外移転については、下記の「Movit」欄で説明します。"
+      "p4": "Movitアプリ（iOS・Android）の広告SDKを通じたGoogle LLC（米国）への国外移転については、下記の「Movit」欄で説明します。",
+      "p5": "Squadron Rushアプリ（iOS・Android）の広告SDKを通じたGoogle LLC（米国）への国外移転については、下記の「Squadron Rush」欄で説明します。"
     },
     "section5": {
       "title": "5. 個人情報処理の委託",
       "p1": "サービス品質維持のため業務を外部に委託する場合があり、受託者にセキュリティ、再委託制限、管理・監督義務を課します。",
       "li1": "サービス利用分析：Google LLC（Google Analytics）",
       "li2": "ユーザー選択のバックアップ/同期：Apple iCloud Drive、Google Driveなど",
-      "li3": "広告配信・効果測定・不正利用防止（RoboEscape、Movit）：Google LLC（Google AdMob）"
+      "li3": "広告配信・効果測定・不正利用防止（RoboEscape、Movit、Squadron Rush）：Google LLC（Google AdMob）"
     },
     "section6": {
       "title": "6. ユーザーの権利と行使方法",
@@ -361,6 +362,22 @@
         "retention": "保管：ゲームの進行状況・設定・購入確認情報は端末内にのみ保存され、アプリを削除すると一緒に消去されます（Androidの自動バックアップはオフ）。お問い合わせメールは消費者の苦情・紛争処理の記録として3年間保管した後に破棄します（「전자상거래 등에서의 소비자보호에 관한 법률 시행령」（電子商取引等における消費者保護に関する法律施行令）第6条第1項第4号）。決済・注文の記録はGoogle Playが保管します。",
         "analytics": "分析ツール：2.1のGoogle Analyticsなどのサイト分析はウェブサイトに適用され、RoboEscapeアプリには適用されません。アプリのプレイ記録は端末内にのみ残り、送信されません。",
         "inAppLink": "アプリ内の案内：アプリの設定画面に本ポリシーへのリンクを追加する予定です。"
+      },
+      "squadronrush": {
+        "title": "Squadron Rush（シューティングゲーム）",
+        "summary": "縦スクロールのシューティングゲームです。アカウントやログインはありません。ゲームの進行状況は端末内にのみ保存され、Purpleshipのサーバーには送信されません。アプリにはGoogle AdMob広告（バナー・インタースティシャル・リワード）とアプリ内購入（AndroidではGoogle Play決済、iOSではApple App Storeのアプリ内購入）が含まれます。",
+        "ads": "広告：アプリはGoogle Mobile Ads Unityプラグインを通じてGoogle AdMob広告を表示します。バナー広告はメニュー、ステージ選択、ショップ、リザルト画面に表示され、ゲームプレイ中や一時停止・設定画面には表示されません。ステージのリザルト画面から離れるときにインタースティシャル広告が表示されることがあり、リワード広告は利用者が選択したとき（失敗後の復活、コイン報酬の2倍化）のみ再生されます。「広告削除」（remove_ads）またはスターターパック（starter_pack）を購入すると、バナー広告とインタースティシャル広告は表示されなくなり、リワード広告は引き続き任意です。アプリは広告コンテンツの最大レーティングをGに設定しています。アプリは広告リクエストに「非パーソナライズ広告」のフラグを別途追加しておらず、広告がパーソナライズされるかどうかは、UMPでの同意の選択、端末の広告ID設定、Googleのポリシーによって決まります。iOSでは、アプリはAppleのApp Tracking Transparency（ATT）の許可ダイアログを表示しないため、広告識別子（IDFA）はGoogleに提供されません。Googleの広告SDKは広告のアトリビューションにAppleのSKAdNetworkを使用します。",
+        "iap": "アプリ内購入：「広告削除」（remove_ads）とスターターパック（starter_pack、広告削除＋スタータースキン2種）をUnity IAPを通じて販売し、AndroidではGoogle Play決済（Play Billing）、iOSではApple App Storeのアプリ内購入を利用します。いずれも非消耗型で、復元できます。支払い方法の情報はGoogleまたはAppleが直接収集し、会社は受け取りません。アプリのセーブファイルには各商品を所有しているかどうか（true/false）のみが保存され、ストアで購入を復元するとこの値が上書きされます。決済・注文の記録はGoogle PlayまたはAppleが保管します。",
+        "transfer": "国外移転（広告）：移転先はGoogle LLC（米国、プライバシーに関するお問い合わせ：https://support.google.com/policies/contact/general_privacy_form）です。Androidでの移転項目は、広告ID・アプリセットIDなどの端末識別子、端末情報、IPアドレス（おおよその位置の推定に使われる場合があります）、広告への操作情報、アプリ・広告SDKの診断情報です。目的は広告配信、分析（広告効果測定を含む）、不正利用防止で、アプリの利用中に広告をリクエストする際にネットワーク経由で送信されます。保有期間はGoogleのポリシーに従います（https://policies.google.com/technologies/retention）。会社はこれらの事項を本ポリシーで公開する方法で移転します（「개인정보 보호법」（個人情報保護法）第28条の8第1項第3号）。",
+        "transferIos": "国外移転（広告、iOS）：iOSでも、移転先、目的、送信の時期、保有期間、移転の根拠は上記と同じです。移転項目はAndroidと同じ種類の情報（端末情報、IPアドレス、広告への操作情報、アプリ・広告SDKの診断情報）ですが、アプリがATTの許可ダイアログを表示しないため、広告識別子（IDFA）は提供されません。アプリまたはデベロッパー単位の識別子が使用される場合があります。",
+        "refuse": "拒否の方法と効果：①Androidでは、端末の設定で広告IDをリセットまたは削除すると、パーソナライズ広告が制限されます。ただし、IPアドレス、端末情報、診断情報など一部の情報は広告リクエスト時に引き続き送信され、ゲームはそのまま利用できます。UMPの同意が適用される地域では、同意を拒否するか、設定画面のプライバシーオプションのボタンから選択を変更できます。②アプリを削除すると、すべての送信が停止します。広告削除を購入すると、バナー広告とインタースティシャル広告のリクエストは停止します（リワード広告は利用者が選択した場合のみ）。",
+        "consent": "同意管理：アプリはGoogle User Messaging Platform（UMP）で同意の要否を確認し、同意が必要な地域（例：欧州経済領域、英国）でのみ同意画面を表示します。広告は、UMPが広告リクエストを許可した後にのみリクエストします。UMPがプライバシーオプションの入口を求める場合、設定画面にそれを再度開くボタンが表示されます。広告削除を購入した利用者には同意画面を表示しません。",
+        "sources": "根拠資料：Google Mobile Ads SDKのデータ開示（https://developers.google.com/admob/android/privacy/play-data-disclosure）、Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用（https://policies.google.com/technologies/partner-sites）、Google Play 広告IDの案内（https://support.google.com/googleplay/android-developer/answer/6048248）。Googleによるデータ処理はGoogleプライバシーポリシー（https://policies.google.com/privacy）に従います。",
+        "age": "対象：一般の利用者を対象としており、子どもを対象としていません（広告コンテンツの最大レーティングはG）。14歳未満の子どもの個人情報を故意に収集することはなく、処理された事実を知った場合は、会社が保有する情報（お問い合わせメールなど）を遅滞なく破棄し、端末とGoogleに残る情報の削除方法をご案内します。",
+        "permissions": "権限とSDK：Androidでは、インターネット（INTERNET）、ネットワーク状態（ACCESS_NETWORK_STATE）、広告ID（AD_ID）、Googleの広告SDKが宣言するAndroidプライバシーサンドボックスの広告関連権限（ACCESS_ADSERVICES_AD_ID、ACCESS_ADSERVICES_ATTRIBUTION、ACCESS_ADSERVICES_TOPICS）、Google Play決済（BILLING）、スリープ防止（WAKE_LOCK）、フォアグラウンドサービス（FOREGROUND_SERVICE）、アプリ内部用のレシーバー保護権限を使用します。位置情報・連絡先・カメラ・マイク・電話の権限はなく、iOSでもカメラ・位置情報・マイク・トラッキングの許可を求めません。SDKはGoogle Mobile Ads Unityプラグイン11.6.0（Android版Google Mobile Ads SDK 25.5.0）、Google UMP 4.0.0、Unity IAP 5.5.0です。分析・クラッシュレポートSDKはなく、プロジェクトではUnity Analytics、クラッシュレポート、パフォーマンスレポートをオフにしています。",
+        "retention": "保管：セーブデータ（ステージの進行状況とスター、コイン、エンドレスの最高スコア、所有・装備中のスキン、購入フラグ、サウンド設定）は端末内のアプリのストレージに保存され、アプリを削除すると一緒に消去されます。このアプリではAndroidの自動バックアップをオフにしていないため、利用者の端末設定によっては、セーブファイルが利用者自身のGoogleアカウントのバックアップに含まれる場合があります（Googleが管理し、Purpleshipには送信されません）。お問い合わせメールは消費者の苦情・紛争処理の記録として3年間保管した後に破棄します（「전자상거래 등에서의 소비자보호에 관한 법률 시행령」（電子商取引等における消費者保護に関する法律施行令）第6条第1項第4号）。決済・注文の記録はGoogle PlayまたはAppleが保管します。",
+        "analytics": "分析ツール：2.1のGoogle Analyticsなどのサイト分析はウェブサイトに適用され、Squadron Rushアプリには適用されません。アプリには分析サービスが接続されておらず、プレイデータを送信しません。",
+        "inAppLink": "アプリ内の案内：アプリの設定画面は本欄（https://purpleship.io/privacy/#squadronrush）にリンクしています。お問い合わせは下記9の連絡先（captain@purpleship.io）にお送りいただけます。"
       }
     },
     "section9": {
@@ -384,7 +401,8 @@
       "li2": "2026年10月14日施行：Movit iOS追加告知（位置記録、地図表示、広告および同意管理）の改定",
       "li3": "2026年10月15日掲載：Movitアプリ利用統計（Android・iOS）の追加告知",
       "li4": "2026-10-26 / 10-29 掲載：RoboEscape欄を追加",
-      "li5": "2026年11月10日施行：現行ポリシー"
+      "li5": "2026年11月10日施行：現行ポリシー",
+      "li6": "2026年11月14日掲載：Squadron Rush欄を追加"
     }
   },
   "termsPage": {

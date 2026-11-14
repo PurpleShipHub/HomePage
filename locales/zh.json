@@ -271,14 +271,15 @@
       "li2": "有法律依据或执法机关合法要求时",
       "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
       "p3": "通过RoboEscape应用的广告SDK向Google LLC（美国）进行的跨境传输，详见下方“RoboEscape”栏。",
-      "p4": "通过Movit应用（iOS和Android）的广告SDK向Google LLC（美国）进行的跨境传输，详见下方“Movit”栏。"
+      "p4": "通过Movit应用（iOS和Android）的广告SDK向Google LLC（美国）进行的跨境传输，详见下方“Movit”栏。",
+      "p5": "通过Squadron Rush应用（iOS和Android）的广告SDK向Google LLC（美国）进行的跨境传输，详见下方“Squadron Rush”栏。"
     },
     "section5": {
       "title": "5. 个人信息处理委托",
       "p1": "为维护服务质量，我们可能将工作委托给外部机构，并对承包商施加安全、再委托限制及管理/监督义务。",
       "li1": "服务使用分析：Google LLC（Google Analytics）",
       "li2": "用户选择的备份/同步：Apple iCloud Drive、Google Drive等",
-      "li3": "广告投放、广告效果衡量与防止欺诈（RoboEscape、Movit）：Google LLC（Google AdMob）"
+      "li3": "广告投放、广告效果衡量与防止欺诈（RoboEscape、Movit、Squadron Rush）：Google LLC（Google AdMob）"
     },
     "section6": {
       "title": "6. 用户权利及行使方式",
@@ -361,6 +362,22 @@
         "retention": "保存：游戏进度、设置和购买确认信息仅保存在设备上，删除应用时一并删除（已关闭Android自动备份）。咨询邮件作为消费者投诉或纠纷处理记录保存3年后销毁（「전자상거래 등에서의 소비자보호에 관한 법률 시행령」（电子商务等消费者保护法施行令）第6条第1款第4项）。支付和订单记录由Google Play保存。",
         "analytics": "分析工具：2.1中Google Analytics等网站分析适用于网站，不适用于RoboEscape应用。应用的游戏记录仅保留在设备上，不会传输。",
         "inAppLink": "应用内说明：计划在应用设置界面添加本政策的链接。"
+      },
+      "squadronrush": {
+        "title": "Squadron Rush（射击游戏）",
+        "summary": "一款纵向卷轴射击游戏。没有账号，也无需登录。游戏进度仅保存在设备上，不会发送到Purpleship服务器。应用包含Google AdMob广告（横幅、插页式和激励式）及应用内购买（Android上为Google Play结算，iOS上为Apple App Store应用内购买）。",
+        "ads": "广告：应用通过Google Mobile Ads Unity插件显示Google AdMob广告。横幅广告显示在菜单、关卡选择、商店和结算画面，游戏进行中以及暂停、设置画面不显示。离开关卡结算画面时可能显示插页式广告，激励广告仅在用户选择时播放（失败后复活、金币奖励翻倍）。购买“移除广告”（remove_ads）或新手礼包（starter_pack）后不再显示横幅广告和插页式广告，激励广告仍由用户自愿选择。应用将最高广告内容分级设置为G。应用不会在广告请求中另行添加“非个性化广告”标记；广告是否个性化取决于您的UMP同意选择、设备的广告ID设置以及Google的政策。在iOS上，应用不显示Apple的App Tracking Transparency（ATT）授权提示，因此不会向Google提供广告标识符（IDFA）；Google广告SDK使用Apple的SKAdNetwork进行广告归因。",
+        "iap": "应用内购买：通过Unity IAP销售“移除广告”（remove_ads）和新手礼包（starter_pack，移除广告＋两款初始皮肤），Android上使用Google Play结算（Play Billing），iOS上使用Apple App Store应用内购买。两者均为非消耗型商品，可以恢复购买。支付方式信息由Google或Apple直接收集，公司不会获取。应用的存档文件仅保存是否拥有各商品（true/false），在商店恢复购买时会覆盖这些值。支付和订单记录由Google Play或Apple保存。",
+        "transfer": "跨境传输（广告）：接收方为Google LLC（美国，隐私咨询：https://support.google.com/policies/contact/general_privacy_form）。Android上的传输项目：广告ID、应用集ID等设备标识符、设备信息、IP地址（可能用于估算大致位置）、广告互动信息、应用及广告SDK的诊断信息。目的为广告投放、分析（包括广告效果衡量）和防止欺诈，在使用应用期间请求广告时通过网络传输。保存期限遵循Google的政策（https://policies.google.com/technologies/retention）。公司通过在本政策中公开上述事项的方式进行传输（「개인정보 보호법」（个人信息保护法）第28条之8第1款第3项）。",
+        "transferIos": "跨境传输（广告，iOS）：在iOS上，接收方、目的、传输时间、保存期限和传输依据与上述相同。传输项目与Android为同类信息（设备信息、IP地址、广告互动信息、应用及广告SDK的诊断信息），但由于应用不显示ATT授权提示，不会提供广告标识符（IDFA）；可能使用应用范围或开发者范围的标识符。",
+        "refuse": "拒绝方法及影响：①在Android上，在设备设置中重置或删除广告ID，个性化广告将受到限制。但IP地址、设备信息、诊断信息等部分信息在请求广告时仍会继续传输，游戏仍可正常使用。在适用UMP同意的地区，您可以拒绝同意，或通过设置画面中的隐私选项按钮更改选择。②删除应用后，所有传输都将停止。购买移除广告后，将停止请求横幅广告和插页式广告（激励广告仅在用户选择时）。",
+        "consent": "同意管理：应用通过Google User Messaging Platform（UMP）确认是否需要同意，仅在需要同意的地区（如欧洲经济区、英国）显示同意界面。只有在UMP允许请求广告后，应用才会请求广告。当UMP要求提供隐私选项入口时，设置画面会显示重新打开该选项的按钮。已购买移除广告的用户不会看到同意界面。",
+        "sources": "依据文件：Google Mobile Ads SDK数据披露（https://developers.google.com/admob/android/privacy/play-data-disclosure）、Google如何使用来自使用其服务的网站或应用的信息（https://policies.google.com/technologies/partner-sites）、Google Play广告ID说明（https://support.google.com/googleplay/android-developer/answer/6048248）。Google的数据处理遵循Google隐私权政策（https://policies.google.com/privacy）。",
+        "age": "适用对象：本游戏面向一般用户，不以儿童为对象（最高广告内容分级为G）。公司不会故意收集未满14周岁儿童的个人信息；如得知已处理此类信息，将立即销毁公司持有的信息（如咨询邮件），并告知如何删除设备上和Google处留存的信息。",
+        "permissions": "权限与SDK：在Android上使用互联网（INTERNET）、网络状态（ACCESS_NETWORK_STATE）、广告ID（AD_ID）、Google广告SDK声明的Android隐私沙盒广告权限（ACCESS_ADSERVICES_AD_ID、ACCESS_ADSERVICES_ATTRIBUTION、ACCESS_ADSERVICES_TOPICS）、Google Play结算（BILLING）、防止休眠（WAKE_LOCK）、前台服务（FOREGROUND_SERVICE）以及应用内部用的接收器保护权限。无位置、通讯录、相机、麦克风、电话权限；在iOS上也不请求相机、位置、麦克风或跟踪权限。SDK为Google Mobile Ads Unity插件11.6.0（Android版Google Mobile Ads SDK 25.5.0）、Google UMP 4.0.0、Unity IAP 5.5.0。没有分析或崩溃报告SDK，项目中已关闭Unity Analytics、崩溃报告和性能报告。",
+        "retention": "保存：存档数据（关卡进度和星星、金币、无尽模式最高分、已拥有和已装备的皮肤、购买标记、声音设置）保存在设备上的应用存储空间中，删除应用时一并删除。本应用未关闭Android自动备份，因此根据您的设备设置，存档文件可能包含在您本人的Google账号备份中（由Google管理，不会发送给Purpleship）。咨询邮件作为消费者投诉或纠纷处理记录保存3年后销毁（「전자상거래 등에서의 소비자보호에 관한 법률 시행령」（电子商务等消费者保护法施行令）第6条第1款第4项）。支付和订单记录由Google Play或Apple保存。",
+        "analytics": "分析工具：2.1中Google Analytics等网站分析适用于网站，不适用于Squadron Rush应用。应用未接入任何分析服务，不会传输游戏数据。",
+        "inAppLink": "应用内说明：应用的设置画面链接到本栏（https://purpleship.io/privacy/#squadronrush）。如需咨询，可联系下方第9条中的联系方式（captain@purpleship.io）。"
       }
     },
     "section9": {
@@ -384,7 +401,8 @@
       "li2": "2026年10月14日生效：修订Movit iOS补充说明（位置记录、地图显示、广告及同意管理）",
       "li3": "2026年10月15日发布：Movit应用使用统计（Android·iOS）补充说明",
       "li4": "2026-10-26 / 10-29 发布：新增RoboEscape栏",
-      "li5": "2026年11月10日生效：现行政策"
+      "li5": "2026年11月10日生效：现行政策",
+      "li6": "2026年11月14日发布：新增Squadron Rush栏"
     }
   },
   "termsPage": {
