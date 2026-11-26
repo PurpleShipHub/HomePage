@@ -4,7 +4,8 @@
     "apps": "Productos",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "refund": "Política de Reembolso"
+    "refund": "Política de Reembolso",
+    "support": "Soporte"
   },
   "navMenu": {
     "movit": "Movit",
@@ -272,14 +273,16 @@
       "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
       "p3": "Las transferencias internacionales a Google LLC (Estados Unidos) mediante el SDK de anuncios de la app RoboEscape se describen más abajo en la sección ‘RoboEscape’.",
       "p4": "Las transferencias internacionales a Google LLC (Estados Unidos) mediante el SDK de anuncios de la app Movit (iOS y Android) se describen más abajo en la sección ‘Movit’.",
-      "p5": "Las transferencias internacionales a Google LLC (Estados Unidos) mediante el SDK de anuncios de la app Squadron Rush (iOS y Android) se describen más abajo en la sección ‘Squadron Rush’."
+      "p5": "Las transferencias internacionales a Google LLC (Estados Unidos) mediante el SDK de anuncios de la app Squadron Rush (iOS y Android) se describen más abajo en la sección ‘Squadron Rush’.",
+      "p6": "Las transferencias internacionales a Google LLC (Estados Unidos) mediante el SDK de anuncios de la app Mural Meow (iOS y Android) se describen más abajo en la sección ‘Mural Meow’."
     },
     "section5": {
       "title": "5. Subcontratación del Procesamiento de Información Personal",
       "p1": "Podemos subcontratar trabajo a partes externas para mantener la calidad del servicio, e imponemos obligaciones de seguridad, restricciones de re-subcontratación y gestión/supervisión a los contratistas.",
       "li1": "Análisis de uso del servicio: Google LLC (Google Analytics)",
       "li2": "Respaldo/sincronización seleccionado por el usuario: Apple iCloud Drive, Google Drive, etc.",
-      "li3": "Publicación de anuncios, medición publicitaria y prevención del fraude (RoboEscape, Movit, Squadron Rush): Google LLC (Google AdMob)"
+      "li3": "Publicación de anuncios, medición publicitaria y prevención del fraude (RoboEscape, Movit, Squadron Rush): Google LLC (Google AdMob)",
+      "li4": "Publicación de anuncios, medición publicitaria y prevención del fraude (Mural Meow): Google LLC (Google AdMob)"
     },
     "section6": {
       "title": "6. Derechos del Usuario y Cómo Ejercerlos",
@@ -378,6 +381,22 @@
         "retention": "Conservación: los datos de guardado (progreso de niveles y estrellas, monedas, mejor puntuación del modo infinito, skins poseídas y equipadas, indicadores de compra, ajustes de sonido) se guardan en el almacenamiento de la app en el dispositivo y se eliminan con la app. La copia de seguridad automática de Android no está desactivada en esta app, por lo que, según los ajustes de su dispositivo, el archivo de guardado puede incluirse en la copia de seguridad de su propia cuenta de Google (gestionada por Google, no enviada a Purpleship). Los correos de consulta se conservan 3 años como registros de reclamaciones o resolución de conflictos de consumidores y después se destruyen (artículo 6, apartado 1, punto 4, del 「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (Decreto de aplicación de la Ley de Protección del Consumidor en el Comercio Electrónico)). Los registros de pago y pedidos los conservan Google Play o Apple.",
         "analytics": "Herramientas de análisis: el análisis del sitio descrito en 2.1, como Google Analytics, se aplica al sitio web y no a la app Squadron Rush. La app no tiene conectado ningún servicio de análisis y no envía datos de juego.",
         "inAppLink": "Aviso en la app: la pantalla de ajustes de la app enlaza a esta sección (https://purpleship.io/privacy/#squadronrush). Las consultas pueden enviarse al contacto de la sección 9 (captain@purpleship.io)."
+      },
+      "muralmeow": {
+        "title": "Mural Meow (juego de puzles)",
+        "summary": "Un juego de puzles en formato vertical en el que un gato pintor restaura murales. No hay cuenta ni inicio de sesión. El progreso del juego se guarda solo en el dispositivo y no se envía a los servidores de Purpleship. La app incluye anuncios de Google AdMob (intersticiales y bonificados) y compras dentro de la app (facturación de Google Play en Android, compra dentro de la app del App Store de Apple en iOS).",
+        "ads": "Anuncios: la app muestra anuncios de Google AdMob mediante el plugin de Unity de Google Mobile Ads. No hay banners. A partir del nivel 11 puede aparecer un anuncio intersticial justo antes de pasar al siguiente nivel tocando la pantalla de nivel superado, y la frecuencia de los intersticiales está limitada. No se muestran anuncios intersticiales justo después de un anuncio bonificado ni en las pantallas de derrota. Los anuncios bonificados solo se reproducen si usted lo elige: para continuar tras fallar (también cuando pierde porque los cojines están llenos) o para recargar potenciadores. Al comprar «Quitar anuncios» (remove_ads) dejan de mostrarse anuncios intersticiales; los anuncios bonificados siguen siendo opcionales. La app fija en G la clasificación máxima de contenido publicitario. La app no está dirigida a niños y no marca las solicitudes de anuncios como dirigidas a niños (TagForChildDirectedTreatment) ni como de usuarios por debajo de la edad de consentimiento (TagForUnderAgeOfConsent); ambos valores son false. La app marca todas las solicitudes de anuncios como no personalizadas (npa=1), por lo que no solicita anuncios personalizados. En iOS la app no muestra la solicitud de App Tracking Transparency (ATT) de Apple, por lo que el identificador de publicidad (IDFA) no se facilita a Google; el SDK de anuncios de Google usa SKAdNetwork de Apple para la atribución de anuncios.",
+        "iap": "Compras dentro de la app: «Quitar anuncios» (remove_ads) se vende mediante Unity IAP, con la facturación de Google Play (Play Billing) en Android y la compra dentro de la app del App Store de Apple en iOS. Es un producto no consumible y se puede restaurar. Google o Apple recogen directamente los datos de pago; la Compañía no los recibe. El archivo de guardado de la app solo almacena si se posee el producto (true/false), y una restauración desde la tienda sobrescribe este valor. Los registros de pago y pedidos los conservan Google Play o Apple.",
+        "transfer": "Transferencia internacional (anuncios): el destinatario es Google LLC (Estados Unidos; consultas de privacidad: https://support.google.com/policies/contact/general_privacy_form). Datos transferidos en Android: identificadores del dispositivo como el ID de publicidad y el ID de conjunto de apps (app set ID); información del dispositivo; dirección IP (puede usarse para estimar la ubicación aproximada); interacciones con anuncios; datos de diagnóstico de la app y del SDK de anuncios. Finalidades: publicación de anuncios, análisis (incluida la medición publicitaria) y prevención del fraude. Los datos se envían por la red al solicitar anuncios mientras se usa la app y se conservan según las políticas de Google (https://policies.google.com/technologies/retention). La Compañía realiza esta transferencia publicando esta información en la presente política (artículo 28-8, apartado 1, punto 3, de la 「개인정보 보호법」 (Ley de Protección de Información Personal)).",
+        "transferIos": "Transferencia internacional (anuncios, iOS): en iOS, el destinatario, las finalidades, el momento del envío, la conservación y el fundamento son los mismos que arriba. Se transfieren los mismos tipos de datos que en Android (información del dispositivo, dirección IP, interacciones con anuncios, datos de diagnóstico de la app y del SDK de anuncios), pero el identificador de publicidad (IDFA) no se facilita, porque la app no muestra la solicitud de ATT; pueden usarse identificadores de ámbito de app o de desarrollador.",
+        "refuse": "Cómo oponerse y efectos: la app solicita siempre anuncios no personalizados. (1) En Android, si restablece o elimina el ID de publicidad en los ajustes del dispositivo, se limitan las señales disponibles para los anuncios. Sin embargo, algunos datos, como la dirección IP, la información del dispositivo y los datos de diagnóstico, se siguen enviando al solicitar anuncios; el juego sigue disponible. Donde se aplique el consentimiento de UMP, puede rechazarlo o cambiar sus opciones con el botón de opciones de privacidad de la pantalla de ajustes. (2) Si desinstala la app, cesan todas las transferencias. Al comprar la eliminación de anuncios dejan de solicitarse anuncios intersticiales (los anuncios bonificados, solo si usted lo elige).",
+        "consent": "Gestión del consentimiento: la app usa Google User Messaging Platform (UMP) para comprobar si se requiere consentimiento y solo muestra un formulario de consentimiento donde se requiere (por ejemplo, en el EEE o el Reino Unido). Los anuncios solo se solicitan una vez que UMP permite las solicitudes de anuncios. Cuando UMP exige un punto de acceso a las opciones de privacidad, la pantalla de ajustes muestra un botón para volver a abrirlas. A los jugadores que han comprado la eliminación de anuncios no se les muestra el formulario de consentimiento.",
+        "sources": "Fuentes: Google, divulgación de datos del SDK de Google Mobile Ads (https://developers.google.com/admob/android/privacy/play-data-disclosure); Cómo utiliza Google la información de sitios o aplicaciones que usan sus servicios (https://policies.google.com/technologies/partner-sites); Google Play, ID de publicidad (https://support.google.com/googleplay/android-developer/answer/6048248). Google trata los datos conforme a su Política de Privacidad (https://policies.google.com/privacy).",
+        "age": "Público: el juego está dirigido a un público general y no está dirigido a niños (clasificación máxima de contenido publicitario: G). La Compañía no recoge a sabiendas información personal de menores de 14 años. Si sabe que se ha tratado dicha información, destruirá sin demora la que conserve (como correos de consulta) y explicará cómo eliminar los datos que queden en el dispositivo o en Google.",
+        "permissions": "Permisos y SDK: [TBD: pendiente de confirmar con el manifiesto combinado (merged manifest) de la versión de lanzamiento] En Android la app usa internet (INTERNET), estado de la red (ACCESS_NETWORK_STATE), ID de publicidad (AD_ID), los permisos publicitarios de Privacy Sandbox de Android declarados por el SDK de anuncios de Google (ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_ATTRIBUTION, ACCESS_ADSERVICES_TOPICS), facturación de Google Play (BILLING), mantener activo (WAKE_LOCK) y servicio en primer plano (FOREGROUND_SERVICE). No hay permisos de ubicación, contactos, cámara, micrófono ni teléfono; en iOS la app no solicita permisos de cámara, ubicación, micrófono ni seguimiento. [TBD: pendiente de confirmar en la versión de lanzamiento] SDK: plugin de Unity de Google Mobile Ads 11.6.0, Google UMP 4.0.0 y Unity IAP 5.5.0.",
+        "retention": "Conservación: los datos de guardado (progreso de niveles, ajustes de sonido, ajustes de idioma e indicador de compra de «Quitar anuncios») se guardan en el almacenamiento de la app en el dispositivo y se eliminan con la app. [TBD] La configuración de la copia de seguridad automática de Android se decidirá antes del lanzamiento. Los correos de consulta se conservan 3 años como registros de reclamaciones o resolución de conflictos de consumidores y después se destruyen (artículo 6, apartado 1, punto 4, del 「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (Decreto de aplicación de la Ley de Protección del Consumidor en el Comercio Electrónico)). Los registros de pago y pedidos los conservan Google Play o Apple.",
+        "analytics": "Herramientas de análisis: el análisis del sitio descrito en 2.1, como Google Analytics, se aplica al sitio web y no a la app Mural Meow. La app no tiene SDK de análisis ni de informes de fallos, y Unity Analytics, los informes de fallos y los informes de rendimiento están desactivados en el proyecto.",
+        "inAppLink": "Aviso en la app: la pantalla de ajustes de la app enlaza a esta sección (https://purpleship.io/privacy/#muralmeow). La información de soporte está disponible en https://purpleship.io/support/, y las consultas pueden enviarse al contacto de la sección 9 (captain@purpleship.io)."
       }
     },
     "section9": {
@@ -402,7 +421,8 @@
       "li3": "Publicado el 15 de octubre de 2026: aviso adicional sobre las estadísticas de uso de la app Movit (Android e iOS)",
       "li4": "Publicado 2026-10-26 / 10-29: se añadió la sección RoboEscape",
       "li5": "Vigente desde el 10 de noviembre de 2026: política actual",
-      "li6": "Publicado el 14 de noviembre de 2026: se añadió la sección Squadron Rush"
+      "li6": "Publicado el 14 de noviembre de 2026: se añadió la sección Squadron Rush",
+      "li7": "Publicado el [fecha de publicación TBD]: se añadió la sección Mural Meow"
     }
   },
   "termsPage": {
@@ -506,6 +526,76 @@
         "desc": "Detalles adicionales sobre compras de WorldCanvas y procesamiento de pagos con Paddle.",
         "link": "Más información →"
       }
+    }
+  },
+  "supportPage": {
+    "title": "Soporte de Purpleship",
+    "subtitle": "Consultas, informes de errores, solicitudes de eliminación e información sobre reembolsos de las apps de Purpleship, todo en un solo lugar.",
+    "lastUpdated": "Última actualización: [TBD: fecha de publicación]",
+    "backToHome": "← Volver al inicio",
+    "contact": {
+      "title": "1. Contacto",
+      "p1": "Si tiene alguna pregunta o algún problema al usar una de nuestras apps, escríbanos a la dirección de correo electrónico de abajo.",
+      "emailLabel": "Correo electrónico",
+      "subject": "Indique el nombre de la app en el asunto (por ejemplo, «[Squadron Rush] Consulta»).",
+      "reply": "Revisaremos su mensaje y le responderemos por correo electrónico en un plazo razonable."
+    },
+    "bug": {
+      "title": "2. Qué incluir en un informe de errores",
+      "intro": "Incluir la siguiente información en su informe de errores nos ayuda a investigar el problema.",
+      "li1": "Nombre de la app",
+      "li2": "Versión de la app (aparece en la ficha de la app en la tienda y también en la pantalla de ajustes de la app, si esta la muestra)",
+      "li3": "Modelo del dispositivo",
+      "li4": "Versión del sistema operativo (Android o iOS)",
+      "li5": "El idioma y el país que utiliza",
+      "li6": "Lo que hizo antes de que ocurriera el problema, paso a paso",
+      "li7": "Lo que esperaba que ocurriera y lo que ocurrió realmente",
+      "li8": "La fecha y la hora en que ocurrió el problema",
+      "li9": "Una captura de pantalla o una grabación de pantalla, si es posible",
+      "warning": "No envíe contraseñas ni otros datos personales sensibles."
+    },
+    "deletion": {
+      "title": "3. Solicitudes de eliminación de datos",
+      "p1": "Squadron Rush y Mural Meow no tienen cuentas, y el progreso del juego se guarda solo en su dispositivo. Al eliminar la app también se eliminan los datos guardados en el dispositivo.",
+      "p2": "La información que Google conserva con fines publicitarios puede gestionarse en los ajustes de Google del dispositivo (restablecer o eliminar el ID de publicidad) y con las herramientas que ofrece Google.",
+      "p3": "Si desea que eliminemos los correos de consulta que conservamos, envíe una solicitud a captain@purpleship.io con el asunto «Solicitud de eliminación de datos» (데이터 삭제 요청). La gestionaremos sin demora de acuerdo con nuestra Política de Privacidad.",
+      "privacyLink": "Ver la Política de Privacidad"
+    },
+    "refund": {
+      "title": "4. Reembolsos",
+      "p1": "Las compras realizadas dentro de nuestras apps las cobra y reembolsa la tienda en la que se hicieron. Solicite el reembolso a esa tienda mediante los enlaces de abajo.",
+      "apple": "Apple App Store: Informar de un problema (reportaproblem.apple.com)",
+      "google": "Google Play: Cómo solicitar un reembolso (Ayuda de Google Play)",
+      "paddle": "Compras realizadas a través de Paddle: Política de reembolso de Purpleship",
+      "p2": "Solo si la vía de la tienda no resuelve el problema, escriba a captain@purpleship.io con la información de su pedido (como el número de pedido)."
+    },
+    "faq": {
+      "title": "5. Preguntas frecuentes",
+      "q1": {
+        "q": "Hay demasiados anuncios. ¿Puedo quitarlos?",
+        "a": "La eliminación de anuncios solo se vende en las apps que la muestran en su tienda o en su pantalla de ajustes. Si ya la compró, use el botón de restaurar compras (RESTORE PURCHASES) de la app para volver a aplicarla."
+      },
+      "q2": {
+        "q": "Hice una compra, pero no se ha aplicado.",
+        "a": "Primero, pruebe a restaurar las compras (RESTORE PURCHASES) en la app. Si no funciona, contacte con la tienda donde la compró (Apple App Store o Google Play). Si el problema continúa después, escriba a captain@purpleship.io con la información de su pedido."
+      },
+      "q3": {
+        "q": "¿Qué pasa con mi progreso en el juego si cambio de dispositivo?",
+        "a": "El progreso del juego se guarda solo en su dispositivo y no se transfiere automáticamente a un dispositivo nuevo. En Android, según la app y los ajustes de su dispositivo, puede restaurarse mediante su propia copia de seguridad de Google."
+      },
+      "q4": {
+        "q": "Tengo una pregunta sobre mis datos personales.",
+        "a": "Para conocer en detalle cómo tratamos los datos personales, consulte nuestra Política de Privacidad y sus secciones específicas de cada app. Los enlaces a la sección de cada app se encuentran en el apartado 6, más abajo.",
+        "link": "Ver la Política de Privacidad"
+      }
+    },
+    "appPrivacy": {
+      "title": "6. Información de privacidad por app",
+      "intro": "Puede consultar cómo trata cada app los datos personales en la sección correspondiente de la Política de Privacidad.",
+      "muralmeow": "Mural Meow",
+      "squadronrush": "Squadron Rush",
+      "roboescape": "RoboEscape",
+      "movit": "Movit"
     }
   },
   "worldcanvasTermsPage": {
