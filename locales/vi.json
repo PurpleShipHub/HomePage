@@ -581,7 +581,7 @@
       },
       "q3": {
         "q": "Nếu đổi thiết bị thì tiến trình chơi của tôi sẽ ra sao?",
-        "a": "Tiến trình chơi chỉ được lưu trên thiết bị của bạn và không tự động chuyển sang thiết bị mới. Trên Android, tùy theo ứng dụng và cài đặt thiết bị của bạn, tiến trình có thể được khôi phục qua bản sao lưu Google của chính bạn."
+        "a": "Trong Mural Meow, tiến trình màn chơi và trạng thái mua “Xóa quảng cáo” được lưu trên thiết bị. Trên Android, các dữ liệu này có thể được đưa vào bản sao lưu tài khoản Google của bạn và chuyển sang thiết bị mới (hoặc được khôi phục khi bạn cài đặt lại ứng dụng), tùy theo cài đặt sao lưu Google của bạn. Trên iOS, các dữ liệu này có thể được đưa vào bản sao lưu iCloud hoặc bản sao lưu trên máy tính của bạn và được khôi phục từ bản sao lưu đó; chúng không được đồng bộ theo thời gian thực sang thiết bị mới. Trên cả hai nền tảng, bạn cũng có thể áp dụng lại giao dịch mua “Xóa quảng cáo” bằng nút khôi phục giao dịch mua (RESTORE PURCHASES) trong phần cài đặt của ứng dụng."
       },
       "q4": {
         "q": "Tôi có câu hỏi về thông tin cá nhân của mình.",

@@ -581,7 +581,7 @@
       },
       "q3": {
         "q": "¿Qué pasa con mi progreso en el juego si cambio de dispositivo?",
-        "a": "El progreso del juego se guarda solo en su dispositivo y no se transfiere automáticamente a un dispositivo nuevo. En Android, según la app y los ajustes de su dispositivo, puede restaurarse mediante su propia copia de seguridad de Google."
+        "a": "En Mural Meow, el progreso de niveles y el estado de la compra de «Quitar anuncios» se guardan en el dispositivo. En Android pueden incluirse en la copia de seguridad de su cuenta de Google y transferirse a un dispositivo nuevo (o restaurarse al reinstalar la app), según sus ajustes de copia de seguridad de Google. En iOS pueden incluirse en su copia de seguridad de iCloud o del ordenador y restaurarse desde esa copia; no se sincronizan en tiempo real con un dispositivo nuevo. En ambas plataformas también puede volver a aplicar la compra de «Quitar anuncios» con el botón de restaurar compras (RESTORE PURCHASES) en los ajustes de la app."
       },
       "q4": {
         "q": "Tengo una pregunta sobre mis datos personales.",

@@ -558,7 +558,7 @@
       },
       "q3": {
         "q": "What happens to my game progress if I change devices?",
-        "a": "Game progress is saved only on your device and does not move to a new device automatically. On Android, depending on the app and your device settings, it may be restored through your own Google backup."
+        "a": "In Mural Meow, stage progress and the ad-removal purchase status are saved on the device. On Android they may be included in your Google account backup and moved to a new device (or restored when you reinstall), following your Google backup settings. On iOS they may be included in your iCloud or computer backup and restored from that backup; they are not synced live to a new device. On both platforms you can also recover the ad-removal purchase with RESTORE PURCHASES in the app's settings."
       },
       "q4": {
         "q": "I have a question about my personal information.",

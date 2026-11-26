@@ -581,7 +581,7 @@
       },
       "q3": {
         "q": "Que devient ma progression si je change d'appareil ?",
-        "a": "La progression du jeu est enregistrée uniquement sur votre appareil et n'est pas transférée automatiquement vers un nouvel appareil. Sur Android, selon l'application et les réglages de votre appareil, elle peut être restaurée via votre propre sauvegarde Google."
+        "a": "Dans Mural Meow, la progression des niveaux et le statut d'achat de la suppression des annonces sont enregistrés sur l'appareil. Sur Android, ils peuvent être inclus dans la sauvegarde de votre compte Google et transférés vers un nouvel appareil (ou restaurés lors d'une réinstallation de l'application), selon vos réglages de sauvegarde Google. Sur iOS, ils peuvent être inclus dans votre sauvegarde iCloud ou sur ordinateur et restaurés à partir de cette sauvegarde ; ils ne sont pas synchronisés en temps réel avec un nouvel appareil. Sur les deux plateformes, vous pouvez aussi appliquer à nouveau l'achat de la suppression des annonces avec le bouton de restauration des achats (RESTORE PURCHASES) dans les paramètres de l'application."
       },
       "q4": {
         "q": "J'ai une question sur mes informations personnelles.",

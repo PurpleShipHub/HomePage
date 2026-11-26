@@ -581,7 +581,7 @@
       },
       "q3": {
         "q": "Was passiert mit meinem Spielfortschritt, wenn ich das Gerät wechsle?",
-        "a": "Der Spielfortschritt wird nur auf Ihrem Gerät gespeichert und nicht automatisch auf ein neues Gerät übertragen. Unter Android kann er je nach App und Ihren Geräteeinstellungen über Ihre eigene Google-Sicherung wiederhergestellt werden."
+        "a": "In Mural Meow werden der Stufenfortschritt und der Kaufstatus der Werbeentfernung auf dem Gerät gespeichert. Unter Android können sie gemäß Ihren Google-Sicherungseinstellungen in die Sicherung Ihres Google-Kontos aufgenommen und auf ein neues Gerät übertragen werden (oder bei einer Neuinstallation der App wiederhergestellt werden). Unter iOS können sie in Ihre iCloud- oder Computer-Sicherung aufgenommen und aus dieser Sicherung wiederhergestellt werden; sie werden nicht in Echtzeit mit einem neuen Gerät synchronisiert. Auf beiden Plattformen können Sie den Kauf der Werbeentfernung außerdem mit der Schaltfläche zum Wiederherstellen von Käufen (RESTORE PURCHASES) in den Einstellungen der App erneut anwenden."
       },
       "q4": {
         "q": "Ich habe eine Frage zu meinen personenbezogenen Daten.",
