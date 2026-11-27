@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Purpleship 고객 지원 - 앱 문의, 버그 신고, 데이터 삭제 요청, 환불 방법을 안내합니다.">
+  <meta name="author" content="Purpleship">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Purpleship - 고객 지원">
+  <meta property="og:description" content="Purpleship 앱 이용 중 문의·버그 신고·삭제 요청·환불 안내를 한곳에 모았습니다.">
+  <meta property="og:url" content="https://purpleship.io/support/">
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGB9Q3SNE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PQGB9Q3SNE');
+  </script>
+  <base href="/">
+  <title>고객 지원 - Purpleship</title>
+  <canvas id="bgCanvas"></canvas>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/common.css">
+  <script src="/locales/i18n-loader.js"></script>
+  <style>
+    body { --page-accent: var(--brand-purple-light); }
+    main { max-width: 900px; margin: 0 auto; padding: 120px 28px 64px; position: relative; z-index: 2; }
+    .page-header { text-align: center; margin-bottom: var(--space-2xl); }
+    .page-header h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; background: linear-gradient(135deg, var(--text-primary) 0%, var(--brand-purple-light) 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.05em; margin-bottom: var(--space-md); }
+    .page-header .subtitle { color: var(--text-secondary); font-size: 1rem; line-height: 1.7; max-width: 650px; margin: 0 auto var(--space-sm); }
+    .page-header .meta { color: var(--text-muted); font-size: 0.85rem; }
+    .legal-card { background: var(--surface-glass); border: 1px solid var(--surface-glass-border); border-radius: var(--radius-lg); padding: var(--space-2xl); position: relative; }
+    .legal-section { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--surface-glass-border); }
+    .legal-section h2 { font-size: 1.1rem; color: var(--brand-purple-light); margin-bottom: var(--space-md); letter-spacing: -0.03em; }
+    .legal-section p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin-bottom: var(--space-sm); }
+    .legal-section ul { padding-left: 20px; margin: var(--space-sm) 0; }
+    .legal-section li { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin: var(--space-xs) 0; }
+    .highlight-box { background: rgba(167, 139, 250, 0.06); border: 1px solid rgba(167, 139, 250, 0.2); border-radius: var(--radius-md); padding: var(--space-lg); margin: var(--space-md) 0; }
+    .highlight-box p { margin: 0; color: var(--text-primary); font-weight: 500; }
+    .contact-info { background: rgba(167, 139, 250, 0.05); border-left: 3px solid var(--brand-purple-light); padding: var(--space-lg); border-radius: var(--radius-sm); margin: var(--space-md) 0; }
+    .contact-info p { margin: var(--space-xs) 0; color: var(--text-secondary); font-size: 0.9rem; }
+    .legal-section a { color: var(--brand-purple-light); text-decoration: underline; }
+    .legal-footer { margin-top: var(--space-2xl); text-align: center; }
+    .legal-footer a { color: var(--brand-purple-light); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: var(--transition-smooth); }
+    .legal-footer a:hover { color: var(--text-primary); }
+    @media (max-width: 768px) { main { padding: 100px 16px 40px; } .legal-card { padding: var(--space-xl) var(--space-lg); } }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span style="font-size:1.375rem;">🚀</span>
+        <span class="brand-text">Purpleship</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="/privacy/" data-i18n="nav.privacy">개인정보처리방침</a>
+        <a href="/terms/" data-i18n="nav.terms">이용약관</a>
+        <a href="/refund/" data-i18n="nav.refund">환불정책</a>
+        <a href="/support/" aria-current="page" data-i18n="nav.support">고객 지원</a>
+      </nav>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+      <div class="nav-actions">
+        <div class="language-selector">
+          <button class="lang-button" id="langBtn">🌐 <span id="langLabel">Auto</span></button>
+          <div class="lang-menu" id="langMenu" hidden>
+            <button data-lang="auto">🌐 Auto</button>
+            <button data-lang="ko">🇰🇷 한국어</button>
+            <button data-lang="en">🇺🇸 English</button>
+            <button data-lang="zh">🇨🇳 中文</button>
+            <button data-lang="ja">🇯🇵 日本語</button>
+            <button data-lang="es">🇪🇸 Español</button>
+            <button data-lang="fr">🇫🇷 Français</button>
+            <button data-lang="de">🇩🇪 Deutsch</button>
+            <button data-lang="ru">🇷🇺 Русский</button>
+            <button data-lang="ar">🇸🇦 العربية</button>
+            <button data-lang="hi">🇮🇳 हिन्दी</button>
+            <button data-lang="vi">🇻🇳 Tiếng Việt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/privacy/" data-i18n="nav.privacy">개인정보처리방침</a>
+    <a href="/terms/" data-i18n="nav.terms">이용약관</a>
+    <a href="/refund/" data-i18n="nav.refund">환불정책</a>
+    <a href="/support/" aria-current="page" data-i18n="nav.support">고객 지원</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="page-header">
+      <h1 data-i18n="supportPage.title">Purpleship 고객 지원</h1>
+      <p class="subtitle" data-i18n="supportPage.subtitle">Purpleship 앱 이용 중 문의·버그 신고·삭제 요청·환불 안내를 한곳에 모았습니다.</p>
+      <p class="meta" data-i18n="supportPage.lastUpdated">최종 수정: 2026년 11월 27일</p>
+    </div>
+
+    <div class="legal-card">
+
+      <!-- Section 1: 문의하기 -->
+      <div class="legal-section" style="margin-top:0; padding-top:0; border-top:none;">
+        <h2 data-i18n="supportPage.contact.title">1. 문의하기</h2>
+        <p data-i18n="supportPage.contact.p1">앱 이용 중 궁금한 점이나 문제가 있으면 아래 이메일로 연락해 주세요.</p>
+        <div class="contact-info">
+          <p><span data-i18n="supportPage.contact.emailLabel">이메일</span>: <a href="mailto:captain@purpleship.io">captain@purpleship.io</a></p>
+          <p data-i18n="supportPage.contact.subject">메일 제목에 앱 이름을 함께 적어 주세요. (예: “[Squadron Rush] 문의”)</p>
+        </div>
+        <p data-i18n="supportPage.contact.reply">보내 주신 문의는 확인 후 합리적인 기간 내에 이메일로 답변드립니다.</p>
+      </div>
+
+      <!-- Section 2: 버그 신고 -->
+      <div class="legal-section">
+        <h2 data-i18n="supportPage.bug.title">2. 버그 신고할 때 알려 주세요</h2>
+        <p data-i18n="supportPage.bug.intro">버그를 신고할 때 아래 정보를 함께 보내 주시면 문제를 확인하는 데 도움이 됩니다.</p>
+        <ul>
+          <li data-i18n="supportPage.bug.li1">앱 이름</li>
+          <li data-i18n="supportPage.bug.li2">앱 버전(스토어의 앱 정보 화면에서 확인할 수 있으며, 앱 설정 화면에 버전이 표시되는 경우 그곳에서도 확인할 수 있습니다)</li>
+          <li data-i18n="supportPage.bug.li3">기기 모델</li>
+          <li data-i18n="supportPage.bug.li4">운영체제 버전(Android 또는 iOS)</li>
+          <li data-i18n="supportPage.bug.li5">사용 중인 언어와 국가</li>
+          <li data-i18n="supportPage.bug.li6">문제가 생기기까지 한 동작(순서대로)</li>
+          <li data-i18n="supportPage.bug.li7">기대한 결과와 실제로 일어난 일</li>
+          <li data-i18n="supportPage.bug.li8">문제가 발생한 날짜와 시각</li>
+          <li data-i18n="supportPage.bug.li9">가능하면 스크린샷이나 화면 녹화 영상</li>
+        </ul>
+        <div class="highlight-box">
+          <p data-i18n="supportPage.bug.warning">비밀번호나 그 밖의 민감한 개인정보는 보내지 마세요.</p>
+        </div>
+      </div>
+
+      <!-- Section 3: 데이터 삭제 요청 -->
+      <div class="legal-section">
+        <h2 data-i18n="supportPage.deletion.title">3. 데이터 삭제 요청</h2>
+        <p data-i18n="supportPage.deletion.p1">Squadron Rush와 Mural Meow는 계정이 없으며, 게임 진행 정보는 기기에만 저장됩니다. 앱을 삭제하면 기기에 저장된 데이터도 함께 삭제됩니다.</p>
+        <p data-i18n="supportPage.deletion.p2">광고를 위해 Google이 보유한 정보는 기기의 Google 설정(광고 ID 재설정·삭제)과 Google이 제공하는 도구에서 관리할 수 있습니다.</p>
+        <p data-i18n="supportPage.deletion.p3">회사가 보관 중인 문의 메일의 삭제를 원하시면 메일 제목을 “데이터 삭제 요청”으로 하여 captain@purpleship.io로 보내 주세요. 회사는 개인정보처리방침에 따라 지체 없이 처리합니다.</p>
+        <p><a href="/privacy/" data-i18n="supportPage.deletion.privacyLink">개인정보처리방침 보기</a></p>
+      </div>
+
+      <!-- Section 4: 환불 -->
+      <div class="legal-section">
+        <h2 data-i18n="supportPage.refund.title">4. 환불</h2>
+        <p data-i18n="supportPage.refund.p1">앱 안에서 구매한 상품은 구매한 스토어가 결제와 환불을 처리합니다. 환불은 아래 안내에 따라 해당 스토어에 요청해 주세요.</p>
+        <ul>
+          <li><a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener noreferrer" data-i18n="supportPage.refund.apple">Apple App Store: 문제 신고(reportaproblem.apple.com)</a></li>
+          <li><a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer" data-i18n="supportPage.refund.google">Google Play: 환불 요청 방법(Google Play 고객센터)</a></li>
+          <li><a href="/refund/" data-i18n="supportPage.refund.paddle">Paddle을 통한 구매: Purpleship 환불정책</a></li>
+        </ul>
+        <p data-i18n="supportPage.refund.p2">스토어를 통한 방법으로 해결되지 않는 경우에만 주문 정보(주문 번호 등)와 함께 captain@purpleship.io로 연락해 주세요.</p>
+      </div>
+
+      <!-- Section 5: 자주 묻는 질문 -->
+      <div class="legal-section">
+        <h2 data-i18n="supportPage.faq.title">5. 자주 묻는 질문</h2>
+        <p><strong data-i18n="supportPage.faq.q1.q">광고가 너무 많아요. 광고를 없앨 수 있나요?</strong></p>
+        <p data-i18n="supportPage.faq.q1.a">광고 제거 상품은 앱의 상점이나 설정 화면에 해당 상품이 표시된 앱에서만 판매합니다. 이미 구매했다면 앱의 구매 복원(RESTORE PURCHASES) 버튼으로 다시 적용할 수 있습니다.</p>
+        <p><strong data-i18n="supportPage.faq.q2.q">구매했는데 적용되지 않아요.</strong></p>
+        <p data-i18n="supportPage.faq.q2.a">먼저 앱에서 구매 복원(RESTORE PURCHASES)을 실행해 보세요. 그래도 적용되지 않으면 구매한 스토어(Apple App Store 또는 Google Play)에 문의해 주시고, 그 뒤에도 해결되지 않으면 주문 정보와 함께 captain@purpleship.io로 연락해 주세요.</p>
+        <p><strong data-i18n="supportPage.faq.q3.q">기기를 바꾸면 게임 진행 상황은 어떻게 되나요?</strong></p>
+        <p data-i18n="supportPage.faq.q3.a">Mural Meow에서는 진행 상황과 광고 제거 구매 여부가 기기에 저장됩니다. Android에서는 Google 계정 백업으로 새 기기에 옮겨지거나, 앱을 다시 설치하면 복원될 수 있습니다(이용자의 Google 백업 설정에 따름). iOS에서는 iCloud 또는 컴퓨터 백업에 포함되어 그 백업으로 복원될 수 있으며, 새 기기에 실시간으로 동기화되지는 않습니다. 두 플랫폼 모두 앱 설정의 구매 복원(RESTORE PURCHASES)으로 광고 제거 구매를 다시 적용할 수 있습니다.</p>
+        <p><strong data-i18n="supportPage.faq.q4.q">개인정보 처리에 대해 알고 싶어요.</strong></p>
+        <p data-i18n="supportPage.faq.q4.a">개인정보 처리에 관한 자세한 내용은 개인정보처리방침과 그 안의 앱별 칸에서 확인할 수 있습니다. 앱별 칸으로 가는 링크는 아래 6번에 모아 두었습니다.</p>
+        <p><a href="/privacy/" data-i18n="supportPage.faq.q4.link">개인정보처리방침 보기</a></p>
+      </div>
+
+      <!-- Section 6: 앱별 개인정보 안내 -->
+      <div class="legal-section">
+        <h2 data-i18n="supportPage.appPrivacy.title">6. 앱별 개인정보 안내</h2>
+        <p data-i18n="supportPage.appPrivacy.intro">각 앱의 개인정보 처리 내용은 개인정보처리방침의 앱별 칸에서 확인할 수 있습니다.</p>
+        <ul>
+          <li><a href="/privacy/#muralmeow" data-i18n="supportPage.appPrivacy.muralmeow">Mural Meow</a></li>
+          <li><a href="/privacy/#squadronrush" data-i18n="supportPage.appPrivacy.squadronrush">Squadron Rush</a></li>
+          <li><a href="/privacy/#roboescape" data-i18n="supportPage.appPrivacy.roboescape">RoboEscape</a></li>
+          <li><a href="/privacy/#serviceMovit" data-i18n="supportPage.appPrivacy.movit">Movit</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="legal-footer">
+      <a href="/" data-i18n="supportPage.backToHome">← 홈으로 돌아가기</a>
+    </div>
+  </main>
+
+  <!-- WebGL Shaders -->
+  <script id="vertexShader" type="x-shader/x-vertex">
+    attribute vec2 position;
+    void main() {
+      gl_Position = vec4(position, 0.0, 1.0);
+    }
+  </script>
+
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    precision highp float;
+    uniform vec2 resolution;
+    uniform float time;
+    void main(){
+      vec2 uv = gl_FragCoord.xy / resolution.xy;
+      float aa = max(0.001, 3.0 / resolution.x);
+      float e1 = uv.x+sin(uv.y*5.0+time+2.0/2.0)/20.0-0.31;
+      float e2 = uv.x+sin(uv.y*5.0+time+3.0/2.5)/20.0-0.32;
+      float e3 = uv.x+sin(uv.y*5.0+time/3.0)/20.0-0.32;
+      float l1 = smoothstep(0.5-aa,0.5,e1) - smoothstep(0.5,0.5+aa,e1);
+      float l2 = smoothstep(0.5-aa,0.5,e2) - smoothstep(0.5,0.5+aa,e2);
+      float l3 = smoothstep(0.5-aa,0.5,e3) - smoothstep(0.5,0.5+aa,e3);
+      float l = l1 + l2 + l3;
+      gl_FragColor = vec4(l, l, l, 1.0);
+    }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await window.i18n.init();
+
+      // Nav scroll state
+      const nav = document.querySelector('.main-nav');
+      const bgCanvas = document.getElementById('bgCanvas');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+        const fade = Math.max(0.3, 0.7 - window.scrollY / 2000);
+        bgCanvas.style.opacity = fade;
+      });
+
+      // Mobile menu toggle
+      const burger = document.querySelector('.nav-burger');
+      const panel = document.getElementById('mobileMenu');
+      if (burger && panel) {
+        burger.addEventListener('click', () => {
+          const isOpen = burger.getAttribute('aria-expanded') === 'true';
+          burger.setAttribute('aria-expanded', String(!isOpen));
+          if (panel.hasAttribute('hidden')) panel.removeAttribute('hidden');
+          else panel.setAttribute('hidden', '');
+        });
+      }
+
+      // WebGL
+      const canvas = document.getElementById('bgCanvas');
+      const gl = canvas.getContext('webgl');
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        gl.viewport(0, 0, canvas.width, canvas.height);
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      function createShader(type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        return shader;
+      }
+
+      const vertexShader = createShader(gl.VERTEX_SHADER, document.getElementById('vertexShader').textContent);
+      const fragmentShader = createShader(gl.FRAGMENT_SHADER, document.getElementById('fragmentShader').textContent);
+      const program = gl.createProgram();
+      gl.attachShader(program, vertexShader);
+      gl.attachShader(program, fragmentShader);
+      gl.linkProgram(program);
+      gl.useProgram(program);
+
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+      const position = gl.getAttribLocation(program, 'position');
+      gl.enableVertexAttribArray(position);
+      gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
+      const timeLocation = gl.getUniformLocation(program, 'time');
+      const resolutionLocation = gl.getUniformLocation(program, 'resolution');
+
+      function animate(time) {
+        time *= 0.001;
+        gl.uniform1f(timeLocation, time);
+        gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+
+      // Language button
+      const btn = document.getElementById('langBtn');
+      const menu = document.getElementById('langMenu');
+      function setLabel(lang) {
+        const label = document.getElementById('langLabel');
+        if (!label) return;
+        const map = { ko:'한국어', en:'English', zh:'中文', ja:'日本語', es:'Español', fr:'Français', de:'Deutsch', ru:'Русский', ar:'العربية', hi:'हिन्दी', vi:'Tiếng Việt' };
+        label.textContent = map[lang] || 'Auto';
+      }
+      if (btn && menu) {
+        setLabel(document.documentElement.lang || 'auto');
+        btn.addEventListener('click', () => {
+          if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
+          else menu.setAttribute('hidden', '');
+        });
+        menu.querySelectorAll('button[data-lang]').forEach(item => {
+          item.addEventListener('click', async () => {
+            let lang = item.getAttribute('data-lang');
+            if (lang === 'auto') lang = window.i18n.detectLanguage();
+            await window.i18n.changeLanguage(lang);
+            setLabel(lang);
+            menu.setAttribute('hidden', '');
+          });
+        });
+        document.addEventListener('click', (e) => {
+          if (!menu.contains(e.target) && !btn.contains(e.target)) menu.setAttribute('hidden', '');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -4,7 +4,8 @@
     "apps": "Sản phẩm",
     "privacy": "Chính Sách Bảo Mật",
     "terms": "Điều Khoản Dịch Vụ",
-    "refund": "Chính Sách Hoàn Tiền"
+    "refund": "Chính Sách Hoàn Tiền",
+    "support": "Hỗ Trợ"
   },
   "navMenu": {
     "movit": "Movit",
@@ -272,14 +273,16 @@
       "p2": "Information transfers by the external map and advertising services used by Movit on iOS, and by the optional Google Drive backup, are described separately in “Additional notice for Movit on iOS” below.",
       "p3": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng RoboEscape được mô tả trong mục ‘RoboEscape’ bên dưới.",
       "p4": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng Movit (iOS và Android) được mô tả trong mục ‘Movit’ bên dưới.",
-      "p5": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng Squadron Rush (iOS và Android) được mô tả trong mục ‘Squadron Rush’ bên dưới."
+      "p5": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng Squadron Rush (iOS và Android) được mô tả trong mục ‘Squadron Rush’ bên dưới.",
+      "p6": "Việc chuyển dữ liệu ra nước ngoài cho Google LLC (Hoa Kỳ) qua SDK quảng cáo của ứng dụng Mural Meow (iOS và Android) được mô tả trong mục ‘Mural Meow’ bên dưới."
     },
     "section5": {
       "title": "5. Thuê Ngoài Xử Lý Thông Tin Cá Nhân",
       "p1": "Chúng tôi có thể thuê ngoài công việc cho các bên ngoài để duy trì chất lượng dịch vụ, và áp đặt nghĩa vụ bảo mật, hạn chế thuê lại và nghĩa vụ quản lý/giám sát cho nhà thầu.",
       "li1": "Phân tích sử dụng dịch vụ: Google LLC (Google Analytics)",
       "li2": "Sao lưu/đồng bộ do người dùng chọn: Apple iCloud Drive, Google Drive, v.v.",
-      "li3": "Phân phối quảng cáo, đo lường quảng cáo và ngăn chặn gian lận (RoboEscape, Movit, Squadron Rush): Google LLC (Google AdMob)"
+      "li3": "Phân phối quảng cáo, đo lường quảng cáo và ngăn chặn gian lận (RoboEscape, Movit, Squadron Rush): Google LLC (Google AdMob)",
+      "li4": "Phân phối quảng cáo, đo lường quảng cáo và ngăn chặn gian lận (Mural Meow): Google LLC (Google AdMob)"
     },
     "section6": {
       "title": "6. Quyền Của Người Dùng và Cách Thực Hiện",
@@ -378,6 +381,22 @@
         "retention": "Lưu giữ: dữ liệu lưu (tiến trình màn chơi và sao, xu, điểm cao nhất ở chế độ vô tận, skin đang sở hữu và đang trang bị, cờ mua hàng, cài đặt âm thanh) được giữ trong bộ nhớ của ứng dụng trên thiết bị và bị xóa cùng ứng dụng. Sao lưu tự động của Android không bị tắt trong ứng dụng này, nên tùy theo cài đặt thiết bị của bạn, tệp lưu có thể được đưa vào bản sao lưu tài khoản Google của chính bạn (do Google quản lý, không gửi đến Purpleship). Email liên hệ được lưu 3 năm như hồ sơ xử lý khiếu nại hoặc tranh chấp của người tiêu dùng rồi hủy (「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (Nghị định thi hành Luật Bảo vệ Người tiêu dùng trong Thương mại Điện tử) Điều 6 khoản 1 điểm 4). Hồ sơ thanh toán và đơn hàng do Google Play hoặc Apple lưu giữ.",
         "analytics": "Công cụ phân tích: phân tích trang web ở mục 2.1, như Google Analytics, áp dụng cho trang web, không áp dụng cho ứng dụng Squadron Rush. Ứng dụng không kết nối dịch vụ phân tích nào và không gửi dữ liệu chơi.",
         "inAppLink": "Thông báo trong ứng dụng: màn hình cài đặt của ứng dụng liên kết đến mục này (https://purpleship.io/privacy/#squadronrush). Có thể gửi thắc mắc đến địa chỉ liên hệ ở mục 9 (captain@purpleship.io)."
+      },
+      "muralmeow": {
+        "title": "Mural Meow (trò chơi giải đố)",
+        "summary": "Trò chơi giải đố màn hình dọc, trong đó một chú mèo họa sĩ phục chế các bức tranh tường. Không có tài khoản hay đăng nhập. Tiến trình chơi chỉ được lưu trên thiết bị và không được gửi đến máy chủ của Purpleship. Ứng dụng có quảng cáo Google AdMob (xen kẽ và có thưởng) và mua trong ứng dụng (thanh toán Google Play trên Android, mua trong ứng dụng của Apple App Store trên iOS).",
+        "ads": "Quảng cáo: ứng dụng hiển thị quảng cáo Google AdMob thông qua plugin Google Mobile Ads cho Unity. Không có quảng cáo biểu ngữ. Từ màn chơi 11 trở đi, quảng cáo xen kẽ có thể xuất hiện ngay trước khi bạn chuyển sang màn chơi tiếp theo bằng cách chạm vào màn hình hoàn thành, và tần suất hiển thị quảng cáo xen kẽ có giới hạn. Quảng cáo xen kẽ không hiển thị ngay sau quảng cáo có thưởng và không hiển thị ở màn hình thất bại. Quảng cáo có thưởng chỉ phát khi bạn chọn: để chơi tiếp sau khi thất bại (kể cả khi bạn thua vì đệm đã đầy) hoặc để nạp lại vật phẩm hỗ trợ (booster). Mua “Xóa quảng cáo” (remove_ads) sẽ tắt quảng cáo xen kẽ; quảng cáo có thưởng vẫn là tùy chọn. Ứng dụng đặt mức phân loại nội dung quảng cáo tối đa là G. Ứng dụng không hướng đến trẻ em và không gắn cờ yêu cầu quảng cáo là hướng đến trẻ em (TagForChildDirectedTreatment) hay dưới độ tuổi đồng ý (TagForUnderAgeOfConsent); cả hai giá trị đều là false. Ứng dụng gắn cờ “quảng cáo không cá nhân hóa” (npa=1) cho mọi yêu cầu quảng cáo nên không yêu cầu quảng cáo cá nhân hóa. Trên iOS, ứng dụng không hiển thị lời nhắc App Tracking Transparency (ATT) của Apple, nên mã nhận dạng quảng cáo (IDFA) không được cung cấp cho Google; SDK quảng cáo của Google dùng SKAdNetwork của Apple để phân bổ quảng cáo.",
+        "iap": "Mua trong ứng dụng: “Xóa quảng cáo” (remove_ads) được bán qua Unity IAP, dùng thanh toán Google Play (Play Billing) trên Android và mua trong ứng dụng của Apple App Store trên iOS. Đây là sản phẩm không tiêu hao và có thể khôi phục. Google hoặc Apple trực tiếp thu thập thông tin phương thức thanh toán; Công ty không nhận thông tin này. Tệp lưu của ứng dụng chỉ lưu việc bạn có sở hữu sản phẩm này hay không (true/false), và việc khôi phục từ cửa hàng sẽ ghi đè giá trị này. Hồ sơ thanh toán và đơn hàng do Google Play hoặc Apple lưu giữ.",
+        "transfer": "Chuyển dữ liệu ra nước ngoài (quảng cáo): bên nhận là Google LLC (Hoa Kỳ; liên hệ về quyền riêng tư: https://support.google.com/policies/contact/general_privacy_form). Dữ liệu được chuyển trên Android: mã nhận dạng thiết bị như ID quảng cáo và ID nhóm ứng dụng (app set ID); thông tin thiết bị; địa chỉ IP (có thể dùng để ước tính vị trí gần đúng); thông tin tương tác với quảng cáo; dữ liệu chẩn đoán của ứng dụng và SDK quảng cáo. Mục đích: phân phối quảng cáo, phân tích (bao gồm đo lường quảng cáo) và ngăn chặn gian lận. Dữ liệu được gửi qua mạng khi yêu cầu quảng cáo trong lúc sử dụng ứng dụng và được lưu giữ theo chính sách của Google (https://policies.google.com/technologies/retention). Công ty thực hiện việc chuyển này bằng cách công khai các nội dung trên trong chính sách này (Điều 28-8 khoản 1 điểm 3 của 「개인정보 보호법」 (Luật Bảo vệ Thông tin Cá nhân)).",
+        "transferIos": "Chuyển dữ liệu ra nước ngoài (quảng cáo, iOS): trên iOS, bên nhận, mục đích, thời điểm gửi, thời gian lưu giữ và căn cứ giống như trên. Các loại dữ liệu được chuyển giống như trên Android (thông tin thiết bị, địa chỉ IP, thông tin tương tác với quảng cáo, dữ liệu chẩn đoán của ứng dụng và SDK quảng cáo), nhưng mã nhận dạng quảng cáo (IDFA) không được cung cấp vì ứng dụng không hiển thị lời nhắc ATT; có thể dùng mã nhận dạng trong phạm vi ứng dụng hoặc nhà phát triển.",
+        "refuse": "Cách từ chối và hệ quả: ứng dụng luôn yêu cầu quảng cáo không cá nhân hóa. (1) Trên Android, nếu bạn đặt lại hoặc xóa ID quảng cáo trong cài đặt thiết bị, các tín hiệu dùng cho quảng cáo sẽ bị hạn chế. Tuy nhiên, một số dữ liệu như địa chỉ IP, thông tin thiết bị và dữ liệu chẩn đoán vẫn tiếp tục được gửi khi yêu cầu quảng cáo; trò chơi vẫn chơi được. Ở nơi áp dụng sự đồng ý UMP, bạn có thể từ chối hoặc thay đổi lựa chọn bằng nút tùy chọn quyền riêng tư trên màn hình cài đặt. (2) Nếu bạn gỡ cài đặt ứng dụng, mọi việc truyền dữ liệu đều dừng. Mua xóa quảng cáo sẽ dừng các yêu cầu quảng cáo xen kẽ (quảng cáo có thưởng chỉ khi bạn chọn).",
+        "consent": "Quản lý sự đồng ý: ứng dụng dùng Google User Messaging Platform (UMP) để kiểm tra có cần sự đồng ý hay không và chỉ hiển thị biểu mẫu đồng ý ở nơi cần (ví dụ: Khu vực Kinh tế Châu Âu hoặc Vương quốc Anh). Quảng cáo chỉ được yêu cầu sau khi UMP cho phép yêu cầu quảng cáo. Khi UMP yêu cầu có điểm truy cập tùy chọn quyền riêng tư, màn hình cài đặt hiển thị một nút để mở lại tùy chọn đó. Người chơi đã mua xóa quảng cáo không được hiển thị biểu mẫu đồng ý.",
+        "sources": "Tài liệu căn cứ: Google, công bố dữ liệu của Google Mobile Ads SDK (https://developers.google.com/admob/android/privacy/play-data-disclosure); Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google (https://policies.google.com/technologies/partner-sites); Google Play, ID quảng cáo (https://support.google.com/googleplay/android-developer/answer/6048248). Google xử lý dữ liệu theo Chính sách quyền riêng tư của Google (https://policies.google.com/privacy).",
+        "age": "Đối tượng: trò chơi dành cho đối tượng người dùng phổ thông và không hướng đến trẻ em (mức phân loại nội dung quảng cáo tối đa: G). Công ty không cố ý thu thập thông tin cá nhân của trẻ em dưới 14 tuổi. Nếu biết thông tin đó đã được xử lý, Công ty sẽ hủy ngay thông tin mình đang giữ (như email liên hệ) và hướng dẫn cách xóa dữ liệu còn lại trên thiết bị hoặc tại Google.",
+        "permissions": "Quyền và SDK: trên Android, ứng dụng dùng internet (INTERNET), trạng thái mạng (ACCESS_NETWORK_STATE), ID quảng cáo (AD_ID), các quyền quảng cáo của Android Privacy Sandbox do SDK quảng cáo của Google khai báo (ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_ATTRIBUTION, ACCESS_ADSERVICES_TOPICS), thanh toán Google Play (BILLING), giữ thiết bị hoạt động (WAKE_LOCK) và dịch vụ nền trước (FOREGROUND_SERVICE). Không có quyền vị trí, danh bạ, máy ảnh, micrô hay điện thoại; trên iOS, ứng dụng không yêu cầu quyền máy ảnh, vị trí, micrô hay theo dõi. SDK: Google Mobile Ads (plugin cho Unity 11.6.0; SDK cho Android 25.5.0, SDK cho iOS 13.13.0), Google UMP (Android 4.0.0, iOS 3.1.0) và Unity IAP 5.5.0 (Google Play Billing 9.0.0).",
+        "retention": "Lưu giữ: dữ liệu lưu (tiến trình màn chơi, cài đặt âm thanh, cài đặt ngôn ngữ và cờ mua “Xóa quảng cáo”) được giữ trong bộ nhớ của ứng dụng trên thiết bị. Trên Android, tiến trình màn chơi và trạng thái mua “Xóa quảng cáo” có thể được đưa vào bản sao lưu tài khoản Google của bạn và chuyển sang thiết bị mới (hoặc được khôi phục khi bạn cài đặt lại ứng dụng). Trên iOS, dữ liệu này có thể được đưa vào bản sao lưu iCloud hoặc bản sao lưu trên máy tính của bạn. Khi xóa ứng dụng, dữ liệu bị xóa khỏi thiết bị; các bản sao lưu tuân theo cài đặt sao lưu Google hoặc Apple của bạn. Email liên hệ được lưu 3 năm như hồ sơ xử lý khiếu nại hoặc tranh chấp của người tiêu dùng rồi hủy (「전자상거래 등에서의 소비자보호에 관한 법률 시행령」 (Nghị định thi hành Luật Bảo vệ Người tiêu dùng trong Thương mại Điện tử) Điều 6 khoản 1 điểm 4). Hồ sơ thanh toán và đơn hàng do Google Play hoặc Apple lưu giữ.",
+        "analytics": "Công cụ phân tích: phân tích trang web ở mục 2.1, như Google Analytics, áp dụng cho trang web, không áp dụng cho ứng dụng Mural Meow. Ứng dụng không có SDK phân tích hay báo cáo sự cố, và Unity Analytics, báo cáo sự cố và báo cáo hiệu năng đã được tắt trong dự án.",
+        "inAppLink": "Thông báo trong ứng dụng: màn hình cài đặt của ứng dụng liên kết đến mục này (https://purpleship.io/privacy/#muralmeow). Thông tin hỗ trợ có tại https://purpleship.io/support/, và có thể gửi thắc mắc đến địa chỉ liên hệ ở mục 9 (captain@purpleship.io)."
       }
     },
     "section9": {
@@ -402,7 +421,8 @@
       "li3": "Đăng ngày 15 tháng 10 năm 2026: thông báo bổ sung về thống kê sử dụng ứng dụng Movit (Android và iOS)",
       "li4": "Đăng 2026-10-26 / 10-29: thêm mục RoboEscape",
       "li5": "Có hiệu lực từ ngày 10 tháng 11 năm 2026: chính sách hiện hành",
-      "li6": "Đăng ngày 14 tháng 11 năm 2026: thêm mục Squadron Rush"
+      "li6": "Đăng ngày 14 tháng 11 năm 2026: thêm mục Squadron Rush",
+      "li7": "Đăng ngày 27 tháng 11 năm 2026: thêm mục Mural Meow"
     }
   },
   "termsPage": {
@@ -506,6 +526,76 @@
         "desc": "Chi tiết bổ sung về mua hàng WorldCanvas và xử lý thanh toán Paddle.",
         "link": "Tìm hiểu thêm →"
       }
+    }
+  },
+  "supportPage": {
+    "title": "Hỗ trợ Purpleship",
+    "subtitle": "Câu hỏi, báo lỗi, yêu cầu xóa dữ liệu và thông tin hoàn tiền cho các ứng dụng Purpleship, tất cả ở một nơi.",
+    "lastUpdated": "Cập nhật lần cuối: 27 tháng 11 năm 2026",
+    "backToHome": "← Quay lại Trang chủ",
+    "contact": {
+      "title": "1. Liên hệ",
+      "p1": "Nếu bạn có câu hỏi hoặc gặp sự cố khi dùng một trong các ứng dụng của chúng tôi, vui lòng gửi email đến địa chỉ dưới đây.",
+      "emailLabel": "Email",
+      "subject": "Vui lòng ghi tên ứng dụng trong tiêu đề email (ví dụ: “[Squadron Rush] Câu hỏi”).",
+      "reply": "Chúng tôi sẽ xem xét tin nhắn của bạn và trả lời qua email trong thời gian hợp lý."
+    },
+    "bug": {
+      "title": "2. Thông tin cần có khi báo lỗi",
+      "intro": "Gửi kèm các thông tin sau khi báo lỗi sẽ giúp chúng tôi kiểm tra sự cố.",
+      "li1": "Tên ứng dụng",
+      "li2": "Phiên bản ứng dụng (hiển thị trên trang ứng dụng trong cửa hàng, và cả trên màn hình cài đặt của ứng dụng nếu ứng dụng hiển thị ở đó)",
+      "li3": "Mẫu thiết bị",
+      "li4": "Phiên bản hệ điều hành (Android hoặc iOS)",
+      "li5": "Ngôn ngữ và quốc gia bạn đang dùng",
+      "li6": "Những thao tác bạn đã làm trước khi sự cố xảy ra, theo từng bước",
+      "li7": "Điều bạn mong đợi và điều thực sự đã xảy ra",
+      "li8": "Ngày và giờ xảy ra sự cố",
+      "li9": "Ảnh chụp màn hình hoặc video quay màn hình, nếu có thể",
+      "warning": "Vui lòng không gửi mật khẩu hoặc các thông tin cá nhân nhạy cảm khác."
+    },
+    "deletion": {
+      "title": "3. Yêu cầu xóa dữ liệu",
+      "p1": "Squadron Rush và Mural Meow không có tài khoản, và tiến trình chơi chỉ được lưu trên thiết bị của bạn. Khi xóa ứng dụng, dữ liệu đã lưu trên thiết bị cũng bị xóa.",
+      "p2": "Thông tin mà Google lưu giữ cho mục đích quảng cáo có thể được quản lý trong cài đặt Google của thiết bị (đặt lại hoặc xóa ID quảng cáo) và bằng các công cụ do Google cung cấp.",
+      "p3": "Nếu bạn muốn chúng tôi xóa các email liên hệ mà chúng tôi đang lưu giữ, hãy gửi yêu cầu đến captain@purpleship.io với tiêu đề “Yêu cầu xóa dữ liệu” (데이터 삭제 요청). Chúng tôi sẽ xử lý không chậm trễ theo Chính sách Bảo mật.",
+      "privacyLink": "Xem Chính sách Bảo mật"
+    },
+    "refund": {
+      "title": "4. Hoàn tiền",
+      "p1": "Các giao dịch mua trong ứng dụng của chúng tôi do cửa hàng nơi bạn mua thu tiền và hoàn tiền. Vui lòng yêu cầu hoàn tiền từ cửa hàng đó qua các liên kết dưới đây.",
+      "apple": "Apple App Store: Báo cáo sự cố (reportaproblem.apple.com)",
+      "google": "Google Play: Cách yêu cầu hoàn tiền (Trung tâm trợ giúp Google Play)",
+      "paddle": "Giao dịch mua qua Paddle: Chính sách Hoàn tiền của Purpleship",
+      "p2": "Chỉ khi liên hệ qua cửa hàng không giải quyết được vấn đề, hãy gửi email đến captain@purpleship.io kèm thông tin đơn hàng (như mã đơn hàng)."
+    },
+    "faq": {
+      "title": "5. Câu hỏi thường gặp",
+      "q1": {
+        "q": "Có quá nhiều quảng cáo. Tôi có thể xóa quảng cáo không?",
+        "a": "Sản phẩm xóa quảng cáo chỉ được bán trong các ứng dụng có hiển thị sản phẩm này ở cửa hàng hoặc màn hình cài đặt của ứng dụng. Nếu bạn đã mua, hãy dùng nút khôi phục giao dịch mua (RESTORE PURCHASES) của ứng dụng để áp dụng lại."
+      },
+      "q2": {
+        "q": "Tôi đã mua nhưng chưa được áp dụng.",
+        "a": "Trước tiên, hãy thử khôi phục giao dịch mua (RESTORE PURCHASES) trong ứng dụng. Nếu vẫn chưa được áp dụng, hãy liên hệ cửa hàng nơi bạn đã mua (Apple App Store hoặc Google Play). Nếu sau đó vấn đề vẫn chưa được giải quyết, hãy gửi email đến captain@purpleship.io kèm thông tin đơn hàng."
+      },
+      "q3": {
+        "q": "Nếu đổi thiết bị thì tiến trình chơi của tôi sẽ ra sao?",
+        "a": "Trong Mural Meow, tiến trình màn chơi và trạng thái mua “Xóa quảng cáo” được lưu trên thiết bị. Trên Android, các dữ liệu này có thể được đưa vào bản sao lưu tài khoản Google của bạn và chuyển sang thiết bị mới (hoặc được khôi phục khi bạn cài đặt lại ứng dụng), tùy theo cài đặt sao lưu Google của bạn. Trên iOS, các dữ liệu này có thể được đưa vào bản sao lưu iCloud hoặc bản sao lưu trên máy tính của bạn và được khôi phục từ bản sao lưu đó; chúng không được đồng bộ theo thời gian thực sang thiết bị mới. Trên cả hai nền tảng, bạn cũng có thể áp dụng lại giao dịch mua “Xóa quảng cáo” bằng nút khôi phục giao dịch mua (RESTORE PURCHASES) trong phần cài đặt của ứng dụng."
+      },
+      "q4": {
+        "q": "Tôi có câu hỏi về thông tin cá nhân của mình.",
+        "a": "Để biết chi tiết về cách chúng tôi xử lý thông tin cá nhân, hãy xem Chính sách Bảo mật và các mục riêng cho từng ứng dụng trong đó. Liên kết đến mục của từng ứng dụng được tập hợp ở mục 6 bên dưới.",
+        "link": "Xem Chính sách Bảo mật"
+      }
+    },
+    "appPrivacy": {
+      "title": "6. Thông tin quyền riêng tư theo ứng dụng",
+      "intro": "Bạn có thể xem cách từng ứng dụng xử lý thông tin cá nhân trong mục tương ứng của Chính sách Bảo mật.",
+      "muralmeow": "Mural Meow",
+      "squadronrush": "Squadron Rush",
+      "roboescape": "RoboEscape",
+      "movit": "Movit"
     }
   },
   "worldcanvasTermsPage": {
